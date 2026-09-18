@@ -1,0 +1,128 @@
+{
+  "batch_id": "17e023f1a92592acd1be58ca",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G002437",
+    "G002438",
+    "G002440",
+    "G002442",
+    "G002444",
+    "G002446",
+    "G002447",
+    "G002451"
+  ],
+  "raw_response": "[  \n  {  \n    \"category\": \"Intermediary/Platform Liability\",  \n    \"requirement\": \"Public authorities must disclose the number of decisions where applicants were not entitled to access documents, the provisions under which these decisions were made, and the frequency of such provisions' invocation.\",  \n    \"source\": \"RTI Act 2005, Section Miscellaneous (b)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G002437\"],  \n    \"checkable_test\": \"A public authority must publish statistics on denied access requests and the legal basis for such denials.\",  \n    \"applicability\": \"Public authorities subject to the RTI Act 2005\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation is directly tied to transparency and accountability under the RTI Act.\"  \n  },  \n  {  \n    \"category\": \"Intermediary/Platform Liability\",  \n    \"requirement\": \"Public authorities must disclose the number of appeals referred to the Central or State Information Commission, the nature of the appeals, and the outcomes of those appeals.\",  \n    \"source\": \"RTI Act 2005, Section Miscellaneous (c)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G002438\"],  \n    \"checkable_test\": \"A public authority must publish data on appeals to information commissions, including appeal nature and resolution.\",  \n    \"applicability\": \"Public authorities subject to the RTI Act 2005\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation supports transparency in the appeals process under the RTI Act.\"  \n  },  \n  {  \n    \"category\": \"Intermediary/Platform Liability\",  \n    \"requirement\": \"Public authorities must disclose the amount of charges collected under the RTI Act by each public authority.\",  \n    \"source\": \"RTI Act 2005, Section Miscellaneous (e)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G002440\"],  \n    \"checkable_test\": \"A public authority must publish financial data on charges collected under the RTI Act.\",  \n    \"applicability\": \"Public authorities subject to the RTI Act 2005\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation ensures transparency in the financial aspects of RTI compliance.\"  \n  },  \n  {  \n    \"category\": \"Intermediary/Platform Liability\",  \n    \"requirement\": \"Public authorities must provide recommendations for reform, including specific suggestions for improving or amending the RTI Act or related legislation.\",  \n    \"source\": \"RTI Act 2005, Section Miscellaneous (g)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G002442\"],  \n    \"checkable_test\": \"A public authority must publish reform recommendations for the RTI Act or related laws.\",  \n    \"applicability\": \"Public authorities subject to the RTI Act 2005\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation promotes continuous improvement and reform of the RTI framework.\"  \n  },  \n  {  \n    \"category\": \"Intermediary/Platform Liability\",  \n    \"requirement\": \"The appropriate Government must lay before Parliament or State Legislatures the recommendations of the Commission for reform, including specific suggestions for improving or amending the RTI Act or related legislation.\",  \n    \"source\": \"RTI Act 2005, Section Miscellaneous (g)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G002444\"],  \n    \"checkable_test\": \"The appropriate Government must submit reform recommendations to Parliament or State Legislatures.\",  \n    \"applicability\": \"Appropriate Government under the RTI Act 2005\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation ensures that reform recommendations are formally considered by legislative bodies.\"  \n  },  \n  {  \n    \"category\": \"Intermediary/Platform Liability\",  \n    \"requirement\": \"The appropriate Government must develop and organize educational programs to advance public understanding of the rights under the RTI Act, particularly for disadvantaged communities.\",  \n    \"source\": \"RTI Act 2005, Section Miscellaneous (a)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G002447\"],  \n    \"checkable_test\": \"The appropriate Government must publish details of educational programs aimed at improving public understanding of RTI rights.\",  \n    \"applicability\": \"Appropriate Government under the RTI Act 2005\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation supports the dissemination of information to ensure effective use of RTI rights.\"  \n  },  \n  {  \n    \"category\": \"Intermediary/Platform Liability\",  \n    \"requirement\": \"The appropriate Government must compile a guide in its official language, within eighteen months of the Act's commencement, to help individuals exercise their rights under the RTI Act in an easily comprehensible manner.\",  \n    \"source\": \"RTI Act 2005, Section Miscellaneous (2)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G002451\"],  \n    \"checkable_test\": \"The appropriate Government must publish a user-friendly guide to the RTI Act in its official language within 18 months of the Act's commencement.\",  \n    \"applicability\": \"Appropriate Government under the RTI Act 2005\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation ensures that the public has access to clear and accessible information about their rights under the RTI Act.\"  \n  }  \n]",
+  "parsed_entries": [
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Public authorities must disclose the number of decisions where applicants were not entitled to access documents, the provisions under which these decisions were made, and the frequency of such provisions' invocation.",
+      "source": "RTI Act 2005, Section Miscellaneous (b)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002437"
+      ],
+      "checkable_test": "A public authority must publish statistics on denied access requests and the legal basis for such denials.",
+      "applicability": "Public authorities subject to the RTI Act 2005",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to transparency and accountability under the RTI Act.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Public authorities must disclose the number of appeals referred to the Central or State Information Commission, the nature of the appeals, and the outcomes of those appeals.",
+      "source": "RTI Act 2005, Section Miscellaneous (c)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002438"
+      ],
+      "checkable_test": "A public authority must publish data on appeals to information commissions, including appeal nature and resolution.",
+      "applicability": "Public authorities subject to the RTI Act 2005",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation supports transparency in the appeals process under the RTI Act.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Public authorities must disclose the amount of charges collected under the RTI Act by each public authority.",
+      "source": "RTI Act 2005, Section Miscellaneous (e)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002440"
+      ],
+      "checkable_test": "A public authority must publish financial data on charges collected under the RTI Act.",
+      "applicability": "Public authorities subject to the RTI Act 2005",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation ensures transparency in the financial aspects of RTI compliance.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Public authorities must provide recommendations for reform, including specific suggestions for improving or amending the RTI Act or related legislation.",
+      "source": "RTI Act 2005, Section Miscellaneous (g)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002442"
+      ],
+      "checkable_test": "A public authority must publish reform recommendations for the RTI Act or related laws.",
+      "applicability": "Public authorities subject to the RTI Act 2005",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation promotes continuous improvement and reform of the RTI framework.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The appropriate Government must lay before Parliament or State Legislatures the recommendations of the Commission for reform, including specific suggestions for improving or amending the RTI Act or related legislation.",
+      "source": "RTI Act 2005, Section Miscellaneous (g)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002444"
+      ],
+      "checkable_test": "The appropriate Government must submit reform recommendations to Parliament or State Legislatures.",
+      "applicability": "Appropriate Government under the RTI Act 2005",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation ensures that reform recommendations are formally considered by legislative bodies.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The appropriate Government must develop and organize educational programs to advance public understanding of the rights under the RTI Act, particularly for disadvantaged communities.",
+      "source": "RTI Act 2005, Section Miscellaneous (a)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002447"
+      ],
+      "checkable_test": "The appropriate Government must publish details of educational programs aimed at improving public understanding of RTI rights.",
+      "applicability": "Appropriate Government under the RTI Act 2005",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation supports the dissemination of information to ensure effective use of RTI rights.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The appropriate Government must compile a guide in its official language, within eighteen months of the Act's commencement, to help individuals exercise their rights under the RTI Act in an easily comprehensible manner.",
+      "source": "RTI Act 2005, Section Miscellaneous (2)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002451"
+      ],
+      "checkable_test": "The appropriate Government must publish a user-friendly guide to the RTI Act in its official language within 18 months of the Act's commencement.",
+      "applicability": "Appropriate Government under the RTI Act 2005",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation ensures that the public has access to clear and accessible information about their rights under the RTI Act.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T15:30:34.819544+00:00",
+  "multi_mapped_records": []
+}

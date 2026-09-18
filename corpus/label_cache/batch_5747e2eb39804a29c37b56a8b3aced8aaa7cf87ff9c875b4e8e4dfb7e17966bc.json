@@ -1,0 +1,53 @@
+{
+  "cache_key": "5747e2eb39804a29c37b56a8b3aced8aaa7cf87ff9c875b4e8e4dfb7e17966bc",
+  "created_at_utc": "2026-09-17T05:12:44.242485+00:00",
+  "prompt_version": "policy-labeling-v7-reliable-batches",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S000679",
+    "S000680",
+    "S000681",
+    "S000682",
+    "S000683",
+    "S000684"
+  ],
+  "labels": [
+    {
+      "clause_id": "S000679",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S000680",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S000681",
+      "best_match_taxonomy_id": "DPDP_RUL-0118",
+      "verdict": "Partially Compliant",
+      "justification": "The clause mentions cross-border data transfer but lacks specific requirements for compliance with the Central Government's regulations."
+    },
+    {
+      "clause_id": "S000682",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S000683",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S000684",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    }
+  ],
+  "status": "SUCCESS"
+}

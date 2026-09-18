@@ -1,0 +1,128 @@
+{
+  "batch_id": "7efe2d2a2eb64b989c814aa4",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G000227",
+    "G000229",
+    "G000231",
+    "G000232",
+    "G000233",
+    "G000237",
+    "G000238",
+    "G000240"
+  ],
+  "raw_response": "[{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The Appellate Tribunal must record its reasons in writing for not disposing of an application or appeal within ninety days.\",\"source\":\"AERA_ACT_2008, Section 19\",\"weight\":2,\"source_clause_ids\":[\"G000227\"],\"checkable_test\":\"Check if the Appellate Tribunal provides written reasons for delays in disposing of applications or appeals beyond ninety days.\",\"applicability\":\"Applicable to cases where the Appellate Tribunal fails to dispose of an application or appeal within ninety days.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is directly tied to the procedural obligation of the Appellate Tribunal to provide written reasons for delays.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Appellate Tribunal must consist of a Chairperson and not more than two Members appointed by the Central Government.\",\"source\":\"AERA_ACT_2008, Section 19(1)\",\"weight\":3,\"source_clause_ids\":[\"G000229\"],\"checkable_test\":\"Verify that the Appellate Tribunal is composed of a Chairperson and not more than two Members appointed by the Central Government.\",\"applicability\":\"Applicable to the composition of the Appellate Tribunal.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement defines the structure and appointment process of the Appellate Tribunal.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Chairperson or Members of the Appellate Tribunal must be appointed in consultation with the Chief Justice of India or his nominee.\",\"source\":\"AERA_ACT_2008, Section 19(2)\",\"weight\":3,\"source_clause_ids\":[\"G000232\"],\"checkable_test\":\"Confirm that the Central Government consults the Chief Justice of India or his nominee when appointing the Chairperson or Members of the Appellate Tribunal.\",\"applicability\":\"Applicable to the appointment process of the Appellate Tribunal.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement outlines the consultation process for appointments.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Chairperson or Members of the Appellate Tribunal must meet specific qualifications for appointment.\",\"source\":\"AERA_ACT_2008, Section 20\",\"weight\":3,\"source_clause_ids\":[\"G000233\"],\"checkable_test\":\"Verify that the qualifications for appointment as Chairperson or Member of the Appellate Tribunal are met.\",\"applicability\":\"Applicable to the appointment of the Appellate Tribunal.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement outlines the qualifications for appointment to the Appellate Tribunal.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Chairperson of the Appellate Tribunal must retire upon reaching the age of seventy years.\",\"source\":\"AERA_ACT_2008, Section 20(a)\",\"weight\":3,\"source_clause_ids\":[\"G000237\"],\"checkable_test\":\"Check if the Chairperson of the Appellate Tribunal retires upon reaching the age of seventy years.\",\"applicability\":\"Applicable to the retirement age of the Chairperson of the Appellate Tribunal.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement sets the retirement age for the Chairperson of the Appellate Tribunal.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Other Members of the Appellate Tribunal must retire upon reaching the age of sixty-five years.\",\"source\":\"AERA_ACT_2008, Section 20(b)\",\"weight\":3,\"source_clause_ids\":[\"G000238\"],\"checkable_test\":\"Verify that other Members of the Appellate Tribunal retire upon reaching the age of sixty-five years.\",\"applicability\":\"Applicable to the retirement age of other Members of the Appellate Tribunal.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement sets the retirement age for other Members of the Appellate Tribunal.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The salary, allowances, and terms of service of the Chairperson or Members of the Appellate Tribunal cannot be varied to their disadvantage after appointment.\",\"source\":\"AERA_ACT_2008, Section 20\",\"weight\":3,\"source_clause_ids\":[\"G000240\"],\"checkable_test\":\"Confirm that the salary, allowances, and terms of service of the Chairperson or Members of the Appellate Tribunal cannot be varied to their disadvantage after appointment.\",\"applicability\":\"Applicable to the terms of service of the Appellate Tribunal members.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures that the terms of service of the Appellate Tribunal members are protected after appointment.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Appellate Tribunal must record its reasons in writing for not disposing of an application or appeal within ninety days.",
+      "source": "AERA_ACT_2008, Section 19",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000227"
+      ],
+      "checkable_test": "Check if the Appellate Tribunal provides written reasons for delays in disposing of applications or appeals beyond ninety days.",
+      "applicability": "Applicable to cases where the Appellate Tribunal fails to dispose of an application or appeal within ninety days.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the procedural obligation of the Appellate Tribunal to provide written reasons for delays.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Appellate Tribunal must consist of a Chairperson and not more than two Members appointed by the Central Government.",
+      "source": "AERA_ACT_2008, Section 19(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000229"
+      ],
+      "checkable_test": "Verify that the Appellate Tribunal is composed of a Chairperson and not more than two Members appointed by the Central Government.",
+      "applicability": "Applicable to the composition of the Appellate Tribunal.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement defines the structure and appointment process of the Appellate Tribunal.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Chairperson or Members of the Appellate Tribunal must be appointed in consultation with the Chief Justice of India or his nominee.",
+      "source": "AERA_ACT_2008, Section 19(2)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000232"
+      ],
+      "checkable_test": "Confirm that the Central Government consults the Chief Justice of India or his nominee when appointing the Chairperson or Members of the Appellate Tribunal.",
+      "applicability": "Applicable to the appointment process of the Appellate Tribunal.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement outlines the consultation process for appointments.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Chairperson or Members of the Appellate Tribunal must meet specific qualifications for appointment.",
+      "source": "AERA_ACT_2008, Section 20",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000233"
+      ],
+      "checkable_test": "Verify that the qualifications for appointment as Chairperson or Member of the Appellate Tribunal are met.",
+      "applicability": "Applicable to the appointment of the Appellate Tribunal.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement outlines the qualifications for appointment to the Appellate Tribunal.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Chairperson of the Appellate Tribunal must retire upon reaching the age of seventy years.",
+      "source": "AERA_ACT_2008, Section 20(a)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000237"
+      ],
+      "checkable_test": "Check if the Chairperson of the Appellate Tribunal retires upon reaching the age of seventy years.",
+      "applicability": "Applicable to the retirement age of the Chairperson of the Appellate Tribunal.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement sets the retirement age for the Chairperson of the Appellate Tribunal.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Other Members of the Appellate Tribunal must retire upon reaching the age of sixty-five years.",
+      "source": "AERA_ACT_2008, Section 20(b)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000238"
+      ],
+      "checkable_test": "Verify that other Members of the Appellate Tribunal retire upon reaching the age of sixty-five years.",
+      "applicability": "Applicable to the retirement age of other Members of the Appellate Tribunal.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement sets the retirement age for other Members of the Appellate Tribunal.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The salary, allowances, and terms of service of the Chairperson or Members of the Appellate Tribunal cannot be varied to their disadvantage after appointment.",
+      "source": "AERA_ACT_2008, Section 20",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000240"
+      ],
+      "checkable_test": "Confirm that the salary, allowances, and terms of service of the Chairperson or Members of the Appellate Tribunal cannot be varied to their disadvantage after appointment.",
+      "applicability": "Applicable to the terms of service of the Appellate Tribunal members.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures that the terms of service of the Appellate Tribunal members are protected after appointment.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T13:23:33.696563+00:00",
+  "multi_mapped_records": []
+}

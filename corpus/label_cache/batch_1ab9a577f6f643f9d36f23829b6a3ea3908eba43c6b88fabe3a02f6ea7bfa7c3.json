@@ -1,0 +1,53 @@
+{
+  "cache_key": "1ab9a577f6f643f9d36f23829b6a3ea3908eba43c6b88fabe3a02f6ea7bfa7c3",
+  "created_at_utc": "2026-09-16T12:37:51.278021+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S000751",
+    "S000752",
+    "S000753",
+    "S000754",
+    "S000755",
+    "S000756"
+  ],
+  "labels": [
+    {
+      "clause_id": "S000751",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S000752",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S000753",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S000754",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S000755",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S000756",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    }
+  ],
+  "status": "SUCCESS"
+}

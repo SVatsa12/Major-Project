@@ -1,0 +1,53 @@
+{
+  "batch_id": "c7178173ea246370dd0ff029",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001063",
+    "G001064",
+    "G001066",
+    "G001067",
+    "G001070",
+    "G001071",
+    "G001072",
+    "G001073"
+  ],
+  "raw_response": "[  \n  {  \n    \"category\": \"Data Retention & Erasure\",  \n    \"requirement\": \"A Data Fiduciary must erase personal data upon completion of the specified retention period unless retention is necessary for legal compliance.\",  \n    \"source\": \"DPDP Rules 2025, Rule 8(1)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G001071\"],  \n    \"checkable_test\": \"Verify if the Data Fiduciary provides a mechanism for erasure of personal data after the retention period, unless retention is required by law.\",  \n    \"applicability\": \"Applies to Data Fiduciaries processing personal data for specified purposes.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation is tied to the retention period and legal necessity for retention.\"  \n  },  \n  {  \n    \"category\": \"Breach Notification\",  \n    \"requirement\": \"A Data Fiduciary must inform the Data Principal of the erasure of personal data at least 48 hours before completion of the retention period, unless the Data Principal initiates contact.\",  \n    \"source\": \"DPDP Rules 2025, Rule 8(2)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G001073\"],  \n    \"checkable_test\": \"Verify if the Data Fiduciary provides a notice of erasure at least 48 hours before the end of the retention period, unless the Data Principal contacts them.\",  \n    \"applicability\": \"Applies to Data Fiduciaries processing personal data for specified purposes.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation is tied to the notification requirement before erasure.\"  \n  }  \n]",
+  "parsed_entries": [
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "A Data Fiduciary must erase personal data upon completion of the specified retention period unless retention is necessary for legal compliance.",
+      "source": "DPDP Rules 2025, Rule 8(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001071"
+      ],
+      "checkable_test": "Verify if the Data Fiduciary provides a mechanism for erasure of personal data after the retention period, unless retention is required by law.",
+      "applicability": "Applies to Data Fiduciaries processing personal data for specified purposes.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is tied to the retention period and legal necessity for retention.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Breach Notification",
+      "requirement": "A Data Fiduciary must inform the Data Principal of the erasure of personal data at least 48 hours before completion of the retention period, unless the Data Principal initiates contact.",
+      "source": "DPDP Rules 2025, Rule 8(2)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001073"
+      ],
+      "checkable_test": "Verify if the Data Fiduciary provides a notice of erasure at least 48 hours before the end of the retention period, unless the Data Principal contacts them.",
+      "applicability": "Applies to Data Fiduciaries processing personal data for specified purposes.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is tied to the notification requirement before erasure.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T11:29:19.738809+00:00",
+  "multi_mapped_records": []
+}

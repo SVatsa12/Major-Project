@@ -1,0 +1,586 @@
+[
+  {
+    "taxonomy_id": "DPDP_ACT-0309",
+    "act": "DPDP_ACT_2023",
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "Data fiduciaries must ensure that processing of personal data outside India is exempted under the provisions of the Act.",
+    "checkable_test": "Verify that the processing of personal data outside India is exempted under the provisions of the Act.",
+    "applicability": "When processing personal data outside India.",
+    "source": "DPDP Act 2023, Section Special Provisions (2)",
+    "weight": 3,
+    "assessability": "3",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000314",
+      "TC-000315"
+    ],
+    "source_clause_ids": [
+      "G000583",
+      "G000585"
+    ],
+    "source_legal_anchors": [
+      "section special"
+    ],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "MERGED",
+    "consolidation_reason": "Candidates were consolidated because the automatic merge rules found substantive duplication within the same Act/category.",
+    "canonical_candidate_id": "TC-000314",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 2,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_ACT-0002",
+    "act": "DPDP_ACT_2023",
+    "category": "Consent & Notice",
+    "requirement": "A Consent Manager must be registered with the Data Protection Board of India and act as a single point of contact for managing consent.",
+    "checkable_test": "Verify if the entity has a registered Consent Manager acting as a single point of contact for managing consent.",
+    "applicability": "Applicable to entities that collect and process personal data.",
+    "source": "DPDP Act 2023, Section 2(g)",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000002"
+    ],
+    "source_clause_ids": [
+      "G000399"
+    ],
+    "source_legal_anchors": [
+      "section 2 g"
+    ],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
+    "canonical_candidate_id": "TC-000002",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 1,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_ACT-0005",
+    "act": "DPDP_ACT_2023",
+    "category": "Security Safeguards",
+    "requirement": "Data Fiduciaries must ensure that personal data is protected against unauthorized processing, accidental disclosure, or loss.",
+    "checkable_test": "Check if the organization has implemented measures to protect personal data against unauthorized processing, accidental disclosure, or loss.",
+    "applicability": "Applicable to all Data Fiduciaries.",
+    "source": "DPDP Act 2023, Section 2(u)",
+    "weight": 3,
+    "assessability": "3",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000005"
+    ],
+    "source_clause_ids": [
+      "G000425"
+    ],
+    "source_legal_anchors": [
+      "section 2 u"
+    ],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
+    "canonical_candidate_id": "TC-000005",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 1,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_ACT-0028",
+    "act": "DPDP_ACT_2023",
+    "category": "Data Retention & Erasure",
+    "requirement": "A Data Fiduciary may process personal data only for the specified purpose for which the Data Principal has voluntarily provided her data, unless she has indicated non-consent.",
+    "checkable_test": "Verify if the document states that data may be processed only for the specified purpose unless the Data Principal has indicated non-consent.",
+    "applicability": "Applies to all Data Fiduciaries handling personal data of Data Principals.",
+    "source": "DPDP Act 2023, Section 7(a)",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000028"
+    ],
+    "source_clause_ids": [
+      "G000481"
+    ],
+    "source_legal_anchors": [
+      "section 7 a"
+    ],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
+    "canonical_candidate_id": "TC-000028",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 1,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_ACT-0031",
+    "act": "DPDP_ACT_2023",
+    "category": "Breach Notification",
+    "requirement": "In the event of a personal data breach, the Data Fiduciary shall notify the Board and each affected Data Principal of the breach.",
+    "checkable_test": "Verify that the document specifies procedures for notifying the Board and affected Data Principals in case of a data breach.",
+    "applicability": "All Data Fiduciaries processing personal data.",
+    "source": "DPDP Act 2023, Section 5(6)",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000031"
+    ],
+    "source_clause_ids": [
+      "G000503"
+    ],
+    "source_legal_anchors": [
+      "section 5 6"
+    ],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
+    "canonical_candidate_id": "TC-000031",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 1,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_ACT-0039",
+    "act": "DPDP_ACT_2023",
+    "category": "Children/Vulnerable Groups",
+    "requirement": "A Data Fiduciary must obtain verifiable consent from the parent or lawful guardian of a child or person with disability before processing their personal data.",
+    "checkable_test": "Verify if the document requires verifiable consent from a parent or guardian for children or persons with disabilities.",
+    "applicability": "Applies to Data Fiduciaries processing data of children or persons with disabilities.",
+    "source": "DPDP Act 2023, Section 8(9)(1)",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000039"
+    ],
+    "source_clause_ids": [
+      "G000517"
+    ],
+    "source_legal_anchors": [
+      "section 8 9 1"
+    ],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
+    "canonical_candidate_id": "TC-000039",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 1,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_ACT-0046",
+    "act": "DPDP_ACT_2023",
+    "category": "Data Principal Rights",
+    "requirement": "Data principals have the right to request access to their personal data from the data fiduciary.",
+    "checkable_test": "Check if the document specifies the right of data principals to request access to their personal data.",
+    "applicability": "Applies to data principals who have given consent to data fiduciaries.",
+    "source": "DPDP Act 2023, Section 11(1)",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000046"
+    ],
+    "source_clause_ids": [
+      "G000544"
+    ],
+    "source_legal_anchors": [
+      "section 11 1"
+    ],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
+    "canonical_candidate_id": "TC-000046",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 1,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_ACT-0049",
+    "act": "DPDP_ACT_2023",
+    "category": "Grievance Redressal",
+    "requirement": "A Data Principal shall have the right to grievance redressal mechanisms provided by a Data Fiduciary or Consent Manager.",
+    "checkable_test": "Check if the document provides grievance redressal mechanisms for data principals regarding data fiduciary or consent manager actions.",
+    "applicability": "Applies to all data principals who have interacted with data fiduciaries or consent managers.",
+    "source": "DPDP Act 2023, Section 13(1)",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000049"
+    ],
+    "source_clause_ids": [
+      "G000558"
+    ],
+    "source_legal_anchors": [
+      "section 13 1"
+    ],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
+    "canonical_candidate_id": "TC-000049",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 1,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_ACT-0055",
+    "act": "DPDP_ACT_2023",
+    "category": "Cross-Border Transfer",
+    "requirement": "The Central Government may restrict the transfer of personal data by a Data Fiduciary to countries outside India.",
+    "checkable_test": "Check if the document provides for the possibility of government-imposed restrictions on cross-border data transfers.",
+    "applicability": "Applies to all Data Fiduciaries.",
+    "source": "DPDP Act 2023, Section 16(1)",
+    "weight": 3,
+    "assessability": "3",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000055"
+    ],
+    "source_clause_ids": [
+      "G000574"
+    ],
+    "source_legal_anchors": [
+      "section 16 1"
+    ],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
+    "canonical_candidate_id": "TC-000055",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 1,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_ACT-0057",
+    "act": "DPDP_ACT_2023",
+    "category": "Confidentiality & Misuse of Data",
+    "requirement": "The Central Government may notify certain Data Fiduciaries, including startups, that are exempt from specific data protection provisions.",
+    "checkable_test": "Check if the document allows for the exemption of certain Data Fiduciaries, including startups, from specific data protection provisions.",
+    "applicability": "Applies to all Data Fiduciaries.",
+    "source": "DPDP Act 2023, Section 18(3)",
+    "weight": 2,
+    "assessability": "3",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000057"
+    ],
+    "source_clause_ids": [
+      "G000588"
+    ],
+    "source_legal_anchors": [
+      "section 18 3"
+    ],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
+    "canonical_candidate_id": "TC-000057",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 1,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_ACT-0068",
+    "act": "DPDP_ACT_2023",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Central Government may require the Board and any Data Fiduciary or intermediary to furnish information as it may call for.",
+    "checkable_test": "Check if the governance document includes a policy that allows the Central Government to request information from the Board, Data Fiduciaries, or intermediaries.",
+    "applicability": "Applicable to any organization that is a Data Fiduciary or intermediary.",
+    "source": "DPDP Act 2023, Section 36",
+    "weight": 2,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000068"
+    ],
+    "source_clause_ids": [
+      "G000702"
+    ],
+    "source_legal_anchors": [
+      "section 36"
+    ],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
+    "canonical_candidate_id": "TC-000068",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 1,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_ACT-0312",
+    "act": "DPDP_ACT_2023",
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "The Data Protection Board of India must investigate and impose penalties for personal data breaches, including those involving a Consent Manager, as provided by the DPDP Act 2023.",
+    "checkable_test": "Check if the Data Protection Board has authority to investigate and impose penalties for personal data breaches involving a Consent Manager.",
+    "applicability": "Applicable to all data fiduciaries subject to the DPDP Act 2023.",
+    "source": "DPDP Act 2023, Section 26(b)",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000318",
+      "TC-000319"
+    ],
+    "source_clause_ids": [
+      "G000632",
+      "G000639"
+    ],
+    "source_legal_anchors": [
+      "section 26 b"
+    ],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "MERGED",
+    "consolidation_reason": "Candidates were consolidated because the automatic merge rules found substantive duplication within the same Act/category.",
+    "canonical_candidate_id": "TC-000319",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 2,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_ACT-0001",
+    "act": "DPDP_ACT_2023",
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "The Data Protection Board of India must be established by the Central Government.",
+    "checkable_test": "Verify if the Central Government has established the Data Protection Board of India as defined in the DPDP Act 2023.",
+    "applicability": "Applicable to all entities subject to the DPDP Act 2023.",
+    "source": "DPDP Act 2023, Section 18",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000001"
+    ],
+    "source_clause_ids": [
+      "G000395"
+    ],
+    "source_legal_anchors": [
+      "section 18"
+    ],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
+    "canonical_candidate_id": "TC-000001",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 1,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_ACT-0003",
+    "act": "DPDP_ACT_2023",
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "Significant Data Fiduciaries must appoint a Data Protection Officer as required by law.",
+    "checkable_test": "Check if the organization has appointed a Data Protection Officer as required by law.",
+    "applicability": "Applicable to Significant Data Fiduciaries.",
+    "source": "DPDP Act 2023, Section 2(l)",
+    "weight": 3,
+    "assessability": "3",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000003"
+    ],
+    "source_clause_ids": [
+      "G000406"
+    ],
+    "source_legal_anchors": [
+      "section 2 l"
+    ],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
+    "canonical_candidate_id": "TC-000003",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 1,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_ACT-0007",
+    "act": "DPDP_ACT_2023",
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "Significant Data Fiduciaries must be notified by the Central Government under section 10.",
+    "checkable_test": "Check if the organization is classified as a Significant Data Fiduciary and if it complies with the notification requirements under section 10.",
+    "applicability": "Applicable to Significant Data Fiduciaries.",
+    "source": "DPDP Act 2023, Section 2(z)",
+    "weight": 3,
+    "assessability": "3",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000007"
+    ],
+    "source_clause_ids": [
+      "G000430"
+    ],
+    "source_legal_anchors": [
+      "section 2 z"
+    ],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
+    "canonical_candidate_id": "TC-000007",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 1,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_ACT-0009",
+    "act": "DPDP_ACT_2023",
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "A Data Fiduciary must process personal data only for a lawful purpose as defined by the DPDP Act 2023.",
+    "checkable_test": "Verify if the Data Fiduciary's processing of personal data is limited to lawful purposes as per the DPDP Act 2023.",
+    "applicability": "Applies to all Data Fiduciaries processing personal data in India.",
+    "source": "DPDP Act 2023, Section 3(1)",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000009"
+    ],
+    "source_clause_ids": [
+      "G000443"
+    ],
+    "source_legal_anchors": [
+      "section 3 1"
+    ],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
+    "canonical_candidate_id": "TC-000009",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 1,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_ACT-0010",
+    "act": "DPDP_ACT_2023",
+    "category": "Consent & Notice",
+    "requirement": "Every request for consent from a Data Principal must be accompanied by a notice informing the Data Principal of the purpose of processing.",
+    "checkable_test": "Check if all consent requests include a notice describing the purpose of data processing.",
+    "applicability": "Applies to all Data Fiduciaries seeking consent for data processing.",
+    "source": "DPDP Act 2023, Section 5(1)",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000010"
+    ],
+    "source_clause_ids": [
+      "G000449"
+    ],
+    "source_legal_anchors": [
+      "section 5 1"
+    ],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
+    "canonical_candidate_id": "TC-000010",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 1,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_ACT-0012",
+    "act": "DPDP_ACT_2023",
+    "category": "Consent & Notice",
+    "requirement": "A Data Fiduciary must accompany or precede a request for personal data with a notice describing the personal data and the purpose of its processing.",
+    "checkable_test": "Check if all data processing requests include a notice describing the data and its purpose.",
+    "applicability": "Applies to all Data Fiduciaries processing personal data for KYC requirements.",
+    "source": "DPDP Act 2023, Section 3(B)",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000012"
+    ],
+    "source_clause_ids": [
+      "G000453"
+    ],
+    "source_legal_anchors": [
+      "section 3 b"
+    ],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
+    "canonical_candidate_id": "TC-000012",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 1,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_ACT-0013",
+    "act": "DPDP_ACT_2023",
+    "category": "Consent & Notice",
+    "requirement": "A Data Fiduciary must inform a Data Principal of the right to withdraw consent and the consequences of withdrawal.",
+    "checkable_test": "Verify if the Data Fiduciary provides information on how to withdraw consent and its effects.",
+    "applicability": "Applies to all Data Fiduciaries processing personal data with prior consent.",
+    "source": "DPDP Act 2023, Section 4(1)(b)",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000013"
+    ],
+    "source_clause_ids": [
+      "G000462"
+    ],
+    "source_legal_anchors": [
+      "section 4 1 b"
+    ],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
+    "canonical_candidate_id": "TC-000013",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 1,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_ACT-0014",
+    "act": "DPDP_ACT_2023",
+    "category": "Consent & Notice",
+    "requirement": "A Data Fiduciary must inform a Data Principal of the purpose of processing personal data upon the commencement of the DPDP Act 2023.",
+    "checkable_test": "Check if the Data Fiduciary provides information on the purpose of data processing to Data Principals who gave consent before the Act's commencement.",
+    "applicability": "Applies to all Data Fiduciaries who processed data before the DPDP Act 2023 came into effect.",
+    "source": "DPDP Act 2023, Section 4(1)(b)",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000014"
+    ],
+    "source_clause_ids": [
+      "G000463"
+    ],
+    "source_legal_anchors": [
+      "section 4 1 b"
+    ],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
+    "canonical_candidate_id": "TC-000014",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 1,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  }
+]

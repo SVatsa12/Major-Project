@@ -1,0 +1,128 @@
+{
+  "batch_id": "92f901487bf938d154b20469",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G000560",
+    "G000561",
+    "G000563",
+    "G000567",
+    "G000574",
+    "G000575",
+    "G000584",
+    "G000588"
+  ],
+  "raw_response": "[{\"category\":\"Grievance Redressal\",\"requirement\":\"A Data Principal must exhaust the opportunity of redressing her grievance under this section before approaching the Board.\",\"source\":\"DPDP Act 2023, Section 3\",\"weight\":2,\"source_clause_ids\":[\"G000560\"],\"checkable_test\":\"Check if the document provides a process for resolving grievances internally before allowing appeals to the Board.\",\"applicability\":\"Applies to all Data Principals.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures that Data Principals follow internal grievance mechanisms before seeking external redress.\"},{\"category\":\"Data Principal Rights\",\"requirement\":\"A Data Principal shall have the right to nominate any other individual to act on their behalf in the event of death or incapacity.\",\"source\":\"DPDP Act 2023, Section 14(1)\",\"weight\":3,\"source_clause_ids\":[\"G000561\"],\"checkable_test\":\"Check if the document allows for the nomination of a representative to act on behalf of the Data Principal in case of death or incapacity.\",\"applicability\":\"Applies to all Data Principals.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures that Data Principals can designate a representative to manage their data rights in case of incapacitation.\"},{\"category\":\"Data Principal Rights\",\"requirement\":\"The term 'incapacity' includes inability to exercise rights due to unsoundness of mind or infirmity of body.\",\"source\":\"DPDP Act 2023, Section 14(2)\",\"weight\":2,\"source_clause_ids\":[\"G000563\"],\"checkable_test\":\"Check if the document defines 'incapacity' to include mental or physical conditions that prevent the exercise of data rights.\",\"applicability\":\"Applies to all Data Principals.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This requirement clarifies the definition of incapacity for the purpose of data rights.\"},{\"category\":\"Grievance Redressal\",\"requirement\":\"A Data Principal must not register false or frivolous grievances or complaints with a Data Fiduciary or the Board.\",\"source\":\"DPDP Act 2023, Section 14(d)\",\"weight\":2,\"source_clause_ids\":[\"G000567\"],\"checkable_test\":\"Check if the document prohibits the registration of false or frivolous grievances or complaints.\",\"applicability\":\"Applies to all Data Principals.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures that the grievance process is not abused by submitting false complaints.\"},{\"category\":\"Cross-Border Transfer\",\"requirement\":\"The Central Government may restrict the transfer of personal data by a Data Fiduciary to countries outside India.\",\"source\":\"DPDP Act 2023, Section 16(1)\",\"weight\":3,\"source_clause_ids\":[\"G000574\"],\"checkable_test\":\"Check if the document provides for the possibility of government-imposed restrictions on cross-border data transfers.\",\"applicability\":\"Applies to all Data Fiduciaries.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This requirement allows the government to impose restrictions on data transfers to foreign jurisdictions.\"},{\"category\":\"Cross-Border Transfer\",\"requirement\":\"The applicability of Indian laws providing higher protection for data transfers outside India is not restricted by this section.\",\"source\":\"DPDP Act 2023, Section 16(2)\",\"weight\":2,\"source_clause_ids\":[\"G000575\"],\"checkable_test\":\"Check if the document acknowledges that higher protections for data transfers outside India may be provided by existing Indian laws.\",\"applicability\":\"Applies to all Data Fiduciaries.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures that existing Indian laws on data transfer protections remain applicable.\"},{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"The Central Government may notify certain Data Fiduciaries, including startups, that are exempt from specific data protection provisions.\",\"source\":\"DPDP Act 2023, Section 18(3)\",\"weight\":2,\"source_clause_ids\":[\"G000588\"],\"checkable_test\":\"Check if the document allows for the exemption of certain Data Fiduciaries, including startups, from specific data protection provisions.\",\"applicability\":\"Applies to all Data Fiduciaries.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This requirement allows for the exemption of certain entities from specific data protection obligations.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Grievance Redressal",
+      "requirement": "A Data Principal must exhaust the opportunity of redressing her grievance under this section before approaching the Board.",
+      "source": "DPDP Act 2023, Section 3",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000560"
+      ],
+      "checkable_test": "Check if the document provides a process for resolving grievances internally before allowing appeals to the Board.",
+      "applicability": "Applies to all Data Principals.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures that Data Principals follow internal grievance mechanisms before seeking external redress.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Principal Rights",
+      "requirement": "A Data Principal shall have the right to nominate any other individual to act on their behalf in the event of death or incapacity.",
+      "source": "DPDP Act 2023, Section 14(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000561"
+      ],
+      "checkable_test": "Check if the document allows for the nomination of a representative to act on behalf of the Data Principal in case of death or incapacity.",
+      "applicability": "Applies to all Data Principals.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures that Data Principals can designate a representative to manage their data rights in case of incapacitation.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Principal Rights",
+      "requirement": "The term 'incapacity' includes inability to exercise rights due to unsoundness of mind or infirmity of body.",
+      "source": "DPDP Act 2023, Section 14(2)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000563"
+      ],
+      "checkable_test": "Check if the document defines 'incapacity' to include mental or physical conditions that prevent the exercise of data rights.",
+      "applicability": "Applies to all Data Principals.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This requirement clarifies the definition of incapacity for the purpose of data rights.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Grievance Redressal",
+      "requirement": "A Data Principal must not register false or frivolous grievances or complaints with a Data Fiduciary or the Board.",
+      "source": "DPDP Act 2023, Section 14(d)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000567"
+      ],
+      "checkable_test": "Check if the document prohibits the registration of false or frivolous grievances or complaints.",
+      "applicability": "Applies to all Data Principals.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures that the grievance process is not abused by submitting false complaints.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Cross-Border Transfer",
+      "requirement": "The Central Government may restrict the transfer of personal data by a Data Fiduciary to countries outside India.",
+      "source": "DPDP Act 2023, Section 16(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000574"
+      ],
+      "checkable_test": "Check if the document provides for the possibility of government-imposed restrictions on cross-border data transfers.",
+      "applicability": "Applies to all Data Fiduciaries.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This requirement allows the government to impose restrictions on data transfers to foreign jurisdictions.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Cross-Border Transfer",
+      "requirement": "The applicability of Indian laws providing higher protection for data transfers outside India is not restricted by this section.",
+      "source": "DPDP Act 2023, Section 16(2)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000575"
+      ],
+      "checkable_test": "Check if the document acknowledges that higher protections for data transfers outside India may be provided by existing Indian laws.",
+      "applicability": "Applies to all Data Fiduciaries.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures that existing Indian laws on data transfer protections remain applicable.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "The Central Government may notify certain Data Fiduciaries, including startups, that are exempt from specific data protection provisions.",
+      "source": "DPDP Act 2023, Section 18(3)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000588"
+      ],
+      "checkable_test": "Check if the document allows for the exemption of certain Data Fiduciaries, including startups, from specific data protection provisions.",
+      "applicability": "Applies to all Data Fiduciaries.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This requirement allows for the exemption of certain entities from specific data protection obligations.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T11:17:03.627709+00:00",
+  "multi_mapped_records": []
+}

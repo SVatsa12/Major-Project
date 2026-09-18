@@ -1,0 +1,96 @@
+{
+  "batch_id": "8417e780acedabb2391cce6b",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001955",
+    "G001957",
+    "G001958",
+    "G001959",
+    "G001960",
+    "G001962",
+    "G001963",
+    "G001966"
+  ],
+  "raw_response": "[{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Intermediaries must not compound offences involving crimes against children or socio-economic harm.\",\"source\":\"IT Act 2000, Section 76(2) and 76(3)\",\"weight\":3,\"source_clause_ids\":[\"G001963\"],\"checkable_test\":\"Check if the platform's policies explicitly state that they will not compound offences against children or socio-economic harm.\",\"applicability\":\"Applicable to platforms that are intermediaries under the IT Act 2000.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is derived from the IT Act 2000, which prohibits compounding offences against children or socio-economic conditions.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Intermediaries must not compound offences where the accused has a prior conviction leading to enhanced punishment or a different kind of punishment.\",\"source\":\"IT Act 2000, Section 76(2) and 76(3)\",\"weight\":3,\"source_clause_ids\":[\"G001962\"],\"checkable_test\":\"Check if the platform's policies explicitly state that they will not compound offences where the accused has a prior conviction leading to enhanced punishment or a different kind of punishment.\",\"applicability\":\"Applicable to platforms that are intermediaries under the IT Act 2000.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is derived from the IT Act 2000, which prohibits compounding offences where the accused has a prior conviction leading to enhanced punishment or a different kind of punishment.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Intermediaries must not compound offences committed against a child below the age of 18 years or a woman.\",\"source\":\"IT Act 2000, Section 76(2) and 76(3)\",\"weight\":3,\"source_clause_ids\":[\"G001963\"],\"checkable_test\":\"Check if the platform's policies explicitly state that they will not compound offences committed against a child below the age of 18 years or a woman.\",\"applicability\":\"Applicable to platforms that are intermediaries under the IT Act 2000.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is derived from the IT Act 2000, which prohibits compounding offences committed against a child below the age of 18 years or a woman.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Intermediaries must not compound offences involving crimes against children or socio-economic harm.",
+      "source": "IT Act 2000, Section 76(2) and 76(3)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001963"
+      ],
+      "checkable_test": "Check if the platform's policies explicitly state that they will not compound offences against children or socio-economic harm.",
+      "applicability": "Applicable to platforms that are intermediaries under the IT Act 2000.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is derived from the IT Act 2000, which prohibits compounding offences against children or socio-economic conditions.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Intermediaries must not compound offences where the accused has a prior conviction leading to enhanced punishment or a different kind of punishment.",
+      "source": "IT Act 2000, Section 76(2) and 76(3)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001962"
+      ],
+      "checkable_test": "Check if the platform's policies explicitly state that they will not compound offences where the accused has a prior conviction leading to enhanced punishment or a different kind of punishment.",
+      "applicability": "Applicable to platforms that are intermediaries under the IT Act 2000.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is derived from the IT Act 2000, which prohibits compounding offences where the accused has a prior conviction leading to enhanced punishment or a different kind of punishment.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Intermediaries must not compound offences committed against a child below the age of 18 years or a woman.",
+      "source": "IT Act 2000, Section 76(2) and 76(3)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001963"
+      ],
+      "checkable_test": "Check if the platform's policies explicitly state that they will not compound offences committed against a child below the age of 18 years or a woman.",
+      "applicability": "Applicable to platforms that are intermediaries under the IT Act 2000.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is derived from the IT Act 2000, which prohibits compounding offences committed against a child below the age of 18 years or a woman.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T15:16:56.045424+00:00",
+  "multi_mapped_records": [
+    {
+      "batch_id": "8417e780acedabb2391cce6b",
+      "source_clause_id": "G001963",
+      "total_entries": 2,
+      "distinct_categories": 1,
+      "categories": [
+        "Intermediary/Platform Liability"
+      ],
+      "decision": "KEPT_FIRST_PER_CATEGORY_OR_DEDUPED_BY_EMBEDDING",
+      "kept_positions": [
+        0,
+        2
+      ],
+      "discarded_positions": [],
+      "entries_summary": [
+        {
+          "position": 0,
+          "category": "Intermediary/Platform Liability",
+          "requirement": "Intermediaries must not compound offences involving crimes against children or socio-economic harm."
+        },
+        {
+          "position": 2,
+          "category": "Intermediary/Platform Liability",
+          "requirement": "Intermediaries must not compound offences committed against a child below the age of 18 years or a woman."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,884 @@
+[
+  {
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "The Authority shall determine the tariff once in five years and may amend it from time to time during the said period of five years if considered appropriate and in public interest.",
+    "source": "AERA_ACT_2008, SECTION=POWERS AND FUNCTIONS OF THE AUTHORITY",
+    "weight": 3,
+    "source_clause_ids": [
+      "G000183"
+    ],
+    "checkable_test": "Check if the Authority determines tariffs every five years and has the power to amend them during the period.",
+    "applicability": "Applicable to major airports under the AERA Act 2008.",
+    "assessability": "2",
+    "citation_confidence": "high",
+    "notes": "This obligation relates to the Authority's responsibility to set and adjust tariffs in accordance with the Act.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G000183"
+    ],
+    "candidate_id": "TC-000263",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000263",
+    "source_acts": [
+      "AERA_ACT_2008"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "low_policy_checkability_signal"
+    ],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_APPLICABILITY",
+    "resolved_act": "AERA_ACT_2008",
+    "requirement_canonical_hash": "b002e6b6f490d0f5cfeccf5bc4397f9d6c84898fb8b8f719dfce394802e0476e",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Authority may appoint persons to inquire into the affairs of service providers and direct its officers to inspect their documents.",
+    "source": "AERA Act 2008, Section 14(1)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G000189"
+    ],
+    "checkable_test": "Whether the Authority has the power to appoint persons to inquire into service providers' affairs and direct inspections.",
+    "applicability": "Applicable to service providers subject to the AERA Act 2008.",
+    "assessability": "2",
+    "citation_confidence": "high",
+    "notes": "This clause outlines the Authority's investigative powers, which may be relevant to platform liability in regulatory contexts.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G000189"
+    ],
+    "candidate_id": "TC-000264",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000264",
+    "source_acts": [
+      "AERA_ACT_2008"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "low_policy_checkability_signal"
+    ],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_APPLICABILITY",
+    "resolved_act": "AERA_ACT_2008",
+    "requirement_canonical_hash": "93000574facc086a43ff8c631ad29cdb62d5e5901fb6a3cd13ef33ebfa57b62c",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Grievance Redressal",
+    "requirement": "An aggrieved party may file an appeal with the Appellate Tribunal within thirty days of receiving a direction, decision, or order from the Authority.",
+    "source": "AERA_ACT_2008, SECTION=22(2)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G000218"
+    ],
+    "checkable_test": "Verify the existence of a time-bound appeal mechanism within thirty days for appeals to the Appellate Tribunal.",
+    "applicability": "Applies to appeals by the Central Government, State Government, local authority, or aggrieved person.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This clause outlines the procedural requirement for filing an appeal within thirty days.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G000218"
+    ],
+    "candidate_id": "TC-000265",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000265",
+    "source_acts": [
+      "AERA_ACT_2008"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "low_policy_checkability_signal",
+      "possible_institutional_or_administrative_content"
+    ],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [
+      "appellate tribunal"
+    ],
+    "recommended_action": "REVIEW_APPLICABILITY",
+    "resolved_act": "AERA_ACT_2008",
+    "requirement_canonical_hash": "c14e6ee8420a726978492dbf3ffe80cc8236d0930a849b29e8015afd7641d84f",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Grievance Redressal",
+    "requirement": "The Appellate Tribunal must send a copy of every order made by it to the parties to the dispute or the appeal and to the Authority.",
+    "source": "AERA_ACT_2008, SECTION=22(5)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G000225"
+    ],
+    "checkable_test": "Verify that the Appellate Tribunal provides copies of its orders to all relevant parties and the Authority.",
+    "applicability": "Applies to all orders made by the Appellate Tribunal.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This clause mandates the dissemination of orders to all affected parties and the Authority.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G000225"
+    ],
+    "candidate_id": "TC-000266",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000266",
+    "source_acts": [
+      "AERA_ACT_2008"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "low_policy_checkability_signal",
+      "possible_institutional_or_administrative_content"
+    ],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [
+      "appellate tribunal"
+    ],
+    "recommended_action": "REVIEW_APPLICABILITY",
+    "resolved_act": "AERA_ACT_2008",
+    "requirement_canonical_hash": "bbb7eca63f235757f42c64677ca688633229a643a658c286e3f76ba7a421947e",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Grievance Redressal",
+    "requirement": "The Appellate Tribunal may entertain an appeal even after the expiry of the thirty-day period if there is sufficient cause for the delay.",
+    "source": "AERA_ACT_2008, SECTION=22(2)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G000222"
+    ],
+    "checkable_test": "Verify whether the Appellate Tribunal allows late appeals with sufficient cause.",
+    "applicability": "Applies to appeals filed after the thirty-day period.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This clause provides for an exception to the thirty-day appeal deadline under specific conditions.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G000222"
+    ],
+    "candidate_id": "TC-000267",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000267",
+    "source_acts": [
+      "AERA_ACT_2008"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "possible_institutional_or_administrative_content"
+    ],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "use"
+    ],
+    "administrative_signal_terms": [
+      "appellate tribunal"
+    ],
+    "recommended_action": "REVIEW_SCOPE",
+    "resolved_act": "AERA_ACT_2008",
+    "requirement_canonical_hash": "438e6d97c5f8237cb0d89b63c6eaf98805235b23b1c1e27e14fd5a90fd0bed3f",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Appellate Tribunal must record its reasons in writing for not disposing of an application or appeal within ninety days.",
+    "source": "AERA_ACT_2008, Section 19",
+    "weight": 2,
+    "source_clause_ids": [
+      "G000227"
+    ],
+    "checkable_test": "Check if the Appellate Tribunal provides written reasons for delays in disposing of applications or appeals beyond ninety days.",
+    "applicability": "Applicable to cases where the Appellate Tribunal fails to dispose of an application or appeal within ninety days.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This requirement is directly tied to the procedural obligation of the Appellate Tribunal to provide written reasons for delays.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G000227"
+    ],
+    "candidate_id": "TC-000268",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000268",
+    "source_acts": [
+      "AERA_ACT_2008"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "low_policy_checkability_signal",
+      "possible_institutional_or_administrative_content"
+    ],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [
+      "appellate tribunal"
+    ],
+    "recommended_action": "REVIEW_APPLICABILITY",
+    "resolved_act": "AERA_ACT_2008",
+    "requirement_canonical_hash": "ae94dc37ec0c5867bb8c5de36d27f0d327f061f7318364ecfd31a437a82eebcf",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "The Appellate Tribunal must consist of a Chairperson and not more than two Members appointed by the Central Government.",
+    "source": "AERA_ACT_2008, Section 19(1)",
+    "weight": 3,
+    "source_clause_ids": [
+      "G000229"
+    ],
+    "checkable_test": "Verify that the Appellate Tribunal is composed of a Chairperson and not more than two Members appointed by the Central Government.",
+    "applicability": "Applicable to the composition of the Appellate Tribunal.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This requirement defines the structure and appointment process of the Appellate Tribunal.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G000229"
+    ],
+    "candidate_id": "TC-000269",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000269",
+    "source_acts": [
+      "AERA_ACT_2008"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "low_policy_checkability_signal",
+      "possible_institutional_or_administrative_content"
+    ],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [
+      "appellate tribunal",
+      "chairperson"
+    ],
+    "recommended_action": "REVIEW_APPLICABILITY",
+    "resolved_act": "AERA_ACT_2008",
+    "requirement_canonical_hash": "46d9cca4ed712c0c656868b53849042b4c552c17b2ef2b7adda1a74ea4957c13",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "The Chairperson or Members of the Appellate Tribunal must be appointed in consultation with the Chief Justice of India or his nominee.",
+    "source": "AERA_ACT_2008, Section 19(2)",
+    "weight": 3,
+    "source_clause_ids": [
+      "G000232"
+    ],
+    "checkable_test": "Confirm that the Central Government consults the Chief Justice of India or his nominee when appointing the Chairperson or Members of the Appellate Tribunal.",
+    "applicability": "Applicable to the appointment process of the Appellate Tribunal.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This requirement outlines the consultation process for appointments.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G000232"
+    ],
+    "candidate_id": "TC-000270",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000270",
+    "source_acts": [
+      "AERA_ACT_2008"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "low_policy_checkability_signal",
+      "possible_institutional_or_administrative_content"
+    ],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [
+      "appellate tribunal",
+      "chairperson"
+    ],
+    "recommended_action": "REVIEW_APPLICABILITY",
+    "resolved_act": "AERA_ACT_2008",
+    "requirement_canonical_hash": "71700de778c1a2ca7691a93edab6f059588bf7f0c26c5b2c40c603dfce3c63a9",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "The Chairperson or Members of the Appellate Tribunal must meet specific qualifications for appointment.",
+    "source": "AERA_ACT_2008, Section 20",
+    "weight": 3,
+    "source_clause_ids": [
+      "G000233"
+    ],
+    "checkable_test": "Verify that the qualifications for appointment as Chairperson or Member of the Appellate Tribunal are met.",
+    "applicability": "Applicable to the appointment of the Appellate Tribunal.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This requirement outlines the qualifications for appointment to the Appellate Tribunal.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G000233"
+    ],
+    "candidate_id": "TC-000271",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000271",
+    "source_acts": [
+      "AERA_ACT_2008"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "low_policy_checkability_signal",
+      "possible_institutional_or_administrative_content"
+    ],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [
+      "appellate tribunal",
+      "chairperson"
+    ],
+    "recommended_action": "REVIEW_APPLICABILITY",
+    "resolved_act": "AERA_ACT_2008",
+    "requirement_canonical_hash": "68a0c079f067b7fbba16ae449fe6487a3171d4f0941ebb5901350901650b54f4",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "The Chairperson of the Appellate Tribunal must retire upon reaching the age of seventy years.",
+    "source": "AERA_ACT_2008, Section 20(a)",
+    "weight": 3,
+    "source_clause_ids": [
+      "G000237"
+    ],
+    "checkable_test": "Check if the Chairperson of the Appellate Tribunal retires upon reaching the age of seventy years.",
+    "applicability": "Applicable to the retirement age of the Chairperson of the Appellate Tribunal.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This requirement sets the retirement age for the Chairperson of the Appellate Tribunal.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G000237"
+    ],
+    "candidate_id": "TC-000272",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000272",
+    "source_acts": [
+      "AERA_ACT_2008"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "low_policy_checkability_signal",
+      "possible_institutional_or_administrative_content"
+    ],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [
+      "appellate tribunal",
+      "chairperson"
+    ],
+    "recommended_action": "REVIEW_APPLICABILITY",
+    "resolved_act": "AERA_ACT_2008",
+    "requirement_canonical_hash": "947e45a7b1569cdef2fb5477ee275300c1982a8aa351a6498dc398f1f2b3e5b6",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "Other Members of the Appellate Tribunal must retire upon reaching the age of sixty-five years.",
+    "source": "AERA_ACT_2008, Section 20(b)",
+    "weight": 3,
+    "source_clause_ids": [
+      "G000238"
+    ],
+    "checkable_test": "Verify that other Members of the Appellate Tribunal retire upon reaching the age of sixty-five years.",
+    "applicability": "Applicable to the retirement age of other Members of the Appellate Tribunal.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This requirement sets the retirement age for other Members of the Appellate Tribunal.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G000238"
+    ],
+    "candidate_id": "TC-000273",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000273",
+    "source_acts": [
+      "AERA_ACT_2008"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "low_policy_checkability_signal",
+      "possible_institutional_or_administrative_content"
+    ],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [
+      "appellate tribunal"
+    ],
+    "recommended_action": "REVIEW_APPLICABILITY",
+    "resolved_act": "AERA_ACT_2008",
+    "requirement_canonical_hash": "7528c3d6b23dc81448a03e98080961fc7083465e16c9b2466972be6e23b53e5c",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "The salary, allowances, and terms of service of the Chairperson or Members of the Appellate Tribunal cannot be varied to their disadvantage after appointment.",
+    "source": "AERA_ACT_2008, Section 20",
+    "weight": 3,
+    "source_clause_ids": [
+      "G000240"
+    ],
+    "checkable_test": "Confirm that the salary, allowances, and terms of service of the Chairperson or Members of the Appellate Tribunal cannot be varied to their disadvantage after appointment.",
+    "applicability": "Applicable to the terms of service of the Appellate Tribunal members.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This requirement ensures that the terms of service of the Appellate Tribunal members are protected after appointment.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G000240"
+    ],
+    "candidate_id": "TC-000274",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000274",
+    "source_acts": [
+      "AERA_ACT_2008"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "low_policy_checkability_signal",
+      "possible_institutional_or_administrative_content"
+    ],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [
+      "appellate tribunal",
+      "chairperson"
+    ],
+    "recommended_action": "REVIEW_APPLICABILITY",
+    "resolved_act": "AERA_ACT_2008",
+    "requirement_canonical_hash": "fe9f7b49b0b31501f6f14ad5a5904cd24493da0ef42ec21e7cab5d64276924ab",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Grievance Redressal",
+    "requirement": "The Authority must ensure that all decisions are fully documented and explained.",
+    "source": "AERA_ACT_2008, SECTION=POWERS AND FUNCTIONS OF THE AUTHORITY (c)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G000188"
+    ],
+    "checkable_test": "Check if all decisions of the Authority are fully documented and explained in the governance documents.",
+    "applicability": "Applicable to all decisions made by the Authority.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This obligation is directly tied to the transparency and accountability of the Authority's decision-making process.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G000188"
+    ],
+    "candidate_id": "TC-000521",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000521",
+    "source_acts": [
+      "AERA_ACT_2008"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "low_policy_checkability_signal"
+    ],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_APPLICABILITY",
+    "resolved_act": "AERA_ACT_2008",
+    "requirement_canonical_hash": "493bef2f159aa14f33c607f808673ae972c3466c6514deeacffbe1d04f248965",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Grievance Redressal",
+    "requirement": "The Authority Appellate Tribunal must adjudicate disputes between service providers and consumers.",
+    "source": "AERA_ACT_2008, SECTION=Authority Appellate Tribunal to— (a) and (ii)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G000205",
+      "G000207"
+    ],
+    "checkable_test": "Verify that the Authority Appellate Tribunal is responsible for adjudicating disputes between service providers and consumers.",
+    "applicability": "Applicable to disputes involving service providers and consumers.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This obligation outlines the role of the Authority Appellate Tribunal in resolving disputes.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G000205",
+      "G000207"
+    ],
+    "candidate_id": "TC-000522",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000522",
+    "source_acts": [
+      "AERA_ACT_2008"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "low_policy_checkability_signal",
+      "possible_institutional_or_administrative_content"
+    ],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [
+      "appellate tribunal"
+    ],
+    "recommended_action": "REVIEW_APPLICABILITY",
+    "resolved_act": "AERA_ACT_2008",
+    "requirement_canonical_hash": "e38e654f2ceee596351196925e8d2919ec9df90e9b23a33730c5b1dc69d0b041",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Grievance Redressal",
+    "requirement": "The Authority Appellate Tribunal must hear and dispose of appeals against decisions of the Authority.",
+    "source": "AERA_ACT_2008, SECTION=Authority Appellate Tribunal to— (b)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G000215"
+    ],
+    "checkable_test": "Check if the Authority Appellate Tribunal is responsible for hearing and disposing of appeals against Authority decisions.",
+    "applicability": "Applicable to all appeals against Authority decisions.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This obligation ensures that there is a mechanism for appealing Authority decisions.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G000215"
+    ],
+    "candidate_id": "TC-000523",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000523",
+    "source_acts": [
+      "AERA_ACT_2008"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "low_policy_checkability_signal",
+      "possible_institutional_or_administrative_content"
+    ],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [
+      "appellate tribunal"
+    ],
+    "recommended_action": "REVIEW_APPLICABILITY",
+    "resolved_act": "AERA_ACT_2008",
+    "requirement_canonical_hash": "3c41c17bcbbca2904aad90a06965e9fc109ae2a6783cd71c539b03b00ee091a8",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Grievance Redressal",
+    "requirement": "The Disputes Redressal Forum or Consumer Disputes Redressal Commission must dispose of applications or appeals within ninety days from the date of receipt.",
+    "source": "AERA_ACT_2008, Section 6(6)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G000226"
+    ],
+    "checkable_test": "Check if the timeline for resolving disputes is explicitly set to ninety days.",
+    "applicability": "Applies to all disputes handled by the Disputes Redressal Forum or Consumer Disputes Redressal Commission.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This clause establishes a clear time limit for resolving disputes, which is directly checkable.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G000226"
+    ],
+    "candidate_id": "TC-000524",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000524",
+    "source_acts": [
+      "AERA_ACT_2008"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "low_policy_checkability_signal"
+    ],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_APPLICABILITY",
+    "resolved_act": "AERA_ACT_2008",
+    "requirement_canonical_hash": "081980441d15df1bcbcd80acebf3270b4a351bd27114b1adc959cedfa853e26d",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "The Chairperson and Members of the Appellate Tribunal must have relevant experience in aviation, economics, or law, or have served in equivalent government positions for at least two years.",
+    "source": "AERA_ACT_2008, Section 6(5)(b)",
+    "weight": 3,
+    "source_clause_ids": [
+      "G000235"
+    ],
+    "checkable_test": "Verify if the qualifications for the Chairperson or Members include relevant experience or government service.",
+    "applicability": "Applies to the appointment of the Chairperson and Members of the Appellate Tribunal.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This clause sets specific qualifications for the Appellate Tribunal members, which is directly checkable.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G000235"
+    ],
+    "candidate_id": "TC-000525",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000525",
+    "source_acts": [
+      "AERA_ACT_2008"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "low_policy_checkability_signal",
+      "possible_institutional_or_administrative_content"
+    ],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [
+      "appellate tribunal",
+      "chairperson"
+    ],
+    "recommended_action": "REVIEW_APPLICABILITY",
+    "resolved_act": "AERA_ACT_2008",
+    "requirement_canonical_hash": "56947860fafb457727091611113acd24f5ba9857287ee1ac1249a38a6480788f",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "The Chairperson and Members of the Appellate Tribunal may not hold office after they have attained the age of sixty-five.",
+    "source": "AERA_ACT_2008, Section 6(21) and 6(23)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G000239",
+      "G000242"
+    ],
+    "checkable_test": "Check if the age limit for the Chairperson or Members is explicitly set to sixty-five.",
+    "applicability": "Applies to the term of office for the Chairperson and Members of the Appellate Tribunal.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This clause establishes an age limit for the tenure of the Appellate Tribunal members, which is directly checkable.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G000239",
+      "G000242"
+    ],
+    "candidate_id": "TC-000526",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000526",
+    "source_acts": [
+      "AERA_ACT_2008"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "low_policy_checkability_signal",
+      "possible_institutional_or_administrative_content"
+    ],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [
+      "appellate tribunal",
+      "chairperson"
+    ],
+    "recommended_action": "REVIEW_APPLICABILITY",
+    "resolved_act": "AERA_ACT_2008",
+    "requirement_canonical_hash": "1753370870397ce8a04d6a4d693b159182f28da873333240d77e12e62502f3ed",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "The Appellate Tribunal must ensure that the salary and allowances of its Chairperson and Members are prescribed by the appropriate authority.",
+    "source": "AERA_ACT_2008, Section 6(22)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G000239"
+    ],
+    "checkable_test": "Verify if the salary and allowances for the Appellate Tribunal members are subject to prescription by an authority.",
+    "applicability": "Applies to the terms and conditions of service for the Appellate Tribunal members.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This clause mandates that the salary and allowances for the Appellate Tribunal members are prescribed by an authority, which is directly checkable.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G000239"
+    ],
+    "candidate_id": "TC-000527",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000527",
+    "source_acts": [
+      "AERA_ACT_2008"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "low_policy_checkability_signal",
+      "possible_institutional_or_administrative_content"
+    ],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [
+      "appellate tribunal",
+      "chairperson"
+    ],
+    "recommended_action": "REVIEW_APPLICABILITY",
+    "resolved_act": "AERA_ACT_2008",
+    "requirement_canonical_hash": "732200c24314749a9d8c4a37006b629bb387e4aaa50f936e7610179559da5771",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "The Appellate Tribunal must ensure that no Member is appointed who has abused their position to the detriment of public interest.",
+    "source": "AERA_ACT_2008, Section 6(23)(e)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G000249"
+    ],
+    "checkable_test": "Check if the appointment criteria include disqualification for abuse of position.",
+    "applicability": "Applies to the appointment of Members of the Appellate Tribunal.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This clause prohibits the appointment of individuals who have abused their position, which is directly checkable.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G000249"
+    ],
+    "candidate_id": "TC-000528",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000528",
+    "source_acts": [
+      "AERA_ACT_2008"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "possible_institutional_or_administrative_content"
+    ],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "use"
+    ],
+    "administrative_signal_terms": [
+      "appellate tribunal"
+    ],
+    "recommended_action": "REVIEW_SCOPE",
+    "resolved_act": "AERA_ACT_2008",
+    "requirement_canonical_hash": "0688e8773e2ac8c8c8e9cc56f1324a2255a37a14f8c57d36849a39f51d67a647",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  }
+]

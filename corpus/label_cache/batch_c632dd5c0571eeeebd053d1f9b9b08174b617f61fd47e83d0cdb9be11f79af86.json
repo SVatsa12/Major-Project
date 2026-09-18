@@ -1,0 +1,53 @@
+{
+  "cache_key": "c632dd5c0571eeeebd053d1f9b9b08174b617f61fd47e83d0cdb9be11f79af86",
+  "created_at_utc": "2026-09-16T13:46:05.793143+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S001573",
+    "S001574",
+    "S001575",
+    "S001576",
+    "S001577",
+    "S001578"
+  ],
+  "labels": [
+    {
+      "clause_id": "S001573",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Compliant",
+      "justification": "The clause describes security measures like encryption and tokenization to protect personal data."
+    },
+    {
+      "clause_id": "S001574",
+      "best_match_taxonomy_id": "DPDP_RUL-0099",
+      "verdict": "Compliant",
+      "justification": "The clause ensures data is deleted upon request, aligning with data erasure requirements."
+    },
+    {
+      "clause_id": "S001575",
+      "best_match_taxonomy_id": "DPDP_RUL-0099",
+      "verdict": "Compliant",
+      "justification": "The clause allows data principals to request deletion of their personal data."
+    },
+    {
+      "clause_id": "S001576",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S001577",
+      "best_match_taxonomy_id": "DPDP_ACT-0055",
+      "verdict": "Partially Compliant",
+      "justification": "The clause mentions cross-border data transfer but lacks specific details on compliance with Central Government requirements."
+    },
+    {
+      "clause_id": "S001578",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    }
+  ],
+  "status": "SUCCESS"
+}

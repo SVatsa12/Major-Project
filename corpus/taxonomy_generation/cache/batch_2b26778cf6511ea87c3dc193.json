@@ -1,0 +1,38 @@
+{
+  "batch_id": "2b26778cf6511ea87c3dc193",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001762",
+    "G001764",
+    "G001765",
+    "G001774",
+    "G001776",
+    "G001778",
+    "G001779",
+    "G001780"
+  ],
+  "raw_response": "[{\"category\":\"Security Safeguards\",\"requirement\":\"A subscriber must promptly notify the Certifying Authority if the private key corresponding to their Digital Signature Certificate has been compromised.\",\"source\":\"IT Act 2000, Section 43(2)\",\"weight\":3,\"source_clause_ids\":[\"G001762\"],\"checkable_test\":\"Check if the subscriber has a process in place to notify the Certifying Authority of a compromised private key.\",\"applicability\":\"Applies to subscribers of Digital Signature Certificates.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This obligation is directly tied to the security of digital signatures and the responsibility of the subscriber to report compromised keys.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Security Safeguards",
+      "requirement": "A subscriber must promptly notify the Certifying Authority if the private key corresponding to their Digital Signature Certificate has been compromised.",
+      "source": "IT Act 2000, Section 43(2)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001762"
+      ],
+      "checkable_test": "Check if the subscriber has a process in place to notify the Certifying Authority of a compromised private key.",
+      "applicability": "Applies to subscribers of Digital Signature Certificates.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to the security of digital signatures and the responsibility of the subscriber to report compromised keys.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T14:42:20.939514+00:00",
+  "multi_mapped_records": []
+}

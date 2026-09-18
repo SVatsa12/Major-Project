@@ -1,0 +1,53 @@
+{
+  "cache_key": "d827692e0c1f77731100c557b6381a013265ca2f99b40fdccf0bb9b0fae40f83",
+  "created_at_utc": "2026-09-16T12:03:47.712769+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S000349",
+    "S000350",
+    "S000351",
+    "S000352",
+    "S000353",
+    "S000354"
+  ],
+  "labels": [
+    {
+      "clause_id": "S000349",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "No listed requirement is meaningfully addressed."
+    },
+    {
+      "clause_id": "S000350",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "No listed requirement is meaningfully addressed."
+    },
+    {
+      "clause_id": "S000351",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "No listed requirement is meaningfully addressed."
+    },
+    {
+      "clause_id": "S000352",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Compliant",
+      "justification": "The clause addresses security measures like encryption and protection of personal data."
+    },
+    {
+      "clause_id": "S000353",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Compliant",
+      "justification": "The clause addresses security measures to protect against unauthorized access and disclosure of personal data."
+    },
+    {
+      "clause_id": "S000354",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Compliant",
+      "justification": "The clause addresses security features to protect personal data and account security."
+    }
+  ],
+  "status": "SUCCESS"
+}

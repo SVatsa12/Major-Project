@@ -1,0 +1,143 @@
+{
+  "batch_id": "05c4c62939753d7b68316b57",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001706",
+    "G001710",
+    "G001711",
+    "G001713",
+    "G001718",
+    "G001719",
+    "G001737",
+    "G001738"
+  ],
+  "raw_response": "[{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"Certifying Authority must communicate suspension of a Digital Signature Certificate to the subscriber.\",\"source\":\"IT Act 2000, Section 37(3)\",\"weight\":2,\"source_clause_ids\":[\"G001737\"],\"checkable_test\":\"Verify that the Certifying Authority notifies the subscriber of the suspension of their Digital Signature Certificate.\",\"applicability\":\"Applicable to all Certifying Authorities issuing Digital Signature Certificates.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation is directly tied to the communication of certificate suspension.\"},{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"Certifying Authority may revoke a Digital Signature Certificate under specified conditions.\",\"source\":\"IT Act 2000, Section 38(1)\",\"weight\":2,\"source_clause_ids\":[\"G001738\"],\"checkable_test\":\"Verify that the Certifying Authority has procedures in place to revoke Digital Signature Certificates as per legal requirements.\",\"applicability\":\"Applicable to all Certifying Authorities issuing Digital Signature Certificates.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation outlines the authority of the Certifying Authority to revoke certificates.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Certifying Authority must not reject an application unless the applicant is given a reasonable opportunity to show cause against the proposed rejection.\",\"source\":\"IT Act 2000, Section 4\",\"weight\":2,\"source_clause_ids\":[\"G001718\"],\"checkable_test\":\"Verify that the Certifying Authority provides applicants with a reasonable opportunity to present their case before rejecting an application.\",\"applicability\":\"Applicable to all Certifying Authorities issuing Digital Signature Certificates.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation ensures due process in the application review process.\"},{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"Certifying Authority must issue a Digital Signature Certificate upon application, subject to prescribed conditions.\",\"source\":\"IT Act 2000, Section 35(1)\",\"weight\":2,\"source_clause_ids\":[\"G001710\"],\"checkable_test\":\"Verify that the Certifying Authority has procedures in place to issue Digital Signature Certificates upon valid application.\",\"applicability\":\"Applicable to all Certifying Authorities issuing Digital Signature Certificates.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation outlines the duty of the Certifying Authority to issue certificates upon application.\"},{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"Certifying Authority must charge a fee not exceeding twenty-five thousand rupees for the issuance of a Digital Signature Certificate.\",\"source\":\"IT Act 2000, Section 35(2)\",\"weight\":2,\"source_clause_ids\":[\"G001711\"],\"checkable_test\":\"Verify that the Certifying Authority charges a fee not exceeding twenty-five thousand rupees for the issuance of a Digital Signature Certificate.\",\"applicability\":\"Applicable to all Certifying Authorities issuing Digital Signature Certificates.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation sets the maximum fee for the issuance of a Digital Signature Certificate.\"},{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"Certifying Authority must issue a certification practice statement or a statement containing specified particulars with the application for a Digital Signature Certificate.\",\"source\":\"IT Act 2000, Section 35(3)\",\"weight\":2,\"source_clause_ids\":[\"G001713\"],\"checkable_test\":\"Verify that the Certifying Authority requires applicants to provide a certification practice statement or a statement containing specified particulars.\",\"applicability\":\"Applicable to all Certifying Authorities issuing Digital Signature Certificates.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation mandates the submission of specific documentation with the application for a Digital Signature Certificate.\"},{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"Certifying Authority must certify that the Digital Signature Certificate is issued in accordance with prescribed conditions.\",\"source\":\"IT Act 2000, Section 36\",\"weight\":2,\"source_clause_ids\":[\"G001719\"],\"checkable_test\":\"Verify that the Certifying Authority certifies that the Digital Signature Certificate is issued in accordance with prescribed conditions.\",\"applicability\":\"Applicable to all Certifying Authorities issuing Digital Signature Certificates.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation ensures that the issuance of the certificate is in compliance with legal requirements.\"},{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"Certifying Authority must take action if any event occurs that may materially and adversely affect the integrity of its computer system or the conditions subject to which a Digital Signature Certificate was granted.\",\"source\":\"IT Act 2000, Section 2(1)\",\"weight\":2,\"source_clause_ids\":[\"G001706\"],\"checkable_test\":\"Verify that the Certifying Authority has procedures in place to address events that may adversely affect the integrity of its computer system or the conditions of a Digital Signature Certificate.\",\"applicability\":\"Applicable to all Certifying Authorities issuing Digital Signature Certificates.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation requires the Certifying Authority to act in the event of system integrity or certificate condition issues.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "Certifying Authority must communicate suspension of a Digital Signature Certificate to the subscriber.",
+      "source": "IT Act 2000, Section 37(3)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001737"
+      ],
+      "checkable_test": "Verify that the Certifying Authority notifies the subscriber of the suspension of their Digital Signature Certificate.",
+      "applicability": "Applicable to all Certifying Authorities issuing Digital Signature Certificates.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to the communication of certificate suspension.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "Certifying Authority may revoke a Digital Signature Certificate under specified conditions.",
+      "source": "IT Act 2000, Section 38(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001738"
+      ],
+      "checkable_test": "Verify that the Certifying Authority has procedures in place to revoke Digital Signature Certificates as per legal requirements.",
+      "applicability": "Applicable to all Certifying Authorities issuing Digital Signature Certificates.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation outlines the authority of the Certifying Authority to revoke certificates.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Certifying Authority must not reject an application unless the applicant is given a reasonable opportunity to show cause against the proposed rejection.",
+      "source": "IT Act 2000, Section 4",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001718"
+      ],
+      "checkable_test": "Verify that the Certifying Authority provides applicants with a reasonable opportunity to present their case before rejecting an application.",
+      "applicability": "Applicable to all Certifying Authorities issuing Digital Signature Certificates.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation ensures due process in the application review process.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "Certifying Authority must issue a Digital Signature Certificate upon application, subject to prescribed conditions.",
+      "source": "IT Act 2000, Section 35(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001710"
+      ],
+      "checkable_test": "Verify that the Certifying Authority has procedures in place to issue Digital Signature Certificates upon valid application.",
+      "applicability": "Applicable to all Certifying Authorities issuing Digital Signature Certificates.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation outlines the duty of the Certifying Authority to issue certificates upon application.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "Certifying Authority must charge a fee not exceeding twenty-five thousand rupees for the issuance of a Digital Signature Certificate.",
+      "source": "IT Act 2000, Section 35(2)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001711"
+      ],
+      "checkable_test": "Verify that the Certifying Authority charges a fee not exceeding twenty-five thousand rupees for the issuance of a Digital Signature Certificate.",
+      "applicability": "Applicable to all Certifying Authorities issuing Digital Signature Certificates.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation sets the maximum fee for the issuance of a Digital Signature Certificate.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "Certifying Authority must issue a certification practice statement or a statement containing specified particulars with the application for a Digital Signature Certificate.",
+      "source": "IT Act 2000, Section 35(3)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001713"
+      ],
+      "checkable_test": "Verify that the Certifying Authority requires applicants to provide a certification practice statement or a statement containing specified particulars.",
+      "applicability": "Applicable to all Certifying Authorities issuing Digital Signature Certificates.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation mandates the submission of specific documentation with the application for a Digital Signature Certificate.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "Certifying Authority must certify that the Digital Signature Certificate is issued in accordance with prescribed conditions.",
+      "source": "IT Act 2000, Section 36",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001719"
+      ],
+      "checkable_test": "Verify that the Certifying Authority certifies that the Digital Signature Certificate is issued in accordance with prescribed conditions.",
+      "applicability": "Applicable to all Certifying Authorities issuing Digital Signature Certificates.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation ensures that the issuance of the certificate is in compliance with legal requirements.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "Certifying Authority must take action if any event occurs that may materially and adversely affect the integrity of its computer system or the conditions subject to which a Digital Signature Certificate was granted.",
+      "source": "IT Act 2000, Section 2(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001706"
+      ],
+      "checkable_test": "Verify that the Certifying Authority has procedures in place to address events that may adversely affect the integrity of its computer system or the conditions of a Digital Signature Certificate.",
+      "applicability": "Applicable to all Certifying Authorities issuing Digital Signature Certificates.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation requires the Certifying Authority to act in the event of system integrity or certificate condition issues.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T14:39:51.442218+00:00",
+  "multi_mapped_records": []
+}

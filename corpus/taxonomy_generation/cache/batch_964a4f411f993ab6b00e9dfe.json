@@ -1,0 +1,128 @@
+{
+  "batch_id": "964a4f411f993ab6b00e9dfe",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G000724",
+    "G000735",
+    "G000738",
+    "G000740",
+    "G000743",
+    "G000745",
+    "G000748",
+    "G000751"
+  ],
+  "raw_response": "[{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Data Principal must specify the time period for the specified purpose to be deemed as no longer being served.\",\"source\":\"DPDP Act 2023, Section 8(8)\",\"weight\":3,\"source_clause_ids\":[\"G000724\"],\"checkable_test\":\"Check if the time period for the purpose is specified in the document.\",\"applicability\":\"Applies to data fiduciaries handling personal data.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation relates to the duration of data processing for a specific purpose.\"},{\"category\":\"Grievance Redressal\",\"requirement\":\"The Data Principal must nominate any other individual as per the specified manner.\",\"source\":\"DPDP Act 2023, Section 14(1)\",\"weight\":2,\"source_clause_ids\":[\"G000738\"],\"checkable_test\":\"Verify if the document outlines the manner of nomination of an individual by the Data Principal.\",\"applicability\":\"Applies to data fiduciaries handling personal data.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is related to the process of nominating an individual by the Data Principal.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Chairperson and other Members of the Board must be appointed in the manner specified.\",\"source\":\"DPDP Act 2023, Section 19(2)\",\"weight\":2,\"source_clause_ids\":[\"G000740\"],\"checkable_test\":\"Check if the document specifies the manner of appointment of the Chairperson and other Members of the Board.\",\"applicability\":\"Applies to data fiduciaries handling personal data.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation relates to the appointment process of the Board members.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The terms and conditions of appointment and service of officers and employees of the Board must be specified.\",\"source\":\"DPDP Act 2023, Section 24\",\"weight\":2,\"source_clause_ids\":[\"G000743\"],\"checkable_test\":\"Verify if the document outlines the terms and conditions of appointment and service of officers and employees of the Board.\",\"applicability\":\"Applies to data fiduciaries handling personal data.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is related to the appointment and service terms of the Board officers and employees.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The document must specify the other matters under clause (d) of sub-section (7) of section 28.\",\"source\":\"DPDP Act 2023, Section 28(7)(d)\",\"weight\":2,\"source_clause_ids\":[\"G000745\"],\"checkable_test\":\"Check if the document specifies the other matters under clause (d) of sub-section (7) of section 28.\",\"applicability\":\"Applies to data fiduciaries handling personal data.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation relates to the specification of other matters under section 28.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The document must specify any other matter which is to be or may be prescribed or in respect of which provision is to be, or may be, made by rules.\",\"source\":\"DPDP Act 2023, Section 28(7)(z)\",\"weight\":2,\"source_clause_ids\":[\"G000748\"],\"checkable_test\":\"Verify if the document specifies any other matter which is to be or may be prescribed or in respect of which provision is to be, or may be, made by rules.\",\"applicability\":\"Applies to data fiduciaries handling personal data.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is related to the specification of other matters under section 28.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Any amendment notified under sub-section (1) shall have effect as if enacted in this Act and shall come into force on the date of the notification.\",\"source\":\"DPDP Act 2023, Section 28(1)\",\"weight\":2,\"source_clause_ids\":[\"G000751\"],\"checkable_test\":\"Check if the document specifies that any amendment notified under sub-section (1) shall have effect as if enacted in this Act and shall come into force on the date of the notification.\",\"applicability\":\"Applies to data fiduciaries handling personal data.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation relates to the effect and implementation of amendments under section 28.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Data Principal must specify the time period for the specified purpose to be deemed as no longer being served.",
+      "source": "DPDP Act 2023, Section 8(8)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000724"
+      ],
+      "checkable_test": "Check if the time period for the purpose is specified in the document.",
+      "applicability": "Applies to data fiduciaries handling personal data.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation relates to the duration of data processing for a specific purpose.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Grievance Redressal",
+      "requirement": "The Data Principal must nominate any other individual as per the specified manner.",
+      "source": "DPDP Act 2023, Section 14(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000738"
+      ],
+      "checkable_test": "Verify if the document outlines the manner of nomination of an individual by the Data Principal.",
+      "applicability": "Applies to data fiduciaries handling personal data.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is related to the process of nominating an individual by the Data Principal.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Chairperson and other Members of the Board must be appointed in the manner specified.",
+      "source": "DPDP Act 2023, Section 19(2)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000740"
+      ],
+      "checkable_test": "Check if the document specifies the manner of appointment of the Chairperson and other Members of the Board.",
+      "applicability": "Applies to data fiduciaries handling personal data.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation relates to the appointment process of the Board members.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The terms and conditions of appointment and service of officers and employees of the Board must be specified.",
+      "source": "DPDP Act 2023, Section 24",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000743"
+      ],
+      "checkable_test": "Verify if the document outlines the terms and conditions of appointment and service of officers and employees of the Board.",
+      "applicability": "Applies to data fiduciaries handling personal data.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is related to the appointment and service terms of the Board officers and employees.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The document must specify the other matters under clause (d) of sub-section (7) of section 28.",
+      "source": "DPDP Act 2023, Section 28(7)(d)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000745"
+      ],
+      "checkable_test": "Check if the document specifies the other matters under clause (d) of sub-section (7) of section 28.",
+      "applicability": "Applies to data fiduciaries handling personal data.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation relates to the specification of other matters under section 28.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The document must specify any other matter which is to be or may be prescribed or in respect of which provision is to be, or may be, made by rules.",
+      "source": "DPDP Act 2023, Section 28(7)(z)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000748"
+      ],
+      "checkable_test": "Verify if the document specifies any other matter which is to be or may be prescribed or in respect of which provision is to be, or may be, made by rules.",
+      "applicability": "Applies to data fiduciaries handling personal data.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is related to the specification of other matters under section 28.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Any amendment notified under sub-section (1) shall have effect as if enacted in this Act and shall come into force on the date of the notification.",
+      "source": "DPDP Act 2023, Section 28(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000751"
+      ],
+      "checkable_test": "Check if the document specifies that any amendment notified under sub-section (1) shall have effect as if enacted in this Act and shall come into force on the date of the notification.",
+      "applicability": "Applies to data fiduciaries handling personal data.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation relates to the effect and implementation of amendments under section 28.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T15:40:32.543029+00:00",
+  "multi_mapped_records": []
+}

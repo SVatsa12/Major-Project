@@ -1,0 +1,68 @@
+{
+  "batch_id": "c003d610cc8931e61d0ac9c9",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001512",
+    "G001514",
+    "G001515",
+    "G001518",
+    "G001522",
+    "G001530",
+    "G001531",
+    "G001539"
+  ],
+  "raw_response": "[{\"category\":\"Security Safeguards\",\"requirement\":\"A system must provide a reasonable level of reliability and correct operation.\",\"source\":\"IT Act 2000, Section 8(1)\",\"weight\":2,\"source_clause_ids\":[\"G001514\"],\"checkable_test\":\"Verify if the system provides a reasonable level of reliability and correct operation as per the regulations.\",\"applicability\":\"Applicable to systems under the IT Act 2000.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is directly tied to the definition of a 'secure system' under the IT Act 2000.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"A system must be reasonably suited to performing the intended functions.\",\"source\":\"IT Act 2000, Section 8(1)\",\"weight\":2,\"source_clause_ids\":[\"G001515\"],\"checkable_test\":\"Verify if the system is reasonably suited to performing the intended functions as per the regulations.\",\"applicability\":\"Applicable to systems under the IT Act 2000.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is directly tied to the definition of a 'secure system' under the IT Act 2000.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"Any alteration to an electronic signature made after affixing such signature must be detectable.\",\"source\":\"IT Act 2000, Section 8(1)\",\"weight\":2,\"source_clause_ids\":[\"G001539\"],\"checkable_test\":\"Verify if alterations to an electronic signature made after affixing are detectable.\",\"applicability\":\"Applicable to electronic signatures under the IT Act 2000.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is directly tied to the definition of a 'secure system' under the IT Act 2000.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Security Safeguards",
+      "requirement": "A system must provide a reasonable level of reliability and correct operation.",
+      "source": "IT Act 2000, Section 8(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001514"
+      ],
+      "checkable_test": "Verify if the system provides a reasonable level of reliability and correct operation as per the regulations.",
+      "applicability": "Applicable to systems under the IT Act 2000.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the definition of a 'secure system' under the IT Act 2000.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "A system must be reasonably suited to performing the intended functions.",
+      "source": "IT Act 2000, Section 8(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001515"
+      ],
+      "checkable_test": "Verify if the system is reasonably suited to performing the intended functions as per the regulations.",
+      "applicability": "Applicable to systems under the IT Act 2000.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the definition of a 'secure system' under the IT Act 2000.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Any alteration to an electronic signature made after affixing such signature must be detectable.",
+      "source": "IT Act 2000, Section 8(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001539"
+      ],
+      "checkable_test": "Verify if alterations to an electronic signature made after affixing are detectable.",
+      "applicability": "Applicable to electronic signatures under the IT Act 2000.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the definition of a 'secure system' under the IT Act 2000.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T15:43:29.213787+00:00",
+  "multi_mapped_records": []
+}

@@ -1,0 +1,53 @@
+{
+  "cache_key": "38dafff6c1d5593b2b7eab35c26a2239f3f029510fab7ce756ca7e27ff91cdbd",
+  "created_at_utc": "2026-09-16T13:13:48.219693+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S001189",
+    "S001190",
+    "S001191",
+    "S001192",
+    "S001193",
+    "S001194"
+  ],
+  "labels": [
+    {
+      "clause_id": "S001189",
+      "best_match_taxonomy_id": "DPDP_RUL-0118",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses cross-border data transfer but lacks specific requirements outlined in the taxonomy."
+    },
+    {
+      "clause_id": "S001190",
+      "best_match_taxonomy_id": "DPDP_ACT-0012",
+      "verdict": "Partially Compliant",
+      "justification": "The clause provides notice of data processing but lacks specific details required by the taxonomy."
+    },
+    {
+      "clause_id": "S001191",
+      "best_match_taxonomy_id": "DPDP_ACT-0009",
+      "verdict": "Partially Compliant",
+      "justification": "The clause mentions lawful purposes but lacks specific details required by the taxonomy."
+    },
+    {
+      "clause_id": "S001192",
+      "best_match_taxonomy_id": "DPDP_ACT-0014",
+      "verdict": "Partially Compliant",
+      "justification": "The clause informs about data processing purposes but lacks specific details required by the taxonomy."
+    },
+    {
+      "clause_id": "S001193",
+      "best_match_taxonomy_id": "DPDP_ACT-0010",
+      "verdict": "Partially Compliant",
+      "justification": "The clause provides notice of data processing but lacks specific details required by the taxonomy."
+    },
+    {
+      "clause_id": "S001194",
+      "best_match_taxonomy_id": "DPDP_ACT-0055",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses cross-border data transfer but lacks specific requirements outlined in the taxonomy."
+    }
+  ],
+  "status": "SUCCESS"
+}

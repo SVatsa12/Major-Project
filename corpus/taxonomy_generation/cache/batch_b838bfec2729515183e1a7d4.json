@@ -1,0 +1,128 @@
+{
+  "batch_id": "b838bfec2729515183e1a7d4",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001053",
+    "G001054",
+    "G001055",
+    "G001056",
+    "G001058",
+    "G001060",
+    "G001061",
+    "G001062"
+  ],
+  "raw_response": "[{\"category\":\"Breach Notification\",\"requirement\":\"Data Fiduciary must notify affected Data Principals of personal data breaches in a concise, clear, and plain manner without delay.\",\"source\":\"DPDP Rules 2025, Rule 8(1)\",\"weight\":3,\"source_clause_ids\":[\"G001054\"],\"checkable_test\":\"Check if the document specifies the obligation to notify affected Data Principals of personal data breaches in a clear and timely manner.\",\"applicability\":\"Applicable to all Data Fiduciaries subject to DPDP Rules 2025.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is directly tied to the obligation under DPDP Rules 2025, Rule 8(1).\"},{\"category\":\"Breach Notification\",\"requirement\":\"Data Fiduciary must provide a description of the breach, including its nature, extent, and timing of occurrence.\",\"source\":\"DPDP Rules 2025, Rule 8(1)\",\"weight\":3,\"source_clause_ids\":[\"G001055\"],\"checkable_test\":\"Check if the document specifies the obligation to provide a detailed description of the breach, including its nature, extent, and timing.\",\"applicability\":\"Applicable to all Data Fiduciaries subject to DPDP Rules 2025.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is directly tied to the obligation under DPDP Rules 2025, Rule 8(1).\"},{\"category\":\"Breach Notification\",\"requirement\":\"Data Fiduciary must inform affected Data Principals of the consequences likely to arise from the breach.\",\"source\":\"DPDP Rules 2025, Rule 8(1)\",\"weight\":3,\"source_clause_ids\":[\"G001056\"],\"checkable_test\":\"Check if the document specifies the obligation to inform affected Data Principals of the consequences likely to arise from the breach.\",\"applicability\":\"Applicable to all Data Fiduciaries subject to DPDP Rules 2025.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is directly tied to the obligation under DPDP Rules 2025, Rule 8(1).\"},{\"category\":\"Breach Notification\",\"requirement\":\"Data Fiduciary must provide affected Data Principals with safety measures to protect their interests.\",\"source\":\"DPDP Rules 2025, Rule 8(1)\",\"weight\":3,\"source_clause_ids\":[\"G001058\"],\"checkable_test\":\"Check if the document specifies the obligation to provide affected Data Principals with safety measures to protect their interests.\",\"applicability\":\"Applicable to all Data Fiduciaries subject to DPDP Rules 2025.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is directly tied to the obligation under DPDP Rules 2025, Rule 8(1).\"},{\"category\":\"Breach Notification\",\"requirement\":\"Data Fiduciary must notify the Board of personal data breaches without delay.\",\"source\":\"DPDP Rules 2025, Rule 8(1)\",\"weight\":3,\"source_clause_ids\":[\"G001060\"],\"checkable_test\":\"Check if the document specifies the obligation to notify the Board of personal data breaches without delay.\",\"applicability\":\"Applicable to all Data Fiduciaries subject to DPDP Rules 2025.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is directly tied to the obligation under DPDP Rules 2025, Rule 8(1).\"},{\"category\":\"Breach Notification\",\"requirement\":\"Data Fiduciary must provide a detailed description of the breach, including its nature, extent, timing, location, and likely impact.\",\"source\":\"DPDP Rules 2025, Rule 8(1)\",\"weight\":3,\"source_clause_ids\":[\"G001061\"],\"checkable_test\":\"Check if the document specifies the obligation to provide a detailed description of the breach, including its nature, extent, timing, location, and likely impact.\",\"applicability\":\"Applicable to all Data Fiduciaries subject to DPDP Rules 2025.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is directly tied to the obligation under DPDP Rules 2025, Rule 8(1).\"},{\"category\":\"Breach Notification\",\"requirement\":\"Data Fiduciary must notify the Board of personal data breaches within seventy-two hours of becoming aware of the breach, or within a longer period as specified.\",\"source\":\"DPDP Rules 2025, Rule 8(1)\",\"weight\":3,\"source_clause_ids\":[\"G001062\"],\"checkable_test\":\"Check if the document specifies the obligation to notify the Board of personal data breaches within seventy-two hours of becoming aware of the breach, or within a longer period as specified.\",\"applicability\":\"Applicable to all Data Fiduciaries subject to DPDP Rules 2025.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is directly tied to the obligation under DPDP Rules 2025, Rule 8(1).\"}]",
+  "parsed_entries": [
+    {
+      "category": "Breach Notification",
+      "requirement": "Data Fiduciary must notify affected Data Principals of personal data breaches in a concise, clear, and plain manner without delay.",
+      "source": "DPDP Rules 2025, Rule 8(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001054"
+      ],
+      "checkable_test": "Check if the document specifies the obligation to notify affected Data Principals of personal data breaches in a clear and timely manner.",
+      "applicability": "Applicable to all Data Fiduciaries subject to DPDP Rules 2025.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation under DPDP Rules 2025, Rule 8(1).",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Breach Notification",
+      "requirement": "Data Fiduciary must provide a description of the breach, including its nature, extent, and timing of occurrence.",
+      "source": "DPDP Rules 2025, Rule 8(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001055"
+      ],
+      "checkable_test": "Check if the document specifies the obligation to provide a detailed description of the breach, including its nature, extent, and timing.",
+      "applicability": "Applicable to all Data Fiduciaries subject to DPDP Rules 2025.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation under DPDP Rules 2025, Rule 8(1).",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Breach Notification",
+      "requirement": "Data Fiduciary must inform affected Data Principals of the consequences likely to arise from the breach.",
+      "source": "DPDP Rules 2025, Rule 8(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001056"
+      ],
+      "checkable_test": "Check if the document specifies the obligation to inform affected Data Principals of the consequences likely to arise from the breach.",
+      "applicability": "Applicable to all Data Fiduciaries subject to DPDP Rules 2025.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation under DPDP Rules 2025, Rule 8(1).",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Breach Notification",
+      "requirement": "Data Fiduciary must provide affected Data Principals with safety measures to protect their interests.",
+      "source": "DPDP Rules 2025, Rule 8(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001058"
+      ],
+      "checkable_test": "Check if the document specifies the obligation to provide affected Data Principals with safety measures to protect their interests.",
+      "applicability": "Applicable to all Data Fiduciaries subject to DPDP Rules 2025.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation under DPDP Rules 2025, Rule 8(1).",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Breach Notification",
+      "requirement": "Data Fiduciary must notify the Board of personal data breaches without delay.",
+      "source": "DPDP Rules 2025, Rule 8(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001060"
+      ],
+      "checkable_test": "Check if the document specifies the obligation to notify the Board of personal data breaches without delay.",
+      "applicability": "Applicable to all Data Fiduciaries subject to DPDP Rules 2025.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation under DPDP Rules 2025, Rule 8(1).",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Breach Notification",
+      "requirement": "Data Fiduciary must provide a detailed description of the breach, including its nature, extent, timing, location, and likely impact.",
+      "source": "DPDP Rules 2025, Rule 8(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001061"
+      ],
+      "checkable_test": "Check if the document specifies the obligation to provide a detailed description of the breach, including its nature, extent, timing, location, and likely impact.",
+      "applicability": "Applicable to all Data Fiduciaries subject to DPDP Rules 2025.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation under DPDP Rules 2025, Rule 8(1).",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Breach Notification",
+      "requirement": "Data Fiduciary must notify the Board of personal data breaches within seventy-two hours of becoming aware of the breach, or within a longer period as specified.",
+      "source": "DPDP Rules 2025, Rule 8(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001062"
+      ],
+      "checkable_test": "Check if the document specifies the obligation to notify the Board of personal data breaches within seventy-two hours of becoming aware of the breach, or within a longer period as specified.",
+      "applicability": "Applicable to all Data Fiduciaries subject to DPDP Rules 2025.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation under DPDP Rules 2025, Rule 8(1).",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T11:28:40.885984+00:00",
+  "multi_mapped_records": []
+}

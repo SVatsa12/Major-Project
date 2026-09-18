@@ -1,0 +1,83 @@
+{
+  "batch_id": "9f73afeb69cbdbf193876aad",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G002258",
+    "G002259",
+    "G002260",
+    "G002261",
+    "G002262",
+    "G002263",
+    "G002264",
+    "G002265"
+  ],
+  "raw_response": "[{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Public authorities must disclose information to requesters unless it falls under specific exemptions such as personal privacy, official secrets, or national security.\",\"source\":\"RTI Act 2005, Section 6(1)\",\"weight\":2,\"source_clause_ids\":[\"G002258\"],\"checkable_test\":\"Check if the public authority discloses information to requesters unless it falls under specific exemptions.\",\"applicability\":\"Applicable to all public authorities under the RTI Act 2005.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is based on the obligation to disclose information unless it falls under specific exemptions.\"},{\"category\":\"Data Retention & Erasure\",\"requirement\":\"Public authorities must provide information that is more than twenty years old unless there is a specific exemption.\",\"source\":\"RTI Act 2005, Section 6(3)\",\"weight\":2,\"source_clause_ids\":[\"G002263\"],\"checkable_test\":\"Check if the public authority provides information that is more than twenty years old unless there is a specific exemption.\",\"applicability\":\"Applicable to all public authorities under the RTI Act 2005.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is based on the obligation to provide information that is more than twenty years old unless there is a specific exemption.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Public authorities may allow access to information if public interest in disclosure outweighs the harm to protected interests, even if it falls under exemptions.\",\"source\":\"RTI Act 2005, Section 6(2)\",\"weight\":2,\"source_clause_ids\":[\"G002262\"],\"checkable_test\":\"Check if the public authority allows access to information if public interest in disclosure outweighs the harm to protected interests.\",\"applicability\":\"Applicable to all public authorities under the RTI Act 2005.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is based on the obligation to allow access to information if public interest in disclosure outweighs the harm to protected interests.\"},{\"category\":\"Data Retention & Erasure\",\"requirement\":\"The Central Government has the final authority to determine the date from which the twenty-year period for information disclosure begins, subject to appeals under the RTI Act.\",\"source\":\"RTI Act 2005, Section 6(3)\",\"weight\":2,\"source_clause_ids\":[\"G002265\"],\"checkable_test\":\"Check if the Central Government has the final authority to determine the date from which the twenty-year period for information disclosure begins, subject to appeals.\",\"applicability\":\"Applicable to all public authorities under the RTI Act 2005.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is based on the obligation to allow the Central Government to determine the date from which the twenty-year period for information disclosure begins, subject to appeals.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Public authorities must disclose information to requesters unless it falls under specific exemptions such as personal privacy, official secrets, or national security.",
+      "source": "RTI Act 2005, Section 6(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002258"
+      ],
+      "checkable_test": "Check if the public authority discloses information to requesters unless it falls under specific exemptions.",
+      "applicability": "Applicable to all public authorities under the RTI Act 2005.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is based on the obligation to disclose information unless it falls under specific exemptions.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "Public authorities must provide information that is more than twenty years old unless there is a specific exemption.",
+      "source": "RTI Act 2005, Section 6(3)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002263"
+      ],
+      "checkable_test": "Check if the public authority provides information that is more than twenty years old unless there is a specific exemption.",
+      "applicability": "Applicable to all public authorities under the RTI Act 2005.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is based on the obligation to provide information that is more than twenty years old unless there is a specific exemption.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Public authorities may allow access to information if public interest in disclosure outweighs the harm to protected interests, even if it falls under exemptions.",
+      "source": "RTI Act 2005, Section 6(2)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002262"
+      ],
+      "checkable_test": "Check if the public authority allows access to information if public interest in disclosure outweighs the harm to protected interests.",
+      "applicability": "Applicable to all public authorities under the RTI Act 2005.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is based on the obligation to allow access to information if public interest in disclosure outweighs the harm to protected interests.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "The Central Government has the final authority to determine the date from which the twenty-year period for information disclosure begins, subject to appeals under the RTI Act.",
+      "source": "RTI Act 2005, Section 6(3)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002265"
+      ],
+      "checkable_test": "Check if the Central Government has the final authority to determine the date from which the twenty-year period for information disclosure begins, subject to appeals.",
+      "applicability": "Applicable to all public authorities under the RTI Act 2005.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is based on the obligation to allow the Central Government to determine the date from which the twenty-year period for information disclosure begins, subject to appeals.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T12:03:40.526193+00:00",
+  "multi_mapped_records": []
+}

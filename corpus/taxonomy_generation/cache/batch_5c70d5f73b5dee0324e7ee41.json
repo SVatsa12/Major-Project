@@ -1,0 +1,127 @@
+{
+  "batch_id": "5c70d5f73b5dee0324e7ee41",
+  "status": "PARTIAL_VALIDATION",
+  "input_clause_ids": [
+    "G001223",
+    "G001225",
+    "G001228",
+    "G001232",
+    "G001235",
+    "G001236",
+    "G001239",
+    "G001252"
+  ],
+  "raw_response": "[{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Data Fiduciaries who are e-commerce entities with not less than two crore registered users in India must enable Data Principals to access virtual tokens issued by or on behalf of the Data Fiduciary, stored on their digital platform, and usable for obtaining money, goods, or services.\",\"source\":\"DPDP Rules 2025, Rule 8(2)\",\"weight\":3,\"source_clause_ids\":[\"G001225\"],\"checkable_test\":\"Check if the e-commerce entity provides access to virtual tokens as described.\",\"applicability\":\"Applies to e-commerce entities with two crore registered users in India.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation is tied to the specific class of data fiduciaries and their responsibilities under the DPDP Rules 2025.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Data Fiduciaries who are online gaming intermediaries with not less than fifty lakh registered users in India must enable Data Principals to access virtual tokens issued by or on behalf of the Data Fiduciary, stored on their digital platform, and usable for obtaining money, goods, or services.\",\"source\":\"DPDP Rules 2025, Rule 8(2)\",\"weight\":3,\"source_clause_ids\":[\"G001225\"],\"checkable_test\":\"Check if the online gaming intermediary provides access to virtual tokens as described.\",\"applicability\":\"Applies to online gaming intermediaries with fifty lakh registered users in India.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation is tied to the specific class of data fiduciaries and their responsibilities under the DPDP Rules 2025.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Data Fiduciaries who are social media intermediaries with not less than two crore registered users in India must enable Data Principals to access virtual tokens issued by or on behalf of the Data Fiduciary, stored on their digital platform, and usable for obtaining money, goods, or services.\",\"source\":\"DPDP Rules 2025, Rule 8(2)\",\"weight\":3,\"source_clause_ids\":[\"G001225\"],\"checkable_test\":\"Check if the social media intermediary provides access to virtual tokens as described.\",\"applicability\":\"Applies to social media intermediaries with two crore registered users in India.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation is tied to the specific class of data fiduciaries and their responsibilities under the DPDP Rules 2025.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Processing of personal data related to children's health is restricted to the extent necessary for the protection of their health by establishments or professionals providing health services.\",\"source\":\"DPDP Rules 2025, Rule 8(2)\",\"weight\":3,\"source_clause_ids\":[\"G001252\"],\"checkable_test\":\"Check if health-related data processing is limited to what is necessary for the child's health.\",\"applicability\":\"Applies to entities providing health services to children.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation is tied to the specific class of data fiduciaries and their responsibilities under the DPDP Rules 2025.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Data Fiduciaries who are e-commerce entities with not less than two crore registered users in India must enable Data Principals to access virtual tokens issued by or on behalf of the Data Fiduciary, stored on their digital platform, and usable for obtaining money, goods, or services.",
+      "source": "DPDP Rules 2025, Rule 8(2)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001225"
+      ],
+      "checkable_test": "Check if the e-commerce entity provides access to virtual tokens as described.",
+      "applicability": "Applies to e-commerce entities with two crore registered users in India.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is tied to the specific class of data fiduciaries and their responsibilities under the DPDP Rules 2025.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Processing of personal data related to children's health is restricted to the extent necessary for the protection of their health by establishments or professionals providing health services.",
+      "source": "DPDP Rules 2025, Rule 8(2)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001252"
+      ],
+      "checkable_test": "Check if health-related data processing is limited to what is necessary for the child's health.",
+      "applicability": "Applies to entities providing health services to children.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is tied to the specific class of data fiduciaries and their responsibilities under the DPDP Rules 2025.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [
+    {
+      "position": 1,
+      "entry": {
+        "category": "Significant Data Fiduciary Obligations",
+        "requirement": "Data Fiduciaries who are online gaming intermediaries with not less than fifty lakh registered users in India must enable Data Principals to access virtual tokens issued by or on behalf of the Data Fiduciary, stored on their digital platform, and usable for obtaining money, goods, or services.",
+        "source": "DPDP Rules 2025, Rule 8(2)",
+        "weight": 3,
+        "source_clause_ids": [
+          "G001225"
+        ],
+        "checkable_test": "Check if the online gaming intermediary provides access to virtual tokens as described.",
+        "applicability": "Applies to online gaming intermediaries with fifty lakh registered users in India.",
+        "assessability": "High",
+        "citation_confidence": "high",
+        "notes": "This obligation is tied to the specific class of data fiduciaries and their responsibilities under the DPDP Rules 2025.",
+        "human_review_status": "PENDING"
+      },
+      "error": "discarded as same-category, semantically similar duplicate of another entry sharing this source clause"
+    },
+    {
+      "position": 2,
+      "entry": {
+        "category": "Significant Data Fiduciary Obligations",
+        "requirement": "Data Fiduciaries who are social media intermediaries with not less than two crore registered users in India must enable Data Principals to access virtual tokens issued by or on behalf of the Data Fiduciary, stored on their digital platform, and usable for obtaining money, goods, or services.",
+        "source": "DPDP Rules 2025, Rule 8(2)",
+        "weight": 3,
+        "source_clause_ids": [
+          "G001225"
+        ],
+        "checkable_test": "Check if the social media intermediary provides access to virtual tokens as described.",
+        "applicability": "Applies to social media intermediaries with two crore registered users in India.",
+        "assessability": "High",
+        "citation_confidence": "high",
+        "notes": "This obligation is tied to the specific class of data fiduciaries and their responsibilities under the DPDP Rules 2025.",
+        "human_review_status": "PENDING"
+      },
+      "error": "discarded as same-category, semantically similar duplicate of another entry sharing this source clause"
+    }
+  ],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T11:44:03.912495+00:00",
+  "multi_mapped_records": [
+    {
+      "batch_id": "5c70d5f73b5dee0324e7ee41",
+      "source_clause_id": "G001225",
+      "total_entries": 3,
+      "distinct_categories": 1,
+      "categories": [
+        "Significant Data Fiduciary Obligations"
+      ],
+      "decision": "KEPT_FIRST_PER_CATEGORY_OR_DEDUPED_BY_EMBEDDING",
+      "kept_positions": [
+        0
+      ],
+      "discarded_positions": [
+        1,
+        2
+      ],
+      "entries_summary": [
+        {
+          "position": 0,
+          "category": "Significant Data Fiduciary Obligations",
+          "requirement": "Data Fiduciaries who are e-commerce entities with not less than two crore registered users in India must enable Data Pri"
+        },
+        {
+          "position": 1,
+          "category": "Significant Data Fiduciary Obligations",
+          "requirement": "Data Fiduciaries who are online gaming intermediaries with not less than fifty lakh registered users in India must enabl"
+        },
+        {
+          "position": 2,
+          "category": "Significant Data Fiduciary Obligations",
+          "requirement": "Data Fiduciaries who are social media intermediaries with not less than two crore registered users in India must enable "
+        }
+      ]
+    }
+  ]
+}

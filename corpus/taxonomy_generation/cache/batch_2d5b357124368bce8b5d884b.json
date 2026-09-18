@@ -1,0 +1,98 @@
+{
+  "batch_id": "2d5b357124368bce8b5d884b",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G000671",
+    "G000672",
+    "G000678",
+    "G000683",
+    "G000685",
+    "G000692",
+    "G000693",
+    "G000695"
+  ],
+  "raw_response": "[{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Appellate Tribunal must function as a digital office, ensuring that the receipt of appeals, hearings, and decision pronouncement are conducted digitally.\",\"source\":\"DPDP Act 2023, Section 10(10)\",\"weight\":3,\"source_clause_ids\":[\"G000678\"],\"checkable_test\":\"Verify if the Appellate Tribunal's processes for handling appeals are designed to be digital.\",\"applicability\":\"Applicable to all appeals filed under the DPDP Act 2023.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement focuses on the digital transformation of the Appellate Tribunal's operations.\"},{\"category\":\"Grievance Redressal\",\"requirement\":\"The Appellate Tribunal must dispose of appeals finally within six months from the date of receipt.\",\"source\":\"DPDP Act 2023, Section 10(6)\",\"weight\":2,\"source_clause_ids\":[\"G000672\"],\"checkable_test\":\"Check if the Appellate Tribunal has a policy to resolve appeals within six months.\",\"applicability\":\"Applicable to all appeals filed under the DPDP Act 2023.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement sets a time limit for the resolution of appeals.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Appellate Tribunal must ensure that the acceptance of a voluntary undertaking by the Board bars proceedings under the Act regarding the contents of the undertaking, except in cases covered by sub-section (5).\",\"source\":\"DPDP Act 2023, Section 10(4)\",\"weight\":3,\"source_clause_ids\":[\"G000685\"],\"checkable_test\":\"Verify if the acceptance of a voluntary undertaking by the Board prevents further proceedings under the Act, except in specified cases.\",\"applicability\":\"Applicable to voluntary undertakings accepted by the Board under the DPDP Act 2023.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement outlines the effect of accepting a voluntary undertaking by the Board.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Board must consider the nature, gravity, and duration of the breach when determining the amount of monetary penalty.\",\"source\":\"DPDP Act 2023, Section 10(2)(a)\",\"weight\":3,\"source_clause_ids\":[\"G000693\"],\"checkable_test\":\"Check if the Board's penalty determination includes consideration of the nature, gravity, and duration of the breach.\",\"applicability\":\"Applicable to all breaches subject to monetary penalties under the DPDP Act 2023.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement outlines a factor to be considered in determining penalties for breaches.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Board must consider the repetitive nature of the breach when determining the amount of monetary penalty.\",\"source\":\"DPDP Act 2023, Section 10(2)(c)\",\"weight\":3,\"source_clause_ids\":[\"G000695\"],\"checkable_test\":\"Verify if the Board's penalty determination includes consideration of the repetitive nature of the breach.\",\"applicability\":\"Applicable to all breaches subject to monetary penalties under the DPDP Act 2023.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement outlines a factor to be considered in determining penalties for breaches.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Appellate Tribunal must function as a digital office, ensuring that the receipt of appeals, hearings, and decision pronouncement are conducted digitally.",
+      "source": "DPDP Act 2023, Section 10(10)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000678"
+      ],
+      "checkable_test": "Verify if the Appellate Tribunal's processes for handling appeals are designed to be digital.",
+      "applicability": "Applicable to all appeals filed under the DPDP Act 2023.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement focuses on the digital transformation of the Appellate Tribunal's operations.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Grievance Redressal",
+      "requirement": "The Appellate Tribunal must dispose of appeals finally within six months from the date of receipt.",
+      "source": "DPDP Act 2023, Section 10(6)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000672"
+      ],
+      "checkable_test": "Check if the Appellate Tribunal has a policy to resolve appeals within six months.",
+      "applicability": "Applicable to all appeals filed under the DPDP Act 2023.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement sets a time limit for the resolution of appeals.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Appellate Tribunal must ensure that the acceptance of a voluntary undertaking by the Board bars proceedings under the Act regarding the contents of the undertaking, except in cases covered by sub-section (5).",
+      "source": "DPDP Act 2023, Section 10(4)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000685"
+      ],
+      "checkable_test": "Verify if the acceptance of a voluntary undertaking by the Board prevents further proceedings under the Act, except in specified cases.",
+      "applicability": "Applicable to voluntary undertakings accepted by the Board under the DPDP Act 2023.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement outlines the effect of accepting a voluntary undertaking by the Board.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Board must consider the nature, gravity, and duration of the breach when determining the amount of monetary penalty.",
+      "source": "DPDP Act 2023, Section 10(2)(a)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000693"
+      ],
+      "checkable_test": "Check if the Board's penalty determination includes consideration of the nature, gravity, and duration of the breach.",
+      "applicability": "Applicable to all breaches subject to monetary penalties under the DPDP Act 2023.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement outlines a factor to be considered in determining penalties for breaches.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Board must consider the repetitive nature of the breach when determining the amount of monetary penalty.",
+      "source": "DPDP Act 2023, Section 10(2)(c)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000695"
+      ],
+      "checkable_test": "Verify if the Board's penalty determination includes consideration of the repetitive nature of the breach.",
+      "applicability": "Applicable to all breaches subject to monetary penalties under the DPDP Act 2023.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement outlines a factor to be considered in determining penalties for breaches.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T15:38:20.547504+00:00",
+  "multi_mapped_records": []
+}

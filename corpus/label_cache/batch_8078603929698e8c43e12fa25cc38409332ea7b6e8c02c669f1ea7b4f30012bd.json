@@ -1,0 +1,53 @@
+{
+  "cache_key": "8078603929698e8c43e12fa25cc38409332ea7b6e8c02c669f1ea7b4f30012bd",
+  "created_at_utc": "2026-09-16T13:58:51.980779+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S001723",
+    "S001724",
+    "S001725",
+    "S001726",
+    "S001727",
+    "S001728"
+  ],
+  "labels": [
+    {
+      "clause_id": "S001723",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S001724",
+      "best_match_taxonomy_id": "DPDP_RUL-0082",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses sharing data with SP but lacks specific obligations for Consent Managers as specified in the taxonomy."
+    },
+    {
+      "clause_id": "S001725",
+      "best_match_taxonomy_id": "DPDP_RUL-0082",
+      "verdict": "Partially Compliant",
+      "justification": "The clause allows data sharing with SP but lacks specific obligations for Consent Managers as specified in the taxonomy."
+    },
+    {
+      "clause_id": "S001726",
+      "best_match_taxonomy_id": "DPDP_RUL-0082",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses data sharing with SP but lacks specific obligations for Consent Managers as specified in the taxonomy."
+    },
+    {
+      "clause_id": "S001727",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S001728",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    }
+  ],
+  "status": "SUCCESS"
+}

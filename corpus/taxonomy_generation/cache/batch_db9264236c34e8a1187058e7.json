@@ -1,0 +1,68 @@
+{
+  "batch_id": "db9264236c34e8a1187058e7",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G000704",
+    "G000706",
+    "G000707",
+    "G000715",
+    "G000716",
+    "G000721",
+    "G000722",
+    "G000723"
+  ],
+  "raw_response": "[{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Data fiduciaries must not initiate legal proceedings against the Central Board for penalties imposed under the DPDP Act 2023.\",\"source\":\"DPDP Act 2023, Section 35(1)\",\"weight\":2,\"source_clause_ids\":[\"G000704\"],\"checkable_test\":\"Verify if the data fiduciary is prohibited from initiating legal proceedings against the Central Board for penalties.\",\"applicability\":\"Applicable to data fiduciaries subject to the DPDP Act 2023.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause establishes a prohibition on legal action against the Central Board for penalties imposed under the Act.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Intermediaries must comply with directions issued by the Central Board under the DPDP Act 2023.\",\"source\":\"DPDP Act 2023, Section 35(2)\",\"weight\":2,\"source_clause_ids\":[\"G000706\"],\"checkable_test\":\"Verify if the intermediary is required to comply with directions issued by the Central Board.\",\"applicability\":\"Applicable to intermediaries under the DPDP Act 2023.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause mandates compliance with directions issued by the Central Board by intermediaries.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"The Board must be informed of personal data breaches in the manner specified under the DPDP Act 2023.\",\"source\":\"DPDP Act 2023, Section 35(f)\",\"weight\":2,\"source_clause_ids\":[\"G000723\"],\"checkable_test\":\"Verify if the data fiduciary is required to inform the Board of personal data breaches in the specified manner.\",\"applicability\":\"Applicable to data fiduciaries subject to the DPDP Act 2023.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause mandates the specific manner in which personal data breaches must be reported to the Board.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Data fiduciaries must not initiate legal proceedings against the Central Board for penalties imposed under the DPDP Act 2023.",
+      "source": "DPDP Act 2023, Section 35(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000704"
+      ],
+      "checkable_test": "Verify if the data fiduciary is prohibited from initiating legal proceedings against the Central Board for penalties.",
+      "applicability": "Applicable to data fiduciaries subject to the DPDP Act 2023.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause establishes a prohibition on legal action against the Central Board for penalties imposed under the Act.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Intermediaries must comply with directions issued by the Central Board under the DPDP Act 2023.",
+      "source": "DPDP Act 2023, Section 35(2)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000706"
+      ],
+      "checkable_test": "Verify if the intermediary is required to comply with directions issued by the Central Board.",
+      "applicability": "Applicable to intermediaries under the DPDP Act 2023.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause mandates compliance with directions issued by the Central Board by intermediaries.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "The Board must be informed of personal data breaches in the manner specified under the DPDP Act 2023.",
+      "source": "DPDP Act 2023, Section 35(f)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000723"
+      ],
+      "checkable_test": "Verify if the data fiduciary is required to inform the Board of personal data breaches in the specified manner.",
+      "applicability": "Applicable to data fiduciaries subject to the DPDP Act 2023.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause mandates the specific manner in which personal data breaches must be reported to the Board.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T13:57:08.705225+00:00",
+  "multi_mapped_records": []
+}

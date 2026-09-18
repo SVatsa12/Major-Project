@@ -1,0 +1,68 @@
+{
+  "batch_id": "3bf539cd7bf83b3869331ce7",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001504",
+    "G001506",
+    "G001511",
+    "G001513",
+    "G001516",
+    "G001517",
+    "G001519",
+    "G001520"
+  ],
+  "raw_response": "[{\"category\":\"Security Safeguards\",\"requirement\":\"Intermediaries must ensure that electronic records are reasonably secure from unauthorized access and misuse.\",\"source\":\"IT Act 2000, Section 16\",\"weight\":2,\"source_clause_ids\":[\"G001513\"],\"checkable_test\":\"Check if the document specifies that electronic records are reasonably secure from unauthorized access and misuse.\",\"applicability\":\"Applicable to intermediaries handling electronic records.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is derived from the obligation under IT Act 2000, Section 16.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"Intermediaries must adhere to generally accepted security procedures.\",\"source\":\"IT Act 2000, Section 16\",\"weight\":2,\"source_clause_ids\":[\"G001516\"],\"checkable_test\":\"Check if the document specifies adherence to generally accepted security procedures.\",\"applicability\":\"Applicable to intermediaries handling electronic records.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is derived from the obligation under IT Act 2000, Section 16.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"Intermediaries must follow security procedures prescribed by the Central Government.\",\"source\":\"IT Act 2000, Section 16\",\"weight\":2,\"source_clause_ids\":[\"G001517\"],\"checkable_test\":\"Check if the document specifies that security procedures are in line with those prescribed by the Central Government.\",\"applicability\":\"Applicable to intermediaries handling electronic records.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is derived from the obligation under IT Act 2000, Section 16.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Security Safeguards",
+      "requirement": "Intermediaries must ensure that electronic records are reasonably secure from unauthorized access and misuse.",
+      "source": "IT Act 2000, Section 16",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001513"
+      ],
+      "checkable_test": "Check if the document specifies that electronic records are reasonably secure from unauthorized access and misuse.",
+      "applicability": "Applicable to intermediaries handling electronic records.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is derived from the obligation under IT Act 2000, Section 16.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Intermediaries must adhere to generally accepted security procedures.",
+      "source": "IT Act 2000, Section 16",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001516"
+      ],
+      "checkable_test": "Check if the document specifies adherence to generally accepted security procedures.",
+      "applicability": "Applicable to intermediaries handling electronic records.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is derived from the obligation under IT Act 2000, Section 16.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Intermediaries must follow security procedures prescribed by the Central Government.",
+      "source": "IT Act 2000, Section 16",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001517"
+      ],
+      "checkable_test": "Check if the document specifies that security procedures are in line with those prescribed by the Central Government.",
+      "applicability": "Applicable to intermediaries handling electronic records.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is derived from the obligation under IT Act 2000, Section 16.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T14:28:35.403888+00:00",
+  "multi_mapped_records": []
+}

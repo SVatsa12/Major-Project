@@ -1,0 +1,53 @@
+{
+  "cache_key": "d98162041b8974b5a24ae4739f3dca65ddbad910258bf54a22b1c609b548de13",
+  "created_at_utc": "2026-09-16T14:16:54.588962+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S001927",
+    "S001928",
+    "S001929",
+    "S001930",
+    "S001931",
+    "S001932"
+  ],
+  "labels": [
+    {
+      "clause_id": "S001927",
+      "best_match_taxonomy_id": "DPDP_RUL-0094",
+      "verdict": "Compliant",
+      "justification": "The clause addresses breach notification by specifying when WhatsApp must share information in response to legal requirements, aligning with breach notification obligations."
+    },
+    {
+      "clause_id": "S001928",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S001929",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S001930",
+      "best_match_taxonomy_id": "DPDP_RUL-0094",
+      "verdict": "Compliant",
+      "justification": "The clause addresses breach notification by specifying when advance notice is required, aligning with breach notification obligations."
+    },
+    {
+      "clause_id": "S001931",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S001932",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    }
+  ],
+  "status": "SUCCESS"
+}

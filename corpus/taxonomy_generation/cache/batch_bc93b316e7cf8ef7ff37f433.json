@@ -1,0 +1,38 @@
+{
+  "batch_id": "bc93b316e7cf8ef7ff37f433",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001395",
+    "G001415",
+    "G001416",
+    "G001419",
+    "G001421",
+    "G001450",
+    "G001451",
+    "G001452"
+  ],
+  "raw_response": "[{\"category\":\"Breach Notification\",\"requirement\":\"A breach of confidentiality and privacy must be reported under the IT Act 2000.\",\"source\":\"IT Act 2000, Section 72\",\"weight\":3,\"source_clause_ids\":[\"G001421\"],\"checkable_test\":\"Check if the organization has a process for reporting breaches of confidentiality and privacy as required by the IT Act 2000.\",\"applicability\":\"Applicable to organizations handling personal data.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation is directly tied to the penalty for breach of confidentiality and privacy under the IT Act 2000.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Breach Notification",
+      "requirement": "A breach of confidentiality and privacy must be reported under the IT Act 2000.",
+      "source": "IT Act 2000, Section 72",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001421"
+      ],
+      "checkable_test": "Check if the organization has a process for reporting breaches of confidentiality and privacy as required by the IT Act 2000.",
+      "applicability": "Applicable to organizations handling personal data.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to the penalty for breach of confidentiality and privacy under the IT Act 2000.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T14:27:54.092381+00:00",
+  "multi_mapped_records": []
+}

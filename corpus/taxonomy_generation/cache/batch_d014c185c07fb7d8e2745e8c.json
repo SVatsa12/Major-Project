@@ -1,0 +1,68 @@
+{
+  "batch_id": "d014c185c07fb7d8e2745e8c",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001189",
+    "G001193",
+    "G001196",
+    "G001197",
+    "G001198",
+    "G001200",
+    "G001202",
+    "G001204"
+  ],
+  "raw_response": "[{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Consent Manager must adhere to its obligations under the DPDP Act and these rules.\",\"source\":\"DPDP Rules 2025, Rule 8(3)\",\"weight\":3,\"source_clause_ids\":[\"G001198\"],\"checkable_test\":\"Verify that the Consent Manager's policies and practices align with the obligations under the DPDP Act and these rules.\",\"applicability\":\"Applicable to all Consent Managers registered under the DPDP Rules 2025.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation requires the Consent Manager to ensure compliance with both the DPDP Act and the Rules, which includes maintaining appropriate safeguards and fulfilling registration conditions.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"The Consent Manager must implement technical and organisational controls, systems, procedures, and safeguards.\",\"source\":\"DPDP Rules 2025, Rule 8(2)\",\"weight\":3,\"source_clause_ids\":[\"G001196\"],\"checkable_test\":\"Verify that the Consent Manager has documented and implemented technical and organisational controls, systems, procedures, and safeguards.\",\"applicability\":\"Applicable to all Consent Managers registered under the DPDP Rules 2025.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation requires the Consent Manager to maintain a robust framework of security measures to protect personal data.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Consent Manager must continue to fulfill the conditions of registration.\",\"source\":\"DPDP Rules 2025, Rule 8(2)\",\"weight\":3,\"source_clause_ids\":[\"G001197\"],\"checkable_test\":\"Verify that the Consent Manager maintains compliance with the conditions of registration as specified in the DPDP Rules 2025.\",\"applicability\":\"Applicable to all Consent Managers registered under the DPDP Rules 2025.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation requires the Consent Manager to ensure ongoing compliance with the registration conditions, which may include maintaining data protection standards and operational integrity.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Consent Manager must adhere to its obligations under the DPDP Act and these rules.",
+      "source": "DPDP Rules 2025, Rule 8(3)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001198"
+      ],
+      "checkable_test": "Verify that the Consent Manager's policies and practices align with the obligations under the DPDP Act and these rules.",
+      "applicability": "Applicable to all Consent Managers registered under the DPDP Rules 2025.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation requires the Consent Manager to ensure compliance with both the DPDP Act and the Rules, which includes maintaining appropriate safeguards and fulfilling registration conditions.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "The Consent Manager must implement technical and organisational controls, systems, procedures, and safeguards.",
+      "source": "DPDP Rules 2025, Rule 8(2)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001196"
+      ],
+      "checkable_test": "Verify that the Consent Manager has documented and implemented technical and organisational controls, systems, procedures, and safeguards.",
+      "applicability": "Applicable to all Consent Managers registered under the DPDP Rules 2025.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation requires the Consent Manager to maintain a robust framework of security measures to protect personal data.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Consent Manager must continue to fulfill the conditions of registration.",
+      "source": "DPDP Rules 2025, Rule 8(2)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001197"
+      ],
+      "checkable_test": "Verify that the Consent Manager maintains compliance with the conditions of registration as specified in the DPDP Rules 2025.",
+      "applicability": "Applicable to all Consent Managers registered under the DPDP Rules 2025.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation requires the Consent Manager to ensure ongoing compliance with the registration conditions, which may include maintaining data protection standards and operational integrity.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T14:20:26.651297+00:00",
+  "multi_mapped_records": []
+}

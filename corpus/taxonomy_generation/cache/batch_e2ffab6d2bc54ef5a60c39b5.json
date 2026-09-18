@@ -1,0 +1,128 @@
+{
+  "batch_id": "e2ffab6d2bc54ef5a60c39b5",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001104",
+    "G001105",
+    "G001107",
+    "G001108",
+    "G001109",
+    "G001111",
+    "G001112",
+    "G001113"
+  ],
+  "raw_response": "[\n  {\n    \"category\": \"Children/Vulnerable Groups\",\n    \"requirement\": \"Significant Data Fiduciaries must not apply sub-sections (1) and (3) of section 9 of the Act to processing of personal data of a child, unless specified in Part A of Fourth Schedule.\",\n    \"source\": \"DPDP Rules 2025, Rule 12(1)\",\n    \"weight\": 2,\n    \"source_clause_ids\": [\"G001104\"],\n    \"checkable_test\": \"Check if the document specifies exemptions for processing children's data under Part A of Fourth Schedule.\",\n    \"applicability\": \"Applicable to processing of personal data of children by specified Data Fiduciaries.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Children/Vulnerable Groups\",\n    \"requirement\": \"Significant Data Fiduciaries must not apply sub-sections (1) and (3) of section 9 of the Act to processing of personal data of a child for purposes specified in Part B of Fourth Schedule, unless conditions are met.\",\n    \"source\": \"DPDP Rules 2025, Rule 12(2)\",\n    \"weight\": 2,\n    \"source_clause_ids\": [\"G001105\"],\n    \"checkable_test\": \"Check if the document specifies exemptions for processing children's data for purposes in Part B of Fourth Schedule.\",\n    \"applicability\": \"Applicable to processing of personal data of children for specified purposes.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Significant Data Fiduciary Obligations\",\n    \"requirement\": \"Significant Data Fiduciaries must undertake a Data Protection Impact Assessment and an audit to ensure compliance with the Act and rules.\",\n    \"source\": \"DPDP Rules 2025, Rule 11(1)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G001107\"],\n    \"checkable_test\": \"Check if the document requires a Data Protection Impact Assessment and audit for compliance.\",\n    \"applicability\": \"Applicable to all Significant Data Fiduciaries.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Significant Data Fiduciary Obligations\",\n    \"requirement\": \"Significant Data Fiduciaries must ensure that reports from Data Protection Impact Assessments and audits are submitted to the Board.\",\n    \"source\": \"DPDP Rules 2025, Rule 11(2)\",\n    \"weight\": 2,\n    \"source_clause_ids\": [\"G001108\"],\n    \"checkable_test\": \"Check if the document requires submission of reports from Data Protection Impact Assessments and audits to the Board.\",\n    \"applicability\": \"Applicable to Significant Data Fiduciaries.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Security Safeguards\",\n    \"requirement\": \"Significant Data Fiduciaries must ensure that technical measures, including algorithmic software, used for processing personal data do not pose risks to Data Principals' rights.\",\n    \"source\": \"DPDP Rules 2025, Rule 11(3)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G001109\"],\n    \"checkable_test\": \"Check if the document requires verification that technical measures used for processing personal data do not pose risks to Data Principals' rights.\",\n    \"applicability\": \"Applicable to Significant Data Fiduciaries.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Cross-Border Transfer\",\n    \"requirement\": \"Central Government may restrict transfer of personal data and traffic data outside India, subject to recommendations of a committee.\",\n    \"source\": \"DPDP Rules 2025, Rule 11(5)\",\n    \"weight\": 2,\n    \"source_clause_ids\": [\"G001111\"],\n    \"checkable_test\": \"Check if the document specifies restrictions on transferring personal data and traffic data outside India.\",\n    \"applicability\": \"Applicable to data processing involving transfer of personal data and traffic data.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Data Principal Rights\",\n    \"requirement\": \"Data Fiduciaries must prominently publish information on their website or app to enable Data Principals to exercise their rights under the Act.\",\n    \"source\": \"DPDP Rules 2025, Rule 14(1)\",\n    \"weight\": 2,\n    \"source_clause_ids\": [\"G001113\"],\n    \"checkable_test\": \"Check if the document requires prominent publication of information to enable Data Principals to exercise their rights.\",\n    \"applicability\": \"Applicable to all Data Fiduciaries.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  }\n]",
+  "parsed_entries": [
+    {
+      "category": "Children/Vulnerable Groups",
+      "requirement": "Significant Data Fiduciaries must not apply sub-sections (1) and (3) of section 9 of the Act to processing of personal data of a child, unless specified in Part A of Fourth Schedule.",
+      "source": "DPDP Rules 2025, Rule 12(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001104"
+      ],
+      "checkable_test": "Check if the document specifies exemptions for processing children's data under Part A of Fourth Schedule.",
+      "applicability": "Applicable to processing of personal data of children by specified Data Fiduciaries.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Children/Vulnerable Groups",
+      "requirement": "Significant Data Fiduciaries must not apply sub-sections (1) and (3) of section 9 of the Act to processing of personal data of a child for purposes specified in Part B of Fourth Schedule, unless conditions are met.",
+      "source": "DPDP Rules 2025, Rule 12(2)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001105"
+      ],
+      "checkable_test": "Check if the document specifies exemptions for processing children's data for purposes in Part B of Fourth Schedule.",
+      "applicability": "Applicable to processing of personal data of children for specified purposes.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Significant Data Fiduciaries must undertake a Data Protection Impact Assessment and an audit to ensure compliance with the Act and rules.",
+      "source": "DPDP Rules 2025, Rule 11(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001107"
+      ],
+      "checkable_test": "Check if the document requires a Data Protection Impact Assessment and audit for compliance.",
+      "applicability": "Applicable to all Significant Data Fiduciaries.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Significant Data Fiduciaries must ensure that reports from Data Protection Impact Assessments and audits are submitted to the Board.",
+      "source": "DPDP Rules 2025, Rule 11(2)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001108"
+      ],
+      "checkable_test": "Check if the document requires submission of reports from Data Protection Impact Assessments and audits to the Board.",
+      "applicability": "Applicable to Significant Data Fiduciaries.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Significant Data Fiduciaries must ensure that technical measures, including algorithmic software, used for processing personal data do not pose risks to Data Principals' rights.",
+      "source": "DPDP Rules 2025, Rule 11(3)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001109"
+      ],
+      "checkable_test": "Check if the document requires verification that technical measures used for processing personal data do not pose risks to Data Principals' rights.",
+      "applicability": "Applicable to Significant Data Fiduciaries.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Cross-Border Transfer",
+      "requirement": "Central Government may restrict transfer of personal data and traffic data outside India, subject to recommendations of a committee.",
+      "source": "DPDP Rules 2025, Rule 11(5)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001111"
+      ],
+      "checkable_test": "Check if the document specifies restrictions on transferring personal data and traffic data outside India.",
+      "applicability": "Applicable to data processing involving transfer of personal data and traffic data.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Principal Rights",
+      "requirement": "Data Fiduciaries must prominently publish information on their website or app to enable Data Principals to exercise their rights under the Act.",
+      "source": "DPDP Rules 2025, Rule 14(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001113"
+      ],
+      "checkable_test": "Check if the document requires prominent publication of information to enable Data Principals to exercise their rights.",
+      "applicability": "Applicable to all Data Fiduciaries.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T11:33:59.719866+00:00",
+  "multi_mapped_records": []
+}

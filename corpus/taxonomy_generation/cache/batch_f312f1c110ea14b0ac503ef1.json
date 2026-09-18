@@ -1,0 +1,149 @@
+{
+  "batch_id": "f312f1c110ea14b0ac503ef1",
+  "status": "PARTIAL_VALIDATION",
+  "input_clause_ids": [
+    "G001967",
+    "G001968",
+    "G001972",
+    "G001973",
+    "G001981",
+    "G001983",
+    "G001985",
+    "G001987"
+  ],
+  "raw_response": "[{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Intermediaries are exempt from liability for third-party information, data, or communication links made available or hosted by them, provided they do not initiate transmission, select the receiver, or modify the information.\",\"source\":\"IT Act 2000, Section 79(1)\",\"weight\":2,\"source_clause_ids\":[\"G001968\"],\"checkable_test\":\"Check if the intermediary's liability is exempted for third-party content they host or transmit, provided they do not initiate, select, or modify the information.\",\"applicability\":\"Applies to intermediaries hosting or transmitting third-party content.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This exemption applies only if the intermediary does not initiate transmission, select the receiver, or modify the information.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Intermediaries must observe due diligence while discharging their duties under the IT Act and follow guidelines prescribed by the Central Government.\",\"source\":\"IT Act 2000, Section 79(c)\",\"weight\":2,\"source_clause_ids\":[\"G001973\"],\"checkable_test\":\"Verify if the intermediary has observed due diligence and followed Central Government guidelines.\",\"applicability\":\"Applies to intermediaries under the IT Act.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation requires intermediaries to follow prescribed guidelines to maintain liability exemption.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Intermediaries are exempt from liability for third-party information, data, or communication links made available or hosted by them, provided they do not initiate transmission, select the receiver, or modify the information.\",\"source\":\"IT Act 2000, Section 79(1)\",\"weight\":2,\"source_clause_ids\":[\"G001968\"],\"checkable_test\":\"Check if the intermediary's liability is exempted for third-party content they host or transmit, provided they do not initiate, select, or modify the information.\",\"applicability\":\"Applies to intermediaries hosting or transmitting third-party content.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This exemption applies only if the intermediary does not initiate transmission, select the receiver, or modify the information.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Intermediaries must observe due diligence while discharging their duties under the IT Act and follow guidelines prescribed by the Central Government.\",\"source\":\"IT Act 2000, Section 79(c)\",\"weight\":2,\"source_clause_ids\":[\"G001973\"],\"checkable_test\":\"Verify if the intermediary has observed due diligence and followed Central Government guidelines.\",\"applicability\":\"Applies to intermediaries under the IT Act.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation requires intermediaries to follow prescribed guidelines to maintain liability exemption.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Intermediaries are exempt from liability for third-party information, data, or communication links made available or hosted by them, provided they do not initiate transmission, select the receiver, or modify the information.",
+      "source": "IT Act 2000, Section 79(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001968"
+      ],
+      "checkable_test": "Check if the intermediary's liability is exempted for third-party content they host or transmit, provided they do not initiate, select, or modify the information.",
+      "applicability": "Applies to intermediaries hosting or transmitting third-party content.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This exemption applies only if the intermediary does not initiate transmission, select the receiver, or modify the information.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Intermediaries must observe due diligence while discharging their duties under the IT Act and follow guidelines prescribed by the Central Government.",
+      "source": "IT Act 2000, Section 79(c)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001973"
+      ],
+      "checkable_test": "Verify if the intermediary has observed due diligence and followed Central Government guidelines.",
+      "applicability": "Applies to intermediaries under the IT Act.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation requires intermediaries to follow prescribed guidelines to maintain liability exemption.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [
+    {
+      "position": 2,
+      "entry": {
+        "category": "Intermediary/Platform Liability",
+        "requirement": "Intermediaries are exempt from liability for third-party information, data, or communication links made available or hosted by them, provided they do not initiate transmission, select the receiver, or modify the information.",
+        "source": "IT Act 2000, Section 79(1)",
+        "weight": 2,
+        "source_clause_ids": [
+          "G001968"
+        ],
+        "checkable_test": "Check if the intermediary's liability is exempted for third-party content they host or transmit, provided they do not initiate, select, or modify the information.",
+        "applicability": "Applies to intermediaries hosting or transmitting third-party content.",
+        "assessability": "3",
+        "citation_confidence": "high",
+        "notes": "This exemption applies only if the intermediary does not initiate transmission, select the receiver, or modify the information.",
+        "human_review_status": "PENDING"
+      },
+      "error": "discarded as same-category, semantically similar duplicate of another entry sharing this source clause"
+    },
+    {
+      "position": 3,
+      "entry": {
+        "category": "Intermediary/Platform Liability",
+        "requirement": "Intermediaries must observe due diligence while discharging their duties under the IT Act and follow guidelines prescribed by the Central Government.",
+        "source": "IT Act 2000, Section 79(c)",
+        "weight": 2,
+        "source_clause_ids": [
+          "G001973"
+        ],
+        "checkable_test": "Verify if the intermediary has observed due diligence and followed Central Government guidelines.",
+        "applicability": "Applies to intermediaries under the IT Act.",
+        "assessability": "3",
+        "citation_confidence": "high",
+        "notes": "This obligation requires intermediaries to follow prescribed guidelines to maintain liability exemption.",
+        "human_review_status": "PENDING"
+      },
+      "error": "discarded as same-category, semantically similar duplicate of another entry sharing this source clause"
+    }
+  ],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T15:17:49.663864+00:00",
+  "multi_mapped_records": [
+    {
+      "batch_id": "f312f1c110ea14b0ac503ef1",
+      "source_clause_id": "G001968",
+      "total_entries": 2,
+      "distinct_categories": 1,
+      "categories": [
+        "Intermediary/Platform Liability"
+      ],
+      "decision": "KEPT_FIRST_PER_CATEGORY_OR_DEDUPED_BY_EMBEDDING",
+      "kept_positions": [
+        0
+      ],
+      "discarded_positions": [
+        2
+      ],
+      "entries_summary": [
+        {
+          "position": 0,
+          "category": "Intermediary/Platform Liability",
+          "requirement": "Intermediaries are exempt from liability for third-party information, data, or communication links made available or hos"
+        },
+        {
+          "position": 2,
+          "category": "Intermediary/Platform Liability",
+          "requirement": "Intermediaries are exempt from liability for third-party information, data, or communication links made available or hos"
+        }
+      ]
+    },
+    {
+      "batch_id": "f312f1c110ea14b0ac503ef1",
+      "source_clause_id": "G001973",
+      "total_entries": 2,
+      "distinct_categories": 1,
+      "categories": [
+        "Intermediary/Platform Liability"
+      ],
+      "decision": "KEPT_FIRST_PER_CATEGORY_OR_DEDUPED_BY_EMBEDDING",
+      "kept_positions": [
+        1
+      ],
+      "discarded_positions": [
+        3
+      ],
+      "entries_summary": [
+        {
+          "position": 1,
+          "category": "Intermediary/Platform Liability",
+          "requirement": "Intermediaries must observe due diligence while discharging their duties under the IT Act and follow guidelines prescrib"
+        },
+        {
+          "position": 3,
+          "category": "Intermediary/Platform Liability",
+          "requirement": "Intermediaries must observe due diligence while discharging their duties under the IT Act and follow guidelines prescrib"
+        }
+      ]
+    }
+  ]
+}

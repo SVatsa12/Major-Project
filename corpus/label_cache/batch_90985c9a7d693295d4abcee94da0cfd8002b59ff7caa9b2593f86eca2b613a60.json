@@ -1,0 +1,53 @@
+{
+  "cache_key": "90985c9a7d693295d4abcee94da0cfd8002b59ff7caa9b2593f86eca2b613a60",
+  "created_at_utc": "2026-09-17T04:34:47.312920+00:00",
+  "prompt_version": "policy-labeling-v7-reliable-batches",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S000229",
+    "S000230",
+    "S000231",
+    "S000232",
+    "S000233",
+    "S000234"
+  ],
+  "labels": [
+    {
+      "clause_id": "S000229",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S000230",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S000231",
+      "best_match_taxonomy_id": "DPDP_ACT-0039",
+      "verdict": "Partially Compliant",
+      "justification": "The clause mentions age restrictions and parental permission, which partially addresses the requirement for consent from guardians for children."
+    },
+    {
+      "clause_id": "S000232",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S000233",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Partially Compliant",
+      "justification": "The clause mentions security updates, which partially addresses the requirement for implementing security measures."
+    },
+    {
+      "clause_id": "S000234",
+      "best_match_taxonomy_id": "DPDP_RUL-0076",
+      "verdict": "Partially Compliant",
+      "justification": "The clause mentions handling personal data and privacy, which partially addresses the requirement for providing clear and informed consent."
+    }
+  ],
+  "status": "SUCCESS"
+}

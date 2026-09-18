@@ -1,0 +1,98 @@
+{
+  "batch_id": "d87961a0809fcddb1e8816b8",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G000725",
+    "G000726",
+    "G000727",
+    "G000728",
+    "G000730",
+    "G000731",
+    "G000739",
+    "G000749"
+  ],
+  "raw_response": "[\n  {\n    \"category\": \"Consent & Notice\",\n    \"requirement\": \"Data Fiduciaries must obtain verifiable consent for processing personal data of children, including the purposes of processing.\",\n    \"source\": \"DPDP Act 2023, Section 9(1)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G000726\"],\n    \"checkable_test\": \"Check if the document specifies a method for obtaining verifiable consent for children's data processing.\",\n    \"applicability\": \"Applies to Data Fiduciaries processing children's personal data.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Data Principal Rights\",\n    \"requirement\": \"Data Principals must be able to request information related to their personal data and its processing.\",\n    \"source\": \"DPDP Act 2023, Section 11(1)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G000731\"],\n    \"checkable_test\": \"Check if the document allows Data Principals to request information about their personal data and its processing.\",\n    \"applicability\": \"Applies to Data Fiduciaries handling personal data of Data Principals.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Children/Vulnerable Groups\",\n    \"requirement\": \"Data Fiduciaries must specify the classes of Data Fiduciaries and the conditions for processing personal data of children.\",\n    \"source\": \"DPDP Act 2023, Section 9(4)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G000727\"],\n    \"checkable_test\": \"Check if the document defines the classes of Data Fiduciaries and the conditions for processing children's personal data.\",\n    \"applicability\": \"Applies to Data Fiduciaries processing children's personal data.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Significant Data Fiduciary Obligations\",\n    \"requirement\": \"Data Fiduciaries must conduct a Data Protection Impact Assessment for processing personal data under specific conditions.\",\n    \"source\": \"DPDP Act 2023, Section 10(2)(c)(i)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G000728\"],\n    \"checkable_test\": \"Check if the document outlines the process for conducting a Data Protection Impact Assessment for specific data processing activities.\",\n    \"applicability\": \"Applies to Significant Data Fiduciaries processing personal data under specific conditions.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Consent & Notice\",\n    \"requirement\": \"Data Fiduciaries must specify the standards for processing personal data for exemption under specific provisions.\",\n    \"source\": \"DPDP Act 2023, Section 17(2)(b)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G000739\"],\n    \"checkable_test\": \"Check if the document outlines the standards for processing personal data for exemption under specific provisions.\",\n    \"applicability\": \"Applies to Data Fiduciaries processing personal data under exemption provisions.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  }\n]",
+  "parsed_entries": [
+    {
+      "category": "Consent & Notice",
+      "requirement": "Data Fiduciaries must obtain verifiable consent for processing personal data of children, including the purposes of processing.",
+      "source": "DPDP Act 2023, Section 9(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000726"
+      ],
+      "checkable_test": "Check if the document specifies a method for obtaining verifiable consent for children's data processing.",
+      "applicability": "Applies to Data Fiduciaries processing children's personal data.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Principal Rights",
+      "requirement": "Data Principals must be able to request information related to their personal data and its processing.",
+      "source": "DPDP Act 2023, Section 11(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000731"
+      ],
+      "checkable_test": "Check if the document allows Data Principals to request information about their personal data and its processing.",
+      "applicability": "Applies to Data Fiduciaries handling personal data of Data Principals.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Children/Vulnerable Groups",
+      "requirement": "Data Fiduciaries must specify the classes of Data Fiduciaries and the conditions for processing personal data of children.",
+      "source": "DPDP Act 2023, Section 9(4)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000727"
+      ],
+      "checkable_test": "Check if the document defines the classes of Data Fiduciaries and the conditions for processing children's personal data.",
+      "applicability": "Applies to Data Fiduciaries processing children's personal data.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Data Fiduciaries must conduct a Data Protection Impact Assessment for processing personal data under specific conditions.",
+      "source": "DPDP Act 2023, Section 10(2)(c)(i)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000728"
+      ],
+      "checkable_test": "Check if the document outlines the process for conducting a Data Protection Impact Assessment for specific data processing activities.",
+      "applicability": "Applies to Significant Data Fiduciaries processing personal data under specific conditions.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Consent & Notice",
+      "requirement": "Data Fiduciaries must specify the standards for processing personal data for exemption under specific provisions.",
+      "source": "DPDP Act 2023, Section 17(2)(b)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000739"
+      ],
+      "checkable_test": "Check if the document outlines the standards for processing personal data for exemption under specific provisions.",
+      "applicability": "Applies to Data Fiduciaries processing personal data under exemption provisions.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T13:58:32.564754+00:00",
+  "multi_mapped_records": []
+}

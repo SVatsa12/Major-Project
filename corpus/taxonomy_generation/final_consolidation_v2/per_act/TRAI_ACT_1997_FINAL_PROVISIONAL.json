@@ -1,0 +1,29 @@
+[
+  {
+    "taxonomy_id": "TRAI_ACT-0253",
+    "act": "TRAI_ACT_1997",
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "The Authority must maintain proper accounts and other relevant records and prepare an annual statement of accounts in the form prescribed by the Central Government.",
+    "checkable_test": "Check if the Authority maintains proper accounts and prepares annual statements in the prescribed form.",
+    "applicability": "Applicable to the Authority under the TRAI Act 1997.",
+    "source": "TRAI_ACT_1997, SECTION=FINANCE, ACCOUNTS AND AUDIT",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000257"
+    ],
+    "source_clause_ids": [
+      "G003368"
+    ],
+    "source_legal_anchors": [],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
+    "canonical_candidate_id": "TC-000257",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 1,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "cache_key": "84c1d53d8f94a9c0174aa64d5cd99665d62c6a119598856f6f111b6f95054428",
+  "created_at_utc": "2026-09-16T21:11:26.989271+00:00",
+  "prompt_version": "policy-labeling-v5-taxonomy-boundaries-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S000058",
+    "S000059",
+    "S000060"
+  ],
+  "labels": [
+    {
+      "clause_id": "S000058",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S000059",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S000060",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    }
+  ],
+  "status": "SUCCESS"
+}

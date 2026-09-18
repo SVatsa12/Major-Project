@@ -1,0 +1,38 @@
+{
+  "batch_id": "e3d78810d70fc8fb0fa5f5a8",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001953",
+    "G001956",
+    "G001969",
+    "G001971",
+    "G001974",
+    "G001975",
+    "G001984",
+    "G001994"
+  ],
+  "raw_response": "[{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Intermediaries are not liable for unlawful acts committed by users if they do not know about the unlawful activity and have not received actual notice of it.\",\"source\":\"IT Act 2000, Section 66A(2)\",\"weight\":2,\"source_clause_ids\":[\"G001969\"],\"checkable_test\":\"Check if the intermediary's liability exclusion applies when they do not have knowledge of unlawful activity and have not received actual notice.\",\"applicability\":\"Applies to intermediaries hosting user-generated content.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause defines the conditions under which intermediaries are not liable for unlawful acts by users.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Intermediaries are not liable for unlawful acts committed by users if they do not know about the unlawful activity and have not received actual notice of it.",
+      "source": "IT Act 2000, Section 66A(2)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001969"
+      ],
+      "checkable_test": "Check if the intermediary's liability exclusion applies when they do not have knowledge of unlawful activity and have not received actual notice.",
+      "applicability": "Applies to intermediaries hosting user-generated content.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause defines the conditions under which intermediaries are not liable for unlawful acts by users.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T15:55:43.445579+00:00",
+  "multi_mapped_records": []
+}

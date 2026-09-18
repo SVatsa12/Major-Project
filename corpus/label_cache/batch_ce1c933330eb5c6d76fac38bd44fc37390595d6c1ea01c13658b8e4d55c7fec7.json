@@ -1,0 +1,53 @@
+{
+  "cache_key": "ce1c933330eb5c6d76fac38bd44fc37390595d6c1ea01c13658b8e4d55c7fec7",
+  "created_at_utc": "2026-09-17T07:45:22.714791+00:00",
+  "prompt_version": "policy-labeling-v7-reliable-batches",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S002569",
+    "S002570",
+    "S002571",
+    "S002572",
+    "S002573",
+    "S002574"
+  ],
+  "labels": [
+    {
+      "clause_id": "S002569",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses copyright infringement and termination of access, not personal data security or related protections."
+    },
+    {
+      "clause_id": "S002570",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses account deletion and data export, not personal data security or related protections."
+    },
+    {
+      "clause_id": "S002571",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses account suspension and termination, not personal data security or related protections."
+    },
+    {
+      "clause_id": "S002572",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Partially Compliant",
+      "justification": "The clause mentions security of the Service but does not explicitly address data security measures like encryption or obfuscation."
+    },
+    {
+      "clause_id": "S002573",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses account termination and continued use, not personal data security or related protections."
+    },
+    {
+      "clause_id": "S002574",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses software licensing, not personal data security or related protections."
+    }
+  ],
+  "status": "SUCCESS"
+}

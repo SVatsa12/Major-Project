@@ -1,0 +1,53 @@
+{
+  "cache_key": "46e42fb8cf4fca769b27d502d5eae166e01c65aa605de406349c2ff91a2e61c5",
+  "created_at_utc": "2026-09-16T13:16:08.598837+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S001213",
+    "S001214",
+    "S001215",
+    "S001216",
+    "S001217",
+    "S001218"
+  ],
+  "labels": [
+    {
+      "clause_id": "S001213",
+      "best_match_taxonomy_id": "DPDP_RUL-0099",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses data retention but lacks specificity on retention periods and conditions."
+    },
+    {
+      "clause_id": "S001214",
+      "best_match_taxonomy_id": "DPDP_RUL-0099",
+      "verdict": "Partially Compliant",
+      "justification": "The clause refers to retention periods but does not explicitly state them or link to legal compliance."
+    },
+    {
+      "clause_id": "S001215",
+      "best_match_taxonomy_id": "DPDP_RUL-0099",
+      "verdict": "Partially Compliant",
+      "justification": "The clause mentions data deletion but lacks detail on retention periods or legal compliance."
+    },
+    {
+      "clause_id": "S001216",
+      "best_match_taxonomy_id": "DPDP_RUL-0099",
+      "verdict": "Partially Compliant",
+      "justification": "The clause outlines reasons for data retention but lacks explicit legal compliance details."
+    },
+    {
+      "clause_id": "S001217",
+      "best_match_taxonomy_id": "DPDP_RUL-0099",
+      "verdict": "Partially Compliant",
+      "justification": "The clause refers to retention periods but does not explicitly state them or link to legal compliance."
+    },
+    {
+      "clause_id": "S001218",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    }
+  ],
+  "status": "SUCCESS"
+}

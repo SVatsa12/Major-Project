@@ -1,0 +1,38 @@
+{
+  "batch_id": "184f393109e9aeafa5988215",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001904",
+    "G001906",
+    "G001907",
+    "G001908",
+    "G001909",
+    "G001910",
+    "G001920",
+    "G001922"
+  ],
+  "raw_response": "[{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Intermediaries must provide access to or secure access to computer resources generating, transmitting, receiving, or storing information when requested by authorized agencies.\",\"source\":\"IT Act 2000, Section 69(3)(a)\",\"weight\":2,\"source_clause_ids\":[\"G001908\"],\"checkable_test\":\"Check if the document explicitly states that intermediaries must provide access to computer resources upon request by authorized agencies.\",\"applicability\":\"Applicable to intermediaries and platform providers.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is directly tied to the IT Act 2000 and applies to intermediaries in the context of law enforcement requests.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Intermediaries must provide access to or secure access to computer resources generating, transmitting, receiving, or storing information when requested by authorized agencies.",
+      "source": "IT Act 2000, Section 69(3)(a)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001908"
+      ],
+      "checkable_test": "Check if the document explicitly states that intermediaries must provide access to computer resources upon request by authorized agencies.",
+      "applicability": "Applicable to intermediaries and platform providers.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to the IT Act 2000 and applies to intermediaries in the context of law enforcement requests.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T15:00:43.249151+00:00",
+  "multi_mapped_records": []
+}

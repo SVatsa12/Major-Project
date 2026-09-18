@@ -1,0 +1,83 @@
+{
+  "batch_id": "4ca25f5bfc0b776edf06cd43",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001013",
+    "G001168",
+    "G001201",
+    "G001208",
+    "G001245",
+    "G001257",
+    "G001266",
+    "G001269"
+  ],
+  "raw_response": "[{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Significant data fiduciaries must implement appropriate technical and organisational measures to ensure adherence to standards and frameworks and effective observance of obligations under item 11 of Part B.\",\"source\":\"DPDP Rules 2025, Rule 9\",\"weight\":3,\"source_clause_ids\":[\"G001168\"],\"checkable_test\":\"Whether the organization has implemented appropriate technical and organisational measures to ensure adherence to standards and frameworks and effective observance of obligations under item 11 of Part B.\",\"applicability\":\"Applicable to significant data fiduciaries.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is based on the obligation to implement appropriate measures to ensure compliance with standards and frameworks.\"},{\"category\":\"Data Retention & Erasure\",\"requirement\":\"Processing of personal data is restricted to the extent necessary for the educational activities of the institution.\",\"source\":\"DPDP Rules 2025, Section 1257\",\"weight\":2,\"source_clause_ids\":[\"G001257\"],\"checkable_test\":\"Whether the organization restricts data processing to the extent necessary for the educational activities of the institution.\",\"applicability\":\"Applicable to processing for educational activities.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is based on the restriction of data processing to the extent necessary for educational activities.\"},{\"category\":\"Data Retention & Erasure\",\"requirement\":\"Processing of personal data is restricted to the extent necessary for the exercise, performance or discharge of the purpose.\",\"source\":\"DPDP Rules 2025, Section 1266\",\"weight\":2,\"source_clause_ids\":[\"G001266\"],\"checkable_test\":\"Whether the organization restricts data processing to the extent necessary for the exercise, performance or discharge of the purpose.\",\"applicability\":\"Applicable to processing for purposes specified in the rules.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is based on the restriction of data processing to the extent necessary for the exercise, performance or discharge of the purpose.\"},{\"category\":\"Data Retention & Erasure\",\"requirement\":\"Processing of personal data is restricted to the extent necessary for the provision or issuance of services or products.\",\"source\":\"DPDP Rules 2025, Section 1269\",\"weight\":2,\"source_clause_ids\":[\"G001269\"],\"checkable_test\":\"Whether the organization restricts data processing to the extent necessary for the provision or issuance of services or products.\",\"applicability\":\"Applicable to processing for provision or issuance of services or products.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is based on the restriction of data processing to the extent necessary for the provision or issuance of services or products.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Significant data fiduciaries must implement appropriate technical and organisational measures to ensure adherence to standards and frameworks and effective observance of obligations under item 11 of Part B.",
+      "source": "DPDP Rules 2025, Rule 9",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001168"
+      ],
+      "checkable_test": "Whether the organization has implemented appropriate technical and organisational measures to ensure adherence to standards and frameworks and effective observance of obligations under item 11 of Part B.",
+      "applicability": "Applicable to significant data fiduciaries.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is based on the obligation to implement appropriate measures to ensure compliance with standards and frameworks.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "Processing of personal data is restricted to the extent necessary for the educational activities of the institution.",
+      "source": "DPDP Rules 2025, Section 1257",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001257"
+      ],
+      "checkable_test": "Whether the organization restricts data processing to the extent necessary for the educational activities of the institution.",
+      "applicability": "Applicable to processing for educational activities.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is based on the restriction of data processing to the extent necessary for educational activities.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "Processing of personal data is restricted to the extent necessary for the exercise, performance or discharge of the purpose.",
+      "source": "DPDP Rules 2025, Section 1266",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001266"
+      ],
+      "checkable_test": "Whether the organization restricts data processing to the extent necessary for the exercise, performance or discharge of the purpose.",
+      "applicability": "Applicable to processing for purposes specified in the rules.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is based on the restriction of data processing to the extent necessary for the exercise, performance or discharge of the purpose.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "Processing of personal data is restricted to the extent necessary for the provision or issuance of services or products.",
+      "source": "DPDP Rules 2025, Section 1269",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001269"
+      ],
+      "checkable_test": "Whether the organization restricts data processing to the extent necessary for the provision or issuance of services or products.",
+      "applicability": "Applicable to processing for provision or issuance of services or products.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is based on the restriction of data processing to the extent necessary for the provision or issuance of services or products.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T15:41:30.514352+00:00",
+  "multi_mapped_records": []
+}

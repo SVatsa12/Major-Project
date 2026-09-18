@@ -1,0 +1,482 @@
+[
+  {
+    "batch_id": "5c70d5f73b5dee0324e7ee41",
+    "input_clause_ids": [
+      "G001223",
+      "G001225",
+      "G001228",
+      "G001232",
+      "G001235",
+      "G001236",
+      "G001239",
+      "G001252"
+    ],
+    "position": 1,
+    "entry": {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Data Fiduciaries who are online gaming intermediaries with not less than fifty lakh registered users in India must enable Data Principals to access virtual tokens issued by or on behalf of the Data Fiduciary, stored on their digital platform, and usable for obtaining money, goods, or services.",
+      "source": "DPDP Rules 2025, Rule 8(2)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001225"
+      ],
+      "checkable_test": "Check if the online gaming intermediary provides access to virtual tokens as described.",
+      "applicability": "Applies to online gaming intermediaries with fifty lakh registered users in India.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is tied to the specific class of data fiduciaries and their responsibilities under the DPDP Rules 2025.",
+      "human_review_status": "PENDING"
+    },
+    "error": "discarded as same-category, semantically similar duplicate of another entry sharing this source clause"
+  },
+  {
+    "batch_id": "5c70d5f73b5dee0324e7ee41",
+    "input_clause_ids": [
+      "G001223",
+      "G001225",
+      "G001228",
+      "G001232",
+      "G001235",
+      "G001236",
+      "G001239",
+      "G001252"
+    ],
+    "position": 2,
+    "entry": {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Data Fiduciaries who are social media intermediaries with not less than two crore registered users in India must enable Data Principals to access virtual tokens issued by or on behalf of the Data Fiduciary, stored on their digital platform, and usable for obtaining money, goods, or services.",
+      "source": "DPDP Rules 2025, Rule 8(2)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001225"
+      ],
+      "checkable_test": "Check if the social media intermediary provides access to virtual tokens as described.",
+      "applicability": "Applies to social media intermediaries with two crore registered users in India.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is tied to the specific class of data fiduciaries and their responsibilities under the DPDP Rules 2025.",
+      "human_review_status": "PENDING"
+    },
+    "error": "discarded as same-category, semantically similar duplicate of another entry sharing this source clause"
+  },
+  {
+    "batch_id": "337ffec2a829806ee869f38e",
+    "input_clause_ids": [
+      "G001926",
+      "G001931",
+      "G001932",
+      "G001933",
+      "G001935",
+      "G001945",
+      "G001947",
+      "G001951"
+    ],
+    "position": 9,
+    "entry": {
+      "category": "Security Safeguards",
+      "requirement": "The Indian Computer Emergency Response Team shall serve as the national agency for performing the following functions in the area of cybersecurity, including incident response and protection of critical information infrastructure.",
+      "source": "IT Act 2000, Section 70B(4)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001935"
+      ],
+      "checkable_test": "Check if the document specifies that the Indian Computer Emergency Response Team is responsible for incident response and protection of critical information infrastructure.",
+      "applicability": "Applicable to entities involved in cybersecurity and incident response.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause outlines the functions of the national agency in cybersecurity and incident response.",
+      "human_review_status": "PENDING"
+    },
+    "error": "discarded as same-category, semantically similar duplicate of another entry sharing this source clause"
+  },
+  {
+    "batch_id": "fadaa6277110ac4661c1b9e4",
+    "input_clause_ids": [
+      "G002266",
+      "G002267",
+      "G002268",
+      "G002269",
+      "G002270",
+      "G002271",
+      "G002272",
+      "G002273"
+    ],
+    "position": 4,
+    "entry": {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Information Officer must inform the applicant of the details of the fees calculated and the amount required to be deposited for accessing information.",
+      "source": "RTI Act 2005, Section 9",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002273"
+      ],
+      "checkable_test": "The document must explicitly state that the Information Officer will inform the applicant of the fees calculated and the amount required to be deposited.",
+      "applicability": "Applicable to any document that outlines the procedures for handling information requests under the RTI Act 2005.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is derived from the obligation to disclose fee details in information requests.",
+      "human_review_status": "PENDING"
+    },
+    "error": "discarded as same-category, semantically similar duplicate of another entry sharing this source clause"
+  },
+  {
+    "batch_id": "08671e0ac0ba50046be601f0",
+    "input_clause_ids": [
+      "G003285",
+      "G003286",
+      "G003292",
+      "G003293",
+      "G003301",
+      "G003304",
+      "G003310",
+      "G003325"
+    ],
+    "position": 2,
+    "entry": {
+      "category": "Grievance Reddessal",
+      "requirement": "The Appellate Tribunal may, for the purpose of examining the legality or propriety or correctness of any dispute made in any application under sub-section (?) or of any direction or order or decision of the Authority referred to in the appeal preferred under sub-section (2), on its own motion or otherwise, call for the records relevant to disposing of such application or appeal and make such orders as it thinks fit.",
+      "source": "TRAI_ACT_1997, SECTION=1",
+      "weight": 2,
+      "source_clause_ids": [
+        "G003292"
+      ],
+      "checkable_test": "Check if the document allows the Appellate Tribunal to call for records and make orders during an appeal process.",
+      "applicability": "Applicable to any document that outlines appeal mechanisms under TRAI Act 1997.",
+      "assessability": 3,
+      "citation_confidence": "high",
+      "notes": "This clause outlines the Appellate Tribunal's authority to examine disputes and make orders."
+    },
+    "error": "invalid category: 'Grievance Reddessal'"
+  },
+  {
+    "batch_id": "cc03aa7f4acd7208558886e2",
+    "input_clause_ids": [
+      "G000580",
+      "G000581",
+      "G000582",
+      "G000583",
+      "G000585",
+      "G000587",
+      "G000598",
+      "G000601"
+    ],
+    "position": 6,
+    "entry": {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Data fiduciaries must ensure that the salary, allowances, and other terms and conditions of service of the Data Protection Board of India are established in accordance with the provisions of the Act.",
+      "source": "DPDP Act 2023, Section Data Protection Board of India 20. (1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000098"
+      ],
+      "checkable_test": "Verify that the salary, allowances, and other terms and conditions of service of the Data Protection Board of India are established in accordance with the Act.",
+      "applicability": "When establishing the salary, allowances, and other terms and conditions of service of the Data Protection Board of India.",
+      "assessability": 3,
+      "citation_confidence": "high",
+      "notes": "This clause outlines the requirement for establishing the salary, allowances, and other terms and conditions of service of the Data Protection Board of India."
+    },
+    "error": "source_clause_ids contains IDs outside this batch: ['G000098']"
+  },
+  {
+    "batch_id": "bbdb8ad3e56e27f4f3217e4a",
+    "input_clause_ids": [
+      "G001023",
+      "G001026",
+      "G001028",
+      "G001036",
+      "G001039",
+      "G001052",
+      "G001057",
+      "G001059"
+    ],
+    "position": 2,
+    "entry": {
+      "category": "Grievance Reddressal",
+      "requirement": "The Board may reject an application and communicate the reasons for rejection to the applicant.",
+      "source": "DPDP Rules 2025, Rule 10(2)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001028"
+      ],
+      "checkable_test": "Existence of a process for the Board to reject applications and communicate reasons.",
+      "applicability": "All Data Fiduciaries subject to DPDP Rules 2025.",
+      "assessability": 2,
+      "citation_confidence": "high",
+      "notes": "This requirement outlines the process for the Board to reject applications and communicate reasons."
+    },
+    "error": "invalid category: 'Grievance Reddressal'"
+  },
+  {
+    "batch_id": "e35f22e37834a701ed3094de",
+    "input_clause_ids": [
+      "G001100",
+      "G001101",
+      "G001102",
+      "G001103",
+      "G001106",
+      "G001110",
+      "G001120",
+      "G001121"
+    ],
+    "position": 0,
+    "entry": "G001106",
+    "error": "entry is not an object"
+  },
+  {
+    "batch_id": "2769be0aa54983767b8fbcb0",
+    "input_clause_ids": [
+      "G001934",
+      "G001936",
+      "G001940",
+      "G001941",
+      "G001942",
+      "G001943",
+      "G001944",
+      "G001946"
+    ],
+    "position": 0,
+    "entry": "G001943",
+    "error": "entry is not an object"
+  },
+  {
+    "batch_id": "f312f1c110ea14b0ac503ef1",
+    "input_clause_ids": [
+      "G001967",
+      "G001968",
+      "G001972",
+      "G001973",
+      "G001981",
+      "G001983",
+      "G001985",
+      "G001987"
+    ],
+    "position": 2,
+    "entry": {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Intermediaries are exempt from liability for third-party information, data, or communication links made available or hosted by them, provided they do not initiate transmission, select the receiver, or modify the information.",
+      "source": "IT Act 2000, Section 79(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001968"
+      ],
+      "checkable_test": "Check if the intermediary's liability is exempted for third-party content they host or transmit, provided they do not initiate, select, or modify the information.",
+      "applicability": "Applies to intermediaries hosting or transmitting third-party content.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This exemption applies only if the intermediary does not initiate transmission, select the receiver, or modify the information.",
+      "human_review_status": "PENDING"
+    },
+    "error": "discarded as same-category, semantically similar duplicate of another entry sharing this source clause"
+  },
+  {
+    "batch_id": "f312f1c110ea14b0ac503ef1",
+    "input_clause_ids": [
+      "G001967",
+      "G001968",
+      "G001972",
+      "G001973",
+      "G001981",
+      "G001983",
+      "G001985",
+      "G001987"
+    ],
+    "position": 3,
+    "entry": {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Intermediaries must observe due diligence while discharging their duties under the IT Act and follow guidelines prescribed by the Central Government.",
+      "source": "IT Act 2000, Section 79(c)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001973"
+      ],
+      "checkable_test": "Verify if the intermediary has observed due diligence and followed Central Government guidelines.",
+      "applicability": "Applies to intermediaries under the IT Act.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation requires intermediaries to follow prescribed guidelines to maintain liability exemption.",
+      "human_review_status": "PENDING"
+    },
+    "error": "discarded as same-category, semantically similar duplicate of another entry sharing this source clause"
+  },
+  {
+    "batch_id": "1ff5a6452cdbc61b2a238f0f",
+    "input_clause_ids": [
+      "G000696",
+      "G000697",
+      "G000698",
+      "G000708",
+      "G000709",
+      "G000710",
+      "G000713",
+      "G000714"
+    ],
+    "position": 1,
+    "entry": {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Significant data fiduciaries must ensure that penalties imposed for breaches are proportionate and effective, having regard to the need to secure observance of and deter breach of the provisions of the Act.",
+      "source": "DPDP Act 2023, Section 38(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000698"
+      ],
+      "checkable_test": "Check if the penalty imposed for a breach is proportionate and effective.",
+      "applicability": "Applicable to significant data fiduciaries.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "This requirement is derived from the obligation to ensure penalties are proportionate and effective.",
+      "human_review_status": "PENDING"
+    },
+    "error": "discarded as same-category, semantically similar duplicate of another entry sharing this source clause"
+  },
+  {
+    "batch_id": "b17c81c81db954d67cafc8c5",
+    "input_clause_ids": [
+      "G001366",
+      "G001373",
+      "G001378",
+      "G001379",
+      "G001383",
+      "G001387",
+      "G001392",
+      "G001409"
+    ],
+    "position": 3,
+    "entry": {
+      "category": "Penalties & Enforcement",
+      "requirement": "Certifying Authorities must furnish required information and returns to authorities.",
+      "source": "IT Act 2000, Section 44",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001392"
+      ],
+      "checkable_test": "Verify if the document contains a requirement for Certifying Authorities to furnish information and returns as mandated.",
+      "applicability": "Applicable to Certifying Authorities under the IT Act 2000.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is derived from Section 44 of the IT Act 2000, which outlines penalties for non-compliance."
+    },
+    "error": "invalid category: 'Penalties & Enforcement'"
+  },
+  {
+    "batch_id": "252466d87e220945d4bbd76f",
+    "input_clause_ids": [
+      "G001757",
+      "G001760",
+      "G001775",
+      "G001777",
+      "G001783",
+      "G001792",
+      "G001793",
+      "G001800"
+    ],
+    "position": 4,
+    "entry": {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "A subscriber to a Digital Signature Certificate must not engage in any activity that violates the provisions of the IT Act 2000 or its regulations, including the introduction of computer contaminants or viruses, disruption of computer systems, or unauthorized modification of data.",
+      "source": "IT Act 2000, Section 13(1)(a)-(e)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001775",
+        "G001777",
+        "G001783"
+      ],
+      "checkable_test": "Verify whether the document explicitly prohibits actions that violate the IT Act 2000, including the introduction of computer contaminants, disruption of systems, or unauthorized modification of data.",
+      "applicability": "Applies to entities issuing or managing Digital Signature Certificates.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is tied to the IT Act 2000 and applies to certificate subscribers.",
+      "human_review_status": "PENDING"
+    },
+    "error": "discarded as same-category, semantically similar duplicate of another entry sharing this source clause"
+  },
+  {
+    "batch_id": "2c4be75d13384a290342fce6",
+    "input_clause_ids": [
+      "G001668",
+      "G001688",
+      "G001702",
+      "G001709",
+      "G001720",
+      "G001721",
+      "G001727",
+      "G001729"
+    ],
+    "position": 7,
+    "entry": {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "Certifying authorities must ensure that the electronic signature is issued in accordance with the provisions of the IT Act and related regulations.",
+      "source": "IT Act 2000, Section 1708(a)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001702"
+      ],
+      "checkable_test": "Confirm that the electronic signature is issued in compliance with the IT Act and its regulations.",
+      "applicability": "Applicable to certifying authorities issuing electronic signatures.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures that electronic signatures are legally valid and secure.",
+      "human_review_status": "PENDING"
+    },
+    "error": "discarded as same-category, semantically similar duplicate of another entry sharing this source clause"
+  },
+  {
+    "batch_id": "2c4be75d13384a290342fce6",
+    "input_clause_ids": [
+      "G001668",
+      "G001688",
+      "G001702",
+      "G001709",
+      "G001720",
+      "G001721",
+      "G001727",
+      "G001729"
+    ],
+    "position": 8,
+    "entry": {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "Certifying authorities must ensure that the electronic signature is issued in accordance with the provisions of the IT Act and related regulations.",
+      "source": "IT Act 2000, Section 1708(a)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001702"
+      ],
+      "checkable_test": "Confirm that the electronic signature is issued in compliance with the IT Act and its regulations.",
+      "applicability": "Applicable to certifying authorities issuing electronic signatures.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures that electronic signatures are legally valid and secure.",
+      "human_review_status": "PENDING"
+    },
+    "error": "discarded as same-category, semantically similar duplicate of another entry sharing this source clause"
+  },
+  {
+    "batch_id": "2c4be75d13384a290342fce6",
+    "input_clause_ids": [
+      "G001668",
+      "G001688",
+      "G001702",
+      "G001709",
+      "G001720",
+      "G001721",
+      "G001727",
+      "G001729"
+    ],
+    "position": 9,
+    "entry": {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "Certifying authorities must ensure that the electronic signature is issued in accordance with the provisions of the IT Act and related regulations.",
+      "source": "IT Act 2000, Section 1708(a)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001702"
+      ],
+      "checkable_test": "Confirm that the electronic signature is issued in compliance with the IT Act and its regulations.",
+      "applicability": "Applicable to certifying authorities issuing electronic signatures.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures that electronic signatures are legally valid and secure.",
+      "human_review_status": "PENDING"
+    },
+    "error": "discarded as same-category, semantically similar duplicate of another entry sharing this source clause"
+  }
+]

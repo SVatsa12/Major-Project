@@ -1,0 +1,143 @@
+{
+  "batch_id": "7265d4925c2f331db608c25d",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001819",
+    "G001837",
+    "G001838",
+    "G001839",
+    "G001841",
+    "G001844",
+    "G001852",
+    "G001853"
+  ],
+  "raw_response": "[{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The Appellate Tribunal must specify the matters and places in relation to which it may exercise jurisdiction.\",\"source\":\"IT Act 2000, Section 49\",\"weight\":2,\"source_clause_ids\":[\"G001819\"],\"checkable_test\":\"Check if the Appellate Tribunal's jurisdiction is clearly specified in the document.\",\"applicability\":\"Applicable to platforms subject to the IT Act 2000.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is derived from the requirement that the Central Government specify the jurisdiction of the Appellate Tribunal.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Any person aggrieved by an order made by a controller or adjudicating officer may prefer an appeal to the Appellate Tribunal having jurisdiction in the matter.\",\"source\":\"IT Act 2000, Section 57(1)\",\"weight\":2,\"source_clause_ids\":[\"G001837\"],\"checkable_test\":\"Verify that the document allows for appeals to the Appellate Tribunal as per the IT Act 2000.\",\"applicability\":\"Applicable to platforms subject to the IT Act 2000.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is derived from the right of appeal to the Appellate Tribunal under the IT Act 2000.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"No appeal shall lie to the Appellate Tribunal from an order made by an adjudicating officer with the consent of the parties.\",\"source\":\"IT Act 2000, Section 57(2)\",\"weight\":2,\"source_clause_ids\":[\"G001838\"],\"checkable_test\":\"Check if the document specifies that appeals cannot be made with the consent of the parties.\",\"applicability\":\"Applicable to platforms subject to the IT Act 2000.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is derived from the restriction on appeals with the consent of the parties under the IT Act 2000.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Every appeal under Section 57(1) must be filed within forty-five days from the date of receiving the order, with the possibility of extension if sufficient cause is shown.\",\"source\":\"IT Act 2000, Section 57(3)\",\"weight\":2,\"source_clause_ids\":[\"G001839\"],\"checkable_test\":\"Verify that the document specifies the 45-day filing period for appeals and the possibility of extension.\",\"applicability\":\"Applicable to platforms subject to the IT Act 2000.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is derived from the time limits for filing appeals under the IT Act 2000.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The Appellate Tribunal must send a copy of every order made by it to the parties to the appeal and to the concerned Controller or adjudicating officer.\",\"source\":\"IT Act 2000, Section 57(5)\",\"weight\":2,\"source_clause_ids\":[\"G001841\"],\"checkable_test\":\"Check if the document requires the Appellate Tribunal to send copies of its orders to the relevant parties.\",\"applicability\":\"Applicable to platforms subject to the IT Act 2000.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is derived from the requirement to send copies of orders to the parties under the IT Act 2000.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The Appellate Tribunal must have the same powers as a civil court under the Code of Civil Procedure, 1908, for certain matters.\",\"source\":\"IT Act 2000, Section 57(2)\",\"weight\":2,\"source_clause_ids\":[\"G001844\"],\"checkable_test\":\"Verify that the document specifies the powers of the Appellate Tribunal as per the Code of Civil Procedure, 1908.\",\"applicability\":\"Applicable to platforms subject to the IT Act 2000.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is derived from the grant of civil court powers to the Appellate Tribunal under the IT Act 2000.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Every proceeding before the Appellate Tribunal shall be deemed a judicial proceeding for the purposes of certain legal provisions.\",\"source\":\"IT Act 2000, Section 59(3)\",\"weight\":2,\"source_clause_ids\":[\"G001852\"],\"checkable_test\":\"Check if the document states that proceedings before the Appellate Tribunal are deemed judicial proceedings.\",\"applicability\":\"Applicable to platforms subject to the IT Act 2000.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is derived from the classification of proceedings before the Appellate Tribunal as judicial under the IT Act 2000.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The appellant may either appear in person or authorise legal practitioners or officers to present their case before the Appellate Tribunal.\",\"source\":\"IT Act 2000, Section 59\",\"weight\":2,\"source_clause_ids\":[\"G001853\"],\"checkable_test\":\"Verify that the document allows for legal representation before the Appellate Tribunal.\",\"applicability\":\"Applicable to platforms subject to the IT Act 2000.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is derived from the right to legal representation before the Appellate Tribunal under the IT Act 2000.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Appellate Tribunal must specify the matters and places in relation to which it may exercise jurisdiction.",
+      "source": "IT Act 2000, Section 49",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001819"
+      ],
+      "checkable_test": "Check if the Appellate Tribunal's jurisdiction is clearly specified in the document.",
+      "applicability": "Applicable to platforms subject to the IT Act 2000.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is derived from the requirement that the Central Government specify the jurisdiction of the Appellate Tribunal.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Any person aggrieved by an order made by a controller or adjudicating officer may prefer an appeal to the Appellate Tribunal having jurisdiction in the matter.",
+      "source": "IT Act 2000, Section 57(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001837"
+      ],
+      "checkable_test": "Verify that the document allows for appeals to the Appellate Tribunal as per the IT Act 2000.",
+      "applicability": "Applicable to platforms subject to the IT Act 2000.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is derived from the right of appeal to the Appellate Tribunal under the IT Act 2000.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "No appeal shall lie to the Appellate Tribunal from an order made by an adjudicating officer with the consent of the parties.",
+      "source": "IT Act 2000, Section 57(2)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001838"
+      ],
+      "checkable_test": "Check if the document specifies that appeals cannot be made with the consent of the parties.",
+      "applicability": "Applicable to platforms subject to the IT Act 2000.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is derived from the restriction on appeals with the consent of the parties under the IT Act 2000.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Every appeal under Section 57(1) must be filed within forty-five days from the date of receiving the order, with the possibility of extension if sufficient cause is shown.",
+      "source": "IT Act 2000, Section 57(3)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001839"
+      ],
+      "checkable_test": "Verify that the document specifies the 45-day filing period for appeals and the possibility of extension.",
+      "applicability": "Applicable to platforms subject to the IT Act 2000.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is derived from the time limits for filing appeals under the IT Act 2000.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Appellate Tribunal must send a copy of every order made by it to the parties to the appeal and to the concerned Controller or adjudicating officer.",
+      "source": "IT Act 2000, Section 57(5)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001841"
+      ],
+      "checkable_test": "Check if the document requires the Appellate Tribunal to send copies of its orders to the relevant parties.",
+      "applicability": "Applicable to platforms subject to the IT Act 2000.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is derived from the requirement to send copies of orders to the parties under the IT Act 2000.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Appellate Tribunal must have the same powers as a civil court under the Code of Civil Procedure, 1908, for certain matters.",
+      "source": "IT Act 2000, Section 57(2)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001844"
+      ],
+      "checkable_test": "Verify that the document specifies the powers of the Appellate Tribunal as per the Code of Civil Procedure, 1908.",
+      "applicability": "Applicable to platforms subject to the IT Act 2000.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is derived from the grant of civil court powers to the Appellate Tribunal under the IT Act 2000.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Every proceeding before the Appellate Tribunal shall be deemed a judicial proceeding for the purposes of certain legal provisions.",
+      "source": "IT Act 2000, Section 59(3)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001852"
+      ],
+      "checkable_test": "Check if the document states that proceedings before the Appellate Tribunal are deemed judicial proceedings.",
+      "applicability": "Applicable to platforms subject to the IT Act 2000.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is derived from the classification of proceedings before the Appellate Tribunal as judicial under the IT Act 2000.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The appellant may either appear in person or authorise legal practitioners or officers to present their case before the Appellate Tribunal.",
+      "source": "IT Act 2000, Section 59",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001853"
+      ],
+      "checkable_test": "Verify that the document allows for legal representation before the Appellate Tribunal.",
+      "applicability": "Applicable to platforms subject to the IT Act 2000.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is derived from the right to legal representation before the Appellate Tribunal under the IT Act 2000.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T15:00:27.085709+00:00",
+  "multi_mapped_records": []
+}

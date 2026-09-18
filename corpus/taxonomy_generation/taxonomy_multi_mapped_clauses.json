@@ -1,0 +1,719 @@
+[
+  {
+    "batch_id": "98253ac878dbf7c1a63e9857",
+    "source_clause_id": "G000511",
+    "total_entries": 2,
+    "distinct_categories": 2,
+    "categories": [
+      "Consent & Notice",
+      "Data Retention & Erasure"
+    ],
+    "decision": "KEPT_ALL_DISTINCT_CATEGORIES",
+    "kept_positions": [
+      0,
+      1
+    ],
+    "discarded_positions": [],
+    "entries_summary": [
+      {
+        "position": 0,
+        "category": "Consent & Notice",
+        "requirement": "A Data Fiduciary must cease processing personal data if the Data Principal does not exercise her rights for a prescribed"
+      },
+      {
+        "position": 1,
+        "category": "Data Retention & Erasure",
+        "requirement": "A Data Fiduciary must establish a time period for the retention of personal data and erase it upon expiry."
+      }
+    ]
+  },
+  {
+    "batch_id": "17721d3332185e67008ede2e",
+    "source_clause_id": "G001185",
+    "total_entries": 3,
+    "distinct_categories": 3,
+    "categories": [
+      "Security Safeguards",
+      "Significant Data Fiduciary Obligations",
+      "Confidentiality & Misuse of Data"
+    ],
+    "decision": "KEPT_ALL_DISTINCT_CATEGORIES",
+    "kept_positions": [
+      1,
+      3,
+      4
+    ],
+    "discarded_positions": [],
+    "entries_summary": [
+      {
+        "position": 1,
+        "category": "Security Safeguards",
+        "requirement": "The Consent Manager must take reasonable security safeguards to prevent personal data breaches."
+      },
+      {
+        "position": 3,
+        "category": "Significant Data Fiduciary Obligations",
+        "requirement": "The Consent Manager must act in a fiduciary capacity in relation to the Data Principal."
+      },
+      {
+        "position": 4,
+        "category": "Confidentiality & Misuse of Data",
+        "requirement": "The Consent Manager must not sub-contract or assign the performance of any of its obligations under the Act and these ru"
+      }
+    ]
+  },
+  {
+    "batch_id": "5c70d5f73b5dee0324e7ee41",
+    "source_clause_id": "G001225",
+    "total_entries": 3,
+    "distinct_categories": 1,
+    "categories": [
+      "Significant Data Fiduciary Obligations"
+    ],
+    "decision": "KEPT_FIRST_PER_CATEGORY_OR_DEDUPED_BY_EMBEDDING",
+    "kept_positions": [
+      0
+    ],
+    "discarded_positions": [
+      1,
+      2
+    ],
+    "entries_summary": [
+      {
+        "position": 0,
+        "category": "Significant Data Fiduciary Obligations",
+        "requirement": "Data Fiduciaries who are e-commerce entities with not less than two crore registered users in India must enable Data Pri"
+      },
+      {
+        "position": 1,
+        "category": "Significant Data Fiduciary Obligations",
+        "requirement": "Data Fiduciaries who are online gaming intermediaries with not less than fifty lakh registered users in India must enabl"
+      },
+      {
+        "position": 2,
+        "category": "Significant Data Fiduciary Obligations",
+        "requirement": "Data Fiduciaries who are social media intermediaries with not less than two crore registered users in India must enable "
+      }
+    ]
+  },
+  {
+    "batch_id": "4258cde7d4bb1b2f1466c3ee",
+    "source_clause_id": "G001418",
+    "total_entries": 3,
+    "distinct_categories": 3,
+    "categories": [
+      "Intermediary/Platform Liability",
+      "Security Safeguards",
+      "Confidentiality & Misuse of Data"
+    ],
+    "decision": "KEPT_ALL_DISTINCT_CATEGORIES",
+    "kept_positions": [
+      0,
+      1,
+      2
+    ],
+    "discarded_positions": [],
+    "entries_summary": [
+      {
+        "position": 0,
+        "category": "Intermediary/Platform Liability",
+        "requirement": "Intermediaries must comply with directions issued by authorities for interception, monitoring, or decryption of informat"
+      },
+      {
+        "position": 1,
+        "category": "Security Safeguards",
+        "requirement": "Organizations must implement measures to protect information, equipment, devices, and communication devices from unautho"
+      },
+      {
+        "position": 2,
+        "category": "Confidentiality & Misuse of Data",
+        "requirement": "Data must be processed in a manner that ensures it is protected and not misused, with appropriate safeguards in place."
+      }
+    ]
+  },
+  {
+    "batch_id": "4258cde7d4bb1b2f1466c3ee",
+    "source_clause_id": "G001342",
+    "total_entries": 2,
+    "distinct_categories": 2,
+    "categories": [
+      "Data Retention & Erasure",
+      "Significant Data Fiduciary Obligations"
+    ],
+    "decision": "KEPT_ALL_DISTINCT_CATEGORIES",
+    "kept_positions": [
+      3,
+      4
+    ],
+    "discarded_positions": [],
+    "entries_summary": [
+      {
+        "position": 3,
+        "category": "Data Retention & Erasure",
+        "requirement": "Data must be retained only for as long as necessary for the purpose for which it was collected, and must be erased or an"
+      },
+      {
+        "position": 4,
+        "category": "Significant Data Fiduciary Obligations",
+        "requirement": "Data fiduciaries must ensure that personal data is used only in the interest of sovereignty, integrity, or security of t"
+      }
+    ]
+  },
+  {
+    "batch_id": "337ffec2a829806ee869f38e",
+    "source_clause_id": "G001935",
+    "total_entries": 2,
+    "distinct_categories": 1,
+    "categories": [
+      "Security Safeguards"
+    ],
+    "decision": "KEPT_FIRST_PER_CATEGORY_OR_DEDUPED_BY_EMBEDDING",
+    "kept_positions": [
+      2
+    ],
+    "discarded_positions": [
+      9
+    ],
+    "entries_summary": [
+      {
+        "position": 2,
+        "category": "Security Safeguards",
+        "requirement": "The Indian Computer Emergency Response Team shall serve as the national agency for performing functions in the area of c"
+      },
+      {
+        "position": 9,
+        "category": "Security Safeguards",
+        "requirement": "The Indian Computer Emergency Response Team shall serve as the national agency for performing the following functions in"
+      }
+    ]
+  },
+  {
+    "batch_id": "337ffec2a829806ee869f38e",
+    "source_clause_id": "G001931",
+    "total_entries": 3,
+    "distinct_categories": 3,
+    "categories": [
+      "Significant Data Fiduciary Obligations",
+      "Security Safeguards",
+      "Intermediary/Platform Liability"
+    ],
+    "decision": "KEPT_ALL_DISTINCT_CATEGORIES",
+    "kept_positions": [
+      3,
+      5,
+      8
+    ],
+    "discarded_positions": [],
+    "entries_summary": [
+      {
+        "position": 3,
+        "category": "Significant Data Fiduciary Obligations",
+        "requirement": "The national nodal agency designated under the IT Act 2000 shall be responsible for all measures including Research and "
+      },
+      {
+        "position": 5,
+        "category": "Security Safeguards",
+        "requirement": "The national nodal agency designated under the IT Act 2000 shall be responsible for all measures including Research and "
+      },
+      {
+        "position": 8,
+        "category": "Intermediary/Platform Liability",
+        "requirement": "The national nodal agency designated under the IT Act 2000 shall be responsible for all measures including Research and "
+      }
+    ]
+  },
+  {
+    "batch_id": "337ffec2a829806ee869f38e",
+    "source_clause_id": "G001932",
+    "total_entries": 3,
+    "distinct_categories": 3,
+    "categories": [
+      "Intermediary/Platform Liability",
+      "Significant Data Fiduciary Obligations",
+      "Security Safeguards"
+    ],
+    "decision": "KEPT_ALL_DISTINCT_CATEGORIES",
+    "kept_positions": [
+      4,
+      6,
+      7
+    ],
+    "discarded_positions": [],
+    "entries_summary": [
+      {
+        "position": 4,
+        "category": "Intermediary/Platform Liability",
+        "requirement": "The Central Government shall appoint an agency called the Indian Computer Emergency Response Team to serve as the nation"
+      },
+      {
+        "position": 6,
+        "category": "Significant Data Fiduciary Obligations",
+        "requirement": "The Central Government shall, by notification in the Official Gazette, appoint an agency of the Government to be called "
+      },
+      {
+        "position": 7,
+        "category": "Security Safeguards",
+        "requirement": "The manner of performing functions and duties of the national nodal agency shall be such as may be prescribed."
+      }
+    ]
+  },
+  {
+    "batch_id": "df65bfa6835d03f83cc11d9e",
+    "source_clause_id": "G002239",
+    "total_entries": 2,
+    "distinct_categories": 2,
+    "categories": [
+      "Intermediary/Platform Liability",
+      "Data Retention & Erasure"
+    ],
+    "decision": "KEPT_ALL_DISTINCT_CATEGORIES",
+    "kept_positions": [
+      0,
+      1
+    ],
+    "discarded_positions": [],
+    "entries_summary": [
+      {
+        "position": 0,
+        "category": "Intermediary/Platform Liability",
+        "requirement": "The platform must provide the applicant with information free of charge if a public authority fails to comply with the t"
+      },
+      {
+        "position": 1,
+        "category": "Data Retention & Erasure",
+        "requirement": "The platform must ensure that fees charged for information access are reasonable and not levied on individuals below the"
+      }
+    ]
+  },
+  {
+    "batch_id": "fadaa6277110ac4661c1b9e4",
+    "source_clause_id": "G002273",
+    "total_entries": 2,
+    "distinct_categories": 1,
+    "categories": [
+      "Intermediary/Platform Liability"
+    ],
+    "decision": "KEPT_FIRST_PER_CATEGORY_OR_DEDUPED_BY_EMBEDDING",
+    "kept_positions": [
+      2
+    ],
+    "discarded_positions": [
+      4
+    ],
+    "entries_summary": [
+      {
+        "position": 2,
+        "category": "Intermediary/Platform Liability",
+        "requirement": "The Information Officer must inform the applicant of the fees calculated and the amount required to be deposited for acc"
+      },
+      {
+        "position": 4,
+        "category": "Intermediary/Platform Liability",
+        "requirement": "The Information Officer must inform the applicant of the details of the fees calculated and the amount required to be de"
+      }
+    ]
+  },
+  {
+    "batch_id": "f49a541628cf426f1cbd4b91",
+    "source_clause_id": "G001528",
+    "total_entries": 2,
+    "distinct_categories": 1,
+    "categories": [
+      "Confidentiality & Misuse of Data"
+    ],
+    "decision": "KEPT_FIRST_PER_CATEGORY_OR_DEDUPED_BY_EMBEDDING",
+    "kept_positions": [
+      1,
+      2
+    ],
+    "discarded_positions": [],
+    "entries_summary": [
+      {
+        "position": 1,
+        "category": "Confidentiality & Misuse of Data",
+        "requirement": "A subscriber must ensure that the private key and public key are unique and form a functioning key pair."
+      },
+      {
+        "position": 2,
+        "category": "Confidentiality & Misuse of Data",
+        "requirement": "A subscriber must use a public key to verify the authenticity of an electronic record."
+      }
+    ]
+  },
+  {
+    "batch_id": "17013ac607ac29c4c262af45",
+    "source_clause_id": "G001642",
+    "total_entries": 2,
+    "distinct_categories": 1,
+    "categories": [
+      "Intermediary/Platform Liability"
+    ],
+    "decision": "KEPT_FIRST_PER_CATEGORY_OR_DEDUPED_BY_EMBEDDING",
+    "kept_positions": [
+      0,
+      1
+    ],
+    "discarded_positions": [],
+    "entries_summary": [
+      {
+        "position": 0,
+        "category": "Intermediary/Platform Liability",
+        "requirement": "A Certifying Authority must comply with conditions and restrictions specified by regulations to maintain recognition und"
+      },
+      {
+        "position": 1,
+        "category": "Intermediary/Platform Liability",
+        "requirement": "A Certifying Authority must maintain compliance with the conditions and restrictions to avoid revocation of recognition."
+      }
+    ]
+  },
+  {
+    "batch_id": "8417e780acedabb2391cce6b",
+    "source_clause_id": "G001963",
+    "total_entries": 2,
+    "distinct_categories": 1,
+    "categories": [
+      "Intermediary/Platform Liability"
+    ],
+    "decision": "KEPT_FIRST_PER_CATEGORY_OR_DEDUPED_BY_EMBEDDING",
+    "kept_positions": [
+      0,
+      2
+    ],
+    "discarded_positions": [],
+    "entries_summary": [
+      {
+        "position": 0,
+        "category": "Intermediary/Platform Liability",
+        "requirement": "Intermediaries must not compound offences involving crimes against children or socio-economic harm."
+      },
+      {
+        "position": 2,
+        "category": "Intermediary/Platform Liability",
+        "requirement": "Intermediaries must not compound offences committed against a child below the age of 18 years or a woman."
+      }
+    ]
+  },
+  {
+    "batch_id": "f312f1c110ea14b0ac503ef1",
+    "source_clause_id": "G001968",
+    "total_entries": 2,
+    "distinct_categories": 1,
+    "categories": [
+      "Intermediary/Platform Liability"
+    ],
+    "decision": "KEPT_FIRST_PER_CATEGORY_OR_DEDUPED_BY_EMBEDDING",
+    "kept_positions": [
+      0
+    ],
+    "discarded_positions": [
+      2
+    ],
+    "entries_summary": [
+      {
+        "position": 0,
+        "category": "Intermediary/Platform Liability",
+        "requirement": "Intermediaries are exempt from liability for third-party information, data, or communication links made available or hos"
+      },
+      {
+        "position": 2,
+        "category": "Intermediary/Platform Liability",
+        "requirement": "Intermediaries are exempt from liability for third-party information, data, or communication links made available or hos"
+      }
+    ]
+  },
+  {
+    "batch_id": "f312f1c110ea14b0ac503ef1",
+    "source_clause_id": "G001973",
+    "total_entries": 2,
+    "distinct_categories": 1,
+    "categories": [
+      "Intermediary/Platform Liability"
+    ],
+    "decision": "KEPT_FIRST_PER_CATEGORY_OR_DEDUPED_BY_EMBEDDING",
+    "kept_positions": [
+      1
+    ],
+    "discarded_positions": [
+      3
+    ],
+    "entries_summary": [
+      {
+        "position": 1,
+        "category": "Intermediary/Platform Liability",
+        "requirement": "Intermediaries must observe due diligence while discharging their duties under the IT Act and follow guidelines prescrib"
+      },
+      {
+        "position": 3,
+        "category": "Intermediary/Platform Liability",
+        "requirement": "Intermediaries must observe due diligence while discharging their duties under the IT Act and follow guidelines prescrib"
+      }
+    ]
+  },
+  {
+    "batch_id": "23621a136b12f2806f96a37d",
+    "source_clause_id": "G000239",
+    "total_entries": 2,
+    "distinct_categories": 1,
+    "categories": [
+      "Significant Data Fiduciary Obligations"
+    ],
+    "decision": "KEPT_FIRST_PER_CATEGORY_OR_DEDUPED_BY_EMBEDDING",
+    "kept_positions": [
+      2,
+      3
+    ],
+    "discarded_positions": [],
+    "entries_summary": [
+      {
+        "position": 2,
+        "category": "Significant Data Fiduciary Obligations",
+        "requirement": "The Chairperson and Members of the Appellate Tribunal may not hold office after they have attained the age of sixty-five"
+      },
+      {
+        "position": 3,
+        "category": "Significant Data Fiduciary Obligations",
+        "requirement": "The Appellate Tribunal must ensure that the salary and allowances of its Chairperson and Members are prescribed by the a"
+      }
+    ]
+  },
+  {
+    "batch_id": "1ff5a6452cdbc61b2a238f0f",
+    "source_clause_id": "G000698",
+    "total_entries": 2,
+    "distinct_categories": 1,
+    "categories": [
+      "Significant Data Fiduciary Obligations"
+    ],
+    "decision": "KEPT_FIRST_PER_CATEGORY_OR_DEDUPED_BY_EMBEDDING",
+    "kept_positions": [
+      0
+    ],
+    "discarded_positions": [
+      1
+    ],
+    "entries_summary": [
+      {
+        "position": 0,
+        "category": "Significant Data Fiduciary Obligations",
+        "requirement": "Significant data fiduciaries must ensure that monetary penalties imposed for breaches are proportionate and effective, t"
+      },
+      {
+        "position": 1,
+        "category": "Significant Data Fiduciary Obligations",
+        "requirement": "Significant data fiduciaries must ensure that penalties imposed for breaches are proportionate and effective, having reg"
+      }
+    ]
+  },
+  {
+    "batch_id": "3b957d3184b39493e1852dbc",
+    "source_clause_id": "G001689",
+    "total_entries": 3,
+    "distinct_categories": 1,
+    "categories": [
+      "Security Safeguards"
+    ],
+    "decision": "KEPT_FIRST_PER_CATEGORY_OR_DEDUPED_BY_EMBEDDING",
+    "kept_positions": [
+      1,
+      4,
+      5
+    ],
+    "discarded_positions": [],
+    "entries_summary": [
+      {
+        "position": 1,
+        "category": "Security Safeguards",
+        "requirement": "Certifying authorities must adhere to security procedures to ensure the secrecy and privacy of electronic signatures."
+      },
+      {
+        "position": 4,
+        "category": "Security Safeguards",
+        "requirement": "Certifying authorities must be the repository of all electronic signature certificates issued under this Act."
+      },
+      {
+        "position": 5,
+        "category": "Security Safeguards",
+        "requirement": "Certifying authorities must publish information regarding their practices, electronic signature certificates, and the cu"
+      }
+    ]
+  },
+  {
+    "batch_id": "252466d87e220945d4bbd76f",
+    "source_clause_id": "G001775",
+    "total_entries": 2,
+    "distinct_categories": 1,
+    "categories": [
+      "Confidentiality & Misuse of Data"
+    ],
+    "decision": "KEPT_FIRST_PER_CATEGORY_OR_DEDUPED_BY_EMBEDDING",
+    "kept_positions": [
+      0,
+      4
+    ],
+    "discarded_positions": [],
+    "entries_summary": [
+      {
+        "position": 0,
+        "category": "Confidentiality & Misuse of Data",
+        "requirement": "A subscriber to a Digital Signature Certificate must ensure that no computer contaminant or computer virus is introduced"
+      },
+      {
+        "position": 4,
+        "category": "Confidentiality & Misuse of Data",
+        "requirement": "A subscriber to a Digital Signature Certificate must not engage in any activity that violates the provisions of the IT A"
+      }
+    ]
+  },
+  {
+    "batch_id": "252466d87e220945d4bbd76f",
+    "source_clause_id": "G001777",
+    "total_entries": 2,
+    "distinct_categories": 1,
+    "categories": [
+      "Confidentiality & Misuse of Data"
+    ],
+    "decision": "KEPT_FIRST_PER_CATEGORY_OR_DEDUPED_BY_EMBEDDING",
+    "kept_positions": [
+      1
+    ],
+    "discarded_positions": [
+      4
+    ],
+    "entries_summary": [
+      {
+        "position": 1,
+        "category": "Confidentiality & Misuse of Data",
+        "requirement": "A subscriber to a Digital Signature Certificate must not disrupt or cause disruption of any computer, computer system, o"
+      },
+      {
+        "position": 4,
+        "category": "Confidentiality & Misuse of Data",
+        "requirement": "A subscriber to a Digital Signature Certificate must not engage in any activity that violates the provisions of the IT A"
+      }
+    ]
+  },
+  {
+    "batch_id": "252466d87e220945d4bbd76f",
+    "source_clause_id": "G001783",
+    "total_entries": 2,
+    "distinct_categories": 1,
+    "categories": [
+      "Confidentiality & Misuse of Data"
+    ],
+    "decision": "KEPT_FIRST_PER_CATEGORY_OR_DEDUPED_BY_EMBEDDING",
+    "kept_positions": [
+      2,
+      4
+    ],
+    "discarded_positions": [],
+    "entries_summary": [
+      {
+        "position": 2,
+        "category": "Confidentiality & Misuse of Data",
+        "requirement": "A subscriber to a Digital Signature Certificate must not modify, destroy, record, or transmit data or programs residing "
+      },
+      {
+        "position": 4,
+        "category": "Confidentiality & Misuse of Data",
+        "requirement": "A subscriber to a Digital Signature Certificate must not engage in any activity that violates the provisions of the IT A"
+      }
+    ]
+  },
+  {
+    "batch_id": "2c4be75d13384a290342fce6",
+    "source_clause_id": "G001727",
+    "total_entries": 2,
+    "distinct_categories": 2,
+    "categories": [
+      "Confidentiality & Misuse of Data",
+      "Security Safeguards"
+    ],
+    "decision": "KEPT_ALL_DISTINCT_CATEGORIES",
+    "kept_positions": [
+      0,
+      4
+    ],
+    "discarded_positions": [],
+    "entries_summary": [
+      {
+        "position": 0,
+        "category": "Confidentiality & Misuse of Data",
+        "requirement": "Certifying authorities must ensure that subscribers hold a private key capable of creating a digital signature."
+      },
+      {
+        "position": 4,
+        "category": "Security Safeguards",
+        "requirement": "Certifying authorities must ensure that the subscriber holds the private key corresponding to the public key listed in t"
+      }
+    ]
+  },
+  {
+    "batch_id": "2c4be75d13384a290342fce6",
+    "source_clause_id": "G001721",
+    "total_entries": 2,
+    "distinct_categories": 2,
+    "categories": [
+      "Significant Data Fiduciary Obligations",
+      "Security Safeguards"
+    ],
+    "decision": "KEPT_ALL_DISTINCT_CATEGORIES",
+    "kept_positions": [
+      2,
+      3
+    ],
+    "discarded_positions": [],
+    "entries_summary": [
+      {
+        "position": 2,
+        "category": "Significant Data Fiduciary Obligations",
+        "requirement": "Certifying authorities must ensure that the subscriber has accepted the Digital Signature Certificate."
+      },
+      {
+        "position": 3,
+        "category": "Security Safeguards",
+        "requirement": "Certifying authorities must ensure that the Digital Signature Certificate is published or otherwise made available to th"
+      }
+    ]
+  },
+  {
+    "batch_id": "2c4be75d13384a290342fce6",
+    "source_clause_id": "G001702",
+    "total_entries": 4,
+    "distinct_categories": 1,
+    "categories": [
+      "Confidentiality & Misuse of Data"
+    ],
+    "decision": "KEPT_FIRST_PER_CATEGORY_OR_DEDUPED_BY_EMBEDDING",
+    "kept_positions": [
+      6
+    ],
+    "discarded_positions": [
+      7,
+      8,
+      9
+    ],
+    "entries_summary": [
+      {
+        "position": 6,
+        "category": "Confidentiality & Misuse of Data",
+        "requirement": "Certifying authorities must ensure that the electronic signature is compliant with the provisions of the IT Act and rela"
+      },
+      {
+        "position": 7,
+        "category": "Confidentiality & Misuse of Data",
+        "requirement": "Certifying authorities must ensure that the electronic signature is issued in accordance with the provisions of the IT A"
+      },
+      {
+        "position": 8,
+        "category": "Confidentiality & Misuse of Data",
+        "requirement": "Certifying authorities must ensure that the electronic signature is issued in accordance with the provisions of the IT A"
+      },
+      {
+        "position": 9,
+        "category": "Confidentiality & Misuse of Data",
+        "requirement": "Certifying authorities must ensure that the electronic signature is issued in accordance with the provisions of the IT A"
+      }
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "cache_key": "7e9622b0cd3ea63aea3df2b02bbcb01251f91a7b5267859cda6b9fe323860642",
+  "created_at_utc": "2026-09-16T13:25:12.101682+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S001327",
+    "S001328",
+    "S001329",
+    "S001330",
+    "S001331",
+    "S001332"
+  ],
+  "labels": [
+    {
+      "clause_id": "S001327",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S001328",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S001329",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S001330",
+      "best_match_taxonomy_id": "DPDP_ACT-0055",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses cross-border transfer restrictions but lacks specific legal compliance details."
+    },
+    {
+      "clause_id": "S001331",
+      "best_match_taxonomy_id": "DPDP_ACT-0055",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses cross-border transfer restrictions but lacks specific legal compliance details."
+    },
+    {
+      "clause_id": "S001332",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    }
+  ],
+  "status": "SUCCESS"
+}

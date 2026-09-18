@@ -1,0 +1,128 @@
+{
+  "batch_id": "d05a4779fdc0240db734f4f6",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G002073",
+    "G002074",
+    "G002075",
+    "G002076",
+    "G002077",
+    "G002078",
+    "G002079",
+    "G002081"
+  ],
+  "raw_response": "[{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Intermediaries must maintain records of Certifying Authority disclosures as specified in section 18(1)(n) of the IT Act 2000.\",\"source\":\"IT Act 2000, Section 18(1)(n)\",\"weight\":2,\"source_clause_ids\":[\"G002073\"],\"checkable_test\":\"Check if the document contains records of Certifying Authority disclosures as required by section 18(1)(n) of the IT Act 2000.\",\"applicability\":\"Applicable to intermediaries handling Certifying Authority disclosures.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is directly tied to the obligation to maintain records under the IT Act 2000.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Intermediaries must specify conditions and restrictions for recognizing foreign Certifying Authorities under section 19(1) of the IT Act 2000.\",\"source\":\"IT Act 2000, Section 19(1)\",\"weight\":2,\"source_clause_ids\":[\"G002074\"],\"checkable_test\":\"Check if the document specifies conditions and restrictions for recognizing foreign Certifying Authorities as required by section 19(1) of the IT Act 2000.\",\"applicability\":\"Applicable to intermediaries recognizing foreign Certifying Authorities.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is directly tied to the obligation to specify conditions and restrictions under the IT Act 2000.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Intermediaries must specify terms and conditions for granting licenses under section 21(3)(c) of the IT Act 2000.\",\"source\":\"IT Act 2000, Section 21(3)(c)\",\"weight\":2,\"source_clause_ids\":[\"G002075\"],\"checkable_test\":\"Check if the document specifies terms and conditions for granting licenses as required by section 21(3)(c) of the IT Act 2000.\",\"applicability\":\"Applicable to intermediaries granting licenses.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is directly tied to the obligation to specify terms and conditions for granting licenses under the IT Act 2000.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Intermediaries must observe other standards set for Certifying Authorities under section 30(d) of the IT Act 2000.\",\"source\":\"IT Act 2000, Section 30(d)\",\"weight\":2,\"source_clause_ids\":[\"G002076\"],\"checkable_test\":\"Check if the document observes other standards set for Certifying Authorities as required by section 30(d) of the IT Act 2000.\",\"applicability\":\"Applicable to intermediaries subject to standards for Certifying Authorities.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is directly tied to the obligation to observe other standards under the IT Act 2000.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Intermediaries must specify the manner of disclosure by Certifying Authorities under section 34(1) of the IT Act 2000.\",\"source\":\"IT Act 2000, Section 34(1)\",\"weight\":2,\"source_clause_ids\":[\"G002077\"],\"checkable_test\":\"Check if the document specifies the manner of disclosure by Certifying Authorities as required by section 34(1) of the IT Act 2000.\",\"applicability\":\"Applicable to intermediaries handling disclosures by Certifying Authorities.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is directly tied to the obligation to specify the manner of disclosure under the IT Act 2000.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Intermediaries must specify the particulars of statements accompanying applications under section 35(3) of the IT Act 2000.\",\"source\":\"IT Act 2000, Section 35(3)\",\"weight\":2,\"source_clause_ids\":[\"G002078\"],\"checkable_test\":\"Check if the document specifies the particulars of statements accompanying applications as required by section 35(3) of the IT Act 2000.\",\"applicability\":\"Applicable to intermediaries handling applications under section 35.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is directly tied to the obligation to specify the particulars of statements under the IT Act 2000.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Intermediaries must specify the manner of communication of private key compromise to Certifying Authorities under section 42(2) of the IT Act 2000.\",\"source\":\"IT Act 2000, Section 42(2)\",\"weight\":2,\"source_clause_ids\":[\"G002079\"],\"checkable_test\":\"Check if the document specifies the manner of communication of private key compromise to Certifying Authorities as required by section 42(2) of the IT Act 2000.\",\"applicability\":\"Applicable to intermediaries handling private key compromise notifications.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is directly tied to the obligation to specify the manner of communication under the IT Act 2000.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Intermediaries must maintain records of Certifying Authority disclosures as specified in section 18(1)(n) of the IT Act 2000.",
+      "source": "IT Act 2000, Section 18(1)(n)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002073"
+      ],
+      "checkable_test": "Check if the document contains records of Certifying Authority disclosures as required by section 18(1)(n) of the IT Act 2000.",
+      "applicability": "Applicable to intermediaries handling Certifying Authority disclosures.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation to maintain records under the IT Act 2000.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Intermediaries must specify conditions and restrictions for recognizing foreign Certifying Authorities under section 19(1) of the IT Act 2000.",
+      "source": "IT Act 2000, Section 19(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002074"
+      ],
+      "checkable_test": "Check if the document specifies conditions and restrictions for recognizing foreign Certifying Authorities as required by section 19(1) of the IT Act 2000.",
+      "applicability": "Applicable to intermediaries recognizing foreign Certifying Authorities.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation to specify conditions and restrictions under the IT Act 2000.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Intermediaries must specify terms and conditions for granting licenses under section 21(3)(c) of the IT Act 2000.",
+      "source": "IT Act 2000, Section 21(3)(c)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002075"
+      ],
+      "checkable_test": "Check if the document specifies terms and conditions for granting licenses as required by section 21(3)(c) of the IT Act 2000.",
+      "applicability": "Applicable to intermediaries granting licenses.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation to specify terms and conditions for granting licenses under the IT Act 2000.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Intermediaries must observe other standards set for Certifying Authorities under section 30(d) of the IT Act 2000.",
+      "source": "IT Act 2000, Section 30(d)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002076"
+      ],
+      "checkable_test": "Check if the document observes other standards set for Certifying Authorities as required by section 30(d) of the IT Act 2000.",
+      "applicability": "Applicable to intermediaries subject to standards for Certifying Authorities.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation to observe other standards under the IT Act 2000.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Intermediaries must specify the manner of disclosure by Certifying Authorities under section 34(1) of the IT Act 2000.",
+      "source": "IT Act 2000, Section 34(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002077"
+      ],
+      "checkable_test": "Check if the document specifies the manner of disclosure by Certifying Authorities as required by section 34(1) of the IT Act 2000.",
+      "applicability": "Applicable to intermediaries handling disclosures by Certifying Authorities.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation to specify the manner of disclosure under the IT Act 2000.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Intermediaries must specify the particulars of statements accompanying applications under section 35(3) of the IT Act 2000.",
+      "source": "IT Act 2000, Section 35(3)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002078"
+      ],
+      "checkable_test": "Check if the document specifies the particulars of statements accompanying applications as required by section 35(3) of the IT Act 2000.",
+      "applicability": "Applicable to intermediaries handling applications under section 35.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation to specify the particulars of statements under the IT Act 2000.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Intermediaries must specify the manner of communication of private key compromise to Certifying Authorities under section 42(2) of the IT Act 2000.",
+      "source": "IT Act 2000, Section 42(2)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002079"
+      ],
+      "checkable_test": "Check if the document specifies the manner of communication of private key compromise to Certifying Authorities as required by section 42(2) of the IT Act 2000.",
+      "applicability": "Applicable to intermediaries handling private key compromise notifications.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation to specify the manner of communication under the IT Act 2000.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T15:21:15.292916+00:00",
+  "multi_mapped_records": []
+}

@@ -1,0 +1,98 @@
+{
+  "batch_id": "adc0c8b995b28677a9085976",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001262",
+    "G001263",
+    "G001265",
+    "G001268",
+    "G001270",
+    "G001271",
+    "G001272",
+    "G001273"
+  ],
+  "raw_response": "[  \n  {  \n    \"category\": \"Children/Vulnerable Groups\",  \n    \"requirement\": \"Processing of children's location data is restricted to tracking their location in the interests of their safety during travel to and from institutions, crèches, or centres.\",  \n    \"source\": \"DPDP Rules 2025, Section 1262\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G001262\"],  \n    \"checkable_test\": \"Check if the data processing of children's location data is limited to tracking their location for safety during travel to and from specified institutions.\",  \n    \"applicability\": \"Applies to data processing involving children's location data for travel purposes.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This clause explicitly restricts the processing of children's location data to specific safety-related purposes.\"  \n  },  \n  {  \n    \"category\": \"Children/Vulnerable Groups\",  \n    \"requirement\": \"Processing of children's real-time location data is restricted to tracking their location in the interest of their safety and protection.\",  \n    \"source\": \"DPDP Rules 2025, Section 1273\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G001273\"],  \n    \"checkable_test\": \"Check if the data processing of children's real-time location data is limited to tracking their location for safety and protection purposes.\",  \n    \"applicability\": \"Applies to data processing involving children's real-time location data.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This clause explicitly restricts the processing of children's real-time location data to safety and protection purposes.\"  \n  },  \n  {  \n    \"category\": \"Children/Vulnerable Groups\",  \n    \"requirement\": \"Processing of children's location data is restricted to the extent necessary for determining their real-time location.\",  \n    \"source\": \"DPDP Rules 2025, Section 1272\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G001272\"],  \n    \"checkable_test\": \"Check if the data processing of children's location data is limited to determining their real-time location for safety purposes.\",  \n    \"applicability\": \"Applies to data processing involving children's location data for real-time tracking.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This clause explicitly restricts the processing of children's location data to real-time location determination for safety purposes.\"  \n  },  \n  {  \n    \"category\": \"Children/Vulnerable Groups\",  \n    \"requirement\": \"Processing of children's location data is restricted to the extent necessary for creating a user account for communication by email.\",  \n    \"source\": \"DPDP Rules 2025, Section 1271\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G001271\"],  \n    \"checkable_test\": \"Check if the data processing of children's location data is limited to creating a user account for email communication purposes.\",  \n    \"applicability\": \"Applies to data processing involving children's location data for email account creation.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This clause explicitly restricts the processing of children's location data to email account creation purposes.\"  \n  },  \n  {  \n    \"category\": \"Children/Vulnerable Groups\",  \n    \"requirement\": \"Processing of children's location data is restricted to the extent necessary for creating a user account for communication by email.\",  \n    \"source\": \"DPDP Rules 2025, Section 1270\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G001270\"],  \n    \"checkable_test\": \"Check if the data processing of children's location data is limited to creating a user account for email communication purposes.\",  \n    \"applicability\": \"Applies to data processing involving children's location data for email account creation.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This clause explicitly restricts the processing of children's location data to email account creation purposes.\"  \n  }  \n]",
+  "parsed_entries": [
+    {
+      "category": "Children/Vulnerable Groups",
+      "requirement": "Processing of children's location data is restricted to tracking their location in the interests of their safety during travel to and from institutions, crèches, or centres.",
+      "source": "DPDP Rules 2025, Section 1262",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001262"
+      ],
+      "checkable_test": "Check if the data processing of children's location data is limited to tracking their location for safety during travel to and from specified institutions.",
+      "applicability": "Applies to data processing involving children's location data for travel purposes.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause explicitly restricts the processing of children's location data to specific safety-related purposes.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Children/Vulnerable Groups",
+      "requirement": "Processing of children's real-time location data is restricted to tracking their location in the interest of their safety and protection.",
+      "source": "DPDP Rules 2025, Section 1273",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001273"
+      ],
+      "checkable_test": "Check if the data processing of children's real-time location data is limited to tracking their location for safety and protection purposes.",
+      "applicability": "Applies to data processing involving children's real-time location data.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause explicitly restricts the processing of children's real-time location data to safety and protection purposes.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Children/Vulnerable Groups",
+      "requirement": "Processing of children's location data is restricted to the extent necessary for determining their real-time location.",
+      "source": "DPDP Rules 2025, Section 1272",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001272"
+      ],
+      "checkable_test": "Check if the data processing of children's location data is limited to determining their real-time location for safety purposes.",
+      "applicability": "Applies to data processing involving children's location data for real-time tracking.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause explicitly restricts the processing of children's location data to real-time location determination for safety purposes.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Children/Vulnerable Groups",
+      "requirement": "Processing of children's location data is restricted to the extent necessary for creating a user account for communication by email.",
+      "source": "DPDP Rules 2025, Section 1271",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001271"
+      ],
+      "checkable_test": "Check if the data processing of children's location data is limited to creating a user account for email communication purposes.",
+      "applicability": "Applies to data processing involving children's location data for email account creation.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause explicitly restricts the processing of children's location data to email account creation purposes.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Children/Vulnerable Groups",
+      "requirement": "Processing of children's location data is restricted to the extent necessary for creating a user account for communication by email.",
+      "source": "DPDP Rules 2025, Section 1270",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001270"
+      ],
+      "checkable_test": "Check if the data processing of children's location data is limited to creating a user account for email communication purposes.",
+      "applicability": "Applies to data processing involving children's location data for email account creation.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause explicitly restricts the processing of children's location data to email account creation purposes.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T14:25:43.289638+00:00",
+  "multi_mapped_records": []
+}

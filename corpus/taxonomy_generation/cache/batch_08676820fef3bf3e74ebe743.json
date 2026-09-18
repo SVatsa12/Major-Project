@@ -1,0 +1,83 @@
+{
+  "batch_id": "08676820fef3bf3e74ebe743",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G000549",
+    "G000550",
+    "G000551",
+    "G000552",
+    "G000556",
+    "G000557",
+    "G000558",
+    "G000559"
+  ],
+  "raw_response": "[  \n  {  \n    \"category\": \"Data Retention & Erasure\",  \n    \"requirement\": \"A Data Principal shall have the right to correction, completion, updating and erasure of her personal data for the processing of which she has previously given consent.\",  \n    \"source\": \"DPDP Act 2023, Section 10(1)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G000551\"],  \n    \"checkable_test\": \"Check if the document provides a mechanism for data principals to request correction, completion, updating, and erasure of their personal data.\",  \n    \"applicability\": \"Applies to all data principals who have given consent for the processing of their personal data.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation is tied to the right to erasure and correction of personal data under the DPDP Act 2023.\"  \n  },  \n  {  \n    \"category\": \"Data Retention & Erasure\",  \n    \"requirement\": \"A Data Fiduciary shall erase personal data upon receipt of a request for erasure unless retention is necessary for a specified purpose or for compliance with law.\",  \n    \"source\": \"DPDP Act 2023, Section 10(7)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G000557\"],  \n    \"checkable_test\": \"Check if the document specifies that data fiduciaries must erase personal data upon request unless retention is required for a specified purpose or legal compliance.\",  \n    \"applicability\": \"Applies to all data fiduciaries handling personal data subject to erasure requests.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation is tied to the right to erasure under the DPDP Act 2023.\"  \n  },  \n  {  \n    \"category\": \"Grievance Redressal\",  \n    \"requirement\": \"A Data Principal shall have the right to grievance redressal mechanisms provided by a Data Fiduciary or Consent Manager.\",  \n    \"source\": \"DPDP Act 2023, Section 13(1)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G000558\"],  \n    \"checkable_test\": \"Check if the document provides grievance redressal mechanisms for data principals regarding data fiduciary or consent manager actions.\",  \n    \"applicability\": \"Applies to all data principals who have interacted with data fiduciaries or consent managers.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation is tied to the right to grievance redressal under the DPDP Act 2023.\"  \n  },  \n  {  \n    \"category\": \"Grievance Redressal\",  \n    \"requirement\": \"A Data Fiduciary or Consent Manager shall respond to grievances within a prescribed period.\",  \n    \"source\": \"DPDP Act 2023, Section 13(2)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G000559\"],  \n    \"checkable_test\": \"Check if the document specifies a time limit for responding to grievances raised by data principals.\",  \n    \"applicability\": \"Applies to all data fiduciaries and consent managers handling grievances.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation is tied to the grievance redressal process under the DPDP Act 2023.\"  \n  }  \n]",
+  "parsed_entries": [
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "A Data Principal shall have the right to correction, completion, updating and erasure of her personal data for the processing of which she has previously given consent.",
+      "source": "DPDP Act 2023, Section 10(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000551"
+      ],
+      "checkable_test": "Check if the document provides a mechanism for data principals to request correction, completion, updating, and erasure of their personal data.",
+      "applicability": "Applies to all data principals who have given consent for the processing of their personal data.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is tied to the right to erasure and correction of personal data under the DPDP Act 2023.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "A Data Fiduciary shall erase personal data upon receipt of a request for erasure unless retention is necessary for a specified purpose or for compliance with law.",
+      "source": "DPDP Act 2023, Section 10(7)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000557"
+      ],
+      "checkable_test": "Check if the document specifies that data fiduciaries must erase personal data upon request unless retention is required for a specified purpose or legal compliance.",
+      "applicability": "Applies to all data fiduciaries handling personal data subject to erasure requests.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is tied to the right to erasure under the DPDP Act 2023.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Grievance Redressal",
+      "requirement": "A Data Principal shall have the right to grievance redressal mechanisms provided by a Data Fiduciary or Consent Manager.",
+      "source": "DPDP Act 2023, Section 13(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000558"
+      ],
+      "checkable_test": "Check if the document provides grievance redressal mechanisms for data principals regarding data fiduciary or consent manager actions.",
+      "applicability": "Applies to all data principals who have interacted with data fiduciaries or consent managers.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is tied to the right to grievance redressal under the DPDP Act 2023.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Grievance Redressal",
+      "requirement": "A Data Fiduciary or Consent Manager shall respond to grievances within a prescribed period.",
+      "source": "DPDP Act 2023, Section 13(2)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000559"
+      ],
+      "checkable_test": "Check if the document specifies a time limit for responding to grievances raised by data principals.",
+      "applicability": "Applies to all data fiduciaries and consent managers handling grievances.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is tied to the grievance redressal process under the DPDP Act 2023.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T11:15:18.976828+00:00",
+  "multi_mapped_records": []
+}

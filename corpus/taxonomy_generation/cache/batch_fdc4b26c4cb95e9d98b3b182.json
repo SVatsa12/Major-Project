@@ -1,0 +1,129 @@
+{
+  "batch_id": "fdc4b26c4cb95e9d98b3b182",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001734",
+    "G001740",
+    "G001741",
+    "G001743",
+    "G001744",
+    "G001746",
+    "G001755",
+    "G001756"
+  ],
+  "raw_response": "[{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"A Digital Signature Certificate must be revoked if a material fact represented in the certificate is false or has been concealed.\",\"source\":\"IT Act 2000, Section 17(4)(a)\",\"weight\":3,\"source_clause_ids\":[\"G001743\"],\"checkable_test\":\"Verify if the certificate revocation process includes revoking certificates based on false or concealed material facts.\",\"applicability\":\"Applicable to Digital Signature Certificates issued under the IT Act 2000.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This clause outlines a specific revocation condition for Digital Signature Certificates.\"},{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"A Digital Signature Certificate must be revoked if the subscriber has been declared insolvent, dead, or if the subscriber is a firm or company that has been dissolved, wound-up, or ceased to exist.\",\"source\":\"IT Act 2000, Section 17(4)(d)\",\"weight\":3,\"source_clause_ids\":[\"G001746\"],\"checkable_test\":\"Verify if the certificate revocation process includes revoking certificates based on the subscriber's insolvency, death, or dissolution.\",\"applicability\":\"Applicable to Digital Signature Certificates issued under the IT Act 2000.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This clause outlines a specific revocation condition for Digital Signature Certificates.\"},{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"A Digital Signature Certificate must be revoked if the subscriber is no longer authorized to act on behalf of the subscriber.\",\"source\":\"IT Act 2000, Section 17(3)(i)\",\"weight\":3,\"source_clause_ids\":[\"G001734\"],\"checkable_test\":\"Verify if the certificate revocation process includes revoking certificates when the subscriber is no longer authorized to act on their behalf.\",\"applicability\":\"Applicable to Digital Signature Certificates issued under the IT Act 2000.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This clause outlines a specific revocation condition for Digital Signature Certificates.\"},{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"A Digital Signature Certificate must be revoked if the subscriber has dissolved, wound up, or otherwise ceased to exist.\",\"source\":\"IT Act 2000, Section 17(4)(c)\",\"weight\":3,\"source_clause_ids\":[\"G001741\"],\"checkable_test\":\"Verify if the certificate revocation process includes revoking certificates when the subscriber is a firm or company that has dissolved, wound up, or ceased to exist.\",\"applicability\":\"Applicable to Digital Signature Certificates issued under the IT Act 2000.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This clause outlines a specific revocation condition for Digital Signature Certificates.\"},{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"A Digital Signature Certificate must be revoked if the requirement for its issuance was not satisfied.\",\"source\":\"IT Act 2000, Section 17(4)(b)\",\"weight\":3,\"source_clause_ids\":[\"G001744\"],\"checkable_test\":\"Verify if the certificate revocation process includes revoking certificates when the requirements for issuance were not met.\",\"applicability\":\"Applicable to Digital Signature Certificates issued under the IT Act 2000.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This clause outlines a specific revocation condition for Digital Signature Certificates.\"},{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"A Digital Signature Certificate must be revoked if the subscriber dies.\",\"source\":\"IT Act 2000, Section 17(4)(b)\",\"weight\":3,\"source_clause_ids\":[\"G001740\"],\"checkable_test\":\"Verify if the certificate revocation process includes revoking certificates upon the death of the subscriber.\",\"applicability\":\"Applicable to Digital Signature Certificates issued under the IT Act 2000.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This clause outlines a specific revocation condition for Digital Signature Certificates.\"},{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"A Digital Signature Certificate must be revoked if the certificate is no longer valid or if the certificate holder no longer approves of it.\",\"source\":\"IT Act 2000, Section 17(5)(a) and (b)\",\"weight\":3,\"source_clause_ids\":[\"G001755\",\"G001756\"],\"checkable_test\":\"Verify if the certificate revocation process includes revoking certificates if they are no longer valid or if the certificate holder no longer approves of them.\",\"applicability\":\"Applicable to Digital Signature Certificates issued under the IT Act 2000.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This clause outlines a specific revocation condition for Digital Signature Certificates.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "A Digital Signature Certificate must be revoked if a material fact represented in the certificate is false or has been concealed.",
+      "source": "IT Act 2000, Section 17(4)(a)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001743"
+      ],
+      "checkable_test": "Verify if the certificate revocation process includes revoking certificates based on false or concealed material facts.",
+      "applicability": "Applicable to Digital Signature Certificates issued under the IT Act 2000.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause outlines a specific revocation condition for Digital Signature Certificates.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "A Digital Signature Certificate must be revoked if the subscriber has been declared insolvent, dead, or if the subscriber is a firm or company that has been dissolved, wound-up, or ceased to exist.",
+      "source": "IT Act 2000, Section 17(4)(d)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001746"
+      ],
+      "checkable_test": "Verify if the certificate revocation process includes revoking certificates based on the subscriber's insolvency, death, or dissolution.",
+      "applicability": "Applicable to Digital Signature Certificates issued under the IT Act 2000.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause outlines a specific revocation condition for Digital Signature Certificates.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "A Digital Signature Certificate must be revoked if the subscriber is no longer authorized to act on behalf of the subscriber.",
+      "source": "IT Act 2000, Section 17(3)(i)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001734"
+      ],
+      "checkable_test": "Verify if the certificate revocation process includes revoking certificates when the subscriber is no longer authorized to act on their behalf.",
+      "applicability": "Applicable to Digital Signature Certificates issued under the IT Act 2000.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause outlines a specific revocation condition for Digital Signature Certificates.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "A Digital Signature Certificate must be revoked if the subscriber has dissolved, wound up, or otherwise ceased to exist.",
+      "source": "IT Act 2000, Section 17(4)(c)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001741"
+      ],
+      "checkable_test": "Verify if the certificate revocation process includes revoking certificates when the subscriber is a firm or company that has dissolved, wound up, or ceased to exist.",
+      "applicability": "Applicable to Digital Signature Certificates issued under the IT Act 2000.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause outlines a specific revocation condition for Digital Signature Certificates.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "A Digital Signature Certificate must be revoked if the requirement for its issuance was not satisfied.",
+      "source": "IT Act 2000, Section 17(4)(b)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001744"
+      ],
+      "checkable_test": "Verify if the certificate revocation process includes revoking certificates when the requirements for issuance were not met.",
+      "applicability": "Applicable to Digital Signature Certificates issued under the IT Act 2000.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause outlines a specific revocation condition for Digital Signature Certificates.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "A Digital Signature Certificate must be revoked if the subscriber dies.",
+      "source": "IT Act 2000, Section 17(4)(b)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001740"
+      ],
+      "checkable_test": "Verify if the certificate revocation process includes revoking certificates upon the death of the subscriber.",
+      "applicability": "Applicable to Digital Signature Certificates issued under the IT Act 2000.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause outlines a specific revocation condition for Digital Signature Certificates.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "A Digital Signature Certificate must be revoked if the certificate is no longer valid or if the certificate holder no longer approves of it.",
+      "source": "IT Act 2000, Section 17(5)(a) and (b)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001755",
+        "G001756"
+      ],
+      "checkable_test": "Verify if the certificate revocation process includes revoking certificates if they are no longer valid or if the certificate holder no longer approves of them.",
+      "applicability": "Applicable to Digital Signature Certificates issued under the IT Act 2000.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause outlines a specific revocation condition for Digital Signature Certificates.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T16:01:26.164068+00:00",
+  "multi_mapped_records": []
+}

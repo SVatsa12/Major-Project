@@ -1,0 +1,127 @@
+{
+  "batch_id": "df65bfa6835d03f83cc11d9e",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G002234",
+    "G002235",
+    "G002236",
+    "G002237",
+    "G002238",
+    "G002239",
+    "G002240",
+    "G002241"
+  ],
+  "raw_response": "[{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The platform must provide the applicant with information free of charge if a public authority fails to comply with the time limits specified in subsection (1).\",\"source\":\"RTI Act 2005, Section 7(6)\",\"weight\":3,\"source_clause_ids\":[\"G002239\"],\"checkable_test\":\"Verify if the platform explicitly states that information will be provided free of charge when a public authority fails to meet the time limits for responding to a request.\",\"applicability\":\"Applicable to platforms that are public authorities or intermediaries handling public information requests.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation is directly tied to the RTI Act's provisions on free information in case of non-compliance with time limits.\"},{\"category\":\"Data Retention & Erasure\",\"requirement\":\"The platform must ensure that fees charged for information access are reasonable and not levied on individuals below the poverty line as determined by the appropriate government.\",\"source\":\"RTI Act 2005, Section 7(5) and (7)\",\"weight\":2,\"source_clause_ids\":[\"G002239\"],\"checkable_test\":\"Check if the platform explicitly states that fees are reasonable and exempt for individuals below the poverty line.\",\"applicability\":\"Applicable to platforms that charge fees for information access under the RTI Act.\",\"assessability\":\"Medium\",\"citation_confidence\":\"high\",\"notes\":\"This obligation is tied to the RTI Act's requirement for reasonable fees and exemptions for economically disadvantaged individuals.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"The platform must provide assistance to enable access to information for sensorily disabled individuals.\",\"source\":\"RTI Act 2005, Section 7(4)\",\"weight\":2,\"source_clause_ids\":[\"G002237\"],\"checkable_test\":\"Verify if the platform outlines specific assistance mechanisms for sensorily disabled users to access information.\",\"applicability\":\"Applicable to platforms that provide information access to individuals with sensory disabilities.\",\"assessability\":\"Medium\",\"citation_confidence\":\"high\",\"notes\":\"This obligation is directly linked to the RTI Act's requirement for accessibility for individuals with sensory impairments.\"},{\"category\":\"Grievance Redressal\",\"requirement\":\"The platform must provide information on the applicant's right to review the decision regarding the amount of fees charged or the form of access provided, including details of the appellate authority and process.\",\"source\":\"RTI Act 2005, Section 7(5)\",\"weight\":2,\"source_clause_ids\":[\"G002235\"],\"checkable_test\":\"Check if the platform clearly outlines the applicant's right to review fee decisions and the appellate process.\",\"applicability\":\"Applicable to platforms that charge fees for information access under the RTI Act.\",\"assessability\":\"Medium\",\"citation_confidence\":\"high\",\"notes\":\"This obligation is tied to the RTI Act's provisions on fee review and grievance mechanisms.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The platform must consider representations made by third parties under section 1 of the RTI Act before taking any decision on information access.\",\"source\":\"RTI Act 2005, Section 7(7)\",\"weight\":2,\"source_clause_ids\":[\"G002241\"],\"checkable_test\":\"Verify if the platform explicitly states that it will consider third-party representations before making decisions on information access.\",\"applicability\":\"Applicable to platforms that handle information access requests and may be affected by third-party input.\",\"assessability\":\"Medium\",\"citation_confidence\":\"high\",\"notes\":\"This obligation is directly linked to the RTI Act's requirement for considering third-party input in decision-making processes.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The platform must provide the applicant with information free of charge if a public authority fails to comply with the time limits specified in subsection (1).",
+      "source": "RTI Act 2005, Section 7(6)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G002239"
+      ],
+      "checkable_test": "Verify if the platform explicitly states that information will be provided free of charge when a public authority fails to meet the time limits for responding to a request.",
+      "applicability": "Applicable to platforms that are public authorities or intermediaries handling public information requests.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to the RTI Act's provisions on free information in case of non-compliance with time limits.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "The platform must ensure that fees charged for information access are reasonable and not levied on individuals below the poverty line as determined by the appropriate government.",
+      "source": "RTI Act 2005, Section 7(5) and (7)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002239"
+      ],
+      "checkable_test": "Check if the platform explicitly states that fees are reasonable and exempt for individuals below the poverty line.",
+      "applicability": "Applicable to platforms that charge fees for information access under the RTI Act.",
+      "assessability": "Medium",
+      "citation_confidence": "high",
+      "notes": "This obligation is tied to the RTI Act's requirement for reasonable fees and exemptions for economically disadvantaged individuals.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "The platform must provide assistance to enable access to information for sensorily disabled individuals.",
+      "source": "RTI Act 2005, Section 7(4)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002237"
+      ],
+      "checkable_test": "Verify if the platform outlines specific assistance mechanisms for sensorily disabled users to access information.",
+      "applicability": "Applicable to platforms that provide information access to individuals with sensory disabilities.",
+      "assessability": "Medium",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly linked to the RTI Act's requirement for accessibility for individuals with sensory impairments.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Grievance Redressal",
+      "requirement": "The platform must provide information on the applicant's right to review the decision regarding the amount of fees charged or the form of access provided, including details of the appellate authority and process.",
+      "source": "RTI Act 2005, Section 7(5)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002235"
+      ],
+      "checkable_test": "Check if the platform clearly outlines the applicant's right to review fee decisions and the appellate process.",
+      "applicability": "Applicable to platforms that charge fees for information access under the RTI Act.",
+      "assessability": "Medium",
+      "citation_confidence": "high",
+      "notes": "This obligation is tied to the RTI Act's provisions on fee review and grievance mechanisms.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The platform must consider representations made by third parties under section 1 of the RTI Act before taking any decision on information access.",
+      "source": "RTI Act 2005, Section 7(7)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002241"
+      ],
+      "checkable_test": "Verify if the platform explicitly states that it will consider third-party representations before making decisions on information access.",
+      "applicability": "Applicable to platforms that handle information access requests and may be affected by third-party input.",
+      "assessability": "Medium",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly linked to the RTI Act's requirement for considering third-party input in decision-making processes.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T11:59:21.397722+00:00",
+  "multi_mapped_records": [
+    {
+      "batch_id": "df65bfa6835d03f83cc11d9e",
+      "source_clause_id": "G002239",
+      "total_entries": 2,
+      "distinct_categories": 2,
+      "categories": [
+        "Intermediary/Platform Liability",
+        "Data Retention & Erasure"
+      ],
+      "decision": "KEPT_ALL_DISTINCT_CATEGORIES",
+      "kept_positions": [
+        0,
+        1
+      ],
+      "discarded_positions": [],
+      "entries_summary": [
+        {
+          "position": 0,
+          "category": "Intermediary/Platform Liability",
+          "requirement": "The platform must provide the applicant with information free of charge if a public authority fails to comply with the t"
+        },
+        {
+          "position": 1,
+          "category": "Data Retention & Erasure",
+          "requirement": "The platform must ensure that fees charged for information access are reasonable and not levied on individuals below the"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "cache_key": "3c468cf4120f3d5c36d923d81f3839a41d3235e3220498eb257aa958d9d273d7",
+  "created_at_utc": "2026-09-16T13:05:24.292291+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S001099",
+    "S001100",
+    "S001101",
+    "S001102",
+    "S001103",
+    "S001104"
+  ],
+  "labels": [
+    {
+      "clause_id": "S001099",
+      "best_match_taxonomy_id": "DPDP_ACT-0010",
+      "verdict": "Partially Compliant",
+      "justification": "The clause mentions consent for receiving messages but lacks specific details on notice requirements for processing purposes."
+    },
+    {
+      "clause_id": "S001100",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S001101",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S001102",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S001103",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S001104",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    }
+  ],
+  "status": "SUCCESS"
+}

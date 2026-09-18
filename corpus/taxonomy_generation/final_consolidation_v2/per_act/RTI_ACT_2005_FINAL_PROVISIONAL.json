@@ -1,0 +1,31 @@
+[
+  {
+    "taxonomy_id": "RTI_ACT_-0190",
+    "act": "RTI_ACT_2005",
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "Public authorities must designate Public Information Officers to handle information requests and provide assistance to information seekers.",
+    "checkable_test": "Confirm that Public Information Officers are designated and available to assist information seekers.",
+    "applicability": "Public authorities required to handle information requests under the RTI Act.",
+    "source": "RTI Act 2005, Section 5(1)",
+    "weight": 3,
+    "assessability": "3",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000194"
+    ],
+    "source_clause_ids": [
+      "G002210"
+    ],
+    "source_legal_anchors": [
+      "section 5 1"
+    ],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
+    "canonical_candidate_id": "TC-000194",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 1,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  }
+]

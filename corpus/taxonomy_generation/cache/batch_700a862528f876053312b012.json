@@ -1,0 +1,83 @@
+{
+  "batch_id": "700a862528f876053312b012",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G002055",
+    "G002058",
+    "G002059",
+    "G002060",
+    "G002062",
+    "G002064",
+    "G002070",
+    "G002071"
+  ],
+  "raw_response": "[{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Intermediaries must comply with rules and regulations made under the IT Act 2000, including those related to cyber regulations.\",\"source\":\"IT Act 2000, Section 70A(1)\",\"weight\":2,\"source_clause_ids\":[\"G002058\"],\"checkable_test\":\"Check if the intermediary has implemented compliance with rules and regulations made under the IT Act 2000.\",\"applicability\":\"Applicable to intermediaries subject to the IT Act 2000.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is derived from the obligation to comply with rules and regulations made under the IT Act 2000.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Significant data fiduciaries must constitute a Cyber Regulations Advisory Committee as soon as possible after the commencement of the IT Act 2000.\",\"source\":\"IT Act 2000, Section 88(1)\",\"weight\":3,\"source_clause_ids\":[\"G002059\"],\"checkable_test\":\"Verify if the significant data fiduciary has established a Cyber Regulations Advisory Committee.\",\"applicability\":\"Applicable to significant data fiduciaries under the IT Act 2000.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is derived from the obligation to constitute a Cyber Regulations Advisory Committee.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Significant data fiduciaries must ensure that non-official members of the Cyber Regulations Advisory Committee receive appropriate allowances as determined by the Central Government.\",\"source\":\"IT Act 2000, Section 88(4)\",\"weight\":2,\"source_clause_ids\":[\"G002064\"],\"checkable_test\":\"Check if non-official members of the Cyber Regulations Advisory Committee are receiving allowances as fixed by the Central Government.\",\"applicability\":\"Applicable to significant data fiduciaries under the IT Act 2000.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is derived from the obligation to provide allowances to non-official members of the Cyber Regulations Advisory Committee.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Intermediaries must consult with the Cyber Regulations Advisory Committee and obtain prior approval from the Central Government before making regulations under the IT Act 2000.\",\"source\":\"IT Act 2000, Section 89(1)\",\"weight\":3,\"source_clause_ids\":[\"G002071\"],\"checkable_test\":\"Verify if the intermediary has consulted with the Cyber Regulations Advisory Committee and obtained prior approval from the Central Government before making regulations.\",\"applicability\":\"Applicable to intermediaries subject to the IT Act 2000.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is derived from the obligation to consult with the Cyber Regulations Advisory Committee and obtain prior approval from the Central Government.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Intermediaries must comply with rules and regulations made under the IT Act 2000, including those related to cyber regulations.",
+      "source": "IT Act 2000, Section 70A(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002058"
+      ],
+      "checkable_test": "Check if the intermediary has implemented compliance with rules and regulations made under the IT Act 2000.",
+      "applicability": "Applicable to intermediaries subject to the IT Act 2000.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is derived from the obligation to comply with rules and regulations made under the IT Act 2000.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Significant data fiduciaries must constitute a Cyber Regulations Advisory Committee as soon as possible after the commencement of the IT Act 2000.",
+      "source": "IT Act 2000, Section 88(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G002059"
+      ],
+      "checkable_test": "Verify if the significant data fiduciary has established a Cyber Regulations Advisory Committee.",
+      "applicability": "Applicable to significant data fiduciaries under the IT Act 2000.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is derived from the obligation to constitute a Cyber Regulations Advisory Committee.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Significant data fiduciaries must ensure that non-official members of the Cyber Regulations Advisory Committee receive appropriate allowances as determined by the Central Government.",
+      "source": "IT Act 2000, Section 88(4)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002064"
+      ],
+      "checkable_test": "Check if non-official members of the Cyber Regulations Advisory Committee are receiving allowances as fixed by the Central Government.",
+      "applicability": "Applicable to significant data fiduciaries under the IT Act 2000.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is derived from the obligation to provide allowances to non-official members of the Cyber Regulations Advisory Committee.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Intermediaries must consult with the Cyber Regulations Advisory Committee and obtain prior approval from the Central Government before making regulations under the IT Act 2000.",
+      "source": "IT Act 2000, Section 89(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G002071"
+      ],
+      "checkable_test": "Verify if the intermediary has consulted with the Cyber Regulations Advisory Committee and obtained prior approval from the Central Government before making regulations.",
+      "applicability": "Applicable to intermediaries subject to the IT Act 2000.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is derived from the obligation to consult with the Cyber Regulations Advisory Committee and obtain prior approval from the Central Government.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T15:19:31.326338+00:00",
+  "multi_mapped_records": []
+}

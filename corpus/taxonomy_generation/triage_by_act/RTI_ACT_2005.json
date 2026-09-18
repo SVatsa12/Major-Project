@@ -1,0 +1,3689 @@
+[
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Public authorities must maintain records in a catalogued and indexed manner to facilitate access to information under the Right to Information Act.",
+    "source": "RTI Act 2005, Section 6(1)(a)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002189"
+    ],
+    "checkable_test": "Check if the document states that records are maintained in a catalogued and indexed manner to facilitate access to information.",
+    "applicability": "Applicable to public authorities that hold records subject to the Right to Information Act.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This requirement is directly tied to the obligations of public authorities under the RTI Act 2005.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002189"
+    ],
+    "candidate_id": "TC-000189",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000189",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 2,
+    "policy_checkability_signal_terms": [
+      "access",
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "c53328d58c808be70d055cf6698f758a8d9d800a02de17d46ad4aad2f6b5237a",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Public authorities must publish information within 120 days of the enactment of the Right to Information Act.",
+    "source": "RTI Act 2005, Section 6(1)(b)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002196"
+    ],
+    "checkable_test": "Check if the document states that information is published within 120 days of the enactment of the RTI Act.",
+    "applicability": "Applicable to public authorities that hold information subject to the Right to Information Act.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This requirement mandates a specific timeline for publishing information under the RTI Act 2005.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002196"
+    ],
+    "candidate_id": "TC-000190",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000190",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "aaff0ccf74804379484e598f22ad4ca093b63fd69c53ff984a9cd07436aaab24",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Public authorities must ensure that information is accessible through various means of communication, including the internet, to minimize reliance on the Right to Information Act.",
+    "source": "RTI Act 2005, Section 6(2)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002206"
+    ],
+    "checkable_test": "Check if the document states that information is made accessible through various means of communication, including the internet, to reduce reliance on the RTI Act.",
+    "applicability": "Applicable to public authorities that hold information subject to the Right to Information Act.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This requirement emphasizes proactive dissemination of information to enhance transparency and reduce the need for formal information requests.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002206"
+    ],
+    "candidate_id": "TC-000191",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000191",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 2,
+    "policy_checkability_signal_terms": [
+      "access",
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "8bc4560554515fb8edf97ac5a8c866ff38582fb2906f50eda66f98e23f401aba",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Public authorities must disseminate information in an accessible format, including electronic formats, at a cost-effective manner.",
+    "source": "RTI Act 2005, Section 4(4)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002208"
+    ],
+    "checkable_test": "Check if the information is provided in accessible formats, including electronic formats, at cost-effective rates.",
+    "applicability": "Public authorities providing information under the RTI Act.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This requirement focuses on the accessibility and cost-effectiveness of information dissemination.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002208"
+    ],
+    "candidate_id": "TC-000192",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000192",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 2,
+    "policy_checkability_signal_terms": [
+      "access",
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "7e5cc8c906cd263da3620596a572568429df306a2b55e586e902cbd3f27b1ea9",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Data Retention & Erasure",
+    "requirement": "Public authorities must ensure that information is made accessible to the public through various means, including notice boards, newspapers, media broadcasts, and the internet.",
+    "source": "RTI Act 2005, Section 4(3)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002207"
+    ],
+    "checkable_test": "Verify that information is disseminated through multiple accessible channels as specified.",
+    "applicability": "Public authorities disseminating information under the RTI Act.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This requirement mandates the use of diverse and accessible dissemination methods.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002207"
+    ],
+    "candidate_id": "TC-000193",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000193",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 3,
+    "policy_checkability_signal_terms": [
+      "access",
+      "information",
+      "notice"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "32dbbf6eb00f2dc11c55cc5061fddb0d0f07881da135fd90ca03179fcd5be2bf",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "Public authorities must designate Public Information Officers to handle information requests and provide assistance to information seekers.",
+    "source": "RTI Act 2005, Section 5(1)",
+    "weight": 3,
+    "source_clause_ids": [
+      "G002210"
+    ],
+    "checkable_test": "Confirm that Public Information Officers are designated and available to assist information seekers.",
+    "applicability": "Public authorities required to handle information requests under the RTI Act.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This obligation ensures that there are designated officers to manage information requests and provide support.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002210"
+    ],
+    "candidate_id": "TC-000194",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000194",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "925349a0d06c0082c6f59958477895f886b2b88b02ccebaf44fbeef389a448ec",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Grievance Redressal",
+    "requirement": "Public authorities must appoint Assistant Public Information Officers to receive and forward information requests and appeals promptly.",
+    "source": "RTI Act 2005, Section 19(2)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002213"
+    ],
+    "checkable_test": "Check if Assistant Public Information Officers are appointed and functioning to receive and forward information requests and appeals.",
+    "applicability": "Public authorities handling information requests and appeals under the RTI Act.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This requirement ensures that there is a dedicated channel for receiving and processing information requests and appeals.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002213"
+    ],
+    "candidate_id": "TC-000195",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000195",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "6fadb6f15069962a49233249eaafa9cbf986902973c3a9acea4259f691063714",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Public authorities must extend the response period by five days when information requests or appeals are submitted to Assistant Public Information Officers.",
+    "source": "RTI Act 2005, Section 19(5)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002215"
+    ],
+    "checkable_test": "Verify that the response period is extended by five days for submissions to Assistant Public Information Officers.",
+    "applicability": "Public authorities handling information requests and appeals under the RTI Act.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This requirement ensures that there is an extended timeline for processing requests submitted to Assistant Public Information Officers.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002215"
+    ],
+    "candidate_id": "TC-000196",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000196",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "397586346ac1a2bd142319c0f7412b0513f68a5ac8e430bda201ddeaf03727b8",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "Public authorities must deal with information requests and provide reasonable assistance to information seekers.",
+    "source": "RTI Act 2005, Section 19(6)",
+    "weight": 3,
+    "source_clause_ids": [
+      "G002216"
+    ],
+    "checkable_test": "Confirm that Public Information Officers are actively handling information requests and providing reasonable assistance.",
+    "applicability": "Public authorities required to handle information requests under the RTI Act.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This obligation ensures that information seekers receive adequate support and assistance when requesting information.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002216"
+    ],
+    "candidate_id": "TC-000197",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000197",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "793a74900c5e0de00cebd425469d827a3fcdbd5319dea7efadea9b62f292335f",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Public authorities must transfer an information request to the appropriate authority within five days of receipt.",
+    "source": "RTI Act 2005, Section 6(2)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002227"
+    ],
+    "checkable_test": "Check if the platform transfers requests to the correct authority within five days.",
+    "applicability": "Applicable to public authorities handling information requests.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This obligation is specific to the transfer timeline for information requests.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002227"
+    ],
+    "candidate_id": "TC-000198",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000198",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 2,
+    "policy_checkability_signal_terms": [
+      "information",
+      "transfer"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "c3c929fce649a95533a523bc6b8323fe85cc338431901c08165cb6252c532c71",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Data Retention & Erasure",
+    "requirement": "Public authorities must provide requested information within thirty days of receipt, unless exempted.",
+    "source": "RTI Act 2005, Section 6(1)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002229"
+    ],
+    "checkable_test": "Verify if the platform provides information within thirty days or rejects it with valid reasons.",
+    "applicability": "Applicable to public authorities handling information requests.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This obligation applies to the time limit for responding to information requests.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002229"
+    ],
+    "candidate_id": "TC-000199",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000199",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "79bb1bf49f9e7d700f3c3f919b0172cccba265188d2aaee856c5c4193732c6e0",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Breach Notification",
+    "requirement": "Public authorities must provide information within forty-eight hours if it concerns the life or liberty of a person.",
+    "source": "RTI Act 2005, Section 6(3)",
+    "weight": 3,
+    "source_clause_ids": [
+      "G002230"
+    ],
+    "checkable_test": "Check if the platform provides information within forty-eight hours for life or liberty-related requests.",
+    "applicability": "Applicable to public authorities handling sensitive information requests.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This obligation is specific to urgent information requests related to life or liberty.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002230"
+    ],
+    "candidate_id": "TC-000200",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000200",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "385efc0c95aab64dc00c5f524459469172591937818bc893650323291572d424",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Grievance Redressal",
+    "requirement": "Failure to respond within the specified period is deemed a refusal of the request.",
+    "source": "RTI Act 2005, Section 6(4)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002232"
+    ],
+    "checkable_test": "Verify if the platform treats delayed responses as refusals.",
+    "applicability": "Applicable to public authorities handling information requests.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This obligation applies to the consequences of not responding within the time limit.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002232"
+    ],
+    "candidate_id": "TC-000201",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000201",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "low_policy_checkability_signal"
+    ],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_APPLICABILITY",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "628fe141a35cb564f5e82249c878816c3632bccf216d0f4a1fa74bc0060a9076",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Public authorities must inform applicants immediately about the transfer of an application to another authority.",
+    "source": "RTI Act 2005, Section 6(1)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002226"
+    ],
+    "checkable_test": "Check if the platform informs applicants about the transfer of their request.",
+    "applicability": "Applicable to public authorities handling information requests.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This obligation is specific to the notification requirement for transferred requests.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002226"
+    ],
+    "candidate_id": "TC-000202",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000202",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "transfer"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "36850ff734b3106872106aa52f8cd30ddc73ac296102720160a5eea26524321e",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The platform must provide the applicant with information free of charge if a public authority fails to comply with the time limits specified in subsection (1).",
+    "source": "RTI Act 2005, Section 7(6)",
+    "weight": 3,
+    "source_clause_ids": [
+      "G002239"
+    ],
+    "checkable_test": "Verify if the platform explicitly states that information will be provided free of charge when a public authority fails to meet the time limits for responding to a request.",
+    "applicability": "Applicable to platforms that are public authorities or intermediaries handling public information requests.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This obligation is directly tied to the RTI Act's provisions on free information in case of non-compliance with time limits.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002239"
+    ],
+    "candidate_id": "TC-000203",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000203",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "fae2981add905f13985b763a27af3302a7fb16b1a4e4205b2914ab12cee9376b",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Data Retention & Erasure",
+    "requirement": "The platform must ensure that fees charged for information access are reasonable and not levied on individuals below the poverty line as determined by the appropriate government.",
+    "source": "RTI Act 2005, Section 7(5) and (7)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002239"
+    ],
+    "checkable_test": "Check if the platform explicitly states that fees are reasonable and exempt for individuals below the poverty line.",
+    "applicability": "Applicable to platforms that charge fees for information access under the RTI Act.",
+    "assessability": "Medium",
+    "citation_confidence": "high",
+    "notes": "This obligation is tied to the RTI Act's requirement for reasonable fees and exemptions for economically disadvantaged individuals.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002239"
+    ],
+    "candidate_id": "TC-000204",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000204",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 2,
+    "policy_checkability_signal_terms": [
+      "access",
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "c89338b96aa534d6f6896ca2064fa8fa851e161e7793bff7dfefe22e83c0ce31",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Security Safeguards",
+    "requirement": "The platform must provide assistance to enable access to information for sensorily disabled individuals.",
+    "source": "RTI Act 2005, Section 7(4)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002237"
+    ],
+    "checkable_test": "Verify if the platform outlines specific assistance mechanisms for sensorily disabled users to access information.",
+    "applicability": "Applicable to platforms that provide information access to individuals with sensory disabilities.",
+    "assessability": "Medium",
+    "citation_confidence": "high",
+    "notes": "This obligation is directly linked to the RTI Act's requirement for accessibility for individuals with sensory impairments.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002237"
+    ],
+    "candidate_id": "TC-000205",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000205",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 3,
+    "policy_checkability_signal_terms": [
+      "access",
+      "information",
+      "use"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "4bc2104bf195f7873e92f24706c5332f95cbc5da9be02d34fa11bf6215960c4f",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Grievance Redressal",
+    "requirement": "The platform must provide information on the applicant's right to review the decision regarding the amount of fees charged or the form of access provided, including details of the appellate authority and process.",
+    "source": "RTI Act 2005, Section 7(5)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002235"
+    ],
+    "checkable_test": "Check if the platform clearly outlines the applicant's right to review fee decisions and the appellate process.",
+    "applicability": "Applicable to platforms that charge fees for information access under the RTI Act.",
+    "assessability": "Medium",
+    "citation_confidence": "high",
+    "notes": "This obligation is tied to the RTI Act's provisions on fee review and grievance mechanisms.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002235"
+    ],
+    "candidate_id": "TC-000206",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000206",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 3,
+    "policy_checkability_signal_terms": [
+      "access",
+      "information",
+      "process"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "b9affa03ddbc29616a9df0c1214a85f97d7d54bbc37f4e65ec4d22e0014e9e73",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The platform must consider representations made by third parties under section 1 of the RTI Act before taking any decision on information access.",
+    "source": "RTI Act 2005, Section 7(7)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002241"
+    ],
+    "checkable_test": "Verify if the platform explicitly states that it will consider third-party representations before making decisions on information access.",
+    "applicability": "Applicable to platforms that handle information access requests and may be affected by third-party input.",
+    "assessability": "Medium",
+    "citation_confidence": "high",
+    "notes": "This obligation is directly linked to the RTI Act's requirement for considering third-party input in decision-making processes.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002241"
+    ],
+    "candidate_id": "TC-000207",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000207",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 2,
+    "policy_checkability_signal_terms": [
+      "access",
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "03f9ceab80799b1d83da7f9f098f097ad46233639776e740a74074aaca850188",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Grievance Redressal",
+    "requirement": "If a request for information is rejected, the public authority must communicate the reasons for the rejection to the requester.",
+    "source": "RTI Act 2005, Section 8(2)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002243"
+    ],
+    "checkable_test": "The public authority must provide specific reasons for rejecting an information request.",
+    "applicability": "Applicable to all public authorities under the RTI Act 2005.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This obligation is directly tied to the rejection of information requests and requires a specific communication of reasons.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002243"
+    ],
+    "candidate_id": "TC-000208",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000208",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "54ab174a7e639b76e48c5216b254cdb5fe42298358fef14ed00466d438d20d54",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Grievance Redressal",
+    "requirement": "The public authority must communicate the period within which an appeal against a rejected information request may be preferred, along with the particulars of the appellate authority.",
+    "source": "RTI Act 2005, Section 8(4)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002244"
+    ],
+    "checkable_test": "The public authority must specify the appeal period and appellate authority in case of a rejected request.",
+    "applicability": "Applicable to all public authorities under the RTI Act 2005.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This obligation ensures that the requester is informed of the process for appealing a rejection decision.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002244"
+    ],
+    "candidate_id": "TC-000209",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000209",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "b402e30c64bdba4e377a966dca4aaf2a27e063095c8a6d6e12c135573e26981c",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Data Retention & Erasure",
+    "requirement": "Information shall be provided in the form in which it is sought unless it would disproportionately divert the resources of the public authority or would be detrimental to the safety or preservation of the record in question.",
+    "source": "RTI Act 2005, Section 8(9)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002246"
+    ],
+    "checkable_test": "The public authority must provide information in the requested format unless there is a valid reason to deviate.",
+    "applicability": "Applicable to all public authorities under the RTI Act 2005.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This obligation ensures that information is provided in the form requested, unless there is a legitimate reason to provide it in another format.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002246"
+    ],
+    "candidate_id": "TC-000210",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000210",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "1fe22caa4810b446358a81108107e0e002a61ca56b923acc77656d5c4d1d1b0e",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "There shall be no obligation to give any citizen information that would prejudicially affect the sovereignty and integrity of India, the security, strategic, scientific or economic interests of the State, relations with foreign states, or lead to incitement of an offence.",
+    "source": "RTI Act 2005, Section 8(8)(a)",
+    "weight": 3,
+    "source_clause_ids": [
+      "G002248"
+    ],
+    "checkable_test": "The public authority must exempt information that would harm national security or sovereignty.",
+    "applicability": "Applicable to all public authorities under the RTI Act 2005.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This obligation outlines the conditions under which information may be exempted from disclosure to protect national interests.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002248"
+    ],
+    "candidate_id": "TC-000211",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000211",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 2,
+    "policy_checkability_signal_terms": [
+      "information",
+      "security"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "2d10f37642d779754472af33bbe47ae21089643fbe1a1698d2da8706f184c2f7",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "There shall be no obligation to give any citizen information which has been expressly forbidden to be published by any court of law or tribunal or the disclosure of which may constitute contempt of court.",
+    "source": "RTI Act 2005, Section 8(8)(b)",
+    "weight": 3,
+    "source_clause_ids": [
+      "G002249"
+    ],
+    "checkable_test": "The public authority must exempt information that has been expressly forbidden by a court or tribunal.",
+    "applicability": "Applicable to all public authorities under the RTI Act 2005.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This obligation ensures that information which is legally protected from disclosure is not provided to citizens.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002249"
+    ],
+    "candidate_id": "TC-000212",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000212",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "8109699369d03c5201e09d4084d7e8e71beb91aa957a13f47449c9cd7d4e1ae1",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Information Officer must communicate information to the requester unless disclosure would cause a breach of privilege of Parliament or the State Legislature.",
+    "source": "RTI Act 2005, Section 6(2)(c)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002250"
+    ],
+    "checkable_test": "Check if the Information Officer communicates information to the requester unless disclosure would cause a breach of privilege of Parliament or the State Legislature.",
+    "applicability": "Applicable to information requests under the RTI Act 2005.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This clause outlines an exception to disclosure based on breach of parliamentary privilege.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002250"
+    ],
+    "candidate_id": "TC-000213",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000213",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 3,
+    "policy_checkability_signal_terms": [
+      "breach",
+      "information",
+      "use"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "4efe5b5895325541b0243f3ebf336391b43f236377715902fc66f9d0966c73ea",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Information Officer must communicate information to the requester unless disclosure would harm the competitive position of a third party, unless the competent authority is satisfied that larger public interest warrants disclosure.",
+    "source": "RTI Act 2005, Section 6(2)(d)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002251"
+    ],
+    "checkable_test": "Check if the Information Officer communicates information to the requester unless disclosure would harm the competitive position of a third party, unless the competent authority is satisfied that larger public interest warrants disclosure.",
+    "applicability": "Applicable to information requests under the RTI Act 2005.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This clause outlines an exception to disclosure based on commercial confidence and trade secrets.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002251"
+    ],
+    "candidate_id": "TC-000214",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000214",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "3ec0796f203da1ee2d1f49ba716814aa286852c5bdcf02bd8751381eac0d6a8e",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Information Officer must communicate information to the requester unless disclosure would harm the fiduciary relationship of a person, unless the competent authority is satisfied that larger public interest warrants disclosure.",
+    "source": "RTI Act 2005, Section 6(2)(e)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002252"
+    ],
+    "checkable_test": "Check if the Information Officer communicates information to the requester unless disclosure would harm the fiduciary relationship of a person, unless the competent authority is satisfied that larger public interest warrants disclosure.",
+    "applicability": "Applicable to information requests under the RTI Act 2005.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This clause outlines an exception to disclosure based on fiduciary relationships.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002252"
+    ],
+    "candidate_id": "TC-000215",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000215",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "a563fee696a7ad9be7ab0e7ec38cb4cfbe8940627885debbd582668a0f2fc7c9",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Information Officer must communicate information to the requester unless disclosure would endanger the life or physical safety of any person or identify the source of information or assistance given in confidence for law enforcement or security purposes.",
+    "source": "RTI Act 2005, Section 6(2)(g)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002254"
+    ],
+    "checkable_test": "Check if the Information Officer communicates information to the requester unless disclosure would endanger the life or physical safety of any person or identify the source of information or assistance given in confidence for law enforcement or security purposes.",
+    "applicability": "Applicable to information requests under the RTI Act 2005.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This clause outlines an exception to disclosure based on safety and security concerns.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002254"
+    ],
+    "candidate_id": "TC-000216",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000216",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "law-enforcement cooperation duty"
+    ],
+    "policy_checkability_signal_count": 3,
+    "policy_checkability_signal_terms": [
+      "information",
+      "purpose",
+      "security"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "2bb89070ea5f3fc09045c02ed2f2781ebf86ed52ea9a0c197ea2cd351b0cc19c",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Information Officer must communicate information to the requester unless disclosure would impede the process of investigation or apprehension or prosecution of offenders.",
+    "source": "RTI Act 2005, Section 6(2)(h)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002255"
+    ],
+    "checkable_test": "Check if the Information Officer communicates information to the requester unless disclosure would impede the process of investigation or apprehension or prosecution of offenders.",
+    "applicability": "Applicable to information requests under the RTI Act 2005.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This clause outlines an exception to disclosure based on law enforcement and judicial processes.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002255"
+    ],
+    "candidate_id": "TC-000217",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000217",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 2,
+    "policy_checkability_signal_terms": [
+      "information",
+      "process"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "3ce7bd6138fe557bbe4cf90d33977b5fb840672ab0079a4744252cfecb6897c3",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Information Officer must communicate information to the requester unless disclosure would involve cabinet papers including records of deliberations of the Council of Ministers, Secretaries and other officers.",
+    "source": "RTI Act 2005, Section 6(2)(i)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002256"
+    ],
+    "checkable_test": "Check if the Information Officer communicates information to the requester unless disclosure would involve cabinet papers including records of deliberations of the Council of Ministers, Secretaries and other officers.",
+    "applicability": "Applicable to information requests under the RTI Act 2005.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This clause outlines an exception to disclosure based on cabinet papers and deliberations.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002256"
+    ],
+    "candidate_id": "TC-000218",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000218",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "8cc71713a4f814d35dc1d4a4201ae344f50a21e5a63be54ecfe7dafafdc392cc",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Information Officer must make public the decisions of Council of Ministers, the reasons thereof, and the material on the basis of which the decisions were taken after the decision has been taken and the matter is complete or over.",
+    "source": "RTI Act 2005, Section 6(2)(Provided that)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002257"
+    ],
+    "checkable_test": "Check if the Information Officer makes public the decisions of Council of Ministers, the reasons thereof, and the material on the basis of which the decisions were taken after the decision has been taken and the matter is complete or over.",
+    "applicability": "Applicable to information requests under the RTI Act 2005.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This clause outlines a requirement for transparency in decision-making processes of the Council of Ministers.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002257"
+    ],
+    "candidate_id": "TC-000219",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000219",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "431444c606e876c0af4e25d46705ac108ac69c5d147a673ed2a98e58070aa8c6",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Public authorities must disclose information to requesters unless it falls under specific exemptions such as personal privacy, official secrets, or national security.",
+    "source": "RTI Act 2005, Section 6(1)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002258"
+    ],
+    "checkable_test": "Check if the public authority discloses information to requesters unless it falls under specific exemptions.",
+    "applicability": "Applicable to all public authorities under the RTI Act 2005.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This requirement is based on the obligation to disclose information unless it falls under specific exemptions.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002258"
+    ],
+    "candidate_id": "TC-000220",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000220",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 3,
+    "policy_checkability_signal_terms": [
+      "disclose",
+      "information",
+      "security"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "93eb9b6519404f9ef8872d896a9c3682417c51e6c0fcd3db01ec3a88b301119c",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Data Retention & Erasure",
+    "requirement": "Public authorities must provide information that is more than twenty years old unless there is a specific exemption.",
+    "source": "RTI Act 2005, Section 6(3)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002263"
+    ],
+    "checkable_test": "Check if the public authority provides information that is more than twenty years old unless there is a specific exemption.",
+    "applicability": "Applicable to all public authorities under the RTI Act 2005.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This requirement is based on the obligation to provide information that is more than twenty years old unless there is a specific exemption.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002263"
+    ],
+    "candidate_id": "TC-000221",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000221",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "630cbcadc3587a52d82c6486b9f23390e57760b0fb6e07339466418a4670762a",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Public authorities may allow access to information if public interest in disclosure outweighs the harm to protected interests, even if it falls under exemptions.",
+    "source": "RTI Act 2005, Section 6(2)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002262"
+    ],
+    "checkable_test": "Check if the public authority allows access to information if public interest in disclosure outweighs the harm to protected interests.",
+    "applicability": "Applicable to all public authorities under the RTI Act 2005.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This requirement is based on the obligation to allow access to information if public interest in disclosure outweighs the harm to protected interests.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002262"
+    ],
+    "candidate_id": "TC-000222",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000222",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 3,
+    "policy_checkability_signal_terms": [
+      "access",
+      "information",
+      "protect"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "d82fc1a55d6bba2c73e2726d742474ce271e23497033ffec7cae83fadccc18fe",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Data Retention & Erasure",
+    "requirement": "The Central Government has the final authority to determine the date from which the twenty-year period for information disclosure begins, subject to appeals under the RTI Act.",
+    "source": "RTI Act 2005, Section 6(3)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002265"
+    ],
+    "checkable_test": "Check if the Central Government has the final authority to determine the date from which the twenty-year period for information disclosure begins, subject to appeals.",
+    "applicability": "Applicable to all public authorities under the RTI Act 2005.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This requirement is based on the obligation to allow the Central Government to determine the date from which the twenty-year period for information disclosure begins, subject to appeals.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002265"
+    ],
+    "candidate_id": "TC-000223",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000223",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "9a11054b1f1d7566b63d9f64ea9d8e1b4fd75279b78924c9437d093eacb3905d",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Information Officer must inform the applicant of the reasons for rejecting a request for information, including any findings on material questions of fact and the basis for those findings.",
+    "source": "RTI Act 2005, Section 9",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002267"
+    ],
+    "checkable_test": "The document must explicitly state that the Information Officer will inform the applicant of the reasons for rejecting a request, including findings on material questions of fact and the basis for those findings.",
+    "applicability": "Applicable to any document that outlines the procedures for handling information requests under the RTI Act 2005.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This requirement is derived from the obligation to provide reasons for rejection of information requests.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002267"
+    ],
+    "candidate_id": "TC-000224",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000224",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "df213e91605406c82084200d8577006139d4d92a05f47fad3288cbbc80a47a4e",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Information Officer must inform the applicant of the name and designation of the person giving the decision on the request for information.",
+    "source": "RTI Act 2005, Section 9",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002272"
+    ],
+    "checkable_test": "The document must explicitly state that the Information Officer will inform the applicant of the name and designation of the person making the decision.",
+    "applicability": "Applicable to any document that outlines the procedures for handling information requests under the RTI Act 2005.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This requirement is derived from the obligation to disclose the decision-maker's identity in information requests.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002272"
+    ],
+    "candidate_id": "TC-000225",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000225",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "b8e74dc6e2b0be5bdb54e090f431242c51c2c2bed580613544efdf2768ed7a31",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Information Officer must inform the applicant of the fees calculated and the amount required to be deposited for accessing information.",
+    "source": "RTI Act 2005, Section 9",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002273"
+    ],
+    "checkable_test": "The document must explicitly state that the Information Officer will inform the applicant of the fees calculated and the amount required to be deposited.",
+    "applicability": "Applicable to any document that outlines the procedures for handling information requests under the RTI Act 2005.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This requirement is derived from the obligation to disclose fee details in information requests.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002273"
+    ],
+    "candidate_id": "TC-000226",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000226",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 2,
+    "policy_checkability_signal_terms": [
+      "access",
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "14763b6c585e4a546737a4f3b04ded2bf9459b1ed11d7cac6ca6537e15680bce",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Information Officer must inform the applicant that only part of the requested record is being provided after severance of exempt information.",
+    "source": "RTI Act 2005, Section 9",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002270"
+    ],
+    "checkable_test": "The document must explicitly state that the Information Officer will inform the applicant that only part of the requested record is being provided after severance of exempt information.",
+    "applicability": "Applicable to any document that outlines the procedures for handling information requests under the RTI Act 2005.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This requirement is derived from the obligation to disclose the partial provision of records in information requests.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002270"
+    ],
+    "candidate_id": "TC-000227",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000227",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "eb89144fd9a3e5f6b1e6ed91d5b1240e6efd93816e96103c4d4f1c118bcf6543",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Public Information Officer must provide a written notice to the third party within five days of receiving a request for information that has been treated as confidential by the third party.",
+    "source": "RTI Act 2005, Section 22(1)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002276"
+    ],
+    "checkable_test": "Verify that the document specifies a requirement to notify third parties within five days of receiving a request for confidential information.",
+    "applicability": "Applies to any organization acting as a Public Information Officer under the RTI Act 2005.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This requirement is specific to the RTI Act 2005 and applies to third-party information treated as confidential.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002276"
+    ],
+    "candidate_id": "TC-000228",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000228",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 3,
+    "policy_checkability_signal_terms": [
+      "confidential",
+      "information",
+      "notice"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "4777df8cd9a74a572fa14000b10c93948c4aa98efad20d7d4bf5bceec3a662df",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Public Information Officer must invite the third party to submit a written or oral representation regarding the disclosure of confidential information.",
+    "source": "RTI Act 2005, Section 22(1)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002277"
+    ],
+    "checkable_test": "Verify that the document requires the third party to submit a written or oral representation regarding the disclosure of confidential information.",
+    "applicability": "Applies to any organization acting as a Public Information Officer under the RTI Act 2005.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This requirement is specific to the RTI Act 2005 and applies to third-party information treated as confidential.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002277"
+    ],
+    "candidate_id": "TC-000229",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000229",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 2,
+    "policy_checkability_signal_terms": [
+      "confidential",
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "ac9ee8b54954fcddb4daf7a36805f88fe8c24ec2e8bc18994649be9f405c5015",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Public Information Officer must provide the third party with an opportunity to make a representation against the proposed disclosure of confidential information within ten days of receiving the notice.",
+    "source": "RTI Act 2005, Section 22(2)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002279"
+    ],
+    "checkable_test": "Verify that the document provides the third party with an opportunity to make a representation against the proposed disclosure of confidential information within ten days of receiving the notice.",
+    "applicability": "Applies to any organization acting as a Public Information Officer under the RTI Act 2005.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This requirement is specific to the RTI Act 2005 and applies to third-party information treated as confidential.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002279"
+    ],
+    "candidate_id": "TC-000230",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000230",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 3,
+    "policy_checkability_signal_terms": [
+      "confidential",
+      "information",
+      "notice"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "b1ac8aba6576b778800f3374dd7f88c375ca310e7e1fd93bb52c0fed6e7b75de",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Public Information Officer must make a decision on the disclosure of confidential information within forty days of receiving the request, after considering the third party's representation.",
+    "source": "RTI Act 2005, Section 22(1)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002281"
+    ],
+    "checkable_test": "Verify that the document requires the Public Information Officer to make a decision on the disclosure of confidential information within forty days of receiving the request, after considering the third party's representation.",
+    "applicability": "Applies to any organization acting as a Public Information Officer under the RTI Act 2005.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This requirement is specific to the RTI Act 2005 and applies to third-party information treated as confidential.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002281"
+    ],
+    "candidate_id": "TC-000231",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000231",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 2,
+    "policy_checkability_signal_terms": [
+      "confidential",
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "a4439ebc08f058d2f38de3a783cd60394cf508ded061e20a25c35a6f3f4ad2e4",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Public Information Officer must include a statement in the notice that the third party has the right to appeal the decision regarding the disclosure of confidential information.",
+    "source": "RTI Act 2005, Section 22(4)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002282"
+    ],
+    "checkable_test": "Verify that the document includes a statement informing the third party of their right to appeal the decision regarding the disclosure of confidential information.",
+    "applicability": "Applies to any organization acting as a Public Information Officer under the RTI Act 2005.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This requirement is specific to the RTI Act 2005 and applies to third-party information treated as confidential.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002282"
+    ],
+    "candidate_id": "TC-000232",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000232",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 3,
+    "policy_checkability_signal_terms": [
+      "confidential",
+      "information",
+      "notice"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "edeef70b589821eea5b993053823592d407e8958a72e5a404ceefd08a16e440a",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Information Officer must disclose third-party information upon request, with the third party able to appeal within thirty days of the order.",
+    "source": "RTI Act 2005, Section 11",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002393"
+    ],
+    "checkable_test": "Check if the Information Officer discloses third-party information and if the third party has a thirty-day appeal period.",
+    "applicability": "Applicable to requests involving third-party information.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This obligation is tied to the disclosure of third-party information and the appeal process.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002393"
+    ],
+    "candidate_id": "TC-000233",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000233",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 2,
+    "policy_checkability_signal_terms": [
+      "disclose",
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "a89ddd5d270d33bc3aec89e51cb296fcf9f1d64589f5743b8fd3f60bb0fe6129",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "A second appeal against a decision regarding third-party information must be filed within ninety days from the date the decision was received.",
+    "source": "RTI Act 2005, Section 11",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002394"
+    ],
+    "checkable_test": "Verify if the second appeal period is set to ninety days for third-party information decisions.",
+    "applicability": "Applicable to appeals against third-party information decisions.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This obligation outlines the timeframe for the second appeal in third-party information cases.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002394"
+    ],
+    "candidate_id": "TC-000234",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000234",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "d3e965a7d0c097ab238849cba39ed65d316177cb19328f5d8dfddb67721554f8",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Central Information Commission or State Information Commission may admit an appeal after ninety days if the appellant was prevented by sufficient cause from filing on time.",
+    "source": "RTI Act 2005, Section 11",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002395"
+    ],
+    "checkable_test": "Check if the Commission allows late appeals due to sufficient cause.",
+    "applicability": "Applicable to appeals filed after the ninety-day period.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This obligation allows for exceptions to the appeal deadline if sufficient cause is demonstrated.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002395"
+    ],
+    "candidate_id": "TC-000235",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000235",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 2,
+    "policy_checkability_signal_terms": [
+      "information",
+      "use"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "a2aab944fb6f2f16d2126134b2f71f552ce74669cea22d8d27ff61f14b4c794c",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Central Information Commission or State Information Commission must decide appeals in accordance with prescribed procedures and provide notice of its decision, including any right of appeal, to the complainant and public authority.",
+    "source": "RTI Act 2005, Section 11",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002413"
+    ],
+    "checkable_test": "Verify if the Commission provides notice of its decision and any appeal rights to the complainant and public authority.",
+    "applicability": "Applicable to all appeal proceedings.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This obligation ensures transparency and procedural compliance in the appeal process.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002413"
+    ],
+    "candidate_id": "TC-000236",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000236",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 3,
+    "policy_checkability_signal_terms": [
+      "information",
+      "notice",
+      "rights"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "4d44f4684c77f73b3a905923ee84f1bebee62aaf9582f3736509a19e83c85c0f",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Central Information Commission or State Information Commission must impose a penalty of up to twenty-five thousand rupees for unjustified refusals or malafidely denied requests for information.",
+    "source": "RTI Act 2005, Section 20",
+    "weight": 3,
+    "source_clause_ids": [
+      "G002414"
+    ],
+    "checkable_test": "Check if penalties are imposed for unjustified refusals or malafidely denied information requests.",
+    "applicability": "Applicable to public authorities that unjustifiably refuse or deny information requests.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This obligation outlines the penalty framework for non-compliance with information disclosure obligations.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002414"
+    ],
+    "candidate_id": "TC-000237",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000237",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "574aba0619dc6d823652c5a47f8413e2b12add88408a1f687ac8cb09c30dcc92",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Public authorities must provide the postal and street address, phone and fax number, and electronic mail address of their Central Public Information Officer or State Public Information Officer.",
+    "source": "RTI_ACT_2005, SECTION=MISCELLANEOUS",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002455"
+    ],
+    "checkable_test": "Verify that the public authority's contact details for the Public Information Officer are publicly available.",
+    "applicability": "Public authorities under the RTI Act 2005",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This requirement is directly tied to the obligation to disclose contact information for the Public Information Officer.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002455"
+    ],
+    "candidate_id": "TC-000238",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000238",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 2,
+    "policy_checkability_signal_terms": [
+      "contact",
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "0932d2bbfdfb69256968a644d3f8e836d0fa8724b9e600acaab01a8caf6d3e3c",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Consent & Notice",
+    "requirement": "Public authorities must train Central Public Information Officers or State Public Information Officers and produce relevant training materials for use by public authorities.",
+    "source": "RTI_ACT_2005, SECTION=MISCELLANEOUS",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002450"
+    ],
+    "checkable_test": "Verify that training materials and training of Public Information Officers are provided.",
+    "applicability": "Public authorities under the RTI Act 2005",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This requirement mandates the provision of training and materials for Public Information Officers.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002450"
+    ],
+    "candidate_id": "TC-000239",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000239",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 2,
+    "policy_checkability_signal_terms": [
+      "information",
+      "use"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "542ad9f88bf470141d8c1bf0610f1517593643792a078d489510aa14235dedbf",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Data Retention & Erasure",
+    "requirement": "Public authorities must specify the manner and form in which requests for access to information shall be made to their Central Public Information Officer or State Public Information Officer.",
+    "source": "RTI_ACT_2005, SECTION=MISCELLANEOUS",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002456"
+    ],
+    "checkable_test": "Verify that the public authority specifies the manner and form for submitting information requests.",
+    "applicability": "Public authorities under the RTI Act 2005",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This requirement outlines the procedural format for submitting information requests.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002456"
+    ],
+    "candidate_id": "TC-000240",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000240",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 2,
+    "policy_checkability_signal_terms": [
+      "access",
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "4bc8607023f886a4f909b7e530adcd44154a113180405e08e1f71d5aaaf28461",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Data Principal Rights",
+    "requirement": "Public authorities must specify the assistance available from and the duties of their Central Public Information Officer or State Public Information Officer under the RTI Act.",
+    "source": "RTI_ACT_2005, SECTION=MISCELLANEOUS",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002457"
+    ],
+    "checkable_test": "Verify that the public authority outlines the assistance and duties of the Public Information Officer.",
+    "applicability": "Public authorities under the RTI Act 2005",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This requirement ensures transparency in the role and responsibilities of the Public Information Officer.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002457"
+    ],
+    "candidate_id": "TC-000241",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000241",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "82f0f54c107eefeb56879078046db089276ca84447f00e97ae6c5b707617a941",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Public authorities must disclose the procedure followed in the decision-making process, including channels of supervision and accountability.",
+    "source": "RTI Act 2005, Section 8(4)(iii)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002192"
+    ],
+    "checkable_test": "A public authority's governance procedures and accountability mechanisms must be publicly disclosed.",
+    "applicability": "Public authorities subject to the RTI Act 2005",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This obligation applies to public authorities and requires transparency in decision-making processes.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002192"
+    ],
+    "candidate_id": "TC-000486",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000486",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 3,
+    "policy_checkability_signal_terms": [
+      "account",
+      "disclose",
+      "process"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "45fd08e36af6a122c8125d17adf12db580fa720fbcc08031d6ab968d0fe6b68a",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Data Retention & Erasure",
+    "requirement": "Public authorities must maintain records of rules, regulations, instructions, manuals, and records used by their employees for discharging functions.",
+    "source": "RTI Act 2005, Section 8(4)(v)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002193"
+    ],
+    "checkable_test": "Public authorities must retain and make available records of internal rules and guidelines used by employees.",
+    "applicability": "Public authorities subject to the RTI Act 2005",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This obligation ensures transparency and accountability in the functioning of public authorities.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002193"
+    ],
+    "candidate_id": "TC-000487",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000487",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 3,
+    "policy_checkability_signal_terms": [
+      "guidelines",
+      "retain",
+      "use"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "18cb71bf89ba18282ca521f715012df3cd0536c49774b3b38b33893354dbd349",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Public authorities must maintain a directory of their officers and employees.",
+    "source": "RTI Act 2005, Section 8(9)(ix)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002197"
+    ],
+    "checkable_test": "Verify the existence of a publicly accessible directory listing all officers and employees.",
+    "applicability": "Applicable to all public authorities subject to the RTI Act 2005.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This requirement is directly tied to the obligation to disclose information about their personnel.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002197"
+    ],
+    "candidate_id": "TC-000488",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000488",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "access"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "41e5809e147540483e352f9b86ad8d66881c5327ba5efb6e46cffa048accea35",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Public authorities must disclose the monthly remuneration of their officers and employees.",
+    "source": "RTI Act 2005, Section 8(9)(x)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002198"
+    ],
+    "checkable_test": "Verify the publication of detailed salary information for all officers and employees.",
+    "applicability": "Applicable to all public authorities subject to the RTI Act 2005.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This requirement mandates transparency in financial disclosures related to personnel.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002198"
+    ],
+    "candidate_id": "TC-000489",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000489",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 2,
+    "policy_checkability_signal_terms": [
+      "disclose",
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "55c74a0e044e5690ae0f1cafaa48a9c2f6ee6fa64869784d9f008f5207def239",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Public authorities must disclose the budget allocated to each agency, including planned expenditures and disbursements.",
+    "source": "RTI Act 2005, Section 8(9)(xi)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002199"
+    ],
+    "checkable_test": "Verify the publication of detailed budget information for each agency, including planned and actual expenditures.",
+    "applicability": "Applicable to all public authorities subject to the RTI Act 2005.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This requirement ensures transparency in financial planning and execution.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002199"
+    ],
+    "candidate_id": "TC-000490",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000490",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 2,
+    "policy_checkability_signal_terms": [
+      "disclose",
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "96f80dfbc0087225c25f8d0e5cce1102f49316bb95a47b91aade9e1734847923",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Public authorities must disclose the manner of execution of subsidy programmes, including beneficiaries and amounts allocated.",
+    "source": "RTI Act 2005, Section 8(9)(xii)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002200"
+    ],
+    "checkable_test": "Verify the publication of detailed information on subsidy programmes, including beneficiaries and allocated amounts.",
+    "applicability": "Applicable to all public authorities subject to the RTI Act 2005.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This requirement ensures transparency in the implementation of subsidy programmes.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002200"
+    ],
+    "candidate_id": "TC-000491",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000491",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 2,
+    "policy_checkability_signal_terms": [
+      "disclose",
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "6a88db9f9875809593320a4a90658d13c61d188ebeeab0d9194c2ee79b7dc86e",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Public authorities must disclose details of information held in electronic form.",
+    "source": "RTI Act 2005, Section 8(9)(xiv)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002201"
+    ],
+    "checkable_test": "Verify the publication of information on the availability and nature of electronic records held by the authority.",
+    "applicability": "Applicable to all public authorities subject to the RTI Act 2005.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This requirement ensures transparency in the management of electronic records.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002201"
+    ],
+    "candidate_id": "TC-000492",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000492",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 2,
+    "policy_checkability_signal_terms": [
+      "disclose",
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "c2ee721173f054a62a51b96d14336aae8542e57202a8a9277d803e3b9e4ef800",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Public authorities must disclose the particulars of facilities available to citizens for obtaining information.",
+    "source": "RTI Act 2005, Section 8(9)(xv)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002202"
+    ],
+    "checkable_test": "Verify the publication of details on facilities available to citizens for accessing information, including working hours of public libraries or reading rooms.",
+    "applicability": "Applicable to all public authorities subject to the RTI Act 2005.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This requirement ensures transparency in the availability of public information access facilities.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002202"
+    ],
+    "candidate_id": "TC-000493",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000493",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 3,
+    "policy_checkability_signal_terms": [
+      "access",
+      "disclose",
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "0b582b8504b656fbeb5b271063ba1a019d6c9e818e8f3beb0f6927c48f9dea0a",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Public authorities must designate a Public Information Officer within one hundred days of the enactment of the RTI Act.",
+    "source": "RTI Act 2005, Section 22(2)",
+    "weight": 3,
+    "source_clause_ids": [
+      "G002212"
+    ],
+    "checkable_test": "Verify if the public authority has designated a Public Information Officer within the required timeframe.",
+    "applicability": "Applicable to all public authorities under the RTI Act 2005.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This obligation is directly tied to the designation of a Public Information Officer and is a core requirement under the RTI Act.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002212"
+    ],
+    "candidate_id": "TC-000494",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000494",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "a1fdabc9638b17388b10417670046dfed75b4e658a0073340d31a6bafc2c2ce4",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Data Retention & Erasure",
+    "requirement": "Public authorities must publish all relevant facts while formulating important policies or announcing decisions that affect the public.",
+    "source": "RTI Act 2005, Section 22(c)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002204"
+    ],
+    "checkable_test": "Verify if the public authority has published all relevant facts for policies or decisions affecting the public.",
+    "applicability": "Applicable to all public authorities formulating policies or making decisions affecting the public.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This obligation requires transparency in policy-making and decision-making processes.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002204"
+    ],
+    "candidate_id": "TC-000495",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000495",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "low_policy_checkability_signal"
+    ],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_APPLICABILITY",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "475187c7435052383d495ec7c10d23b074470ebb760abf9349477f27016bca7b",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Data Retention & Erasure",
+    "requirement": "Public authorities must provide reasons for their administrative or quasi-judicial decisions to affected persons.",
+    "source": "RTI Act 2005, Section 22(d)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002205"
+    ],
+    "checkable_test": "Verify if the public authority has provided reasons for administrative or quasi-judicial decisions to affected persons.",
+    "applicability": "Applicable to all administrative or quasi-judicial decisions affecting individuals.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This obligation ensures transparency and accountability in decision-making processes.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002205"
+    ],
+    "candidate_id": "TC-000496",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000496",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "low_policy_checkability_signal"
+    ],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_APPLICABILITY",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "77a3cc065335be3c273e5e17467524df7f3a93afe8e04c2044e25005fdc04423",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Confidentiality & Misuse of Data",
+    "requirement": "Disclosure of information supplied by a third party that has been treated as confidential may be allowed if the public interest in disclosure outweighs any possible harm to the third party's interests.",
+    "source": "RTI Act 2005, Section 22(7)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002278"
+    ],
+    "checkable_test": "Verify if the public authority has assessed whether the public interest in disclosure outweighs the harm to the third party's interests.",
+    "applicability": "Applicable to information supplied by third parties treated as confidential.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This obligation balances the right to information with the protection of confidential information.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002278"
+    ],
+    "candidate_id": "TC-000497",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000497",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 2,
+    "policy_checkability_signal_terms": [
+      "confidential",
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "452c12bbf7e53adf3aa5fb48d3f9056e186c0a806eba6d5414cf344d187bd47b",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Grievance Redressal",
+    "requirement": "A person who has been refused access to information requested under the RTI Act may initiate an inquiry with the Central or State Information Commission.",
+    "source": "RTI Act 2005, Section 20(1)(b)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002375"
+    ],
+    "checkable_test": "Verify if the document provides a mechanism for individuals to initiate an inquiry with the Information Commission if their request for information was denied.",
+    "applicability": "Applicable to any organization subject to the RTI Act 2005.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This requirement is tied to the right of access to information and the grievance mechanism under the RTI Act.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002375"
+    ],
+    "candidate_id": "TC-000498",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000498",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 3,
+    "policy_checkability_signal_terms": [
+      "access",
+      "information",
+      "use"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "3392b7fac147ef1da812f4586e309c7efce0f050b17268be77249b4f8faa99f0",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Grievance Redressal",
+    "requirement": "A person who has not received a response to a request for information within the time limit specified under the RTI Act may initiate an inquiry with the Central or State Information Commission.",
+    "source": "RTI Act 2005, Section 20(1)(c)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002377"
+    ],
+    "checkable_test": "Verify if the document specifies a time limit for responding to information requests and provides a mechanism for initiating an inquiry if the time limit is exceeded.",
+    "applicability": "Applicable to any organization subject to the RTI Act 2005.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This requirement ensures timely responses to information requests and provides a grievance mechanism for delays.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002377"
+    ],
+    "candidate_id": "TC-000499",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000499",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "2d13ea4bcb2c3a900f79e5180bc9f34fc1c240407fb1cdd3bbf94bfc0a3873ff",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Grievance Redressal",
+    "requirement": "A person who believes they have been given incomplete, misleading, or false information under the RTI Act may initiate an inquiry with the Central or State Information Commission.",
+    "source": "RTI Act 2005, Section 20(1)(e)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002379"
+    ],
+    "checkable_test": "Verify if the document provides a mechanism for individuals to challenge the accuracy or completeness of information provided under the RTI Act.",
+    "applicability": "Applicable to any organization subject to the RTI Act 2005.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This requirement allows individuals to seek redress if they believe the information provided is inaccurate or incomplete.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002379"
+    ],
+    "candidate_id": "TC-000500",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000500",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "7f5ca62406101577289583631eed4753fab22a6311925b7773b60edbbbbf87c1",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Grievance Redressal",
+    "requirement": "The Central or State Information Commission may initiate an inquiry if there are reasonable grounds to believe that an information request was mishandled.",
+    "source": "RTI Act 2005, Section 20(2)",
+    "weight": 3,
+    "source_clause_ids": [
+      "G002380"
+    ],
+    "checkable_test": "Verify if the document outlines the conditions under which the Information Commission may initiate an inquiry into the handling of an information request.",
+    "applicability": "Applicable to any organization subject to the RTI Act 2005.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This requirement establishes the authority of the Information Commission to investigate complaints or concerns related to information requests.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002380"
+    ],
+    "candidate_id": "TC-000501",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000501",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "f18041be92d8cd19ce0df09fda5c31eecdde23b391c4d6d9ad572f2b8faa5569",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Information Commission has the same powers as a civil court while trying a suit under the Code of Civil Procedure, 1908, in matters related to the inquiry process.",
+    "source": "RTI Act 2005, Section 7(3)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002381"
+    ],
+    "checkable_test": "Verify if the Information Commission has the same powers as a civil court in inquiry processes.",
+    "applicability": "Applicable to all entities subject to the RTI Act 2005.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This clause outlines the procedural powers of the Information Commission during inquiries.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002381"
+    ],
+    "candidate_id": "TC-000502",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000502",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 2,
+    "policy_checkability_signal_terms": [
+      "information",
+      "process"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "ed055bc85b61f5799a3057dce0f1d7b21a40b9ea6f18bf7bce953544359b8e12",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Information Commission may issue summons for the examination of witnesses or documents.",
+    "source": "RTI Act 2005, Section 7(e)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002386"
+    ],
+    "checkable_test": "Check if the Information Commission is authorized to issue summons for witness examination or document retrieval.",
+    "applicability": "Applicable to all entities subject to the RTI Act 2005.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This clause grants the Information Commission the authority to summon witnesses or documents during inquiries.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002386"
+    ],
+    "candidate_id": "TC-000503",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000503",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "872e136a95544c3a901487537fbf46ac24c7726d1dcaba8924b1a51e8f3ace01",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "An appeal against a decision of the Central Public Information Officer or State Public Information Officer must be filed within the time specified in sub-section (3) of section 7.",
+    "source": "RTI Act 2005, Section 7(a)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002389"
+    ],
+    "checkable_test": "Verify if the appeal period for decisions by Public Information Officers is adhered to.",
+    "applicability": "Applicable to all entities subject to the RTI Act 2005.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This clause sets the time limit for filing appeals against Public Information Officer decisions.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002389"
+    ],
+    "candidate_id": "TC-000504",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000504",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "80a67da00243eb4cd5e18e576909eb6b95ce62aff4e8f1e01309d745f7208c9f",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Information Commission must provide a reasonable opportunity of being heard to third parties involved in an appeal.",
+    "source": "RTI Act 2005, Section 7(2)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002398"
+    ],
+    "checkable_test": "Check if third parties are given a reasonable opportunity to be heard during appeals.",
+    "applicability": "Applicable to all entities subject to the RTI Act 2005.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This clause ensures that third parties have a fair opportunity to present their case during appeals.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002398"
+    ],
+    "candidate_id": "TC-000505",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000505",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "912e5347f1d6e563bd267270e993a26075a63d3ffcb187b8000443c9516b86f0",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "An appeal under sub-section (3) or (2) must be disposed of within thirty days, with an additional fifteen days if needed.",
+    "source": "RTI Act 2005, Section 7(6)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002400"
+    ],
+    "checkable_test": "Verify if the Information Commission disposes of appeals within the prescribed time limits.",
+    "applicability": "Applicable to all entities subject to the RTI Act 2005.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This clause sets the time limits for resolving appeals under the RTI Act 2005.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002400"
+    ],
+    "candidate_id": "TC-000506",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000506",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "f90ae3d64f219831ecc8587d35aca093ee855259f5d0052f0e91c89540abb499",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The decision of the Information Commission is binding on all parties involved.",
+    "source": "RTI Act 2005, Section 7(7)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002401"
+    ],
+    "checkable_test": "Check if the Information Commission's decision is binding on all parties.",
+    "applicability": "Applicable to all entities subject to the RTI Act 2005.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This clause establishes the finality of the Information Commission's decisions.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002401"
+    ],
+    "candidate_id": "TC-000507",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000507",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "3c20785dec8eee23025d119ca719fcaa30ed13476917a78ce3795247a9021bd8",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Public authorities must take necessary steps to ensure compliance with the RTI Act, including making changes to their record-keeping and management practices.",
+    "source": "RTI Act 2005, Section 4(1)(iv)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002407"
+    ],
+    "checkable_test": "Check if the public authority has implemented changes to its record-keeping, management, and destruction practices as required by the RTI Act.",
+    "applicability": "Applicable to public authorities subject to the RTI Act 2005.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This obligation is tied to the requirement to modify practices related to record management.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002407"
+    ],
+    "candidate_id": "TC-000508",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000508",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "low_policy_checkability_signal"
+    ],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_APPLICABILITY",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "31bc37c3c5995b948888f1b021f09d7592e4c0c1193fa49ff8131a80225a0eaf",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Grievance Redressal",
+    "requirement": "Public authorities must provide a complainant with compensation for any loss or detriment suffered as a result of non-compliance with the RTI Act.",
+    "source": "RTI Act 2005, Section 4(1)(b)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002410"
+    ],
+    "checkable_test": "Verify if the public authority has provided compensation to complainants for losses or detriments caused by non-compliance.",
+    "applicability": "Applicable to public authorities subject to the RTI Act 2005.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This obligation is triggered when a complainant suffers loss or detriment due to non-compliance.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002410"
+    ],
+    "candidate_id": "TC-000509",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000509",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "use"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "dc5b7247f91fb3e252123418baa67b9beb48b90acc2568fad9dc518f1ac0c875",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "No legal action can be taken against individuals acting in good faith under the RTI Act or its rules.",
+    "source": "RTI Act 2005, Section 21",
+    "weight": 1,
+    "source_clause_ids": [
+      "G002420"
+    ],
+    "checkable_test": "Confirm that no legal action is being taken against individuals who acted in good faith under the RTI Act.",
+    "applicability": "Applicable to individuals and public authorities acting under the RTI Act 2005.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This provision protects individuals who act in good faith when fulfilling obligations under the RTI Act.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002420"
+    ],
+    "candidate_id": "TC-000510",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000510",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "low_policy_checkability_signal"
+    ],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_APPLICABILITY",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "9bab627cdd7d87a063e29daa019a06c2e864706150ea750a17b271f7bff50beb",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "Information related to allegations of corruption and human rights violations cannot be excluded under the RTI Act.",
+    "source": "RTI Act 2005, Section 4(1), Provided that clause",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002424"
+    ],
+    "checkable_test": "Verify that information related to corruption and human rights violations is not excluded from disclosure under the RTI Act.",
+    "applicability": "Applicable to public authorities subject to the RTI Act 2005.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This provision ensures that certain sensitive information is not excluded from disclosure.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002424"
+    ],
+    "candidate_id": "TC-000511",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000511",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 3,
+    "policy_checkability_signal_terms": [
+      "information",
+      "rights",
+      "use"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "2b78dd22b742d29c3464a0ef1a4eb91acf2f64707649477e20d84ddb0ca3f5bb",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Public authorities must prepare annual reports on the implementation of the Right to Information Act and forward them to the appropriate government.",
+    "source": "RTI Act 2005, Section 25(1)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002433"
+    ],
+    "checkable_test": "Check if the public authority prepares and submits an annual report to the appropriate government as required by Section 25(1) of the RTI Act 2005.",
+    "applicability": "Applicable to all public authorities subject to the RTI Act 2005.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This requirement is directly tied to the obligation under Section 25(1) of the RTI Act 2005.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002433"
+    ],
+    "candidate_id": "TC-000512",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000512",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "government-facing duty"
+    ],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "ccc2a55413d9efb9baba17533494eeb510de7a63145c2176375e14ff899cf3c3",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Data Retention & Erasure",
+    "requirement": "Public authorities must include details of the number of requests made to each public authority in their annual reports.",
+    "source": "RTI Act 2005, Section 25(3)(a)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002436"
+    ],
+    "checkable_test": "Verify that the annual report includes the number of requests made to each public authority as specified in Section 25(3)(a) of the RTI Act 2005.",
+    "applicability": "Applicable to all public authorities subject to the RTI Act 2005.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This requirement is directly tied to the obligation under Section 25(3)(a) of the RTI Act 2005.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002436"
+    ],
+    "candidate_id": "TC-000513",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000513",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "low_policy_checkability_signal"
+    ],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_APPLICABILITY",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "7fc246a320b8f070dbb36673f1c73153426850aa5dfbead55abc46e448ba944d",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Public authorities must disclose the number of decisions where applicants were not entitled to access documents, the provisions under which these decisions were made, and the frequency of such provisions' invocation.",
+    "source": "RTI Act 2005, Section Miscellaneous (b)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002437"
+    ],
+    "checkable_test": "A public authority must publish statistics on denied access requests and the legal basis for such denials.",
+    "applicability": "Public authorities subject to the RTI Act 2005",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This obligation is directly tied to transparency and accountability under the RTI Act.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002437"
+    ],
+    "candidate_id": "TC-000514",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000514",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 2,
+    "policy_checkability_signal_terms": [
+      "access",
+      "disclose"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "c5cf3786acc3bbc1ae177578c09831077d260d232d278683203f9d437b574fa1",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Public authorities must disclose the number of appeals referred to the Central or State Information Commission, the nature of the appeals, and the outcomes of those appeals.",
+    "source": "RTI Act 2005, Section Miscellaneous (c)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002438"
+    ],
+    "checkable_test": "A public authority must publish data on appeals to information commissions, including appeal nature and resolution.",
+    "applicability": "Public authorities subject to the RTI Act 2005",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This obligation supports transparency in the appeals process under the RTI Act.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002438"
+    ],
+    "candidate_id": "TC-000515",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000515",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 3,
+    "policy_checkability_signal_terms": [
+      "data",
+      "disclose",
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "0baef87265b67c1aafab04ea6d66313acb2fe13c33513b77944ba1630ef46f33",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Public authorities must disclose the amount of charges collected under the RTI Act by each public authority.",
+    "source": "RTI Act 2005, Section Miscellaneous (e)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002440"
+    ],
+    "checkable_test": "A public authority must publish financial data on charges collected under the RTI Act.",
+    "applicability": "Public authorities subject to the RTI Act 2005",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This obligation ensures transparency in the financial aspects of RTI compliance.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002440"
+    ],
+    "candidate_id": "TC-000516",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000516",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 3,
+    "policy_checkability_signal_terms": [
+      "collect",
+      "data",
+      "disclose"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "2827d7ca9a85967f0be75d6699471b53dd9e67e336caae25d7f1ecc2786c28d8",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Public authorities must provide recommendations for reform, including specific suggestions for improving or amending the RTI Act or related legislation.",
+    "source": "RTI Act 2005, Section Miscellaneous (g)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002442"
+    ],
+    "checkable_test": "A public authority must publish reform recommendations for the RTI Act or related laws.",
+    "applicability": "Public authorities subject to the RTI Act 2005",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This obligation promotes continuous improvement and reform of the RTI framework.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002442"
+    ],
+    "candidate_id": "TC-000517",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000517",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "low_policy_checkability_signal"
+    ],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_APPLICABILITY",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "17224cce6d53584974d0bbbb50d12b348f0727e68974d55f20021b8493be8313",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The appropriate Government must lay before Parliament or State Legislatures the recommendations of the Commission for reform, including specific suggestions for improving or amending the RTI Act or related legislation.",
+    "source": "RTI Act 2005, Section Miscellaneous (g)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002444"
+    ],
+    "checkable_test": "The appropriate Government must submit reform recommendations to Parliament or State Legislatures.",
+    "applicability": "Appropriate Government under the RTI Act 2005",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This obligation ensures that reform recommendations are formally considered by legislative bodies.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002444"
+    ],
+    "candidate_id": "TC-000518",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000518",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing",
+      "low_policy_checkability_signal"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "government-facing duty"
+    ],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "4a8bfeca0d497b765c4c985320ec35d0b70e557b1025f6338b7284f14bc00625",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The appropriate Government must develop and organize educational programs to advance public understanding of the rights under the RTI Act, particularly for disadvantaged communities.",
+    "source": "RTI Act 2005, Section Miscellaneous (a)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002447"
+    ],
+    "checkable_test": "The appropriate Government must publish details of educational programs aimed at improving public understanding of RTI rights.",
+    "applicability": "Appropriate Government under the RTI Act 2005",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This obligation supports the dissemination of information to ensure effective use of RTI rights.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002447"
+    ],
+    "candidate_id": "TC-000519",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000519",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "government-facing duty"
+    ],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "rights"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "56e52cac1d61971f961e19b3f2f8c5c5d8229d16d9707ffed9daedf51a126b44",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The appropriate Government must compile a guide in its official language, within eighteen months of the Act's commencement, to help individuals exercise their rights under the RTI Act in an easily comprehensible manner.",
+    "source": "RTI Act 2005, Section Miscellaneous (2)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002451"
+    ],
+    "checkable_test": "The appropriate Government must publish a user-friendly guide to the RTI Act in its official language within 18 months of the Act's commencement.",
+    "applicability": "Appropriate Government under the RTI Act 2005",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This obligation ensures that the public has access to clear and accessible information about their rights under the RTI Act.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002451"
+    ],
+    "candidate_id": "TC-000520",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000520",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "government-facing duty"
+    ],
+    "policy_checkability_signal_count": 2,
+    "policy_checkability_signal_terms": [
+      "rights",
+      "use"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "4acd8c8bccf2b22651b6784ea29e50db5433b8f7d500f3666a7d37ff559538cb",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  }
+]

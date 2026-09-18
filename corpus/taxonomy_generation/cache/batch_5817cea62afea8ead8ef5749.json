@@ -1,0 +1,68 @@
+{
+  "batch_id": "5817cea62afea8ead8ef5749",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001004",
+    "G001005",
+    "G001010",
+    "G001014",
+    "G001015",
+    "G001016",
+    "G001018",
+    "G001019"
+  ],
+  "raw_response": "[{\"category\":\"Consent & Notice\",\"requirement\":\"Data Fiduciary must provide a notice to Data Principal that is presented and understandable independently of any other information.\",\"source\":\"DPDP Rules 2025, Rule 3(1)(a)\",\"weight\":2,\"source_clause_ids\":[\"G001016\"],\"checkable_test\":\"Check if the notice is presented independently of other information.\",\"applicability\":\"All data fiduciaries subject to DPDP Rules 2025.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures clarity and transparency in data processing.\"},{\"category\":\"Consent & Notice\",\"requirement\":\"Data Fiduciary must provide an itemised description of personal data processed.\",\"source\":\"DPDP Rules 2025, Rule 3(1)(i)\",\"weight\":2,\"source_clause_ids\":[\"G001018\"],\"checkable_test\":\"Verify if the notice includes an itemised description of personal data.\",\"applicability\":\"All data fiduciaries subject to DPDP Rules 2025.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures transparency in the scope of data processing.\"},{\"category\":\"Consent & Notice\",\"requirement\":\"Data Fiduciary must specify the purpose or purposes of processing and provide a specific description of the goods or services to be provided or uses to be enabled by such processing.\",\"source\":\"DPDP Rules 2025, Rule 3(1)(ii)\",\"weight\":2,\"source_clause_ids\":[\"G001019\"],\"checkable_test\":\"Check if the notice specifies the purpose and provides a specific description of goods or services.\",\"applicability\":\"All data fiduciaries subject to DPDP Rules 2025.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures clarity on the purpose of data processing.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Consent & Notice",
+      "requirement": "Data Fiduciary must provide a notice to Data Principal that is presented and understandable independently of any other information.",
+      "source": "DPDP Rules 2025, Rule 3(1)(a)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001016"
+      ],
+      "checkable_test": "Check if the notice is presented independently of other information.",
+      "applicability": "All data fiduciaries subject to DPDP Rules 2025.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures clarity and transparency in data processing.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Consent & Notice",
+      "requirement": "Data Fiduciary must provide an itemised description of personal data processed.",
+      "source": "DPDP Rules 2025, Rule 3(1)(i)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001018"
+      ],
+      "checkable_test": "Verify if the notice includes an itemised description of personal data.",
+      "applicability": "All data fiduciaries subject to DPDP Rules 2025.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures transparency in the scope of data processing.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Consent & Notice",
+      "requirement": "Data Fiduciary must specify the purpose or purposes of processing and provide a specific description of the goods or services to be provided or uses to be enabled by such processing.",
+      "source": "DPDP Rules 2025, Rule 3(1)(ii)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001019"
+      ],
+      "checkable_test": "Check if the notice specifies the purpose and provides a specific description of goods or services.",
+      "applicability": "All data fiduciaries subject to DPDP Rules 2025.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures clarity on the purpose of data processing.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T13:59:15.957425+00:00",
+  "multi_mapped_records": []
+}

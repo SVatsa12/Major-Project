@@ -1,0 +1,128 @@
+{
+  "batch_id": "9947acc1997101d15c083660",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001961",
+    "G001970",
+    "G001976",
+    "G001977",
+    "G001982",
+    "G001986",
+    "G001989",
+    "G001996"
+  ],
+  "raw_response": "[{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Intermediaries are not liable for unlawful acts if they remove or disable access to the material upon receiving actual knowledge or notification from the appropriate government.\",\"source\":\"IT Act 2000, Section 79\",\"weight\":2,\"source_clause_ids\":[\"G001976\"],\"checkable_test\":\"Check if the intermediary has procedures to remove or disable access to unlawful material upon notification.\",\"applicability\":\"Applies to intermediaries hosting third-party information.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is tied to the intermediary's duty to act upon notification.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Intermediaries are not liable for unlawful acts if their function is limited to providing access to a communication system.\",\"source\":\"IT Act 2000, Section 79\",\"weight\":2,\"source_clause_ids\":[\"G001970\"],\"checkable_test\":\"Verify if the intermediary's role is strictly limited to providing access to communication systems.\",\"applicability\":\"Applies to intermediaries hosting third-party information.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation defines the scope of intermediary liability based on their function.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Central Government may specify an Examiner of Electronic Evidence to provide expert opinion on electronic form evidence.\",\"source\":\"IT Act 2000, Section 79A\",\"weight\":3,\"source_clause_ids\":[\"G001977\"],\"checkable_test\":\"Check if the organization has procedures for handling electronic evidence in accordance with the law.\",\"applicability\":\"Applies to organizations handling electronic evidence.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation relates to the handling and verification of electronic evidence.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The Central Government may enter public places and search or arrest individuals suspected of committing offenses under the IT Act without a warrant.\",\"source\":\"IT Act 2000, Section 82\",\"weight\":2,\"source_clause_ids\":[\"G001982\"],\"checkable_test\":\"Verify if the organization has procedures for cooperating with law enforcement in public places.\",\"applicability\":\"Applies to intermediaries and entities handling electronic communications.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation outlines the government's authority to conduct searches and arrests in public places.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Notifications made by the Central Government under Section 82 must be laid before Parliament for review and potential modification or annulment.\",\"source\":\"IT Act 2000, Section 82\",\"weight\":2,\"source_clause_ids\":[\"G001986\"],\"checkable_test\":\"Check if the organization has procedures for handling notifications from the Central Government under Section 82.\",\"applicability\":\"Applies to intermediaries and entities handling electronic communications.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation outlines the procedural requirements for notifications under the IT Act.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"No legal action can be taken against the Central Government, State Government, or persons acting on their behalf for actions taken in good faith under the IT Act.\",\"source\":\"IT Act 2000, Section 84\",\"weight\":2,\"source_clause_ids\":[\"G001989\"],\"checkable_test\":\"Verify if the organization has procedures to ensure actions are taken in good faith under the IT Act.\",\"applicability\":\"Applies to intermediaries and entities handling electronic communications.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation protects entities acting in good faith under the IT Act.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The Central Government may prescribe modes or methods for encryption to secure the electronic medium and promote e-governance and e-commerce.\",\"source\":\"IT Act 2000, Section 84A\",\"weight\":2,\"source_clause_ids\":[\"G001996\"],\"checkable_test\":\"Check if the organization has procedures for encryption in accordance with government-prescribed methods.\",\"applicability\":\"Applies to intermediaries and entities handling electronic communications.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation outlines the government's authority to regulate encryption methods.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Intermediaries are not liable for unlawful acts if they remove or disable access to the material upon receiving actual knowledge or notification from the appropriate government.",
+      "source": "IT Act 2000, Section 79",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001976"
+      ],
+      "checkable_test": "Check if the intermediary has procedures to remove or disable access to unlawful material upon notification.",
+      "applicability": "Applies to intermediaries hosting third-party information.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is tied to the intermediary's duty to act upon notification.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Intermediaries are not liable for unlawful acts if their function is limited to providing access to a communication system.",
+      "source": "IT Act 2000, Section 79",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001970"
+      ],
+      "checkable_test": "Verify if the intermediary's role is strictly limited to providing access to communication systems.",
+      "applicability": "Applies to intermediaries hosting third-party information.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation defines the scope of intermediary liability based on their function.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Central Government may specify an Examiner of Electronic Evidence to provide expert opinion on electronic form evidence.",
+      "source": "IT Act 2000, Section 79A",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001977"
+      ],
+      "checkable_test": "Check if the organization has procedures for handling electronic evidence in accordance with the law.",
+      "applicability": "Applies to organizations handling electronic evidence.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation relates to the handling and verification of electronic evidence.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Central Government may enter public places and search or arrest individuals suspected of committing offenses under the IT Act without a warrant.",
+      "source": "IT Act 2000, Section 82",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001982"
+      ],
+      "checkable_test": "Verify if the organization has procedures for cooperating with law enforcement in public places.",
+      "applicability": "Applies to intermediaries and entities handling electronic communications.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation outlines the government's authority to conduct searches and arrests in public places.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Notifications made by the Central Government under Section 82 must be laid before Parliament for review and potential modification or annulment.",
+      "source": "IT Act 2000, Section 82",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001986"
+      ],
+      "checkable_test": "Check if the organization has procedures for handling notifications from the Central Government under Section 82.",
+      "applicability": "Applies to intermediaries and entities handling electronic communications.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation outlines the procedural requirements for notifications under the IT Act.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "No legal action can be taken against the Central Government, State Government, or persons acting on their behalf for actions taken in good faith under the IT Act.",
+      "source": "IT Act 2000, Section 84",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001989"
+      ],
+      "checkable_test": "Verify if the organization has procedures to ensure actions are taken in good faith under the IT Act.",
+      "applicability": "Applies to intermediaries and entities handling electronic communications.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation protects entities acting in good faith under the IT Act.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Central Government may prescribe modes or methods for encryption to secure the electronic medium and promote e-governance and e-commerce.",
+      "source": "IT Act 2000, Section 84A",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001996"
+      ],
+      "checkable_test": "Check if the organization has procedures for encryption in accordance with government-prescribed methods.",
+      "applicability": "Applies to intermediaries and entities handling electronic communications.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation outlines the government's authority to regulate encryption methods.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T11:54:57.893749+00:00",
+  "multi_mapped_records": []
+}

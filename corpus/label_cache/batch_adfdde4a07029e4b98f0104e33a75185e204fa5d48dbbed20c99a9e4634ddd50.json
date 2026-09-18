@@ -1,0 +1,53 @@
+{
+  "cache_key": "adfdde4a07029e4b98f0104e33a75185e204fa5d48dbbed20c99a9e4634ddd50",
+  "created_at_utc": "2026-09-16T14:53:08.759186+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S002323",
+    "S002324",
+    "S002325",
+    "S002326",
+    "S002327",
+    "S002328"
+  ],
+  "labels": [
+    {
+      "clause_id": "S002323",
+      "best_match_taxonomy_id": "DPDP_ACT-0009",
+      "verdict": "Partially Compliant",
+      "justification": "The clause mentions data collection for operational purposes but lacks specific lawful purpose definitions required by the taxonomy."
+    },
+    {
+      "clause_id": "S002324",
+      "best_match_taxonomy_id": "DPDP_ACT-0009",
+      "verdict": "Partially Compliant",
+      "justification": "The clause explains data collection based on service usage but does not explicitly define lawful purposes as required by the taxonomy."
+    },
+    {
+      "clause_id": "S002325",
+      "best_match_taxonomy_id": "DPDP_ACT-0009",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses optional features and data collection but lacks specific lawful purpose definitions required by the taxonomy."
+    },
+    {
+      "clause_id": "S002326",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Compliant",
+      "justification": "The clause describes location data collection and management, aligning with security safeguards requirements for data protection."
+    },
+    {
+      "clause_id": "S002327",
+      "best_match_taxonomy_id": "DPDP_ACT-0009",
+      "verdict": "Partially Compliant",
+      "justification": "The clause outlines data collection for account creation but lacks specific lawful purpose definitions required by the taxonomy."
+    },
+    {
+      "clause_id": "S002328",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Compliant",
+      "justification": "The clause describes secure storage of messages and media, aligning with security safeguards requirements for data protection."
+    }
+  ],
+  "status": "SUCCESS"
+}

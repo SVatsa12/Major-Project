@@ -1,0 +1,38 @@
+{
+  "batch_id": "90764ad422b1cf93434fb929",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G000185",
+    "G000189",
+    "G000191",
+    "G000192",
+    "G000193",
+    "G000194",
+    "G000195",
+    "G000196"
+  ],
+  "raw_response": "[{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The Authority may appoint persons to inquire into the affairs of service providers and direct its officers to inspect their documents.\",\"source\":\"AERA Act 2008, Section 14(1)\",\"weight\":2,\"source_clause_ids\":[\"G000189\"],\"checkable_test\":\"Whether the Authority has the power to appoint persons to inquire into service providers' affairs and direct inspections.\",\"applicability\":\"Applicable to service providers subject to the AERA Act 2008.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This clause outlines the Authority's investigative powers, which may be relevant to platform liability in regulatory contexts.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Authority may appoint persons to inquire into the affairs of service providers and direct its officers to inspect their documents.",
+      "source": "AERA Act 2008, Section 14(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000189"
+      ],
+      "checkable_test": "Whether the Authority has the power to appoint persons to inquire into service providers' affairs and direct inspections.",
+      "applicability": "Applicable to service providers subject to the AERA Act 2008.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "This clause outlines the Authority's investigative powers, which may be relevant to platform liability in regulatory contexts.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T13:20:49.936790+00:00",
+  "multi_mapped_records": []
+}

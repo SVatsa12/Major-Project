@@ -1,0 +1,98 @@
+{
+  "batch_id": "5fe5a53bc35a6897ddfb939a",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G000720",
+    "G000729",
+    "G000732",
+    "G000733",
+    "G000756",
+    "G000771",
+    "G001012",
+    "G001017"
+  ],
+  "raw_response": "[\n  {\n    \"category\": \"Significant Data Fiduciary Obligations\",\n    \"requirement\": \"Significant Data Fiduciaries must undertake other measures as specified under sub-clause (iii) of clause (c) of sub-section (2) of section 10.\",\n    \"source\": \"DPDP Act 2023, Section 10(2)(c)(iii)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G000729\"],\n    \"checkable_test\": \"Verify if the document specifies the other measures that Significant Data Fiduciaries must undertake as per the referenced sub-clause.\",\n    \"applicability\": \"Applicable to Significant Data Fiduciaries under the DPDP Act 2023.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Data Retention & Erasure\",\n    \"requirement\": \"Data Principals must make a request to the Data Fiduciary for erasure of personal data in the manner specified under sub-section (3) of section 12.\",\n    \"source\": \"DPDP Act 2023, Section 12(3)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G000732\"],\n    \"checkable_test\": \"Verify if the document specifies the manner in which Data Principals can request erasure of personal data as per the referenced sub-section.\",\n    \"applicability\": \"Applicable to Data Principals and Data Fiduciaries under the DPDP Act 2023.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Grievance Redressal\",\n    \"requirement\": \"Data Fiduciaries must respond to grievances within the period specified under sub-section (2) of section 13.\",\n    \"source\": \"DPDP Act 2023, Section 13(2)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G000733\"],\n    \"checkable_test\": \"Verify if the document specifies the time period within which grievances must be responded to as per the referenced sub-section.\",\n    \"applicability\": \"Applicable to Data Fiduciaries under the DPDP Act 2023.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Breach Notification\",\n    \"requirement\": \"Data Fiduciaries must give notice to the Board or affected Data Principal in case of a personal data breach under sub-section (6) of section 8.\",\n    \"source\": \"DPDP Act 2023, Section 8(6)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G000771\"],\n    \"checkable_test\": \"Verify if the document specifies the obligation to notify the Board or affected Data Principal in case of a personal data breach as per the referenced sub-section.\",\n    \"applicability\": \"Applicable to Data Fiduciaries under the DPDP Act 2023.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Consent & Notice\",\n    \"requirement\": \"Data Fiduciaries must provide a fair account of details necessary for specific and informed consent in clear and plain language.\",\n    \"source\": \"DPDP Rules 2025, Section 1017(b)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G001017\"],\n    \"checkable_test\": \"Verify if the document specifies the requirement to provide a fair account of details in clear and plain language for informed consent as per the referenced section.\",\n    \"applicability\": \"Applicable to Data Fiduciaries under the DPDP Rules 2025.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  }\n]",
+  "parsed_entries": [
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Significant Data Fiduciaries must undertake other measures as specified under sub-clause (iii) of clause (c) of sub-section (2) of section 10.",
+      "source": "DPDP Act 2023, Section 10(2)(c)(iii)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000729"
+      ],
+      "checkable_test": "Verify if the document specifies the other measures that Significant Data Fiduciaries must undertake as per the referenced sub-clause.",
+      "applicability": "Applicable to Significant Data Fiduciaries under the DPDP Act 2023.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "Data Principals must make a request to the Data Fiduciary for erasure of personal data in the manner specified under sub-section (3) of section 12.",
+      "source": "DPDP Act 2023, Section 12(3)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000732"
+      ],
+      "checkable_test": "Verify if the document specifies the manner in which Data Principals can request erasure of personal data as per the referenced sub-section.",
+      "applicability": "Applicable to Data Principals and Data Fiduciaries under the DPDP Act 2023.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Grievance Redressal",
+      "requirement": "Data Fiduciaries must respond to grievances within the period specified under sub-section (2) of section 13.",
+      "source": "DPDP Act 2023, Section 13(2)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000733"
+      ],
+      "checkable_test": "Verify if the document specifies the time period within which grievances must be responded to as per the referenced sub-section.",
+      "applicability": "Applicable to Data Fiduciaries under the DPDP Act 2023.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Breach Notification",
+      "requirement": "Data Fiduciaries must give notice to the Board or affected Data Principal in case of a personal data breach under sub-section (6) of section 8.",
+      "source": "DPDP Act 2023, Section 8(6)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000771"
+      ],
+      "checkable_test": "Verify if the document specifies the obligation to notify the Board or affected Data Principal in case of a personal data breach as per the referenced sub-section.",
+      "applicability": "Applicable to Data Fiduciaries under the DPDP Act 2023.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Consent & Notice",
+      "requirement": "Data Fiduciaries must provide a fair account of details necessary for specific and informed consent in clear and plain language.",
+      "source": "DPDP Rules 2025, Section 1017(b)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001017"
+      ],
+      "checkable_test": "Verify if the document specifies the requirement to provide a fair account of details in clear and plain language for informed consent as per the referenced section.",
+      "applicability": "Applicable to Data Fiduciaries under the DPDP Rules 2025.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T11:22:28.213405+00:00",
+  "multi_mapped_records": []
+}

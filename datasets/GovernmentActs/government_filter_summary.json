@@ -1,0 +1,66 @@
+{
+  "run_timestamp_utc": "2026-09-10T04:58:43.158766+00:00",
+  "input_path": "datasets\\GovernmentActs\\government_clauses.json",
+  "input_rows": 3436,
+  "output_rows": 3436,
+  "rows_deleted": 0,
+  "rows_excluded": 0,
+  "retention_contract": "Every input clause is retained in the main output",
+  "administrative_signal_counts": {
+    "none": 3339,
+    "weak": 82,
+    "possible": 15
+  },
+  "relevance_signal_counts": {
+    "medium": 1364,
+    "high": 734,
+    "unknown": 726,
+    "low": 612
+  },
+  "review_priority_counts": {
+    "normal_or_high_relevance_review": 2085,
+    "standard_review": 1229,
+    "quality_review": 119,
+    "administrative_review_optional": 3
+  },
+  "rows_with_quality_flags": 119,
+  "rows_in_exact_duplicate_groups": 214,
+  "rows_in_near_duplicate_groups": 353,
+  "similarity_threshold": 0.98,
+  "original_columns": [
+    "clause_id",
+    "source_act",
+    "source_file",
+    "source_path",
+    "page_start",
+    "page_end",
+    "section_heading",
+    "clause_index_in_document",
+    "clause_text",
+    "extraction_method",
+    "extraction_quality",
+    "retrieved_at",
+    "file_sha256"
+  ],
+  "added_columns": [
+    "_canonical_hash",
+    "_tokens",
+    "administrative_signal",
+    "administrative_signal_score",
+    "administrative_reasons",
+    "relevance_signal_score",
+    "relevance_categories",
+    "relevance_signal_level",
+    "quality_flags",
+    "review_priority",
+    "exact_duplicate_group",
+    "near_duplicate_group",
+    "near_duplicate_similarity",
+    "filter_decision",
+    "retention_reason",
+    "eligible_for_taxonomy_matching",
+    "eligible_for_human_annotation",
+    "filter_run_timestamp_utc"
+  ],
+  "warning": "Administrative and relevance signals are triage metadata only. They must not be used as destructive filters without legal review."
+}

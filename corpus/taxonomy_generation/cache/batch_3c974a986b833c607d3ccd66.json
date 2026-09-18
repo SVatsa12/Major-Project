@@ -1,0 +1,113 @@
+{
+  "batch_id": "3c974a986b833c607d3ccd66",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001155",
+    "G001156",
+    "G001157",
+    "G001164",
+    "G001165",
+    "G001167",
+    "G001170",
+    "G001171"
+  ],
+  "raw_response": "[{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Data fiduciaries must provide information to the Central Government upon request for purposes specified in the Seventh Schedule.\",\"source\":\"DPDP Rules 2025, Rule 23(1)\",\"weight\":2,\"source_clause_ids\":[\"G001155\"],\"checkable_test\":\"Check if the document specifies procedures for providing information to the Central Government upon request.\",\"applicability\":\"Applicable to data fiduciaries and intermediaries.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation applies when the Central Government requests information for specified purposes.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Disclosure of information requested by the Central Government may be restricted if it affects India's sovereignty, integrity, or security.\",\"source\":\"DPDP Rules 2025, Rule 23(2)\",\"weight\":2,\"source_clause_ids\":[\"G001156\"],\"checkable_test\":\"Check if the document specifies conditions under which information disclosure to the Central Government is restricted.\",\"applicability\":\"Applicable to data fiduciaries and intermediaries.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation applies when disclosure of information may prejudice India's sovereignty, integrity, or security.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The term 'intermediary' is defined in accordance with the Information Technology Act, 2000.\",\"source\":\"DPDP Rules 2025, Rule 23(3)\",\"weight\":2,\"source_clause_ids\":[\"G001157\"],\"checkable_test\":\"Check if the document defines 'intermediary' in accordance with the Information Technology Act, 2000.\",\"applicability\":\"Applicable to data fiduciaries and intermediaries.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This defines the term 'intermediary' for the purposes of the DPDP Rules 2025.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Consent Managers must ensure that their platform enables Data Principals to give, manage, review, and withdraw consent in accordance with published data protection standards.\",\"source\":\"DPDP Rules 2025, Rule 9(a)\",\"weight\":3,\"source_clause_ids\":[\"G001167\"],\"checkable_test\":\"Check if the document specifies that the platform enables Data Principals to give, manage, review, and withdraw consent in accordance with published standards.\",\"applicability\":\"Applicable to Consent Managers.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation ensures that Consent Managers align with published data protection standards.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Consent Managers must enable Data Principals to give consent to the processing of their personal data by a Data Fiduciary onboarded onto the platform.\",\"source\":\"DPDP Rules 2025, Rule 10\",\"weight\":3,\"source_clause_ids\":[\"G001170\"],\"checkable_test\":\"Check if the document specifies that the platform enables Data Principals to give consent to the processing of their personal data by a Data Fiduciary.\",\"applicability\":\"Applicable to Consent Managers.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation ensures that Consent Managers facilitate consent for data processing.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Consent Managers must enable Data Principals to give consent to the processing of their personal data by a Data Fiduciary through another Data Fiduciary onboarded onto the platform.\",\"source\":\"DPDP Rules 2025, Rule 11\",\"weight\":3,\"source_clause_ids\":[\"G001171\"],\"checkable_test\":\"Check if the document specifies that the platform enables Data Principals to give consent through another Data Fiduciary.\",\"applicability\":\"Applicable to Consent Managers.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation ensures that Consent Managers support indirect consent through other Data Fiduciaries.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Data fiduciaries must provide information to the Central Government upon request for purposes specified in the Seventh Schedule.",
+      "source": "DPDP Rules 2025, Rule 23(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001155"
+      ],
+      "checkable_test": "Check if the document specifies procedures for providing information to the Central Government upon request.",
+      "applicability": "Applicable to data fiduciaries and intermediaries.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation applies when the Central Government requests information for specified purposes.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Disclosure of information requested by the Central Government may be restricted if it affects India's sovereignty, integrity, or security.",
+      "source": "DPDP Rules 2025, Rule 23(2)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001156"
+      ],
+      "checkable_test": "Check if the document specifies conditions under which information disclosure to the Central Government is restricted.",
+      "applicability": "Applicable to data fiduciaries and intermediaries.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation applies when disclosure of information may prejudice India's sovereignty, integrity, or security.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The term 'intermediary' is defined in accordance with the Information Technology Act, 2000.",
+      "source": "DPDP Rules 2025, Rule 23(3)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001157"
+      ],
+      "checkable_test": "Check if the document defines 'intermediary' in accordance with the Information Technology Act, 2000.",
+      "applicability": "Applicable to data fiduciaries and intermediaries.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This defines the term 'intermediary' for the purposes of the DPDP Rules 2025.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Consent Managers must ensure that their platform enables Data Principals to give, manage, review, and withdraw consent in accordance with published data protection standards.",
+      "source": "DPDP Rules 2025, Rule 9(a)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001167"
+      ],
+      "checkable_test": "Check if the document specifies that the platform enables Data Principals to give, manage, review, and withdraw consent in accordance with published standards.",
+      "applicability": "Applicable to Consent Managers.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation ensures that Consent Managers align with published data protection standards.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Consent Managers must enable Data Principals to give consent to the processing of their personal data by a Data Fiduciary onboarded onto the platform.",
+      "source": "DPDP Rules 2025, Rule 10",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001170"
+      ],
+      "checkable_test": "Check if the document specifies that the platform enables Data Principals to give consent to the processing of their personal data by a Data Fiduciary.",
+      "applicability": "Applicable to Consent Managers.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation ensures that Consent Managers facilitate consent for data processing.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Consent Managers must enable Data Principals to give consent to the processing of their personal data by a Data Fiduciary through another Data Fiduciary onboarded onto the platform.",
+      "source": "DPDP Rules 2025, Rule 11",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001171"
+      ],
+      "checkable_test": "Check if the document specifies that the platform enables Data Principals to give consent through another Data Fiduciary.",
+      "applicability": "Applicable to Consent Managers.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation ensures that Consent Managers support indirect consent through other Data Fiduciaries.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T11:37:15.432332+00:00",
+  "multi_mapped_records": []
+}

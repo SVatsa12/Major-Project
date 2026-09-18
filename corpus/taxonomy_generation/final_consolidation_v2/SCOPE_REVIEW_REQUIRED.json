@@ -1,0 +1,438 @@
+[
+  {
+    "candidate_id": "TC-000203",
+    "act": "RTI_ACT_2005",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The platform must provide the applicant with information free of charge if a public authority fails to comply with the time limits specified in subsection (1).",
+    "source_clause_ids": [
+      "G002239"
+    ],
+    "government_facing_signals": [],
+    "project_relevance_signals": [],
+    "decision": "SCOPE_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000219",
+    "act": "RTI_ACT_2005",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Information Officer must make public the decisions of Council of Ministers, the reasons thereof, and the material on the basis of which the decisions were taken after the decision has been taken and the matter is complete or over.",
+    "source_clause_ids": [
+      "G002257"
+    ],
+    "government_facing_signals": [],
+    "project_relevance_signals": [],
+    "decision": "SCOPE_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000225",
+    "act": "RTI_ACT_2005",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Information Officer must inform the applicant of the name and designation of the person giving the decision on the request for information.",
+    "source_clause_ids": [
+      "G002272"
+    ],
+    "government_facing_signals": [],
+    "project_relevance_signals": [],
+    "decision": "SCOPE_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000234",
+    "act": "RTI_ACT_2005",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "A second appeal against a decision regarding third-party information must be filed within ninety days from the date the decision was received.",
+    "source_clause_ids": [
+      "G002394"
+    ],
+    "government_facing_signals": [],
+    "project_relevance_signals": [],
+    "decision": "SCOPE_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000244",
+    "act": "TRAI_ACT_1997",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Authority may notify rates for telecommunication services in India and outside India in the Official Gazette.",
+    "source_clause_ids": [
+      "G003248"
+    ],
+    "government_facing_signals": [
+      "authority may",
+      "official gazette"
+    ],
+    "project_relevance_signals": [],
+    "decision": "SCOPE_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000252",
+    "act": "TRAI_ACT_1997",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Appellate Tribunal shall consist of a Chairperson and not more than two Members to be appointed, by notification, by the Central Government.",
+    "source_clause_ids": [
+      "G003293"
+    ],
+    "government_facing_signals": [
+      "central government"
+    ],
+    "project_relevance_signals": [],
+    "decision": "SCOPE_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000254",
+    "act": "TRAI_ACT_1997",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "In the case of a Member, has held the post of Secretary to the Government of India or any equivalent post in the Central Government or the State Government for a period of not less than two years or a person who is well versed in the field of technology, telecommunication, industry, commerce or administration.",
+    "source_clause_ids": [
+      "G003304"
+    ],
+    "government_facing_signals": [
+      "central government",
+      "state government"
+    ],
+    "project_relevance_signals": [],
+    "decision": "SCOPE_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000255",
+    "act": "TRAI_ACT_1997",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "If, for reason other than temporary absence, any vacancy occurs in the office of the Chairperson or a Member of the Appellate Tribunal, the Central Government shall appoint another person in accordance with the provisions of this Act to fill the vacancy and the proceedings may be continued before the Appellate Tribunal from the stage at which the vacancy is filled.",
+    "source_clause_ids": [
+      "G003310"
+    ],
+    "government_facing_signals": [
+      "central government",
+      "government shall"
+    ],
+    "project_relevance_signals": [],
+    "decision": "SCOPE_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000264",
+    "act": "AERA_ACT_2008",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Authority may appoint persons to inquire into the affairs of service providers and direct its officers to inspect their documents.",
+    "source_clause_ids": [
+      "G000189"
+    ],
+    "government_facing_signals": [
+      "authority may"
+    ],
+    "project_relevance_signals": [],
+    "decision": "SCOPE_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000268",
+    "act": "AERA_ACT_2008",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Appellate Tribunal must record its reasons in writing for not disposing of an application or appeal within ninety days.",
+    "source_clause_ids": [
+      "G000227"
+    ],
+    "government_facing_signals": [],
+    "project_relevance_signals": [],
+    "decision": "SCOPE_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000345",
+    "act": "DPDP_ACT_2023",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Intermediaries must comply with directions issued by the Central Board under the DPDP Act 2023.",
+    "source_clause_ids": [
+      "G000706"
+    ],
+    "government_facing_signals": [],
+    "project_relevance_signals": [],
+    "decision": "SCOPE_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000417",
+    "act": "IT_ACT_2000",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "An electronic record is deemed to be received at the place where the addressee has his place of business.",
+    "source_clause_ids": [
+      "G001600"
+    ],
+    "government_facing_signals": [],
+    "project_relevance_signals": [],
+    "decision": "SCOPE_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000431",
+    "act": "IT_ACT_2000",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Controller may delegate powers to officers under this Chapter.",
+    "source_clause_ids": [
+      "G001681"
+    ],
+    "government_facing_signals": [],
+    "project_relevance_signals": [],
+    "decision": "SCOPE_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000432",
+    "act": "IT_ACT_2000",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Controller or authorised officer may investigate contraventions of the Act, rules, or regulations.",
+    "source_clause_ids": [
+      "G001682"
+    ],
+    "government_facing_signals": [],
+    "project_relevance_signals": [],
+    "decision": "SCOPE_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000456",
+    "act": "IT_ACT_2000",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Intermediaries must file returns or furnish information within the time specified in regulations.",
+    "source_clause_ids": [
+      "G001798"
+    ],
+    "government_facing_signals": [
+      "furnish information"
+    ],
+    "project_relevance_signals": [],
+    "decision": "SCOPE_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000458",
+    "act": "IT_ACT_2000",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Appellate Tribunal must specify the matters and places in relation to which it may exercise jurisdiction.",
+    "source_clause_ids": [
+      "G001819"
+    ],
+    "government_facing_signals": [
+      "central government"
+    ],
+    "project_relevance_signals": [],
+    "decision": "SCOPE_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000459",
+    "act": "IT_ACT_2000",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Any person aggrieved by an order made by a controller or adjudicating officer may prefer an appeal to the Appellate Tribunal having jurisdiction in the matter.",
+    "source_clause_ids": [
+      "G001837"
+    ],
+    "government_facing_signals": [],
+    "project_relevance_signals": [],
+    "decision": "SCOPE_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000462",
+    "act": "IT_ACT_2000",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Appellate Tribunal must send a copy of every order made by it to the parties to the appeal and to the concerned Controller or adjudicating officer.",
+    "source_clause_ids": [
+      "G001841"
+    ],
+    "government_facing_signals": [],
+    "project_relevance_signals": [],
+    "decision": "SCOPE_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000465",
+    "act": "IT_ACT_2000",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The appellant may either appear in person or authorise legal practitioners or officers to present their case before the Appellate Tribunal.",
+    "source_clause_ids": [
+      "G001853"
+    ],
+    "government_facing_signals": [],
+    "project_relevance_signals": [],
+    "decision": "SCOPE_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000471",
+    "act": "IT_ACT_2000",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Intermediaries must observe due diligence while discharging their duties under the IT Act and follow guidelines prescribed by the Central Government.",
+    "source_clause_ids": [
+      "G001973"
+    ],
+    "government_facing_signals": [
+      "central government",
+      "government may"
+    ],
+    "project_relevance_signals": [],
+    "decision": "SCOPE_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000484",
+    "act": "IT_ACT_2000",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Intermediaries must specify the particulars of statements accompanying applications under section 35(3) of the IT Act 2000.",
+    "source_clause_ids": [
+      "G002078"
+    ],
+    "government_facing_signals": [],
+    "project_relevance_signals": [],
+    "decision": "SCOPE_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000503",
+    "act": "RTI_ACT_2005",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Information Commission may issue summons for the examination of witnesses or documents.",
+    "source_clause_ids": [
+      "G002386"
+    ],
+    "government_facing_signals": [],
+    "project_relevance_signals": [],
+    "decision": "SCOPE_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000505",
+    "act": "RTI_ACT_2005",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Information Commission must provide a reasonable opportunity of being heard to third parties involved in an appeal.",
+    "source_clause_ids": [
+      "G002398"
+    ],
+    "government_facing_signals": [],
+    "project_relevance_signals": [],
+    "decision": "SCOPE_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000506",
+    "act": "RTI_ACT_2005",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "An appeal under sub-section (3) or (2) must be disposed of within thirty days, with an additional fifteen days if needed.",
+    "source_clause_ids": [
+      "G002400"
+    ],
+    "government_facing_signals": [],
+    "project_relevance_signals": [],
+    "decision": "SCOPE_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000507",
+    "act": "RTI_ACT_2005",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The decision of the Information Commission is binding on all parties involved.",
+    "source_clause_ids": [
+      "G002401"
+    ],
+    "government_facing_signals": [],
+    "project_relevance_signals": [],
+    "decision": "SCOPE_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000508",
+    "act": "RTI_ACT_2005",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Public authorities must take necessary steps to ensure compliance with the RTI Act, including making changes to their record-keeping and management practices.",
+    "source_clause_ids": [
+      "G002407"
+    ],
+    "government_facing_signals": [],
+    "project_relevance_signals": [],
+    "decision": "SCOPE_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000512",
+    "act": "RTI_ACT_2005",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Public authorities must prepare annual reports on the implementation of the Right to Information Act and forward them to the appropriate government.",
+    "source_clause_ids": [
+      "G002433"
+    ],
+    "government_facing_signals": [],
+    "project_relevance_signals": [],
+    "decision": "SCOPE_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000584",
+    "act": "IT_ACT_2000",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Certifying authorities must not reject an application unless the applicant has been given a reasonable opportunity to present their case.",
+    "source_clause_ids": [
+      "G001664"
+    ],
+    "government_facing_signals": [],
+    "project_relevance_signals": [],
+    "decision": "SCOPE_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000602",
+    "act": "IT_ACT_2000",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Intermediaries must not transmit information that is grossly offensive or has a menacing character.",
+    "source_clause_ids": [
+      "G001876"
+    ],
+    "government_facing_signals": [],
+    "project_relevance_signals": [],
+    "decision": "SCOPE_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000603",
+    "act": "IT_ACT_2000",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Intermediaries must define and enforce the meaning of 'transmit' as electronically sending a visual image with the intent that it be viewed by a person or persons.",
+    "source_clause_ids": [
+      "G001880"
+    ],
+    "government_facing_signals": [],
+    "project_relevance_signals": [],
+    "decision": "SCOPE_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000604",
+    "act": "IT_ACT_2000",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Intermediaries must not enforce Section 66A of the IT Act 2000, as it has been struck down by the Supreme Court.",
+    "source_clause_ids": [
+      "G001884"
+    ],
+    "government_facing_signals": [],
+    "project_relevance_signals": [],
+    "decision": "SCOPE_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000606",
+    "act": "IT_ACT_2000",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Intermediaries must ensure that individuals who commit or conspire to commit cyber terrorism are punishable with imprisonment which may extend to life imprisonment.",
+    "source_clause_ids": [
+      "G001891"
+    ],
+    "government_facing_signals": [],
+    "project_relevance_signals": [],
+    "decision": "SCOPE_REVIEW",
+    "human_review_required": true
+  }
+]

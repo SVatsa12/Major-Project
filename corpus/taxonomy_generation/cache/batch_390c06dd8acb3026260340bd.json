@@ -1,0 +1,68 @@
+{
+  "batch_id": "390c06dd8acb3026260340bd",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G000531",
+    "G000533",
+    "G000535",
+    "G000537",
+    "G000538",
+    "G000539",
+    "G000545",
+    "G000546"
+  ],
+  "raw_response": "[{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Significant Data Fiduciary must appoint an independent data auditor to conduct data audits and evaluate compliance with the Act.\",\"source\":\"DPDP Act 2023, Section 9(2)(b)\",\"weight\":3,\"source_clause_ids\":[\"G000539\"],\"checkable_test\":\"Check if the document specifies the appointment of an independent data auditor for compliance evaluation.\",\"applicability\":\"Applies to Significant Data Fiduciaries under the DPDP Act 2023.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is directly tied to the requirement for data audit and compliance evaluation.\"},{\"category\":\"Data Principal Rights\",\"requirement\":\"The Data Fiduciary must provide a summary of personal data being processed and the processing activities undertaken.\",\"source\":\"DPDP Act 2023, Section 9(2)(a)\",\"weight\":2,\"source_clause_ids\":[\"G000545\"],\"checkable_test\":\"Verify if the document includes a summary of personal data processed and the associated processing activities.\",\"applicability\":\"Applies to Data Fiduciaries subject to the DPDP Act 2023.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This requirement is part of the data principal's right to access their personal data.\"},{\"category\":\"Data Principal Rights\",\"requirement\":\"The Data Fiduciary must disclose the identities of all other Data Fiduciaries and Data Processors with whom personal data has been shared, along with a description of the data shared.\",\"source\":\"DPDP Act 2023, Section 9(2)(b)\",\"weight\":2,\"source_clause_ids\":[\"G000546\"],\"checkable_test\":\"Check if the document lists all Data Fiduciaries and Data Processors with whom personal data has been shared, along with a description of the data shared.\",\"applicability\":\"Applies to Data Fiduciaries subject to the DPDP Act 2023.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This requirement is part of the data principal's right to know who has access to their personal data.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Significant Data Fiduciary must appoint an independent data auditor to conduct data audits and evaluate compliance with the Act.",
+      "source": "DPDP Act 2023, Section 9(2)(b)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000539"
+      ],
+      "checkable_test": "Check if the document specifies the appointment of an independent data auditor for compliance evaluation.",
+      "applicability": "Applies to Significant Data Fiduciaries under the DPDP Act 2023.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to the requirement for data audit and compliance evaluation.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Principal Rights",
+      "requirement": "The Data Fiduciary must provide a summary of personal data being processed and the processing activities undertaken.",
+      "source": "DPDP Act 2023, Section 9(2)(a)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000545"
+      ],
+      "checkable_test": "Verify if the document includes a summary of personal data processed and the associated processing activities.",
+      "applicability": "Applies to Data Fiduciaries subject to the DPDP Act 2023.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "This requirement is part of the data principal's right to access their personal data.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Principal Rights",
+      "requirement": "The Data Fiduciary must disclose the identities of all other Data Fiduciaries and Data Processors with whom personal data has been shared, along with a description of the data shared.",
+      "source": "DPDP Act 2023, Section 9(2)(b)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000546"
+      ],
+      "checkable_test": "Check if the document lists all Data Fiduciaries and Data Processors with whom personal data has been shared, along with a description of the data shared.",
+      "applicability": "Applies to Data Fiduciaries subject to the DPDP Act 2023.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "This requirement is part of the data principal's right to know who has access to their personal data.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T13:41:53.470326+00:00",
+  "multi_mapped_records": []
+}

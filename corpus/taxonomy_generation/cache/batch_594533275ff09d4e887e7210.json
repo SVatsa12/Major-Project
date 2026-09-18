@@ -1,0 +1,68 @@
+{
+  "batch_id": "594533275ff09d4e887e7210",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001603",
+    "G001604",
+    "G001605",
+    "G001607",
+    "G001609",
+    "G001613",
+    "G001618",
+    "G001619"
+  ],
+  "raw_response": "[{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"A body corporate's 'usual place of residence' is defined as the place where it is registered.\",\"source\":\"IT Act 2000, Section 14(1)\",\"weight\":1,\"source_clause_ids\":[\"G001605\"],\"checkable_test\":\"Verify if the definition of 'usual place of residence' for a body corporate is explicitly stated as the place of registration.\",\"applicability\":\"Applicable to all body corporates under the IT Act 2000.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause defines the 'usual place of residence' for a body corporate as the place where it is registered, which is a checkable definition.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"An electronic signature is deemed secure if the signature creation data was stored and affixed in an exclusive manner as prescribed.\",\"source\":\"IT Act 2000, Section 15(2)(ii)\",\"weight\":2,\"source_clause_ids\":[\"G001609\"],\"checkable_test\":\"Check if the electronic signature creation data is stored and affixed in an exclusive manner as prescribed by law.\",\"applicability\":\"Applicable to electronic signatures under the IT Act 2000.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause establishes a requirement for secure electronic signatures based on the exclusive storage and affixing of signature creation data.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"An electronic record is deemed secure if a security procedure has been applied to it at a specific point of time, and remains secure until verification.\",\"source\":\"IT Act 2000, Section 14(1)\",\"weight\":2,\"source_clause_ids\":[\"G001607\"],\"checkable_test\":\"Verify if the electronic record is deemed secure from the point of application of the security procedure until verification.\",\"applicability\":\"Applicable to electronic records under the IT Act 2000.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause defines the conditions under which an electronic record is considered secure based on the application of a security procedure.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "A body corporate's 'usual place of residence' is defined as the place where it is registered.",
+      "source": "IT Act 2000, Section 14(1)",
+      "weight": 1,
+      "source_clause_ids": [
+        "G001605"
+      ],
+      "checkable_test": "Verify if the definition of 'usual place of residence' for a body corporate is explicitly stated as the place of registration.",
+      "applicability": "Applicable to all body corporates under the IT Act 2000.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause defines the 'usual place of residence' for a body corporate as the place where it is registered, which is a checkable definition.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "An electronic signature is deemed secure if the signature creation data was stored and affixed in an exclusive manner as prescribed.",
+      "source": "IT Act 2000, Section 15(2)(ii)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001609"
+      ],
+      "checkable_test": "Check if the electronic signature creation data is stored and affixed in an exclusive manner as prescribed by law.",
+      "applicability": "Applicable to electronic signatures under the IT Act 2000.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause establishes a requirement for secure electronic signatures based on the exclusive storage and affixing of signature creation data.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "An electronic record is deemed secure if a security procedure has been applied to it at a specific point of time, and remains secure until verification.",
+      "source": "IT Act 2000, Section 14(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001607"
+      ],
+      "checkable_test": "Verify if the electronic record is deemed secure from the point of application of the security procedure until verification.",
+      "applicability": "Applicable to electronic records under the IT Act 2000.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause defines the conditions under which an electronic record is considered secure based on the application of a security procedure.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T14:33:23.372655+00:00",
+  "multi_mapped_records": []
+}

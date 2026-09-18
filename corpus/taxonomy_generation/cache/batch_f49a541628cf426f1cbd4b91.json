@@ -1,0 +1,111 @@
+{
+  "batch_id": "f49a541628cf426f1cbd4b91",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001521",
+    "G001524",
+    "G001525",
+    "G001526",
+    "G001527",
+    "G001528",
+    "G001529",
+    "G001532"
+  ],
+  "raw_response": "[{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"A subscriber must use an asymmetric crypto system and hash function to authenticate electronic records.\",\"source\":\"IT Act 2000, Section 3(2)\",\"weight\":3,\"source_clause_ids\":[\"G001525\"],\"checkable_test\":\"Verify that the platform uses asymmetric cryptography and hash functions for authentication of electronic records.\",\"applicability\":\"Applicable to any entity handling electronic records under the IT Act 2000.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is derived from the technical specifications for authentication under the IT Act 2000.\"},{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"A subscriber must ensure that the private key and public key are unique and form a functioning key pair.\",\"source\":\"IT Act 2000, Section 3(4)\",\"weight\":3,\"source_clause_ids\":[\"G001528\"],\"checkable_test\":\"Verify that the platform uses unique and functioning key pairs for authentication.\",\"applicability\":\"Applicable to any entity handling electronic records under the IT Act 2000.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is derived from the technical specifications for key pairs under the IT Act 2000.\"},{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"A subscriber must use a public key to verify the authenticity of an electronic record.\",\"source\":\"IT Act 2000, Section 3(3)\",\"weight\":3,\"source_clause_ids\":[\"G001528\"],\"checkable_test\":\"Verify that the platform allows verification of electronic records using public keys.\",\"applicability\":\"Applicable to any entity handling electronic records under the IT Act 2000.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is derived from the verification process under the IT Act 2000.\"},{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"An electronic signature or authentication technique must be reliable for authentication purposes.\",\"source\":\"IT Act 2000, Section 3(3A)(2)\",\"weight\":3,\"source_clause_ids\":[\"G001532\"],\"checkable_test\":\"Verify that the platform uses reliable electronic signatures or authentication techniques.\",\"applicability\":\"Applicable to any entity handling electronic records under the IT Act 2000.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is derived from the reliability standards for electronic signatures under the IT Act 2000.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "A subscriber must use an asymmetric crypto system and hash function to authenticate electronic records.",
+      "source": "IT Act 2000, Section 3(2)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001525"
+      ],
+      "checkable_test": "Verify that the platform uses asymmetric cryptography and hash functions for authentication of electronic records.",
+      "applicability": "Applicable to any entity handling electronic records under the IT Act 2000.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is derived from the technical specifications for authentication under the IT Act 2000.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "A subscriber must ensure that the private key and public key are unique and form a functioning key pair.",
+      "source": "IT Act 2000, Section 3(4)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001528"
+      ],
+      "checkable_test": "Verify that the platform uses unique and functioning key pairs for authentication.",
+      "applicability": "Applicable to any entity handling electronic records under the IT Act 2000.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is derived from the technical specifications for key pairs under the IT Act 2000.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "A subscriber must use a public key to verify the authenticity of an electronic record.",
+      "source": "IT Act 2000, Section 3(3)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001528"
+      ],
+      "checkable_test": "Verify that the platform allows verification of electronic records using public keys.",
+      "applicability": "Applicable to any entity handling electronic records under the IT Act 2000.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is derived from the verification process under the IT Act 2000.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "An electronic signature or authentication technique must be reliable for authentication purposes.",
+      "source": "IT Act 2000, Section 3(3A)(2)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001532"
+      ],
+      "checkable_test": "Verify that the platform uses reliable electronic signatures or authentication techniques.",
+      "applicability": "Applicable to any entity handling electronic records under the IT Act 2000.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is derived from the reliability standards for electronic signatures under the IT Act 2000.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T14:29:41.373201+00:00",
+  "multi_mapped_records": [
+    {
+      "batch_id": "f49a541628cf426f1cbd4b91",
+      "source_clause_id": "G001528",
+      "total_entries": 2,
+      "distinct_categories": 1,
+      "categories": [
+        "Confidentiality & Misuse of Data"
+      ],
+      "decision": "KEPT_FIRST_PER_CATEGORY_OR_DEDUPED_BY_EMBEDDING",
+      "kept_positions": [
+        1,
+        2
+      ],
+      "discarded_positions": [],
+      "entries_summary": [
+        {
+          "position": 1,
+          "category": "Confidentiality & Misuse of Data",
+          "requirement": "A subscriber must ensure that the private key and public key are unique and form a functioning key pair."
+        },
+        {
+          "position": 2,
+          "category": "Confidentiality & Misuse of Data",
+          "requirement": "A subscriber must use a public key to verify the authenticity of an electronic record."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "batch_id": "703c02adceccb0d86bc418a5",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G000167",
+    "G000173",
+    "G000174",
+    "G000175",
+    "G000177",
+    "G000180",
+    "G000182",
+    "G000183"
+  ],
+  "raw_response": "[{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Authority shall determine the tariff once in five years and may amend it from time to time during the said period of five years if considered appropriate and in public interest.\",\"source\":\"AERA_ACT_2008, SECTION=POWERS AND FUNCTIONS OF THE AUTHORITY\",\"weight\":3,\"source_clause_ids\":[\"G000183\"],\"checkable_test\":\"Check if the Authority determines tariffs every five years and has the power to amend them during the period.\",\"applicability\":\"Applicable to major airports under the AERA Act 2008.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This obligation relates to the Authority's responsibility to set and adjust tariffs in accordance with the Act.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Authority shall determine the tariff once in five years and may amend it from time to time during the said period of five years if considered appropriate and in public interest.",
+      "source": "AERA_ACT_2008, SECTION=POWERS AND FUNCTIONS OF THE AUTHORITY",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000183"
+      ],
+      "checkable_test": "Check if the Authority determines tariffs every five years and has the power to amend them during the period.",
+      "applicability": "Applicable to major airports under the AERA Act 2008.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "This obligation relates to the Authority's responsibility to set and adjust tariffs in accordance with the Act.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T13:20:36.295050+00:00",
+  "multi_mapped_records": []
+}

@@ -1,0 +1,53 @@
+{
+  "cache_key": "e23ba3b62dd1ba04fd9a327982482fd5f771813850794cd1811f111364a720b6",
+  "created_at_utc": "2026-09-16T12:02:14.264427+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S000331",
+    "S000332",
+    "S000333",
+    "S000334",
+    "S000335",
+    "S000336"
+  ],
+  "labels": [
+    {
+      "clause_id": "S000331",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S000332",
+      "best_match_taxonomy_id": "DPDP_RUL-0114",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses data principal rights but lacks specific details on how to exercise these rights."
+    },
+    {
+      "clause_id": "S000333",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S000334",
+      "best_match_taxonomy_id": "DPDP_RUL-0099",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses data erasure but lacks specifics on the retention period or legal compliance."
+    },
+    {
+      "clause_id": "S000335",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S000336",
+      "best_match_taxonomy_id": "IT_ACT_2-0151",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses security safeguards but lacks specifics on measures to protect data."
+    }
+  ],
+  "status": "SUCCESS"
+}

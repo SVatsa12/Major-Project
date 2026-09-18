@@ -1,0 +1,53 @@
+{
+  "cache_key": "f98e191e41549e0c59ff4650068cc9ffd6cf76ceba018265215b9afdead9f719",
+  "created_at_utc": "2026-09-16T11:40:21.234969+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S000067",
+    "S000068",
+    "S000069",
+    "S000070",
+    "S000071",
+    "S000072"
+  ],
+  "labels": [
+    {
+      "clause_id": "S000067",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S000068",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S000069",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S000070",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S000071",
+      "best_match_taxonomy_id": "DPDP_ACT-0013",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses notice of withdrawal of consent but lacks specific details on consequences of withdrawal."
+    },
+    {
+      "clause_id": "S000072",
+      "best_match_taxonomy_id": "DPDP_ACT-0012",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses notice of data processing but lacks specific details on the purpose of processing."
+    }
+  ],
+  "status": "SUCCESS"
+}

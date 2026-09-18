@@ -1,0 +1,53 @@
+{
+  "cache_key": "6100bfc0ff0bebe724c7abe8b2d25ce3cfa10990a41242b13b391ba7e22d4a8b",
+  "created_at_utc": "2026-09-17T05:56:41.279915+00:00",
+  "prompt_version": "policy-labeling-v7-reliable-batches",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S001207",
+    "S001208",
+    "S001209",
+    "S001210",
+    "S001211",
+    "S001212"
+  ],
+  "labels": [
+    {
+      "clause_id": "S001207",
+      "best_match_taxonomy_id": "DPDP_RUL-0099",
+      "verdict": "Partially Compliant",
+      "justification": "Clause addresses data retention but lacks specifics on erasure upon completion of retention period."
+    },
+    {
+      "clause_id": "S001208",
+      "best_match_taxonomy_id": "DPDP_RUL-0099",
+      "verdict": "Partially Compliant",
+      "justification": "Clause outlines retention periods but lacks explicit mention of erasure upon completion of retention period."
+    },
+    {
+      "clause_id": "S001209",
+      "best_match_taxonomy_id": "DPDP_RUL-0099",
+      "verdict": "Partially Compliant",
+      "justification": "Clause explains retention for service operation but lacks explicit mention of erasure upon completion of retention period."
+    },
+    {
+      "clause_id": "S001210",
+      "best_match_taxonomy_id": "DPDP_RUL-0099",
+      "verdict": "Partially Compliant",
+      "justification": "Clause outlines retention for service operation and legal compliance but lacks explicit mention of erasure upon completion of retention period."
+    },
+    {
+      "clause_id": "S001211",
+      "best_match_taxonomy_id": "DPDP_RUL-0099",
+      "verdict": "Partially Compliant",
+      "justification": "Clause explains retention based on data type and service use but lacks explicit mention of erasure upon completion of retention period."
+    },
+    {
+      "clause_id": "S001212",
+      "best_match_taxonomy_id": "DPDP_RUL-0099",
+      "verdict": "Partially Compliant",
+      "justification": "Clause mentions retention for legal obligations but lacks explicit mention of erasure upon completion of retention period."
+    }
+  ],
+  "status": "SUCCESS"
+}

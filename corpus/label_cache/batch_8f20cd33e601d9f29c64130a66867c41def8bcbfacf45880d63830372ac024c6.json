@@ -1,0 +1,53 @@
+{
+  "cache_key": "8f20cd33e601d9f29c64130a66867c41def8bcbfacf45880d63830372ac024c6",
+  "created_at_utc": "2026-09-17T06:43:16.757073+00:00",
+  "prompt_version": "policy-labeling-v7-reliable-batches",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S001801",
+    "S001802",
+    "S001803",
+    "S001804",
+    "S001805",
+    "S001806"
+  ],
+  "labels": [
+    {
+      "clause_id": "S001801",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S001802",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S001803",
+      "best_match_taxonomy_id": "DPDP_RUL-0099",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses data erasure but lacks specificity on retention periods or legal compliance."
+    },
+    {
+      "clause_id": "S001804",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S001805",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S001806",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    }
+  ],
+  "status": "SUCCESS"
+}

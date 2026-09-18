@@ -1,0 +1,21 @@
+{
+  "run_timestamp_utc": "2026-09-11T16:01:49.646823+00:00",
+  "input_path": "datasets\\GovernmentActs\\government_clauses_cleaned.csv",
+  "input_clause_count": 2609,
+  "representative_clause_count": 2609,
+  "batch_count": 327,
+  "successful_or_partial_batches": 327,
+  "failed_batch_count": 0,
+  "raw_model_entry_count": 635,
+  "normalized_candidate_count": 633,
+  "invalid_model_record_count": 17,
+  "duplicate_model_output_group_count": 1,
+  "unmapped_input_clause_count": 1977,
+  "merge_candidate_pair_count": 131,
+  "mapped_input_clause_count": 632,
+  "coverage_percent": 24.224,
+  "model": "qwen3:8b",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "taxonomy_status": "DRAFT_PENDING_HUMAN_LEGAL_REVIEW",
+  "warning": "No candidate is legally approved or automatically merged by this script."
+}

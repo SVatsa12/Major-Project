@@ -1,0 +1,194 @@
+{
+  "batch_id": "17721d3332185e67008ede2e",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001182",
+    "G001183",
+    "G001184",
+    "G001185",
+    "G001186",
+    "G001187",
+    "G001188",
+    "G001190"
+  ],
+  "raw_response": "[\n  {\n    \"category\": \"Data Retention & Erasure\",\n    \"requirement\": \"The Consent Manager must maintain the record of consent for at least seven years, or for a longer period agreed upon with the Data Principal or required by law.\",\n    \"source\": \"DPDP Rules 2025, Rule 8(3)\",\n    \"weight\": 2,\n    \"source_clause_ids\": [\"G001183\"],\n    \"checkable_test\": \"Check if the document specifies a minimum retention period of seven years or longer as agreed with the Data Principal or required by law.\",\n    \"applicability\": \"Applies to all Consent Managers under the DPDP Rules 2025.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Security Safeguards\",\n    \"requirement\": \"The Consent Manager must take reasonable security safeguards to prevent personal data breaches.\",\n    \"source\": \"DPDP Rules 2025, Rule 8(7)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G001185\"],\n    \"checkable_test\": \"Check if the document outlines specific security measures to prevent personal data breaches.\",\n    \"applicability\": \"Applies to all Consent Managers under the DPDP Rules 2025.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Consent & Notice\",\n    \"requirement\": \"The Consent Manager must provide the Data Principal with access to the information contained in the consent record in machine-readable form upon request.\",\n    \"source\": \"DPDP Rules 2025, Rule 8(2)\",\n    \"weight\": 2,\n    \"source_clause_ids\": [\"G001182\"],\n    \"checkable_test\": \"Check if the document allows the Data Principal to access the consent record in machine-readable format upon request.\",\n    \"applicability\": \"Applies to all Consent Managers under the DPDP Rules 2025.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Significant Data Fiduciary Obligations\",\n    \"requirement\": \"The Consent Manager must act in a fiduciary capacity in relation to the Data Principal.\",\n    \"source\": \"DPDP Rules 2025, Rule 8(9)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G001185\"],\n    \"checkable_test\": \"Check if the document states that the Consent Manager must act in a fiduciary capacity towards the Data Principal.\",\n    \"applicability\": \"Applies to all Consent Managers under the DPDP Rules 2025.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Confidentiality & Misuse of Data\",\n    \"requirement\": \"The Consent Manager must not sub-contract or assign the performance of any of its obligations under the Act and these rules.\",\n    \"source\": \"DPDP Rules 2025, Rule 8(5)\",\n    \"weight\": 2,\n    \"source_clause_ids\": [\"G001185\"],\n    \"checkable_test\": \"Check if the document prohibits the sub-contracting or assignment of obligations by the Consent Manager.\",\n    \"applicability\": \"Applies to all Consent Managers under the DPDP Rules 2025.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Confidentiality & Misuse of Data\",\n    \"requirement\": \"The Consent Manager must have measures in place to ensure that no conflict of interest arises due to its directors, key managerial personnel, and senior management having financial interests or relationships with Data Fiduciaries.\",\n    \"source\": \"DPDP Rules 2025, Rule 8(10)\",\n    \"weight\": 2,\n    \"source_clause_ids\": [\"G001187\"],\n    \"checkable_test\": \"Check if the document outlines measures to prevent conflicts of interest arising from the financial or personal relationships of the Consent Manager's personnel with Data Fiduciaries.\",\n    \"applicability\": \"Applies to all Consent Managers under the DPDP Rules 2025.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Consent & Notice\",\n    \"requirement\": \"The Consent Manager must develop and maintain a website or app as the primary means through which a Data Principal may access its services.\",\n    \"source\": \"DPDP Rules 2025, Rule 8(4)\",\n    \"weight\": 2,\n    \"source_clause_ids\": [\"G001184\"],\n    \"checkable_test\": \"Check if the document specifies a primary website or app for the Data Principal to access services and manage consent.\",\n    \"applicability\": \"Applies to all Consent Managers under the DPDP Rules 2025.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Confidentiality & Misuse of Data\",\n    \"requirement\": \"The Consent Manager must avoid conflicts of interest with Data Fiduciaries, including their promoters and key managerial personnel.\",\n    \"source\": \"DPDP Rules 2025, Rule 8(6)\",\n    \"weight\": 2,\n    \"source_clause_ids\": [\"G001186\"],\n    \"checkable_test\": \"Check if the document prohibits conflicts of interest between the Consent Manager and Data Fiduciaries, including their promoters and key personnel.\",\n    \"applicability\": \"Applies to all Consent Managers under the DPDP Rules 2025.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Confidentiality & Misuse of Data\",\n    \"requirement\": \"The Consent Manager must publish information regarding every person who holds shares in excess of two per cent. of the shareholding of the company registered as Consent Manager.\",\n    \"source\": \"DPDP Rules 2025, Rule 8(11)(b)\",\n    \"weight\": 2,\n    \"source_clause_ids\": [\"G001190\"],\n    \"checkable_test\": \"Check if the document publishes information about shareholders holding more than two per cent. of the shareholding of the Consent Manager.\",\n    \"applicability\": \"Applies to all Consent Managers under the DPDP Rules 2025.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  }\n]",
+  "parsed_entries": [
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "The Consent Manager must maintain the record of consent for at least seven years, or for a longer period agreed upon with the Data Principal or required by law.",
+      "source": "DPDP Rules 2025, Rule 8(3)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001183"
+      ],
+      "checkable_test": "Check if the document specifies a minimum retention period of seven years or longer as agreed with the Data Principal or required by law.",
+      "applicability": "Applies to all Consent Managers under the DPDP Rules 2025.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "The Consent Manager must take reasonable security safeguards to prevent personal data breaches.",
+      "source": "DPDP Rules 2025, Rule 8(7)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001185"
+      ],
+      "checkable_test": "Check if the document outlines specific security measures to prevent personal data breaches.",
+      "applicability": "Applies to all Consent Managers under the DPDP Rules 2025.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Consent & Notice",
+      "requirement": "The Consent Manager must provide the Data Principal with access to the information contained in the consent record in machine-readable form upon request.",
+      "source": "DPDP Rules 2025, Rule 8(2)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001182"
+      ],
+      "checkable_test": "Check if the document allows the Data Principal to access the consent record in machine-readable format upon request.",
+      "applicability": "Applies to all Consent Managers under the DPDP Rules 2025.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Consent Manager must act in a fiduciary capacity in relation to the Data Principal.",
+      "source": "DPDP Rules 2025, Rule 8(9)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001185"
+      ],
+      "checkable_test": "Check if the document states that the Consent Manager must act in a fiduciary capacity towards the Data Principal.",
+      "applicability": "Applies to all Consent Managers under the DPDP Rules 2025.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "The Consent Manager must not sub-contract or assign the performance of any of its obligations under the Act and these rules.",
+      "source": "DPDP Rules 2025, Rule 8(5)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001185"
+      ],
+      "checkable_test": "Check if the document prohibits the sub-contracting or assignment of obligations by the Consent Manager.",
+      "applicability": "Applies to all Consent Managers under the DPDP Rules 2025.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "The Consent Manager must have measures in place to ensure that no conflict of interest arises due to its directors, key managerial personnel, and senior management having financial interests or relationships with Data Fiduciaries.",
+      "source": "DPDP Rules 2025, Rule 8(10)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001187"
+      ],
+      "checkable_test": "Check if the document outlines measures to prevent conflicts of interest arising from the financial or personal relationships of the Consent Manager's personnel with Data Fiduciaries.",
+      "applicability": "Applies to all Consent Managers under the DPDP Rules 2025.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Consent & Notice",
+      "requirement": "The Consent Manager must develop and maintain a website or app as the primary means through which a Data Principal may access its services.",
+      "source": "DPDP Rules 2025, Rule 8(4)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001184"
+      ],
+      "checkable_test": "Check if the document specifies a primary website or app for the Data Principal to access services and manage consent.",
+      "applicability": "Applies to all Consent Managers under the DPDP Rules 2025.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "The Consent Manager must avoid conflicts of interest with Data Fiduciaries, including their promoters and key managerial personnel.",
+      "source": "DPDP Rules 2025, Rule 8(6)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001186"
+      ],
+      "checkable_test": "Check if the document prohibits conflicts of interest between the Consent Manager and Data Fiduciaries, including their promoters and key personnel.",
+      "applicability": "Applies to all Consent Managers under the DPDP Rules 2025.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "The Consent Manager must publish information regarding every person who holds shares in excess of two per cent. of the shareholding of the company registered as Consent Manager.",
+      "source": "DPDP Rules 2025, Rule 8(11)(b)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001190"
+      ],
+      "checkable_test": "Check if the document publishes information about shareholders holding more than two per cent. of the shareholding of the Consent Manager.",
+      "applicability": "Applies to all Consent Managers under the DPDP Rules 2025.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T11:41:15.563488+00:00",
+  "multi_mapped_records": [
+    {
+      "batch_id": "17721d3332185e67008ede2e",
+      "source_clause_id": "G001185",
+      "total_entries": 3,
+      "distinct_categories": 3,
+      "categories": [
+        "Security Safeguards",
+        "Significant Data Fiduciary Obligations",
+        "Confidentiality & Misuse of Data"
+      ],
+      "decision": "KEPT_ALL_DISTINCT_CATEGORIES",
+      "kept_positions": [
+        1,
+        3,
+        4
+      ],
+      "discarded_positions": [],
+      "entries_summary": [
+        {
+          "position": 1,
+          "category": "Security Safeguards",
+          "requirement": "The Consent Manager must take reasonable security safeguards to prevent personal data breaches."
+        },
+        {
+          "position": 3,
+          "category": "Significant Data Fiduciary Obligations",
+          "requirement": "The Consent Manager must act in a fiduciary capacity in relation to the Data Principal."
+        },
+        {
+          "position": 4,
+          "category": "Confidentiality & Misuse of Data",
+          "requirement": "The Consent Manager must not sub-contract or assign the performance of any of its obligations under the Act and these ru"
+        }
+      ]
+    }
+  ]
+}

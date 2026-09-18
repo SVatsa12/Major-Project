@@ -1,0 +1,53 @@
+{
+  "cache_key": "b74c66b53683461bd8a32a76b828ce55b9dcf94c78dcb63fa25e0146e4be8dab",
+  "created_at_utc": "2026-09-17T04:57:28.046761+00:00",
+  "prompt_version": "policy-labeling-v7-reliable-batches",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S000505",
+    "S000506",
+    "S000507",
+    "S000508",
+    "S000509",
+    "S000510"
+  ],
+  "labels": [
+    {
+      "clause_id": "S000505",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses dispute resolution and jurisdiction, not a data protection or security requirement."
+    },
+    {
+      "clause_id": "S000506",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause discusses legal rights and contract limitations, not a data protection or security requirement."
+    },
+    {
+      "clause_id": "S000507",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause describes the relationship between parties and does not address data protection or security requirements."
+    },
+    {
+      "clause_id": "S000508",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause discusses service examples and availability, not a data protection or security requirement."
+    },
+    {
+      "clause_id": "S000509",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses term precedence for specific services, not a data protection or security requirement."
+    },
+    {
+      "clause_id": "S000510",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause discusses enforceability of terms, not a data protection or security requirement."
+    }
+  ],
+  "status": "SUCCESS"
+}

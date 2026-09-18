@@ -1,0 +1,53 @@
+{
+  "cache_key": "09cfad6d7bdbfda30f9bcaa07c3bf568404a30410700ae6dbd86413ec0c3fd20",
+  "created_at_utc": "2026-09-16T14:29:03.240087+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S002041",
+    "S002042",
+    "S002043",
+    "S002044",
+    "S002045",
+    "S002046"
+  ],
+  "labels": [
+    {
+      "clause_id": "S002041",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Compliant",
+      "justification": "The clause ensures personal data is protected through encryption and secure handling, aligning with security safeguards requirements."
+    },
+    {
+      "clause_id": "S002042",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Compliant",
+      "justification": "The clause describes secure handling of payment transaction information, aligning with security safeguards requirements."
+    },
+    {
+      "clause_id": "S002043",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Compliant",
+      "justification": "The clause describes secure handling of payment transaction information, aligning with security safeguards requirements."
+    },
+    {
+      "clause_id": "S002044",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S002045",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Compliant",
+      "justification": "The clause describes secure handling of payment transaction information, aligning with security safeguards requirements."
+    },
+    {
+      "clause_id": "S002046",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Compliant",
+      "justification": "The clause describes secure handling of payment transaction information, aligning with security safeguards requirements."
+    }
+  ],
+  "status": "SUCCESS"
+}

@@ -1,0 +1,46 @@
+{
+  "run_timestamp_utc": "2026-09-10T04:58:07.423183+00:00",
+  "source_dir": "datasets\\GovernmentActs\\source",
+  "discovered_files_total": 8,
+  "processed_documents": 8,
+  "total_clauses": 3436,
+  "total_failed_files": 0,
+  "total_review_records": 108,
+  "acts": [
+    "AERA_ACT_2008",
+    "DISASTER_MGMT_ACT_2005",
+    "DPDP_ACT_2023",
+    "DPDP_RULES_2025",
+    "IT_ACT_2000",
+    "PATENTS_ACT_1970",
+    "RTI_ACT_2005",
+    "TRAI_ACT_1997"
+  ],
+  "documents_by_act": {
+    "AERA_ACT_2008": 1,
+    "DPDP_ACT_2023": 1,
+    "DPDP_RULES_2025": 1,
+    "IT_ACT_2000": 1,
+    "RTI_ACT_2005": 1,
+    "DISASTER_MGMT_ACT_2005": 1,
+    "PATENTS_ACT_1970": 1,
+    "TRAI_ACT_1997": 1
+  },
+  "clauses_by_act": {
+    "AERA_ACT_2008": 381,
+    "DPDP_ACT_2023": 404,
+    "DPDP_RULES_2025": 561,
+    "IT_ACT_2000": 763,
+    "RTI_ACT_2005": 395,
+    "DISASTER_MGMT_ACT_2005": 200,
+    "PATENTS_ACT_1970": 380,
+    "TRAI_ACT_1997": 352
+  },
+  "quality_status_counts": {
+    "REVIEW": 5,
+    "PASS": 3
+  },
+  "ocr_enabled": false,
+  "ocr_min_chars": 30,
+  "max_clause_chars": 1400
+}

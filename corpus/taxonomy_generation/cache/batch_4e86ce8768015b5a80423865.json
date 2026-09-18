@@ -1,0 +1,128 @@
+{
+  "batch_id": "4e86ce8768015b5a80423865",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G002250",
+    "G002251",
+    "G002252",
+    "G002253",
+    "G002254",
+    "G002255",
+    "G002256",
+    "G002257"
+  ],
+  "raw_response": "[{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The Information Officer must communicate information to the requester unless disclosure would cause a breach of privilege of Parliament or the State Legislature.\",\"source\":\"RTI Act 2005, Section 6(2)(c)\",\"weight\":2,\"source_clause_ids\":[\"G002250\"],\"checkable_test\":\"Check if the Information Officer communicates information to the requester unless disclosure would cause a breach of privilege of Parliament or the State Legislature.\",\"applicability\":\"Applicable to information requests under the RTI Act 2005.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause outlines an exception to disclosure based on breach of parliamentary privilege.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The Information Officer must communicate information to the requester unless disclosure would harm the competitive position of a third party, unless the competent authority is satisfied that larger public interest warrants disclosure.\",\"source\":\"RTI Act 2005, Section 6(2)(d)\",\"weight\":2,\"source_clause_ids\":[\"G002251\"],\"checkable_test\":\"Check if the Information Officer communicates information to the requester unless disclosure would harm the competitive position of a third party, unless the competent authority is satisfied that larger public interest warrants disclosure.\",\"applicability\":\"Applicable to information requests under the RTI Act 2005.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause outlines an exception to disclosure based on commercial confidence and trade secrets.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The Information Officer must communicate information to the requester unless disclosure would harm the fiduciary relationship of a person, unless the competent authority is satisfied that larger public interest warrants disclosure.\",\"source\":\"RTI Act 2005, Section 6(2)(e)\",\"weight\":2,\"source_clause_ids\":[\"G002252\"],\"checkable_test\":\"Check if the Information Officer communicates information to the requester unless disclosure would harm the fiduciary relationship of a person, unless the competent authority is satisfied that larger public interest warrants disclosure.\",\"applicability\":\"Applicable to information requests under the RTI Act 2005.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause outlines an exception to disclosure based on fiduciary relationships.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The Information Officer must communicate information to the requester unless disclosure would endanger the life or physical safety of any person or identify the source of information or assistance given in confidence for law enforcement or security purposes.\",\"source\":\"RTI Act 2005, Section 6(2)(g)\",\"weight\":2,\"source_clause_ids\":[\"G002254\"],\"checkable_test\":\"Check if the Information Officer communicates information to the requester unless disclosure would endanger the life or physical safety of any person or identify the source of information or assistance given in confidence for law enforcement or security purposes.\",\"applicability\":\"Applicable to information requests under the RTI Act 2005.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause outlines an exception to disclosure based on safety and security concerns.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The Information Officer must communicate information to the requester unless disclosure would impede the process of investigation or apprehension or prosecution of offenders.\",\"source\":\"RTI Act 2005, Section 6(2)(h)\",\"weight\":2,\"source_clause_ids\":[\"G002255\"],\"checkable_test\":\"Check if the Information Officer communicates information to the requester unless disclosure would impede the process of investigation or apprehension or prosecution of offenders.\",\"applicability\":\"Applicable to information requests under the RTI Act 2005.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause outlines an exception to disclosure based on law enforcement and judicial processes.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The Information Officer must communicate information to the requester unless disclosure would involve cabinet papers including records of deliberations of the Council of Ministers, Secretaries and other officers.\",\"source\":\"RTI Act 2005, Section 6(2)(i)\",\"weight\":2,\"source_clause_ids\":[\"G002256\"],\"checkable_test\":\"Check if the Information Officer communicates information to the requester unless disclosure would involve cabinet papers including records of deliberations of the Council of Ministers, Secretaries and other officers.\",\"applicability\":\"Applicable to information requests under the RTI Act 2005.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause outlines an exception to disclosure based on cabinet papers and deliberations.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The Information Officer must make public the decisions of Council of Ministers, the reasons thereof, and the material on the basis of which the decisions were taken after the decision has been taken and the matter is complete or over.\",\"source\":\"RTI Act 2005, Section 6(2)(Provided that)\",\"weight\":2,\"source_clause_ids\":[\"G002257\"],\"checkable_test\":\"Check if the Information Officer makes public the decisions of Council of Ministers, the reasons thereof, and the material on the basis of which the decisions were taken after the decision has been taken and the matter is complete or over.\",\"applicability\":\"Applicable to information requests under the RTI Act 2005.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause outlines a requirement for transparency in decision-making processes of the Council of Ministers.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Information Officer must communicate information to the requester unless disclosure would cause a breach of privilege of Parliament or the State Legislature.",
+      "source": "RTI Act 2005, Section 6(2)(c)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002250"
+      ],
+      "checkable_test": "Check if the Information Officer communicates information to the requester unless disclosure would cause a breach of privilege of Parliament or the State Legislature.",
+      "applicability": "Applicable to information requests under the RTI Act 2005.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause outlines an exception to disclosure based on breach of parliamentary privilege.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Information Officer must communicate information to the requester unless disclosure would harm the competitive position of a third party, unless the competent authority is satisfied that larger public interest warrants disclosure.",
+      "source": "RTI Act 2005, Section 6(2)(d)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002251"
+      ],
+      "checkable_test": "Check if the Information Officer communicates information to the requester unless disclosure would harm the competitive position of a third party, unless the competent authority is satisfied that larger public interest warrants disclosure.",
+      "applicability": "Applicable to information requests under the RTI Act 2005.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause outlines an exception to disclosure based on commercial confidence and trade secrets.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Information Officer must communicate information to the requester unless disclosure would harm the fiduciary relationship of a person, unless the competent authority is satisfied that larger public interest warrants disclosure.",
+      "source": "RTI Act 2005, Section 6(2)(e)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002252"
+      ],
+      "checkable_test": "Check if the Information Officer communicates information to the requester unless disclosure would harm the fiduciary relationship of a person, unless the competent authority is satisfied that larger public interest warrants disclosure.",
+      "applicability": "Applicable to information requests under the RTI Act 2005.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause outlines an exception to disclosure based on fiduciary relationships.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Information Officer must communicate information to the requester unless disclosure would endanger the life or physical safety of any person or identify the source of information or assistance given in confidence for law enforcement or security purposes.",
+      "source": "RTI Act 2005, Section 6(2)(g)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002254"
+      ],
+      "checkable_test": "Check if the Information Officer communicates information to the requester unless disclosure would endanger the life or physical safety of any person or identify the source of information or assistance given in confidence for law enforcement or security purposes.",
+      "applicability": "Applicable to information requests under the RTI Act 2005.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause outlines an exception to disclosure based on safety and security concerns.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Information Officer must communicate information to the requester unless disclosure would impede the process of investigation or apprehension or prosecution of offenders.",
+      "source": "RTI Act 2005, Section 6(2)(h)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002255"
+      ],
+      "checkable_test": "Check if the Information Officer communicates information to the requester unless disclosure would impede the process of investigation or apprehension or prosecution of offenders.",
+      "applicability": "Applicable to information requests under the RTI Act 2005.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause outlines an exception to disclosure based on law enforcement and judicial processes.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Information Officer must communicate information to the requester unless disclosure would involve cabinet papers including records of deliberations of the Council of Ministers, Secretaries and other officers.",
+      "source": "RTI Act 2005, Section 6(2)(i)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002256"
+      ],
+      "checkable_test": "Check if the Information Officer communicates information to the requester unless disclosure would involve cabinet papers including records of deliberations of the Council of Ministers, Secretaries and other officers.",
+      "applicability": "Applicable to information requests under the RTI Act 2005.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause outlines an exception to disclosure based on cabinet papers and deliberations.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Information Officer must make public the decisions of Council of Ministers, the reasons thereof, and the material on the basis of which the decisions were taken after the decision has been taken and the matter is complete or over.",
+      "source": "RTI Act 2005, Section 6(2)(Provided that)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002257"
+      ],
+      "checkable_test": "Check if the Information Officer makes public the decisions of Council of Ministers, the reasons thereof, and the material on the basis of which the decisions were taken after the decision has been taken and the matter is complete or over.",
+      "applicability": "Applicable to information requests under the RTI Act 2005.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause outlines a requirement for transparency in decision-making processes of the Council of Ministers.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T12:02:37.971488+00:00",
+  "multi_mapped_records": []
+}

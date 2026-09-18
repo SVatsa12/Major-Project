@@ -1,0 +1,83 @@
+{
+  "batch_id": "ad59b04c7abfcd1e1e284ccf",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G002402",
+    "G002403",
+    "G002404",
+    "G002407",
+    "G002409",
+    "G002410",
+    "G002420",
+    "G002424"
+  ],
+  "raw_response": "[  \n  {  \n    \"category\": \"Intermediary/Platform Liability\",  \n    \"requirement\": \"Public authorities must take necessary steps to ensure compliance with the RTI Act, including making changes to their record-keeping and management practices.\",  \n    \"source\": \"RTI Act 2005, Section 4(1)(iv)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G002407\"],  \n    \"checkable_test\": \"Check if the public authority has implemented changes to its record-keeping, management, and destruction practices as required by the RTI Act.\",  \n    \"applicability\": \"Applicable to public authorities subject to the RTI Act 2005.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation is tied to the requirement to modify practices related to record management.\"  \n  },  \n  {  \n    \"category\": \"Grievance Redressal\",  \n    \"requirement\": \"Public authorities must provide a complainant with compensation for any loss or detriment suffered as a result of non-compliance with the RTI Act.\",  \n    \"source\": \"RTI Act 2005, Section 4(1)(b)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G002410\"],  \n    \"checkable_test\": \"Verify if the public authority has provided compensation to complainants for losses or detriments caused by non-compliance.\",  \n    \"applicability\": \"Applicable to public authorities subject to the RTI Act 2005.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation is triggered when a complainant suffers loss or detriment due to non-compliance.\"  \n  },  \n  {  \n    \"category\": \"Intermediary/Platform Liability\",  \n    \"requirement\": \"No legal action can be taken against individuals acting in good faith under the RTI Act or its rules.\",  \n    \"source\": \"RTI Act 2005, Section 21\",  \n    \"weight\": 1,  \n    \"source_clause_ids\": [\"G002420\"],  \n    \"checkable_test\": \"Confirm that no legal action is being taken against individuals who acted in good faith under the RTI Act.\",  \n    \"applicability\": \"Applicable to individuals and public authorities acting under the RTI Act 2005.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This provision protects individuals who act in good faith when fulfilling obligations under the RTI Act.\"  \n  },  \n  {  \n    \"category\": \"Significant Data Fiduciary Obligations\",  \n    \"requirement\": \"Information related to allegations of corruption and human rights violations cannot be excluded under the RTI Act.\",  \n    \"source\": \"RTI Act 2005, Section 4(1), Provided that clause\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G002424\"],  \n    \"checkable_test\": \"Verify that information related to corruption and human rights violations is not excluded from disclosure under the RTI Act.\",  \n    \"applicability\": \"Applicable to public authorities subject to the RTI Act 2005.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This provision ensures that certain sensitive information is not excluded from disclosure.\"  \n  }  \n]",
+  "parsed_entries": [
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Public authorities must take necessary steps to ensure compliance with the RTI Act, including making changes to their record-keeping and management practices.",
+      "source": "RTI Act 2005, Section 4(1)(iv)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002407"
+      ],
+      "checkable_test": "Check if the public authority has implemented changes to its record-keeping, management, and destruction practices as required by the RTI Act.",
+      "applicability": "Applicable to public authorities subject to the RTI Act 2005.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is tied to the requirement to modify practices related to record management.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Grievance Redressal",
+      "requirement": "Public authorities must provide a complainant with compensation for any loss or detriment suffered as a result of non-compliance with the RTI Act.",
+      "source": "RTI Act 2005, Section 4(1)(b)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002410"
+      ],
+      "checkable_test": "Verify if the public authority has provided compensation to complainants for losses or detriments caused by non-compliance.",
+      "applicability": "Applicable to public authorities subject to the RTI Act 2005.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is triggered when a complainant suffers loss or detriment due to non-compliance.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "No legal action can be taken against individuals acting in good faith under the RTI Act or its rules.",
+      "source": "RTI Act 2005, Section 21",
+      "weight": 1,
+      "source_clause_ids": [
+        "G002420"
+      ],
+      "checkable_test": "Confirm that no legal action is being taken against individuals who acted in good faith under the RTI Act.",
+      "applicability": "Applicable to individuals and public authorities acting under the RTI Act 2005.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This provision protects individuals who act in good faith when fulfilling obligations under the RTI Act.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Information related to allegations of corruption and human rights violations cannot be excluded under the RTI Act.",
+      "source": "RTI Act 2005, Section 4(1), Provided that clause",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002424"
+      ],
+      "checkable_test": "Verify that information related to corruption and human rights violations is not excluded from disclosure under the RTI Act.",
+      "applicability": "Applicable to public authorities subject to the RTI Act 2005.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This provision ensures that certain sensitive information is not excluded from disclosure.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T15:27:57.250057+00:00",
+  "multi_mapped_records": []
+}

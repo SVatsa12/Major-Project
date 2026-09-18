@@ -1,0 +1,53 @@
+{
+  "cache_key": "e46baa037f9719868b624df656ee69e17064b8e24abb210f950764d9dc6b7aa4",
+  "created_at_utc": "2026-09-16T13:42:14.959942+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S001531",
+    "S001532",
+    "S001533",
+    "S001534",
+    "S001535",
+    "S001536"
+  ],
+  "labels": [
+    {
+      "clause_id": "S001531",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Compliant",
+      "justification": "The clause describes encryption measures to protect personal data against unauthorized access, aligning with security safeguards requirements."
+    },
+    {
+      "clause_id": "S001532",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Compliant",
+      "justification": "The clause explains encryption of data to prevent unauthorized access, meeting security safeguards requirements."
+    },
+    {
+      "clause_id": "S001533",
+      "best_match_taxonomy_id": "DPDP_ACT-0028",
+      "verdict": "Compliant",
+      "justification": "The clause specifies data retention periods, aligning with data retention and erasure obligations."
+    },
+    {
+      "clause_id": "S001534",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Compliant",
+      "justification": "The clause describes encryption and secure processing of data, meeting security safeguards requirements."
+    },
+    {
+      "clause_id": "S001535",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Compliant",
+      "justification": "The clause describes encryption and secure processing of data, meeting security safeguards requirements."
+    },
+    {
+      "clause_id": "S001536",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Compliant",
+      "justification": "The clause describes encryption and secure processing of data, meeting security safeguards requirements."
+    }
+  ],
+  "status": "SUCCESS"
+}

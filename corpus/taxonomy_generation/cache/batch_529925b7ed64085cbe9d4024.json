@@ -1,0 +1,98 @@
+{
+  "batch_id": "529925b7ed64085cbe9d4024",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001174",
+    "G001175",
+    "G001176",
+    "G001177",
+    "G001178",
+    "G001179",
+    "G001180",
+    "G001181"
+  ],
+  "raw_response": "[\n  {\n    \"category\": \"Consent & Notice\",\n    \"requirement\": \"The Consent Manager must enable individuals to give, manage, review, and withdraw their consent for the processing of their personal data.\",\n    \"source\": \"DPDP Rules 2025, Rule 8(1)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G001174\"],\n    \"checkable_test\": \"Verify if the platform provides functionality for users to give, manage, review, and withdraw consent.\",\n    \"applicability\": \"All users of the platform\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Data Retention & Erasure\",\n    \"requirement\": \"The Consent Manager must maintain a record of consents given, denied, or withdrawn by the Data Principal.\",\n    \"source\": \"DPDP Rules 2025, Rule 8(1)(a)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G001178\"],\n    \"checkable_test\": \"Verify if the platform maintains a record of consents given, denied, or withdrawn by users.\",\n    \"applicability\": \"All users of the platform\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Data Retention & Erasure\",\n    \"requirement\": \"The Consent Manager must maintain a record of notices preceding or accompanying requests for consent.\",\n    \"source\": \"DPDP Rules 2025, Rule 8(1)(b)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G001179\"],\n    \"checkable_test\": \"Verify if the platform maintains a record of notices related to consent requests.\",\n    \"applicability\": \"All users of the platform\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Data Retention & Erasure\",\n    \"requirement\": \"The Consent Manager must maintain a record of the sharing of personal data with a transferee Data Fiduciary.\",\n    \"source\": \"DPDP Rules 2025, Rule 8(1)(c)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G001180\"],\n    \"checkable_test\": \"Verify if the platform maintains a record of data sharing with third-party Data Fiduciaries.\",\n    \"applicability\": \"All users of the platform\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Consent & Notice\",\n    \"requirement\": \"The Consent Manager must provide the Data Principal with access to the record of consents, notices, and data sharing.\",\n    \"source\": \"DPDP Rules 2025, Rule 8(1)(a)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G001181\"],\n    \"checkable_test\": \"Verify if the platform provides users with access to the records of consents, notices, and data sharing.\",\n    \"applicability\": \"All users of the platform\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  }\n]",
+  "parsed_entries": [
+    {
+      "category": "Consent & Notice",
+      "requirement": "The Consent Manager must enable individuals to give, manage, review, and withdraw their consent for the processing of their personal data.",
+      "source": "DPDP Rules 2025, Rule 8(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001174"
+      ],
+      "checkable_test": "Verify if the platform provides functionality for users to give, manage, review, and withdraw consent.",
+      "applicability": "All users of the platform",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "The Consent Manager must maintain a record of consents given, denied, or withdrawn by the Data Principal.",
+      "source": "DPDP Rules 2025, Rule 8(1)(a)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001178"
+      ],
+      "checkable_test": "Verify if the platform maintains a record of consents given, denied, or withdrawn by users.",
+      "applicability": "All users of the platform",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "The Consent Manager must maintain a record of notices preceding or accompanying requests for consent.",
+      "source": "DPDP Rules 2025, Rule 8(1)(b)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001179"
+      ],
+      "checkable_test": "Verify if the platform maintains a record of notices related to consent requests.",
+      "applicability": "All users of the platform",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "The Consent Manager must maintain a record of the sharing of personal data with a transferee Data Fiduciary.",
+      "source": "DPDP Rules 2025, Rule 8(1)(c)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001180"
+      ],
+      "checkable_test": "Verify if the platform maintains a record of data sharing with third-party Data Fiduciaries.",
+      "applicability": "All users of the platform",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Consent & Notice",
+      "requirement": "The Consent Manager must provide the Data Principal with access to the record of consents, notices, and data sharing.",
+      "source": "DPDP Rules 2025, Rule 8(1)(a)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001181"
+      ],
+      "checkable_test": "Verify if the platform provides users with access to the records of consents, notices, and data sharing.",
+      "applicability": "All users of the platform",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T11:38:33.523640+00:00",
+  "multi_mapped_records": []
+}

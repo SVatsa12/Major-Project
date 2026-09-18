@@ -1,0 +1,113 @@
+{
+  "batch_id": "8753c45f5622170ad3a0d1a6",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G000401",
+    "G000405",
+    "G000406",
+    "G000425",
+    "G000428",
+    "G000430",
+    "G000431",
+    "G000433"
+  ],
+  "raw_response": "[{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Significant Data Fiduciaries must appoint a Data Protection Officer as required by law.\",\"source\":\"DPDP Act 2023, Section 2(l)\",\"weight\":3,\"source_clause_ids\":[\"G000406\"],\"checkable_test\":\"Check if the organization has appointed a Data Protection Officer as required by law.\",\"applicability\":\"Applicable to Significant Data Fiduciaries.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is directly tied to the definition of a Data Protection Officer under the DPDP Act 2023.\"},{\"category\":\"Data Retention & Erasure\",\"requirement\":\"Data Fiduciaries must ensure that personal data is erased or restricted when no longer needed for the specified purpose.\",\"source\":\"DPDP Act 2023, Section 2(za)\",\"weight\":2,\"source_clause_ids\":[\"G000431\"],\"checkable_test\":\"Verify if the organization provides a specified purpose for data processing and ensures data is erased or restricted when no longer needed.\",\"applicability\":\"Applicable to Data Fiduciaries who provide a specified purpose for data processing.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This obligation is tied to the requirement for Data Fiduciaries to provide a specified purpose and manage data retention accordingly.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"Data Fiduciaries must ensure that personal data is protected against unauthorized processing, accidental disclosure, or loss.\",\"source\":\"DPDP Act 2023, Section 2(u)\",\"weight\":3,\"source_clause_ids\":[\"G000425\"],\"checkable_test\":\"Check if the organization has implemented measures to protect personal data against unauthorized processing, accidental disclosure, or loss.\",\"applicability\":\"Applicable to all Data Fiduciaries.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is directly tied to the definition of a personal data breach and the need for security safeguards.\"},{\"category\":\"Data Retention & Erasure\",\"requirement\":\"Data Fiduciaries must ensure that personal data is retained only for the specified purpose and erased when no longer needed.\",\"source\":\"DPDP Act 2023, Section 2(x)\",\"weight\":2,\"source_clause_ids\":[\"G000428\"],\"checkable_test\":\"Verify if the organization retains personal data only for the specified purpose and ensures erasure when no longer needed.\",\"applicability\":\"Applicable to Data Fiduciaries who process personal data.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This obligation is tied to the definition of processing and the requirement to retain data only for the specified purpose.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Significant Data Fiduciaries must be notified by the Central Government under section 10.\",\"source\":\"DPDP Act 2023, Section 2(z)\",\"weight\":3,\"source_clause_ids\":[\"G000430\"],\"checkable_test\":\"Check if the organization is classified as a Significant Data Fiduciary and if it complies with the notification requirements under section 10.\",\"applicability\":\"Applicable to Significant Data Fiduciaries.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is directly tied to the definition of a Significant Data Fiduciary and the requirement for notification by the Central Government.\"},{\"category\":\"Data Retention & Erasure\",\"requirement\":\"Data Fiduciaries must ensure that personal data is retained only for the purpose for which it was collected.\",\"source\":\"DPDP Act 2023, Section 3(a)\",\"weight\":2,\"source_clause_ids\":[\"G000433\"],\"checkable_test\":\"Verify if the organization retains personal data only for the purpose for which it was collected.\",\"applicability\":\"Applicable to Data Fiduciaries processing personal data within India.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This obligation is tied to the requirement that data processing within India must be for the purpose for which it was collected.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Significant Data Fiduciaries must appoint a Data Protection Officer as required by law.",
+      "source": "DPDP Act 2023, Section 2(l)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000406"
+      ],
+      "checkable_test": "Check if the organization has appointed a Data Protection Officer as required by law.",
+      "applicability": "Applicable to Significant Data Fiduciaries.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to the definition of a Data Protection Officer under the DPDP Act 2023.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "Data Fiduciaries must ensure that personal data is erased or restricted when no longer needed for the specified purpose.",
+      "source": "DPDP Act 2023, Section 2(za)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000431"
+      ],
+      "checkable_test": "Verify if the organization provides a specified purpose for data processing and ensures data is erased or restricted when no longer needed.",
+      "applicability": "Applicable to Data Fiduciaries who provide a specified purpose for data processing.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "This obligation is tied to the requirement for Data Fiduciaries to provide a specified purpose and manage data retention accordingly.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Data Fiduciaries must ensure that personal data is protected against unauthorized processing, accidental disclosure, or loss.",
+      "source": "DPDP Act 2023, Section 2(u)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000425"
+      ],
+      "checkable_test": "Check if the organization has implemented measures to protect personal data against unauthorized processing, accidental disclosure, or loss.",
+      "applicability": "Applicable to all Data Fiduciaries.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to the definition of a personal data breach and the need for security safeguards.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "Data Fiduciaries must ensure that personal data is retained only for the specified purpose and erased when no longer needed.",
+      "source": "DPDP Act 2023, Section 2(x)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000428"
+      ],
+      "checkable_test": "Verify if the organization retains personal data only for the specified purpose and ensures erasure when no longer needed.",
+      "applicability": "Applicable to Data Fiduciaries who process personal data.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "This obligation is tied to the definition of processing and the requirement to retain data only for the specified purpose.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Significant Data Fiduciaries must be notified by the Central Government under section 10.",
+      "source": "DPDP Act 2023, Section 2(z)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000430"
+      ],
+      "checkable_test": "Check if the organization is classified as a Significant Data Fiduciary and if it complies with the notification requirements under section 10.",
+      "applicability": "Applicable to Significant Data Fiduciaries.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to the definition of a Significant Data Fiduciary and the requirement for notification by the Central Government.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "Data Fiduciaries must ensure that personal data is retained only for the purpose for which it was collected.",
+      "source": "DPDP Act 2023, Section 3(a)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000433"
+      ],
+      "checkable_test": "Verify if the organization retains personal data only for the purpose for which it was collected.",
+      "applicability": "Applicable to Data Fiduciaries processing personal data within India.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "This obligation is tied to the requirement that data processing within India must be for the purpose for which it was collected.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T11:00:34.566536+00:00",
+  "multi_mapped_records": []
+}

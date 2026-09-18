@@ -1,0 +1,98 @@
+{
+  "batch_id": "56eb16f311795215cb0771bf",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G000645",
+    "G000651",
+    "G000652",
+    "G000653",
+    "G000654",
+    "G000657",
+    "G000660",
+    "G000662"
+  ],
+  "raw_response": "[{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Board must conduct inquiries into data fiduciaries' compliance with the DPDP Act following the principles of natural justice.\",\"source\":\"DPDP Act 2023, Section 27(5)\",\"weight\":3,\"source_clause_ids\":[\"G000652\"],\"checkable_test\":\"Whether the Board conducts inquiries into data fiduciaries' compliance with the DPDP Act following the principles of natural justice.\",\"applicability\":\"Applicable to data fiduciaries subject to the DPDP Act.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is derived from the obligation to inquire into compliance with the Act.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Board must provide reasons for its actions during the course of an inquiry.\",\"source\":\"DPDP Act 2023, Section 27(6)\",\"weight\":3,\"source_clause_ids\":[\"G000653\"],\"checkable_test\":\"Whether the Board provides reasons for its actions during the course of an inquiry.\",\"applicability\":\"Applicable to data fiduciaries subject to the DPDP Act.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is derived from the obligation to record reasons for actions during an inquiry.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Board must have the same powers as a civil court under the Code of Civil Procedure, 1908, for matters relating to data compliance.\",\"source\":\"DPDP Act 2023, Section 27(7)\",\"weight\":3,\"source_clause_ids\":[\"G000654\"],\"checkable_test\":\"Whether the Board has the same powers as a civil court under the Code of Civil Procedure, 1908, for data compliance matters.\",\"applicability\":\"Applicable to data fiduciaries subject to the DPDP Act.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is derived from the obligation to have the same powers as a civil court for data compliance.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Board must inspect data, books, documents, and other records of data fiduciaries as part of its functions.\",\"source\":\"DPDP Act 2023, Section 27(7)(c)\",\"weight\":3,\"source_clause_ids\":[\"G000657\"],\"checkable_test\":\"Whether the Board inspects data, books, documents, and other records of data fiduciaries as part of its functions.\",\"applicability\":\"Applicable to data fiduciaries subject to the DPDP Act.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is derived from the obligation to inspect data and records of data fiduciaries.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Board may issue interim orders during an inquiry, after giving the person concerned an opportunity of being heard.\",\"source\":\"DPDP Act 2023, Section 27(10)\",\"weight\":3,\"source_clause_ids\":[\"G000662\"],\"checkable_test\":\"Whether the Board issues interim orders during an inquiry after providing the person concerned an opportunity of being heard.\",\"applicability\":\"Applicable to data fiduciaries subject to the DPDP Act.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is derived from the obligation to issue interim orders after providing an opportunity of being heard.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Board must conduct inquiries into data fiduciaries' compliance with the DPDP Act following the principles of natural justice.",
+      "source": "DPDP Act 2023, Section 27(5)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000652"
+      ],
+      "checkable_test": "Whether the Board conducts inquiries into data fiduciaries' compliance with the DPDP Act following the principles of natural justice.",
+      "applicability": "Applicable to data fiduciaries subject to the DPDP Act.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is derived from the obligation to inquire into compliance with the Act.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Board must provide reasons for its actions during the course of an inquiry.",
+      "source": "DPDP Act 2023, Section 27(6)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000653"
+      ],
+      "checkable_test": "Whether the Board provides reasons for its actions during the course of an inquiry.",
+      "applicability": "Applicable to data fiduciaries subject to the DPDP Act.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is derived from the obligation to record reasons for actions during an inquiry.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Board must have the same powers as a civil court under the Code of Civil Procedure, 1908, for matters relating to data compliance.",
+      "source": "DPDP Act 2023, Section 27(7)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000654"
+      ],
+      "checkable_test": "Whether the Board has the same powers as a civil court under the Code of Civil Procedure, 1908, for data compliance matters.",
+      "applicability": "Applicable to data fiduciaries subject to the DPDP Act.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is derived from the obligation to have the same powers as a civil court for data compliance.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Board must inspect data, books, documents, and other records of data fiduciaries as part of its functions.",
+      "source": "DPDP Act 2023, Section 27(7)(c)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000657"
+      ],
+      "checkable_test": "Whether the Board inspects data, books, documents, and other records of data fiduciaries as part of its functions.",
+      "applicability": "Applicable to data fiduciaries subject to the DPDP Act.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is derived from the obligation to inspect data and records of data fiduciaries.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Board may issue interim orders during an inquiry, after giving the person concerned an opportunity of being heard.",
+      "source": "DPDP Act 2023, Section 27(10)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000662"
+      ],
+      "checkable_test": "Whether the Board issues interim orders during an inquiry after providing the person concerned an opportunity of being heard.",
+      "applicability": "Applicable to data fiduciaries subject to the DPDP Act.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is derived from the obligation to issue interim orders after providing an opportunity of being heard.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T13:52:08.023882+00:00",
+  "multi_mapped_records": []
+}

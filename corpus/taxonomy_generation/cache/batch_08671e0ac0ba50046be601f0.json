@@ -1,0 +1,147 @@
+{
+  "batch_id": "08671e0ac0ba50046be601f0",
+  "status": "PARTIAL_VALIDATION",
+  "input_clause_ids": [
+    "G003285",
+    "G003286",
+    "G003292",
+    "G003293",
+    "G003301",
+    "G003304",
+    "G003310",
+    "G003325"
+  ],
+  "raw_response": "[{\"category\":\"Grievance Redressal\",\"requirement\":\"The Central Government or a State Government or a local authority or any person aggrieved by any direction, decision or order made by the Authority may prefer an appeal to the Appellate Tribunal.\",\"source\":\"TRAI_ACT_1997, SECTION=1\",\"weight\":2,\"source_clause_ids\":[\"G003285\"],\"checkable_test\":\"Check if the document allows for appeals to the Appellate Tribunal by the Central Government, State Government, local authority, or aggrieved person.\",\"applicability\":\"Applicable to any document that outlines appeal mechanisms under TRAI Act 1997.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause establishes the right to appeal to the Appellate Tribunal.\"},{\"category\":\"Grievance Redressal\",\"requirement\":\"Every appeal under sub-section (2) shall be preferred within a period of thirty days from the date on which a copy of the direction or order or decision made by the Authority is received by the Central Government or the State Government or the local authority or the aggrieved person.\",\"source\":\"TRAI_ACT_1997, SECTION=1\",\"weight\":2,\"source_clause_ids\":[\"G003286\"],\"checkable_test\":\"Check if the document specifies a 30-day deadline for filing appeals.\",\"applicability\":\"Applicable to any document that outlines appeal mechanisms under TRAI Act 1997.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause sets a time limit for filing appeals.\"},{\"category\":\"Grievance Reddessal\",\"requirement\":\"The Appellate Tribunal may, for the purpose of examining the legality or propriety or correctness of any dispute made in any application under sub-section (?) or of any direction or order or decision of the Authority referred to in the appeal preferred under sub-section (2), on its own motion or otherwise, call for the records relevant to disposing of such application or appeal and make such orders as it thinks fit.\",\"source\":\"TRAI_ACT_1997, SECTION=1\",\"weight\":2,\"source_clause_ids\":[\"G003292\"],\"checkable_test\":\"Check if the document allows the Appellate Tribunal to call for records and make orders during an appeal process.\",\"applicability\":\"Applicable to any document that outlines appeal mechanisms under TRAI Act 1997.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause outlines the Appellate Tribunal's authority to examine disputes and make orders.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The Appellate Tribunal shall consist of a Chairperson and not more than two Members to be appointed, by notification, by the Central Government.\",\"source\":\"TRAI_ACT_1997, SECTION=1\",\"weight\":2,\"source_clause_ids\":[\"G003293\"],\"checkable_test\":\"Check if the document specifies the composition of the Appellate Tribunal as a Chairperson and up to two Members.\",\"applicability\":\"Applicable to any document that outlines the structure of the Appellate Tribunal under TRAI Act 1997.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause defines the composition of the Appellate Tribunal.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"If at any stage of the hearing of any case or matter it appears to the Chairperson or a Member of the Appellate Tribunal that the case or matter is of such a nature that it ought to be heard by a Bench consisting of two Members, the case or matter may be transferred by the Chairperson to such Bench as the Chairperson may deem fit.\",\"source\":\"TRAI_ACT_1997, SECTION=1\",\"weight\":2,\"source_clause_ids\":[\"G003301\"],\"checkable_test\":\"Check if the document allows the Chairperson to transfer a case to a Bench of two Members if necessary.\",\"applicability\":\"Applicable to any document that outlines the transfer of cases within the Appellate Tribunal under TRAI Act 1997.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause provides for the transfer of cases to a Bench of two Members.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"In the case of a Member, has held the post of Secretary to the Government of India or any equivalent post in the Central Government or the State Government for a period of not less than two years or a person who is well versed in the field of technology, telecommunication, industry, commerce or administration.\",\"source\":\"TRAI_ACT_1997, SECTION=1\",\"weight\":2,\"source_clause_ids\":[\"G003304\"],\"checkable_test\":\"Check if the document specifies that a Member of the Appellate Tribunal must have held a relevant government post for at least two years or have expertise in technology, telecommunication, industry, commerce, or administration.\",\"applicability\":\"Applicable to any document that outlines the qualifications for Appellate Tribunal Members under TRAI Act 1997.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause outlines the qualifications for Appellate Tribunal Members.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"If, for reason other than temporary absence, any vacancy occurs in the office of the Chairperson or a Member of the Appellate Tribunal, the Central Government shall appoint another person in accordance with the provisions of this Act to fill the vacancy and the proceedings may be continued before the Appellate Tribunal from the stage at which the vacancy is filled.\",\"source\":\"TRAI_ACT_1997, SECTION=1\",\"weight\":2,\"source_clause_ids\":[\"G003310\"],\"checkable_test\":\"Check if the document specifies that the Central Government must appoint a replacement for a vacancy in the Appellate Tribunal and continue proceedings from the stage of the vacancy.\",\"applicability\":\"Applicable to any document that outlines the appointment process for Appellate Tribunal vacancies under TRAI Act 1997.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause outlines the process for filling vacancies in the Appellate Tribunal.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"On the application of any of the parties and after notice to the parties, and after hearing such of them as he may desire to be heard, or on his own motion without such notice, the Chairperson of the Appellate Tribunal may transfer any case pending before one Bench, for disposal, to any other Bench.\",\"source\":\"TRAI_ACT_1997, SECTION=1\",\"weight\":2,\"source_clause_ids\":[\"G003325\"],\"checkable_test\":\"Check if the document allows the Chairperson to transfer a case pending before one Bench to another Bench, either on application or on their own motion.\",\"applicability\":\"Applicable to any document that outlines the transfer of cases within the Appellate Tribunal under TRAI Act 1997.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause provides for the transfer of cases between Benches of the Appellate Tribunal.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Grievance Redressal",
+      "requirement": "The Central Government or a State Government or a local authority or any person aggrieved by any direction, decision or order made by the Authority may prefer an appeal to the Appellate Tribunal.",
+      "source": "TRAI_ACT_1997, SECTION=1",
+      "weight": 2,
+      "source_clause_ids": [
+        "G003285"
+      ],
+      "checkable_test": "Check if the document allows for appeals to the Appellate Tribunal by the Central Government, State Government, local authority, or aggrieved person.",
+      "applicability": "Applicable to any document that outlines appeal mechanisms under TRAI Act 1997.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause establishes the right to appeal to the Appellate Tribunal.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Grievance Redressal",
+      "requirement": "Every appeal under sub-section (2) shall be preferred within a period of thirty days from the date on which a copy of the direction or order or decision made by the Authority is received by the Central Government or the State Government or the local authority or the aggrieved person.",
+      "source": "TRAI_ACT_1997, SECTION=1",
+      "weight": 2,
+      "source_clause_ids": [
+        "G003286"
+      ],
+      "checkable_test": "Check if the document specifies a 30-day deadline for filing appeals.",
+      "applicability": "Applicable to any document that outlines appeal mechanisms under TRAI Act 1997.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause sets a time limit for filing appeals.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Appellate Tribunal shall consist of a Chairperson and not more than two Members to be appointed, by notification, by the Central Government.",
+      "source": "TRAI_ACT_1997, SECTION=1",
+      "weight": 2,
+      "source_clause_ids": [
+        "G003293"
+      ],
+      "checkable_test": "Check if the document specifies the composition of the Appellate Tribunal as a Chairperson and up to two Members.",
+      "applicability": "Applicable to any document that outlines the structure of the Appellate Tribunal under TRAI Act 1997.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause defines the composition of the Appellate Tribunal.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "If at any stage of the hearing of any case or matter it appears to the Chairperson or a Member of the Appellate Tribunal that the case or matter is of such a nature that it ought to be heard by a Bench consisting of two Members, the case or matter may be transferred by the Chairperson to such Bench as the Chairperson may deem fit.",
+      "source": "TRAI_ACT_1997, SECTION=1",
+      "weight": 2,
+      "source_clause_ids": [
+        "G003301"
+      ],
+      "checkable_test": "Check if the document allows the Chairperson to transfer a case to a Bench of two Members if necessary.",
+      "applicability": "Applicable to any document that outlines the transfer of cases within the Appellate Tribunal under TRAI Act 1997.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause provides for the transfer of cases to a Bench of two Members.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "In the case of a Member, has held the post of Secretary to the Government of India or any equivalent post in the Central Government or the State Government for a period of not less than two years or a person who is well versed in the field of technology, telecommunication, industry, commerce or administration.",
+      "source": "TRAI_ACT_1997, SECTION=1",
+      "weight": 2,
+      "source_clause_ids": [
+        "G003304"
+      ],
+      "checkable_test": "Check if the document specifies that a Member of the Appellate Tribunal must have held a relevant government post for at least two years or have expertise in technology, telecommunication, industry, commerce, or administration.",
+      "applicability": "Applicable to any document that outlines the qualifications for Appellate Tribunal Members under TRAI Act 1997.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause outlines the qualifications for Appellate Tribunal Members.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "If, for reason other than temporary absence, any vacancy occurs in the office of the Chairperson or a Member of the Appellate Tribunal, the Central Government shall appoint another person in accordance with the provisions of this Act to fill the vacancy and the proceedings may be continued before the Appellate Tribunal from the stage at which the vacancy is filled.",
+      "source": "TRAI_ACT_1997, SECTION=1",
+      "weight": 2,
+      "source_clause_ids": [
+        "G003310"
+      ],
+      "checkable_test": "Check if the document specifies that the Central Government must appoint a replacement for a vacancy in the Appellate Tribunal and continue proceedings from the stage of the vacancy.",
+      "applicability": "Applicable to any document that outlines the appointment process for Appellate Tribunal vacancies under TRAI Act 1997.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause outlines the process for filling vacancies in the Appellate Tribunal.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "On the application of any of the parties and after notice to the parties, and after hearing such of them as he may desire to be heard, or on his own motion without such notice, the Chairperson of the Appellate Tribunal may transfer any case pending before one Bench, for disposal, to any other Bench.",
+      "source": "TRAI_ACT_1997, SECTION=1",
+      "weight": 2,
+      "source_clause_ids": [
+        "G003325"
+      ],
+      "checkable_test": "Check if the document allows the Chairperson to transfer a case pending before one Bench to another Bench, either on application or on their own motion.",
+      "applicability": "Applicable to any document that outlines the transfer of cases within the Appellate Tribunal under TRAI Act 1997.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause provides for the transfer of cases between Benches of the Appellate Tribunal.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [
+    {
+      "position": 2,
+      "entry": {
+        "category": "Grievance Reddessal",
+        "requirement": "The Appellate Tribunal may, for the purpose of examining the legality or propriety or correctness of any dispute made in any application under sub-section (?) or of any direction or order or decision of the Authority referred to in the appeal preferred under sub-section (2), on its own motion or otherwise, call for the records relevant to disposing of such application or appeal and make such orders as it thinks fit.",
+        "source": "TRAI_ACT_1997, SECTION=1",
+        "weight": 2,
+        "source_clause_ids": [
+          "G003292"
+        ],
+        "checkable_test": "Check if the document allows the Appellate Tribunal to call for records and make orders during an appeal process.",
+        "applicability": "Applicable to any document that outlines appeal mechanisms under TRAI Act 1997.",
+        "assessability": 3,
+        "citation_confidence": "high",
+        "notes": "This clause outlines the Appellate Tribunal's authority to examine disputes and make orders."
+      },
+      "error": "invalid category: 'Grievance Reddessal'"
+    }
+  ],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T13:18:43.391578+00:00",
+  "multi_mapped_records": []
+}

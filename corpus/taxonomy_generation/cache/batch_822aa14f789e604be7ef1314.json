@@ -1,0 +1,98 @@
+{
+  "batch_id": "822aa14f789e604be7ef1314",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G002274",
+    "G002275",
+    "G002276",
+    "G002277",
+    "G002279",
+    "G002280",
+    "G002281",
+    "G002282"
+  ],
+  "raw_response": "[  \n  {  \n    \"category\": \"Intermediary/Platform Liability\",  \n    \"requirement\": \"The Public Information Officer must provide a written notice to the third party within five days of receiving a request for information that has been treated as confidential by the third party.\",  \n    \"source\": \"RTI Act 2005, Section 22(1)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G002276\"],  \n    \"checkable_test\": \"Verify that the document specifies a requirement to notify third parties within five days of receiving a request for confidential information.\",  \n    \"applicability\": \"Applies to any organization acting as a Public Information Officer under the RTI Act 2005.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement is specific to the RTI Act 2005 and applies to third-party information treated as confidential.\"  \n  },  \n  {  \n    \"category\": \"Intermediary/Platform Liability\",  \n    \"requirement\": \"The Public Information Officer must invite the third party to submit a written or oral representation regarding the disclosure of confidential information.\",  \n    \"source\": \"RTI Act 2005, Section 22(1)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G002277\"],  \n    \"checkable_test\": \"Verify that the document requires the third party to submit a written or oral representation regarding the disclosure of confidential information.\",  \n    \"applicability\": \"Applies to any organization acting as a Public Information Officer under the RTI Act 2005.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement is specific to the RTI Act 2005 and applies to third-party information treated as confidential.\"  \n  },  \n  {  \n    \"category\": \"Intermediary/Platform Liability\",  \n    \"requirement\": \"The Public Information Officer must provide the third party with an opportunity to make a representation against the proposed disclosure of confidential information within ten days of receiving the notice.\",  \n    \"source\": \"RTI Act 2005, Section 22(2)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G002279\"],  \n    \"checkable_test\": \"Verify that the document provides the third party with an opportunity to make a representation against the proposed disclosure of confidential information within ten days of receiving the notice.\",  \n    \"applicability\": \"Applies to any organization acting as a Public Information Officer under the RTI Act 2005.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement is specific to the RTI Act 2005 and applies to third-party information treated as confidential.\"  \n  },  \n  {  \n    \"category\": \"Intermediary/Platform Liability\",  \n    \"requirement\": \"The Public Information Officer must make a decision on the disclosure of confidential information within forty days of receiving the request, after considering the third party's representation.\",  \n    \"source\": \"RTI Act 2005, Section 22(1)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G002281\"],  \n    \"checkable_test\": \"Verify that the document requires the Public Information Officer to make a decision on the disclosure of confidential information within forty days of receiving the request, after considering the third party's representation.\",  \n    \"applicability\": \"Applies to any organization acting as a Public Information Officer under the RTI Act 2005.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement is specific to the RTI Act 2005 and applies to third-party information treated as confidential.\"  \n  },  \n  {  \n    \"category\": \"Intermediary/Platform Liability\",  \n    \"requirement\": \"The Public Information Officer must include a statement in the notice that the third party has the right to appeal the decision regarding the disclosure of confidential information.\",  \n    \"source\": \"RTI Act 2005, Section 22(4)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G002282\"],  \n    \"checkable_test\": \"Verify that the document includes a statement informing the third party of their right to appeal the decision regarding the disclosure of confidential information.\",  \n    \"applicability\": \"Applies to any organization acting as a Public Information Officer under the RTI Act 2005.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement is specific to the RTI Act 2005 and applies to third-party information treated as confidential.\"  \n  }  \n]",
+  "parsed_entries": [
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Public Information Officer must provide a written notice to the third party within five days of receiving a request for information that has been treated as confidential by the third party.",
+      "source": "RTI Act 2005, Section 22(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002276"
+      ],
+      "checkable_test": "Verify that the document specifies a requirement to notify third parties within five days of receiving a request for confidential information.",
+      "applicability": "Applies to any organization acting as a Public Information Officer under the RTI Act 2005.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is specific to the RTI Act 2005 and applies to third-party information treated as confidential.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Public Information Officer must invite the third party to submit a written or oral representation regarding the disclosure of confidential information.",
+      "source": "RTI Act 2005, Section 22(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002277"
+      ],
+      "checkable_test": "Verify that the document requires the third party to submit a written or oral representation regarding the disclosure of confidential information.",
+      "applicability": "Applies to any organization acting as a Public Information Officer under the RTI Act 2005.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is specific to the RTI Act 2005 and applies to third-party information treated as confidential.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Public Information Officer must provide the third party with an opportunity to make a representation against the proposed disclosure of confidential information within ten days of receiving the notice.",
+      "source": "RTI Act 2005, Section 22(2)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002279"
+      ],
+      "checkable_test": "Verify that the document provides the third party with an opportunity to make a representation against the proposed disclosure of confidential information within ten days of receiving the notice.",
+      "applicability": "Applies to any organization acting as a Public Information Officer under the RTI Act 2005.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is specific to the RTI Act 2005 and applies to third-party information treated as confidential.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Public Information Officer must make a decision on the disclosure of confidential information within forty days of receiving the request, after considering the third party's representation.",
+      "source": "RTI Act 2005, Section 22(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002281"
+      ],
+      "checkable_test": "Verify that the document requires the Public Information Officer to make a decision on the disclosure of confidential information within forty days of receiving the request, after considering the third party's representation.",
+      "applicability": "Applies to any organization acting as a Public Information Officer under the RTI Act 2005.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is specific to the RTI Act 2005 and applies to third-party information treated as confidential.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Public Information Officer must include a statement in the notice that the third party has the right to appeal the decision regarding the disclosure of confidential information.",
+      "source": "RTI Act 2005, Section 22(4)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002282"
+      ],
+      "checkable_test": "Verify that the document includes a statement informing the third party of their right to appeal the decision regarding the disclosure of confidential information.",
+      "applicability": "Applies to any organization acting as a Public Information Officer under the RTI Act 2005.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is specific to the RTI Act 2005 and applies to third-party information treated as confidential.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T12:49:43.245741+00:00",
+  "multi_mapped_records": []
+}

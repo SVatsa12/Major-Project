@@ -1,0 +1,53 @@
+{
+  "cache_key": "12ed1e27969531e7c007c7cd1c8b05265b344ded0cf5b05b1bf214b4be1e5087",
+  "created_at_utc": "2026-09-16T13:18:18.066921+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S001237",
+    "S001238",
+    "S001239",
+    "S001240",
+    "S001241",
+    "S001242"
+  ],
+  "labels": [
+    {
+      "clause_id": "S001237",
+      "best_match_taxonomy_id": "DPDP_RUL-0378",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses age restrictions for children but does not specifically mention data processing or consent for children's data."
+    },
+    {
+      "clause_id": "S001238",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S001239",
+      "best_match_taxonomy_id": "DPDP_ACT-0028",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses restrictions on targeting based on age but lacks specific reference to data processing purposes."
+    },
+    {
+      "clause_id": "S001240",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S001241",
+      "best_match_taxonomy_id": "DPDP_ACT-0055",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses restrictions on data transfer to sanctioned countries but lacks specific reference to data protection provisions."
+    },
+    {
+      "clause_id": "S001242",
+      "best_match_taxonomy_id": "DPDP_RUL-0076",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses clear and conspicuous disclosures but lacks specific reference to consent or data processing."
+    }
+  ],
+  "status": "SUCCESS"
+}

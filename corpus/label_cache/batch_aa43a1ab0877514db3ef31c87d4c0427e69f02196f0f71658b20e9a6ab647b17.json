@@ -1,0 +1,53 @@
+{
+  "cache_key": "aa43a1ab0877514db3ef31c87d4c0427e69f02196f0f71658b20e9a6ab647b17",
+  "created_at_utc": "2026-09-17T05:40:51.956631+00:00",
+  "prompt_version": "policy-labeling-v7-reliable-batches",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S001021",
+    "S001022",
+    "S001023",
+    "S001024",
+    "S001025",
+    "S001026"
+  ],
+  "labels": [
+    {
+      "clause_id": "S001021",
+      "best_match_taxonomy_id": "DPDP_RUL-0378",
+      "verdict": "Partially Compliant",
+      "justification": "Clause addresses age restrictions for children but lacks specific safeguards for data processing of minors."
+    },
+    {
+      "clause_id": "S001022",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "Clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S001023",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "Clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S001024",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "Clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S001025",
+      "best_match_taxonomy_id": "DPDP_RUL-0378",
+      "verdict": "Partially Compliant",
+      "justification": "Clause addresses age restrictions for children but lacks specific safeguards for data processing of minors."
+    },
+    {
+      "clause_id": "S001026",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "Clause does not meaningfully address any listed requirement."
+    }
+  ],
+  "status": "SUCCESS"
+}

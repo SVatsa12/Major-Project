@@ -1,0 +1,53 @@
+{
+  "cache_key": "fc107b3158c0cb4d840e04a43585cfa09b795369413061ea0089e9a5eefb6ac8",
+  "created_at_utc": "2026-09-17T07:34:42.560719+00:00",
+  "prompt_version": "policy-labeling-v7-reliable-batches",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S002431",
+    "S002432",
+    "S002433",
+    "S002434",
+    "S002435",
+    "S002436"
+  ],
+  "labels": [
+    {
+      "clause_id": "S002431",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses copyright laws and unauthorized content, not personal data security or related requirements."
+    },
+    {
+      "clause_id": "S002432",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses copyrighted content restrictions, not personal data security or related requirements."
+    },
+    {
+      "clause_id": "S002433",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses gambling advertising policies, not personal data security or related requirements."
+    },
+    {
+      "clause_id": "S002434",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses gambling-related content restrictions, not personal data security or related requirements."
+    },
+    {
+      "clause_id": "S002435",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses healthcare advertising regulations, not personal data security or related requirements."
+    },
+    {
+      "clause_id": "S002436",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses healthcare advertising certification, not personal data security or related requirements."
+    }
+  ],
+  "status": "SUCCESS"
+}

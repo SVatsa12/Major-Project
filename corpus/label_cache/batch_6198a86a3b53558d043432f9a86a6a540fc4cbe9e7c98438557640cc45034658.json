@@ -1,0 +1,53 @@
+{
+  "cache_key": "6198a86a3b53558d043432f9a86a6a540fc4cbe9e7c98438557640cc45034658",
+  "created_at_utc": "2026-09-16T14:58:28.948380+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S002383",
+    "S002384",
+    "S002385",
+    "S002386",
+    "S002387",
+    "S002388"
+  ],
+  "labels": [
+    {
+      "clause_id": "S002383",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "No listed requirement is meaningfully addressed by the clause."
+    },
+    {
+      "clause_id": "S002384",
+      "best_match_taxonomy_id": "DPDP_RUL-0376",
+      "verdict": "Compliant",
+      "justification": "The clause aligns with the restriction on data processing for children's safety."
+    },
+    {
+      "clause_id": "S002385",
+      "best_match_taxonomy_id": "DPDP_RUL-0376",
+      "verdict": "Compliant",
+      "justification": "The clause aligns with the restriction on data processing for children's safety."
+    },
+    {
+      "clause_id": "S002386",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "No listed requirement is meaningfully addressed by the clause."
+    },
+    {
+      "clause_id": "S002387",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "No listed requirement is meaningfully addressed by the clause."
+    },
+    {
+      "clause_id": "S002388",
+      "best_match_taxonomy_id": "DPDP_RUL-0378",
+      "verdict": "Compliant",
+      "justification": "The clause aligns with the restriction on processing children's real-time location data for safety."
+    }
+  ],
+  "status": "SUCCESS"
+}

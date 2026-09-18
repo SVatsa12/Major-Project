@@ -1,0 +1,1399 @@
+[
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Central Government may require the Board and any Data Fiduciary or intermediary to furnish information as it may call for.",
+    "source": "DPDP Act 2023, Section 36",
+    "weight": 2,
+    "source_clause_ids": [
+      "G000702"
+    ],
+    "checkable_test": "Check if the governance document includes a policy that allows the Central Government to request information from the Board, Data Fiduciaries, or intermediaries.",
+    "applicability": "Applicable to any organization that is a Data Fiduciary or intermediary.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This obligation is derived from the government's authority to request information under the DPDP Act 2023.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G000702"
+    ],
+    "candidate_id": "TC-000068",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000068",
+    "source_acts": [
+      "DPDP_ACT_2023"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "central-government duty",
+      "government-facing duty",
+      "information-furnishing duty"
+    ],
+    "policy_checkability_signal_count": 2,
+    "policy_checkability_signal_terms": [
+      "data",
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "DPDP_ACT_2023",
+    "requirement_canonical_hash": "ab9bc13a4a157b66c33d07382dd720336dc56594a1950ce0bed06006601f63a1",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Central Government may, in the interests of the general public, direct any agency of the Central Government or any intermediary to block access to information generated, transmitted, received, stored, or hosted in any computer resource, after giving an opportunity of being heard to the Data Fiduciary.",
+    "source": "DPDP Act 2023, Section 35(b)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G000705"
+    ],
+    "checkable_test": "Check if the governance document includes a policy that allows the Central Government to direct intermediaries to block access to information in the public interest.",
+    "applicability": "Applicable to any organization that is an intermediary.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This obligation is derived from the government's authority to block access to information under the DPDP Act 2023.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G000705"
+    ],
+    "candidate_id": "TC-000069",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000069",
+    "source_acts": [
+      "DPDP_ACT_2023"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "central-government duty",
+      "government-facing duty",
+      "blocking duty"
+    ],
+    "policy_checkability_signal_count": 3,
+    "policy_checkability_signal_terms": [
+      "access",
+      "data",
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "DPDP_ACT_2023",
+    "requirement_canonical_hash": "46def9f88b8890f619858cf913551bbd19d6a37ebded84148521d334a9ea331e",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Intermediaries must comply with directions issued by authorities for interception, monitoring, or decryption of information through computer resources.",
+    "source": "IT Act 2000, Section 69",
+    "weight": 2,
+    "source_clause_ids": [
+      "G001418"
+    ],
+    "checkable_test": "Check if the document states compliance with interception, monitoring, or decryption directions issued by authorities.",
+    "applicability": "Applicable to intermediaries handling electronic communications.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This requirement is tied to the legal obligation under the IT Act 2000 to comply with state-issued directions for monitoring or intercepting communications.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G001418"
+    ],
+    "candidate_id": "TC-000154",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000154",
+    "source_acts": [
+      "IT_ACT_2000"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "government-direction duty",
+      "interception/surveillance duty",
+      "monitoring duty",
+      "decryption/technical-assistance duty"
+    ],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "IT_ACT_2000",
+    "requirement_canonical_hash": "a18812ee1ee944aba06ec805ecf686bd99ac8b453836573ec18aac0bec39727f",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Intermediaries must preserve and retain information as specified by the Central Government for a defined duration and in a specified manner and format.",
+    "source": "IT Act 2000, Section 67C(1)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G001901"
+    ],
+    "checkable_test": "Check if the intermediary's policies specify the duration, manner, and format for preserving and retaining information as prescribed by the Central Government.",
+    "applicability": "Applicable to intermediaries handling electronic information.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This requirement is directly tied to the obligation under Section 67C(1) of the IT Act 2000.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G001901"
+    ],
+    "candidate_id": "TC-000167",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000167",
+    "source_acts": [
+      "IT_ACT_2000"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "central-government duty",
+      "government-facing duty"
+    ],
+    "policy_checkability_signal_count": 2,
+    "policy_checkability_signal_terms": [
+      "information",
+      "retain"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "IT_ACT_2000",
+    "requirement_canonical_hash": "9818e0fab8985b8abe7cac578c7ecd37a98d05b2d169103d263675a0770b80c6",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Intermediaries must comply with directions issued by the government to block access to information generated, transmitted, received, stored, or hosted in any computer resource.",
+    "source": "IT Act 2000, Section 69A(1)",
+    "weight": 3,
+    "source_clause_ids": [
+      "G001915"
+    ],
+    "checkable_test": "Check if the document specifies procedures for complying with government directions to block access to information.",
+    "applicability": "Applicable to intermediaries hosting information subject to government blocking orders.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This obligation is tied to the requirement to block access as per government direction.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G001915"
+    ],
+    "candidate_id": "TC-000168",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000168",
+    "source_acts": [
+      "IT_ACT_2000"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "government-direction duty",
+      "government-facing duty",
+      "blocking duty"
+    ],
+    "policy_checkability_signal_count": 2,
+    "policy_checkability_signal_terms": [
+      "access",
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "IT_ACT_2000",
+    "requirement_canonical_hash": "7c57a0284fce088c8b2e802e16299a392928d223c216325236191c70ed3436ec",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Intermediaries must provide technical assistance and facilities to authorized agencies for monitoring and collecting traffic data or information.",
+    "source": "IT Act 2000, Section 69B(2)",
+    "weight": 3,
+    "source_clause_ids": [
+      "G001918"
+    ],
+    "checkable_test": "Check if the document outlines procedures for providing technical assistance to authorized agencies for traffic data monitoring.",
+    "applicability": "Applicable to intermediaries hosting traffic data or information.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This obligation is tied to the requirement to assist authorized agencies in monitoring traffic data.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G001918"
+    ],
+    "candidate_id": "TC-000169",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000169",
+    "source_acts": [
+      "IT_ACT_2000"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "monitoring duty",
+      "traffic-data assistance duty",
+      "technical-assistance duty"
+    ],
+    "policy_checkability_signal_count": 3,
+    "policy_checkability_signal_terms": [
+      "collect",
+      "data",
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "IT_ACT_2000",
+    "requirement_canonical_hash": "f9e8050abb504b73b72d7ec236ae5b45908c947813d0763a86e961959aa8e343",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Intermediaries must follow prescribed procedures and safeguards for blocking access to information or monitoring traffic data.",
+    "source": "IT Act 2000, Section 69A(2) and 69B(3)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G001916",
+      "G001919"
+    ],
+    "checkable_test": "Check if the document specifies procedures and safeguards for blocking access or monitoring traffic data as required by law.",
+    "applicability": "Applicable to intermediaries subject to government directions on blocking or monitoring.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This obligation covers both blocking access and monitoring traffic data procedures.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G001916",
+      "G001919"
+    ],
+    "candidate_id": "TC-000170",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000170",
+    "source_acts": [
+      "IT_ACT_2000"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "monitoring duty",
+      "blocking duty",
+      "traffic-data assistance duty"
+    ],
+    "policy_checkability_signal_count": 3,
+    "policy_checkability_signal_terms": [
+      "access",
+      "data",
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "IT_ACT_2000",
+    "requirement_canonical_hash": "af1e8f683379c3b4d4612fb2bbfabad39a84266db49f5348d7218d74297864a1",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Intermediaries must comply with government authorization to access protected systems.",
+    "source": "IT Act 2000, Section 70(2)",
+    "weight": 3,
+    "source_clause_ids": [
+      "G001924"
+    ],
+    "checkable_test": "Check if the document specifies procedures for complying with government authorization to access protected systems.",
+    "applicability": "Applicable to intermediaries managing protected systems.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This obligation is tied to the requirement to comply with government authorization for accessing protected systems.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G001924"
+    ],
+    "candidate_id": "TC-000172",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000172",
+    "source_acts": [
+      "IT_ACT_2000"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "government-facing duty"
+    ],
+    "policy_checkability_signal_count": 2,
+    "policy_checkability_signal_terms": [
+      "access",
+      "protect"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "IT_ACT_2000",
+    "requirement_canonical_hash": "e3af1f070cb916a836c86441865ade14bd46afd0e32fbf1f342315afde061977",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Central Government shall appoint an agency called the Indian Computer Emergency Response Team to serve as the national agency for incident response in the area of cybersecurity.",
+    "source": "IT Act 2000, Section 70B(1)",
+    "weight": 3,
+    "source_clause_ids": [
+      "G001932"
+    ],
+    "checkable_test": "Verify if the document states that the Indian Computer Emergency Response Team is appointed as the national agency for incident response in cybersecurity.",
+    "applicability": "Applicable to entities involved in cybersecurity and incident response.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This clause outlines the appointment of the national agency for cybersecurity incident response.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G001932"
+    ],
+    "candidate_id": "TC-000177",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000177",
+    "source_acts": [
+      "IT_ACT_2000"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "central-government duty",
+      "government-facing duty"
+    ],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "security"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "IT_ACT_2000",
+    "requirement_canonical_hash": "52d7df14e9f0b4a710223d241d8083759827d2826282a2a18967f70f6f7ab85f",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Intermediaries are not liable for unlawful acts if they remove or disable access to the material upon receiving actual knowledge or notification from the appropriate government.",
+    "source": "IT Act 2000, Section 79",
+    "weight": 2,
+    "source_clause_ids": [
+      "G001976"
+    ],
+    "checkable_test": "Check if the intermediary has procedures to remove or disable access to unlawful material upon notification.",
+    "applicability": "Applies to intermediaries hosting third-party information.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This obligation is tied to the intermediary's duty to act upon notification.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G001976"
+    ],
+    "candidate_id": "TC-000182",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000182",
+    "source_acts": [
+      "IT_ACT_2000"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "government-facing duty",
+      "content-blocking duty"
+    ],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "access"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "IT_ACT_2000",
+    "requirement_canonical_hash": "328a4d68386db85ceba2849c318eb8b59dfe4d349502899981369e861cc88866",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Central Government may enter public places and search or arrest individuals suspected of committing offenses under the IT Act without a warrant.",
+    "source": "IT Act 2000, Section 82",
+    "weight": 2,
+    "source_clause_ids": [
+      "G001982"
+    ],
+    "checkable_test": "Verify if the organization has procedures for cooperating with law enforcement in public places.",
+    "applicability": "Applies to intermediaries and entities handling electronic communications.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This obligation outlines the government's authority to conduct searches and arrests in public places.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G001982"
+    ],
+    "candidate_id": "TC-000185",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000185",
+    "source_acts": [
+      "IT_ACT_2000"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing",
+      "low_policy_checkability_signal"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "central-government duty",
+      "government-facing duty"
+    ],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "IT_ACT_2000",
+    "requirement_canonical_hash": "dacb0d4f849ed9a5e9bdab12d8f03d87199c0c985662256580db9d4e58bd3af1",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Notifications made by the Central Government under Section 82 must be laid before Parliament for review and potential modification or annulment.",
+    "source": "IT Act 2000, Section 82",
+    "weight": 2,
+    "source_clause_ids": [
+      "G001986"
+    ],
+    "checkable_test": "Check if the organization has procedures for handling notifications from the Central Government under Section 82.",
+    "applicability": "Applies to intermediaries and entities handling electronic communications.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This obligation outlines the procedural requirements for notifications under the IT Act.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G001986"
+    ],
+    "candidate_id": "TC-000186",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000186",
+    "source_acts": [
+      "IT_ACT_2000"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing",
+      "low_policy_checkability_signal"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "central-government duty",
+      "government-facing duty"
+    ],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "IT_ACT_2000",
+    "requirement_canonical_hash": "6cf789978a49f6d13cc9aea541ff5b04bdfe0b970bc24e7a464c18c714276bf7",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "No legal action can be taken against the Central Government, State Government, or persons acting on their behalf for actions taken in good faith under the IT Act.",
+    "source": "IT Act 2000, Section 84",
+    "weight": 2,
+    "source_clause_ids": [
+      "G001989"
+    ],
+    "checkable_test": "Verify if the organization has procedures to ensure actions are taken in good faith under the IT Act.",
+    "applicability": "Applies to intermediaries and entities handling electronic communications.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This obligation protects entities acting in good faith under the IT Act.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G001989"
+    ],
+    "candidate_id": "TC-000187",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000187",
+    "source_acts": [
+      "IT_ACT_2000"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing",
+      "low_policy_checkability_signal"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "central-government duty",
+      "state-government duty",
+      "government-facing duty"
+    ],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "IT_ACT_2000",
+    "requirement_canonical_hash": "9e3bb2717e103b315b5d7349346ea4c95f1b5a8e551b20e84149fed911e4126c",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Central Government may prescribe modes or methods for encryption to secure the electronic medium and promote e-governance and e-commerce.",
+    "source": "IT Act 2000, Section 84A",
+    "weight": 2,
+    "source_clause_ids": [
+      "G001996"
+    ],
+    "checkable_test": "Check if the organization has procedures for encryption in accordance with government-prescribed methods.",
+    "applicability": "Applies to intermediaries and entities handling electronic communications.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This obligation outlines the government's authority to regulate encryption methods.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G001996"
+    ],
+    "candidate_id": "TC-000188",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000188",
+    "source_acts": [
+      "IT_ACT_2000"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "central-government duty",
+      "government-facing duty"
+    ],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "encryption"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "IT_ACT_2000",
+    "requirement_canonical_hash": "9fdffdfbf373aa037a49f45fcc3f0a43bd61fb2a4bee2a3ade62bc9440def1db",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Information Officer must communicate information to the requester unless disclosure would endanger the life or physical safety of any person or identify the source of information or assistance given in confidence for law enforcement or security purposes.",
+    "source": "RTI Act 2005, Section 6(2)(g)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002254"
+    ],
+    "checkable_test": "Check if the Information Officer communicates information to the requester unless disclosure would endanger the life or physical safety of any person or identify the source of information or assistance given in confidence for law enforcement or security purposes.",
+    "applicability": "Applicable to information requests under the RTI Act 2005.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This clause outlines an exception to disclosure based on safety and security concerns.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002254"
+    ],
+    "candidate_id": "TC-000216",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000216",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "law-enforcement cooperation duty"
+    ],
+    "policy_checkability_signal_count": 3,
+    "policy_checkability_signal_terms": [
+      "information",
+      "purpose",
+      "security"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "2bb89070ea5f3fc09045c02ed2f2781ebf86ed52ea9a0c197ea2cd351b0cc19c",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Authority may request the Central Government to furnish information or documents within seven days for making recommendations.",
+    "source": "TRAI_ACT_1997, SECTION=POWERS AND FUNCTIONS OF THE AUTHORITY",
+    "weight": 2,
+    "source_clause_ids": [
+      "G003245"
+    ],
+    "checkable_test": "Check if the Central Government provides requested information within seven days.",
+    "applicability": "Applicable when the Authority requests information for recommendations.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This clause outlines a time-bound obligation for the Central Government to provide information.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G003245"
+    ],
+    "candidate_id": "TC-000242",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000242",
+    "source_acts": [
+      "TRAI_ACT_1997"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "central-government duty",
+      "government-facing duty",
+      "information-furnishing duty"
+    ],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "TRAI_ACT_1997",
+    "requirement_canonical_hash": "2079e5dbef41e3b4419e650592d5fcfba8118e2f1effe20a2857f44f3f3c7a5e",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Central Government may issue a licence to a service provider if no recommendations are received from the Authority within the specified period.",
+    "source": "TRAI_ACT_1997, SECTION=POWERS AND FUNCTIONS OF THE AUTHORITY",
+    "weight": 2,
+    "source_clause_ids": [
+      "G003246"
+    ],
+    "checkable_test": "Verify if the Central Government issues a licence when no recommendations are received within the time limit.",
+    "applicability": "Applicable when the Authority fails to provide recommendations within the time limit.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This clause outlines the licensing authority of the Central Government in the absence of recommendations.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G003246"
+    ],
+    "candidate_id": "TC-000243",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000243",
+    "source_acts": [
+      "TRAI_ACT_1997"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing",
+      "low_policy_checkability_signal"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "central-government duty",
+      "government-facing duty"
+    ],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "TRAI_ACT_1997",
+    "requirement_canonical_hash": "e9d59db767ede964a798739dcfea3f12178aaf503ff275ab9bce40302629288f",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Central Government or other entities may apply to the Appellate Tribunal for dispute resolution or appeals.",
+    "source": "TRAI_ACT_1997, SECTION=Provided that nothing in this clause shall apply in respect of matters relating to",
+    "weight": 1,
+    "source_clause_ids": [
+      "G003284"
+    ],
+    "checkable_test": "Verify if the Central Government or other entities can apply to the Appellate Tribunal for dispute resolution.",
+    "applicability": "Applicable when disputes are referred to the Appellate Tribunal.",
+    "assessability": "2",
+    "citation_confidence": "high",
+    "notes": "This clause outlines the right of entities to apply to the Appellate Tribunal for dispute resolution.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G003284"
+    ],
+    "candidate_id": "TC-000249",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000249",
+    "source_acts": [
+      "TRAI_ACT_1997"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing",
+      "possible_institutional_or_administrative_content"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "central-government duty",
+      "government-facing duty"
+    ],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "use"
+    ],
+    "administrative_signal_terms": [
+      "appellate tribunal"
+    ],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "TRAI_ACT_1997",
+    "requirement_canonical_hash": "6c3134695f3e786a503e5cbd86cd07c9ffbffac483a4806c125f3195b3cb2717",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Appellate Tribunal shall consist of a Chairperson and not more than two Members to be appointed, by notification, by the Central Government.",
+    "source": "TRAI_ACT_1997, SECTION=1",
+    "weight": 2,
+    "source_clause_ids": [
+      "G003293"
+    ],
+    "checkable_test": "Check if the document specifies the composition of the Appellate Tribunal as a Chairperson and up to two Members.",
+    "applicability": "Applicable to any document that outlines the structure of the Appellate Tribunal under TRAI Act 1997.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This clause defines the composition of the Appellate Tribunal.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G003293"
+    ],
+    "candidate_id": "TC-000252",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000252",
+    "source_acts": [
+      "TRAI_ACT_1997"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing",
+      "low_policy_checkability_signal",
+      "possible_institutional_or_administrative_content"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "central-government duty",
+      "government-facing duty"
+    ],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [
+      "appellate tribunal",
+      "chairperson"
+    ],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "TRAI_ACT_1997",
+    "requirement_canonical_hash": "87ffeb4324b6f2435ff421c0a384862ddab0e1c6d03e0fd6737b9cbe3de0f7fa",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "In the case of a Member, has held the post of Secretary to the Government of India or any equivalent post in the Central Government or the State Government for a period of not less than two years or a person who is well versed in the field of technology, telecommunication, industry, commerce or administration.",
+    "source": "TRAI_ACT_1997, SECTION=1",
+    "weight": 2,
+    "source_clause_ids": [
+      "G003304"
+    ],
+    "checkable_test": "Check if the document specifies that a Member of the Appellate Tribunal must have held a relevant government post for at least two years or have expertise in technology, telecommunication, industry, commerce, or administration.",
+    "applicability": "Applicable to any document that outlines the qualifications for Appellate Tribunal Members under TRAI Act 1997.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This clause outlines the qualifications for Appellate Tribunal Members.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G003304"
+    ],
+    "candidate_id": "TC-000254",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000254",
+    "source_acts": [
+      "TRAI_ACT_1997"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing",
+      "low_policy_checkability_signal"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "central-government duty",
+      "state-government duty",
+      "government-facing duty"
+    ],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "TRAI_ACT_1997",
+    "requirement_canonical_hash": "d1a25993ba5d403e6af6e5e50a932bb7bb525c1464df2c4dfde343847315d2e5",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "If, for reason other than temporary absence, any vacancy occurs in the office of the Chairperson or a Member of the Appellate Tribunal, the Central Government shall appoint another person in accordance with the provisions of this Act to fill the vacancy and the proceedings may be continued before the Appellate Tribunal from the stage at which the vacancy is filled.",
+    "source": "TRAI_ACT_1997, SECTION=1",
+    "weight": 2,
+    "source_clause_ids": [
+      "G003310"
+    ],
+    "checkable_test": "Check if the document specifies that the Central Government must appoint a replacement for a vacancy in the Appellate Tribunal and continue proceedings from the stage of the vacancy.",
+    "applicability": "Applicable to any document that outlines the appointment process for Appellate Tribunal vacancies under TRAI Act 1997.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This clause outlines the process for filling vacancies in the Appellate Tribunal.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G003310"
+    ],
+    "candidate_id": "TC-000255",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000255",
+    "source_acts": [
+      "TRAI_ACT_1997"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing",
+      "low_policy_checkability_signal",
+      "possible_institutional_or_administrative_content"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "central-government duty",
+      "government-facing duty"
+    ],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [
+      "appellate tribunal",
+      "chairperson"
+    ],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "TRAI_ACT_1997",
+    "requirement_canonical_hash": "925893525b446cace5bca3d8c6c0f0270a693d566309e49e3eb16e352742fbc4",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Intermediaries must comply with directions issued by the Central Board under the DPDP Act 2023.",
+    "source": "DPDP Act 2023, Section 35(2)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G000706"
+    ],
+    "checkable_test": "Verify if the intermediary is required to comply with directions issued by the Central Board.",
+    "applicability": "Applicable to intermediaries under the DPDP Act 2023.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This clause mandates compliance with directions issued by the Central Board by intermediaries.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G000706"
+    ],
+    "candidate_id": "TC-000345",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000345",
+    "source_acts": [
+      "DPDP_ACT_2023"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing",
+      "low_policy_checkability_signal"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "government-direction duty"
+    ],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "DPDP_ACT_2023",
+    "requirement_canonical_hash": "1ff46b3b01fd4d606da7a53069c64c0ed8ba21294513b90a0a22293d679d5557",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "A Certifying Authority must obtain prior approval from the Central Government before being recognized under the IT Act 2000.",
+    "source": "IT Act 2000, Section Regulation of Certifying Authorities",
+    "weight": 2,
+    "source_clause_ids": [
+      "G001640"
+    ],
+    "checkable_test": "Verify if the Certifying Authority received prior approval from the Central Government for recognition.",
+    "applicability": "Applicable to Certifying Authorities recognized under the IT Act 2000.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This obligation requires Certifying Authorities to obtain prior approval from the Central Government before being recognized.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G001640"
+    ],
+    "candidate_id": "TC-000423",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000423",
+    "source_acts": [
+      "IT_ACT_2000"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing",
+      "low_policy_checkability_signal"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "central-government duty",
+      "government-facing duty"
+    ],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "IT_ACT_2000",
+    "requirement_canonical_hash": "c2168eae1ab30b3420808cd906d59a016b321da49b6c66f56d14650934bea195",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Intermediaries must file returns or furnish information within the time specified in regulations.",
+    "source": "IT Act 2000, Section 43(b)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G001798"
+    ],
+    "checkable_test": "Check if the platform has policies in place to ensure timely filing of returns or furnishing of information.",
+    "applicability": "Applicable to intermediaries required to file returns or furnish information.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This clause outlines a penalty for failure to file returns or furnish information within the specified time.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G001798"
+    ],
+    "candidate_id": "TC-000456",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000456",
+    "source_acts": [
+      "IT_ACT_2000"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "information-furnishing duty"
+    ],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "IT_ACT_2000",
+    "requirement_canonical_hash": "8cf4710dd1a825aebb4d82871cd98d7eca7970c3aa44708979b16e4c69b21dde",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Intermediaries must observe due diligence while discharging their duties under the IT Act and follow guidelines prescribed by the Central Government.",
+    "source": "IT Act 2000, Section 79(c)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G001973"
+    ],
+    "checkable_test": "Verify if the intermediary has observed due diligence and followed Central Government guidelines.",
+    "applicability": "Applies to intermediaries under the IT Act.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This obligation requires intermediaries to follow prescribed guidelines to maintain liability exemption.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G001973"
+    ],
+    "candidate_id": "TC-000471",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000471",
+    "source_acts": [
+      "IT_ACT_2000"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "central-government duty",
+      "government-facing duty"
+    ],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "guidelines"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "IT_ACT_2000",
+    "requirement_canonical_hash": "07da8423b7e40c37d4849ceb1f3c85e0cab95ece6889acdf4442c2b89e853784",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Intermediaries must consult with the Cyber Regulations Advisory Committee and obtain prior approval from the Central Government before making regulations under the IT Act 2000.",
+    "source": "IT Act 2000, Section 89(1)",
+    "weight": 3,
+    "source_clause_ids": [
+      "G002071"
+    ],
+    "checkable_test": "Verify if the intermediary has consulted with the Cyber Regulations Advisory Committee and obtained prior approval from the Central Government before making regulations.",
+    "applicability": "Applicable to intermediaries subject to the IT Act 2000.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This requirement is derived from the obligation to consult with the Cyber Regulations Advisory Committee and obtain prior approval from the Central Government.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002071"
+    ],
+    "candidate_id": "TC-000478",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000478",
+    "source_acts": [
+      "IT_ACT_2000"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing",
+      "low_policy_checkability_signal"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "central-government duty",
+      "government-facing duty"
+    ],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "IT_ACT_2000",
+    "requirement_canonical_hash": "23a7be1affc7c8a7759d53bb8b028594a7ded80b6f1eed37f6225d6a54b28361",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Public authorities must prepare annual reports on the implementation of the Right to Information Act and forward them to the appropriate government.",
+    "source": "RTI Act 2005, Section 25(1)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002433"
+    ],
+    "checkable_test": "Check if the public authority prepares and submits an annual report to the appropriate government as required by Section 25(1) of the RTI Act 2005.",
+    "applicability": "Applicable to all public authorities subject to the RTI Act 2005.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This requirement is directly tied to the obligation under Section 25(1) of the RTI Act 2005.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002433"
+    ],
+    "candidate_id": "TC-000512",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000512",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "government-facing duty"
+    ],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "ccc2a55413d9efb9baba17533494eeb510de7a63145c2176375e14ff899cf3c3",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The appropriate Government must lay before Parliament or State Legislatures the recommendations of the Commission for reform, including specific suggestions for improving or amending the RTI Act or related legislation.",
+    "source": "RTI Act 2005, Section Miscellaneous (g)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002444"
+    ],
+    "checkable_test": "The appropriate Government must submit reform recommendations to Parliament or State Legislatures.",
+    "applicability": "Appropriate Government under the RTI Act 2005",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This obligation ensures that reform recommendations are formally considered by legislative bodies.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002444"
+    ],
+    "candidate_id": "TC-000518",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000518",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing",
+      "low_policy_checkability_signal"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "government-facing duty"
+    ],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "4a8bfeca0d497b765c4c985320ec35d0b70e557b1025f6338b7284f14bc00625",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The appropriate Government must develop and organize educational programs to advance public understanding of the rights under the RTI Act, particularly for disadvantaged communities.",
+    "source": "RTI Act 2005, Section Miscellaneous (a)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002447"
+    ],
+    "checkable_test": "The appropriate Government must publish details of educational programs aimed at improving public understanding of RTI rights.",
+    "applicability": "Appropriate Government under the RTI Act 2005",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This obligation supports the dissemination of information to ensure effective use of RTI rights.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002447"
+    ],
+    "candidate_id": "TC-000519",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000519",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "government-facing duty"
+    ],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "rights"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "56e52cac1d61971f961e19b3f2f8c5c5d8229d16d9707ffed9daedf51a126b44",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The appropriate Government must compile a guide in its official language, within eighteen months of the Act's commencement, to help individuals exercise their rights under the RTI Act in an easily comprehensible manner.",
+    "source": "RTI Act 2005, Section Miscellaneous (2)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G002451"
+    ],
+    "checkable_test": "The appropriate Government must publish a user-friendly guide to the RTI Act in its official language within 18 months of the Act's commencement.",
+    "applicability": "Appropriate Government under the RTI Act 2005",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This obligation ensures that the public has access to clear and accessible information about their rights under the RTI Act.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G002451"
+    ],
+    "candidate_id": "TC-000520",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000520",
+    "source_acts": [
+      "RTI_ACT_2005"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "government-facing duty"
+    ],
+    "policy_checkability_signal_count": 2,
+    "policy_checkability_signal_terms": [
+      "rights",
+      "use"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "RTI_ACT_2005",
+    "requirement_canonical_hash": "4acd8c8bccf2b22651b6784ea29e50db5433b8f7d500f3666a7d37ff559538cb",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  }
+]

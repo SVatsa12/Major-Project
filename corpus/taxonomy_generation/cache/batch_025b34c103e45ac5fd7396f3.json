@@ -1,0 +1,128 @@
+{
+  "batch_id": "025b34c103e45ac5fd7396f3",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G000547",
+    "G000553",
+    "G000554",
+    "G000555",
+    "G000562",
+    "G000564",
+    "G000565",
+    "G000566"
+  ],
+  "raw_response": "[\n  {\n    \"category\": \"Data Principal Rights\",\n    \"requirement\": \"Data Principal must ensure not to impersonate another person while providing her personal data for a specified purpose.\",\n    \"source\": \"DPDP Act 2023, Section 15(15)(b)\",\n    \"weight\": 2,\n    \"source_clause_ids\": [\"G000565\"],\n    \"checkable_test\": \"Verify if the document explicitly states that Data Principals must not impersonate others when providing personal data for a specified purpose.\",\n    \"applicability\": \"Applies to all Data Principals under the DPDP Act 2023.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Data Principal Rights\",\n    \"requirement\": \"Data Principal must ensure not to suppress any material information while providing her personal data for any document, unique identifier, proof of identity or proof of address issued by the State or any of its instrumentalities.\",\n    \"source\": \"DPDP Act 2023, Section 15(15)(c)\",\n    \"weight\": 2,\n    \"source_clause_ids\": [\"G000566\"],\n    \"checkable_test\": \"Verify if the document explicitly states that Data Principals must not suppress material information when providing personal data for official documents or identifiers.\",\n    \"applicability\": \"Applies to all Data Principals under the DPDP Act 2023.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Data Principal Rights\",\n    \"requirement\": \"Data Principal must comply with the provisions of all applicable laws for the time being in force while exercising rights under the provisions of this Act.\",\n    \"source\": \"DPDP Act 2023, Section 15(15)(a)\",\n    \"weight\": 2,\n    \"source_clause_ids\": [\"G000564\"],\n    \"checkable_test\": \"Verify if the document explicitly states that Data Principals must comply with all applicable laws while exercising their rights under the DPDP Act 2023.\",\n    \"applicability\": \"Applies to all Data Principals under the DPDP Act 2023.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Data Retention & Erasure\",\n    \"requirement\": \"Data Fiduciary must exercise the rights of the Data Principal in accordance with the provisions of this Act and the rules made thereunder upon receipt of a request for erasure of personal data.\",\n    \"source\": \"DPDP Act 2023, Section 10\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G000562\"],\n    \"checkable_test\": \"Verify if the document explicitly states that the Data Fiduciary must exercise the Data Principal's rights in accordance with the DPDP Act and its rules upon a request for erasure.\",\n    \"applicability\": \"Applies to all Data Fiduciaries under the DPDP Act 2023.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Security Safeguards\",\n    \"requirement\": \"Data Fiduciary must correct the inaccurate or misleading personal data.\",\n    \"source\": \"DPDP Act 2023, Section 10\",\n    \"weight\": 2,\n    \"source_clause_ids\": [\"G000553\"],\n    \"checkable_test\": \"Verify if the document explicitly states that the Data Fiduciary must correct inaccurate or misleading personal data.\",\n    \"applicability\": \"Applies to all Data Fiduciaries under the DPDP Act 2023.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Security Safeguards\",\n    \"requirement\": \"Data Fiduciary must complete the incomplete personal data.\",\n    \"source\": \"DPDP Act 2023, Section 10\",\n    \"weight\": 2,\n    \"source_clause_ids\": [\"G000554\"],\n    \"checkable_test\": \"Verify if the document explicitly states that the Data Fiduciary must complete incomplete personal data.\",\n    \"applicability\": \"Applies to all Data Fiduciaries under the DPDP Act 2023.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Security Safeguards\",\n    \"requirement\": \"Data Fiduciary must update the personal data.\",\n    \"source\": \"DPDP Act 2023, Section 10\",\n    \"weight\": 2,\n    \"source_clause_ids\": [\"G000555\"],\n    \"checkable_test\": \"Verify if the document explicitly states that the Data Fiduciary must update personal data.\",\n    \"applicability\": \"Applies to all Data Fiduciaries under the DPDP Act 2023.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  }\n]",
+  "parsed_entries": [
+    {
+      "category": "Data Principal Rights",
+      "requirement": "Data Principal must ensure not to impersonate another person while providing her personal data for a specified purpose.",
+      "source": "DPDP Act 2023, Section 15(15)(b)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000565"
+      ],
+      "checkable_test": "Verify if the document explicitly states that Data Principals must not impersonate others when providing personal data for a specified purpose.",
+      "applicability": "Applies to all Data Principals under the DPDP Act 2023.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Principal Rights",
+      "requirement": "Data Principal must ensure not to suppress any material information while providing her personal data for any document, unique identifier, proof of identity or proof of address issued by the State or any of its instrumentalities.",
+      "source": "DPDP Act 2023, Section 15(15)(c)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000566"
+      ],
+      "checkable_test": "Verify if the document explicitly states that Data Principals must not suppress material information when providing personal data for official documents or identifiers.",
+      "applicability": "Applies to all Data Principals under the DPDP Act 2023.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Principal Rights",
+      "requirement": "Data Principal must comply with the provisions of all applicable laws for the time being in force while exercising rights under the provisions of this Act.",
+      "source": "DPDP Act 2023, Section 15(15)(a)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000564"
+      ],
+      "checkable_test": "Verify if the document explicitly states that Data Principals must comply with all applicable laws while exercising their rights under the DPDP Act 2023.",
+      "applicability": "Applies to all Data Principals under the DPDP Act 2023.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "Data Fiduciary must exercise the rights of the Data Principal in accordance with the provisions of this Act and the rules made thereunder upon receipt of a request for erasure of personal data.",
+      "source": "DPDP Act 2023, Section 10",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000562"
+      ],
+      "checkable_test": "Verify if the document explicitly states that the Data Fiduciary must exercise the Data Principal's rights in accordance with the DPDP Act and its rules upon a request for erasure.",
+      "applicability": "Applies to all Data Fiduciaries under the DPDP Act 2023.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Data Fiduciary must correct the inaccurate or misleading personal data.",
+      "source": "DPDP Act 2023, Section 10",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000553"
+      ],
+      "checkable_test": "Verify if the document explicitly states that the Data Fiduciary must correct inaccurate or misleading personal data.",
+      "applicability": "Applies to all Data Fiduciaries under the DPDP Act 2023.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Data Fiduciary must complete the incomplete personal data.",
+      "source": "DPDP Act 2023, Section 10",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000554"
+      ],
+      "checkable_test": "Verify if the document explicitly states that the Data Fiduciary must complete incomplete personal data.",
+      "applicability": "Applies to all Data Fiduciaries under the DPDP Act 2023.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Data Fiduciary must update the personal data.",
+      "source": "DPDP Act 2023, Section 10",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000555"
+      ],
+      "checkable_test": "Verify if the document explicitly states that the Data Fiduciary must update personal data.",
+      "applicability": "Applies to all Data Fiduciaries under the DPDP Act 2023.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T13:44:12.046043+00:00",
+  "multi_mapped_records": []
+}

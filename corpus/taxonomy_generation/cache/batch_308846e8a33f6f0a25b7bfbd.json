@@ -1,0 +1,113 @@
+{
+  "batch_id": "308846e8a33f6f0a25b7bfbd",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G003368",
+    "G003369",
+    "G003370",
+    "G003372",
+    "G003374",
+    "G003375",
+    "G003376",
+    "G003377"
+  ],
+  "raw_response": "[{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Authority must maintain proper accounts and other relevant records and prepare an annual statement of accounts in the form prescribed by the Central Government.\",\"source\":\"TRAI_ACT_1997, SECTION=FINANCE, ACCOUNTS AND AUDIT\",\"weight\":3,\"source_clause_ids\":[\"G003368\"],\"checkable_test\":\"Check if the Authority maintains proper accounts and prepares annual statements in the prescribed form.\",\"applicability\":\"Applicable to the Authority under the TRAI Act 1997.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation is directly tied to record-keeping and financial reporting requirements.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Authority must submit its accounts and audit report to the Central Government annually.\",\"source\":\"TRAI_ACT_1997, SECTION=FINANCE, ACCOUNTS AND AUDIT\",\"weight\":3,\"source_clause_ids\":[\"G003374\"],\"checkable_test\":\"Verify that the Authority submits its certified accounts and audit report to the Central Government annually.\",\"applicability\":\"Applicable to the Authority under the TRAI Act 1997.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation mandates the submission of financial records to the Central Government.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Authority must prepare an annual report summarizing its activities and forward copies to the Central Government.\",\"source\":\"TRAI_ACT_1997, SECTION=FINANCE, ACCOUNTS AND AUDIT\",\"weight\":3,\"source_clause_ids\":[\"G003376\"],\"checkable_test\":\"Check if the Authority prepares and forwards an annual activity report to the Central Government.\",\"applicability\":\"Applicable to the Authority under the TRAI Act 1997.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation requires the preparation and submission of an annual activity report.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Authority must furnish returns and statements to the Central Government as required.\",\"source\":\"TRAI_ACT_1997, SECTION=FINANCE, ACCOUNTS AND AUDIT\",\"weight\":3,\"source_clause_ids\":[\"G003375\"],\"checkable_test\":\"Verify that the Authority provides returns and statements to the Central Government as directed.\",\"applicability\":\"Applicable to the Authority under the TRAI Act 1997.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation mandates the submission of returns and statements to the Central Government.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Authority must allow the Comptroller and Auditor-General of India to audit its accounts at specified intervals.\",\"source\":\"TRAI_ACT_1997, SECTION=FINANCE, ACCOUNTS AND AUDIT\",\"weight\":3,\"source_clause_ids\":[\"G003369\"],\"checkable_test\":\"Check if the Authority allows the Comptroller and Auditor-General of India to audit its accounts at specified intervals.\",\"applicability\":\"Applicable to the Authority under the TRAI Act 1997.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation requires the Authority to permit audits by the Comptroller and Auditor-General of India.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Authority must ensure that the Comptroller and Auditor-General of India has the rights and privileges to conduct audits.\",\"source\":\"TRAI_ACT_1997, SECTION=FINANCE, ACCOUNTS AND AUDIT\",\"weight\":3,\"source_clause_ids\":[\"G003372\"],\"checkable_test\":\"Verify that the Comptroller and Auditor-General of India has the necessary rights and privileges to conduct audits.\",\"applicability\":\"Applicable to the Authority under the TRAI Act 1997.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation ensures that the auditor has the authority to conduct audits.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Authority must maintain proper accounts and other relevant records and prepare an annual statement of accounts in the form prescribed by the Central Government.",
+      "source": "TRAI_ACT_1997, SECTION=FINANCE, ACCOUNTS AND AUDIT",
+      "weight": 3,
+      "source_clause_ids": [
+        "G003368"
+      ],
+      "checkable_test": "Check if the Authority maintains proper accounts and prepares annual statements in the prescribed form.",
+      "applicability": "Applicable to the Authority under the TRAI Act 1997.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to record-keeping and financial reporting requirements.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Authority must submit its accounts and audit report to the Central Government annually.",
+      "source": "TRAI_ACT_1997, SECTION=FINANCE, ACCOUNTS AND AUDIT",
+      "weight": 3,
+      "source_clause_ids": [
+        "G003374"
+      ],
+      "checkable_test": "Verify that the Authority submits its certified accounts and audit report to the Central Government annually.",
+      "applicability": "Applicable to the Authority under the TRAI Act 1997.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation mandates the submission of financial records to the Central Government.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Authority must prepare an annual report summarizing its activities and forward copies to the Central Government.",
+      "source": "TRAI_ACT_1997, SECTION=FINANCE, ACCOUNTS AND AUDIT",
+      "weight": 3,
+      "source_clause_ids": [
+        "G003376"
+      ],
+      "checkable_test": "Check if the Authority prepares and forwards an annual activity report to the Central Government.",
+      "applicability": "Applicable to the Authority under the TRAI Act 1997.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation requires the preparation and submission of an annual activity report.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Authority must furnish returns and statements to the Central Government as required.",
+      "source": "TRAI_ACT_1997, SECTION=FINANCE, ACCOUNTS AND AUDIT",
+      "weight": 3,
+      "source_clause_ids": [
+        "G003375"
+      ],
+      "checkable_test": "Verify that the Authority provides returns and statements to the Central Government as directed.",
+      "applicability": "Applicable to the Authority under the TRAI Act 1997.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation mandates the submission of returns and statements to the Central Government.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Authority must allow the Comptroller and Auditor-General of India to audit its accounts at specified intervals.",
+      "source": "TRAI_ACT_1997, SECTION=FINANCE, ACCOUNTS AND AUDIT",
+      "weight": 3,
+      "source_clause_ids": [
+        "G003369"
+      ],
+      "checkable_test": "Check if the Authority allows the Comptroller and Auditor-General of India to audit its accounts at specified intervals.",
+      "applicability": "Applicable to the Authority under the TRAI Act 1997.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation requires the Authority to permit audits by the Comptroller and Auditor-General of India.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Authority must ensure that the Comptroller and Auditor-General of India has the rights and privileges to conduct audits.",
+      "source": "TRAI_ACT_1997, SECTION=FINANCE, ACCOUNTS AND AUDIT",
+      "weight": 3,
+      "source_clause_ids": [
+        "G003372"
+      ],
+      "checkable_test": "Verify that the Comptroller and Auditor-General of India has the necessary rights and privileges to conduct audits.",
+      "applicability": "Applicable to the Authority under the TRAI Act 1997.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation ensures that the auditor has the authority to conduct audits.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T13:20:18.408363+00:00",
+  "multi_mapped_records": []
+}

@@ -1,0 +1,53 @@
+{
+  "cache_key": "f3f355f2bb1f59fdd209a96ef6b9d984e81c980b5117f0c92297c8b55db022fb",
+  "created_at_utc": "2026-09-16T12:35:49.569109+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S000727",
+    "S000728",
+    "S000729",
+    "S000730",
+    "S000731",
+    "S000732"
+  ],
+  "labels": [
+    {
+      "clause_id": "S000727",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S000728",
+      "best_match_taxonomy_id": "DPDP_RUL-0099",
+      "verdict": "Compliant",
+      "justification": "The clause aligns with data retention requirements by specifying data must be retained only for necessary purposes."
+    },
+    {
+      "clause_id": "S000729",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S000730",
+      "best_match_taxonomy_id": "DPDP_ACT-0010",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses consent notice but lacks clarity on the purpose of processing."
+    },
+    {
+      "clause_id": "S000731",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S000732",
+      "best_match_taxonomy_id": "DPDP_ACT-0057",
+      "verdict": "Partially Compliant",
+      "justification": "The clause touches on data usage but lacks specific compliance details with the DPDP Act."
+    }
+  ],
+  "status": "SUCCESS"
+}

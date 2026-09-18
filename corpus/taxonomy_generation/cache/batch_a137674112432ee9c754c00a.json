@@ -1,0 +1,128 @@
+{
+  "batch_id": "a137674112432ee9c754c00a",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001861",
+    "G001863",
+    "G001864",
+    "G001876",
+    "G001880",
+    "G001884",
+    "G001887",
+    "G001891"
+  ],
+  "raw_response": "[{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Intermediaries must not take any action against users for contraventions that have been compounded under Section 66 of the IT Act 2000.\",\"source\":\"IT Act 2000, Section 66(3)\",\"weight\":2,\"source_clause_ids\":[\"G001863\"],\"checkable_test\":\"Verify if the platform has a policy that prohibits taking further action against users whose contraventions have been compounded.\",\"applicability\":\"Applicable to intermediaries subject to the IT Act 2000.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is tied to the legal provision that prohibits further proceedings after compounding.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Penalties imposed under the IT Act 2000 must be recoverable as an arrear of land revenue, and the licence or electronic signature certificate must be suspended until the penalty is paid.\",\"source\":\"IT Act 2000, Section 64\",\"weight\":3,\"source_clause_ids\":[\"G001864\"],\"checkable_test\":\"Check if the platform's policies state that penalties are recoverable as land revenue and that licences are suspended until penalties are paid.\",\"applicability\":\"Applicable to data fiduciaries subject to the IT Act 2000.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation ensures that penalties are enforceable and that licences are suspended until penalties are settled.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Intermediaries must not transmit information that is grossly offensive or has a menacing character.\",\"source\":\"IT Act 2000, Section 67(a)\",\"weight\":2,\"source_clause_ids\":[\"G001876\"],\"checkable_test\":\"Verify if the platform's policies prohibit the transmission of grossly offensive or menacing information.\",\"applicability\":\"Applicable to intermediaries subject to the IT Act 2000.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is tied to the legal provision that prohibits the transmission of offensive or menacing content.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Intermediaries must define and enforce the meaning of 'transmit' as electronically sending a visual image with the intent that it be viewed by a person or persons.\",\"source\":\"IT Act 2000, Section 67(a)\",\"weight\":2,\"source_clause_ids\":[\"G001880\"],\"checkable_test\":\"Check if the platform's policies clearly define 'transmit' as electronically sending a visual image with the intent to be viewed.\",\"applicability\":\"Applicable to intermediaries subject to the IT Act 2000.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation ensures that the term 'transmit' is interpreted in line with the legal definition.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Intermediaries must not enforce Section 66A of the IT Act 2000, as it has been struck down by the Supreme Court.\",\"source\":\"IT Act 2000, Section 66A\",\"weight\":2,\"source_clause_ids\":[\"G001884\"],\"checkable_test\":\"Verify if the platform's policies explicitly state that they do not enforce Section 66A of the IT Act 2000.\",\"applicability\":\"Applicable to intermediaries subject to the IT Act 2000.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is tied to the legal invalidation of Section 66A by the Supreme Court.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Intermediaries must not allow the dissemination of content that involves the unauthorized capture or exposure of private areas, regardless of the context.\",\"source\":\"IT Act 2000, Section 66F\",\"weight\":2,\"source_clause_ids\":[\"G001887\"],\"checkable_test\":\"Check if the platform's policies prohibit the dissemination of content involving the unauthorized capture or exposure of private areas.\",\"applicability\":\"Applicable to intermediaries subject to the IT Act 2000.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is tied to the legal provision that criminalizes the dissemination of such content.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Intermediaries must ensure that individuals who commit or conspire to commit cyber terrorism are punishable with imprisonment which may extend to life imprisonment.\",\"source\":\"IT Act 2000, Section 66F(2)\",\"weight\":3,\"source_clause_ids\":[\"G001891\"],\"checkable_test\":\"Verify if the platform's policies state that they will enforce the legal consequences for cyber terrorism, including life imprisonment.\",\"applicability\":\"Applicable to intermediaries subject to the IT Act 2000.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is tied to the legal provision that mandates severe penalties for cyber terrorism.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Intermediaries must not take any action against users for contraventions that have been compounded under Section 66 of the IT Act 2000.",
+      "source": "IT Act 2000, Section 66(3)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001863"
+      ],
+      "checkable_test": "Verify if the platform has a policy that prohibits taking further action against users whose contraventions have been compounded.",
+      "applicability": "Applicable to intermediaries subject to the IT Act 2000.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is tied to the legal provision that prohibits further proceedings after compounding.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Penalties imposed under the IT Act 2000 must be recoverable as an arrear of land revenue, and the licence or electronic signature certificate must be suspended until the penalty is paid.",
+      "source": "IT Act 2000, Section 64",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001864"
+      ],
+      "checkable_test": "Check if the platform's policies state that penalties are recoverable as land revenue and that licences are suspended until penalties are paid.",
+      "applicability": "Applicable to data fiduciaries subject to the IT Act 2000.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation ensures that penalties are enforceable and that licences are suspended until penalties are settled.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Intermediaries must not transmit information that is grossly offensive or has a menacing character.",
+      "source": "IT Act 2000, Section 67(a)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001876"
+      ],
+      "checkable_test": "Verify if the platform's policies prohibit the transmission of grossly offensive or menacing information.",
+      "applicability": "Applicable to intermediaries subject to the IT Act 2000.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is tied to the legal provision that prohibits the transmission of offensive or menacing content.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Intermediaries must define and enforce the meaning of 'transmit' as electronically sending a visual image with the intent that it be viewed by a person or persons.",
+      "source": "IT Act 2000, Section 67(a)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001880"
+      ],
+      "checkable_test": "Check if the platform's policies clearly define 'transmit' as electronically sending a visual image with the intent to be viewed.",
+      "applicability": "Applicable to intermediaries subject to the IT Act 2000.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation ensures that the term 'transmit' is interpreted in line with the legal definition.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Intermediaries must not enforce Section 66A of the IT Act 2000, as it has been struck down by the Supreme Court.",
+      "source": "IT Act 2000, Section 66A",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001884"
+      ],
+      "checkable_test": "Verify if the platform's policies explicitly state that they do not enforce Section 66A of the IT Act 2000.",
+      "applicability": "Applicable to intermediaries subject to the IT Act 2000.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is tied to the legal invalidation of Section 66A by the Supreme Court.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Intermediaries must not allow the dissemination of content that involves the unauthorized capture or exposure of private areas, regardless of the context.",
+      "source": "IT Act 2000, Section 66F",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001887"
+      ],
+      "checkable_test": "Check if the platform's policies prohibit the dissemination of content involving the unauthorized capture or exposure of private areas.",
+      "applicability": "Applicable to intermediaries subject to the IT Act 2000.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is tied to the legal provision that criminalizes the dissemination of such content.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Intermediaries must ensure that individuals who commit or conspire to commit cyber terrorism are punishable with imprisonment which may extend to life imprisonment.",
+      "source": "IT Act 2000, Section 66F(2)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001891"
+      ],
+      "checkable_test": "Verify if the platform's policies state that they will enforce the legal consequences for cyber terrorism, including life imprisonment.",
+      "applicability": "Applicable to intermediaries subject to the IT Act 2000.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is tied to the legal provision that mandates severe penalties for cyber terrorism.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T15:54:43.773587+00:00",
+  "multi_mapped_records": []
+}

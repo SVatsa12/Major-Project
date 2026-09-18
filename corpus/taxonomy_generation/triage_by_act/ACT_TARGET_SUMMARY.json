@@ -1,0 +1,62 @@
+[
+  {
+    "act": "AERA_ACT_2008",
+    "count": 20,
+    "target_min": 0,
+    "target_max": 1,
+    "target_status": "ABOVE_TARGET",
+    "rationale": "Airport tariff regulation; likely little or no user-policy-checkable content.",
+    "government_facing_count": 0,
+    "policy_checkability_review_count": 18
+  },
+  {
+    "act": "DPDP_ACT_2023",
+    "count": 177,
+    "target_min": 15,
+    "target_max": 20,
+    "target_status": "ABOVE_TARGET",
+    "rationale": "Primary substantive law; should provide the majority of the final taxonomy.",
+    "government_facing_count": 3,
+    "policy_checkability_review_count": 20
+  },
+  {
+    "act": "DPDP_RULES_2025",
+    "count": 128,
+    "target_min": 10,
+    "target_max": 15,
+    "target_status": "ABOVE_TARGET",
+    "rationale": "Operational detail; should provide the second-largest substantive contribution.",
+    "government_facing_count": 0,
+    "policy_checkability_review_count": 1
+  },
+  {
+    "act": "IT_ACT_2000",
+    "count": 199,
+    "target_min": 2,
+    "target_max": 3,
+    "target_status": "ABOVE_TARGET",
+    "rationale": "Retain only genuinely policy-checkable confidentiality/security provisions; exclude surveillance/blocking content.",
+    "government_facing_count": 16,
+    "policy_checkability_review_count": 83
+  },
+  {
+    "act": "RTI_ACT_2005",
+    "count": 88,
+    "target_min": 0,
+    "target_max": 1,
+    "target_status": "ABOVE_TARGET",
+    "rationale": "Government transparency framework; likely reviewed and not applicable to private social-media policy unless a specific checkable connection is established.",
+    "government_facing_count": 5,
+    "policy_checkability_review_count": 8
+  },
+  {
+    "act": "TRAI_ACT_1997",
+    "count": 21,
+    "target_min": 0,
+    "target_max": 1,
+    "target_status": "ABOVE_TARGET",
+    "rationale": "Institutional telecom regulation; likely little or no user-policy-checkable content.",
+    "government_facing_count": 6,
+    "policy_checkability_review_count": 7
+  }
+]

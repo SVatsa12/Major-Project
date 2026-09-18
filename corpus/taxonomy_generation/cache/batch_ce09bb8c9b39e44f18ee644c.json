@@ -1,0 +1,113 @@
+{
+  "batch_id": "ce09bb8c9b39e44f18ee644c",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G002194",
+    "G002195",
+    "G002197",
+    "G002198",
+    "G002199",
+    "G002200",
+    "G002201",
+    "G002202"
+  ],
+  "raw_response": "[{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Public authorities must maintain a directory of their officers and employees.\",\"source\":\"RTI Act 2005, Section 8(9)(ix)\",\"weight\":2,\"source_clause_ids\":[\"G002197\"],\"checkable_test\":\"Verify the existence of a publicly accessible directory listing all officers and employees.\",\"applicability\":\"Applicable to all public authorities subject to the RTI Act 2005.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is directly tied to the obligation to disclose information about their personnel.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Public authorities must disclose the monthly remuneration of their officers and employees.\",\"source\":\"RTI Act 2005, Section 8(9)(x)\",\"weight\":2,\"source_clause_ids\":[\"G002198\"],\"checkable_test\":\"Verify the publication of detailed salary information for all officers and employees.\",\"applicability\":\"Applicable to all public authorities subject to the RTI Act 2005.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement mandates transparency in financial disclosures related to personnel.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Public authorities must disclose the budget allocated to each agency, including planned expenditures and disbursements.\",\"source\":\"RTI Act 2005, Section 8(9)(xi)\",\"weight\":2,\"source_clause_ids\":[\"G002199\"],\"checkable_test\":\"Verify the publication of detailed budget information for each agency, including planned and actual expenditures.\",\"applicability\":\"Applicable to all public authorities subject to the RTI Act 2005.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures transparency in financial planning and execution.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Public authorities must disclose the manner of execution of subsidy programmes, including beneficiaries and amounts allocated.\",\"source\":\"RTI Act 2005, Section 8(9)(xii)\",\"weight\":2,\"source_clause_ids\":[\"G002200\"],\"checkable_test\":\"Verify the publication of detailed information on subsidy programmes, including beneficiaries and allocated amounts.\",\"applicability\":\"Applicable to all public authorities subject to the RTI Act 2005.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures transparency in the implementation of subsidy programmes.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Public authorities must disclose details of information held in electronic form.\",\"source\":\"RTI Act 2005, Section 8(9)(xiv)\",\"weight\":2,\"source_clause_ids\":[\"G002201\"],\"checkable_test\":\"Verify the publication of information on the availability and nature of electronic records held by the authority.\",\"applicability\":\"Applicable to all public authorities subject to the RTI Act 2005.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures transparency in the management of electronic records.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Public authorities must disclose the particulars of facilities available to citizens for obtaining information.\",\"source\":\"RTI Act 2005, Section 8(9)(xv)\",\"weight\":2,\"source_clause_ids\":[\"G002202\"],\"checkable_test\":\"Verify the publication of details on facilities available to citizens for accessing information, including working hours of public libraries or reading rooms.\",\"applicability\":\"Applicable to all public authorities subject to the RTI Act 2005.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures transparency in the availability of public information access facilities.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Public authorities must maintain a directory of their officers and employees.",
+      "source": "RTI Act 2005, Section 8(9)(ix)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002197"
+      ],
+      "checkable_test": "Verify the existence of a publicly accessible directory listing all officers and employees.",
+      "applicability": "Applicable to all public authorities subject to the RTI Act 2005.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation to disclose information about their personnel.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Public authorities must disclose the monthly remuneration of their officers and employees.",
+      "source": "RTI Act 2005, Section 8(9)(x)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002198"
+      ],
+      "checkable_test": "Verify the publication of detailed salary information for all officers and employees.",
+      "applicability": "Applicable to all public authorities subject to the RTI Act 2005.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement mandates transparency in financial disclosures related to personnel.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Public authorities must disclose the budget allocated to each agency, including planned expenditures and disbursements.",
+      "source": "RTI Act 2005, Section 8(9)(xi)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002199"
+      ],
+      "checkable_test": "Verify the publication of detailed budget information for each agency, including planned and actual expenditures.",
+      "applicability": "Applicable to all public authorities subject to the RTI Act 2005.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures transparency in financial planning and execution.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Public authorities must disclose the manner of execution of subsidy programmes, including beneficiaries and amounts allocated.",
+      "source": "RTI Act 2005, Section 8(9)(xii)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002200"
+      ],
+      "checkable_test": "Verify the publication of detailed information on subsidy programmes, including beneficiaries and allocated amounts.",
+      "applicability": "Applicable to all public authorities subject to the RTI Act 2005.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures transparency in the implementation of subsidy programmes.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Public authorities must disclose details of information held in electronic form.",
+      "source": "RTI Act 2005, Section 8(9)(xiv)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002201"
+      ],
+      "checkable_test": "Verify the publication of information on the availability and nature of electronic records held by the authority.",
+      "applicability": "Applicable to all public authorities subject to the RTI Act 2005.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures transparency in the management of electronic records.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Public authorities must disclose the particulars of facilities available to citizens for obtaining information.",
+      "source": "RTI Act 2005, Section 8(9)(xv)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002202"
+      ],
+      "checkable_test": "Verify the publication of details on facilities available to citizens for accessing information, including working hours of public libraries or reading rooms.",
+      "applicability": "Applicable to all public authorities subject to the RTI Act 2005.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures transparency in the availability of public information access facilities.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T15:22:59.828341+00:00",
+  "multi_mapped_records": []
+}

@@ -1,0 +1,53 @@
+{
+  "cache_key": "320fb672e0b9943ec67510c1768aae844c0c2383a4113bcf7c4541665e39b1dc",
+  "created_at_utc": "2026-09-17T06:53:29.434288+00:00",
+  "prompt_version": "policy-labeling-v7-reliable-batches",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S001915",
+    "S001916",
+    "S001917",
+    "S001918",
+    "S001919",
+    "S001920"
+  ],
+  "labels": [
+    {
+      "clause_id": "S001915",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses prohibited behaviors but does not meaningfully address any listed data protection requirement."
+    },
+    {
+      "clause_id": "S001916",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses prohibited behaviors but does not meaningfully address any listed data protection requirement."
+    },
+    {
+      "clause_id": "S001917",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses prohibited behaviors but does not meaningfully address any listed data protection requirement."
+    },
+    {
+      "clause_id": "S001918",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses content moderation but does not meaningfully address any listed data protection requirement."
+    },
+    {
+      "clause_id": "S001919",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses account management and enforcement but does not meaningfully address any listed data protection requirement."
+    },
+    {
+      "clause_id": "S001920",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses complaint handling but does not meaningfully address any listed data protection requirement."
+    }
+  ],
+  "status": "SUCCESS"
+}

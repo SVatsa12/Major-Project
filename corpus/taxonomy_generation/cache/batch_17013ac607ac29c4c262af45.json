@@ -1,0 +1,141 @@
+{
+  "batch_id": "17013ac607ac29c4c262af45",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001633",
+    "G001639",
+    "G001640",
+    "G001641",
+    "G001642",
+    "G001646",
+    "G001647",
+    "G001648"
+  ],
+  "raw_response": "[{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"A Certifying Authority must comply with conditions and restrictions specified by regulations to maintain recognition under the IT Act 2000.\",\"source\":\"IT Act 2000, Section Regulation of Certifying Authorities\",\"weight\":2,\"source_clause_ids\":[\"G001642\"],\"checkable_test\":\"Verify if the Certifying Authority is subject to conditions and restrictions specified by regulations.\",\"applicability\":\"Applicable to Certifying Authorities recognized under the IT Act 2000.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation relates to the conditions and restrictions that must be followed by recognized Certifying Authorities.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"A Certifying Authority must maintain compliance with the conditions and restrictions to avoid revocation of recognition.\",\"source\":\"IT Act 2000, Section Regulation of Certifying Authorities\",\"weight\":2,\"source_clause_ids\":[\"G001642\"],\"checkable_test\":\"Verify if the Certifying Authority has been revoked for non-compliance with conditions and restrictions.\",\"applicability\":\"Applicable to Certifying Authorities recognized under the IT Act 2000.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation ensures that Certifying Authorities remain compliant with the conditions and restrictions for their recognition.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"A Certifying Authority must obtain prior approval from the Central Government before being recognized under the IT Act 2000.\",\"source\":\"IT Act 2000, Section Regulation of Certifying Authorities\",\"weight\":2,\"source_clause_ids\":[\"G001640\"],\"checkable_test\":\"Verify if the Certifying Authority received prior approval from the Central Government for recognition.\",\"applicability\":\"Applicable to Certifying Authorities recognized under the IT Act 2000.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation requires Certifying Authorities to obtain prior approval from the Central Government before being recognized.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"A Certifying Authority must issue valid electronic signature certificates that are recognized under the IT Act 2000.\",\"source\":\"IT Act 2000, Section Regulation of Certifying Authorities\",\"weight\":2,\"source_clause_ids\":[\"G001641\"],\"checkable_test\":\"Verify if the electronic signature certificate issued by the Certifying Authority is valid under the IT Act 2000.\",\"applicability\":\"Applicable to Certifying Authorities recognized under the IT Act 2000.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation ensures that electronic signature certificates issued by Certifying Authorities are valid under the IT Act 2000.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"A person seeking to issue electronic signature certificates must apply for a licence from the Controller under the IT Act 2000.\",\"source\":\"IT Act 2000, Section Regulation of Certifying Authorities\",\"weight\":2,\"source_clause_ids\":[\"G001647\"],\"checkable_test\":\"Verify if the applicant has applied for a licence to issue electronic signature certificates.\",\"applicability\":\"Applicable to persons seeking to issue electronic signature certificates.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation requires applicants to obtain a licence from the Controller before issuing electronic signature certificates.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"A person seeking to issue electronic signature certificates must meet prescribed requirements for qualification, expertise, and infrastructure.\",\"source\":\"IT Act 2000, Section Regulation of Certifying Authorities\",\"weight\":2,\"source_clause_ids\":[\"G001648\"],\"checkable_test\":\"Verify if the applicant meets the prescribed requirements for qualification, expertise, and infrastructure.\",\"applicability\":\"Applicable to persons seeking to issue electronic signature certificates.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation ensures that only qualified and capable entities are granted the right to issue electronic signature certificates.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "A Certifying Authority must comply with conditions and restrictions specified by regulations to maintain recognition under the IT Act 2000.",
+      "source": "IT Act 2000, Section Regulation of Certifying Authorities",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001642"
+      ],
+      "checkable_test": "Verify if the Certifying Authority is subject to conditions and restrictions specified by regulations.",
+      "applicability": "Applicable to Certifying Authorities recognized under the IT Act 2000.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation relates to the conditions and restrictions that must be followed by recognized Certifying Authorities.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "A Certifying Authority must maintain compliance with the conditions and restrictions to avoid revocation of recognition.",
+      "source": "IT Act 2000, Section Regulation of Certifying Authorities",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001642"
+      ],
+      "checkable_test": "Verify if the Certifying Authority has been revoked for non-compliance with conditions and restrictions.",
+      "applicability": "Applicable to Certifying Authorities recognized under the IT Act 2000.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation ensures that Certifying Authorities remain compliant with the conditions and restrictions for their recognition.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "A Certifying Authority must obtain prior approval from the Central Government before being recognized under the IT Act 2000.",
+      "source": "IT Act 2000, Section Regulation of Certifying Authorities",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001640"
+      ],
+      "checkable_test": "Verify if the Certifying Authority received prior approval from the Central Government for recognition.",
+      "applicability": "Applicable to Certifying Authorities recognized under the IT Act 2000.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation requires Certifying Authorities to obtain prior approval from the Central Government before being recognized.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "A Certifying Authority must issue valid electronic signature certificates that are recognized under the IT Act 2000.",
+      "source": "IT Act 2000, Section Regulation of Certifying Authorities",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001641"
+      ],
+      "checkable_test": "Verify if the electronic signature certificate issued by the Certifying Authority is valid under the IT Act 2000.",
+      "applicability": "Applicable to Certifying Authorities recognized under the IT Act 2000.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation ensures that electronic signature certificates issued by Certifying Authorities are valid under the IT Act 2000.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "A person seeking to issue electronic signature certificates must apply for a licence from the Controller under the IT Act 2000.",
+      "source": "IT Act 2000, Section Regulation of Certifying Authorities",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001647"
+      ],
+      "checkable_test": "Verify if the applicant has applied for a licence to issue electronic signature certificates.",
+      "applicability": "Applicable to persons seeking to issue electronic signature certificates.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation requires applicants to obtain a licence from the Controller before issuing electronic signature certificates.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "A person seeking to issue electronic signature certificates must meet prescribed requirements for qualification, expertise, and infrastructure.",
+      "source": "IT Act 2000, Section Regulation of Certifying Authorities",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001648"
+      ],
+      "checkable_test": "Verify if the applicant meets the prescribed requirements for qualification, expertise, and infrastructure.",
+      "applicability": "Applicable to persons seeking to issue electronic signature certificates.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation ensures that only qualified and capable entities are granted the right to issue electronic signature certificates.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T14:34:56.249321+00:00",
+  "multi_mapped_records": [
+    {
+      "batch_id": "17013ac607ac29c4c262af45",
+      "source_clause_id": "G001642",
+      "total_entries": 2,
+      "distinct_categories": 1,
+      "categories": [
+        "Intermediary/Platform Liability"
+      ],
+      "decision": "KEPT_FIRST_PER_CATEGORY_OR_DEDUPED_BY_EMBEDDING",
+      "kept_positions": [
+        0,
+        1
+      ],
+      "discarded_positions": [],
+      "entries_summary": [
+        {
+          "position": 0,
+          "category": "Intermediary/Platform Liability",
+          "requirement": "A Certifying Authority must comply with conditions and restrictions specified by regulations to maintain recognition und"
+        },
+        {
+          "position": 1,
+          "category": "Intermediary/Platform Liability",
+          "requirement": "A Certifying Authority must maintain compliance with the conditions and restrictions to avoid revocation of recognition."
+        }
+      ]
+    }
+  ]
+}

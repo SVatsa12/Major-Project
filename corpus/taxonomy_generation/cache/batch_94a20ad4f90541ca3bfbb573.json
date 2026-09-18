@@ -1,0 +1,98 @@
+{
+  "batch_id": "94a20ad4f90541ca3bfbb573",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001259",
+    "G001261",
+    "G001274",
+    "G001275",
+    "G001276",
+    "G001320",
+    "G001330",
+    "G001333"
+  ],
+  "raw_response": "[{\"category\":\"Children/Vulnerable Groups\",\"requirement\":\"A Data Fiduciary must ensure that any information, service, or advertisement likely to cause detrimental effects on a child's well-being is not accessible to the child.\",\"source\":\"DPDP Rules 2025, Rule 12(3)\",\"weight\":3,\"source_clause_ids\":[\"G001274\"],\"checkable_test\":\"Check if the document restricts access to harmful content for children.\",\"applicability\":\"Applies to data fiduciaries handling children's data.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is tied to the purpose of protecting children from harmful content.\"},{\"category\":\"Children/Vulnerable Groups\",\"requirement\":\"Processing of children's data is restricted to the extent necessary to ensure that harmful information, services, or advertisements are not accessible to the child.\",\"source\":\"DPDP Rules 2025, Rule 12(4)\",\"weight\":3,\"source_clause_ids\":[\"G001275\"],\"checkable_test\":\"Verify if the document limits data processing to prevent access to harmful content for children.\",\"applicability\":\"Applies to data fiduciaries handling children's data.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is tied to the purpose of protecting children from harmful content.\"},{\"category\":\"Children/Vulnerable Groups\",\"requirement\":\"A Data Fiduciary must confirm that the Data Principal is not a child and observe due diligence under rule 10.\",\"source\":\"DPDP Rules 2025, Rule 12(5)\",\"weight\":3,\"source_clause_ids\":[\"G001276\"],\"checkable_test\":\"Check if the document requires verification of the Data Principal's age and due diligence for children.\",\"applicability\":\"Applies to data fiduciaries handling children's data.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is tied to the purpose of protecting children from harmful content.\"},{\"category\":\"Children/Vulnerable Groups\",\"requirement\":\"A Data Fiduciary who is an individual entrusted with infants and children in a crèche or child day care centre must restrict processing to tracking and behavioural monitoring.\",\"source\":\"DPDP Rules 2025, Rule 12(1)\",\"weight\":3,\"source_clause_ids\":[\"G001259\"],\"checkable_test\":\"Verify if the document limits data processing to tracking and behavioural monitoring for crèche or child day care centres.\",\"applicability\":\"Applies to data fiduciaries handling children's data.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is tied to the purpose of protecting children's data in specific contexts.\"},{\"category\":\"Children/Vulnerable Groups\",\"requirement\":\"A Data Fiduciary engaged by an educational institution, crèche, or child care centre for transporting children must restrict processing to tracking and behavioural monitoring.\",\"source\":\"DPDP Rules 2025, Rule 12(2)\",\"weight\":3,\"source_clause_ids\":[\"G001261\"],\"checkable_test\":\"Check if the document limits data processing to tracking and behavioural monitoring for transportation of children.\",\"applicability\":\"Applies to data fiduciaries handling children's data.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is tied to the purpose of protecting children's data in specific contexts.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Children/Vulnerable Groups",
+      "requirement": "A Data Fiduciary must ensure that any information, service, or advertisement likely to cause detrimental effects on a child's well-being is not accessible to the child.",
+      "source": "DPDP Rules 2025, Rule 12(3)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001274"
+      ],
+      "checkable_test": "Check if the document restricts access to harmful content for children.",
+      "applicability": "Applies to data fiduciaries handling children's data.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is tied to the purpose of protecting children from harmful content.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Children/Vulnerable Groups",
+      "requirement": "Processing of children's data is restricted to the extent necessary to ensure that harmful information, services, or advertisements are not accessible to the child.",
+      "source": "DPDP Rules 2025, Rule 12(4)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001275"
+      ],
+      "checkable_test": "Verify if the document limits data processing to prevent access to harmful content for children.",
+      "applicability": "Applies to data fiduciaries handling children's data.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is tied to the purpose of protecting children from harmful content.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Children/Vulnerable Groups",
+      "requirement": "A Data Fiduciary must confirm that the Data Principal is not a child and observe due diligence under rule 10.",
+      "source": "DPDP Rules 2025, Rule 12(5)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001276"
+      ],
+      "checkable_test": "Check if the document requires verification of the Data Principal's age and due diligence for children.",
+      "applicability": "Applies to data fiduciaries handling children's data.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is tied to the purpose of protecting children from harmful content.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Children/Vulnerable Groups",
+      "requirement": "A Data Fiduciary who is an individual entrusted with infants and children in a crèche or child day care centre must restrict processing to tracking and behavioural monitoring.",
+      "source": "DPDP Rules 2025, Rule 12(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001259"
+      ],
+      "checkable_test": "Verify if the document limits data processing to tracking and behavioural monitoring for crèche or child day care centres.",
+      "applicability": "Applies to data fiduciaries handling children's data.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is tied to the purpose of protecting children's data in specific contexts.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Children/Vulnerable Groups",
+      "requirement": "A Data Fiduciary engaged by an educational institution, crèche, or child care centre for transporting children must restrict processing to tracking and behavioural monitoring.",
+      "source": "DPDP Rules 2025, Rule 12(2)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001261"
+      ],
+      "checkable_test": "Check if the document limits data processing to tracking and behavioural monitoring for transportation of children.",
+      "applicability": "Applies to data fiduciaries handling children's data.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is tied to the purpose of protecting children's data in specific contexts.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T11:45:18.532320+00:00",
+  "multi_mapped_records": []
+}

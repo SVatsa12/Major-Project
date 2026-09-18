@@ -1,0 +1,53 @@
+{
+  "cache_key": "c8012a9f40d4b82d33006de5e3c91882872beea5fcb9be10d215fa0c492bb635",
+  "created_at_utc": "2026-09-17T05:35:56.183214+00:00",
+  "prompt_version": "policy-labeling-v7-reliable-batches",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S000967",
+    "S000968",
+    "S000969",
+    "S000970",
+    "S000971",
+    "S000972"
+  ],
+  "labels": [
+    {
+      "clause_id": "S000967",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S000968",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S000969",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S000970",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S000971",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses data security but lacks specific measures like encryption or obfuscation."
+    },
+    {
+      "clause_id": "S000972",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    }
+  ],
+  "status": "SUCCESS"
+}

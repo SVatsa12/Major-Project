@@ -1,0 +1,53 @@
+{
+  "cache_key": "3dd8d9b8067d121a5a7f06e8d6cbcff01ce853ea6088244040507ecf0dbfd336",
+  "created_at_utc": "2026-09-16T12:21:49.433845+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S000559",
+    "S000560",
+    "S000561",
+    "S000562",
+    "S000563",
+    "S000564"
+  ],
+  "labels": [
+    {
+      "clause_id": "S000559",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S000560",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S000561",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S000562",
+      "best_match_taxonomy_id": "DPDP_RUL-0379",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses age restrictions for targeting, but lacks specific data protection compliance details."
+    },
+    {
+      "clause_id": "S000563",
+      "best_match_taxonomy_id": "DPDP_RUL-0379",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses age restrictions for targeting, but lacks specific data protection compliance details."
+    },
+    {
+      "clause_id": "S000564",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    }
+  ],
+  "status": "SUCCESS"
+}

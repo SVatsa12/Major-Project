@@ -1,0 +1,83 @@
+{
+  "batch_id": "d22041105946d3acdd34574f",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001683",
+    "G001686",
+    "G001692",
+    "G001698",
+    "G001699",
+    "G001700",
+    "G001701",
+    "G001704"
+  ],
+  "raw_response": "[  \n  {  \n    \"category\": \"Confidentiality & Misuse of Data\",  \n    \"requirement\": \"Certifying Authorities must ensure that all employees and engaged personnel comply with the provisions of the IT Act, 2000, rules, regulations, and orders made thereunder.\",  \n    \"source\": \"IT Act 2000, Section 31\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G001692\"],  \n    \"checkable_test\": \"Verify that the Certifying Authority's governance documents include a requirement for all employees and engaged personnel to comply with the IT Act, 2000, rules, regulations, and orders made thereunder.\",  \n    \"applicability\": \"Applicable to all Certifying Authorities under the IT Act, 2000.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement ensures that Certifying Authorities maintain compliance with legal obligations through their workforce.\"  \n  },  \n  {  \n    \"category\": \"Confidentiality & Misuse of Data\",  \n    \"requirement\": \"Certifying Authorities must display their licence at a conspicuous place of their premises.\",  \n    \"source\": \"IT Act 2000, Section 32\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G001698\"],  \n    \"checkable_test\": \"Verify that the Certifying Authority's governance documents include a requirement to display the licence at a conspicuous place of their premises.\",  \n    \"applicability\": \"Applicable to all Certifying Authorities under the IT Act, 2000.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement ensures transparency and accountability by requiring the physical display of the licence.\"  \n  },  \n  {  \n    \"category\": \"Confidentiality & Misuse of Data\",  \n    \"requirement\": \"Certifying Authorities must surrender their licence immediately upon suspension or revocation.\",  \n    \"source\": \"IT Act 2000, Section 33(1)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G001699\"],  \n    \"checkable_test\": \"Verify that the Certifying Authority's governance documents include a requirement to surrender the licence immediately upon suspension or revocation.\",  \n    \"applicability\": \"Applicable to all Certifying Authorities under the IT Act, 2000.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement ensures that Certifying Authorities promptly cease operations when their licence is suspended or revoked.\"  \n  },  \n  {  \n    \"category\": \"Confidentiality & Misuse of Data\",  \n    \"requirement\": \"Certifying Authorities must disclose, in the manner specified by regulations, notice of the revocation or suspension of their Certifying Authority certificate.\",  \n    \"source\": \"IT Act 2000, Section 34(c)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G001704\"],  \n    \"checkable_test\": \"Verify that the Certifying Authority's governance documents include a requirement to disclose notice of revocation or suspension of their certificate in the manner specified by regulations.\",  \n    \"applicability\": \"Applicable to all Certifying Authorities under the IT Act, 2000.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement ensures transparency in the event of revocation or suspension of a Certifying Authority's certificate.\"  \n  }  \n]",
+  "parsed_entries": [
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "Certifying Authorities must ensure that all employees and engaged personnel comply with the provisions of the IT Act, 2000, rules, regulations, and orders made thereunder.",
+      "source": "IT Act 2000, Section 31",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001692"
+      ],
+      "checkable_test": "Verify that the Certifying Authority's governance documents include a requirement for all employees and engaged personnel to comply with the IT Act, 2000, rules, regulations, and orders made thereunder.",
+      "applicability": "Applicable to all Certifying Authorities under the IT Act, 2000.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures that Certifying Authorities maintain compliance with legal obligations through their workforce.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "Certifying Authorities must display their licence at a conspicuous place of their premises.",
+      "source": "IT Act 2000, Section 32",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001698"
+      ],
+      "checkable_test": "Verify that the Certifying Authority's governance documents include a requirement to display the licence at a conspicuous place of their premises.",
+      "applicability": "Applicable to all Certifying Authorities under the IT Act, 2000.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures transparency and accountability by requiring the physical display of the licence.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "Certifying Authorities must surrender their licence immediately upon suspension or revocation.",
+      "source": "IT Act 2000, Section 33(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001699"
+      ],
+      "checkable_test": "Verify that the Certifying Authority's governance documents include a requirement to surrender the licence immediately upon suspension or revocation.",
+      "applicability": "Applicable to all Certifying Authorities under the IT Act, 2000.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures that Certifying Authorities promptly cease operations when their licence is suspended or revoked.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "Certifying Authorities must disclose, in the manner specified by regulations, notice of the revocation or suspension of their Certifying Authority certificate.",
+      "source": "IT Act 2000, Section 34(c)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001704"
+      ],
+      "checkable_test": "Verify that the Certifying Authority's governance documents include a requirement to disclose notice of revocation or suspension of their certificate in the manner specified by regulations.",
+      "applicability": "Applicable to all Certifying Authorities under the IT Act, 2000.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures transparency in the event of revocation or suspension of a Certifying Authority's certificate.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T14:37:48.960766+00:00",
+  "multi_mapped_records": []
+}

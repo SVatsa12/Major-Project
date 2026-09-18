@@ -1,0 +1,38 @@
+{
+  "batch_id": "1febe3638523c3a712dda029",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001151",
+    "G001152",
+    "G001159",
+    "G001160",
+    "G001161",
+    "G001162",
+    "G001163",
+    "G001166"
+  ],
+  "raw_response": "[{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"A Consent Manager must operate in the interests of Data Principals.\",\"source\":\"DPDP Rules 2025, Section 8(8)\",\"weight\":3,\"source_clause_ids\":[\"G001166\"],\"checkable_test\":\"Verify that the Consent Manager's operations are explicitly stated to be in the interests of Data Principals.\",\"applicability\":\"Applicable to Consent Managers seeking registration.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures that the Consent Manager's operations align with the interests of data principals, as mandated by the DPDP Rules 2025.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "A Consent Manager must operate in the interests of Data Principals.",
+      "source": "DPDP Rules 2025, Section 8(8)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001166"
+      ],
+      "checkable_test": "Verify that the Consent Manager's operations are explicitly stated to be in the interests of Data Principals.",
+      "applicability": "Applicable to Consent Managers seeking registration.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures that the Consent Manager's operations align with the interests of data principals, as mandated by the DPDP Rules 2025.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T14:19:39.093871+00:00",
+  "multi_mapped_records": []
+}

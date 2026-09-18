@@ -1,0 +1,147 @@
+{
+  "batch_id": "3b957d3184b39493e1852dbc",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001661",
+    "G001664",
+    "G001666",
+    "G001667",
+    "G001676",
+    "G001687",
+    "G001689",
+    "G001690"
+  ],
+  "raw_response": "[  \n  {  \n    \"category\": \"Security Safeguards\",  \n    \"requirement\": \"Certifying authorities must use secure hardware, software, and procedures to prevent intrusion and misuse.\",  \n    \"source\": \"IT Act 2000, Section 14(18)(a)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G001687\"],  \n    \"checkable_test\": \"Verify if the document specifies the use of secure hardware, software, and procedures to prevent intrusion and misuse.\",  \n    \"applicability\": \"Applicable to certifying authorities under the IT Act 2000.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement is directly tied to the obligation of certifying authorities to ensure security measures.\"  \n  },  \n  {  \n    \"category\": \"Security Safeguards\",  \n    \"requirement\": \"Certifying authorities must adhere to security procedures to ensure the secrecy and privacy of electronic signatures.\",  \n    \"source\": \"IT Act 2000, Section 14(18)(c)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G001689\"],  \n    \"checkable_test\": \"Verify if the document specifies adherence to security procedures to ensure the secrecy and privacy of electronic signatures.\",  \n    \"applicability\": \"Applicable to certifying authorities under the IT Act 2000.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement is directly tied to the obligation of certifying authorities to ensure the secrecy and privacy of electronic signatures.\"  \n  },  \n  {  \n    \"category\": \"Security Safeguards\",  \n    \"requirement\": \"Certifying authorities must maintain procedures and standards specified in section 30.\",  \n    \"source\": \"IT Act 2000, Section 14(18)(c)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G001667\"],  \n    \"checkable_test\": \"Verify if the document specifies that certifying authorities must maintain procedures and standards as specified in section 30.\",  \n    \"applicability\": \"Applicable to certifying authorities under the IT Act 2000.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement is directly tied to the obligation of certifying authorities to maintain procedures and standards as specified in section 30.\"  \n  },  \n  {  \n    \"category\": \"Intermediary/Platform Liability\",  \n    \"requirement\": \"Certifying authorities must not reject an application unless the applicant has been given a reasonable opportunity to present their case.\",  \n    \"source\": \"IT Act 2000, Section 14(18)(b)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G001664\"],  \n    \"checkable_test\": \"Verify if the document specifies that applications cannot be rejected without providing the applicant with a reasonable opportunity to present their case.\",  \n    \"applicability\": \"Applicable to certifying authorities under the IT Act 2000.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement is directly tied to the obligation of certifying authorities to provide applicants with a fair process.\"  \n  },  \n  {  \n    \"category\": \"Security Safeguards\",  \n    \"requirement\": \"Certifying authorities must be the repository of all electronic signature certificates issued under this Act.\",  \n    \"source\": \"IT Act 2000, Section 14(18)(ca)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G001689\"],  \n    \"checkable_test\": \"Verify if the document specifies that certifying authorities must act as the repository for all electronic signature certificates issued under this Act.\",  \n    \"applicability\": \"Applicable to certifying authorities under the IT Act 2000.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement is directly tied to the obligation of certifying authorities to maintain and store electronic signature certificates.\"  \n  },  \n  {  \n    \"category\": \"Security Safeguards\",  \n    \"requirement\": \"Certifying authorities must publish information regarding their practices, electronic signature certificates, and the current status of such certificates.\",  \n    \"source\": \"IT Act 2000, Section 14(18)(cb)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G001689\"],  \n    \"checkable_test\": \"Verify if the document specifies that certifying authorities must publish information regarding their practices, electronic signature certificates, and the current status of such certificates.\",  \n    \"applicability\": \"Applicable to certifying authorities under the IT Act 2000.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement is directly tied to the obligation of certifying authorities to maintain transparency in their operations.\"  \n  }  \n]",
+  "parsed_entries": [
+    {
+      "category": "Security Safeguards",
+      "requirement": "Certifying authorities must use secure hardware, software, and procedures to prevent intrusion and misuse.",
+      "source": "IT Act 2000, Section 14(18)(a)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001687"
+      ],
+      "checkable_test": "Verify if the document specifies the use of secure hardware, software, and procedures to prevent intrusion and misuse.",
+      "applicability": "Applicable to certifying authorities under the IT Act 2000.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation of certifying authorities to ensure security measures.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Certifying authorities must adhere to security procedures to ensure the secrecy and privacy of electronic signatures.",
+      "source": "IT Act 2000, Section 14(18)(c)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001689"
+      ],
+      "checkable_test": "Verify if the document specifies adherence to security procedures to ensure the secrecy and privacy of electronic signatures.",
+      "applicability": "Applicable to certifying authorities under the IT Act 2000.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation of certifying authorities to ensure the secrecy and privacy of electronic signatures.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Certifying authorities must maintain procedures and standards specified in section 30.",
+      "source": "IT Act 2000, Section 14(18)(c)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001667"
+      ],
+      "checkable_test": "Verify if the document specifies that certifying authorities must maintain procedures and standards as specified in section 30.",
+      "applicability": "Applicable to certifying authorities under the IT Act 2000.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation of certifying authorities to maintain procedures and standards as specified in section 30.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Certifying authorities must not reject an application unless the applicant has been given a reasonable opportunity to present their case.",
+      "source": "IT Act 2000, Section 14(18)(b)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001664"
+      ],
+      "checkable_test": "Verify if the document specifies that applications cannot be rejected without providing the applicant with a reasonable opportunity to present their case.",
+      "applicability": "Applicable to certifying authorities under the IT Act 2000.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation of certifying authorities to provide applicants with a fair process.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Certifying authorities must be the repository of all electronic signature certificates issued under this Act.",
+      "source": "IT Act 2000, Section 14(18)(ca)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001689"
+      ],
+      "checkable_test": "Verify if the document specifies that certifying authorities must act as the repository for all electronic signature certificates issued under this Act.",
+      "applicability": "Applicable to certifying authorities under the IT Act 2000.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation of certifying authorities to maintain and store electronic signature certificates.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Certifying authorities must publish information regarding their practices, electronic signature certificates, and the current status of such certificates.",
+      "source": "IT Act 2000, Section 14(18)(cb)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001689"
+      ],
+      "checkable_test": "Verify if the document specifies that certifying authorities must publish information regarding their practices, electronic signature certificates, and the current status of such certificates.",
+      "applicability": "Applicable to certifying authorities under the IT Act 2000.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation of certifying authorities to maintain transparency in their operations.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T15:49:05.397034+00:00",
+  "multi_mapped_records": [
+    {
+      "batch_id": "3b957d3184b39493e1852dbc",
+      "source_clause_id": "G001689",
+      "total_entries": 3,
+      "distinct_categories": 1,
+      "categories": [
+        "Security Safeguards"
+      ],
+      "decision": "KEPT_FIRST_PER_CATEGORY_OR_DEDUPED_BY_EMBEDDING",
+      "kept_positions": [
+        1,
+        4,
+        5
+      ],
+      "discarded_positions": [],
+      "entries_summary": [
+        {
+          "position": 1,
+          "category": "Security Safeguards",
+          "requirement": "Certifying authorities must adhere to security procedures to ensure the secrecy and privacy of electronic signatures."
+        },
+        {
+          "position": 4,
+          "category": "Security Safeguards",
+          "requirement": "Certifying authorities must be the repository of all electronic signature certificates issued under this Act."
+        },
+        {
+          "position": 5,
+          "category": "Security Safeguards",
+          "requirement": "Certifying authorities must publish information regarding their practices, electronic signature certificates, and the cu"
+        }
+      ]
+    }
+  ]
+}

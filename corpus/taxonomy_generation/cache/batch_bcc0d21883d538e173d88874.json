@@ -1,0 +1,128 @@
+{
+  "batch_id": "bcc0d21883d538e173d88874",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001691",
+    "G001703",
+    "G001705",
+    "G001707",
+    "G001708",
+    "G001712",
+    "G001728",
+    "G001730"
+  ],
+  "raw_response": "[{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"Certifying authorities must ensure that the information contained in a Digital Signature Certificate is accurate.\",\"source\":\"IT Act 2000, Section 139(3)(e)\",\"weight\":2,\"source_clause_ids\":[\"G001730\"],\"checkable_test\":\"Verify that the certificate information is accurate as per the certificate's contents.\",\"applicability\":\"Applicable to digital signature certificates issued by certifying authorities.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures the integrity and accuracy of digital signature certificates.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"Certifying authorities must ensure that the public key listed in a Digital Signature Certificate can be used to verify a digital signature affixed by the private key held by the subscriber.\",\"source\":\"IT Act 2000, Section 139(3)(cb)\",\"weight\":2,\"source_clause_ids\":[\"G001728\"],\"checkable_test\":\"Verify that the public key in the certificate can be used to verify the digital signature.\",\"applicability\":\"Applicable to digital signature certificates issued by certifying authorities.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures the proper functioning of digital signatures through key verification.\"},{\"category\":\"Breach Notification\",\"requirement\":\"Certifying authorities must use reasonable efforts to notify any person who is likely to be affected by an occurrence that materially and adversely affects the reliability of a certificate or the Authority's ability to perform its services.\",\"source\":\"IT Act 2000, Section 139(3)(d)\",\"weight\":2,\"source_clause_ids\":[\"G001705\"],\"checkable_test\":\"Verify that the certifying authority notifies affected parties of events impacting certificate reliability or service performance.\",\"applicability\":\"Applicable to certifying authorities issuing digital certificates.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures transparency and accountability in the event of certificate-related issues.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Certifying authorities must act in accordance with the procedure specified in their certification practice statement to deal with events or situations that materially and adversely affect the reliability of a certificate or the Authority's ability to perform its services.\",\"source\":\"IT Act 2000, Section 139(3)(b)\",\"weight\":2,\"source_clause_ids\":[\"G001708\"],\"checkable_test\":\"Verify that the certifying authority follows procedures outlined in its certification practice statement for handling certificate-related issues.\",\"applicability\":\"Applicable to certifying authorities issuing digital certificates.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures that certifying authorities follow established procedures for handling certificate-related events.\"},{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"Certifying authorities may prescribe different fees for different classes of applicants when prescribing fees under sub-section (2).\",\"source\":\"IT Act 2000, Section 139(3)(1)\",\"weight\":1,\"source_clause_ids\":[\"G001712\"],\"checkable_test\":\"Verify that fees for different classes of applicants are prescribed as per the authority's fee structure.\",\"applicability\":\"Applicable to certifying authorities issuing digital certificates.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement allows for differentiated fee structures based on applicant classes.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"Certifying authorities must observe such other standards as may be specified by regulations.\",\"source\":\"IT Act 2000, Section 139(3)(d)\",\"weight\":2,\"source_clause_ids\":[\"G001691\"],\"checkable_test\":\"Verify that certifying authorities comply with any additional standards specified by regulations.\",\"applicability\":\"Applicable to certifying authorities issuing digital certificates.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures that certifying authorities adhere to regulatory standards beyond basic requirements.\"},{\"category\":\"Consent & Notice\",\"requirement\":\"Certifying authorities must provide a certification practice statement relevant to their operations.\",\"source\":\"IT Act 2000, Section 139(3)(b)\",\"weight\":2,\"source_clause_ids\":[\"G001703\"],\"checkable_test\":\"Verify that a certification practice statement is provided and is relevant to the certifying authority's operations.\",\"applicability\":\"Applicable to certifying authorities issuing digital certificates.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures transparency in the certification process through the provision of a practice statement.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "Certifying authorities must ensure that the information contained in a Digital Signature Certificate is accurate.",
+      "source": "IT Act 2000, Section 139(3)(e)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001730"
+      ],
+      "checkable_test": "Verify that the certificate information is accurate as per the certificate's contents.",
+      "applicability": "Applicable to digital signature certificates issued by certifying authorities.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures the integrity and accuracy of digital signature certificates.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Certifying authorities must ensure that the public key listed in a Digital Signature Certificate can be used to verify a digital signature affixed by the private key held by the subscriber.",
+      "source": "IT Act 2000, Section 139(3)(cb)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001728"
+      ],
+      "checkable_test": "Verify that the public key in the certificate can be used to verify the digital signature.",
+      "applicability": "Applicable to digital signature certificates issued by certifying authorities.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures the proper functioning of digital signatures through key verification.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Breach Notification",
+      "requirement": "Certifying authorities must use reasonable efforts to notify any person who is likely to be affected by an occurrence that materially and adversely affects the reliability of a certificate or the Authority's ability to perform its services.",
+      "source": "IT Act 2000, Section 139(3)(d)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001705"
+      ],
+      "checkable_test": "Verify that the certifying authority notifies affected parties of events impacting certificate reliability or service performance.",
+      "applicability": "Applicable to certifying authorities issuing digital certificates.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures transparency and accountability in the event of certificate-related issues.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Certifying authorities must act in accordance with the procedure specified in their certification practice statement to deal with events or situations that materially and adversely affect the reliability of a certificate or the Authority's ability to perform its services.",
+      "source": "IT Act 2000, Section 139(3)(b)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001708"
+      ],
+      "checkable_test": "Verify that the certifying authority follows procedures outlined in its certification practice statement for handling certificate-related issues.",
+      "applicability": "Applicable to certifying authorities issuing digital certificates.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures that certifying authorities follow established procedures for handling certificate-related events.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "Certifying authorities may prescribe different fees for different classes of applicants when prescribing fees under sub-section (2).",
+      "source": "IT Act 2000, Section 139(3)(1)",
+      "weight": 1,
+      "source_clause_ids": [
+        "G001712"
+      ],
+      "checkable_test": "Verify that fees for different classes of applicants are prescribed as per the authority's fee structure.",
+      "applicability": "Applicable to certifying authorities issuing digital certificates.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement allows for differentiated fee structures based on applicant classes.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Certifying authorities must observe such other standards as may be specified by regulations.",
+      "source": "IT Act 2000, Section 139(3)(d)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001691"
+      ],
+      "checkable_test": "Verify that certifying authorities comply with any additional standards specified by regulations.",
+      "applicability": "Applicable to certifying authorities issuing digital certificates.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures that certifying authorities adhere to regulatory standards beyond basic requirements.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Consent & Notice",
+      "requirement": "Certifying authorities must provide a certification practice statement relevant to their operations.",
+      "source": "IT Act 2000, Section 139(3)(b)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001703"
+      ],
+      "checkable_test": "Verify that a certification practice statement is provided and is relevant to the certifying authority's operations.",
+      "applicability": "Applicable to certifying authorities issuing digital certificates.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures transparency in the certification process through the provision of a practice statement.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T15:50:43.621648+00:00",
+  "multi_mapped_records": []
+}

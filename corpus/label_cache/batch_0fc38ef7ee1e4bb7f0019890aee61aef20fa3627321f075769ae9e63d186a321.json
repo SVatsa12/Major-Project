@@ -1,0 +1,53 @@
+{
+  "cache_key": "0fc38ef7ee1e4bb7f0019890aee61aef20fa3627321f075769ae9e63d186a321",
+  "created_at_utc": "2026-09-17T04:43:41.245049+00:00",
+  "prompt_version": "policy-labeling-v7-reliable-batches",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S000331",
+    "S000332",
+    "S000333",
+    "S000334",
+    "S000335",
+    "S000336"
+  ],
+  "labels": [
+    {
+      "clause_id": "S000331",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S000332",
+      "best_match_taxonomy_id": "DPDP_RUL-0114",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses data principal rights but lacks specific details on how to exercise them."
+    },
+    {
+      "clause_id": "S000333",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S000334",
+      "best_match_taxonomy_id": "DPDP_RUL-0099",
+      "verdict": "Partially Compliant",
+      "justification": "The clause mentions erasing data but lacks specifics on retention periods or legal compliance."
+    },
+    {
+      "clause_id": "S000335",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S000336",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    }
+  ],
+  "status": "SUCCESS"
+}

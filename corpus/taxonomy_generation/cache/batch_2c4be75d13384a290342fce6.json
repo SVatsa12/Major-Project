@@ -1,0 +1,283 @@
+{
+  "batch_id": "2c4be75d13384a290342fce6",
+  "status": "PARTIAL_VALIDATION",
+  "input_clause_ids": [
+    "G001668",
+    "G001688",
+    "G001702",
+    "G001709",
+    "G001720",
+    "G001721",
+    "G001727",
+    "G001729"
+  ],
+  "raw_response": "[{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"Certifying authorities must ensure that subscribers hold a private key capable of creating a digital signature.\",\"source\":\"IT Act 2000, Section 1727(1)(ca)\",\"weight\":3,\"source_clause_ids\":[\"G001727\"],\"checkable_test\":\"Verify that the subscriber's private key is capable of creating a digital signature as per the certificate requirements.\",\"applicability\":\"Applicable to digital signature certificates issued by certifying authorities.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures the integrity and authenticity of digital signatures.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"Certifying authorities must ensure that the subscriber's public and private keys constitute a functioning key pair.\",\"source\":\"IT Act 2000, Section 1729(d)\",\"weight\":3,\"source_clause_ids\":[\"G001729\"],\"checkable_test\":\"Confirm that the public and private keys form a functioning key pair as required by the certificate standards.\",\"applicability\":\"Applicable to digital signature certificates issued by certifying authorities.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures the cryptographic integrity of digital signatures.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Certifying authorities must ensure that the subscriber has accepted the Digital Signature Certificate.\",\"source\":\"IT Act 2000, Section 1721(b)\",\"weight\":3,\"source_clause_ids\":[\"G001721\"],\"checkable_test\":\"Verify that the subscriber has accepted the Digital Signature Certificate as part of the certification process.\",\"applicability\":\"Applicable to digital signature certificates issued by certifying authorities.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures that the subscriber acknowledges and agrees to the terms of the certificate.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"Certifying authorities must ensure that the Digital Signature Certificate is published or otherwise made available to the subscriber.\",\"source\":\"IT Act 2000, Section 1721(b)\",\"weight\":3,\"source_clause_ids\":[\"G001721\"],\"checkable_test\":\"Confirm that the Digital Signature Certificate is published or made available to the subscriber.\",\"applicability\":\"Applicable to digital signature certificates issued by certifying authorities.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures that the subscriber has access to the certificate for verification purposes.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"Certifying authorities must ensure that the subscriber holds the private key corresponding to the public key listed in the Digital Signature Certificate.\",\"source\":\"IT Act 2000, Section 1727(c)\",\"weight\":3,\"source_clause_ids\":[\"G001727\"],\"checkable_test\":\"Verify that the subscriber holds the private key corresponding to the public key in the certificate.\",\"applicability\":\"Applicable to digital signature certificates issued by certifying authorities.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures that the subscriber has control over the private key used for digital signatures.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"Certifying authorities must ensure that their services provide a reasonable level of reliability suited to the intended functions.\",\"source\":\"IT Act 2000, Section 1708(b)\",\"weight\":3,\"source_clause_ids\":[\"G001688\"],\"checkable_test\":\"Confirm that the services provided by the certifying authority meet the reliability standards for their intended functions.\",\"applicability\":\"Applicable to certifying authorities under the IT Act 2000.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures that the certifying authority maintains reliable and secure services.\"},{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"Certifying authorities must ensure that the electronic signature is compliant with the provisions of the IT Act and related regulations.\",\"source\":\"IT Act 2000, Section 1708(a)\",\"weight\":3,\"source_clause_ids\":[\"G001702\"],\"checkable_test\":\"Verify that the electronic signature meets the compliance requirements under the IT Act and its regulations.\",\"applicability\":\"Applicable to certifying authorities issuing electronic signatures.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures that electronic signatures are legally valid and secure.\"},{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"Certifying authorities must ensure that the electronic signature is issued in accordance with the provisions of the IT Act and related regulations.\",\"source\":\"IT Act 2000, Section 1708(a)\",\"weight\":3,\"source_clause_ids\":[\"G001702\"],\"checkable_test\":\"Confirm that the electronic signature is issued in compliance with the IT Act and its regulations.\",\"applicability\":\"Applicable to certifying authorities issuing electronic signatures.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures that electronic signatures are legally valid and secure.\"},{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"Certifying authorities must ensure that the electronic signature is issued in accordance with the provisions of the IT Act and related regulations.\",\"source\":\"IT Act 2000, Section 1708(a)\",\"weight\":3,\"source_clause_ids\":[\"G001702\"],\"checkable_test\":\"Confirm that the electronic signature is issued in compliance with the IT Act and its regulations.\",\"applicability\":\"Applicable to certifying authorities issuing electronic signatures.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures that electronic signatures are legally valid and secure.\"},{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"Certifying authorities must ensure that the electronic signature is issued in accordance with the provisions of the IT Act and related regulations.\",\"source\":\"IT Act 2000, Section 1708(a)\",\"weight\":3,\"source_clause_ids\":[\"G001702\"],\"checkable_test\":\"Confirm that the electronic signature is issued in compliance with the IT Act and its regulations.\",\"applicability\":\"Applicable to certifying authorities issuing electronic signatures.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures that electronic signatures are legally valid and secure.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "Certifying authorities must ensure that subscribers hold a private key capable of creating a digital signature.",
+      "source": "IT Act 2000, Section 1727(1)(ca)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001727"
+      ],
+      "checkable_test": "Verify that the subscriber's private key is capable of creating a digital signature as per the certificate requirements.",
+      "applicability": "Applicable to digital signature certificates issued by certifying authorities.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures the integrity and authenticity of digital signatures.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Certifying authorities must ensure that the subscriber's public and private keys constitute a functioning key pair.",
+      "source": "IT Act 2000, Section 1729(d)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001729"
+      ],
+      "checkable_test": "Confirm that the public and private keys form a functioning key pair as required by the certificate standards.",
+      "applicability": "Applicable to digital signature certificates issued by certifying authorities.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures the cryptographic integrity of digital signatures.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Certifying authorities must ensure that the subscriber has accepted the Digital Signature Certificate.",
+      "source": "IT Act 2000, Section 1721(b)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001721"
+      ],
+      "checkable_test": "Verify that the subscriber has accepted the Digital Signature Certificate as part of the certification process.",
+      "applicability": "Applicable to digital signature certificates issued by certifying authorities.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures that the subscriber acknowledges and agrees to the terms of the certificate.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Certifying authorities must ensure that the Digital Signature Certificate is published or otherwise made available to the subscriber.",
+      "source": "IT Act 2000, Section 1721(b)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001721"
+      ],
+      "checkable_test": "Confirm that the Digital Signature Certificate is published or made available to the subscriber.",
+      "applicability": "Applicable to digital signature certificates issued by certifying authorities.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures that the subscriber has access to the certificate for verification purposes.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Certifying authorities must ensure that the subscriber holds the private key corresponding to the public key listed in the Digital Signature Certificate.",
+      "source": "IT Act 2000, Section 1727(c)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001727"
+      ],
+      "checkable_test": "Verify that the subscriber holds the private key corresponding to the public key in the certificate.",
+      "applicability": "Applicable to digital signature certificates issued by certifying authorities.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures that the subscriber has control over the private key used for digital signatures.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Certifying authorities must ensure that their services provide a reasonable level of reliability suited to the intended functions.",
+      "source": "IT Act 2000, Section 1708(b)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001688"
+      ],
+      "checkable_test": "Confirm that the services provided by the certifying authority meet the reliability standards for their intended functions.",
+      "applicability": "Applicable to certifying authorities under the IT Act 2000.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures that the certifying authority maintains reliable and secure services.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "Certifying authorities must ensure that the electronic signature is compliant with the provisions of the IT Act and related regulations.",
+      "source": "IT Act 2000, Section 1708(a)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001702"
+      ],
+      "checkable_test": "Verify that the electronic signature meets the compliance requirements under the IT Act and its regulations.",
+      "applicability": "Applicable to certifying authorities issuing electronic signatures.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures that electronic signatures are legally valid and secure.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [
+    {
+      "position": 7,
+      "entry": {
+        "category": "Confidentiality & Misuse of Data",
+        "requirement": "Certifying authorities must ensure that the electronic signature is issued in accordance with the provisions of the IT Act and related regulations.",
+        "source": "IT Act 2000, Section 1708(a)",
+        "weight": 3,
+        "source_clause_ids": [
+          "G001702"
+        ],
+        "checkable_test": "Confirm that the electronic signature is issued in compliance with the IT Act and its regulations.",
+        "applicability": "Applicable to certifying authorities issuing electronic signatures.",
+        "assessability": "High",
+        "citation_confidence": "high",
+        "notes": "This requirement ensures that electronic signatures are legally valid and secure.",
+        "human_review_status": "PENDING"
+      },
+      "error": "discarded as same-category, semantically similar duplicate of another entry sharing this source clause"
+    },
+    {
+      "position": 8,
+      "entry": {
+        "category": "Confidentiality & Misuse of Data",
+        "requirement": "Certifying authorities must ensure that the electronic signature is issued in accordance with the provisions of the IT Act and related regulations.",
+        "source": "IT Act 2000, Section 1708(a)",
+        "weight": 3,
+        "source_clause_ids": [
+          "G001702"
+        ],
+        "checkable_test": "Confirm that the electronic signature is issued in compliance with the IT Act and its regulations.",
+        "applicability": "Applicable to certifying authorities issuing electronic signatures.",
+        "assessability": "High",
+        "citation_confidence": "high",
+        "notes": "This requirement ensures that electronic signatures are legally valid and secure.",
+        "human_review_status": "PENDING"
+      },
+      "error": "discarded as same-category, semantically similar duplicate of another entry sharing this source clause"
+    },
+    {
+      "position": 9,
+      "entry": {
+        "category": "Confidentiality & Misuse of Data",
+        "requirement": "Certifying authorities must ensure that the electronic signature is issued in accordance with the provisions of the IT Act and related regulations.",
+        "source": "IT Act 2000, Section 1708(a)",
+        "weight": 3,
+        "source_clause_ids": [
+          "G001702"
+        ],
+        "checkable_test": "Confirm that the electronic signature is issued in compliance with the IT Act and its regulations.",
+        "applicability": "Applicable to certifying authorities issuing electronic signatures.",
+        "assessability": "High",
+        "citation_confidence": "high",
+        "notes": "This requirement ensures that electronic signatures are legally valid and secure.",
+        "human_review_status": "PENDING"
+      },
+      "error": "discarded as same-category, semantically similar duplicate of another entry sharing this source clause"
+    }
+  ],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T15:59:55.330491+00:00",
+  "multi_mapped_records": [
+    {
+      "batch_id": "2c4be75d13384a290342fce6",
+      "source_clause_id": "G001727",
+      "total_entries": 2,
+      "distinct_categories": 2,
+      "categories": [
+        "Confidentiality & Misuse of Data",
+        "Security Safeguards"
+      ],
+      "decision": "KEPT_ALL_DISTINCT_CATEGORIES",
+      "kept_positions": [
+        0,
+        4
+      ],
+      "discarded_positions": [],
+      "entries_summary": [
+        {
+          "position": 0,
+          "category": "Confidentiality & Misuse of Data",
+          "requirement": "Certifying authorities must ensure that subscribers hold a private key capable of creating a digital signature."
+        },
+        {
+          "position": 4,
+          "category": "Security Safeguards",
+          "requirement": "Certifying authorities must ensure that the subscriber holds the private key corresponding to the public key listed in t"
+        }
+      ]
+    },
+    {
+      "batch_id": "2c4be75d13384a290342fce6",
+      "source_clause_id": "G001721",
+      "total_entries": 2,
+      "distinct_categories": 2,
+      "categories": [
+        "Significant Data Fiduciary Obligations",
+        "Security Safeguards"
+      ],
+      "decision": "KEPT_ALL_DISTINCT_CATEGORIES",
+      "kept_positions": [
+        2,
+        3
+      ],
+      "discarded_positions": [],
+      "entries_summary": [
+        {
+          "position": 2,
+          "category": "Significant Data Fiduciary Obligations",
+          "requirement": "Certifying authorities must ensure that the subscriber has accepted the Digital Signature Certificate."
+        },
+        {
+          "position": 3,
+          "category": "Security Safeguards",
+          "requirement": "Certifying authorities must ensure that the Digital Signature Certificate is published or otherwise made available to th"
+        }
+      ]
+    },
+    {
+      "batch_id": "2c4be75d13384a290342fce6",
+      "source_clause_id": "G001702",
+      "total_entries": 4,
+      "distinct_categories": 1,
+      "categories": [
+        "Confidentiality & Misuse of Data"
+      ],
+      "decision": "KEPT_FIRST_PER_CATEGORY_OR_DEDUPED_BY_EMBEDDING",
+      "kept_positions": [
+        6
+      ],
+      "discarded_positions": [
+        7,
+        8,
+        9
+      ],
+      "entries_summary": [
+        {
+          "position": 6,
+          "category": "Confidentiality & Misuse of Data",
+          "requirement": "Certifying authorities must ensure that the electronic signature is compliant with the provisions of the IT Act and rela"
+        },
+        {
+          "position": 7,
+          "category": "Confidentiality & Misuse of Data",
+          "requirement": "Certifying authorities must ensure that the electronic signature is issued in accordance with the provisions of the IT A"
+        },
+        {
+          "position": 8,
+          "category": "Confidentiality & Misuse of Data",
+          "requirement": "Certifying authorities must ensure that the electronic signature is issued in accordance with the provisions of the IT A"
+        },
+        {
+          "position": 9,
+          "category": "Confidentiality & Misuse of Data",
+          "requirement": "Certifying authorities must ensure that the electronic signature is issued in accordance with the provisions of the IT A"
+        }
+      ]
+    }
+  ]
+}

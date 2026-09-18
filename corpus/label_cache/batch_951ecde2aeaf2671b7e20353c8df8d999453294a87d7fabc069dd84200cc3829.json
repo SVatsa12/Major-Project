@@ -1,0 +1,53 @@
+{
+  "cache_key": "951ecde2aeaf2671b7e20353c8df8d999453294a87d7fabc069dd84200cc3829",
+  "created_at_utc": "2026-09-17T06:44:53.931234+00:00",
+  "prompt_version": "policy-labeling-v7-reliable-batches",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S001819",
+    "S001820",
+    "S001821",
+    "S001822",
+    "S001823",
+    "S001824"
+  ],
+  "labels": [
+    {
+      "clause_id": "S001819",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Partially Compliant",
+      "justification": "The clause mentions confidentiality obligations but lacks specific security measures required by the taxonomy."
+    },
+    {
+      "clause_id": "S001820",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses confidentiality but does not specify technical or organizational security measures."
+    },
+    {
+      "clause_id": "S001821",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Compliant",
+      "justification": "The clause explicitly mentions implementing technical and organizational measures for data protection."
+    },
+    {
+      "clause_id": "S001822",
+      "best_match_taxonomy_id": "DPDP_ACT-0031",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses breach notification but lacks detail on the nature and impact of the breach."
+    },
+    {
+      "clause_id": "S001823",
+      "best_match_taxonomy_id": "DPDP_RUL-0094",
+      "verdict": "Partially Compliant",
+      "justification": "The clause mentions breach notification but does not provide a detailed description of the breach."
+    },
+    {
+      "clause_id": "S001824",
+      "best_match_taxonomy_id": "DPDP_ACT-0046",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses data subject rights but lacks specific details on how these rights are exercised."
+    }
+  ],
+  "status": "SUCCESS"
+}

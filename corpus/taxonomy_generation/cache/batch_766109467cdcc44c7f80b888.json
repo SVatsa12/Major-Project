@@ -1,0 +1,143 @@
+{
+  "batch_id": "766109467cdcc44c7f80b888",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001020",
+    "G001022",
+    "G001024",
+    "G001025",
+    "G001027",
+    "G001029",
+    "G001030",
+    "G001031"
+  ],
+  "raw_response": "[\n  {\n    \"category\": \"Consent & Notice\",\n    \"requirement\": \"Provide a clear and accessible communication link for accessing the website or app.\",\n    \"source\": \"DPDP Rules 2025, Rule 8(1)(c)\",\n    \"weight\": 2,\n    \"source_clause_ids\": [\"G001020\"],\n    \"checkable_test\": \"Verify the presence of a specific and accessible link to the website or app in the document.\",\n    \"applicability\": \"Applicable to all data fiduciaries required to provide such links.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Consent & Notice\",\n    \"requirement\": \"Provide a description of means for withdrawing consent with ease comparable to the ease of giving consent.\",\n    \"source\": \"DPDP Rules 2025, Rule 8(1)(i)\",\n    \"weight\": 2,\n    \"source_clause_ids\": [\"G001022\"],\n    \"checkable_test\": \"Verify the presence of a clear and accessible method for withdrawing consent.\",\n    \"applicability\": \"Applicable to all data fiduciaries requiring consent.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Grievance Redressal\",\n    \"requirement\": \"Provide a description of means for making a complaint to the Board.\",\n    \"source\": \"DPDP Rules 2025, Rule 8(1)(iii)\",\n    \"weight\": 2,\n    \"source_clause_ids\": [\"G001024\"],\n    \"checkable_test\": \"Verify the presence of a clear and accessible method for lodging a complaint with the Board.\",\n    \"applicability\": \"Applicable to all data fiduciaries.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Significant Data Fiduciary Obligations\",\n    \"requirement\": \"Register as a Consent Manager with the Board by furnishing required particulars and documents.\",\n    \"source\": \"DPDP Rules 2025, Rule 8(1)(4)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G001025\"],\n    \"checkable_test\": \"Verify the presence of a registration process for Consent Managers as per the Board's requirements.\",\n    \"applicability\": \"Applicable to entities registering as Consent Managers.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Significant Data Fiduciary Obligations\",\n    \"requirement\": \"Register the applicant as a Consent Manager and publish the details on the Board's website.\",\n    \"source\": \"DPDP Rules 2025, Rule 8(1)(a)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G001027\"],\n    \"checkable_test\": \"Verify the presence of a process for registering Consent Managers and publishing their details.\",\n    \"applicability\": \"Applicable to entities registering as Consent Managers.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Significant Data Fiduciary Obligations\",\n    \"requirement\": \"Ensure Consent Managers adhere to conditions and obligations as specified in Part B of the First Schedule.\",\n    \"source\": \"DPDP Rules 2025, Rule 8(1)(3)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G001029\"],\n    \"checkable_test\": \"Verify the presence of obligations for Consent Managers as specified in Part B of the First Schedule.\",\n    \"applicability\": \"Applicable to all Consent Managers.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Significant Data Fiduciary Obligations\",\n    \"requirement\": \"Take corrective measures if the Board identifies nonadherence to conditions and obligations by a Consent Manager.\",\n    \"source\": \"DPDP Rules 2025, Rule 8(1)(4)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G001030\"],\n    \"checkable_test\": \"Verify the presence of a process for addressing nonadherence by Consent Managers.\",\n    \"applicability\": \"Applicable to all Consent Managers.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Significant Data Fiduciary Obligations\",\n    \"requirement\": \"Issue an order for reasons to be recorded in writing if it is necessary to act in the interests of Data Principals.\",\n    \"source\": \"DPDP Rules 2025, Rule 8(1)(5)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G001031\"],\n    \"checkable_test\": \"Verify the presence of a process for issuing orders in the interests of Data Principals.\",\n    \"applicability\": \"Applicable to all Consent Managers.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  }\n]",
+  "parsed_entries": [
+    {
+      "category": "Consent & Notice",
+      "requirement": "Provide a clear and accessible communication link for accessing the website or app.",
+      "source": "DPDP Rules 2025, Rule 8(1)(c)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001020"
+      ],
+      "checkable_test": "Verify the presence of a specific and accessible link to the website or app in the document.",
+      "applicability": "Applicable to all data fiduciaries required to provide such links.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Consent & Notice",
+      "requirement": "Provide a description of means for withdrawing consent with ease comparable to the ease of giving consent.",
+      "source": "DPDP Rules 2025, Rule 8(1)(i)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001022"
+      ],
+      "checkable_test": "Verify the presence of a clear and accessible method for withdrawing consent.",
+      "applicability": "Applicable to all data fiduciaries requiring consent.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Grievance Redressal",
+      "requirement": "Provide a description of means for making a complaint to the Board.",
+      "source": "DPDP Rules 2025, Rule 8(1)(iii)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001024"
+      ],
+      "checkable_test": "Verify the presence of a clear and accessible method for lodging a complaint with the Board.",
+      "applicability": "Applicable to all data fiduciaries.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Register as a Consent Manager with the Board by furnishing required particulars and documents.",
+      "source": "DPDP Rules 2025, Rule 8(1)(4)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001025"
+      ],
+      "checkable_test": "Verify the presence of a registration process for Consent Managers as per the Board's requirements.",
+      "applicability": "Applicable to entities registering as Consent Managers.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Register the applicant as a Consent Manager and publish the details on the Board's website.",
+      "source": "DPDP Rules 2025, Rule 8(1)(a)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001027"
+      ],
+      "checkable_test": "Verify the presence of a process for registering Consent Managers and publishing their details.",
+      "applicability": "Applicable to entities registering as Consent Managers.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Ensure Consent Managers adhere to conditions and obligations as specified in Part B of the First Schedule.",
+      "source": "DPDP Rules 2025, Rule 8(1)(3)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001029"
+      ],
+      "checkable_test": "Verify the presence of obligations for Consent Managers as specified in Part B of the First Schedule.",
+      "applicability": "Applicable to all Consent Managers.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Take corrective measures if the Board identifies nonadherence to conditions and obligations by a Consent Manager.",
+      "source": "DPDP Rules 2025, Rule 8(1)(4)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001030"
+      ],
+      "checkable_test": "Verify the presence of a process for addressing nonadherence by Consent Managers.",
+      "applicability": "Applicable to all Consent Managers.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Issue an order for reasons to be recorded in writing if it is necessary to act in the interests of Data Principals.",
+      "source": "DPDP Rules 2025, Rule 8(1)(5)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001031"
+      ],
+      "checkable_test": "Verify the presence of a process for issuing orders in the interests of Data Principals.",
+      "applicability": "Applicable to all Consent Managers.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T11:24:33.929611+00:00",
+  "multi_mapped_records": []
+}

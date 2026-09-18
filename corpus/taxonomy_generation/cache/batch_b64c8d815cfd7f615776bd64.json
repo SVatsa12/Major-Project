@@ -1,0 +1,53 @@
+{
+  "batch_id": "b64c8d815cfd7f615776bd64",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G000359",
+    "G000363",
+    "G000369",
+    "G000377",
+    "G000378",
+    "G000380",
+    "G000395",
+    "G000399"
+  ],
+  "raw_response": "[{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Data Protection Board of India must be established by the Central Government.\",\"source\":\"DPDP Act 2023, Section 18\",\"weight\":3,\"source_clause_ids\":[\"G000395\"],\"checkable_test\":\"Verify if the Central Government has established the Data Protection Board of India as defined in the DPDP Act 2023.\",\"applicability\":\"Applicable to all entities subject to the DPDP Act 2023.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is directly derived from the definition of 'Board' in the DPDP Act 2023.\"},{\"category\":\"Consent & Notice\",\"requirement\":\"A Consent Manager must be registered with the Data Protection Board of India and act as a single point of contact for managing consent.\",\"source\":\"DPDP Act 2023, Section 2(g)\",\"weight\":3,\"source_clause_ids\":[\"G000399\"],\"checkable_test\":\"Verify if the entity has a registered Consent Manager acting as a single point of contact for managing consent.\",\"applicability\":\"Applicable to entities that collect and process personal data.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is directly derived from the definition of 'Consent Manager' in the DPDP Act 2023.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Data Protection Board of India must be established by the Central Government.",
+      "source": "DPDP Act 2023, Section 18",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000395"
+      ],
+      "checkable_test": "Verify if the Central Government has established the Data Protection Board of India as defined in the DPDP Act 2023.",
+      "applicability": "Applicable to all entities subject to the DPDP Act 2023.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly derived from the definition of 'Board' in the DPDP Act 2023.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Consent & Notice",
+      "requirement": "A Consent Manager must be registered with the Data Protection Board of India and act as a single point of contact for managing consent.",
+      "source": "DPDP Act 2023, Section 2(g)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000399"
+      ],
+      "checkable_test": "Verify if the entity has a registered Consent Manager acting as a single point of contact for managing consent.",
+      "applicability": "Applicable to entities that collect and process personal data.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly derived from the definition of 'Consent Manager' in the DPDP Act 2023.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T10:58:59.243026+00:00",
+  "multi_mapped_records": []
+}

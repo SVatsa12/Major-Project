@@ -1,0 +1,53 @@
+{
+  "cache_key": "fb1a8fa18c57a7c4cfe90728c90a66402eb2e2c5ce5f20df84385290e8a10148",
+  "created_at_utc": "2026-09-16T13:42:53.919890+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S001537",
+    "S001538",
+    "S001539",
+    "S001540",
+    "S001541",
+    "S001542"
+  ],
+  "labels": [
+    {
+      "clause_id": "S001537",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Partially Compliant",
+      "justification": "The clause mentions storing metadata but does not specify security measures like encryption or obfuscation required by the taxonomy."
+    },
+    {
+      "clause_id": "S001538",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Partially Compliant",
+      "justification": "The clause discusses data usage for features but lacks specific security measures required by the taxonomy."
+    },
+    {
+      "clause_id": "S001539",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Partially Compliant",
+      "justification": "The clause mentions not using private data for ads but lacks specific security measures required by the taxonomy."
+    },
+    {
+      "clause_id": "S001540",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Partially Compliant",
+      "justification": "The clause discusses data usage for ads but lacks specific security measures required by the taxonomy."
+    },
+    {
+      "clause_id": "S001541",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S001542",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Partially Compliant",
+      "justification": "The clause mentions data processing for ads but lacks specific security measures required by the taxonomy."
+    }
+  ],
+  "status": "SUCCESS"
+}

@@ -1,0 +1,53 @@
+{
+  "cache_key": "81ab48892e73f2031fe233fba9aae970a26f974f3d31c870312df1f645848a88",
+  "created_at_utc": "2026-09-17T06:46:58.144675+00:00",
+  "prompt_version": "policy-labeling-v7-reliable-batches",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S001843",
+    "S001844",
+    "S001845",
+    "S001846",
+    "S001847",
+    "S001848"
+  ],
+  "labels": [
+    {
+      "clause_id": "S001843",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S001844",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S001845",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses security measures but lacks specific technical safeguards like encryption."
+    },
+    {
+      "clause_id": "S001846",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses physical access controls but lacks specific technical safeguards."
+    },
+    {
+      "clause_id": "S001847",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses surveillance systems but lacks specific technical safeguards."
+    },
+    {
+      "clause_id": "S001848",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses environmental controls but lacks specific technical safeguards."
+    }
+  ],
+  "status": "SUCCESS"
+}

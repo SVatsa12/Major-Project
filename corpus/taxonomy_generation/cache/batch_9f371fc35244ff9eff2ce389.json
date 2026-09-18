@@ -1,0 +1,53 @@
+{
+  "batch_id": "9f371fc35244ff9eff2ce389",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G002185",
+    "G002186",
+    "G002187",
+    "G002188",
+    "G002190",
+    "G002191",
+    "G002192",
+    "G002193"
+  ],
+  "raw_response": "[  \n  {  \n    \"category\": \"Intermediary/Platform Liability\",  \n    \"requirement\": \"Public authorities must disclose the procedure followed in the decision-making process, including channels of supervision and accountability.\",  \n    \"source\": \"RTI Act 2005, Section 8(4)(iii)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G002192\"],  \n    \"checkable_test\": \"A public authority's governance procedures and accountability mechanisms must be publicly disclosed.\",  \n    \"applicability\": \"Public authorities subject to the RTI Act 2005\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation applies to public authorities and requires transparency in decision-making processes.\"  \n  },  \n  {  \n    \"category\": \"Data Retention & Erasure\",  \n    \"requirement\": \"Public authorities must maintain records of rules, regulations, instructions, manuals, and records used by their employees for discharging functions.\",  \n    \"source\": \"RTI Act 2005, Section 8(4)(v)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G002193\"],  \n    \"checkable_test\": \"Public authorities must retain and make available records of internal rules and guidelines used by employees.\",  \n    \"applicability\": \"Public authorities subject to the RTI Act 2005\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation ensures transparency and accountability in the functioning of public authorities.\"  \n  }  \n]",
+  "parsed_entries": [
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Public authorities must disclose the procedure followed in the decision-making process, including channels of supervision and accountability.",
+      "source": "RTI Act 2005, Section 8(4)(iii)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002192"
+      ],
+      "checkable_test": "A public authority's governance procedures and accountability mechanisms must be publicly disclosed.",
+      "applicability": "Public authorities subject to the RTI Act 2005",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation applies to public authorities and requires transparency in decision-making processes.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "Public authorities must maintain records of rules, regulations, instructions, manuals, and records used by their employees for discharging functions.",
+      "source": "RTI Act 2005, Section 8(4)(v)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002193"
+      ],
+      "checkable_test": "Public authorities must retain and make available records of internal rules and guidelines used by employees.",
+      "applicability": "Public authorities subject to the RTI Act 2005",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation ensures transparency and accountability in the functioning of public authorities.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T15:21:49.202033+00:00",
+  "multi_mapped_records": []
+}

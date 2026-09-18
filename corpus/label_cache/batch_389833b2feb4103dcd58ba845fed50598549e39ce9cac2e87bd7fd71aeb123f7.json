@@ -1,0 +1,53 @@
+{
+  "cache_key": "389833b2feb4103dcd58ba845fed50598549e39ce9cac2e87bd7fd71aeb123f7",
+  "created_at_utc": "2026-09-17T06:50:37.865042+00:00",
+  "prompt_version": "policy-labeling-v7-reliable-batches",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S001879",
+    "S001880",
+    "S001881",
+    "S001882",
+    "S001883",
+    "S001884"
+  ],
+  "labels": [
+    {
+      "clause_id": "S001879",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause defines terms related to data transfer and does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S001880",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause defines terms related to data transfer and does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S001881",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause defines terms related to data transfer and does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S001882",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause defines terms related to data transfer and does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S001883",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause defines terms related to data transfer and does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S001884",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause defines terms related to data transfer and does not meaningfully address any listed requirement."
+    }
+  ],
+  "status": "SUCCESS"
+}

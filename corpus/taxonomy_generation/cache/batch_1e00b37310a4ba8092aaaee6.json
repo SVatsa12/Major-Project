@@ -1,0 +1,83 @@
+{
+  "batch_id": "1e00b37310a4ba8092aaaee6",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G002445",
+    "G002450",
+    "G002455",
+    "G002456",
+    "G002457",
+    "G002512",
+    "G002514",
+    "G002517"
+  ],
+  "raw_response": "[{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Public authorities must provide the postal and street address, phone and fax number, and electronic mail address of their Central Public Information Officer or State Public Information Officer.\",\"source\":\"RTI_ACT_2005, SECTION=MISCELLANEOUS\",\"weight\":2,\"source_clause_ids\":[\"G002455\"],\"checkable_test\":\"Verify that the public authority's contact details for the Public Information Officer are publicly available.\",\"applicability\":\"Public authorities under the RTI Act 2005\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is directly tied to the obligation to disclose contact information for the Public Information Officer.\"},{\"category\":\"Consent & Notice\",\"requirement\":\"Public authorities must train Central Public Information Officers or State Public Information Officers and produce relevant training materials for use by public authorities.\",\"source\":\"RTI_ACT_2005, SECTION=MISCELLANEOUS\",\"weight\":2,\"source_clause_ids\":[\"G002450\"],\"checkable_test\":\"Verify that training materials and training of Public Information Officers are provided.\",\"applicability\":\"Public authorities under the RTI Act 2005\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement mandates the provision of training and materials for Public Information Officers.\"},{\"category\":\"Data Retention & Erasure\",\"requirement\":\"Public authorities must specify the manner and form in which requests for access to information shall be made to their Central Public Information Officer or State Public Information Officer.\",\"source\":\"RTI_ACT_2005, SECTION=MISCELLANEOUS\",\"weight\":2,\"source_clause_ids\":[\"G002456\"],\"checkable_test\":\"Verify that the public authority specifies the manner and form for submitting information requests.\",\"applicability\":\"Public authorities under the RTI Act 2005\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement outlines the procedural format for submitting information requests.\"},{\"category\":\"Data Principal Rights\",\"requirement\":\"Public authorities must specify the assistance available from and the duties of their Central Public Information Officer or State Public Information Officer under the RTI Act.\",\"source\":\"RTI_ACT_2005, SECTION=MISCELLANEOUS\",\"weight\":2,\"source_clause_ids\":[\"G002457\"],\"checkable_test\":\"Verify that the public authority outlines the assistance and duties of the Public Information Officer.\",\"applicability\":\"Public authorities under the RTI Act 2005\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures transparency in the role and responsibilities of the Public Information Officer.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Public authorities must provide the postal and street address, phone and fax number, and electronic mail address of their Central Public Information Officer or State Public Information Officer.",
+      "source": "RTI_ACT_2005, SECTION=MISCELLANEOUS",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002455"
+      ],
+      "checkable_test": "Verify that the public authority's contact details for the Public Information Officer are publicly available.",
+      "applicability": "Public authorities under the RTI Act 2005",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation to disclose contact information for the Public Information Officer.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Consent & Notice",
+      "requirement": "Public authorities must train Central Public Information Officers or State Public Information Officers and produce relevant training materials for use by public authorities.",
+      "source": "RTI_ACT_2005, SECTION=MISCELLANEOUS",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002450"
+      ],
+      "checkable_test": "Verify that training materials and training of Public Information Officers are provided.",
+      "applicability": "Public authorities under the RTI Act 2005",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement mandates the provision of training and materials for Public Information Officers.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "Public authorities must specify the manner and form in which requests for access to information shall be made to their Central Public Information Officer or State Public Information Officer.",
+      "source": "RTI_ACT_2005, SECTION=MISCELLANEOUS",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002456"
+      ],
+      "checkable_test": "Verify that the public authority specifies the manner and form for submitting information requests.",
+      "applicability": "Public authorities under the RTI Act 2005",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement outlines the procedural format for submitting information requests.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Principal Rights",
+      "requirement": "Public authorities must specify the assistance available from and the duties of their Central Public Information Officer or State Public Information Officer under the RTI Act.",
+      "source": "RTI_ACT_2005, SECTION=MISCELLANEOUS",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002457"
+      ],
+      "checkable_test": "Verify that the public authority outlines the assistance and duties of the Public Information Officer.",
+      "applicability": "Public authorities under the RTI Act 2005",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures transparency in the role and responsibilities of the Public Information Officer.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T13:12:44.670883+00:00",
+  "multi_mapped_records": []
+}

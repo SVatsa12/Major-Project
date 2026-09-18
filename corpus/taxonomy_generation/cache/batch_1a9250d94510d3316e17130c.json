@@ -1,0 +1,38 @@
+{
+  "batch_id": "1a9250d94510d3316e17130c",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G000404",
+    "G000407",
+    "G000408",
+    "G000410",
+    "G000412",
+    "G000422",
+    "G000423",
+    "G000424"
+  ],
+  "raw_response": "[{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"A data fiduciary must ensure that personal data is processed in a manner that respects the rights and interests of data principals.\",\"source\":\"DPDP Act 2023, Section 2(t)\",\"weight\":3,\"source_clause_ids\":[\"G000424\"],\"checkable_test\":\"Verify that the definition of 'personal data' is clearly stated and aligns with the Act's requirements.\",\"applicability\":\"All data fiduciaries processing personal data.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This clause defines 'personal data' and is foundational for understanding obligations under the DPDP Act 2023.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "A data fiduciary must ensure that personal data is processed in a manner that respects the rights and interests of data principals.",
+      "source": "DPDP Act 2023, Section 2(t)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000424"
+      ],
+      "checkable_test": "Verify that the definition of 'personal data' is clearly stated and aligns with the Act's requirements.",
+      "applicability": "All data fiduciaries processing personal data.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "This clause defines 'personal data' and is foundational for understanding obligations under the DPDP Act 2023.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T13:24:01.254367+00:00",
+  "multi_mapped_records": []
+}

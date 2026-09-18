@@ -1,0 +1,53 @@
+{
+  "cache_key": "7486aedebb037e31f3dbb9bc5e2518fb1453d50c8286234ad02ce5e71ff5f1fc",
+  "created_at_utc": "2026-09-16T14:38:22.757719+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S002149",
+    "S002150",
+    "S002151",
+    "S002152",
+    "S002153",
+    "S002154"
+  ],
+  "labels": [
+    {
+      "clause_id": "S002149",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Partially Compliant",
+      "justification": "The clause mentions global infrastructure but lacks specific security measures like encryption or virtual tokens required by DPDP_RUL-0086."
+    },
+    {
+      "clause_id": "S002150",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S002151",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S002152",
+      "best_match_taxonomy_id": "DPDP_RUL-0379",
+      "verdict": "Partially Compliant",
+      "justification": "The clause mentions age requirements but does not specifically address children's location data processing as required by DPDP_RUL-0379."
+    },
+    {
+      "clause_id": "S002153",
+      "best_match_taxonomy_id": "DPDP_RUL-0379",
+      "verdict": "Partially Compliant",
+      "justification": "The clause mentions age requirements but does not specifically address children's location data processing as required by DPDP_RUL-0379."
+    },
+    {
+      "clause_id": "S002154",
+      "best_match_taxonomy_id": "DPDP_ACT-0046",
+      "verdict": "Partially Compliant",
+      "justification": "The clause mentions privacy and data practices but lacks specific provisions for data principal rights as required by DPDP_ACT-0046."
+    }
+  ],
+  "status": "SUCCESS"
+}

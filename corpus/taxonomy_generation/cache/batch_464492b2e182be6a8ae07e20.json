@@ -1,0 +1,143 @@
+{
+  "batch_id": "464492b2e182be6a8ae07e20",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G003245",
+    "G003246",
+    "G003248",
+    "G003250",
+    "G003265",
+    "G003281",
+    "G003282",
+    "G003284"
+  ],
+  "raw_response": "[{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The Authority may request the Central Government to furnish information or documents within seven days for making recommendations.\",\"source\":\"TRAI_ACT_1997, SECTION=POWERS AND FUNCTIONS OF THE AUTHORITY\",\"weight\":2,\"source_clause_ids\":[\"G003245\"],\"checkable_test\":\"Check if the Central Government provides requested information within seven days.\",\"applicability\":\"Applicable when the Authority requests information for recommendations.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause outlines a time-bound obligation for the Central Government to provide information.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The Central Government may issue a licence to a service provider if no recommendations are received from the Authority within the specified period.\",\"source\":\"TRAI_ACT_1997, SECTION=POWERS AND FUNCTIONS OF THE AUTHORITY\",\"weight\":2,\"source_clause_ids\":[\"G003246\"],\"checkable_test\":\"Verify if the Central Government issues a licence when no recommendations are received within the time limit.\",\"applicability\":\"Applicable when the Authority fails to provide recommendations within the time limit.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause outlines the licensing authority of the Central Government in the absence of recommendations.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The Authority may notify rates for telecommunication services in India and outside India in the Official Gazette.\",\"source\":\"TRAI_ACT_1997, SECTION=POWERS AND FUNCTIONS OF THE AUTHORITY\",\"weight\":2,\"source_clause_ids\":[\"G003248\"],\"checkable_test\":\"Check if the Authority publishes rates for telecommunication services in the Official Gazette.\",\"applicability\":\"Applicable when the Authority sets rates for telecommunication services.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause outlines the Authority's power to set and notify service rates.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The Authority shall not act against the sovereignty and integrity of India, the security of the State, or friendly relations while discharging its functions.\",\"source\":\"TRAI_ACT_1997, SECTION=POWERS AND FUNCTIONS OF THE AUTHORITY\",\"weight\":2,\"source_clause_ids\":[\"G003250\"],\"checkable_test\":\"Verify that the Authority's actions do not compromise sovereignty, security, or friendly relations.\",\"applicability\":\"Applicable when the Authority is performing its functions.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause outlines the restriction on the Authority's actions regarding national interests.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The Authority shall require individuals to produce books of account or documents relating to an inquiry within the specified time.\",\"source\":\"TRAI_ACT_1997, SECTION=POWERS AND FUNCTIONS OF THE AUTHORITY\",\"weight\":2,\"source_clause_ids\":[\"G003265\"],\"checkable_test\":\"Check if individuals provide required documents within the time specified by the Authority.\",\"applicability\":\"Applicable when the Authority conducts an inquiry.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause outlines the obligation to provide documents during an inquiry.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The clause does not apply to matters relating to individual consumer complaints before consumer forums.\",\"source\":\"TRAI_ACT_1997, SECTION=Provided that nothing in this clause shall apply in respect of matters relating to\",\"weight\":1,\"source_clause_ids\":[\"G003281\"],\"checkable_test\":\"Verify that the clause does not apply to consumer complaints before consumer forums.\",\"applicability\":\"Applicable when consumer complaints are made before consumer forums.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This clause excludes consumer complaints from its scope.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The clause does not apply to disputes between telegraph authorities and other persons under the Indian Telegraph Act.\",\"source\":\"TRAI_ACT_1997, SECTION=Provided that nothing in this clause shall apply in respect of matters relating to\",\"weight\":1,\"source_clause_ids\":[\"G003282\"],\"checkable_test\":\"Check if the clause excludes disputes between telegraph authorities and other persons.\",\"applicability\":\"Applicable when disputes between telegraph authorities and other persons arise.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This clause excludes disputes under the Indian Telegraph Act from its scope.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The Central Government or other entities may apply to the Appellate Tribunal for dispute resolution or appeals.\",\"source\":\"TRAI_ACT_1997, SECTION=Provided that nothing in this clause shall apply in respect of matters relating to\",\"weight\":1,\"source_clause_ids\":[\"G003284\"],\"checkable_test\":\"Verify if the Central Government or other entities can apply to the Appellate Tribunal for dispute resolution.\",\"applicability\":\"Applicable when disputes are referred to the Appellate Tribunal.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This clause outlines the right of entities to apply to the Appellate Tribunal for dispute resolution.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Authority may request the Central Government to furnish information or documents within seven days for making recommendations.",
+      "source": "TRAI_ACT_1997, SECTION=POWERS AND FUNCTIONS OF THE AUTHORITY",
+      "weight": 2,
+      "source_clause_ids": [
+        "G003245"
+      ],
+      "checkable_test": "Check if the Central Government provides requested information within seven days.",
+      "applicability": "Applicable when the Authority requests information for recommendations.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause outlines a time-bound obligation for the Central Government to provide information.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Central Government may issue a licence to a service provider if no recommendations are received from the Authority within the specified period.",
+      "source": "TRAI_ACT_1997, SECTION=POWERS AND FUNCTIONS OF THE AUTHORITY",
+      "weight": 2,
+      "source_clause_ids": [
+        "G003246"
+      ],
+      "checkable_test": "Verify if the Central Government issues a licence when no recommendations are received within the time limit.",
+      "applicability": "Applicable when the Authority fails to provide recommendations within the time limit.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause outlines the licensing authority of the Central Government in the absence of recommendations.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Authority may notify rates for telecommunication services in India and outside India in the Official Gazette.",
+      "source": "TRAI_ACT_1997, SECTION=POWERS AND FUNCTIONS OF THE AUTHORITY",
+      "weight": 2,
+      "source_clause_ids": [
+        "G003248"
+      ],
+      "checkable_test": "Check if the Authority publishes rates for telecommunication services in the Official Gazette.",
+      "applicability": "Applicable when the Authority sets rates for telecommunication services.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause outlines the Authority's power to set and notify service rates.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Authority shall not act against the sovereignty and integrity of India, the security of the State, or friendly relations while discharging its functions.",
+      "source": "TRAI_ACT_1997, SECTION=POWERS AND FUNCTIONS OF THE AUTHORITY",
+      "weight": 2,
+      "source_clause_ids": [
+        "G003250"
+      ],
+      "checkable_test": "Verify that the Authority's actions do not compromise sovereignty, security, or friendly relations.",
+      "applicability": "Applicable when the Authority is performing its functions.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause outlines the restriction on the Authority's actions regarding national interests.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Authority shall require individuals to produce books of account or documents relating to an inquiry within the specified time.",
+      "source": "TRAI_ACT_1997, SECTION=POWERS AND FUNCTIONS OF THE AUTHORITY",
+      "weight": 2,
+      "source_clause_ids": [
+        "G003265"
+      ],
+      "checkable_test": "Check if individuals provide required documents within the time specified by the Authority.",
+      "applicability": "Applicable when the Authority conducts an inquiry.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause outlines the obligation to provide documents during an inquiry.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The clause does not apply to matters relating to individual consumer complaints before consumer forums.",
+      "source": "TRAI_ACT_1997, SECTION=Provided that nothing in this clause shall apply in respect of matters relating to",
+      "weight": 1,
+      "source_clause_ids": [
+        "G003281"
+      ],
+      "checkable_test": "Verify that the clause does not apply to consumer complaints before consumer forums.",
+      "applicability": "Applicable when consumer complaints are made before consumer forums.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "This clause excludes consumer complaints from its scope.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The clause does not apply to disputes between telegraph authorities and other persons under the Indian Telegraph Act.",
+      "source": "TRAI_ACT_1997, SECTION=Provided that nothing in this clause shall apply in respect of matters relating to",
+      "weight": 1,
+      "source_clause_ids": [
+        "G003282"
+      ],
+      "checkable_test": "Check if the clause excludes disputes between telegraph authorities and other persons.",
+      "applicability": "Applicable when disputes between telegraph authorities and other persons arise.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "This clause excludes disputes under the Indian Telegraph Act from its scope.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Central Government or other entities may apply to the Appellate Tribunal for dispute resolution or appeals.",
+      "source": "TRAI_ACT_1997, SECTION=Provided that nothing in this clause shall apply in respect of matters relating to",
+      "weight": 1,
+      "source_clause_ids": [
+        "G003284"
+      ],
+      "checkable_test": "Verify if the Central Government or other entities can apply to the Appellate Tribunal for dispute resolution.",
+      "applicability": "Applicable when disputes are referred to the Appellate Tribunal.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "This clause outlines the right of entities to apply to the Appellate Tribunal for dispute resolution.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T13:15:52.822973+00:00",
+  "multi_mapped_records": []
+}

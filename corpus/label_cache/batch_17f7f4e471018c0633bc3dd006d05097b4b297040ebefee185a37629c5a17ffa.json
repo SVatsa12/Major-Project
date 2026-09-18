@@ -1,0 +1,53 @@
+{
+  "cache_key": "17f7f4e471018c0633bc3dd006d05097b4b297040ebefee185a37629c5a17ffa",
+  "created_at_utc": "2026-09-16T13:41:36.044445+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S001525",
+    "S001526",
+    "S001527",
+    "S001528",
+    "S001529",
+    "S001530"
+  ],
+  "labels": [
+    {
+      "clause_id": "S001525",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Partially Compliant",
+      "justification": "The clause mentions data security measures but lacks specific details on encryption or other security protocols required by the taxonomy."
+    },
+    {
+      "clause_id": "S001526",
+      "best_match_taxonomy_id": "DPDP_ACT-0055",
+      "verdict": "Partially Compliant",
+      "justification": "The clause allows users to stop syncing contacts but does not explicitly address cross-border data transfer requirements."
+    },
+    {
+      "clause_id": "S001527",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Partially Compliant",
+      "justification": "The clause mentions data security but lacks specific details on encryption or other security protocols required by the taxonomy."
+    },
+    {
+      "clause_id": "S001528",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Partially Compliant",
+      "justification": "The clause mentions data security but lacks specific details on encryption or other security protocols required by the taxonomy."
+    },
+    {
+      "clause_id": "S001529",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Partially Compliant",
+      "justification": "The clause mentions data security but lacks specific details on encryption or other security protocols required by the taxonomy."
+    },
+    {
+      "clause_id": "S001530",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Partially Compliant",
+      "justification": "The clause mentions data security but lacks specific details on encryption or other security protocols required by the taxonomy."
+    }
+  ],
+  "status": "SUCCESS"
+}

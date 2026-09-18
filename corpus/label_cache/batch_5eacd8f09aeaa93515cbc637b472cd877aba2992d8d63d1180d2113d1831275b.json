@@ -1,0 +1,53 @@
+{
+  "cache_key": "5eacd8f09aeaa93515cbc637b472cd877aba2992d8d63d1180d2113d1831275b",
+  "created_at_utc": "2026-09-17T05:23:14.947754+00:00",
+  "prompt_version": "policy-labeling-v7-reliable-batches",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S000805",
+    "S000806",
+    "S000807",
+    "S000808",
+    "S000809",
+    "S000810"
+  ],
+  "labels": [
+    {
+      "clause_id": "S000805",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S000806",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S000807",
+      "best_match_taxonomy_id": "DPDP_ACT-0046",
+      "verdict": "Partially Compliant",
+      "justification": "The clause mentions rights but lacks specific details on how to exercise them."
+    },
+    {
+      "clause_id": "S000808",
+      "best_match_taxonomy_id": "DPDP_ACT-0046",
+      "verdict": "Partially Compliant",
+      "justification": "The clause provides some methods to manage data but lacks specific details on rights."
+    },
+    {
+      "clause_id": "S000809",
+      "best_match_taxonomy_id": "DPDP_ACT-0046",
+      "verdict": "Partially Compliant",
+      "justification": "The clause mentions exercising rights but lacks specific details on how to do so."
+    },
+    {
+      "clause_id": "S000810",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    }
+  ],
+  "status": "SUCCESS"
+}

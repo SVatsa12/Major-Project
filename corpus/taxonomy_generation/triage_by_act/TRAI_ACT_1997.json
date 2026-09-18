@@ -1,0 +1,918 @@
+[
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Authority may request the Central Government to furnish information or documents within seven days for making recommendations.",
+    "source": "TRAI_ACT_1997, SECTION=POWERS AND FUNCTIONS OF THE AUTHORITY",
+    "weight": 2,
+    "source_clause_ids": [
+      "G003245"
+    ],
+    "checkable_test": "Check if the Central Government provides requested information within seven days.",
+    "applicability": "Applicable when the Authority requests information for recommendations.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This clause outlines a time-bound obligation for the Central Government to provide information.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G003245"
+    ],
+    "candidate_id": "TC-000242",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000242",
+    "source_acts": [
+      "TRAI_ACT_1997"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "central-government duty",
+      "government-facing duty",
+      "information-furnishing duty"
+    ],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "information"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "TRAI_ACT_1997",
+    "requirement_canonical_hash": "2079e5dbef41e3b4419e650592d5fcfba8118e2f1effe20a2857f44f3f3c7a5e",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Central Government may issue a licence to a service provider if no recommendations are received from the Authority within the specified period.",
+    "source": "TRAI_ACT_1997, SECTION=POWERS AND FUNCTIONS OF THE AUTHORITY",
+    "weight": 2,
+    "source_clause_ids": [
+      "G003246"
+    ],
+    "checkable_test": "Verify if the Central Government issues a licence when no recommendations are received within the time limit.",
+    "applicability": "Applicable when the Authority fails to provide recommendations within the time limit.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This clause outlines the licensing authority of the Central Government in the absence of recommendations.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G003246"
+    ],
+    "candidate_id": "TC-000243",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000243",
+    "source_acts": [
+      "TRAI_ACT_1997"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing",
+      "low_policy_checkability_signal"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "central-government duty",
+      "government-facing duty"
+    ],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "TRAI_ACT_1997",
+    "requirement_canonical_hash": "e9d59db767ede964a798739dcfea3f12178aaf503ff275ab9bce40302629288f",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Authority may notify rates for telecommunication services in India and outside India in the Official Gazette.",
+    "source": "TRAI_ACT_1997, SECTION=POWERS AND FUNCTIONS OF THE AUTHORITY",
+    "weight": 2,
+    "source_clause_ids": [
+      "G003248"
+    ],
+    "checkable_test": "Check if the Authority publishes rates for telecommunication services in the Official Gazette.",
+    "applicability": "Applicable when the Authority sets rates for telecommunication services.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This clause outlines the Authority's power to set and notify service rates.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G003248"
+    ],
+    "candidate_id": "TC-000244",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000244",
+    "source_acts": [
+      "TRAI_ACT_1997"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "low_policy_checkability_signal"
+    ],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_APPLICABILITY",
+    "resolved_act": "TRAI_ACT_1997",
+    "requirement_canonical_hash": "2e9ea3362d1bb8158c93469c8076bb6aa1fd2b90d0212f5a67cb0f300bef07bc",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Authority shall not act against the sovereignty and integrity of India, the security of the State, or friendly relations while discharging its functions.",
+    "source": "TRAI_ACT_1997, SECTION=POWERS AND FUNCTIONS OF THE AUTHORITY",
+    "weight": 2,
+    "source_clause_ids": [
+      "G003250"
+    ],
+    "checkable_test": "Verify that the Authority's actions do not compromise sovereignty, security, or friendly relations.",
+    "applicability": "Applicable when the Authority is performing its functions.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This clause outlines the restriction on the Authority's actions regarding national interests.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G003250"
+    ],
+    "candidate_id": "TC-000245",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000245",
+    "source_acts": [
+      "TRAI_ACT_1997"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "security"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "TRAI_ACT_1997",
+    "requirement_canonical_hash": "37d01faeeb7577e088ca7cdb3eb26f18137e7c69283071185fd1cd4541bcf8e5",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Authority shall require individuals to produce books of account or documents relating to an inquiry within the specified time.",
+    "source": "TRAI_ACT_1997, SECTION=POWERS AND FUNCTIONS OF THE AUTHORITY",
+    "weight": 2,
+    "source_clause_ids": [
+      "G003265"
+    ],
+    "checkable_test": "Check if individuals provide required documents within the time specified by the Authority.",
+    "applicability": "Applicable when the Authority conducts an inquiry.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This clause outlines the obligation to provide documents during an inquiry.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G003265"
+    ],
+    "candidate_id": "TC-000246",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000246",
+    "source_acts": [
+      "TRAI_ACT_1997"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "account"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "TRAI_ACT_1997",
+    "requirement_canonical_hash": "0f6fdcdd0f0e2756f2dab37afe4241a866bc613448bc655a25ed0445183274bd",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The clause does not apply to matters relating to individual consumer complaints before consumer forums.",
+    "source": "TRAI_ACT_1997, SECTION=Provided that nothing in this clause shall apply in respect of matters relating to",
+    "weight": 1,
+    "source_clause_ids": [
+      "G003281"
+    ],
+    "checkable_test": "Verify that the clause does not apply to consumer complaints before consumer forums.",
+    "applicability": "Applicable when consumer complaints are made before consumer forums.",
+    "assessability": "2",
+    "citation_confidence": "high",
+    "notes": "This clause excludes consumer complaints from its scope.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G003281"
+    ],
+    "candidate_id": "TC-000247",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000247",
+    "source_acts": [
+      "TRAI_ACT_1997"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 2,
+    "policy_checkability_signal_terms": [
+      "complaint",
+      "use"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "TRAI_ACT_1997",
+    "requirement_canonical_hash": "00e2e82ded09f07a485c8fe5269527e53dbd5b0169e6955547e1af30818f10c4",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The clause does not apply to disputes between telegraph authorities and other persons under the Indian Telegraph Act.",
+    "source": "TRAI_ACT_1997, SECTION=Provided that nothing in this clause shall apply in respect of matters relating to",
+    "weight": 1,
+    "source_clause_ids": [
+      "G003282"
+    ],
+    "checkable_test": "Check if the clause excludes disputes between telegraph authorities and other persons.",
+    "applicability": "Applicable when disputes between telegraph authorities and other persons arise.",
+    "assessability": "2",
+    "citation_confidence": "high",
+    "notes": "This clause excludes disputes under the Indian Telegraph Act from its scope.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G003282"
+    ],
+    "candidate_id": "TC-000248",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000248",
+    "source_acts": [
+      "TRAI_ACT_1997"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "use"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "TRAI_ACT_1997",
+    "requirement_canonical_hash": "7d7311c9d315d45c943fcb45496192f7c69372fc0fc14fc5f2b91fd9cc624090",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Central Government or other entities may apply to the Appellate Tribunal for dispute resolution or appeals.",
+    "source": "TRAI_ACT_1997, SECTION=Provided that nothing in this clause shall apply in respect of matters relating to",
+    "weight": 1,
+    "source_clause_ids": [
+      "G003284"
+    ],
+    "checkable_test": "Verify if the Central Government or other entities can apply to the Appellate Tribunal for dispute resolution.",
+    "applicability": "Applicable when disputes are referred to the Appellate Tribunal.",
+    "assessability": "2",
+    "citation_confidence": "high",
+    "notes": "This clause outlines the right of entities to apply to the Appellate Tribunal for dispute resolution.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G003284"
+    ],
+    "candidate_id": "TC-000249",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000249",
+    "source_acts": [
+      "TRAI_ACT_1997"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing",
+      "possible_institutional_or_administrative_content"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "central-government duty",
+      "government-facing duty"
+    ],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "use"
+    ],
+    "administrative_signal_terms": [
+      "appellate tribunal"
+    ],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "TRAI_ACT_1997",
+    "requirement_canonical_hash": "6c3134695f3e786a503e5cbd86cd07c9ffbffac483a4806c125f3195b3cb2717",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Grievance Redressal",
+    "requirement": "The Central Government or a State Government or a local authority or any person aggrieved by any direction, decision or order made by the Authority may prefer an appeal to the Appellate Tribunal.",
+    "source": "TRAI_ACT_1997, SECTION=1",
+    "weight": 2,
+    "source_clause_ids": [
+      "G003285"
+    ],
+    "checkable_test": "Check if the document allows for appeals to the Appellate Tribunal by the Central Government, State Government, local authority, or aggrieved person.",
+    "applicability": "Applicable to any document that outlines appeal mechanisms under TRAI Act 1997.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This clause establishes the right to appeal to the Appellate Tribunal.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G003285"
+    ],
+    "candidate_id": "TC-000250",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000250",
+    "source_acts": [
+      "TRAI_ACT_1997"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "low_policy_checkability_signal",
+      "possible_institutional_or_administrative_content"
+    ],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [
+      "appellate tribunal"
+    ],
+    "recommended_action": "REVIEW_APPLICABILITY",
+    "resolved_act": "TRAI_ACT_1997",
+    "requirement_canonical_hash": "7a5fa133d0b4aa24ef6c937d0cc5b5762ef45c10c38fa89217278abbaa75fcb5",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Grievance Redressal",
+    "requirement": "Every appeal under sub-section (2) shall be preferred within a period of thirty days from the date on which a copy of the direction or order or decision made by the Authority is received by the Central Government or the State Government or the local authority or the aggrieved person.",
+    "source": "TRAI_ACT_1997, SECTION=1",
+    "weight": 2,
+    "source_clause_ids": [
+      "G003286"
+    ],
+    "checkable_test": "Check if the document specifies a 30-day deadline for filing appeals.",
+    "applicability": "Applicable to any document that outlines appeal mechanisms under TRAI Act 1997.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This clause sets a time limit for filing appeals.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G003286"
+    ],
+    "candidate_id": "TC-000251",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000251",
+    "source_acts": [
+      "TRAI_ACT_1997"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "low_policy_checkability_signal"
+    ],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_APPLICABILITY",
+    "resolved_act": "TRAI_ACT_1997",
+    "requirement_canonical_hash": "b2cc5e8a7e7f77503ee7c89e89881430a1d4beb2fce1c9b59f04be476a1dd282",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Appellate Tribunal shall consist of a Chairperson and not more than two Members to be appointed, by notification, by the Central Government.",
+    "source": "TRAI_ACT_1997, SECTION=1",
+    "weight": 2,
+    "source_clause_ids": [
+      "G003293"
+    ],
+    "checkable_test": "Check if the document specifies the composition of the Appellate Tribunal as a Chairperson and up to two Members.",
+    "applicability": "Applicable to any document that outlines the structure of the Appellate Tribunal under TRAI Act 1997.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This clause defines the composition of the Appellate Tribunal.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G003293"
+    ],
+    "candidate_id": "TC-000252",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000252",
+    "source_acts": [
+      "TRAI_ACT_1997"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing",
+      "low_policy_checkability_signal",
+      "possible_institutional_or_administrative_content"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "central-government duty",
+      "government-facing duty"
+    ],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [
+      "appellate tribunal",
+      "chairperson"
+    ],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "TRAI_ACT_1997",
+    "requirement_canonical_hash": "87ffeb4324b6f2435ff421c0a384862ddab0e1c6d03e0fd6737b9cbe3de0f7fa",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "If at any stage of the hearing of any case or matter it appears to the Chairperson or a Member of the Appellate Tribunal that the case or matter is of such a nature that it ought to be heard by a Bench consisting of two Members, the case or matter may be transferred by the Chairperson to such Bench as the Chairperson may deem fit.",
+    "source": "TRAI_ACT_1997, SECTION=1",
+    "weight": 2,
+    "source_clause_ids": [
+      "G003301"
+    ],
+    "checkable_test": "Check if the document allows the Chairperson to transfer a case to a Bench of two Members if necessary.",
+    "applicability": "Applicable to any document that outlines the transfer of cases within the Appellate Tribunal under TRAI Act 1997.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This clause provides for the transfer of cases to a Bench of two Members.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G003301"
+    ],
+    "candidate_id": "TC-000253",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000253",
+    "source_acts": [
+      "TRAI_ACT_1997"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "possible_institutional_or_administrative_content"
+    ],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "transfer"
+    ],
+    "administrative_signal_terms": [
+      "appellate tribunal",
+      "chairperson"
+    ],
+    "recommended_action": "REVIEW_SCOPE",
+    "resolved_act": "TRAI_ACT_1997",
+    "requirement_canonical_hash": "1f7132c8866f4059101b0d51d6c375f6def2de91dc13f0e2dcb127d54118cf8f",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "In the case of a Member, has held the post of Secretary to the Government of India or any equivalent post in the Central Government or the State Government for a period of not less than two years or a person who is well versed in the field of technology, telecommunication, industry, commerce or administration.",
+    "source": "TRAI_ACT_1997, SECTION=1",
+    "weight": 2,
+    "source_clause_ids": [
+      "G003304"
+    ],
+    "checkable_test": "Check if the document specifies that a Member of the Appellate Tribunal must have held a relevant government post for at least two years or have expertise in technology, telecommunication, industry, commerce, or administration.",
+    "applicability": "Applicable to any document that outlines the qualifications for Appellate Tribunal Members under TRAI Act 1997.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This clause outlines the qualifications for Appellate Tribunal Members.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G003304"
+    ],
+    "candidate_id": "TC-000254",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000254",
+    "source_acts": [
+      "TRAI_ACT_1997"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing",
+      "low_policy_checkability_signal"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "central-government duty",
+      "state-government duty",
+      "government-facing duty"
+    ],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "TRAI_ACT_1997",
+    "requirement_canonical_hash": "d1a25993ba5d403e6af6e5e50a932bb7bb525c1464df2c4dfde343847315d2e5",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "If, for reason other than temporary absence, any vacancy occurs in the office of the Chairperson or a Member of the Appellate Tribunal, the Central Government shall appoint another person in accordance with the provisions of this Act to fill the vacancy and the proceedings may be continued before the Appellate Tribunal from the stage at which the vacancy is filled.",
+    "source": "TRAI_ACT_1997, SECTION=1",
+    "weight": 2,
+    "source_clause_ids": [
+      "G003310"
+    ],
+    "checkable_test": "Check if the document specifies that the Central Government must appoint a replacement for a vacancy in the Appellate Tribunal and continue proceedings from the stage of the vacancy.",
+    "applicability": "Applicable to any document that outlines the appointment process for Appellate Tribunal vacancies under TRAI Act 1997.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This clause outlines the process for filling vacancies in the Appellate Tribunal.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G003310"
+    ],
+    "candidate_id": "TC-000255",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000255",
+    "source_acts": [
+      "TRAI_ACT_1997"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "likely_government_facing",
+      "low_policy_checkability_signal",
+      "possible_institutional_or_administrative_content"
+    ],
+    "likely_government_facing": true,
+    "government_facing_reasons": [
+      "central-government duty",
+      "government-facing duty"
+    ],
+    "policy_checkability_signal_count": 0,
+    "policy_checkability_signal_terms": [],
+    "administrative_signal_terms": [
+      "appellate tribunal",
+      "chairperson"
+    ],
+    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "resolved_act": "TRAI_ACT_1997",
+    "requirement_canonical_hash": "925893525b446cace5bca3d8c6c0f0270a693d566309e49e3eb16e352742fbc4",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "On the application of any of the parties and after notice to the parties, and after hearing such of them as he may desire to be heard, or on his own motion without such notice, the Chairperson of the Appellate Tribunal may transfer any case pending before one Bench, for disposal, to any other Bench.",
+    "source": "TRAI_ACT_1997, SECTION=1",
+    "weight": 2,
+    "source_clause_ids": [
+      "G003325"
+    ],
+    "checkable_test": "Check if the document allows the Chairperson to transfer a case pending before one Bench to another Bench, either on application or on their own motion.",
+    "applicability": "Applicable to any document that outlines the transfer of cases within the Appellate Tribunal under TRAI Act 1997.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This clause provides for the transfer of cases between Benches of the Appellate Tribunal.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G003325"
+    ],
+    "candidate_id": "TC-000256",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000256",
+    "source_acts": [
+      "TRAI_ACT_1997"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [
+      "possible_institutional_or_administrative_content"
+    ],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 2,
+    "policy_checkability_signal_terms": [
+      "notice",
+      "transfer"
+    ],
+    "administrative_signal_terms": [
+      "appellate tribunal",
+      "chairperson"
+    ],
+    "recommended_action": "REVIEW_SCOPE",
+    "resolved_act": "TRAI_ACT_1997",
+    "requirement_canonical_hash": "ed349c43f288829128847e797fb5a06bd229666ba6ded3104e827e7e8e702339",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "The Authority must maintain proper accounts and other relevant records and prepare an annual statement of accounts in the form prescribed by the Central Government.",
+    "source": "TRAI_ACT_1997, SECTION=FINANCE, ACCOUNTS AND AUDIT",
+    "weight": 3,
+    "source_clause_ids": [
+      "G003368"
+    ],
+    "checkable_test": "Check if the Authority maintains proper accounts and prepares annual statements in the prescribed form.",
+    "applicability": "Applicable to the Authority under the TRAI Act 1997.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This obligation is directly tied to record-keeping and financial reporting requirements.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G003368"
+    ],
+    "candidate_id": "TC-000257",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000257",
+    "source_acts": [
+      "TRAI_ACT_1997"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "account"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "TRAI_ACT_1997",
+    "requirement_canonical_hash": "92ea28ac661adf85d7d8ea722118d3ff0a431f73e56c5c8d3d8806add92e1bc7",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "The Authority must submit its accounts and audit report to the Central Government annually.",
+    "source": "TRAI_ACT_1997, SECTION=FINANCE, ACCOUNTS AND AUDIT",
+    "weight": 3,
+    "source_clause_ids": [
+      "G003374"
+    ],
+    "checkable_test": "Verify that the Authority submits its certified accounts and audit report to the Central Government annually.",
+    "applicability": "Applicable to the Authority under the TRAI Act 1997.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This obligation mandates the submission of financial records to the Central Government.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G003374"
+    ],
+    "candidate_id": "TC-000258",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000258",
+    "source_acts": [
+      "TRAI_ACT_1997"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "account"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "TRAI_ACT_1997",
+    "requirement_canonical_hash": "ba9c31c67a8cb1c5353b7b04aba2935337e1034cfd8caea92ecd3f9628acc507",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "The Authority must prepare an annual report summarizing its activities and forward copies to the Central Government.",
+    "source": "TRAI_ACT_1997, SECTION=FINANCE, ACCOUNTS AND AUDIT",
+    "weight": 3,
+    "source_clause_ids": [
+      "G003376"
+    ],
+    "checkable_test": "Check if the Authority prepares and forwards an annual activity report to the Central Government.",
+    "applicability": "Applicable to the Authority under the TRAI Act 1997.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This obligation requires the preparation and submission of an annual activity report.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G003376"
+    ],
+    "candidate_id": "TC-000259",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000259",
+    "source_acts": [
+      "TRAI_ACT_1997"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "account"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "TRAI_ACT_1997",
+    "requirement_canonical_hash": "ff2a4a68948c3505bd3c1877d4e2960aeafed1549de8212fecf5a601a42c7ada",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "The Authority must furnish returns and statements to the Central Government as required.",
+    "source": "TRAI_ACT_1997, SECTION=FINANCE, ACCOUNTS AND AUDIT",
+    "weight": 3,
+    "source_clause_ids": [
+      "G003375"
+    ],
+    "checkable_test": "Verify that the Authority provides returns and statements to the Central Government as directed.",
+    "applicability": "Applicable to the Authority under the TRAI Act 1997.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This obligation mandates the submission of returns and statements to the Central Government.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G003375"
+    ],
+    "candidate_id": "TC-000260",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000260",
+    "source_acts": [
+      "TRAI_ACT_1997"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "account"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "TRAI_ACT_1997",
+    "requirement_canonical_hash": "d895150641509b6852f8ca8f392dca6f42fa0278c7500b020594a83bb999bac7",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "The Authority must allow the Comptroller and Auditor-General of India to audit its accounts at specified intervals.",
+    "source": "TRAI_ACT_1997, SECTION=FINANCE, ACCOUNTS AND AUDIT",
+    "weight": 3,
+    "source_clause_ids": [
+      "G003369"
+    ],
+    "checkable_test": "Check if the Authority allows the Comptroller and Auditor-General of India to audit its accounts at specified intervals.",
+    "applicability": "Applicable to the Authority under the TRAI Act 1997.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This obligation requires the Authority to permit audits by the Comptroller and Auditor-General of India.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G003369"
+    ],
+    "candidate_id": "TC-000261",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000261",
+    "source_acts": [
+      "TRAI_ACT_1997"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 1,
+    "policy_checkability_signal_terms": [
+      "account"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "TRAI_ACT_1997",
+    "requirement_canonical_hash": "8b10d4f30dcdffc60efe2c9fa585dc83addeead4bd358c712e022866cd357b0d",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "The Authority must ensure that the Comptroller and Auditor-General of India has the rights and privileges to conduct audits.",
+    "source": "TRAI_ACT_1997, SECTION=FINANCE, ACCOUNTS AND AUDIT",
+    "weight": 3,
+    "source_clause_ids": [
+      "G003372"
+    ],
+    "checkable_test": "Verify that the Comptroller and Auditor-General of India has the necessary rights and privileges to conduct audits.",
+    "applicability": "Applicable to the Authority under the TRAI Act 1997.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This obligation ensures that the auditor has the authority to conduct audits.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G003372"
+    ],
+    "candidate_id": "TC-000262",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000262",
+    "source_acts": [
+      "TRAI_ACT_1997"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 2,
+    "policy_checkability_signal_terms": [
+      "account",
+      "rights"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "TRAI_ACT_1997",
+    "requirement_canonical_hash": "9b811dcaa7e59726f48411de551da4e7cf74a36d37d2b75b3b0907d66b076469",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "cache_key": "602de9934fb17567ec65115d510596e0312ef5c5e8a8d11b084a1bd8692b6c27",
+  "created_at_utc": "2026-09-17T05:58:10.044353+00:00",
+  "prompt_version": "policy-labeling-v7-reliable-batches",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S001225",
+    "S001226",
+    "S001227",
+    "S001228",
+    "S001229",
+    "S001230"
+  ],
+  "labels": [
+    {
+      "clause_id": "S001225",
+      "best_match_taxonomy_id": "DPDP_RUL-0378",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses age verification for children but lacks specific safeguards for data processing of children's location data."
+    },
+    {
+      "clause_id": "S001226",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S001227",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S001228",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S001229",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S001230",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    }
+  ],
+  "status": "SUCCESS"
+}

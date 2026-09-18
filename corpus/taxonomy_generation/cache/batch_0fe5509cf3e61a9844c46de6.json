@@ -1,0 +1,128 @@
+{
+  "batch_id": "0fe5509cf3e61a9844c46de6",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001742",
+    "G001745",
+    "G001748",
+    "G001749",
+    "G001752",
+    "G001753",
+    "G001759",
+    "G001761"
+  ],
+  "raw_response": "[  \n  {  \n    \"category\": \"Security Safeguards\",  \n    \"requirement\": \"Certifying Authorities must revoke a Digital Signature Certificate if their private key or security system is compromised in a manner materially affecting the certificate's reliability.\",  \n    \"source\": \"IT Act 2000, Section 38(c)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G001745\"],  \n    \"checkable_test\": \"Verify if the certificate revocation process includes revocation due to compromised private keys or security systems.\",  \n    \"applicability\": \"Applies to Certifying Authorities issuing Digital Signature Certificates.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation is directly tied to the revocation criteria under the IT Act 2000.\"  \n  },  \n  {  \n    \"category\": \"Security Safeguards\",  \n    \"requirement\": \"Certifying Authorities must communicate the revocation of a Digital Signature Certificate to the subscriber.\",  \n    \"source\": \"IT Act 2000, Section 38(4)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G001748\"],  \n    \"checkable_test\": \"Verify if the certificate revocation process includes communication with the subscriber.\",  \n    \"applicability\": \"Applies to Certifying Authorities issuing Digital Signature Certificates.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation is directly tied to the communication requirement under the IT Act 2000.\"  \n  },  \n  {  \n    \"category\": \"Security Safeguards\",  \n    \"requirement\": \"Certifying Authorities must publish notices of suspension or revocation in the repository specified in the Digital Signature Certificate.\",  \n    \"source\": \"IT Act 2000, Section 39(1)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G001749\"],  \n    \"checkable_test\": \"Verify if the certificate suspension or revocation process includes publication in the specified repository.\",  \n    \"applicability\": \"Applies to Certifying Authorities issuing Digital Signature Certificates.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation is directly tied to the publication requirement under the IT Act 2000.\"  \n  },  \n  {  \n    \"category\": \"Security Safeguards\",  \n    \"requirement\": \"Certifying Authorities must publish notices of suspension or revocation in all specified repositories.\",  \n    \"source\": \"IT Act 2000, Section 38(2)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G001752\"],  \n    \"checkable_test\": \"Verify if the certificate suspension or revocation process includes publication in all specified repositories.\",  \n    \"applicability\": \"Applies to Certifying Authorities issuing Digital Signature Certificates.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation is directly tied to the publication requirement under the IT Act 2000.\"  \n  },  \n  {  \n    \"category\": \"Security Safeguards\",  \n    \"requirement\": \"Subscribers must generate a key pair by applying the security procedure specified by the Certifying Authority.\",  \n    \"source\": \"IT Act 2000, Section 40\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G001753\"],  \n    \"checkable_test\": \"Verify if subscribers are required to generate a key pair using the specified security procedure.\",  \n    \"applicability\": \"Applies to subscribers of Digital Signature Certificates.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation is directly tied to the key pair generation requirement under the IT Act 2000.\"  \n  },  \n  {  \n    \"category\": \"Security Safeguards\",  \n    \"requirement\": \"Subscribers must ensure all representations made to the Certifying Authority are true and accurate.\",  \n    \"source\": \"IT Act 2000, Section 40\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G001759\"],  \n    \"checkable_test\": \"Verify if subscribers are required to ensure all representations made to the Certifying Authority are true.\",  \n    \"applicability\": \"Applies to subscribers of Digital Signature Certificates.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation is directly tied to the accuracy of representations under the IT Act 2000.\"  \n  },  \n  {  \n    \"category\": \"Security Safeguards\",  \n    \"requirement\": \"Subscribers must exercise reasonable care to retain control of their private key and prevent its disclosure.\",  \n    \"source\": \"IT Act 2000, Section 42(1)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G001761\"],  \n    \"checkable_test\": \"Verify if subscribers are required to exercise reasonable care in retaining control of their private key.\",  \n    \"applicability\": \"Applies to subscribers of Digital Signature Certificates.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation is directly tied to the private key control requirement under the IT Act 2000.\"  \n  }  \n]",
+  "parsed_entries": [
+    {
+      "category": "Security Safeguards",
+      "requirement": "Certifying Authorities must revoke a Digital Signature Certificate if their private key or security system is compromised in a manner materially affecting the certificate's reliability.",
+      "source": "IT Act 2000, Section 38(c)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001745"
+      ],
+      "checkable_test": "Verify if the certificate revocation process includes revocation due to compromised private keys or security systems.",
+      "applicability": "Applies to Certifying Authorities issuing Digital Signature Certificates.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to the revocation criteria under the IT Act 2000.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Certifying Authorities must communicate the revocation of a Digital Signature Certificate to the subscriber.",
+      "source": "IT Act 2000, Section 38(4)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001748"
+      ],
+      "checkable_test": "Verify if the certificate revocation process includes communication with the subscriber.",
+      "applicability": "Applies to Certifying Authorities issuing Digital Signature Certificates.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to the communication requirement under the IT Act 2000.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Certifying Authorities must publish notices of suspension or revocation in the repository specified in the Digital Signature Certificate.",
+      "source": "IT Act 2000, Section 39(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001749"
+      ],
+      "checkable_test": "Verify if the certificate suspension or revocation process includes publication in the specified repository.",
+      "applicability": "Applies to Certifying Authorities issuing Digital Signature Certificates.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to the publication requirement under the IT Act 2000.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Certifying Authorities must publish notices of suspension or revocation in all specified repositories.",
+      "source": "IT Act 2000, Section 38(2)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001752"
+      ],
+      "checkable_test": "Verify if the certificate suspension or revocation process includes publication in all specified repositories.",
+      "applicability": "Applies to Certifying Authorities issuing Digital Signature Certificates.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to the publication requirement under the IT Act 2000.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Subscribers must generate a key pair by applying the security procedure specified by the Certifying Authority.",
+      "source": "IT Act 2000, Section 40",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001753"
+      ],
+      "checkable_test": "Verify if subscribers are required to generate a key pair using the specified security procedure.",
+      "applicability": "Applies to subscribers of Digital Signature Certificates.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to the key pair generation requirement under the IT Act 2000.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Subscribers must ensure all representations made to the Certifying Authority are true and accurate.",
+      "source": "IT Act 2000, Section 40",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001759"
+      ],
+      "checkable_test": "Verify if subscribers are required to ensure all representations made to the Certifying Authority are true.",
+      "applicability": "Applies to subscribers of Digital Signature Certificates.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to the accuracy of representations under the IT Act 2000.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Subscribers must exercise reasonable care to retain control of their private key and prevent its disclosure.",
+      "source": "IT Act 2000, Section 42(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001761"
+      ],
+      "checkable_test": "Verify if subscribers are required to exercise reasonable care in retaining control of their private key.",
+      "applicability": "Applies to subscribers of Digital Signature Certificates.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to the private key control requirement under the IT Act 2000.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T14:42:07.161895+00:00",
+  "multi_mapped_records": []
+}

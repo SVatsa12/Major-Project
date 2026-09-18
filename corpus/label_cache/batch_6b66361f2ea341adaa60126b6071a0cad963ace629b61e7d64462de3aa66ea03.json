@@ -1,0 +1,53 @@
+{
+  "cache_key": "6b66361f2ea341adaa60126b6071a0cad963ace629b61e7d64462de3aa66ea03",
+  "created_at_utc": "2026-09-16T12:33:28.480620+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S000703",
+    "S000704",
+    "S000705",
+    "S000706",
+    "S000707",
+    "S000708"
+  ],
+  "labels": [
+    {
+      "clause_id": "S000703",
+      "best_match_taxonomy_id": "IT_ACT_2-0151",
+      "verdict": "Compliant",
+      "justification": "The clause prohibits unauthorized access and ensures the integrity of systems, aligning with security safeguards."
+    },
+    {
+      "clause_id": "S000704",
+      "best_match_taxonomy_id": "IT_ACT_2-0151",
+      "verdict": "Compliant",
+      "justification": "The clause prevents unauthorized data access, aligning with security safeguards for information protection."
+    },
+    {
+      "clause_id": "S000705",
+      "best_match_taxonomy_id": "IT_ACT_2-0151",
+      "verdict": "Compliant",
+      "justification": "The clause prohibits misuse of access credentials, aligning with security safeguards for information protection."
+    },
+    {
+      "clause_id": "S000706",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S000707",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S000708",
+      "best_match_taxonomy_id": "IT_ACT_2-0151",
+      "verdict": "Compliant",
+      "justification": "The clause prohibits circumventing access controls, aligning with security safeguards for information protection."
+    }
+  ],
+  "status": "SUCCESS"
+}

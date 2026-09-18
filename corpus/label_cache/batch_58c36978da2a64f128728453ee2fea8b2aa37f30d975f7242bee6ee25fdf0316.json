@@ -1,0 +1,53 @@
+{
+  "cache_key": "58c36978da2a64f128728453ee2fea8b2aa37f30d975f7242bee6ee25fdf0316",
+  "created_at_utc": "2026-09-16T12:05:01.008088+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S000361",
+    "S000362",
+    "S000363",
+    "S000364",
+    "S000365",
+    "S000366"
+  ],
+  "labels": [
+    {
+      "clause_id": "S000361",
+      "best_match_taxonomy_id": "DPDP_RUL-0099",
+      "verdict": "Compliant",
+      "justification": "The clause addresses data erasure upon completion of the retention period, aligning with the requirement to erase personal data."
+    },
+    {
+      "clause_id": "S000362",
+      "best_match_taxonomy_id": "DPDP_RUL-0099",
+      "verdict": "Partially Compliant",
+      "justification": "The clause mentions data retention but lacks specificity on the retention period or legal basis for retention."
+    },
+    {
+      "clause_id": "S000363",
+      "best_match_taxonomy_id": "DPDP_RUL-0099",
+      "verdict": "Partially Compliant",
+      "justification": "The clause mentions data retention for legitimate purposes but lacks specific details on the retention period or legal basis."
+    },
+    {
+      "clause_id": "S000364",
+      "best_match_taxonomy_id": "DPDP_RUL-0099",
+      "verdict": "Compliant",
+      "justification": "The clause describes a deletion process to ensure data is safely removed, aligning with the requirement to erase personal data."
+    },
+    {
+      "clause_id": "S000365",
+      "best_match_taxonomy_id": "DPDP_RUL-0099",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address a taxonomy requirement."
+    },
+    {
+      "clause_id": "S000366",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address a taxonomy requirement."
+    }
+  ],
+  "status": "SUCCESS"
+}

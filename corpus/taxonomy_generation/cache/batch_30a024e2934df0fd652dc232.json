@@ -1,0 +1,22 @@
+{
+  "batch_id": "30a024e2934df0fd652dc232",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G003004",
+    "G003007",
+    "G003008",
+    "G003014",
+    "G003015",
+    "G003018",
+    "G003024",
+    "G003027"
+  ],
+  "raw_response": "[]",
+  "parsed_entries": [],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T15:31:29.669181+00:00",
+  "multi_mapped_records": []
+}

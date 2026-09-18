@@ -1,0 +1,98 @@
+{
+  "batch_id": "d25ba93de6eef39278e8abff",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001781",
+    "G001785",
+    "G001786",
+    "G001795",
+    "G001796",
+    "G001797",
+    "G001798",
+    "G001799"
+  ],
+  "raw_response": "[{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Intermediaries must not steal, conceal, destroy, or alter computer source code used for a computer resource with the intention to cause damage.\",\"source\":\"IT Act 2000, Section 43(j)\",\"weight\":2,\"source_clause_ids\":[\"G001781\"],\"checkable_test\":\"Verify if the platform has policies in place to prevent unauthorized modification of computer source code.\",\"applicability\":\"Applicable to intermediaries handling computer resources.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause outlines a criminal liability for unauthorized modification of computer source code.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Sensitive personal data or information must be defined by the Central Government in consultation with relevant professional bodies or associations.\",\"source\":\"IT Act 2000, Section 43(iii)\",\"weight\":3,\"source_clause_ids\":[\"G001795\"],\"checkable_test\":\"Check if the organization has a defined policy for sensitive personal data or information as per the Central Government's prescription.\",\"applicability\":\"Applicable to data fiduciaries handling personal data.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause mandates the definition of sensitive personal data by the Central Government.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Intermediaries must maintain books of account or records as required by law.\",\"source\":\"IT Act 2000, Section 43(c)\",\"weight\":2,\"source_clause_ids\":[\"G001799\"],\"checkable_test\":\"Verify if the platform has policies in place to maintain required books of account or records.\",\"applicability\":\"Applicable to intermediaries required to maintain records.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause outlines a penalty for failure to maintain required records.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Intermediaries must file returns or furnish information within the time specified in regulations.\",\"source\":\"IT Act 2000, Section 43(b)\",\"weight\":2,\"source_clause_ids\":[\"G001798\"],\"checkable_test\":\"Check if the platform has policies in place to ensure timely filing of returns or furnishing of information.\",\"applicability\":\"Applicable to intermediaries required to file returns or furnish information.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause outlines a penalty for failure to file returns or furnish information within the specified time.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Intermediaries must furnish documents, returns, or reports to the Controller or Certifying Authority as required.\",\"source\":\"IT Act 2000, Section 43(a)\",\"weight\":2,\"source_clause_ids\":[\"G001797\"],\"checkable_test\":\"Verify if the platform has policies in place to ensure timely furnishing of required documents, returns, or reports.\",\"applicability\":\"Applicable to intermediaries required to furnish documents, returns, or reports.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause outlines a penalty for failure to furnish required documents, returns, or reports.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Intermediaries must not steal, conceal, destroy, or alter computer source code used for a computer resource with the intention to cause damage.",
+      "source": "IT Act 2000, Section 43(j)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001781"
+      ],
+      "checkable_test": "Verify if the platform has policies in place to prevent unauthorized modification of computer source code.",
+      "applicability": "Applicable to intermediaries handling computer resources.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause outlines a criminal liability for unauthorized modification of computer source code.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Sensitive personal data or information must be defined by the Central Government in consultation with relevant professional bodies or associations.",
+      "source": "IT Act 2000, Section 43(iii)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001795"
+      ],
+      "checkable_test": "Check if the organization has a defined policy for sensitive personal data or information as per the Central Government's prescription.",
+      "applicability": "Applicable to data fiduciaries handling personal data.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause mandates the definition of sensitive personal data by the Central Government.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Intermediaries must maintain books of account or records as required by law.",
+      "source": "IT Act 2000, Section 43(c)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001799"
+      ],
+      "checkable_test": "Verify if the platform has policies in place to maintain required books of account or records.",
+      "applicability": "Applicable to intermediaries required to maintain records.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause outlines a penalty for failure to maintain required records.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Intermediaries must file returns or furnish information within the time specified in regulations.",
+      "source": "IT Act 2000, Section 43(b)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001798"
+      ],
+      "checkable_test": "Check if the platform has policies in place to ensure timely filing of returns or furnishing of information.",
+      "applicability": "Applicable to intermediaries required to file returns or furnish information.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause outlines a penalty for failure to file returns or furnish information within the specified time.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Intermediaries must furnish documents, returns, or reports to the Controller or Certifying Authority as required.",
+      "source": "IT Act 2000, Section 43(a)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001797"
+      ],
+      "checkable_test": "Verify if the platform has policies in place to ensure timely furnishing of required documents, returns, or reports.",
+      "applicability": "Applicable to intermediaries required to furnish documents, returns, or reports.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause outlines a penalty for failure to furnish required documents, returns, or reports.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T14:43:33.201759+00:00",
+  "multi_mapped_records": []
+}

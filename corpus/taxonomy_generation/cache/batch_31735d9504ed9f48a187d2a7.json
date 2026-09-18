@@ -1,0 +1,98 @@
+{
+  "batch_id": "31735d9504ed9f48a187d2a7",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001337",
+    "G001338",
+    "G001341",
+    "G001343",
+    "G001354",
+    "G001363",
+    "G001377",
+    "G001391"
+  ],
+  "raw_response": "[{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Data fiduciaries must carry out assessments to notify any Data Fiduciary or class of Data Fiduciaries as Significant Data Fiduciaries.\",\"source\":\"DPDP Rules 2025, Rule 13(3)\",\"weight\":3,\"source_clause_ids\":[\"G001343\"],\"checkable_test\":\"Whether the organization has a process for assessing and notifying Significant Data Fiduciaries.\",\"applicability\":\"Applicable to all Data Fiduciaries subject to DPDP Rules 2025.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation is directly tied to the assessment and notification process for Significant Data Fiduciaries.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"Organizations must implement security procedures and practices to protect electronic records.\",\"source\":\"IT Act 2000, Section 16\",\"weight\":3,\"source_clause_ids\":[\"G001363\"],\"checkable_test\":\"Whether the organization has documented and implemented security procedures and practices.\",\"applicability\":\"Applicable to all entities maintaining electronic records.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation is directly tied to the requirement for security procedures and practices under the IT Act 2000.\"},{\"category\":\"Data Retention & Erasure\",\"requirement\":\"Organizations must retain electronic records as required and ensure they are maintained securely.\",\"source\":\"IT Act 2000, Section 7A\",\"weight\":2,\"source_clause_ids\":[\"G001354\"],\"checkable_test\":\"Whether the organization has a policy for retaining and auditing electronic records.\",\"applicability\":\"Applicable to all entities maintaining electronic records.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation is directly tied to the requirement for retention and audit of electronic records.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"Organizations must ensure that access to computers and data is restricted to authorized persons.\",\"source\":\"IT Act 2000, Section 29\",\"weight\":2,\"source_clause_ids\":[\"G001377\"],\"checkable_test\":\"Whether the organization has access controls in place to restrict unauthorized access to data.\",\"applicability\":\"Applicable to all entities maintaining electronic data.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation is directly tied to the requirement for restricting access to computers and data.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"Organizations must compensate for damage to computer systems or data due to failure to protect data.\",\"source\":\"IT Act 2000, Section 43A\",\"weight\":2,\"source_clause_ids\":[\"G001391\"],\"checkable_test\":\"Whether the organization has a policy for compensating for data breaches or system damage due to inadequate security measures.\",\"applicability\":\"Applicable to all entities maintaining electronic data.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation is directly tied to the requirement for compensation in case of data breaches or system damage.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Data fiduciaries must carry out assessments to notify any Data Fiduciary or class of Data Fiduciaries as Significant Data Fiduciaries.",
+      "source": "DPDP Rules 2025, Rule 13(3)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001343"
+      ],
+      "checkable_test": "Whether the organization has a process for assessing and notifying Significant Data Fiduciaries.",
+      "applicability": "Applicable to all Data Fiduciaries subject to DPDP Rules 2025.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to the assessment and notification process for Significant Data Fiduciaries.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Organizations must implement security procedures and practices to protect electronic records.",
+      "source": "IT Act 2000, Section 16",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001363"
+      ],
+      "checkable_test": "Whether the organization has documented and implemented security procedures and practices.",
+      "applicability": "Applicable to all entities maintaining electronic records.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to the requirement for security procedures and practices under the IT Act 2000.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "Organizations must retain electronic records as required and ensure they are maintained securely.",
+      "source": "IT Act 2000, Section 7A",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001354"
+      ],
+      "checkable_test": "Whether the organization has a policy for retaining and auditing electronic records.",
+      "applicability": "Applicable to all entities maintaining electronic records.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to the requirement for retention and audit of electronic records.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Organizations must ensure that access to computers and data is restricted to authorized persons.",
+      "source": "IT Act 2000, Section 29",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001377"
+      ],
+      "checkable_test": "Whether the organization has access controls in place to restrict unauthorized access to data.",
+      "applicability": "Applicable to all entities maintaining electronic data.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to the requirement for restricting access to computers and data.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Organizations must compensate for damage to computer systems or data due to failure to protect data.",
+      "source": "IT Act 2000, Section 43A",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001391"
+      ],
+      "checkable_test": "Whether the organization has a policy for compensating for data breaches or system damage due to inadequate security measures.",
+      "applicability": "Applicable to all entities maintaining electronic data.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to the requirement for compensation in case of data breaches or system damage.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T14:27:40.500215+00:00",
+  "multi_mapped_records": []
+}

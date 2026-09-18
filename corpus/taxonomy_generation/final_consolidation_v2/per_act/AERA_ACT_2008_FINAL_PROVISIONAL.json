@@ -1,0 +1,31 @@
+[
+  {
+    "taxonomy_id": "AERA_ACT-0265",
+    "act": "AERA_ACT_2008",
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "The Appellate Tribunal must consist of a Chairperson and not more than two Members appointed by the Central Government.",
+    "checkable_test": "Verify that the Appellate Tribunal is composed of a Chairperson and not more than two Members appointed by the Central Government.",
+    "applicability": "Applicable to the composition of the Appellate Tribunal.",
+    "source": "AERA_ACT_2008, Section 19(1)",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000269"
+    ],
+    "source_clause_ids": [
+      "G000229"
+    ],
+    "source_legal_anchors": [
+      "section 19 1"
+    ],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
+    "canonical_candidate_id": "TC-000269",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 1,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "cache_key": "960c5eab50e3fe7ca77f91883d6e4dfdbb82c0a8a6959bc7fbe9166dacebc378",
+  "created_at_utc": "2026-09-16T13:47:46.547860+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S001591",
+    "S001592",
+    "S001593",
+    "S001594",
+    "S001595",
+    "S001596"
+  ],
+  "labels": [
+    {
+      "clause_id": "S001591",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "No listed requirement is meaningfully addressed."
+    },
+    {
+      "clause_id": "S001592",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "No listed requirement is meaningfully addressed."
+    },
+    {
+      "clause_id": "S001593",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "No listed requirement is meaningfully addressed."
+    },
+    {
+      "clause_id": "S001594",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "No listed requirement is meaningfully addressed."
+    },
+    {
+      "clause_id": "S001595",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "No listed requirement is meaningfully addressed."
+    },
+    {
+      "clause_id": "S001596",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "No listed requirement is meaningfully addressed."
+    }
+  ],
+  "status": "SUCCESS"
+}

@@ -1,0 +1,128 @@
+{
+  "batch_id": "cbc1a72b52730d9ab7d31eb8",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001537",
+    "G001538",
+    "G001540",
+    "G001542",
+    "G001543",
+    "G001546",
+    "G001548",
+    "G001551"
+  ],
+  "raw_response": "[{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"Electronic signatures must be uniquely linked to the signatory and under their exclusive control.\",\"source\":\"IT Act 2000, Section 240(1)(a)\",\"weight\":2,\"source_clause_ids\":[\"G001537\"],\"checkable_test\":\"Verify that the electronic signature is uniquely linked to the signatory and under their exclusive control.\",\"applicability\":\"Applicable to all electronic signatures used in legal documents.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures that electronic signatures are not misused or impersonated.\"},{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"Electronic signatures must be under the exclusive control of the signatory at the time of signing.\",\"source\":\"IT Act 2000, Section 240(1)(b)\",\"weight\":2,\"source_clause_ids\":[\"G001538\"],\"checkable_test\":\"Verify that the electronic signature was under the exclusive control of the signatory at the time of signing.\",\"applicability\":\"Applicable to all electronic signatures used in legal documents.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures that electronic signatures are not forged or misused.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"Any alteration to an electronically signed document must be detectable.\",\"source\":\"IT Act 2000, Section 240(1)(d)\",\"weight\":2,\"source_clause_ids\":[\"G001540\"],\"checkable_test\":\"Verify that any alteration to an electronically signed document is detectable.\",\"applicability\":\"Applicable to all electronically signed documents.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures the integrity of electronically signed documents.\"},{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"The Central Government may establish procedures to verify the authenticity of electronic signatures.\",\"source\":\"IT Act 2000, Section 240(3)\",\"weight\":2,\"source_clause_ids\":[\"G001542\"],\"checkable_test\":\"Verify that the Central Government has established procedures to verify the authenticity of electronic signatures.\",\"applicability\":\"Applicable to all electronic signatures used in legal documents.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures that electronic signatures can be verified by authorized authorities.\"},{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"The Central Government may add or remove electronic signature techniques from the Second Schedule.\",\"source\":\"IT Act 2000, Section 240(4)\",\"weight\":2,\"source_clause_ids\":[\"G001543\"],\"checkable_test\":\"Verify that the Central Government has the authority to add or remove electronic signature techniques from the Second Schedule.\",\"applicability\":\"Applicable to all electronic signature techniques used in legal documents.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement allows for the updating of electronic signature standards by the Central Government.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"Electronic records must be accessible for subsequent reference.\",\"source\":\"IT Act 2000, Section 240(4)(b)\",\"weight\":2,\"source_clause_ids\":[\"G001548\"],\"checkable_test\":\"Verify that electronic records are accessible for subsequent reference.\",\"applicability\":\"Applicable to all electronic records used in legal documents.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures that electronic records remain usable for future reference.\"},{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"Electronic records must be usable in place of traditional written forms.\",\"source\":\"IT Act 2000, Section 240(4)\",\"weight\":2,\"source_clause_ids\":[\"G001546\"],\"checkable_test\":\"Verify that electronic records are usable in place of traditional written forms.\",\"applicability\":\"Applicable to all electronic records used in legal documents.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures that electronic records are legally recognized as valid substitutes for traditional written forms.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "Electronic signatures must be uniquely linked to the signatory and under their exclusive control.",
+      "source": "IT Act 2000, Section 240(1)(a)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001537"
+      ],
+      "checkable_test": "Verify that the electronic signature is uniquely linked to the signatory and under their exclusive control.",
+      "applicability": "Applicable to all electronic signatures used in legal documents.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures that electronic signatures are not misused or impersonated.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "Electronic signatures must be under the exclusive control of the signatory at the time of signing.",
+      "source": "IT Act 2000, Section 240(1)(b)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001538"
+      ],
+      "checkable_test": "Verify that the electronic signature was under the exclusive control of the signatory at the time of signing.",
+      "applicability": "Applicable to all electronic signatures used in legal documents.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures that electronic signatures are not forged or misused.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Any alteration to an electronically signed document must be detectable.",
+      "source": "IT Act 2000, Section 240(1)(d)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001540"
+      ],
+      "checkable_test": "Verify that any alteration to an electronically signed document is detectable.",
+      "applicability": "Applicable to all electronically signed documents.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures the integrity of electronically signed documents.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "The Central Government may establish procedures to verify the authenticity of electronic signatures.",
+      "source": "IT Act 2000, Section 240(3)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001542"
+      ],
+      "checkable_test": "Verify that the Central Government has established procedures to verify the authenticity of electronic signatures.",
+      "applicability": "Applicable to all electronic signatures used in legal documents.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures that electronic signatures can be verified by authorized authorities.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "The Central Government may add or remove electronic signature techniques from the Second Schedule.",
+      "source": "IT Act 2000, Section 240(4)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001543"
+      ],
+      "checkable_test": "Verify that the Central Government has the authority to add or remove electronic signature techniques from the Second Schedule.",
+      "applicability": "Applicable to all electronic signature techniques used in legal documents.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement allows for the updating of electronic signature standards by the Central Government.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Electronic records must be accessible for subsequent reference.",
+      "source": "IT Act 2000, Section 240(4)(b)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001548"
+      ],
+      "checkable_test": "Verify that electronic records are accessible for subsequent reference.",
+      "applicability": "Applicable to all electronic records used in legal documents.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures that electronic records remain usable for future reference.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "Electronic records must be usable in place of traditional written forms.",
+      "source": "IT Act 2000, Section 240(4)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001546"
+      ],
+      "checkable_test": "Verify that electronic records are usable in place of traditional written forms.",
+      "applicability": "Applicable to all electronic records used in legal documents.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures that electronic records are legally recognized as valid substitutes for traditional written forms.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T14:31:13.661905+00:00",
+  "multi_mapped_records": []
+}

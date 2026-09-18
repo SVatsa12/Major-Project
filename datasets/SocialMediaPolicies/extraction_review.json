@@ -1,0 +1,170 @@
+[
+  {
+    "app_name": "Google",
+    "source_document": "Google_Terms_of_Service",
+    "source_file": "Google_Terms_of_Service.docx",
+    "page_number": 1,
+    "text": "Terms of Service",
+    "reason": "recognized navigation/header/footer block"
+  },
+  {
+    "app_name": "Google",
+    "source_document": "Google_Terms_of_Service",
+    "source_file": "Google_Terms_of_Service.docx",
+    "page_number": 1,
+    "text": "phishing",
+    "reason": "Very short extracted block; retained only for manual review"
+  },
+  {
+    "app_name": "Meta",
+    "source_document": "Meta_Terms_of_Service",
+    "source_file": "Meta_Terms_of_Service.docx",
+    "page_number": 1,
+    "text": "Terms of Service",
+    "reason": "recognized navigation/header/footer block"
+  },
+  {
+    "app_name": "Meta",
+    "source_document": "MetaPrivacyPolicy",
+    "source_file": "MetaPrivacyPolicy.pdf",
+    "page_number": 1,
+    "text": "Privacy Policy",
+    "reason": "recognized navigation/header/footer block"
+  },
+  {
+    "app_name": "Meta",
+    "source_document": "MetaPrivacyPolicy",
+    "source_file": "MetaPrivacyPolicy.pdf",
+    "page_number": 12,
+    "text": "Products.",
+    "reason": "Very short extracted block; retained only for manual review"
+  },
+  {
+    "app_name": "Snapchat",
+    "source_document": "Snap_Privacy Policy",
+    "source_file": "Snap_Privacy Policy.docx",
+    "page_number": 1,
+    "text": "Privacy Policy",
+    "reason": "recognized navigation/header/footer block"
+  },
+  {
+    "app_name": "Snapchat",
+    "source_document": "SnapchatCommunity Guidelines",
+    "source_file": "SnapchatCommunity Guidelines.docx",
+    "page_number": 1,
+    "text": "\\",
+    "reason": "Very short extracted block; retained only for manual review"
+  },
+  {
+    "app_name": "Telegram",
+    "source_document": "Telegram_premium_Terms of Service",
+    "source_file": "Telegram_premium_Terms of Service.docx",
+    "page_number": 1,
+    "text": "Terms of Service",
+    "reason": "recognized navigation/header/footer block"
+  },
+  {
+    "app_name": "Telegram",
+    "source_document": "Telegram_Terms of Service",
+    "source_file": "Telegram_Terms of Service.docx",
+    "page_number": 1,
+    "text": "Terms of Service",
+    "reason": "recognized navigation/header/footer block"
+  },
+  {
+    "app_name": "WhatsApp",
+    "source_document": "WhatsApp Business Data Processing Terms",
+    "source_file": "WhatsApp Business Data Processing Terms.pdf",
+    "page_number": 1,
+    "text": "Last updated: 22 August 2025",
+    "reason": "recognized navigation/header/footer block"
+  },
+  {
+    "app_name": "WhatsApp",
+    "source_document": "WhatsApp Business Data Processing Terms",
+    "source_file": "WhatsApp Business Data Processing Terms.pdf",
+    "page_number": 4,
+    "text": "i.",
+    "reason": "Very short extracted block; retained only for manual review"
+  },
+  {
+    "app_name": "WhatsApp",
+    "source_document": "WhatsApp Business Data Transfer Addendum",
+    "source_file": "WhatsApp Business Data Transfer Addendum.pdf",
+    "page_number": 1,
+    "text": "Last updated: 16 February 2024\nThis WhatsApp Business Data Transfer Addendum (“Data Transfer\nAddendum”) applies to the extent that WhatsApp Ireland Limited\n(“WhatsApp Ireland”) processes European Data as your Processor under\nthe Business Terms and transfers of such data are made to WhatsApp\nLLC and Meta Platforms Inc.",
+    "reason": "recognized navigation/header/footer block"
+  },
+  {
+    "app_name": "WhatsApp",
+    "source_document": "WhatsApp Business Terms of Service",
+    "source_file": "WhatsApp Business Terms of Service.pdf",
+    "page_number": 1,
+    "text": "Last updated: February 16, 2024",
+    "reason": "recognized navigation/header/footer block"
+  },
+  {
+    "app_name": "WhatsApp",
+    "source_document": "WhatsApp Channels Guidelines",
+    "source_file": "WhatsApp Channels Guidelines.pdf",
+    "page_number": 1,
+    "text": "Last updated: February 16, 2024",
+    "reason": "recognized navigation/header/footer block"
+  },
+  {
+    "app_name": "WhatsApp",
+    "source_document": "WhatsApp Channels Supplemental Privacy Policy",
+    "source_file": "WhatsApp Channels Supplemental Privacy Policy.pdf",
+    "page_number": 1,
+    "text": "Effective August 4, 2025",
+    "reason": "recognized navigation/header/footer block"
+  },
+  {
+    "app_name": "WhatsApp",
+    "source_document": "WhatsApp Messaging Guidelines",
+    "source_file": "WhatsApp Messaging Guidelines.pdf",
+    "page_number": 1,
+    "text": "Last updated: February 16, 2024",
+    "reason": "recognized navigation/header/footer block"
+  },
+  {
+    "app_name": "WhatsApp",
+    "source_document": "WhatsappCookies",
+    "source_file": "WhatsappCookies.pdf",
+    "page_number": 3,
+    "text": "",
+    "reason": "No text extracted; page may be image-only or corrupt"
+  },
+  {
+    "app_name": "WhatsApp",
+    "source_document": "WhatsappCookies",
+    "source_file": "WhatsappCookies.pdf",
+    "page_number": 2,
+    "text": "Back to top",
+    "reason": "recognized navigation/header/footer block"
+  },
+  {
+    "app_name": "Youtube",
+    "source_document": "Terms of Service",
+    "source_file": "Terms of Service.docx",
+    "page_number": 1,
+    "text": "Terms of Service",
+    "reason": "recognized navigation/header/footer block"
+  },
+  {
+    "app_name": "Youtube",
+    "source_document": "Terms of Service",
+    "source_file": "Terms of Service.docx",
+    "page_number": 1,
+    "text": "Terms of Service",
+    "reason": "recognized navigation/header/footer block"
+  },
+  {
+    "app_name": "Youtube",
+    "source_document": "Terms of Service",
+    "source_file": "Terms of Service.docx",
+    "page_number": 1,
+    "text": "TERMS OF SERVICE",
+    "reason": "recognized navigation/header/footer block"
+  }
+]

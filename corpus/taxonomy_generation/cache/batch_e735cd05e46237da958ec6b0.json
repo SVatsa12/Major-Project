@@ -1,0 +1,98 @@
+{
+  "batch_id": "e735cd05e46237da958ec6b0",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001541",
+    "G001544",
+    "G001566",
+    "G001569",
+    "G001570",
+    "G001571",
+    "G001576",
+    "G001583"
+  ],
+  "raw_response": "[  \n  {  \n    \"category\": \"Confidentiality & Misuse of Data\",  \n    \"requirement\": \"Electronic signatures or authentication techniques must be reliable and specified in the Second Schedule of the IT Act 2000.\",  \n    \"source\": \"IT Act 2000, Section 240(2)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G001544\"],  \n    \"checkable_test\": \"Verify whether the Second Schedule of the IT Act 2000 includes reliable electronic signatures or authentication techniques.\",  \n    \"applicability\": \"Applies to entities using electronic signatures or authentication techniques.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement ensures that only reliable electronic signatures are used, which is a core data protection obligation.\"  \n  },  \n  {  \n    \"category\": \"Significant Data Fiduciary Obligations\",  \n    \"requirement\": \"Electronic records must include details that facilitate the identification of origin, destination, date, and time of despatch or receipt.\",  \n    \"source\": \"IT Act 2000, Section 240(3)(c)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G001566\"],  \n    \"checkable_test\": \"Check if the electronic records contain the required details for origin, destination, date, and time of despatch or receipt.\",  \n    \"applicability\": \"Applies to entities handling electronic records.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement ensures transparency and traceability of electronic records, which is a core data fiduciary obligation.\"  \n  },  \n  {  \n    \"category\": \"Confidentiality & Misuse of Data\",  \n    \"requirement\": \"Rules, regulations, orders, bye-laws, notifications, or other matters published in the Official Gazette or Electronic Gazette are deemed to satisfy publication requirements.\",  \n    \"source\": \"IT Act 2000, Section 240(8)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G001569\"],  \n    \"checkable_test\": \"Verify if the publication of rules, regulations, etc., in the Official Gazette or Electronic Gazette satisfies the legal requirement for publication.\",  \n    \"applicability\": \"Applies to entities required to publish rules, regulations, etc.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement ensures that electronic publication meets legal standards for transparency and accessibility.\"  \n  },  \n  {  \n    \"category\": \"Confidentiality & Misuse of Data\",  \n    \"requirement\": \"The date of publication of rules, regulations, orders, bye-laws, notifications, or other matters is deemed to be the date of the first publication in any form.\",  \n    \"source\": \"IT Act 2000, Section 240(7)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G001570\"],  \n    \"checkable_test\": \"Check if the date of publication is recorded as the date of the first publication in any form.\",  \n    \"applicability\": \"Applies to entities publishing rules, regulations, orders, bye-laws, notifications, or other matters.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement ensures consistency in the recording of publication dates, which is important for legal compliance.\"  \n  },  \n  {  \n    \"category\": \"Confidentiality & Misuse of Data\",  \n    \"requirement\": \"Electronic records must be attributable to the originator, and the originator must be acknowledged as the sender.\",  \n    \"source\": \"IT Act 2000, Section 240(10)(a)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G001583\"],  \n    \"checkable_test\": \"Verify if the electronic record includes attribution to the originator and acknowledgment of the sender.\",  \n    \"applicability\": \"Applies to entities handling electronic records.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement ensures the authenticity and traceability of electronic records, which is a core data protection obligation.\"  \n  }  \n]",
+  "parsed_entries": [
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "Electronic signatures or authentication techniques must be reliable and specified in the Second Schedule of the IT Act 2000.",
+      "source": "IT Act 2000, Section 240(2)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001544"
+      ],
+      "checkable_test": "Verify whether the Second Schedule of the IT Act 2000 includes reliable electronic signatures or authentication techniques.",
+      "applicability": "Applies to entities using electronic signatures or authentication techniques.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures that only reliable electronic signatures are used, which is a core data protection obligation.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Electronic records must include details that facilitate the identification of origin, destination, date, and time of despatch or receipt.",
+      "source": "IT Act 2000, Section 240(3)(c)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001566"
+      ],
+      "checkable_test": "Check if the electronic records contain the required details for origin, destination, date, and time of despatch or receipt.",
+      "applicability": "Applies to entities handling electronic records.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures transparency and traceability of electronic records, which is a core data fiduciary obligation.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "Rules, regulations, orders, bye-laws, notifications, or other matters published in the Official Gazette or Electronic Gazette are deemed to satisfy publication requirements.",
+      "source": "IT Act 2000, Section 240(8)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001569"
+      ],
+      "checkable_test": "Verify if the publication of rules, regulations, etc., in the Official Gazette or Electronic Gazette satisfies the legal requirement for publication.",
+      "applicability": "Applies to entities required to publish rules, regulations, etc.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures that electronic publication meets legal standards for transparency and accessibility.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "The date of publication of rules, regulations, orders, bye-laws, notifications, or other matters is deemed to be the date of the first publication in any form.",
+      "source": "IT Act 2000, Section 240(7)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001570"
+      ],
+      "checkable_test": "Check if the date of publication is recorded as the date of the first publication in any form.",
+      "applicability": "Applies to entities publishing rules, regulations, orders, bye-laws, notifications, or other matters.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures consistency in the recording of publication dates, which is important for legal compliance.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "Electronic records must be attributable to the originator, and the originator must be acknowledged as the sender.",
+      "source": "IT Act 2000, Section 240(10)(a)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001583"
+      ],
+      "checkable_test": "Verify if the electronic record includes attribution to the originator and acknowledgment of the sender.",
+      "applicability": "Applies to entities handling electronic records.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures the authenticity and traceability of electronic records, which is a core data protection obligation.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T15:44:59.283875+00:00",
+  "multi_mapped_records": []
+}

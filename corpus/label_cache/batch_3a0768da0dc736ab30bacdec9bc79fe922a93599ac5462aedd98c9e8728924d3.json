@@ -1,0 +1,53 @@
+{
+  "cache_key": "3a0768da0dc736ab30bacdec9bc79fe922a93599ac5462aedd98c9e8728924d3",
+  "created_at_utc": "2026-09-17T07:42:53.842168+00:00",
+  "prompt_version": "policy-labeling-v7-reliable-batches",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S002539",
+    "S002540",
+    "S002541",
+    "S002542",
+    "S002543",
+    "S002544"
+  ],
+  "labels": [
+    {
+      "clause_id": "S002539",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses anti-circumvention and security features but does not meaningfully address any listed data protection requirement."
+    },
+    {
+      "clause_id": "S002540",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses automated access but does not meaningfully address any listed data protection requirement."
+    },
+    {
+      "clause_id": "S002541",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses collecting personal data but lacks specific security safeguards as required by the taxonomy."
+    },
+    {
+      "clause_id": "S002542",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses spamming but does not meaningfully address any listed data protection requirement."
+    },
+    {
+      "clause_id": "S002543",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses manipulation of metrics but does not meaningfully address any listed data protection requirement."
+    },
+    {
+      "clause_id": "S002544",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses misuse of reporting processes but does not meaningfully address any listed data protection requirement."
+    }
+  ],
+  "status": "SUCCESS"
+}

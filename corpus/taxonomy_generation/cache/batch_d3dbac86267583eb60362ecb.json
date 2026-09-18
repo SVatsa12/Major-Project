@@ -1,0 +1,83 @@
+{
+  "batch_id": "d3dbac86267583eb60362ecb",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G002203",
+    "G002204",
+    "G002205",
+    "G002211",
+    "G002212",
+    "G002218",
+    "G002278",
+    "G002283"
+  ],
+  "raw_response": "[  \n  {  \n    \"category\": \"Intermediary/Platform Liability\",  \n    \"requirement\": \"Public authorities must designate a Public Information Officer within one hundred days of the enactment of the RTI Act.\",  \n    \"source\": \"RTI Act 2005, Section 22(2)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G002212\"],  \n    \"checkable_test\": \"Verify if the public authority has designated a Public Information Officer within the required timeframe.\",  \n    \"applicability\": \"Applicable to all public authorities under the RTI Act 2005.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation is directly tied to the designation of a Public Information Officer and is a core requirement under the RTI Act.\"  \n  },  \n  {  \n    \"category\": \"Data Retention & Erasure\",  \n    \"requirement\": \"Public authorities must publish all relevant facts while formulating important policies or announcing decisions that affect the public.\",  \n    \"source\": \"RTI Act 2005, Section 22(c)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G002204\"],  \n    \"checkable_test\": \"Verify if the public authority has published all relevant facts for policies or decisions affecting the public.\",  \n    \"applicability\": \"Applicable to all public authorities formulating policies or making decisions affecting the public.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation requires transparency in policy-making and decision-making processes.\"  \n  },  \n  {  \n    \"category\": \"Data Retention & Erasure\",  \n    \"requirement\": \"Public authorities must provide reasons for their administrative or quasi-judicial decisions to affected persons.\",  \n    \"source\": \"RTI Act 2005, Section 22(d)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G002205\"],  \n    \"checkable_test\": \"Verify if the public authority has provided reasons for administrative or quasi-judicial decisions to affected persons.\",  \n    \"applicability\": \"Applicable to all administrative or quasi-judicial decisions affecting individuals.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation ensures transparency and accountability in decision-making processes.\"  \n  },  \n  {  \n    \"category\": \"Confidentiality & Misuse of Data\",  \n    \"requirement\": \"Disclosure of information supplied by a third party that has been treated as confidential may be allowed if the public interest in disclosure outweighs any possible harm to the third party's interests.\",  \n    \"source\": \"RTI Act 2005, Section 22(7)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G002278\"],  \n    \"checkable_test\": \"Verify if the public authority has assessed whether the public interest in disclosure outweighs the harm to the third party's interests.\",  \n    \"applicability\": \"Applicable to information supplied by third parties treated as confidential.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation balances the right to information with the protection of confidential information.\"  \n  }  \n]",
+  "parsed_entries": [
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Public authorities must designate a Public Information Officer within one hundred days of the enactment of the RTI Act.",
+      "source": "RTI Act 2005, Section 22(2)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G002212"
+      ],
+      "checkable_test": "Verify if the public authority has designated a Public Information Officer within the required timeframe.",
+      "applicability": "Applicable to all public authorities under the RTI Act 2005.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to the designation of a Public Information Officer and is a core requirement under the RTI Act.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "Public authorities must publish all relevant facts while formulating important policies or announcing decisions that affect the public.",
+      "source": "RTI Act 2005, Section 22(c)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002204"
+      ],
+      "checkable_test": "Verify if the public authority has published all relevant facts for policies or decisions affecting the public.",
+      "applicability": "Applicable to all public authorities formulating policies or making decisions affecting the public.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation requires transparency in policy-making and decision-making processes.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "Public authorities must provide reasons for their administrative or quasi-judicial decisions to affected persons.",
+      "source": "RTI Act 2005, Section 22(d)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002205"
+      ],
+      "checkable_test": "Verify if the public authority has provided reasons for administrative or quasi-judicial decisions to affected persons.",
+      "applicability": "Applicable to all administrative or quasi-judicial decisions affecting individuals.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation ensures transparency and accountability in decision-making processes.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "Disclosure of information supplied by a third party that has been treated as confidential may be allowed if the public interest in disclosure outweighs any possible harm to the third party's interests.",
+      "source": "RTI Act 2005, Section 22(7)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002278"
+      ],
+      "checkable_test": "Verify if the public authority has assessed whether the public interest in disclosure outweighs the harm to the third party's interests.",
+      "applicability": "Applicable to information supplied by third parties treated as confidential.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation balances the right to information with the protection of confidential information.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T15:24:08.313371+00:00",
+  "multi_mapped_records": []
+}

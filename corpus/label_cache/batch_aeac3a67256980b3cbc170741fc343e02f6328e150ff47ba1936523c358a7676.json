@@ -1,0 +1,53 @@
+{
+  "cache_key": "aeac3a67256980b3cbc170741fc343e02f6328e150ff47ba1936523c358a7676",
+  "created_at_utc": "2026-09-16T11:48:37.361256+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S000169",
+    "S000170",
+    "S000171",
+    "S000172",
+    "S000173",
+    "S000174"
+  ],
+  "labels": [
+    {
+      "clause_id": "S000169",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause defines 'Branding Guidelines' and does not meaningfully address any listed taxonomy requirement."
+    },
+    {
+      "clause_id": "S000170",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause defines 'Cloud Data Processing Addendum' and does not meaningfully address any listed taxonomy requirement."
+    },
+    {
+      "clause_id": "S000171",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause defines 'Cloud Identity Services' and does not meaningfully address any listed taxonomy requirement."
+    },
+    {
+      "clause_id": "S000172",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause defines 'Confidential Information' and does not meaningfully address any listed taxonomy requirement."
+    },
+    {
+      "clause_id": "S000173",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause defines 'Control' and does not meaningfully address any listed taxonomy requirement."
+    },
+    {
+      "clause_id": "S000174",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause defines 'Core Services' and does not meaningfully address any listed taxonomy requirement."
+    }
+  ],
+  "status": "SUCCESS"
+}

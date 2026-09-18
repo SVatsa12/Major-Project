@@ -1,0 +1,466 @@
+[
+  {
+    "taxonomy_id": "DPDP_RUL-0094",
+    "act": "DPDP_RULES_2025",
+    "category": "Breach Notification",
+    "requirement": "Data Fiduciary must provide a detailed description of the breach, including its nature, extent, timing, location, and likely impact.",
+    "checkable_test": "Check if the document specifies the obligation to provide a detailed description of the breach, including its nature, extent, timing, location, and likely impact.",
+    "applicability": "Applicable to all Data Fiduciaries subject to DPDP Rules 2025.",
+    "source": "DPDP Rules 2025, Rule 8(1)",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000094",
+      "TC-000098"
+    ],
+    "source_clause_ids": [
+      "G001055",
+      "G001061"
+    ],
+    "source_legal_anchors": [
+      "rule 8 1",
+      "rules"
+    ],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "MERGED",
+    "consolidation_reason": "Candidates were consolidated because the automatic merge rules found substantive duplication within the same Act/category.",
+    "canonical_candidate_id": "TC-000098",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 2,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_RUL-0124",
+    "act": "DPDP_RULES_2025",
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "Consent Managers must enable Data Principals to give consent to the processing of their personal data by a Data Fiduciary through another Data Fiduciary onboarded onto the platform.",
+    "checkable_test": "Check if the document specifies that the platform enables Data Principals to give consent through another Data Fiduciary.",
+    "applicability": "Applicable to Consent Managers.",
+    "source": "DPDP Rules 2025, Rule 11",
+    "weight": 3,
+    "assessability": "3",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000127",
+      "TC-000128"
+    ],
+    "source_clause_ids": [
+      "G001170",
+      "G001171"
+    ],
+    "source_legal_anchors": [
+      "rule 10",
+      "rule 11",
+      "rules"
+    ],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "MERGED",
+    "consolidation_reason": "Candidates were consolidated because the automatic merge rules found substantive duplication within the same Act/category.",
+    "canonical_candidate_id": "TC-000128",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 2,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_RUL-0376",
+    "act": "DPDP_RULES_2025",
+    "category": "Children/Vulnerable Groups",
+    "requirement": "Data processing by educational institutions is restricted to tracking and behavioural monitoring in the interests of safety of children entrusted in their care.",
+    "checkable_test": "Check if the document restricts data processing by educational institutions to tracking and behavioural monitoring solely for the safety of children in their care.",
+    "applicability": "Applicable to educational institutions handling children's data.",
+    "source": "DPDP Rules 2025, Section 8(4)",
+    "weight": 3,
+    "assessability": "3",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000383",
+      "TC-000384"
+    ],
+    "source_clause_ids": [
+      "G001258",
+      "G001260"
+    ],
+    "source_legal_anchors": [
+      "rules",
+      "section 8 4",
+      "section 8 5"
+    ],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "MERGED",
+    "consolidation_reason": "Candidates were consolidated because the automatic merge rules found substantive duplication within the same Act/category.",
+    "canonical_candidate_id": "TC-000383",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 2,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_RUL-0076",
+    "act": "DPDP_RULES_2025",
+    "category": "Consent & Notice",
+    "requirement": "Data Fiduciaries must provide a fair account of details necessary for specific and informed consent in clear and plain language.",
+    "checkable_test": "Verify if the document specifies the requirement to provide a fair account of details in clear and plain language for informed consent as per the referenced section.",
+    "applicability": "Applicable to Data Fiduciaries under the DPDP Rules 2025.",
+    "source": "DPDP Rules 2025, Section 1017(b)",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000076"
+    ],
+    "source_clause_ids": [
+      "G001017"
+    ],
+    "source_legal_anchors": [
+      "rules",
+      "section 1017 b"
+    ],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
+    "canonical_candidate_id": "TC-000076",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 1,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_RUL-0086",
+    "act": "DPDP_RULES_2025",
+    "category": "Security Safeguards",
+    "requirement": "Implement appropriate data security measures, such as encryption, obfuscation, masking, or the use of virtual tokens mapped to personal data.",
+    "checkable_test": "Check if the document specifies encryption, obfuscation, masking, or virtual tokens for securing personal data.",
+    "applicability": "Applicable to all data fiduciaries and processors handling personal data.",
+    "source": "DPDP Rules 2025, Rule 8(2)(a)",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000086"
+    ],
+    "source_clause_ids": [
+      "G001045"
+    ],
+    "source_legal_anchors": [
+      "rule 8 2 a",
+      "rules"
+    ],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
+    "canonical_candidate_id": "TC-000086",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 1,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_RUL-0099",
+    "act": "DPDP_RULES_2025",
+    "category": "Data Retention & Erasure",
+    "requirement": "A Data Fiduciary must erase personal data upon completion of the specified retention period unless retention is necessary for legal compliance.",
+    "checkable_test": "Verify if the Data Fiduciary provides a mechanism for erasure of personal data after the retention period, unless retention is required by law.",
+    "applicability": "Applies to Data Fiduciaries processing personal data for specified purposes.",
+    "source": "DPDP Rules 2025, Rule 8(1)",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000100"
+    ],
+    "source_clause_ids": [
+      "G001071"
+    ],
+    "source_legal_anchors": [
+      "rule 8 1",
+      "rules"
+    ],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
+    "canonical_candidate_id": "TC-000100",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 1,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_RUL-0114",
+    "act": "DPDP_RULES_2025",
+    "category": "Data Principal Rights",
+    "requirement": "Data Fiduciaries must provide Data Principals with details of the means to exercise their rights under the Act.",
+    "checkable_test": "Check if the document provides clear, accessible means for Data Principals to exercise their rights.",
+    "applicability": "Applicable to all Data Fiduciaries under the DPDP Rules 2025.",
+    "source": "DPDP Rules 2025, Rule 8(1)",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000117"
+    ],
+    "source_clause_ids": [
+      "G001116"
+    ],
+    "source_legal_anchors": [
+      "rule 8 1",
+      "rules"
+    ],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
+    "canonical_candidate_id": "TC-000117",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 1,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_RUL-0117",
+    "act": "DPDP_RULES_2025",
+    "category": "Grievance Redressal",
+    "requirement": "Data Fiduciaries and Consent Managers must prominently publish on their website or app a grievance redressal system for responding to Data Principal grievances within ninety days.",
+    "checkable_test": "Check if the document provides a prominently published grievance redressal system with a ninety-day response period.",
+    "applicability": "Applicable to all Data Fiduciaries and Consent Managers under the DPDP Rules 2025.",
+    "source": "DPDP Rules 2025, Rule 8(1)",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000120"
+    ],
+    "source_clause_ids": [
+      "G001119"
+    ],
+    "source_legal_anchors": [
+      "rule 8 1",
+      "rules"
+    ],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
+    "canonical_candidate_id": "TC-000120",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 1,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_RUL-0118",
+    "act": "DPDP_RULES_2025",
+    "category": "Cross-Border Transfer",
+    "requirement": "Data Fiduciaries must meet requirements specified by the Central Government for transferring personal data outside the territory of India.",
+    "checkable_test": "Check if the document specifies that Data Fiduciaries must meet Central Government requirements for cross-border data transfers.",
+    "applicability": "Applicable to all Data Fiduciaries under the DPDP Rules 2025.",
+    "source": "DPDP Rules 2025, Rule 8(1)",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000121"
+    ],
+    "source_clause_ids": [
+      "G001124"
+    ],
+    "source_legal_anchors": [
+      "rule 8 1",
+      "rules"
+    ],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
+    "canonical_candidate_id": "TC-000121",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 1,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_RUL-0549",
+    "act": "DPDP_RULES_2025",
+    "category": "Confidentiality & Misuse of Data",
+    "requirement": "Data fiduciaries must ensure the absence of conflict of interest in the performance of their functions.",
+    "checkable_test": "Verify that data fiduciaries have no financial or other interests that could prejudice their functions.",
+    "applicability": "All data fiduciaries.",
+    "source": "DPDP Rules 2025, Section 8(1)",
+    "weight": 3,
+    "assessability": "3",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000559"
+    ],
+    "source_clause_ids": [
+      "G001311"
+    ],
+    "source_legal_anchors": [
+      "rules",
+      "section 8 1"
+    ],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
+    "canonical_candidate_id": "TC-000559",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 1,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_RUL-0378",
+    "act": "DPDP_RULES_2025",
+    "category": "Children/Vulnerable Groups",
+    "requirement": "Processing of children's real-time location data is restricted to tracking their location in the interest of their safety and protection.",
+    "checkable_test": "Check if the data processing of children's real-time location data is limited to tracking their location for safety and protection purposes.",
+    "applicability": "Applies to data processing involving children's real-time location data.",
+    "source": "DPDP Rules 2025, Section 1273",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000386",
+      "TC-000387"
+    ],
+    "source_clause_ids": [
+      "G001272",
+      "G001273"
+    ],
+    "source_legal_anchors": [
+      "rules",
+      "section 1272",
+      "section 1273"
+    ],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "MERGED",
+    "consolidation_reason": "Candidates were consolidated because the automatic merge rules found substantive duplication within the same Act/category.",
+    "canonical_candidate_id": "TC-000386",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 2,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_RUL-0379",
+    "act": "DPDP_RULES_2025",
+    "category": "Children/Vulnerable Groups",
+    "requirement": "Processing of children's location data is restricted to the extent necessary for creating a user account for communication by email.",
+    "checkable_test": "Check if the data processing of children's location data is limited to creating a user account for email communication purposes.",
+    "applicability": "Applies to data processing involving children's location data for email account creation.",
+    "source": "DPDP Rules 2025, Section 1271",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000388",
+      "TC-000389"
+    ],
+    "source_clause_ids": [
+      "G001270",
+      "G001271"
+    ],
+    "source_legal_anchors": [
+      "rules",
+      "section 1270",
+      "section 1271"
+    ],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "MERGED",
+    "consolidation_reason": "Candidates were consolidated because the automatic merge rules found substantive duplication within the same Act/category.",
+    "canonical_candidate_id": "TC-000388",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 2,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_RUL-0080",
+    "act": "DPDP_RULES_2025",
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "Register as a Consent Manager with the Board by furnishing required particulars and documents.",
+    "checkable_test": "Verify the presence of a registration process for Consent Managers as per the Board's requirements.",
+    "applicability": "Applicable to entities registering as Consent Managers.",
+    "source": "DPDP Rules 2025, Rule 8(1)(4)",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000080"
+    ],
+    "source_clause_ids": [
+      "G001025"
+    ],
+    "source_legal_anchors": [
+      "rule 8 1 4",
+      "rules"
+    ],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
+    "canonical_candidate_id": "TC-000080",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 1,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_RUL-0081",
+    "act": "DPDP_RULES_2025",
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "Register the applicant as a Consent Manager and publish the details on the Board's website.",
+    "checkable_test": "Verify the presence of a process for registering Consent Managers and publishing their details.",
+    "applicability": "Applicable to entities registering as Consent Managers.",
+    "source": "DPDP Rules 2025, Rule 8(1)(a)",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000081"
+    ],
+    "source_clause_ids": [
+      "G001027"
+    ],
+    "source_legal_anchors": [
+      "rule 8 1 a",
+      "rules"
+    ],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
+    "canonical_candidate_id": "TC-000081",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 1,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_RUL-0082",
+    "act": "DPDP_RULES_2025",
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "Ensure Consent Managers adhere to conditions and obligations as specified in Part B of the First Schedule.",
+    "checkable_test": "Verify the presence of obligations for Consent Managers as specified in Part B of the First Schedule.",
+    "applicability": "Applicable to all Consent Managers.",
+    "source": "DPDP Rules 2025, Rule 8(1)(3)",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000082"
+    ],
+    "source_clause_ids": [
+      "G001029"
+    ],
+    "source_legal_anchors": [
+      "rule 8 1 3",
+      "rules"
+    ],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
+    "canonical_candidate_id": "TC-000082",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 1,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  }
+]

@@ -1,0 +1,127 @@
+{
+  "batch_id": "23621a136b12f2806f96a37d",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G000224",
+    "G000226",
+    "G000230",
+    "G000235",
+    "G000236",
+    "G000239",
+    "G000242",
+    "G000249"
+  ],
+  "raw_response": "[  \n  {  \n    \"category\": \"Grievance Redressal\",  \n    \"requirement\": \"The Disputes Redressal Forum or Consumer Disputes Redressal Commission must dispose of applications or appeals within ninety days from the date of receipt.\",  \n    \"source\": \"AERA_ACT_2008, Section 6(6)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G000226\"],  \n    \"checkable_test\": \"Check if the timeline for resolving disputes is explicitly set to ninety days.\",  \n    \"applicability\": \"Applies to all disputes handled by the Disputes Redressal Forum or Consumer Disputes Redressal Commission.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This clause establishes a clear time limit for resolving disputes, which is directly checkable.\"  \n  },  \n  {  \n    \"category\": \"Significant Data Fiduciary Obligations\",  \n    \"requirement\": \"The Chairperson and Members of the Appellate Tribunal must have relevant experience in aviation, economics, or law, or have served in equivalent government positions for at least two years.\",  \n    \"source\": \"AERA_ACT_2008, Section 6(5)(b)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G000235\"],  \n    \"checkable_test\": \"Verify if the qualifications for the Chairperson or Members include relevant experience or government service.\",  \n    \"applicability\": \"Applies to the appointment of the Chairperson and Members of the Appellate Tribunal.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This clause sets specific qualifications for the Appellate Tribunal members, which is directly checkable.\"  \n  },  \n  {  \n    \"category\": \"Significant Data Fiduciary Obligations\",  \n    \"requirement\": \"The Chairperson and Members of the Appellate Tribunal may not hold office after they have attained the age of sixty-five.\",  \n    \"source\": \"AERA_ACT_2008, Section 6(21) and 6(23)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G000239\", \"G000242\"],  \n    \"checkable_test\": \"Check if the age limit for the Chairperson or Members is explicitly set to sixty-five.\",  \n    \"applicability\": \"Applies to the term of office for the Chairperson and Members of the Appellate Tribunal.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This clause establishes an age limit for the tenure of the Appellate Tribunal members, which is directly checkable.\"  \n  },  \n  {  \n    \"category\": \"Significant Data Fiduciary Obligations\",  \n    \"requirement\": \"The Appellate Tribunal must ensure that the salary and allowances of its Chairperson and Members are prescribed by the appropriate authority.\",  \n    \"source\": \"AERA_ACT_2008, Section 6(22)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G000239\"],  \n    \"checkable_test\": \"Verify if the salary and allowances for the Appellate Tribunal members are subject to prescription by an authority.\",  \n    \"applicability\": \"Applies to the terms and conditions of service for the Appellate Tribunal members.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This clause mandates that the salary and allowances for the Appellate Tribunal members are prescribed by an authority, which is directly checkable.\"  \n  },  \n  {  \n    \"category\": \"Significant Data Fiduciary Obligations\",  \n    \"requirement\": \"The Appellate Tribunal must ensure that no Member is appointed who has abused their position to the detriment of public interest.\",  \n    \"source\": \"AERA_ACT_2008, Section 6(23)(e)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G000249\"],  \n    \"checkable_test\": \"Check if the appointment criteria include disqualification for abuse of position.\",  \n    \"applicability\": \"Applies to the appointment of Members of the Appellate Tribunal.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This clause prohibits the appointment of individuals who have abused their position, which is directly checkable.\"  \n  }  \n]",
+  "parsed_entries": [
+    {
+      "category": "Grievance Redressal",
+      "requirement": "The Disputes Redressal Forum or Consumer Disputes Redressal Commission must dispose of applications or appeals within ninety days from the date of receipt.",
+      "source": "AERA_ACT_2008, Section 6(6)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000226"
+      ],
+      "checkable_test": "Check if the timeline for resolving disputes is explicitly set to ninety days.",
+      "applicability": "Applies to all disputes handled by the Disputes Redressal Forum or Consumer Disputes Redressal Commission.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause establishes a clear time limit for resolving disputes, which is directly checkable.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Chairperson and Members of the Appellate Tribunal must have relevant experience in aviation, economics, or law, or have served in equivalent government positions for at least two years.",
+      "source": "AERA_ACT_2008, Section 6(5)(b)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000235"
+      ],
+      "checkable_test": "Verify if the qualifications for the Chairperson or Members include relevant experience or government service.",
+      "applicability": "Applies to the appointment of the Chairperson and Members of the Appellate Tribunal.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause sets specific qualifications for the Appellate Tribunal members, which is directly checkable.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Chairperson and Members of the Appellate Tribunal may not hold office after they have attained the age of sixty-five.",
+      "source": "AERA_ACT_2008, Section 6(21) and 6(23)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000239",
+        "G000242"
+      ],
+      "checkable_test": "Check if the age limit for the Chairperson or Members is explicitly set to sixty-five.",
+      "applicability": "Applies to the term of office for the Chairperson and Members of the Appellate Tribunal.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause establishes an age limit for the tenure of the Appellate Tribunal members, which is directly checkable.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Appellate Tribunal must ensure that the salary and allowances of its Chairperson and Members are prescribed by the appropriate authority.",
+      "source": "AERA_ACT_2008, Section 6(22)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000239"
+      ],
+      "checkable_test": "Verify if the salary and allowances for the Appellate Tribunal members are subject to prescription by an authority.",
+      "applicability": "Applies to the terms and conditions of service for the Appellate Tribunal members.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause mandates that the salary and allowances for the Appellate Tribunal members are prescribed by an authority, which is directly checkable.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Appellate Tribunal must ensure that no Member is appointed who has abused their position to the detriment of public interest.",
+      "source": "AERA_ACT_2008, Section 6(23)(e)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000249"
+      ],
+      "checkable_test": "Check if the appointment criteria include disqualification for abuse of position.",
+      "applicability": "Applies to the appointment of Members of the Appellate Tribunal.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause prohibits the appointment of individuals who have abused their position, which is directly checkable.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T15:34:11.596047+00:00",
+  "multi_mapped_records": [
+    {
+      "batch_id": "23621a136b12f2806f96a37d",
+      "source_clause_id": "G000239",
+      "total_entries": 2,
+      "distinct_categories": 1,
+      "categories": [
+        "Significant Data Fiduciary Obligations"
+      ],
+      "decision": "KEPT_FIRST_PER_CATEGORY_OR_DEDUPED_BY_EMBEDDING",
+      "kept_positions": [
+        2,
+        3
+      ],
+      "discarded_positions": [],
+      "entries_summary": [
+        {
+          "position": 2,
+          "category": "Significant Data Fiduciary Obligations",
+          "requirement": "The Chairperson and Members of the Appellate Tribunal may not hold office after they have attained the age of sixty-five"
+        },
+        {
+          "position": 3,
+          "category": "Significant Data Fiduciary Obligations",
+          "requirement": "The Appellate Tribunal must ensure that the salary and allowances of its Chairperson and Members are prescribed by the a"
+        }
+      ]
+    }
+  ]
+}

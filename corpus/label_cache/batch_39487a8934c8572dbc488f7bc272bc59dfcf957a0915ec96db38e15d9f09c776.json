@@ -1,0 +1,53 @@
+{
+  "cache_key": "39487a8934c8572dbc488f7bc272bc59dfcf957a0915ec96db38e15d9f09c776",
+  "created_at_utc": "2026-09-17T06:48:57.935806+00:00",
+  "prompt_version": "policy-labeling-v7-reliable-batches",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S001861",
+    "S001862",
+    "S001863",
+    "S001864",
+    "S001865",
+    "S001866"
+  ],
+  "labels": [
+    {
+      "clause_id": "S001861",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Partially Compliant",
+      "justification": "Clause addresses access control and security logs, aligning with data security measures but lacks explicit mention of personal data."
+    },
+    {
+      "clause_id": "S001862",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Partially Compliant",
+      "justification": "Clause covers logging access events, which relates to security safeguards but does not explicitly mention personal data protection."
+    },
+    {
+      "clause_id": "S001863",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "Clause is too vague and does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S001864",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Partially Compliant",
+      "justification": "Clause mentions network segregation, which is a security measure, but does not explicitly mention personal data."
+    },
+    {
+      "clause_id": "S001865",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Partially Compliant",
+      "justification": "Clause addresses encrypted communication and multi-factor authentication, which are security measures, but does not explicitly mention personal data."
+    },
+    {
+      "clause_id": "S001866",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Partially Compliant",
+      "justification": "Clause refers to data in transit, which relates to security safeguards, but does not explicitly mention personal data."
+    }
+  ],
+  "status": "SUCCESS"
+}

@@ -1,0 +1,277 @@
+{
+  "batch_id": "337ffec2a829806ee869f38e",
+  "status": "PARTIAL_VALIDATION",
+  "input_clause_ids": [
+    "G001926",
+    "G001931",
+    "G001932",
+    "G001933",
+    "G001935",
+    "G001945",
+    "G001947",
+    "G001951"
+  ],
+  "raw_response": "[{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Intermediaries must not disclose personal information of users without consent or in breach of a lawful contract, as this constitutes an offence under the IT Act 2000, Section 72A.\",\"source\":\"IT Act 2000, Section 72A\",\"weight\":3,\"source_clause_ids\":[\"G001947\"],\"checkable_test\":\"Verify if the document explicitly states that intermediaries must not disclose personal information without consent or in breach of a lawful contract.\",\"applicability\":\"Applicable to intermediaries and platforms handling user data.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation is directly tied to the legal penalty for disclosure of personal information in breach of a lawful contract.\"},{\"category\":\"Breach Notification\",\"requirement\":\"No court shall take cognizance of any offence under the IT Act 2000, Section 72, except on a complaint made by an officer authorised in this behalf by the Indian Computer Emergency Response Team.\",\"source\":\"IT Act 2000, Section 72(8)\",\"weight\":2,\"source_clause_ids\":[\"G001945\"],\"checkable_test\":\"Check if the document specifies that complaints regarding breaches of confidentiality and privacy must be made to the Indian Computer Emergency Response Team.\",\"applicability\":\"Applicable to entities handling electronic records and personal information.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This clause outlines the procedural requirement for reporting breaches to the designated national agency.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"The Indian Computer Emergency Response Team shall serve as the national agency for performing functions in the area of cybersecurity, including incident response and protection of critical information infrastructure.\",\"source\":\"IT Act 2000, Section 70B(4)\",\"weight\":2,\"source_clause_ids\":[\"G001935\"],\"checkable_test\":\"Verify if the document states that the national agency for cybersecurity is responsible for incident response and protection of critical information infrastructure.\",\"applicability\":\"Applicable to entities involved in cybersecurity and critical information infrastructure.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This clause outlines the role of the national agency in cybersecurity functions.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The national nodal agency designated under the IT Act 2000 shall be responsible for all measures including Research and Development relating to protection of Critical Information Infrastructure.\",\"source\":\"IT Act 2000, Section 70B(2)\",\"weight\":3,\"source_clause_ids\":[\"G001931\"],\"checkable_test\":\"Check if the document specifies that the national nodal agency is responsible for Research and Development in the protection of Critical Information Infrastructure.\",\"applicability\":\"Applicable to entities designated as national nodal agencies.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This clause outlines the responsibility of the national nodal agency in protecting Critical Information Infrastructure.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The Central Government shall appoint an agency called the Indian Computer Emergency Response Team to serve as the national agency for incident response in the area of cybersecurity.\",\"source\":\"IT Act 2000, Section 70B(1)\",\"weight\":3,\"source_clause_ids\":[\"G001932\"],\"checkable_test\":\"Verify if the document states that the Indian Computer Emergency Response Team is appointed as the national agency for incident response in cybersecurity.\",\"applicability\":\"Applicable to entities involved in cybersecurity and incident response.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This clause outlines the appointment of the national agency for cybersecurity incident response.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"The national nodal agency designated under the IT Act 2000 shall be responsible for all measures including Research and Development relating to protection of Critical Information Infrastructure.\",\"source\":\"IT Act 2000, Section 70B(2)\",\"weight\":2,\"source_clause_ids\":[\"G001931\"],\"checkable_test\":\"Check if the document specifies that the national nodal agency is responsible for Research and Development in the protection of Critical Information Infrastructure.\",\"applicability\":\"Applicable to entities designated as national nodal agencies.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This clause outlines the responsibility of the national nodal agency in protecting Critical Information Infrastructure.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Central Government shall, by notification in the Official Gazette, appoint an agency of the Government to be called the Indian Computer Emergency Response Team.\",\"source\":\"IT Act 2000, Section 70B(1)\",\"weight\":3,\"source_clause_ids\":[\"G001932\"],\"checkable_test\":\"Verify if the document states that the Central Government appoints the Indian Computer Emergency Response Team as the national agency for cybersecurity incident response.\",\"applicability\":\"Applicable to entities involved in cybersecurity and incident response.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This clause outlines the appointment of the national agency for cybersecurity incident response.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"The manner of performing functions and duties of the national nodal agency shall be such as may be prescribed.\",\"source\":\"IT Act 2000, Section 70B(3)\",\"weight\":2,\"source_clause_ids\":[\"G001932\"],\"checkable_test\":\"Check if the document specifies that the manner of performing functions and duties of the national nodal agency is subject to prescribed guidelines.\",\"applicability\":\"Applicable to entities designated as national nodal agencies.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This clause outlines the flexibility in the manner of performing functions and duties of the national nodal agency.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The national nodal agency designated under the IT Act 2000 shall be responsible for all measures including Research and Development relating to protection of Critical Information Infrastructure.\",\"source\":\"IT Act 2000, Section 70B(2)\",\"weight\":3,\"source_clause_ids\":[\"G001931\"],\"checkable_test\":\"Verify if the document states that the national nodal agency is responsible for Research and Development in the protection of Critical Information Infrastructure.\",\"applicability\":\"Applicable to entities designated as national nodal agencies.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This clause outlines the responsibility of the national nodal agency in protecting Critical Information Infrastructure.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"The Indian Computer Emergency Response Team shall serve as the national agency for performing the following functions in the area of cybersecurity, including incident response and protection of critical information infrastructure.\",\"source\":\"IT Act 2000, Section 70B(4)\",\"weight\":2,\"source_clause_ids\":[\"G001935\"],\"checkable_test\":\"Check if the document specifies that the Indian Computer Emergency Response Team is responsible for incident response and protection of critical information infrastructure.\",\"applicability\":\"Applicable to entities involved in cybersecurity and incident response.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This clause outlines the functions of the national agency in cybersecurity and incident response.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Intermediaries must not disclose personal information of users without consent or in breach of a lawful contract, as this constitutes an offence under the IT Act 2000, Section 72A.",
+      "source": "IT Act 2000, Section 72A",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001947"
+      ],
+      "checkable_test": "Verify if the document explicitly states that intermediaries must not disclose personal information without consent or in breach of a lawful contract.",
+      "applicability": "Applicable to intermediaries and platforms handling user data.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to the legal penalty for disclosure of personal information in breach of a lawful contract.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Breach Notification",
+      "requirement": "No court shall take cognizance of any offence under the IT Act 2000, Section 72, except on a complaint made by an officer authorised in this behalf by the Indian Computer Emergency Response Team.",
+      "source": "IT Act 2000, Section 72(8)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001945"
+      ],
+      "checkable_test": "Check if the document specifies that complaints regarding breaches of confidentiality and privacy must be made to the Indian Computer Emergency Response Team.",
+      "applicability": "Applicable to entities handling electronic records and personal information.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause outlines the procedural requirement for reporting breaches to the designated national agency.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "The Indian Computer Emergency Response Team shall serve as the national agency for performing functions in the area of cybersecurity, including incident response and protection of critical information infrastructure.",
+      "source": "IT Act 2000, Section 70B(4)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001935"
+      ],
+      "checkable_test": "Verify if the document states that the national agency for cybersecurity is responsible for incident response and protection of critical information infrastructure.",
+      "applicability": "Applicable to entities involved in cybersecurity and critical information infrastructure.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause outlines the role of the national agency in cybersecurity functions.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The national nodal agency designated under the IT Act 2000 shall be responsible for all measures including Research and Development relating to protection of Critical Information Infrastructure.",
+      "source": "IT Act 2000, Section 70B(2)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001931"
+      ],
+      "checkable_test": "Check if the document specifies that the national nodal agency is responsible for Research and Development in the protection of Critical Information Infrastructure.",
+      "applicability": "Applicable to entities designated as national nodal agencies.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause outlines the responsibility of the national nodal agency in protecting Critical Information Infrastructure.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Central Government shall appoint an agency called the Indian Computer Emergency Response Team to serve as the national agency for incident response in the area of cybersecurity.",
+      "source": "IT Act 2000, Section 70B(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001932"
+      ],
+      "checkable_test": "Verify if the document states that the Indian Computer Emergency Response Team is appointed as the national agency for incident response in cybersecurity.",
+      "applicability": "Applicable to entities involved in cybersecurity and incident response.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause outlines the appointment of the national agency for cybersecurity incident response.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "The national nodal agency designated under the IT Act 2000 shall be responsible for all measures including Research and Development relating to protection of Critical Information Infrastructure.",
+      "source": "IT Act 2000, Section 70B(2)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001931"
+      ],
+      "checkable_test": "Check if the document specifies that the national nodal agency is responsible for Research and Development in the protection of Critical Information Infrastructure.",
+      "applicability": "Applicable to entities designated as national nodal agencies.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause outlines the responsibility of the national nodal agency in protecting Critical Information Infrastructure.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Central Government shall, by notification in the Official Gazette, appoint an agency of the Government to be called the Indian Computer Emergency Response Team.",
+      "source": "IT Act 2000, Section 70B(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001932"
+      ],
+      "checkable_test": "Verify if the document states that the Central Government appoints the Indian Computer Emergency Response Team as the national agency for cybersecurity incident response.",
+      "applicability": "Applicable to entities involved in cybersecurity and incident response.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause outlines the appointment of the national agency for cybersecurity incident response.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "The manner of performing functions and duties of the national nodal agency shall be such as may be prescribed.",
+      "source": "IT Act 2000, Section 70B(3)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001932"
+      ],
+      "checkable_test": "Check if the document specifies that the manner of performing functions and duties of the national nodal agency is subject to prescribed guidelines.",
+      "applicability": "Applicable to entities designated as national nodal agencies.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause outlines the flexibility in the manner of performing functions and duties of the national nodal agency.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The national nodal agency designated under the IT Act 2000 shall be responsible for all measures including Research and Development relating to protection of Critical Information Infrastructure.",
+      "source": "IT Act 2000, Section 70B(2)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001931"
+      ],
+      "checkable_test": "Verify if the document states that the national nodal agency is responsible for Research and Development in the protection of Critical Information Infrastructure.",
+      "applicability": "Applicable to entities designated as national nodal agencies.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause outlines the responsibility of the national nodal agency in protecting Critical Information Infrastructure.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [
+    {
+      "position": 9,
+      "entry": {
+        "category": "Security Safeguards",
+        "requirement": "The Indian Computer Emergency Response Team shall serve as the national agency for performing the following functions in the area of cybersecurity, including incident response and protection of critical information infrastructure.",
+        "source": "IT Act 2000, Section 70B(4)",
+        "weight": 2,
+        "source_clause_ids": [
+          "G001935"
+        ],
+        "checkable_test": "Check if the document specifies that the Indian Computer Emergency Response Team is responsible for incident response and protection of critical information infrastructure.",
+        "applicability": "Applicable to entities involved in cybersecurity and incident response.",
+        "assessability": "High",
+        "citation_confidence": "high",
+        "notes": "This clause outlines the functions of the national agency in cybersecurity and incident response.",
+        "human_review_status": "PENDING"
+      },
+      "error": "discarded as same-category, semantically similar duplicate of another entry sharing this source clause"
+    }
+  ],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T11:53:12.704137+00:00",
+  "multi_mapped_records": [
+    {
+      "batch_id": "337ffec2a829806ee869f38e",
+      "source_clause_id": "G001935",
+      "total_entries": 2,
+      "distinct_categories": 1,
+      "categories": [
+        "Security Safeguards"
+      ],
+      "decision": "KEPT_FIRST_PER_CATEGORY_OR_DEDUPED_BY_EMBEDDING",
+      "kept_positions": [
+        2
+      ],
+      "discarded_positions": [
+        9
+      ],
+      "entries_summary": [
+        {
+          "position": 2,
+          "category": "Security Safeguards",
+          "requirement": "The Indian Computer Emergency Response Team shall serve as the national agency for performing functions in the area of c"
+        },
+        {
+          "position": 9,
+          "category": "Security Safeguards",
+          "requirement": "The Indian Computer Emergency Response Team shall serve as the national agency for performing the following functions in"
+        }
+      ]
+    },
+    {
+      "batch_id": "337ffec2a829806ee869f38e",
+      "source_clause_id": "G001931",
+      "total_entries": 3,
+      "distinct_categories": 3,
+      "categories": [
+        "Significant Data Fiduciary Obligations",
+        "Security Safeguards",
+        "Intermediary/Platform Liability"
+      ],
+      "decision": "KEPT_ALL_DISTINCT_CATEGORIES",
+      "kept_positions": [
+        3,
+        5,
+        8
+      ],
+      "discarded_positions": [],
+      "entries_summary": [
+        {
+          "position": 3,
+          "category": "Significant Data Fiduciary Obligations",
+          "requirement": "The national nodal agency designated under the IT Act 2000 shall be responsible for all measures including Research and "
+        },
+        {
+          "position": 5,
+          "category": "Security Safeguards",
+          "requirement": "The national nodal agency designated under the IT Act 2000 shall be responsible for all measures including Research and "
+        },
+        {
+          "position": 8,
+          "category": "Intermediary/Platform Liability",
+          "requirement": "The national nodal agency designated under the IT Act 2000 shall be responsible for all measures including Research and "
+        }
+      ]
+    },
+    {
+      "batch_id": "337ffec2a829806ee869f38e",
+      "source_clause_id": "G001932",
+      "total_entries": 3,
+      "distinct_categories": 3,
+      "categories": [
+        "Intermediary/Platform Liability",
+        "Significant Data Fiduciary Obligations",
+        "Security Safeguards"
+      ],
+      "decision": "KEPT_ALL_DISTINCT_CATEGORIES",
+      "kept_positions": [
+        4,
+        6,
+        7
+      ],
+      "discarded_positions": [],
+      "entries_summary": [
+        {
+          "position": 4,
+          "category": "Intermediary/Platform Liability",
+          "requirement": "The Central Government shall appoint an agency called the Indian Computer Emergency Response Team to serve as the nation"
+        },
+        {
+          "position": 6,
+          "category": "Significant Data Fiduciary Obligations",
+          "requirement": "The Central Government shall, by notification in the Official Gazette, appoint an agency of the Government to be called "
+        },
+        {
+          "position": 7,
+          "category": "Security Safeguards",
+          "requirement": "The manner of performing functions and duties of the national nodal agency shall be such as may be prescribed."
+        }
+      ]
+    }
+  ]
+}

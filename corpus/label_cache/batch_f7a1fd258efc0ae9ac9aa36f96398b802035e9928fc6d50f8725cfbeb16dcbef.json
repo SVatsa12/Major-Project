@@ -1,0 +1,53 @@
+{
+  "cache_key": "f7a1fd258efc0ae9ac9aa36f96398b802035e9928fc6d50f8725cfbeb16dcbef",
+  "created_at_utc": "2026-09-16T13:35:57.160019+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S001465",
+    "S001466",
+    "S001467",
+    "S001468",
+    "S001469",
+    "S001470"
+  ],
+  "labels": [
+    {
+      "clause_id": "S001465",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S001466",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S001467",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S001468",
+      "best_match_taxonomy_id": "DPDP_RUL-0378",
+      "verdict": "Compliant",
+      "justification": "The clause prohibits processing of children's real-time location data for sexual exploitation, aligning with the restriction on tracking children's location for safety."
+    },
+    {
+      "clause_id": "S001469",
+      "best_match_taxonomy_id": "DPDP_RUL-0379",
+      "verdict": "Compliant",
+      "justification": "The clause prohibits sharing of non-consensual intimate imagery, aligning with the restriction on processing children's location data for creating user accounts."
+    },
+    {
+      "clause_id": "S001470",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    }
+  ],
+  "status": "SUCCESS"
+}

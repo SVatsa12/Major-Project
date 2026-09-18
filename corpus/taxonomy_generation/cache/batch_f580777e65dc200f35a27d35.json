@@ -1,0 +1,98 @@
+{
+  "batch_id": "f580777e65dc200f35a27d35",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G000501",
+    "G000504",
+    "G000507",
+    "G000508",
+    "G000512",
+    "G000523",
+    "G000527",
+    "G000529"
+  ],
+  "raw_response": "[  \n  {  \n    \"category\": \"Security Safeguards\",  \n    \"requirement\": \"A Data Fiduciary shall implement appropriate technical and organisational measures to ensure effective observance of the provisions of this Act and the rules made thereunder.\",  \n    \"source\": \"DPDP Act 2023, Section 4(4)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G000501\"],  \n    \"checkable_test\": \"Verify that the document specifies technical and organisational measures to ensure compliance with the Act and its rules.\",  \n    \"applicability\": \"All Data Fiduciaries under the DPDP Act 2023.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation is core to data protection and requires specific measures to be outlined in the governance document.\"  \n  },  \n  {  \n    \"category\": \"Data Retention & Erasure\",  \n    \"requirement\": \"A Data Fiduciary shall, unless retention is necessary for compliance with any law for the time being in force, delete or anonymise personal data once the specified purpose is no longer being served.\",  \n    \"source\": \"DPDP Act 2023, Section 4(7)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G000507\"],  \n    \"checkable_test\": \"Verify that the document specifies conditions and procedures for deleting or anonymising data when the purpose is no longer served.\",  \n    \"applicability\": \"All Data Fiduciaries under the DPDP Act 2023.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation requires a clear retention and erasure policy aligned with the Act.\"  \n  },  \n  {  \n    \"category\": \"Data Retention & Erasure\",  \n    \"requirement\": \"A Data Fiduciary shall cause its Data Processor to erase any personal data that was made available by the Data Fiduciary for processing to such Data Processor.\",  \n    \"source\": \"DPDP Act 2023, Section 4(8)(b)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G000508\"],  \n    \"checkable_test\": \"Verify that the document specifies procedures for erasing data shared with Data Processors.\",  \n    \"applicability\": \"All Data Fiduciaries under the DPDP Act 2023.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation applies to data shared with third-party processors and requires specific erasure mechanisms.\"  \n  },  \n  {  \n    \"category\": \"Significant Data Fiduciary Obligations\",  \n    \"requirement\": \"A Significant Data Fiduciary shall assess the volume and sensitivity of personal data processed to determine its status as a Significant Data Fiduciary.\",  \n    \"source\": \"DPDP Act 2023, Section 4(12)(a)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G000523\"],  \n    \"checkable_test\": \"Verify that the document outlines the criteria and process for assessing whether a Data Fiduciary is classified as Significant.\",  \n    \"applicability\": \"Significant Data Fiduciaries under the DPDP Act 2023.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This is a core obligation for determining the obligations of Significant Data Fiduciaries.\"  \n  },  \n  {  \n    \"category\": \"Significant Data Fiduciary Obligations\",  \n    \"requirement\": \"A Significant Data Fiduciary shall consider the volume and sensitivity of personal data processed, as well as the potential impact on the sovereignty and integrity of India, in determining its status as a Significant Data Fiduciary.\",  \n    \"source\": \"DPDP Act 2023, Section 4(12)(c)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G000529\"],  \n    \"checkable_test\": \"Verify that the document specifies the factors, including potential impact on sovereignty and integrity, used to determine Significant Data Fiduciary status.\",  \n    \"applicability\": \"Significant Data Fiduciaries under the DPDP Act 2023.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation is critical for assessing the obligations of Significant Data Fiduciaries under the Act.\"  \n  }  \n]",
+  "parsed_entries": [
+    {
+      "category": "Security Safeguards",
+      "requirement": "A Data Fiduciary shall implement appropriate technical and organisational measures to ensure effective observance of the provisions of this Act and the rules made thereunder.",
+      "source": "DPDP Act 2023, Section 4(4)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000501"
+      ],
+      "checkable_test": "Verify that the document specifies technical and organisational measures to ensure compliance with the Act and its rules.",
+      "applicability": "All Data Fiduciaries under the DPDP Act 2023.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is core to data protection and requires specific measures to be outlined in the governance document.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "A Data Fiduciary shall, unless retention is necessary for compliance with any law for the time being in force, delete or anonymise personal data once the specified purpose is no longer being served.",
+      "source": "DPDP Act 2023, Section 4(7)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000507"
+      ],
+      "checkable_test": "Verify that the document specifies conditions and procedures for deleting or anonymising data when the purpose is no longer served.",
+      "applicability": "All Data Fiduciaries under the DPDP Act 2023.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation requires a clear retention and erasure policy aligned with the Act.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "A Data Fiduciary shall cause its Data Processor to erase any personal data that was made available by the Data Fiduciary for processing to such Data Processor.",
+      "source": "DPDP Act 2023, Section 4(8)(b)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000508"
+      ],
+      "checkable_test": "Verify that the document specifies procedures for erasing data shared with Data Processors.",
+      "applicability": "All Data Fiduciaries under the DPDP Act 2023.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation applies to data shared with third-party processors and requires specific erasure mechanisms.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "A Significant Data Fiduciary shall assess the volume and sensitivity of personal data processed to determine its status as a Significant Data Fiduciary.",
+      "source": "DPDP Act 2023, Section 4(12)(a)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000523"
+      ],
+      "checkable_test": "Verify that the document outlines the criteria and process for assessing whether a Data Fiduciary is classified as Significant.",
+      "applicability": "Significant Data Fiduciaries under the DPDP Act 2023.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This is a core obligation for determining the obligations of Significant Data Fiduciaries.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "A Significant Data Fiduciary shall consider the volume and sensitivity of personal data processed, as well as the potential impact on the sovereignty and integrity of India, in determining its status as a Significant Data Fiduciary.",
+      "source": "DPDP Act 2023, Section 4(12)(c)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000529"
+      ],
+      "checkable_test": "Verify that the document specifies the factors, including potential impact on sovereignty and integrity, used to determine Significant Data Fiduciary status.",
+      "applicability": "Significant Data Fiduciaries under the DPDP Act 2023.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is critical for assessing the obligations of Significant Data Fiduciaries under the Act.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T13:40:45.913790+00:00",
+  "multi_mapped_records": []
+}

@@ -1,0 +1,143 @@
+{
+  "batch_id": "c9fcf37a0ada10305890ecbd",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G000464",
+    "G000465",
+    "G000467",
+    "G000468",
+    "G000469",
+    "G000470",
+    "G000471",
+    "G000472"
+  ],
+  "raw_response": "[\n  {\n    \"category\": \"Consent & Notice\",\n    \"requirement\": \"The Data Fiduciary shall provide the Data Principal with the option to access the notice in English or any language specified in the Eighth Schedule to the Constitution.\",\n    \"source\": \"DPDP Act 2023, Section 8(3)\",\n    \"weight\": 2,\n    \"source_clause_ids\": [\"G000464\"],\n    \"checkable_test\": \"Check if the notice provides the option to access in English or any language from the Eighth Schedule.\",\n    \"applicability\": \"All data fiduciaries required to provide notice to data principals.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Consent & Notice\",\n    \"requirement\": \"Consent must be free, specific, informed, unconditional, and unambiguous, with a clear affirmative action, and limited to the necessary personal data for the specified purpose.\",\n    \"source\": \"DPDP Act 2023, Section 8(1)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G000465\"],\n    \"checkable_test\": \"Verify that consent is specific, informed, and limited to necessary data for the specified purpose.\",\n    \"applicability\": \"All data fiduciaries seeking consent for processing personal data.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Consent & Notice\",\n    \"requirement\": \"Consent given for processing personal data shall not include any invalid terms, such as waiving the right to file a complaint with the Data Protection Board of India.\",\n    \"source\": \"DPDP Act 2023, Section 8(6)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G000467\"],\n    \"checkable_test\": \"Check if any part of the consent includes invalid terms, such as waiving the right to file a complaint.\",\n    \"applicability\": \"All data fiduciaries seeking consent for processing personal data.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Consent & Notice\",\n    \"requirement\": \"Every request for consent shall be presented in clear and plain language, with the option to access the request in English or any language specified in the Eighth Schedule to the Constitution.\",\n    \"source\": \"DPDP Act 2023, Section 8(3)\",\n    \"weight\": 2,\n    \"source_clause_ids\": [\"G000468\"],\n    \"checkable_test\": \"Verify that consent requests are presented in clear and plain language with the option to access in English or any language from the Eighth Schedule.\",\n    \"applicability\": \"All data fiduciaries seeking consent for processing personal data.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Consent & Notice\",\n    \"requirement\": \"The Data Principal shall have the right to withdraw consent at any time, with the ease of doing so being comparable to the ease with which such consent was given.\",\n    \"source\": \"DPDP Act 2023, Section 8(4)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G000470\"],\n    \"checkable_test\": \"Check if the withdrawal of consent is as easy as the initial consent was obtained.\",\n    \"applicability\": \"All data fiduciaries processing personal data based on consent.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Consent & Notice\",\n    \"requirement\": \"The Data Principal shall have the right to access the notice in English or any language specified in the Eighth Schedule to the Constitution, along with the contact details of the Data Protection Officer or authorized person.\",\n    \"source\": \"DPDP Act 2023, Section 8(9)\",\n    \"weight\": 2,\n    \"source_clause_ids\": [\"G000469\"],\n    \"checkable_test\": \"Verify that the notice includes the option to access in English or any language from the Eighth Schedule and provides contact details of the Data Protection Officer or authorized person.\",\n    \"applicability\": \"All data fiduciaries required to provide notice to data principals.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Consent & Notice\",\n    \"requirement\": \"The withdrawal of consent shall not affect the legality of processing of personal data based on consent before its withdrawal.\",\n    \"source\": \"DPDP Act 2023, Section 8(5)\",\n    \"weight\": 2,\n    \"source_clause_ids\": [\"G000471\"],\n    \"checkable_test\": \"Check if the withdrawal of consent does not affect the legality of processing before withdrawal.\",\n    \"applicability\": \"All data fiduciaries processing personal data based on consent.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Consent & Notice\",\n    \"requirement\": \"If the Data Principal withdraws consent, the Data Fiduciary may stop enabling the use of the service for placing orders but may not stop processing for goods already ordered and paid for.\",\n    \"source\": \"DPDP Act 2023, Section 8(2)\",\n    \"weight\": 2,\n    \"source_clause_ids\": [\"G000472\"],\n    \"checkable_test\": \"Verify that withdrawal of consent does not affect the processing of goods already ordered and paid for.\",\n    \"applicability\": \"All data fiduciaries processing personal data for fulfilling supply orders.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  }\n]",
+  "parsed_entries": [
+    {
+      "category": "Consent & Notice",
+      "requirement": "The Data Fiduciary shall provide the Data Principal with the option to access the notice in English or any language specified in the Eighth Schedule to the Constitution.",
+      "source": "DPDP Act 2023, Section 8(3)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000464"
+      ],
+      "checkable_test": "Check if the notice provides the option to access in English or any language from the Eighth Schedule.",
+      "applicability": "All data fiduciaries required to provide notice to data principals.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Consent & Notice",
+      "requirement": "Consent must be free, specific, informed, unconditional, and unambiguous, with a clear affirmative action, and limited to the necessary personal data for the specified purpose.",
+      "source": "DPDP Act 2023, Section 8(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000465"
+      ],
+      "checkable_test": "Verify that consent is specific, informed, and limited to necessary data for the specified purpose.",
+      "applicability": "All data fiduciaries seeking consent for processing personal data.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Consent & Notice",
+      "requirement": "Consent given for processing personal data shall not include any invalid terms, such as waiving the right to file a complaint with the Data Protection Board of India.",
+      "source": "DPDP Act 2023, Section 8(6)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000467"
+      ],
+      "checkable_test": "Check if any part of the consent includes invalid terms, such as waiving the right to file a complaint.",
+      "applicability": "All data fiduciaries seeking consent for processing personal data.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Consent & Notice",
+      "requirement": "Every request for consent shall be presented in clear and plain language, with the option to access the request in English or any language specified in the Eighth Schedule to the Constitution.",
+      "source": "DPDP Act 2023, Section 8(3)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000468"
+      ],
+      "checkable_test": "Verify that consent requests are presented in clear and plain language with the option to access in English or any language from the Eighth Schedule.",
+      "applicability": "All data fiduciaries seeking consent for processing personal data.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Consent & Notice",
+      "requirement": "The Data Principal shall have the right to withdraw consent at any time, with the ease of doing so being comparable to the ease with which such consent was given.",
+      "source": "DPDP Act 2023, Section 8(4)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000470"
+      ],
+      "checkable_test": "Check if the withdrawal of consent is as easy as the initial consent was obtained.",
+      "applicability": "All data fiduciaries processing personal data based on consent.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Consent & Notice",
+      "requirement": "The Data Principal shall have the right to access the notice in English or any language specified in the Eighth Schedule to the Constitution, along with the contact details of the Data Protection Officer or authorized person.",
+      "source": "DPDP Act 2023, Section 8(9)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000469"
+      ],
+      "checkable_test": "Verify that the notice includes the option to access in English or any language from the Eighth Schedule and provides contact details of the Data Protection Officer or authorized person.",
+      "applicability": "All data fiduciaries required to provide notice to data principals.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Consent & Notice",
+      "requirement": "The withdrawal of consent shall not affect the legality of processing of personal data based on consent before its withdrawal.",
+      "source": "DPDP Act 2023, Section 8(5)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000471"
+      ],
+      "checkable_test": "Check if the withdrawal of consent does not affect the legality of processing before withdrawal.",
+      "applicability": "All data fiduciaries processing personal data based on consent.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Consent & Notice",
+      "requirement": "If the Data Principal withdraws consent, the Data Fiduciary may stop enabling the use of the service for placing orders but may not stop processing for goods already ordered and paid for.",
+      "source": "DPDP Act 2023, Section 8(2)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000472"
+      ],
+      "checkable_test": "Verify that withdrawal of consent does not affect the processing of goods already ordered and paid for.",
+      "applicability": "All data fiduciaries processing personal data for fulfilling supply orders.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T11:05:48.757396+00:00",
+  "multi_mapped_records": []
+}

@@ -1,0 +1,53 @@
+{
+  "cache_key": "dbf5deab85ac655d1b2ffbc3d1df09f47ecc917dfc6bfae0d5b178eeea0ae583",
+  "created_at_utc": "2026-09-16T11:41:53.392890+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S000085",
+    "S000086",
+    "S000087",
+    "S000088",
+    "S000089",
+    "S000090"
+  ],
+  "labels": [
+    {
+      "clause_id": "S000085",
+      "best_match_taxonomy_id": "DPDP_RUL-0099",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses data erasure upon completion of retention period but lacks specificity on legal compliance requirements."
+    },
+    {
+      "clause_id": "S000086",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S000087",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S000088",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S000089",
+      "best_match_taxonomy_id": "DPDP_ACT-0055",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses cross-border data transfer but lacks specific requirements for compliance with the Central Government's regulations."
+    },
+    {
+      "clause_id": "S000090",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    }
+  ],
+  "status": "SUCCESS"
+}

@@ -1,0 +1,53 @@
+{
+  "cache_key": "2e88c40b77345a7b75c75fb289f49a1fe236e20586f7bcc044acb53a2b0b1528",
+  "created_at_utc": "2026-09-17T04:56:00.600128+00:00",
+  "prompt_version": "policy-labeling-v7-reliable-batches",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S000487",
+    "S000488",
+    "S000489",
+    "S000490",
+    "S000491",
+    "S000492"
+  ],
+  "labels": [
+    {
+      "clause_id": "S000487",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses liability limits, not data security or protection measures."
+    },
+    {
+      "clause_id": "S000488",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses notice and action procedures, not data security or protection measures."
+    },
+    {
+      "clause_id": "S000489",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses potential harm or liability, not data security or protection measures."
+    },
+    {
+      "clause_id": "S000490",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses legal compliance, not data security or protection measures."
+    },
+    {
+      "clause_id": "S000491",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses investigations, not data security or protection measures."
+    },
+    {
+      "clause_id": "S000492",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Partially Compliant",
+      "justification": "The clause mentions security of services, but lacks specific data protection measures like encryption or access controls."
+    }
+  ],
+  "status": "SUCCESS"
+}

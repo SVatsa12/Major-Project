@@ -1,0 +1,53 @@
+{
+  "cache_key": "273b7f1846ad48ec905ed444333ab19ac62e51692b370a52eea41db282ae54b6",
+  "created_at_utc": "2026-09-17T07:47:34.802190+00:00",
+  "prompt_version": "policy-labeling-v7-reliable-batches",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S002599",
+    "S002600",
+    "S002601",
+    "S002602",
+    "S002603",
+    "S002604"
+  ],
+  "labels": [
+    {
+      "clause_id": "S002599",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses content promotion strategies and platform integrity, not personal data security or related protections."
+    },
+    {
+      "clause_id": "S002600",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses engagement manipulation and platform integrity, not personal data security or related protections."
+    },
+    {
+      "clause_id": "S002601",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause provides an example of engagement manipulation, not personal data security or related protections."
+    },
+    {
+      "clause_id": "S002602",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses fake engagement and community features, not personal data security or related protections."
+    },
+    {
+      "clause_id": "S002603",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause provides an example of fake engagement, not personal data security or related protections."
+    },
+    {
+      "clause_id": "S002604",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses comment spam and engagement, not personal data security or related protections."
+    }
+  ],
+  "status": "SUCCESS"
+}

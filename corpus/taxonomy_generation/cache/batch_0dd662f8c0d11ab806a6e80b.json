@@ -1,0 +1,143 @@
+{
+  "batch_id": "0dd662f8c0d11ab806a6e80b",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G000597",
+    "G000599",
+    "G000600",
+    "G000613",
+    "G000616",
+    "G000620",
+    "G000623",
+    "G000624"
+  ],
+  "raw_response": "[{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Data Protection Board of India must include at least one expert in the field of law.\",\"source\":\"DPDP Act 2023, Section 8(1)\",\"weight\":3,\"source_clause_ids\":[\"G000597\"],\"checkable_test\":\"Verify if the Data Protection Board of India includes at least one legal expert.\",\"applicability\":\"Applicable to the Data Protection Board of India.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures the Board has legal expertise to fulfill its duties.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Chairperson and other Members of the Data Protection Board shall not be varied to their disadvantage after their appointment.\",\"source\":\"DPDP Act 2023, Section 8(1)\",\"weight\":3,\"source_clause_ids\":[\"G000599\"],\"checkable_test\":\"Verify if the terms of the Chairperson and Members are not varied to their disadvantage after appointment.\",\"applicability\":\"Applicable to the Data Protection Board of India.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement protects the terms of the Board members from being altered unfavorably.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Chairperson and other Members of the Data Protection Board shall hold office for a term of two years and be eligible for re-appointment.\",\"source\":\"DPDP Act 2023, Section 8(1)\",\"weight\":3,\"source_clause_ids\":[\"G000600\"],\"checkable_test\":\"Verify if the term of office for the Chairperson and Members is two years with eligibility for re-appointment.\",\"applicability\":\"Applicable to the Data Protection Board of India.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement establishes the term and re-appointment eligibility for Board members.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Chairperson or a Member of the Data Protection Board shall resign upon the Central Government's permission or upon expiry of three months from the notice of resignation.\",\"source\":\"DPDP Act 2023, Section 8(1)\",\"weight\":3,\"source_clause_ids\":[\"G000613\"],\"checkable_test\":\"Verify if the resignation of the Chairperson or Member is effective upon Central Government's permission or after three months.\",\"applicability\":\"Applicable to the Data Protection Board of India.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement outlines the conditions for resignation of Board members.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Chairperson and Members of the Data Protection Board shall not accept employment with any Data Fiduciary against whom proceedings were initiated.\",\"source\":\"DPDP Act 2023, Section 8(1)\",\"weight\":3,\"source_clause_ids\":[\"G000616\"],\"checkable_test\":\"Verify if the Chairperson and Members of the Board accept employment with Data Fiduciaries against whom proceedings were initiated.\",\"applicability\":\"Applicable to the Data Protection Board of India.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement prevents conflicts of interest by prohibiting employment with entities under investigation.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Central Government shall be informed of any defect in the appointment of a person acting as the Chairperson or other Member of the Board.\",\"source\":\"DPDP Act 2023, Section 8(1)\",\"weight\":3,\"source_clause_ids\":[\"G000620\"],\"checkable_test\":\"Verify if the Central Government is informed of any defect in the appointment of the Chairperson or Members.\",\"applicability\":\"Applicable to the Data Protection Board of India.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures transparency in the appointment process of the Board members.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Board may appoint officers and employees as necessary for the efficient discharge of its functions, with prior approval from the Central Government.\",\"source\":\"DPDP Act 2023, Section 8(1)\",\"weight\":3,\"source_clause_ids\":[\"G000623\"],\"checkable_test\":\"Verify if the Board has the authority to appoint officers and employees with prior Central Government approval.\",\"applicability\":\"Applicable to the Data Protection Board of India.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement allows the Board to function efficiently by appointing necessary personnel.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Chairperson, Members, officers, and employees of the Data Protection Board shall be deemed public servants under the Indian Penal Code.\",\"source\":\"DPDP Act 2023, Section 8(1)\",\"weight\":3,\"source_clause_ids\":[\"G000624\"],\"checkable_test\":\"Verify if the Chairperson, Members, officers, and employees of the Board are deemed public servants under the Indian Penal Code.\",\"applicability\":\"Applicable to the Data Protection Board of India.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement grants the Board members and staff the status of public servants, ensuring accountability and legal protections.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Data Protection Board of India must include at least one expert in the field of law.",
+      "source": "DPDP Act 2023, Section 8(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000597"
+      ],
+      "checkable_test": "Verify if the Data Protection Board of India includes at least one legal expert.",
+      "applicability": "Applicable to the Data Protection Board of India.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures the Board has legal expertise to fulfill its duties.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Chairperson and other Members of the Data Protection Board shall not be varied to their disadvantage after their appointment.",
+      "source": "DPDP Act 2023, Section 8(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000599"
+      ],
+      "checkable_test": "Verify if the terms of the Chairperson and Members are not varied to their disadvantage after appointment.",
+      "applicability": "Applicable to the Data Protection Board of India.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement protects the terms of the Board members from being altered unfavorably.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Chairperson and other Members of the Data Protection Board shall hold office for a term of two years and be eligible for re-appointment.",
+      "source": "DPDP Act 2023, Section 8(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000600"
+      ],
+      "checkable_test": "Verify if the term of office for the Chairperson and Members is two years with eligibility for re-appointment.",
+      "applicability": "Applicable to the Data Protection Board of India.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement establishes the term and re-appointment eligibility for Board members.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Chairperson or a Member of the Data Protection Board shall resign upon the Central Government's permission or upon expiry of three months from the notice of resignation.",
+      "source": "DPDP Act 2023, Section 8(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000613"
+      ],
+      "checkable_test": "Verify if the resignation of the Chairperson or Member is effective upon Central Government's permission or after three months.",
+      "applicability": "Applicable to the Data Protection Board of India.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement outlines the conditions for resignation of Board members.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Chairperson and Members of the Data Protection Board shall not accept employment with any Data Fiduciary against whom proceedings were initiated.",
+      "source": "DPDP Act 2023, Section 8(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000616"
+      ],
+      "checkable_test": "Verify if the Chairperson and Members of the Board accept employment with Data Fiduciaries against whom proceedings were initiated.",
+      "applicability": "Applicable to the Data Protection Board of India.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement prevents conflicts of interest by prohibiting employment with entities under investigation.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Central Government shall be informed of any defect in the appointment of a person acting as the Chairperson or other Member of the Board.",
+      "source": "DPDP Act 2023, Section 8(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000620"
+      ],
+      "checkable_test": "Verify if the Central Government is informed of any defect in the appointment of the Chairperson or Members.",
+      "applicability": "Applicable to the Data Protection Board of India.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures transparency in the appointment process of the Board members.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Board may appoint officers and employees as necessary for the efficient discharge of its functions, with prior approval from the Central Government.",
+      "source": "DPDP Act 2023, Section 8(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000623"
+      ],
+      "checkable_test": "Verify if the Board has the authority to appoint officers and employees with prior Central Government approval.",
+      "applicability": "Applicable to the Data Protection Board of India.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement allows the Board to function efficiently by appointing necessary personnel.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Chairperson, Members, officers, and employees of the Data Protection Board shall be deemed public servants under the Indian Penal Code.",
+      "source": "DPDP Act 2023, Section 8(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000624"
+      ],
+      "checkable_test": "Verify if the Chairperson, Members, officers, and employees of the Board are deemed public servants under the Indian Penal Code.",
+      "applicability": "Applicable to the Data Protection Board of India.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement grants the Board members and staff the status of public servants, ensuring accountability and legal protections.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T11:19:02.189422+00:00",
+  "multi_mapped_records": []
+}

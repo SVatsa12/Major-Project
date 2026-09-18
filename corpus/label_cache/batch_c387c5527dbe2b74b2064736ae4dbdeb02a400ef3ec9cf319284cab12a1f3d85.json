@@ -1,0 +1,53 @@
+{
+  "cache_key": "c387c5527dbe2b74b2064736ae4dbdeb02a400ef3ec9cf319284cab12a1f3d85",
+  "created_at_utc": "2026-09-17T04:28:20.323883+00:00",
+  "prompt_version": "policy-labeling-v7-reliable-batches",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S000151",
+    "S000152",
+    "S000153",
+    "S000154",
+    "S000155",
+    "S000156"
+  ],
+  "labels": [
+    {
+      "clause_id": "S000151",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses amendment procedures, not data security or privacy safeguards."
+    },
+    {
+      "clause_id": "S000152",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses surviving terms post-termination, not data security or privacy safeguards."
+    },
+    {
+      "clause_id": "S000153",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses the entire agreement and incorporation of terms, not data security or privacy safeguards."
+    },
+    {
+      "clause_id": "S000154",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses conflicting terms in the agreement, not data security or privacy safeguards."
+    },
+    {
+      "clause_id": "S000155",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses headings for reference, not data security or privacy safeguards."
+    },
+    {
+      "clause_id": "S000156",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses language discrepancies, not data security or privacy safeguards."
+    }
+  ],
+  "status": "SUCCESS"
+}

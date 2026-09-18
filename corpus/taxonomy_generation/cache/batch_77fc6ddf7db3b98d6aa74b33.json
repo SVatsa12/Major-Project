@@ -1,0 +1,143 @@
+{
+  "batch_id": "77fc6ddf7db3b98d6aa74b33",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G000536",
+    "G000542",
+    "G000543",
+    "G000576",
+    "G000602",
+    "G000603",
+    "G000607",
+    "G000610"
+  ],
+  "raw_response": "[{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Significant data fiduciaries must be based in India.\",\"source\":\"DPDP Act 2023, Section Significant (ii)\",\"weight\":3,\"source_clause_ids\":[\"G000536\"],\"checkable_test\":\"Verify whether the data fiduciary is physically located in India.\",\"applicability\":\"Applies to significant data fiduciaries.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This requirement is directly tied to the physical location of the data fiduciary.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Significant data fiduciaries must undergo periodic audits.\",\"source\":\"DPDP Act 2023, Section Significant (ii)\",\"weight\":3,\"source_clause_ids\":[\"G000542\"],\"checkable_test\":\"Verify whether the data fiduciary has a documented audit process and schedule.\",\"applicability\":\"Applies to significant data fiduciaries.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This requirement mandates regular audits as part of data fiduciary obligations.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Significant data fiduciaries must implement such other measures, consistent with the provisions of this Act, as may be prescribed.\",\"source\":\"DPDP Act 2023, Section Significant (iii)\",\"weight\":3,\"source_clause_ids\":[\"G000543\"],\"checkable_test\":\"Verify whether the data fiduciary has implemented additional measures as required by the Act.\",\"applicability\":\"Applies to significant data fiduciaries.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This requirement allows for additional measures as prescribed by the Act.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The provisions of Chapter II, except sub-sections (1) and (5) of section 8, and those of Chapter III and section 16 shall not apply where—\",\"source\":\"DPDP Act 2023, Section SPECIAL PROVISIONS 17(1)\",\"weight\":2,\"source_clause_ids\":[\"G000576\"],\"checkable_test\":\"Verify whether the specific provisions of the Act are excluded from application in the specified circumstances.\",\"applicability\":\"Applies to situations where the provisions of Chapter II and III are excluded.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This clause outlines exceptions to the application of certain provisions of the Act.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Chairperson and Members of the Data Protection Board must meet specific qualifications for appointment.\",\"source\":\"DPDP Act 2023, SECTION=Composition and qualifications for appointment of\",\"weight\":2,\"source_clause_ids\":[\"G000602\"],\"checkable_test\":\"Verify whether the qualifications for the appointment of the Chairperson and Members are met.\",\"applicability\":\"Applies to the appointment of the Data Protection Board members.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This requirement outlines the qualifications for the appointment of the Data Protection Board members.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Chairperson and Members of the Data Protection Board must receive specific salary and allowances and have a defined term of office.\",\"source\":\"DPDP Act 2023, SECTION=Composition and qualifications for appointment of\",\"weight\":2,\"source_clause_ids\":[\"G000603\"],\"checkable_test\":\"Verify whether the salary, allowances, and term of office for the Chairperson and Members are defined and met.\",\"applicability\":\"Applies to the appointment of the Data Protection Board members.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This requirement outlines the financial and tenure terms for the Data Protection Board members.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Chairperson or a Member of the Data Protection Board must not have been convicted of an offence involving moral turpitude.\",\"source\":\"DPDP Act 2023, SECTION=Chairperson or a Member, if she— (b)\",\"weight\":2,\"source_clause_ids\":[\"G000607\"],\"checkable_test\":\"Verify whether the Chairperson or Member has a criminal record involving moral turpitude.\",\"applicability\":\"Applies to the appointment of the Data Protection Board members.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This requirement prohibits the appointment of individuals with a criminal record involving moral turpitude.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Chairperson or a Member of the Data Protection Board must not have abused their position to the extent that their continuance in office is prejudicial to the public interest.\",\"source\":\"DPDP Act 2023, SECTION=Chairperson or a Member, if she— (e)\",\"weight\":2,\"source_clause_ids\":[\"G000610\"],\"checkable_test\":\"Verify whether the Chairperson or Member has a history of abusing their position to the detriment of public interest.\",\"applicability\":\"Applies to the appointment of the Data Protection Board members.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This requirement prohibits the appointment of individuals who have abused their position to the detriment of public interest.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Significant data fiduciaries must be based in India.",
+      "source": "DPDP Act 2023, Section Significant (ii)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000536"
+      ],
+      "checkable_test": "Verify whether the data fiduciary is physically located in India.",
+      "applicability": "Applies to significant data fiduciaries.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the physical location of the data fiduciary.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Significant data fiduciaries must undergo periodic audits.",
+      "source": "DPDP Act 2023, Section Significant (ii)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000542"
+      ],
+      "checkable_test": "Verify whether the data fiduciary has a documented audit process and schedule.",
+      "applicability": "Applies to significant data fiduciaries.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "This requirement mandates regular audits as part of data fiduciary obligations.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Significant data fiduciaries must implement such other measures, consistent with the provisions of this Act, as may be prescribed.",
+      "source": "DPDP Act 2023, Section Significant (iii)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000543"
+      ],
+      "checkable_test": "Verify whether the data fiduciary has implemented additional measures as required by the Act.",
+      "applicability": "Applies to significant data fiduciaries.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "This requirement allows for additional measures as prescribed by the Act.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The provisions of Chapter II, except sub-sections (1) and (5) of section 8, and those of Chapter III and section 16 shall not apply where—",
+      "source": "DPDP Act 2023, Section SPECIAL PROVISIONS 17(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000576"
+      ],
+      "checkable_test": "Verify whether the specific provisions of the Act are excluded from application in the specified circumstances.",
+      "applicability": "Applies to situations where the provisions of Chapter II and III are excluded.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "This clause outlines exceptions to the application of certain provisions of the Act.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Chairperson and Members of the Data Protection Board must meet specific qualifications for appointment.",
+      "source": "DPDP Act 2023, SECTION=Composition and qualifications for appointment of",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000602"
+      ],
+      "checkable_test": "Verify whether the qualifications for the appointment of the Chairperson and Members are met.",
+      "applicability": "Applies to the appointment of the Data Protection Board members.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "This requirement outlines the qualifications for the appointment of the Data Protection Board members.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Chairperson and Members of the Data Protection Board must receive specific salary and allowances and have a defined term of office.",
+      "source": "DPDP Act 2023, SECTION=Composition and qualifications for appointment of",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000603"
+      ],
+      "checkable_test": "Verify whether the salary, allowances, and term of office for the Chairperson and Members are defined and met.",
+      "applicability": "Applies to the appointment of the Data Protection Board members.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "This requirement outlines the financial and tenure terms for the Data Protection Board members.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Chairperson or a Member of the Data Protection Board must not have been convicted of an offence involving moral turpitude.",
+      "source": "DPDP Act 2023, SECTION=Chairperson or a Member, if she— (b)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000607"
+      ],
+      "checkable_test": "Verify whether the Chairperson or Member has a criminal record involving moral turpitude.",
+      "applicability": "Applies to the appointment of the Data Protection Board members.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "This requirement prohibits the appointment of individuals with a criminal record involving moral turpitude.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Chairperson or a Member of the Data Protection Board must not have abused their position to the extent that their continuance in office is prejudicial to the public interest.",
+      "source": "DPDP Act 2023, SECTION=Chairperson or a Member, if she— (e)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000610"
+      ],
+      "checkable_test": "Verify whether the Chairperson or Member has a history of abusing their position to the detriment of public interest.",
+      "applicability": "Applies to the appointment of the Data Protection Board members.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "This requirement prohibits the appointment of individuals who have abused their position to the detriment of public interest.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T15:36:02.216330+00:00",
+  "multi_mapped_records": []
+}

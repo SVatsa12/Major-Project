@@ -1,0 +1,53 @@
+{
+  "cache_key": "4543b6334b1d9ed601e7301f2f207a538c7ca2e370c5efbf065e9381f9657b39",
+  "created_at_utc": "2026-09-16T12:43:12.402430+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S000817",
+    "S000818",
+    "S000819",
+    "S000820",
+    "S000821",
+    "S000822"
+  ],
+  "labels": [
+    {
+      "clause_id": "S000817",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Partially Compliant",
+      "justification": "Clause addresses security measures but lacks specific details on encryption or other safeguards required by the taxonomy."
+    },
+    {
+      "clause_id": "S000818",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "Clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S000819",
+      "best_match_taxonomy_id": "DPDP_ACT-0031",
+      "verdict": "Partially Compliant",
+      "justification": "Clause mentions breach notification but lacks detail on notifying the Board and affected Data Principals as required."
+    },
+    {
+      "clause_id": "S000820",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "Clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S000821",
+      "best_match_taxonomy_id": "DPDP_ACT-0055",
+      "verdict": "Partially Compliant",
+      "justification": "Clause touches on data retention but lacks specifics on retention periods or conditions for retention."
+    },
+    {
+      "clause_id": "S000822",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "Clause does not meaningfully address any listed requirement in the taxonomy."
+    }
+  ],
+  "status": "SUCCESS"
+}

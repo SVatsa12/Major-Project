@@ -1,0 +1,113 @@
+{
+  "batch_id": "a7b9f528621a5c3a7e435181",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001556",
+    "G001625",
+    "G001626",
+    "G001627",
+    "G001631",
+    "G001636",
+    "G001637",
+    "G001660"
+  ],
+  "raw_response": "[{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"Certifying Authorities must maintain standards for the management and security of public keys.\",\"source\":\"IT Act 2000, Section 13(1)(c)\",\"weight\":2,\"source_clause_ids\":[\"G001626\"],\"checkable_test\":\"Verify if the document specifies standards for the management and security of public keys by Certifying Authorities.\",\"applicability\":\"Applicable to Certifying Authorities under the IT Act 2000.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is derived from the requirement to lay down standards for the maintenance of public keys by Certifying Authorities.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Certifying Authorities must specify the form and content of an electronic signature certificate and the key.\",\"source\":\"IT Act 2000, Section 13(1)(g)\",\"weight\":3,\"source_clause_ids\":[\"G001631\"],\"checkable_test\":\"Check if the document outlines the form and content of an electronic signature certificate and the key as required by the Certifying Authorities.\",\"applicability\":\"Applicable to Certifying Authorities under the IT Act 2000.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is derived from the requirement to specify the form and content of an electronic signature certificate and the key.\"},{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"Certifying Authorities must resolve conflicts of interest between themselves and subscribers.\",\"source\":\"IT Act 2000, Section 13(1)(l)\",\"weight\":2,\"source_clause_ids\":[\"G001636\"],\"checkable_test\":\"Verify if the document includes procedures for resolving conflicts of interest between Certifying Authorities and their subscribers.\",\"applicability\":\"Applicable to Certifying Authorities under the IT Act 2000.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is derived from the requirement to resolve conflicts of interest between Certifying Authorities and subscribers.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Certifying Authorities must lay down duties for their operations.\",\"source\":\"IT Act 2000, Section 13(1)(m)\",\"weight\":3,\"source_clause_ids\":[\"G001637\"],\"checkable_test\":\"Check if the document outlines the duties that Certifying Authorities must adhere to in their operations.\",\"applicability\":\"Applicable to Certifying Authorities under the IT Act 2000.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is derived from the requirement to lay down the duties of Certifying Authorities.\"},{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"Certifying Authorities must regulate their activities and supervise the activities of other Certifying Authorities.\",\"source\":\"IT Act 2000, Section 13(1)(a)\",\"weight\":2,\"source_clause_ids\":[\"G001625\"],\"checkable_test\":\"Verify if the document includes provisions for the regulation and supervision of Certifying Authorities.\",\"applicability\":\"Applicable to Certifying Authorities under the IT Act 2000.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is derived from the requirement to regulate and supervise the activities of Certifying Authorities.\"},{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"Certifying Authorities must ensure that electronic signatures are issued in a specified form.\",\"source\":\"IT Act 2000, Section 13(1)(a)\",\"weight\":2,\"source_clause_ids\":[\"G001660\"],\"checkable_test\":\"Check if the document specifies the form in which electronic signatures must be issued by Certifying Authorities.\",\"applicability\":\"Applicable to Certifying Authorities under the IT Act 2000.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is derived from the requirement to specify the form of electronic signatures.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "Certifying Authorities must maintain standards for the management and security of public keys.",
+      "source": "IT Act 2000, Section 13(1)(c)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001626"
+      ],
+      "checkable_test": "Verify if the document specifies standards for the management and security of public keys by Certifying Authorities.",
+      "applicability": "Applicable to Certifying Authorities under the IT Act 2000.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is derived from the requirement to lay down standards for the maintenance of public keys by Certifying Authorities.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Certifying Authorities must specify the form and content of an electronic signature certificate and the key.",
+      "source": "IT Act 2000, Section 13(1)(g)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001631"
+      ],
+      "checkable_test": "Check if the document outlines the form and content of an electronic signature certificate and the key as required by the Certifying Authorities.",
+      "applicability": "Applicable to Certifying Authorities under the IT Act 2000.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is derived from the requirement to specify the form and content of an electronic signature certificate and the key.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "Certifying Authorities must resolve conflicts of interest between themselves and subscribers.",
+      "source": "IT Act 2000, Section 13(1)(l)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001636"
+      ],
+      "checkable_test": "Verify if the document includes procedures for resolving conflicts of interest between Certifying Authorities and their subscribers.",
+      "applicability": "Applicable to Certifying Authorities under the IT Act 2000.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is derived from the requirement to resolve conflicts of interest between Certifying Authorities and subscribers.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Certifying Authorities must lay down duties for their operations.",
+      "source": "IT Act 2000, Section 13(1)(m)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001637"
+      ],
+      "checkable_test": "Check if the document outlines the duties that Certifying Authorities must adhere to in their operations.",
+      "applicability": "Applicable to Certifying Authorities under the IT Act 2000.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is derived from the requirement to lay down the duties of Certifying Authorities.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "Certifying Authorities must regulate their activities and supervise the activities of other Certifying Authorities.",
+      "source": "IT Act 2000, Section 13(1)(a)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001625"
+      ],
+      "checkable_test": "Verify if the document includes provisions for the regulation and supervision of Certifying Authorities.",
+      "applicability": "Applicable to Certifying Authorities under the IT Act 2000.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is derived from the requirement to regulate and supervise the activities of Certifying Authorities.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "Certifying Authorities must ensure that electronic signatures are issued in a specified form.",
+      "source": "IT Act 2000, Section 13(1)(a)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001660"
+      ],
+      "checkable_test": "Check if the document specifies the form in which electronic signatures must be issued by Certifying Authorities.",
+      "applicability": "Applicable to Certifying Authorities under the IT Act 2000.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is derived from the requirement to specify the form of electronic signatures.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T15:57:52.654152+00:00",
+  "multi_mapped_records": []
+}

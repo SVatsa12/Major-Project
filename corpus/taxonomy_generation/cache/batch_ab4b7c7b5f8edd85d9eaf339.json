@@ -1,0 +1,98 @@
+{
+  "batch_id": "ab4b7c7b5f8edd85d9eaf339",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G002393",
+    "G002394",
+    "G002395",
+    "G002397",
+    "G002399",
+    "G002405",
+    "G002413",
+    "G002414"
+  ],
+  "raw_response": "[{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The Information Officer must disclose third-party information upon request, with the third party able to appeal within thirty days of the order.\",\"source\":\"RTI Act 2005, Section 11\",\"weight\":2,\"source_clause_ids\":[\"G002393\"],\"checkable_test\":\"Check if the Information Officer discloses third-party information and if the third party has a thirty-day appeal period.\",\"applicability\":\"Applicable to requests involving third-party information.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation is tied to the disclosure of third-party information and the appeal process.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"A second appeal against a decision regarding third-party information must be filed within ninety days from the date the decision was received.\",\"source\":\"RTI Act 2005, Section 11\",\"weight\":2,\"source_clause_ids\":[\"G002394\"],\"checkable_test\":\"Verify if the second appeal period is set to ninety days for third-party information decisions.\",\"applicability\":\"Applicable to appeals against third-party information decisions.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation outlines the timeframe for the second appeal in third-party information cases.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The Central Information Commission or State Information Commission may admit an appeal after ninety days if the appellant was prevented by sufficient cause from filing on time.\",\"source\":\"RTI Act 2005, Section 11\",\"weight\":2,\"source_clause_ids\":[\"G002395\"],\"checkable_test\":\"Check if the Commission allows late appeals due to sufficient cause.\",\"applicability\":\"Applicable to appeals filed after the ninety-day period.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation allows for exceptions to the appeal deadline if sufficient cause is demonstrated.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The Central Information Commission or State Information Commission must decide appeals in accordance with prescribed procedures and provide notice of its decision, including any right of appeal, to the complainant and public authority.\",\"source\":\"RTI Act 2005, Section 11\",\"weight\":2,\"source_clause_ids\":[\"G002413\"],\"checkable_test\":\"Verify if the Commission provides notice of its decision and any appeal rights to the complainant and public authority.\",\"applicability\":\"Applicable to all appeal proceedings.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation ensures transparency and procedural compliance in the appeal process.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The Central Information Commission or State Information Commission must impose a penalty of up to twenty-five thousand rupees for unjustified refusals or malafidely denied requests for information.\",\"source\":\"RTI Act 2005, Section 20\",\"weight\":3,\"source_clause_ids\":[\"G002414\"],\"checkable_test\":\"Check if penalties are imposed for unjustified refusals or malafidely denied information requests.\",\"applicability\":\"Applicable to public authorities that unjustifiably refuse or deny information requests.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation outlines the penalty framework for non-compliance with information disclosure obligations.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Information Officer must disclose third-party information upon request, with the third party able to appeal within thirty days of the order.",
+      "source": "RTI Act 2005, Section 11",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002393"
+      ],
+      "checkable_test": "Check if the Information Officer discloses third-party information and if the third party has a thirty-day appeal period.",
+      "applicability": "Applicable to requests involving third-party information.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is tied to the disclosure of third-party information and the appeal process.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "A second appeal against a decision regarding third-party information must be filed within ninety days from the date the decision was received.",
+      "source": "RTI Act 2005, Section 11",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002394"
+      ],
+      "checkable_test": "Verify if the second appeal period is set to ninety days for third-party information decisions.",
+      "applicability": "Applicable to appeals against third-party information decisions.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation outlines the timeframe for the second appeal in third-party information cases.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Central Information Commission or State Information Commission may admit an appeal after ninety days if the appellant was prevented by sufficient cause from filing on time.",
+      "source": "RTI Act 2005, Section 11",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002395"
+      ],
+      "checkable_test": "Check if the Commission allows late appeals due to sufficient cause.",
+      "applicability": "Applicable to appeals filed after the ninety-day period.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation allows for exceptions to the appeal deadline if sufficient cause is demonstrated.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Central Information Commission or State Information Commission must decide appeals in accordance with prescribed procedures and provide notice of its decision, including any right of appeal, to the complainant and public authority.",
+      "source": "RTI Act 2005, Section 11",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002413"
+      ],
+      "checkable_test": "Verify if the Commission provides notice of its decision and any appeal rights to the complainant and public authority.",
+      "applicability": "Applicable to all appeal proceedings.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation ensures transparency and procedural compliance in the appeal process.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Central Information Commission or State Information Commission must impose a penalty of up to twenty-five thousand rupees for unjustified refusals or malafidely denied requests for information.",
+      "source": "RTI Act 2005, Section 20",
+      "weight": 3,
+      "source_clause_ids": [
+        "G002414"
+      ],
+      "checkable_test": "Check if penalties are imposed for unjustified refusals or malafidely denied information requests.",
+      "applicability": "Applicable to public authorities that unjustifiably refuse or deny information requests.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation outlines the penalty framework for non-compliance with information disclosure obligations.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T12:54:21.215260+00:00",
+  "multi_mapped_records": []
+}

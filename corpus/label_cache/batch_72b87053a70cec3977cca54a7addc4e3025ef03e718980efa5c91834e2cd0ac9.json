@@ -1,0 +1,53 @@
+{
+  "cache_key": "72b87053a70cec3977cca54a7addc4e3025ef03e718980efa5c91834e2cd0ac9",
+  "created_at_utc": "2026-09-17T05:59:52.106350+00:00",
+  "prompt_version": "policy-labeling-v7-reliable-batches",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S001243",
+    "S001244",
+    "S001245",
+    "S001246",
+    "S001247",
+    "S001248"
+  ],
+  "labels": [
+    {
+      "clause_id": "S001243",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses consent and notice but lacks specific details on how consent is obtained or described."
+    },
+    {
+      "clause_id": "S001244",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Partially Compliant",
+      "justification": "The clause mentions accessibility of privacy policies but does not specify the content or requirements for such policies."
+    },
+    {
+      "clause_id": "S001245",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses secure processing of personal information but lacks specific security measures or safeguards."
+    },
+    {
+      "clause_id": "S001246",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement related to data protection, security, or privacy."
+    },
+    {
+      "clause_id": "S001247",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses privacy and rights but lacks specific details on how these rights are communicated or enforced."
+    },
+    {
+      "clause_id": "S001248",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement related to data protection, security, or privacy."
+    }
+  ],
+  "status": "SUCCESS"
+}

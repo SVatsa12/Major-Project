@@ -1,0 +1,87 @@
+{
+  "batch_id": "b17c81c81db954d67cafc8c5",
+  "status": "PARTIAL_VALIDATION",
+  "input_clause_ids": [
+    "G001366",
+    "G001373",
+    "G001378",
+    "G001379",
+    "G001383",
+    "G001387",
+    "G001392",
+    "G001409"
+  ],
+  "raw_response": "[{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Certifying Authorities must notify users of the suspension or revocation of their licence or certificate.\",\"source\":\"IT Act 2000, Section 26\",\"weight\":2,\"source_clause_ids\":[\"G001373\"],\"checkable_test\":\"Check if the document contains a notice of suspension or revocation of a licence or certificate.\",\"applicability\":\"Applicable to Certifying Authorities under the IT Act 2000.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation is tied to the notice requirement under Section 26 of the IT Act 2000.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"Certifying Authorities must follow specific procedures when issuing electronic signature certificates.\",\"source\":\"IT Act 2000, Section 30\",\"weight\":3,\"source_clause_ids\":[\"G001378\"],\"checkable_test\":\"Verify if the document outlines procedures followed by Certifying Authorities when issuing electronic signature certificates.\",\"applicability\":\"Applicable to Certifying Authorities issuing electronic signature certificates.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is derived from Section 30 of the IT Act 2000, which mandates procedural compliance.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Certifying Authorities must ensure compliance with the IT Act and related regulations.\",\"source\":\"IT Act 2000, Section 31\",\"weight\":3,\"source_clause_ids\":[\"G001379\"],\"checkable_test\":\"Check if the document includes a statement that Certifying Authorities ensure compliance with the IT Act and related regulations.\",\"applicability\":\"Applicable to Certifying Authorities under the IT Act 2000.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation is derived from Section 31 of the IT Act 2000, which mandates compliance with the Act.\"},{\"category\":\"Penalties & Enforcement\",\"requirement\":\"Certifying Authorities must furnish required information and returns to authorities.\",\"source\":\"IT Act 2000, Section 44\",\"weight\":2,\"source_clause_ids\":[\"G001392\"],\"checkable_test\":\"Verify if the document contains a requirement for Certifying Authorities to furnish information and returns as mandated.\",\"applicability\":\"Applicable to Certifying Authorities under the IT Act 2000.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is derived from Section 44 of the IT Act 2000, which outlines penalties for non-compliance.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Certifying Authorities must notify users of the suspension or revocation of their licence or certificate.",
+      "source": "IT Act 2000, Section 26",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001373"
+      ],
+      "checkable_test": "Check if the document contains a notice of suspension or revocation of a licence or certificate.",
+      "applicability": "Applicable to Certifying Authorities under the IT Act 2000.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is tied to the notice requirement under Section 26 of the IT Act 2000.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Certifying Authorities must follow specific procedures when issuing electronic signature certificates.",
+      "source": "IT Act 2000, Section 30",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001378"
+      ],
+      "checkable_test": "Verify if the document outlines procedures followed by Certifying Authorities when issuing electronic signature certificates.",
+      "applicability": "Applicable to Certifying Authorities issuing electronic signature certificates.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is derived from Section 30 of the IT Act 2000, which mandates procedural compliance.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Certifying Authorities must ensure compliance with the IT Act and related regulations.",
+      "source": "IT Act 2000, Section 31",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001379"
+      ],
+      "checkable_test": "Check if the document includes a statement that Certifying Authorities ensure compliance with the IT Act and related regulations.",
+      "applicability": "Applicable to Certifying Authorities under the IT Act 2000.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is derived from Section 31 of the IT Act 2000, which mandates compliance with the Act.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [
+    {
+      "position": 3,
+      "entry": {
+        "category": "Penalties & Enforcement",
+        "requirement": "Certifying Authorities must furnish required information and returns to authorities.",
+        "source": "IT Act 2000, Section 44",
+        "weight": 2,
+        "source_clause_ids": [
+          "G001392"
+        ],
+        "checkable_test": "Verify if the document contains a requirement for Certifying Authorities to furnish information and returns as mandated.",
+        "applicability": "Applicable to Certifying Authorities under the IT Act 2000.",
+        "assessability": "High",
+        "citation_confidence": "high",
+        "notes": "This requirement is derived from Section 44 of the IT Act 2000, which outlines penalties for non-compliance."
+      },
+      "error": "invalid category: 'Penalties & Enforcement'"
+    }
+  ],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T15:42:47.390009+00:00",
+  "multi_mapped_records": []
+}

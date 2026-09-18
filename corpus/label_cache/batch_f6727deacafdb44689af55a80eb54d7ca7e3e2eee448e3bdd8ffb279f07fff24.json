@@ -1,0 +1,53 @@
+{
+  "cache_key": "f6727deacafdb44689af55a80eb54d7ca7e3e2eee448e3bdd8ffb279f07fff24",
+  "created_at_utc": "2026-09-16T12:25:45.994736+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S000607",
+    "S000608",
+    "S000609",
+    "S000610",
+    "S000611",
+    "S000612"
+  ],
+  "labels": [
+    {
+      "clause_id": "S000607",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S000608",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Compliant",
+      "justification": "The clause addresses security safeguards by requiring protection and confidentiality of data."
+    },
+    {
+      "clause_id": "S000609",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Compliant",
+      "justification": "The clause addresses security safeguards by limiting use and ensuring confidentiality of data."
+    },
+    {
+      "clause_id": "S000610",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Compliant",
+      "justification": "The clause addresses security safeguards by restricting data usage and ensuring confidentiality."
+    },
+    {
+      "clause_id": "S000611",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Compliant",
+      "justification": "The clause addresses security safeguards by prohibiting unauthorized transfer of data."
+    },
+    {
+      "clause_id": "S000612",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    }
+  ],
+  "status": "SUCCESS"
+}

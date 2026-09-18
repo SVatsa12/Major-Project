@@ -1,0 +1,65 @@
+[
+  {
+    "deduplication_key": "33f35e9d07110d672c283d5861fccba14ddae14470aa483c5c5a07385bb7cedd",
+    "kept_candidate": {
+      "category": "Consent & Notice",
+      "requirement": "A Data Fiduciary must cease processing personal data of a Data Principal who has withdrawn consent, unless processing is required or authorized by law.",
+      "source": "DPDP Act 2023, Section 6(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000473",
+        "G000474",
+        "G000476"
+      ],
+      "checkable_test": "Verify if the document states that processing must cease upon withdrawal of consent, unless required by law.",
+      "applicability": "Applies to all Data Fiduciaries handling personal data of Data Principals.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to the withdrawal of consent and cessation of processing.",
+      "human_review_status": "PENDING",
+      "representative_source_clause_ids": [
+        "G000473"
+      ],
+      "candidate_id": "TC-000023",
+      "duplicate_model_output_count": 3
+    },
+    "duplicate_entries": [
+      {
+        "category": "Consent & Notice",
+        "requirement": "A Data Fiduciary must cease processing personal data of a Data Principal who has withdrawn consent, unless processing is required or authorized by law.",
+        "source": "DPDP Act 2023, Section 6(1)",
+        "weight": 3,
+        "source_clause_ids": [
+          "G000474"
+        ],
+        "checkable_test": "Verify if the document states that processing must cease upon withdrawal of consent, unless required by law.",
+        "applicability": "Applies to all Data Fiduciaries handling personal data of Data Principals.",
+        "assessability": "High",
+        "citation_confidence": "high",
+        "notes": "This obligation is directly tied to the withdrawal of consent and cessation of processing.",
+        "human_review_status": "PENDING",
+        "representative_source_clause_ids": [
+          "G000474"
+        ]
+      },
+      {
+        "category": "Consent & Notice",
+        "requirement": "A Data Fiduciary must cease processing personal data of a Data Principal who has withdrawn consent, unless processing is required or authorized by law.",
+        "source": "DPDP Act 2023, Section 6(1)",
+        "weight": 3,
+        "source_clause_ids": [
+          "G000476"
+        ],
+        "checkable_test": "Verify if the document states that processing must cease upon withdrawal of consent, unless required by law.",
+        "applicability": "Applies to all Data Fiduciaries handling personal data of Data Principals.",
+        "assessability": "High",
+        "citation_confidence": "high",
+        "notes": "This obligation is directly tied to the withdrawal of consent and cessation of processing.",
+        "human_review_status": "PENDING",
+        "representative_source_clause_ids": [
+          "G000476"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,98 @@
+{
+  "batch_id": "06d581281e370799d95fa384",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G002242",
+    "G002243",
+    "G002244",
+    "G002245",
+    "G002246",
+    "G002247",
+    "G002248",
+    "G002249"
+  ],
+  "raw_response": "[{\"category\":\"Grievance Redressal\",\"requirement\":\"If a request for information is rejected, the public authority must communicate the reasons for the rejection to the requester.\",\"source\":\"RTI Act 2005, Section 8(2)\",\"weight\":2,\"source_clause_ids\":[\"G002243\"],\"checkable_test\":\"The public authority must provide specific reasons for rejecting an information request.\",\"applicability\":\"Applicable to all public authorities under the RTI Act 2005.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is directly tied to the rejection of information requests and requires a specific communication of reasons.\"},{\"category\":\"Grievance Redressal\",\"requirement\":\"The public authority must communicate the period within which an appeal against a rejected information request may be preferred, along with the particulars of the appellate authority.\",\"source\":\"RTI Act 2005, Section 8(4)\",\"weight\":2,\"source_clause_ids\":[\"G002244\"],\"checkable_test\":\"The public authority must specify the appeal period and appellate authority in case of a rejected request.\",\"applicability\":\"Applicable to all public authorities under the RTI Act 2005.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation ensures that the requester is informed of the process for appealing a rejection decision.\"},{\"category\":\"Data Retention & Erasure\",\"requirement\":\"Information shall be provided in the form in which it is sought unless it would disproportionately divert the resources of the public authority or would be detrimental to the safety or preservation of the record in question.\",\"source\":\"RTI Act 2005, Section 8(9)\",\"weight\":2,\"source_clause_ids\":[\"G002246\"],\"checkable_test\":\"The public authority must provide information in the requested format unless there is a valid reason to deviate.\",\"applicability\":\"Applicable to all public authorities under the RTI Act 2005.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation ensures that information is provided in the form requested, unless there is a legitimate reason to provide it in another format.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"There shall be no obligation to give any citizen information that would prejudicially affect the sovereignty and integrity of India, the security, strategic, scientific or economic interests of the State, relations with foreign states, or lead to incitement of an offence.\",\"source\":\"RTI Act 2005, Section 8(8)(a)\",\"weight\":3,\"source_clause_ids\":[\"G002248\"],\"checkable_test\":\"The public authority must exempt information that would harm national security or sovereignty.\",\"applicability\":\"Applicable to all public authorities under the RTI Act 2005.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation outlines the conditions under which information may be exempted from disclosure to protect national interests.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"There shall be no obligation to give any citizen information which has been expressly forbidden to be published by any court of law or tribunal or the disclosure of which may constitute contempt of court.\",\"source\":\"RTI Act 2005, Section 8(8)(b)\",\"weight\":3,\"source_clause_ids\":[\"G002249\"],\"checkable_test\":\"The public authority must exempt information that has been expressly forbidden by a court or tribunal.\",\"applicability\":\"Applicable to all public authorities under the RTI Act 2005.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation ensures that information which is legally protected from disclosure is not provided to citizens.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Grievance Redressal",
+      "requirement": "If a request for information is rejected, the public authority must communicate the reasons for the rejection to the requester.",
+      "source": "RTI Act 2005, Section 8(2)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002243"
+      ],
+      "checkable_test": "The public authority must provide specific reasons for rejecting an information request.",
+      "applicability": "Applicable to all public authorities under the RTI Act 2005.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to the rejection of information requests and requires a specific communication of reasons.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Grievance Redressal",
+      "requirement": "The public authority must communicate the period within which an appeal against a rejected information request may be preferred, along with the particulars of the appellate authority.",
+      "source": "RTI Act 2005, Section 8(4)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002244"
+      ],
+      "checkable_test": "The public authority must specify the appeal period and appellate authority in case of a rejected request.",
+      "applicability": "Applicable to all public authorities under the RTI Act 2005.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation ensures that the requester is informed of the process for appealing a rejection decision.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "Information shall be provided in the form in which it is sought unless it would disproportionately divert the resources of the public authority or would be detrimental to the safety or preservation of the record in question.",
+      "source": "RTI Act 2005, Section 8(9)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002246"
+      ],
+      "checkable_test": "The public authority must provide information in the requested format unless there is a valid reason to deviate.",
+      "applicability": "Applicable to all public authorities under the RTI Act 2005.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation ensures that information is provided in the form requested, unless there is a legitimate reason to provide it in another format.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "There shall be no obligation to give any citizen information that would prejudicially affect the sovereignty and integrity of India, the security, strategic, scientific or economic interests of the State, relations with foreign states, or lead to incitement of an offence.",
+      "source": "RTI Act 2005, Section 8(8)(a)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G002248"
+      ],
+      "checkable_test": "The public authority must exempt information that would harm national security or sovereignty.",
+      "applicability": "Applicable to all public authorities under the RTI Act 2005.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation outlines the conditions under which information may be exempted from disclosure to protect national interests.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "There shall be no obligation to give any citizen information which has been expressly forbidden to be published by any court of law or tribunal or the disclosure of which may constitute contempt of court.",
+      "source": "RTI Act 2005, Section 8(8)(b)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G002249"
+      ],
+      "checkable_test": "The public authority must exempt information that has been expressly forbidden by a court or tribunal.",
+      "applicability": "Applicable to all public authorities under the RTI Act 2005.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation ensures that information which is legally protected from disclosure is not provided to citizens.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T12:00:36.024181+00:00",
+  "multi_mapped_records": []
+}

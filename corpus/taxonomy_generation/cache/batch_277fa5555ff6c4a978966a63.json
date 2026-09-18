@@ -1,0 +1,83 @@
+{
+  "batch_id": "277fa5555ff6c4a978966a63",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G000448",
+    "G000450",
+    "G000451",
+    "G000454",
+    "G000455",
+    "G000456",
+    "G000458",
+    "G000459"
+  ],
+  "raw_response": "[  \n  {  \n    \"category\": \"Data Principal Rights\",  \n    \"requirement\": \"The Data Fiduciary must inform the Data Principal of the personal data processed and the purpose for which it was processed.\",  \n    \"source\": \"DPDP Act 2023, Section 4(2)(i)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G000450\"],  \n    \"checkable_test\": \"Verify that the document explicitly states the personal data processed and the purpose of processing.\",  \n    \"applicability\": \"Applies to all data fiduciaries processing personal data.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement is directly tied to the obligation to disclose data processing purposes under the DPDP Act 2023.\"  \n  },  \n  {  \n    \"category\": \"Data Principal Rights\",  \n    \"requirement\": \"The Data Fiduciary must inform the Data Principal of the manner in which they may exercise their rights under section 6 and section 13.\",  \n    \"source\": \"DPDP Act 2023, Section 4(2)(ii)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G000451\"],  \n    \"checkable_test\": \"Verify that the document provides clear instructions on how the Data Principal can exercise their rights under the DPDP Act 2023.\",  \n    \"applicability\": \"Applies to all data fiduciaries processing personal data.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement ensures transparency in the process of exercising data rights.\"  \n  },  \n  {  \n    \"category\": \"Grievance Redressal\",  \n    \"requirement\": \"The Data Fiduciary must inform the Data Principal of the manner in which they may make a complaint to the Data Protection Board.\",  \n    \"source\": \"DPDP Act 2023, Section 4(2)(iii)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G000458\"],  \n    \"checkable_test\": \"Verify that the document provides clear instructions on how the Data Principal can file a complaint with the Data Protection Board.\",  \n    \"applicability\": \"Applies to all data fiduciaries processing personal data.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement ensures that Data Principals have a clear pathway for grievance redressal.\"  \n  },  \n  {  \n    \"category\": \"Data Principal Rights\",  \n    \"requirement\": \"The Data Fiduciary must inform the Data Principal of the procedure for making a complaint to the Data Protection Board.\",  \n    \"source\": \"DPDP Act 2023, Section 4(2)(iii)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G000459\"],  \n    \"checkable_test\": \"Verify that the document provides clear instructions on how the Data Principal can file a complaint with the Data Protection Board.\",  \n    \"applicability\": \"Applies to all data fiduciaries processing personal data.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement ensures that Data Principals have a clear pathway for grievance redressal.\"  \n  }  \n]",
+  "parsed_entries": [
+    {
+      "category": "Data Principal Rights",
+      "requirement": "The Data Fiduciary must inform the Data Principal of the personal data processed and the purpose for which it was processed.",
+      "source": "DPDP Act 2023, Section 4(2)(i)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000450"
+      ],
+      "checkable_test": "Verify that the document explicitly states the personal data processed and the purpose of processing.",
+      "applicability": "Applies to all data fiduciaries processing personal data.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation to disclose data processing purposes under the DPDP Act 2023.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Principal Rights",
+      "requirement": "The Data Fiduciary must inform the Data Principal of the manner in which they may exercise their rights under section 6 and section 13.",
+      "source": "DPDP Act 2023, Section 4(2)(ii)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000451"
+      ],
+      "checkable_test": "Verify that the document provides clear instructions on how the Data Principal can exercise their rights under the DPDP Act 2023.",
+      "applicability": "Applies to all data fiduciaries processing personal data.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures transparency in the process of exercising data rights.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Grievance Redressal",
+      "requirement": "The Data Fiduciary must inform the Data Principal of the manner in which they may make a complaint to the Data Protection Board.",
+      "source": "DPDP Act 2023, Section 4(2)(iii)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000458"
+      ],
+      "checkable_test": "Verify that the document provides clear instructions on how the Data Principal can file a complaint with the Data Protection Board.",
+      "applicability": "Applies to all data fiduciaries processing personal data.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures that Data Principals have a clear pathway for grievance redressal.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Principal Rights",
+      "requirement": "The Data Fiduciary must inform the Data Principal of the procedure for making a complaint to the Data Protection Board.",
+      "source": "DPDP Act 2023, Section 4(2)(iii)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000459"
+      ],
+      "checkable_test": "Verify that the document provides clear instructions on how the Data Principal can file a complaint with the Data Protection Board.",
+      "applicability": "Applies to all data fiduciaries processing personal data.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures that Data Principals have a clear pathway for grievance redressal.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T13:25:44.061440+00:00",
+  "multi_mapped_records": []
+}

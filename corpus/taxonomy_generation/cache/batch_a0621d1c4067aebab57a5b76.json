@@ -1,0 +1,38 @@
+{
+  "batch_id": "a0621d1c4067aebab57a5b76",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001878",
+    "G001879",
+    "G001889",
+    "G001890",
+    "G001899",
+    "G001901",
+    "G001905",
+    "G001914"
+  ],
+  "raw_response": "[{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Intermediaries must preserve and retain information as specified by the Central Government for a defined duration and in a specified manner and format.\",\"source\":\"IT Act 2000, Section 67C(1)\",\"weight\":2,\"source_clause_ids\":[\"G001901\"],\"checkable_test\":\"Check if the intermediary's policies specify the duration, manner, and format for preserving and retaining information as prescribed by the Central Government.\",\"applicability\":\"Applicable to intermediaries handling electronic information.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is directly tied to the obligation under Section 67C(1) of the IT Act 2000.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Intermediaries must preserve and retain information as specified by the Central Government for a defined duration and in a specified manner and format.",
+      "source": "IT Act 2000, Section 67C(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001901"
+      ],
+      "checkable_test": "Check if the intermediary's policies specify the duration, manner, and format for preserving and retaining information as prescribed by the Central Government.",
+      "applicability": "Applicable to intermediaries handling electronic information.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation under Section 67C(1) of the IT Act 2000.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T11:49:15.183189+00:00",
+  "multi_mapped_records": []
+}

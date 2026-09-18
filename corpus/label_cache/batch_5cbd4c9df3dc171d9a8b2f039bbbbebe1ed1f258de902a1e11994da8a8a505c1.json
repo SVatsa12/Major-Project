@@ -1,0 +1,53 @@
+{
+  "cache_key": "5cbd4c9df3dc171d9a8b2f039bbbbebe1ed1f258de902a1e11994da8a8a505c1",
+  "created_at_utc": "2026-09-16T11:56:36.418308+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S000265",
+    "S000266",
+    "S000267",
+    "S000268",
+    "S000269",
+    "S000270"
+  ],
+  "labels": [
+    {
+      "clause_id": "S000265",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S000266",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S000267",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S000268",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Compliant",
+      "justification": "The clause prohibits circumventing security features, aligning with data security measures."
+    },
+    {
+      "clause_id": "S000269",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Compliant",
+      "justification": "The clause prohibits modifying content, aligning with data security measures."
+    },
+    {
+      "clause_id": "S000270",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    }
+  ],
+  "status": "SUCCESS"
+}

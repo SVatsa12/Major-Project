@@ -1,0 +1,83 @@
+{
+  "batch_id": "7d8178bf2298b75e48463a1a",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G000634",
+    "G000638",
+    "G000642",
+    "G000650",
+    "G000658",
+    "G000665",
+    "G000666",
+    "G000668"
+  ],
+  "raw_response": "[  \n  {  \n    \"category\": \"Grievance Redressal\",  \n    \"requirement\": \"The Board shall determine whether there are sufficient grounds to proceed with an inquiry.\",  \n    \"source\": \"DPDP Act 2023, Section 27(3)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G000650\"],  \n    \"checkable_test\": \"Whether the Board has a process to determine if there are sufficient grounds to initiate an inquiry.\",  \n    \"applicability\": \"Applicable to data fiduciaries subject to the DPDP Act 2023.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This clause outlines the Board's responsibility to assess the validity of inquiries related to data protection compliance.\"  \n  },  \n  {  \n    \"category\": \"Grievance Redressal\",  \n    \"requirement\": \"Any person aggrieved by an order or direction made by the Board under this Act may prefer an appeal before the Appellate Tribunal.\",  \n    \"source\": \"DPDP Act 2023, Section 29(1)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G000665\"],  \n    \"checkable_test\": \"Whether a person has the right to appeal an order or direction issued by the Board.\",  \n    \"applicability\": \"Applicable to data fiduciaries subject to the DPDP Act 2023.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This clause establishes the right of appeal for individuals affected by decisions made by the Board.\"  \n  },  \n  {  \n    \"category\": \"Grievance Redressal\",  \n    \"requirement\": \"Every appeal under sub-section (1) shall be filed within a period of sixty days from the date of receipt of the order or direction appealed against.\",  \n    \"source\": \"DPDP Act 2023, Section 29(2)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G000666\"],  \n    \"checkable_test\": \"Whether the appeal process has a defined time limit for filing an appeal.\",  \n    \"applicability\": \"Applicable to data fiduciaries subject to the DPDP Act 2023.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This clause specifies the time frame within which an appeal must be filed against a Board order or direction.\"  \n  },  \n  {  \n    \"category\": \"Grievance Redressal\",  \n    \"requirement\": \"On receipt of an appeal under sub-section (1), the Appellate Tribunal may, after giving the parties to the appeal, an opportunity of being heard, pass such orders thereon as it thinks fit, confirming, modifying or setting aside the order appealed against.\",  \n    \"source\": \"DPDP Act 2023, Section 29(4)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G000668\"],  \n    \"checkable_test\": \"Whether the Appellate Tribunal provides an opportunity for the parties to be heard during the appeal process.\",  \n    \"applicability\": \"Applicable to data fiduciaries subject to the DPDP Act 2023.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This clause outlines the Appellate Tribunal's authority to review and modify orders issued by the Board.\"  \n  }  \n]",
+  "parsed_entries": [
+    {
+      "category": "Grievance Redressal",
+      "requirement": "The Board shall determine whether there are sufficient grounds to proceed with an inquiry.",
+      "source": "DPDP Act 2023, Section 27(3)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000650"
+      ],
+      "checkable_test": "Whether the Board has a process to determine if there are sufficient grounds to initiate an inquiry.",
+      "applicability": "Applicable to data fiduciaries subject to the DPDP Act 2023.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause outlines the Board's responsibility to assess the validity of inquiries related to data protection compliance.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Grievance Redressal",
+      "requirement": "Any person aggrieved by an order or direction made by the Board under this Act may prefer an appeal before the Appellate Tribunal.",
+      "source": "DPDP Act 2023, Section 29(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000665"
+      ],
+      "checkable_test": "Whether a person has the right to appeal an order or direction issued by the Board.",
+      "applicability": "Applicable to data fiduciaries subject to the DPDP Act 2023.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause establishes the right of appeal for individuals affected by decisions made by the Board.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Grievance Redressal",
+      "requirement": "Every appeal under sub-section (1) shall be filed within a period of sixty days from the date of receipt of the order or direction appealed against.",
+      "source": "DPDP Act 2023, Section 29(2)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000666"
+      ],
+      "checkable_test": "Whether the appeal process has a defined time limit for filing an appeal.",
+      "applicability": "Applicable to data fiduciaries subject to the DPDP Act 2023.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause specifies the time frame within which an appeal must be filed against a Board order or direction.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Grievance Redressal",
+      "requirement": "On receipt of an appeal under sub-section (1), the Appellate Tribunal may, after giving the parties to the appeal, an opportunity of being heard, pass such orders thereon as it thinks fit, confirming, modifying or setting aside the order appealed against.",
+      "source": "DPDP Act 2023, Section 29(4)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000668"
+      ],
+      "checkable_test": "Whether the Appellate Tribunal provides an opportunity for the parties to be heard during the appeal process.",
+      "applicability": "Applicable to data fiduciaries subject to the DPDP Act 2023.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause outlines the Appellate Tribunal's authority to review and modify orders issued by the Board.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T15:37:15.278760+00:00",
+  "multi_mapped_records": []
+}

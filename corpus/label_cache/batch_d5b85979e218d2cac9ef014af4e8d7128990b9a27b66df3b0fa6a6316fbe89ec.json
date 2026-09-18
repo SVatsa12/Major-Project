@@ -1,0 +1,53 @@
+{
+  "cache_key": "d5b85979e218d2cac9ef014af4e8d7128990b9a27b66df3b0fa6a6316fbe89ec",
+  "created_at_utc": "2026-09-16T12:04:26.468243+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S000355",
+    "S000356",
+    "S000357",
+    "S000358",
+    "S000359",
+    "S000360"
+  ],
+  "labels": [
+    {
+      "clause_id": "S000355",
+      "best_match_taxonomy_id": "IT_ACT_2-0155",
+      "verdict": "Compliant",
+      "justification": "The clause addresses security measures to protect data confidentiality and integrity as required by IT_ACT_2-0155."
+    },
+    {
+      "clause_id": "S000356",
+      "best_match_taxonomy_id": "IT_ACT_2-0155",
+      "verdict": "Compliant",
+      "justification": "The clause addresses confidentiality obligations and access control as required by IT_ACT_2-0155."
+    },
+    {
+      "clause_id": "S000357",
+      "best_match_taxonomy_id": "DPDP_ACT-0055",
+      "verdict": "Compliant",
+      "justification": "The clause allows data export, aligning with DPDP_ACT-0055's requirements for cross-border data transfer."
+    },
+    {
+      "clause_id": "S000358",
+      "best_match_taxonomy_id": "DPDP_ACT-0046",
+      "verdict": "Partially Compliant",
+      "justification": "The clause outlines deletion procedures but lacks specific details on data principal rights under DPDP_ACT-0046."
+    },
+    {
+      "clause_id": "S000359",
+      "best_match_taxonomy_id": "DPDP_ACT-0055",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses data retention but lacks specific details on cross-border transfer requirements under DPDP_ACT-0055."
+    },
+    {
+      "clause_id": "S000360",
+      "best_match_taxonomy_id": "DPDP_ACT-0055",
+      "verdict": "Partially Compliant",
+      "justification": "The clause outlines data deletion but lacks specific details on cross-border transfer requirements under DPDP_ACT-0055."
+    }
+  ],
+  "status": "SUCCESS"
+}

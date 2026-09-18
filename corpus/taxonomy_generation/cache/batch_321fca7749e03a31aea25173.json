@@ -1,0 +1,38 @@
+{
+  "batch_id": "321fca7749e03a31aea25173",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001553",
+    "G001554",
+    "G001555",
+    "G001559",
+    "G001560",
+    "G001561",
+    "G001562",
+    "G001563"
+  ],
+  "raw_response": "[{\"category\":\"Security Safeguards\",\"requirement\":\"Service providers must retain electronic records in the required format if a law mandates retention of documents, records, or information for a specific period.\",\"source\":\"IT Act 2000, Section 7(1)\",\"weight\":2,\"source_clause_ids\":[\"G001563\"],\"checkable_test\":\"Verify if the service provider retains electronic records in the required format for the mandated retention period.\",\"applicability\":\"When a law mandates retention of documents, records, or information for a specific period.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This requirement applies when a law mandates retention of documents, records, or information for a specific period, and the service provider is required to retain them in electronic form.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Security Safeguards",
+      "requirement": "Service providers must retain electronic records in the required format if a law mandates retention of documents, records, or information for a specific period.",
+      "source": "IT Act 2000, Section 7(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001563"
+      ],
+      "checkable_test": "Verify if the service provider retains electronic records in the required format for the mandated retention period.",
+      "applicability": "When a law mandates retention of documents, records, or information for a specific period.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This requirement applies when a law mandates retention of documents, records, or information for a specific period, and the service provider is required to retain them in electronic form.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T14:31:29.985354+00:00",
+  "multi_mapped_records": []
+}

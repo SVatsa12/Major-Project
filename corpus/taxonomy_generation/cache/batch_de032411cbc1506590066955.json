@@ -1,0 +1,83 @@
+{
+  "batch_id": "de032411cbc1506590066955",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001898",
+    "G001900",
+    "G001902",
+    "G001921",
+    "G001937",
+    "G001938",
+    "G001939",
+    "G001952"
+  ],
+  "raw_response": "[{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Intermediaries must not intentionally or knowingly contravene the provisions of sub-section (1) regarding the prevention of online child abuse.\",\"source\":\"IT Act 2000, Section 67A(2)\",\"weight\":3,\"source_clause_ids\":[\"G001900\"],\"checkable_test\":\"Check if the intermediary has implemented measures to prevent the facilitation of online child abuse as per the IT Act 2000.\",\"applicability\":\"Applicable to intermediaries who host or transmit content online.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is tied to the specific penalty for contravening the provisions of sub-section (1).\"},{\"category\":\"Security Safeguards\",\"requirement\":\"Intermediaries must forecast and alert about cybersecurity incidents.\",\"source\":\"IT Act 2000, Section 73(b)\",\"weight\":2,\"source_clause_ids\":[\"G001937\"],\"checkable_test\":\"Verify if the intermediary has mechanisms in place to forecast and alert about cybersecurity incidents.\",\"applicability\":\"Applicable to intermediaries who are required to maintain cybersecurity measures.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This obligation is part of the broader cybersecurity incident management requirements under the IT Act 2000.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"Intermediaries must implement emergency measures for handling cybersecurity incidents.\",\"source\":\"IT Act 2000, Section 73(c)\",\"weight\":2,\"source_clause_ids\":[\"G001938\"],\"checkable_test\":\"Check if the intermediary has established emergency measures for handling cybersecurity incidents.\",\"applicability\":\"Applicable to intermediaries who are required to maintain cybersecurity measures.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This obligation is part of the broader cybersecurity incident management requirements under the IT Act 2000.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"Intermediaries must coordinate response activities for cyber incidents.\",\"source\":\"IT Act 2000, Section 73(d)\",\"weight\":2,\"source_clause_ids\":[\"G001939\"],\"checkable_test\":\"Verify if the intermediary has coordination mechanisms in place for responding to cyber incidents.\",\"applicability\":\"Applicable to intermediaries who are required to maintain cybersecurity measures.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This obligation is part of the broader cybersecurity incident management requirements under the IT Act 2000.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Intermediaries must not intentionally or knowingly contravene the provisions of sub-section (1) regarding the prevention of online child abuse.",
+      "source": "IT Act 2000, Section 67A(2)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001900"
+      ],
+      "checkable_test": "Check if the intermediary has implemented measures to prevent the facilitation of online child abuse as per the IT Act 2000.",
+      "applicability": "Applicable to intermediaries who host or transmit content online.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is tied to the specific penalty for contravening the provisions of sub-section (1).",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Intermediaries must forecast and alert about cybersecurity incidents.",
+      "source": "IT Act 2000, Section 73(b)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001937"
+      ],
+      "checkable_test": "Verify if the intermediary has mechanisms in place to forecast and alert about cybersecurity incidents.",
+      "applicability": "Applicable to intermediaries who are required to maintain cybersecurity measures.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "This obligation is part of the broader cybersecurity incident management requirements under the IT Act 2000.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Intermediaries must implement emergency measures for handling cybersecurity incidents.",
+      "source": "IT Act 2000, Section 73(c)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001938"
+      ],
+      "checkable_test": "Check if the intermediary has established emergency measures for handling cybersecurity incidents.",
+      "applicability": "Applicable to intermediaries who are required to maintain cybersecurity measures.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "This obligation is part of the broader cybersecurity incident management requirements under the IT Act 2000.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Intermediaries must coordinate response activities for cyber incidents.",
+      "source": "IT Act 2000, Section 73(d)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001939"
+      ],
+      "checkable_test": "Verify if the intermediary has coordination mechanisms in place for responding to cyber incidents.",
+      "applicability": "Applicable to intermediaries who are required to maintain cybersecurity measures.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "This obligation is part of the broader cybersecurity incident management requirements under the IT Act 2000.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T15:55:29.771861+00:00",
+  "multi_mapped_records": []
+}

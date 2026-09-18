@@ -1,0 +1,128 @@
+{
+  "batch_id": "1e60b4c14a96da45e9f46616",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001065",
+    "G001068",
+    "G001082",
+    "G001083",
+    "G001094",
+    "G001096",
+    "G001098",
+    "G001099"
+  ],
+  "raw_response": "[{\"category\":\"Children/Vulnerable Groups\",\"requirement\":\"Significant data fiduciaries must provide a report regarding the intimations given to affected data principals.\",\"source\":\"DPDP Rules 2025, Rule 8(2)(vi)\",\"weight\":3,\"source_clause_ids\":[\"G001068\"],\"checkable_test\":\"A report must be provided regarding intimations given to affected data principals.\",\"applicability\":\"When a data fiduciary has provided intimations to affected data principals.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is specific to the requirement of reporting intimations given to affected data principals.\"},{\"category\":\"Children/Vulnerable Groups\",\"requirement\":\"Significant data fiduciaries must describe measures implemented or proposed to mitigate risk.\",\"source\":\"DPDP Rules 2025, Rule 8(2)(iii)\",\"weight\":3,\"source_clause_ids\":[\"G001065\"],\"checkable_test\":\"A description of measures implemented or proposed to mitigate risk must be provided.\",\"applicability\":\"When a data fiduciary has implemented or proposed measures to mitigate risk.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation requires a description of risk mitigation measures.\"},{\"category\":\"Children/Vulnerable Groups\",\"requirement\":\"Significant data fiduciaries must describe other means, if any, using which such data principal may exercise rights.\",\"source\":\"DPDP Rules 2025, Rule 8(2)(i) and (ii)\",\"weight\":3,\"source_clause_ids\":[\"G001082\"],\"checkable_test\":\"A description of other means, if any, using which a data principal may exercise rights must be provided.\",\"applicability\":\"When a data principal may exercise rights through other means.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation covers the description of alternative means for data principals to exercise their rights.\"},{\"category\":\"Children/Vulnerable Groups\",\"requirement\":\"Significant data fiduciaries must define the term 'designated authority' as an authority designated under section 15 of the Rights of Persons with Disabilities Act, 2016.\",\"source\":\"DPDP Rules 2025, Rule 8(2)(a)\",\"weight\":3,\"source_clause_ids\":[\"G001094\"],\"checkable_test\":\"The term 'designated authority' must be defined as an authority designated under section 15 of the Rights of Persons with Disabilities Act, 2016.\",\"applicability\":\"When the term 'designated authority' is used in the context of persons with disabilities.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation requires a specific definition of 'designated authority'.\"},{\"category\":\"Children/Vulnerable Groups\",\"requirement\":\"Significant data fiduciaries must apply the provisions of the Rights of Persons with Disabilities Act, 2016 and its rules to individuals with long-term impairments who are unable to take legally binding decisions.\",\"source\":\"DPDP Rules 2025, Rule 8(2)(i)\",\"weight\":3,\"source_clause_ids\":[\"G001096\"],\"checkable_test\":\"The provisions of the Rights of Persons with Disabilities Act, 2016 and its rules must be applied to individuals with long-term impairments who are unable to take legally binding decisions.\",\"applicability\":\"When dealing with individuals with long-term impairments who are unable to take legally binding decisions.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation requires the application of specific legal provisions to vulnerable individuals.\"},{\"category\":\"Children/Vulnerable Groups\",\"requirement\":\"Significant data fiduciaries must apply the provisions of the National Trust Act, 1999 and its rules to individuals suffering from autism, cerebral palsy, mental retardation, or severe multiple disabilities.\",\"source\":\"DPDP Rules 2025, Rule 8(2)(ii)\",\"weight\":3,\"source_clause_ids\":[\"G001098\"],\"checkable_test\":\"The provisions of the National Trust Act, 1999 and its rules must be applied to individuals suffering from autism, cerebral palsy, mental retardation, or severe multiple disabilities.\",\"applicability\":\"When dealing with individuals suffering from specified disabilities.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation requires the application of specific legal provisions to individuals with specified disabilities.\"},{\"category\":\"Children/Vulnerable Groups\",\"requirement\":\"Significant data fiduciaries must define the term 'local level committee' as a committee constituted under section 13 of the relevant Act.\",\"source\":\"DPDP Rules 2025, Rule 8(2)(c)\",\"weight\":3,\"source_clause_ids\":[\"G001099\"],\"checkable_test\":\"The term 'local level committee' must be defined as a committee constituted under section 13 of the relevant Act.\",\"applicability\":\"When the term 'local level committee' is used in the context of persons with disabilities.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation requires a specific definition of 'local level committee'.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Children/Vulnerable Groups",
+      "requirement": "Significant data fiduciaries must provide a report regarding the intimations given to affected data principals.",
+      "source": "DPDP Rules 2025, Rule 8(2)(vi)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001068"
+      ],
+      "checkable_test": "A report must be provided regarding intimations given to affected data principals.",
+      "applicability": "When a data fiduciary has provided intimations to affected data principals.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is specific to the requirement of reporting intimations given to affected data principals.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Children/Vulnerable Groups",
+      "requirement": "Significant data fiduciaries must describe measures implemented or proposed to mitigate risk.",
+      "source": "DPDP Rules 2025, Rule 8(2)(iii)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001065"
+      ],
+      "checkable_test": "A description of measures implemented or proposed to mitigate risk must be provided.",
+      "applicability": "When a data fiduciary has implemented or proposed measures to mitigate risk.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation requires a description of risk mitigation measures.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Children/Vulnerable Groups",
+      "requirement": "Significant data fiduciaries must describe other means, if any, using which such data principal may exercise rights.",
+      "source": "DPDP Rules 2025, Rule 8(2)(i) and (ii)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001082"
+      ],
+      "checkable_test": "A description of other means, if any, using which a data principal may exercise rights must be provided.",
+      "applicability": "When a data principal may exercise rights through other means.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation covers the description of alternative means for data principals to exercise their rights.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Children/Vulnerable Groups",
+      "requirement": "Significant data fiduciaries must define the term 'designated authority' as an authority designated under section 15 of the Rights of Persons with Disabilities Act, 2016.",
+      "source": "DPDP Rules 2025, Rule 8(2)(a)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001094"
+      ],
+      "checkable_test": "The term 'designated authority' must be defined as an authority designated under section 15 of the Rights of Persons with Disabilities Act, 2016.",
+      "applicability": "When the term 'designated authority' is used in the context of persons with disabilities.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation requires a specific definition of 'designated authority'.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Children/Vulnerable Groups",
+      "requirement": "Significant data fiduciaries must apply the provisions of the Rights of Persons with Disabilities Act, 2016 and its rules to individuals with long-term impairments who are unable to take legally binding decisions.",
+      "source": "DPDP Rules 2025, Rule 8(2)(i)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001096"
+      ],
+      "checkable_test": "The provisions of the Rights of Persons with Disabilities Act, 2016 and its rules must be applied to individuals with long-term impairments who are unable to take legally binding decisions.",
+      "applicability": "When dealing with individuals with long-term impairments who are unable to take legally binding decisions.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation requires the application of specific legal provisions to vulnerable individuals.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Children/Vulnerable Groups",
+      "requirement": "Significant data fiduciaries must apply the provisions of the National Trust Act, 1999 and its rules to individuals suffering from autism, cerebral palsy, mental retardation, or severe multiple disabilities.",
+      "source": "DPDP Rules 2025, Rule 8(2)(ii)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001098"
+      ],
+      "checkable_test": "The provisions of the National Trust Act, 1999 and its rules must be applied to individuals suffering from autism, cerebral palsy, mental retardation, or severe multiple disabilities.",
+      "applicability": "When dealing with individuals suffering from specified disabilities.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation requires the application of specific legal provisions to individuals with specified disabilities.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Children/Vulnerable Groups",
+      "requirement": "Significant data fiduciaries must define the term 'local level committee' as a committee constituted under section 13 of the relevant Act.",
+      "source": "DPDP Rules 2025, Rule 8(2)(c)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001099"
+      ],
+      "checkable_test": "The term 'local level committee' must be defined as a committee constituted under section 13 of the relevant Act.",
+      "applicability": "When the term 'local level committee' is used in the context of persons with disabilities.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation requires a specific definition of 'local level committee'.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T14:03:07.097846+00:00",
+  "multi_mapped_records": []
+}

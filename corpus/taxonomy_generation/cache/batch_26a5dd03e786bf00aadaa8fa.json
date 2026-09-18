@@ -1,0 +1,113 @@
+{
+  "batch_id": "26a5dd03e786bf00aadaa8fa",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G002381",
+    "G002386",
+    "G002388",
+    "G002389",
+    "G002392",
+    "G002398",
+    "G002400",
+    "G002401"
+  ],
+  "raw_response": "[{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The Information Commission has the same powers as a civil court while trying a suit under the Code of Civil Procedure, 1908, in matters related to the inquiry process.\",\"source\":\"RTI Act 2005, Section 7(3)\",\"weight\":2,\"source_clause_ids\":[\"G002381\"],\"checkable_test\":\"Verify if the Information Commission has the same powers as a civil court in inquiry processes.\",\"applicability\":\"Applicable to all entities subject to the RTI Act 2005.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This clause outlines the procedural powers of the Information Commission during inquiries.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The Information Commission may issue summons for the examination of witnesses or documents.\",\"source\":\"RTI Act 2005, Section 7(e)\",\"weight\":2,\"source_clause_ids\":[\"G002386\"],\"checkable_test\":\"Check if the Information Commission is authorized to issue summons for witness examination or document retrieval.\",\"applicability\":\"Applicable to all entities subject to the RTI Act 2005.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This clause grants the Information Commission the authority to summon witnesses or documents during inquiries.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"An appeal against a decision of the Central Public Information Officer or State Public Information Officer must be filed within the time specified in sub-section (3) of section 7.\",\"source\":\"RTI Act 2005, Section 7(a)\",\"weight\":2,\"source_clause_ids\":[\"G002389\"],\"checkable_test\":\"Verify if the appeal period for decisions by Public Information Officers is adhered to.\",\"applicability\":\"Applicable to all entities subject to the RTI Act 2005.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This clause sets the time limit for filing appeals against Public Information Officer decisions.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The Information Commission must provide a reasonable opportunity of being heard to third parties involved in an appeal.\",\"source\":\"RTI Act 2005, Section 7(2)\",\"weight\":2,\"source_clause_ids\":[\"G002398\"],\"checkable_test\":\"Check if third parties are given a reasonable opportunity to be heard during appeals.\",\"applicability\":\"Applicable to all entities subject to the RTI Act 2005.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This clause ensures that third parties have a fair opportunity to present their case during appeals.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"An appeal under sub-section (3) or (2) must be disposed of within thirty days, with an additional fifteen days if needed.\",\"source\":\"RTI Act 2005, Section 7(6)\",\"weight\":2,\"source_clause_ids\":[\"G002400\"],\"checkable_test\":\"Verify if the Information Commission disposes of appeals within the prescribed time limits.\",\"applicability\":\"Applicable to all entities subject to the RTI Act 2005.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This clause sets the time limits for resolving appeals under the RTI Act 2005.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The decision of the Information Commission is binding on all parties involved.\",\"source\":\"RTI Act 2005, Section 7(7)\",\"weight\":2,\"source_clause_ids\":[\"G002401\"],\"checkable_test\":\"Check if the Information Commission's decision is binding on all parties.\",\"applicability\":\"Applicable to all entities subject to the RTI Act 2005.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This clause establishes the finality of the Information Commission's decisions.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Information Commission has the same powers as a civil court while trying a suit under the Code of Civil Procedure, 1908, in matters related to the inquiry process.",
+      "source": "RTI Act 2005, Section 7(3)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002381"
+      ],
+      "checkable_test": "Verify if the Information Commission has the same powers as a civil court in inquiry processes.",
+      "applicability": "Applicable to all entities subject to the RTI Act 2005.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause outlines the procedural powers of the Information Commission during inquiries.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Information Commission may issue summons for the examination of witnesses or documents.",
+      "source": "RTI Act 2005, Section 7(e)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002386"
+      ],
+      "checkable_test": "Check if the Information Commission is authorized to issue summons for witness examination or document retrieval.",
+      "applicability": "Applicable to all entities subject to the RTI Act 2005.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause grants the Information Commission the authority to summon witnesses or documents during inquiries.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "An appeal against a decision of the Central Public Information Officer or State Public Information Officer must be filed within the time specified in sub-section (3) of section 7.",
+      "source": "RTI Act 2005, Section 7(a)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002389"
+      ],
+      "checkable_test": "Verify if the appeal period for decisions by Public Information Officers is adhered to.",
+      "applicability": "Applicable to all entities subject to the RTI Act 2005.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause sets the time limit for filing appeals against Public Information Officer decisions.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Information Commission must provide a reasonable opportunity of being heard to third parties involved in an appeal.",
+      "source": "RTI Act 2005, Section 7(2)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002398"
+      ],
+      "checkable_test": "Check if third parties are given a reasonable opportunity to be heard during appeals.",
+      "applicability": "Applicable to all entities subject to the RTI Act 2005.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause ensures that third parties have a fair opportunity to present their case during appeals.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "An appeal under sub-section (3) or (2) must be disposed of within thirty days, with an additional fifteen days if needed.",
+      "source": "RTI Act 2005, Section 7(6)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002400"
+      ],
+      "checkable_test": "Verify if the Information Commission disposes of appeals within the prescribed time limits.",
+      "applicability": "Applicable to all entities subject to the RTI Act 2005.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause sets the time limits for resolving appeals under the RTI Act 2005.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The decision of the Information Commission is binding on all parties involved.",
+      "source": "RTI Act 2005, Section 7(7)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002401"
+      ],
+      "checkable_test": "Check if the Information Commission's decision is binding on all parties.",
+      "applicability": "Applicable to all entities subject to the RTI Act 2005.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause establishes the finality of the Information Commission's decisions.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T15:26:47.021502+00:00",
+  "multi_mapped_records": []
+}

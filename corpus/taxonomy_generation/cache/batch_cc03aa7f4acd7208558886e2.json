@@ -1,0 +1,147 @@
+{
+  "batch_id": "cc03aa7f4acd7208558886e2",
+  "status": "PARTIAL_VALIDATION",
+  "input_clause_ids": [
+    "G000580",
+    "G000581",
+    "G000582",
+    "G000583",
+    "G000585",
+    "G000587",
+    "G000598",
+    "G000601"
+  ],
+  "raw_response": "[{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Data fiduciaries must ensure that personal data of Data Principals not within the territory of India is processed pursuant to any contract entered into with any person outside the territory of India by any person based in India.\",\"source\":\"DPDP Act 2023, Section Special Provisions (d)\",\"weight\":3,\"source_clause_ids\":[\"G000580\"],\"checkable_test\":\"Verify that the processing of personal data of Data Principals outside India is done under a contract with a person outside India.\",\"applicability\":\"When a data fiduciary processes personal data of Data Principals not within India.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause outlines an exemption for processing personal data of Data Principals outside India under a contract with a person outside India.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Data fiduciaries must ensure that processing is necessary for a scheme of compromise or arrangement or merger or amalgamation of two or more companies or a reconstruction by way of demerger or otherwise of a company, or transfer of undertaking of one or more company to another company, or involving division of one or more companies, approved by a court or tribunal or other authority competent to do so by any law for the time being in force.\",\"source\":\"DPDP Act 2023, Section Special Provisions (e)\",\"weight\":3,\"source_clause_ids\":[\"G000581\"],\"checkable_test\":\"Verify that the processing is necessary for a scheme of compromise, arrangement, merger, amalgamation, reconstruction, or transfer of undertaking approved by a competent authority.\",\"applicability\":\"When processing is for a scheme of compromise, arrangement, merger, amalgamation, reconstruction, or transfer of undertaking.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause outlines an exemption for processing personal data for specific corporate restructuring activities approved by a competent authority.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Data fiduciaries must ensure that processing is for the purpose of ascertaining the financial information and assets and liabilities of any person who has defaulted in payment due on account of a loan or advance taken from a financial institution, subject to such processing being in accordance with the provisions regarding disclosure of information or data in any other law for the time being in force.\",\"source\":\"DPDP Act 2023, Section Special Provisions (f)\",\"weight\":3,\"source_clause_ids\":[\"G000582\"],\"checkable_test\":\"Verify that the processing is for ascertaining financial information and assets and liabilities of a person who has defaulted on a loan or advance from a financial institution, in accordance with other applicable laws.\",\"applicability\":\"When processing is for financial information of a person who has defaulted on a loan or advance.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause outlines an exemption for processing personal data for financial information of a person who has defaulted on a loan or advance, subject to other laws.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Data fiduciaries must ensure that processing of personal data outside India is exempted under the provisions of the Act.\",\"source\":\"DPDP Act 2023, Section Special Provisions (2)\",\"weight\":3,\"source_clause_ids\":[\"G000583\"],\"checkable_test\":\"Verify that the processing of personal data outside India is exempted under the provisions of the Act.\",\"applicability\":\"When processing personal data outside India.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause outlines an exemption for processing personal data outside India.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Data fiduciaries must ensure that processing of personal data outside India is exempted under the provisions of the Act.\",\"source\":\"DPDP Act 2023, Section Special Provisions 31 of 2016\",\"weight\":3,\"source_clause_ids\":[\"G000585\"],\"checkable_test\":\"Verify that the processing of personal data outside India is exempted under the provisions of the Act.\",\"applicability\":\"When processing personal data outside India.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause outlines an exemption for processing personal data outside India.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Data fiduciaries must ensure that processing of personal data is necessary for research, archiving, or statistical purposes if the personal data is not to be used to take any decision specific to a Data Principal and such processing is carried on in accordance with such standards as may be prescribed.\",\"source\":\"DPDP Act 2023, Section Special Provisions (b)\",\"weight\":3,\"source_clause_ids\":[\"G000587\"],\"checkable_test\":\"Verify that the processing is necessary for research, archiving, or statistical purposes and that it is not used to take decisions specific to a Data Principal, in accordance with prescribed standards.\",\"applicability\":\"When processing personal data for research, archiving, or statistical purposes.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause outlines an exemption for processing personal data for research, archiving, or statistical purposes, provided it is not used for specific decisions.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Data fiduciaries must ensure that the salary, allowances, and other terms and conditions of service of the Data Protection Board of India are established in accordance with the provisions of the Act.\",\"source\":\"DPDP Act 2023, Section Data Protection Board of India 20. (1)\",\"weight\":3,\"source_clause_ids\":[\"G000098\"],\"checkable_test\":\"Verify that the salary, allowances, and other terms and conditions of service of the Data Protection Board of India are established in accordance with the Act.\",\"applicability\":\"When establishing the salary, allowances, and other terms and conditions of service of the Data Protection Board of India.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause outlines the requirement for establishing the salary, allowances, and other terms and conditions of service of the Data Protection Board of India.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Data fiduciaries must ensure that the Data Protection Board of India is established in accordance with the provisions of the Act.\",\"source\":\"DPDP Act 2023, Section Data Protection Board of India Establishment of Board\",\"weight\":3,\"source_clause_ids\":[\"G000601\"],\"checkable_test\":\"Verify that the Data Protection Board of India is established in accordance with the Act.\",\"applicability\":\"When establishing the Data Protection Board of India.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause outlines the requirement for establishing the Data Protection Board of India.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Data fiduciaries must ensure that personal data of Data Principals not within the territory of India is processed pursuant to any contract entered into with any person outside the territory of India by any person based in India.",
+      "source": "DPDP Act 2023, Section Special Provisions (d)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000580"
+      ],
+      "checkable_test": "Verify that the processing of personal data of Data Principals outside India is done under a contract with a person outside India.",
+      "applicability": "When a data fiduciary processes personal data of Data Principals not within India.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause outlines an exemption for processing personal data of Data Principals outside India under a contract with a person outside India.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Data fiduciaries must ensure that processing is necessary for a scheme of compromise or arrangement or merger or amalgamation of two or more companies or a reconstruction by way of demerger or otherwise of a company, or transfer of undertaking of one or more company to another company, or involving division of one or more companies, approved by a court or tribunal or other authority competent to do so by any law for the time being in force.",
+      "source": "DPDP Act 2023, Section Special Provisions (e)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000581"
+      ],
+      "checkable_test": "Verify that the processing is necessary for a scheme of compromise, arrangement, merger, amalgamation, reconstruction, or transfer of undertaking approved by a competent authority.",
+      "applicability": "When processing is for a scheme of compromise, arrangement, merger, amalgamation, reconstruction, or transfer of undertaking.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause outlines an exemption for processing personal data for specific corporate restructuring activities approved by a competent authority.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Data fiduciaries must ensure that processing is for the purpose of ascertaining the financial information and assets and liabilities of any person who has defaulted in payment due on account of a loan or advance taken from a financial institution, subject to such processing being in accordance with the provisions regarding disclosure of information or data in any other law for the time being in force.",
+      "source": "DPDP Act 2023, Section Special Provisions (f)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000582"
+      ],
+      "checkable_test": "Verify that the processing is for ascertaining financial information and assets and liabilities of a person who has defaulted on a loan or advance from a financial institution, in accordance with other applicable laws.",
+      "applicability": "When processing is for financial information of a person who has defaulted on a loan or advance.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause outlines an exemption for processing personal data for financial information of a person who has defaulted on a loan or advance, subject to other laws.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Data fiduciaries must ensure that processing of personal data outside India is exempted under the provisions of the Act.",
+      "source": "DPDP Act 2023, Section Special Provisions (2)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000583"
+      ],
+      "checkable_test": "Verify that the processing of personal data outside India is exempted under the provisions of the Act.",
+      "applicability": "When processing personal data outside India.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause outlines an exemption for processing personal data outside India.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Data fiduciaries must ensure that processing of personal data outside India is exempted under the provisions of the Act.",
+      "source": "DPDP Act 2023, Section Special Provisions 31 of 2016",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000585"
+      ],
+      "checkable_test": "Verify that the processing of personal data outside India is exempted under the provisions of the Act.",
+      "applicability": "When processing personal data outside India.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause outlines an exemption for processing personal data outside India.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Data fiduciaries must ensure that processing of personal data is necessary for research, archiving, or statistical purposes if the personal data is not to be used to take any decision specific to a Data Principal and such processing is carried on in accordance with such standards as may be prescribed.",
+      "source": "DPDP Act 2023, Section Special Provisions (b)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000587"
+      ],
+      "checkable_test": "Verify that the processing is necessary for research, archiving, or statistical purposes and that it is not used to take decisions specific to a Data Principal, in accordance with prescribed standards.",
+      "applicability": "When processing personal data for research, archiving, or statistical purposes.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause outlines an exemption for processing personal data for research, archiving, or statistical purposes, provided it is not used for specific decisions.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Data fiduciaries must ensure that the Data Protection Board of India is established in accordance with the provisions of the Act.",
+      "source": "DPDP Act 2023, Section Data Protection Board of India Establishment of Board",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000601"
+      ],
+      "checkable_test": "Verify that the Data Protection Board of India is established in accordance with the Act.",
+      "applicability": "When establishing the Data Protection Board of India.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause outlines the requirement for establishing the Data Protection Board of India.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [
+    {
+      "position": 6,
+      "entry": {
+        "category": "Significant Data Fiduciary Obligations",
+        "requirement": "Data fiduciaries must ensure that the salary, allowances, and other terms and conditions of service of the Data Protection Board of India are established in accordance with the provisions of the Act.",
+        "source": "DPDP Act 2023, Section Data Protection Board of India 20. (1)",
+        "weight": 3,
+        "source_clause_ids": [
+          "G000098"
+        ],
+        "checkable_test": "Verify that the salary, allowances, and other terms and conditions of service of the Data Protection Board of India are established in accordance with the Act.",
+        "applicability": "When establishing the salary, allowances, and other terms and conditions of service of the Data Protection Board of India.",
+        "assessability": 3,
+        "citation_confidence": "high",
+        "notes": "This clause outlines the requirement for establishing the salary, allowances, and other terms and conditions of service of the Data Protection Board of India."
+      },
+      "error": "source_clause_ids contains IDs outside this batch: ['G000098']"
+    }
+  ],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T13:48:54.291389+00:00",
+  "multi_mapped_records": []
+}

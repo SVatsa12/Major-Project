@@ -1,0 +1,77 @@
+{
+  "run_timestamp_utc": "2026-09-16T19:36:59.157376+00:00",
+  "input_candidate_count": 633,
+  "prepared_candidate_count": 633,
+  "consolidated_requirement_count": 623,
+  "final_provisional_taxonomy_count": 41,
+  "automatic_merge_group_count": 10,
+  "pair_comparison_count": 12329,
+  "pair_decision_counts": {
+    "KEEP_SEPARATE": 12299,
+    "REVIEW": 20,
+    "AUTO_MERGE": 10
+  },
+  "scope_omit_review_count": 61,
+  "scope_review_count": 32,
+  "target_reduction_review_count": 582,
+  "provenance_review_count": 0,
+  "act_counts_before_consolidation": {
+    "DPDP_ACT_2023": 177,
+    "DPDP_RULES_2025": 128,
+    "IT_ACT_2000": 199,
+    "RTI_ACT_2005": 88,
+    "TRAI_ACT_1997": 21,
+    "AERA_ACT_2008": 20
+  },
+  "act_counts_after_final_selection": {
+    "DPDP_ACT_2023": 20,
+    "DPDP_RULES_2025": 15,
+    "IT_ACT_2000": 3,
+    "RTI_ACT_2005": 1,
+    "TRAI_ACT_1997": 1,
+    "AERA_ACT_2008": 1
+  },
+  "target_summary": {
+    "AERA_ACT_2008": {
+      "count": 1,
+      "target_min": 0,
+      "target_max": 1,
+      "status": "WITHIN_TARGET"
+    },
+    "DPDP_ACT_2023": {
+      "count": 20,
+      "target_min": 15,
+      "target_max": 20,
+      "status": "WITHIN_TARGET"
+    },
+    "DPDP_RULES_2025": {
+      "count": 15,
+      "target_min": 10,
+      "target_max": 15,
+      "status": "WITHIN_TARGET"
+    },
+    "IT_ACT_2000": {
+      "count": 3,
+      "target_min": 2,
+      "target_max": 3,
+      "status": "WITHIN_TARGET"
+    },
+    "RTI_ACT_2005": {
+      "count": 1,
+      "target_min": 0,
+      "target_max": 1,
+      "status": "WITHIN_TARGET"
+    },
+    "TRAI_ACT_1997": {
+      "count": 1,
+      "target_min": 0,
+      "target_max": 1,
+      "status": "WITHIN_TARGET"
+    }
+  },
+  "human_review_required": true,
+  "legal_approval": false,
+  "random_filtering": false,
+  "target_ranges_used_as_legal_truth": false,
+  "design_note": "Target ranges are project-design constraints. They do not establish legal validity and displaced candidates remain available for review."
+}

@@ -1,0 +1,53 @@
+{
+  "cache_key": "36fb2a3b1008eee9523af0c2ea0af479a971393ade5997f8073dbf2928942403",
+  "created_at_utc": "2026-09-16T11:49:40.060058+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S000181",
+    "S000182",
+    "S000183",
+    "S000184",
+    "S000185",
+    "S000186"
+  ],
+  "labels": [
+    {
+      "clause_id": "S000181",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause defines 'End Users' and does not meaningfully address any listed taxonomy requirement."
+    },
+    {
+      "clause_id": "S000182",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause defines 'End User Account' and does not meaningfully address any listed taxonomy requirement."
+    },
+    {
+      "clause_id": "S000183",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause defines 'Export Control Laws' and does not meaningfully address any listed taxonomy requirement."
+    },
+    {
+      "clause_id": "S000184",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause defines 'Fee Accrual Period' and does not meaningfully address any listed taxonomy requirement."
+    },
+    {
+      "clause_id": "S000185",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause defines 'Fees' and does not meaningfully address any listed taxonomy requirement."
+    },
+    {
+      "clause_id": "S000186",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause defines 'GCP Services' and does not meaningfully address any listed taxonomy requirement."
+    }
+  ],
+  "status": "SUCCESS"
+}

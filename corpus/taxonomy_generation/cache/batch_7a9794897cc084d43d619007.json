@@ -1,0 +1,113 @@
+{
+  "batch_id": "7a9794897cc084d43d619007",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001116",
+    "G001117",
+    "G001118",
+    "G001119",
+    "G001123",
+    "G001124",
+    "G001125",
+    "G001126"
+  ],
+  "raw_response": "[{\"category\":\"Data Principal Rights\",\"requirement\":\"Data Fiduciaries must provide Data Principals with details of the means to exercise their rights under the Act.\",\"source\":\"DPDP Rules 2025, Rule 8(1)\",\"weight\":3,\"source_clause_ids\":[\"G001116\"],\"checkable_test\":\"Check if the document provides clear, accessible means for Data Principals to exercise their rights.\",\"applicability\":\"Applicable to all Data Fiduciaries under the DPDP Rules 2025.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is directly tied to the obligation to provide means for exercising rights.\"},{\"category\":\"Data Principal Rights\",\"requirement\":\"Data Fiduciaries must specify the particulars required to identify Data Principals when exercising their rights.\",\"source\":\"DPDP Rules 2025, Rule 8(1)\",\"weight\":3,\"source_clause_ids\":[\"G001117\"],\"checkable_test\":\"Check if the document specifies the required identification details for Data Principals to exercise their rights.\",\"applicability\":\"Applicable to all Data Fiduciaries under the DPDP Rules 2025.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is directly tied to the obligation to specify identification details for exercising rights.\"},{\"category\":\"Data Principal Rights\",\"requirement\":\"Data Principals may make requests to the Data Fiduciary to whom they have previously given consent for processing of their personal data, using the means and furnishing the particulars required by such Data Fiduciary for the exercise of such rights.\",\"source\":\"DPDP Rules 2025, Rule 8(1)\",\"weight\":3,\"source_clause_ids\":[\"G001118\"],\"checkable_test\":\"Check if the document allows Data Principals to make requests to Data Fiduciaries using the required means and identification details.\",\"applicability\":\"Applicable to all Data Fiduciaries under the DPDP Rules 2025.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is directly tied to the obligation to allow Data Principals to make requests using required means and identification details.\"},{\"category\":\"Grievance Redressal\",\"requirement\":\"Data Fiduciaries and Consent Managers must prominently publish on their website or app a grievance redressal system for responding to Data Principal grievances within ninety days.\",\"source\":\"DPDP Rules 2025, Rule 8(1)\",\"weight\":3,\"source_clause_ids\":[\"G001119\"],\"checkable_test\":\"Check if the document provides a prominently published grievance redressal system with a ninety-day response period.\",\"applicability\":\"Applicable to all Data Fiduciaries and Consent Managers under the DPDP Rules 2025.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is directly tied to the obligation to publish a grievance redressal system with a specified response period.\"},{\"category\":\"Cross-Border Transfer\",\"requirement\":\"Data Fiduciaries must meet requirements specified by the Central Government for transferring personal data outside the territory of India.\",\"source\":\"DPDP Rules 2025, Rule 8(1)\",\"weight\":3,\"source_clause_ids\":[\"G001124\"],\"checkable_test\":\"Check if the document specifies that Data Fiduciaries must meet Central Government requirements for cross-border data transfers.\",\"applicability\":\"Applicable to all Data Fiduciaries under the DPDP Rules 2025.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is directly tied to the obligation to meet Central Government requirements for cross-border data transfers.\"},{\"category\":\"Cross-Border Transfer\",\"requirement\":\"Data Fiduciaries must ensure that personal data transferred outside the territory of India is subject to the restrictions specified by the Central Government.\",\"source\":\"DPDP Rules 2025, Rule 8(1)\",\"weight\":3,\"source_clause_ids\":[\"G001123\"],\"checkable_test\":\"Check if the document specifies that Data Fiduciaries must ensure compliance with Central Government restrictions on cross-border data transfers.\",\"applicability\":\"Applicable to all Data Fiduciaries under the DPDP Rules 2025.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is directly tied to the obligation to ensure compliance with Central Government restrictions on cross-border data transfers.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Data Principal Rights",
+      "requirement": "Data Fiduciaries must provide Data Principals with details of the means to exercise their rights under the Act.",
+      "source": "DPDP Rules 2025, Rule 8(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001116"
+      ],
+      "checkable_test": "Check if the document provides clear, accessible means for Data Principals to exercise their rights.",
+      "applicability": "Applicable to all Data Fiduciaries under the DPDP Rules 2025.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation to provide means for exercising rights.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Principal Rights",
+      "requirement": "Data Fiduciaries must specify the particulars required to identify Data Principals when exercising their rights.",
+      "source": "DPDP Rules 2025, Rule 8(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001117"
+      ],
+      "checkable_test": "Check if the document specifies the required identification details for Data Principals to exercise their rights.",
+      "applicability": "Applicable to all Data Fiduciaries under the DPDP Rules 2025.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation to specify identification details for exercising rights.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Principal Rights",
+      "requirement": "Data Principals may make requests to the Data Fiduciary to whom they have previously given consent for processing of their personal data, using the means and furnishing the particulars required by such Data Fiduciary for the exercise of such rights.",
+      "source": "DPDP Rules 2025, Rule 8(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001118"
+      ],
+      "checkable_test": "Check if the document allows Data Principals to make requests to Data Fiduciaries using the required means and identification details.",
+      "applicability": "Applicable to all Data Fiduciaries under the DPDP Rules 2025.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation to allow Data Principals to make requests using required means and identification details.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Grievance Redressal",
+      "requirement": "Data Fiduciaries and Consent Managers must prominently publish on their website or app a grievance redressal system for responding to Data Principal grievances within ninety days.",
+      "source": "DPDP Rules 2025, Rule 8(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001119"
+      ],
+      "checkable_test": "Check if the document provides a prominently published grievance redressal system with a ninety-day response period.",
+      "applicability": "Applicable to all Data Fiduciaries and Consent Managers under the DPDP Rules 2025.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation to publish a grievance redressal system with a specified response period.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Cross-Border Transfer",
+      "requirement": "Data Fiduciaries must meet requirements specified by the Central Government for transferring personal data outside the territory of India.",
+      "source": "DPDP Rules 2025, Rule 8(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001124"
+      ],
+      "checkable_test": "Check if the document specifies that Data Fiduciaries must meet Central Government requirements for cross-border data transfers.",
+      "applicability": "Applicable to all Data Fiduciaries under the DPDP Rules 2025.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation to meet Central Government requirements for cross-border data transfers.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Cross-Border Transfer",
+      "requirement": "Data Fiduciaries must ensure that personal data transferred outside the territory of India is subject to the restrictions specified by the Central Government.",
+      "source": "DPDP Rules 2025, Rule 8(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001123"
+      ],
+      "checkable_test": "Check if the document specifies that Data Fiduciaries must ensure compliance with Central Government restrictions on cross-border data transfers.",
+      "applicability": "Applicable to all Data Fiduciaries under the DPDP Rules 2025.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation to ensure compliance with Central Government restrictions on cross-border data transfers.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T11:35:40.389155+00:00",
+  "multi_mapped_records": []
+}

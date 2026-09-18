@@ -1,0 +1,98 @@
+{
+  "batch_id": "624cb84609587a69a0f96ace",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001590",
+    "G001610",
+    "G001611",
+    "G001612",
+    "G001638",
+    "G001677",
+    "G001679",
+    "G001684"
+  ],
+  "raw_response": "[{\"category\":\"Security Safeguards\",\"requirement\":\"The Central Government may prescribe security procedures and practices for the purposes of sections 14 and 15 of the IT Act 2000.\",\"source\":\"IT Act 2000, Section 16\",\"weight\":2,\"source_clause_ids\":[\"G001610\"],\"checkable_test\":\"Check if the organization has implemented security procedures and practices as prescribed by the Central Government.\",\"applicability\":\"Applicable to organizations subject to the IT Act 2000.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is tied to the Central Government's authority to prescribe security measures.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"The Controller of Certifying Authorities must maintain a public database containing the disclosure record of every Certifying Authority.\",\"source\":\"IT Act 2000, Section 16(n)\",\"weight\":2,\"source_clause_ids\":[\"G001638\"],\"checkable_test\":\"Verify if the organization maintains a publicly accessible database of Certifying Authority disclosure records.\",\"applicability\":\"Applicable to Certifying Authorities and the Controller of Certifying Authorities.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation requires transparency in the operations of Certifying Authorities.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"The Controller of Certifying Authorities must publish notice of suspension or revocation of a Certifying Authority in the database maintained by him.\",\"source\":\"IT Act 2000, Section 16(17)\",\"weight\":2,\"source_clause_ids\":[\"G001677\"],\"checkable_test\":\"Check if the organization publishes notices of suspension or revocation in the public database.\",\"applicability\":\"Applicable to Certifying Authorities and the Controller of Certifying Authorities.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation ensures transparency in the status of Certifying Authorities.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"The database containing notices of suspension or revocation must be made available through a website accessible round the clock.\",\"source\":\"IT Act 2000, Section 16(17)(Provided that)\",\"weight\":2,\"source_clause_ids\":[\"G001679\"],\"checkable_test\":\"Verify if the organization provides 24/7 access to the database containing suspension or revocation notices.\",\"applicability\":\"Applicable to Certifying Authorities and the Controller of Certifying Authorities.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation ensures continuous public access to critical information.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"The Controller or authorized person may access computers and data if there is reasonable cause to suspect a contravention of the provisions of this Chapter.\",\"source\":\"IT Act 2000, Section 29(1)\",\"weight\":2,\"source_clause_ids\":[\"G001684\"],\"checkable_test\":\"Check if the organization has access protocols for investigating potential contraventions of the IT Act 2000.\",\"applicability\":\"Applicable to the Controller of Certifying Authorities and authorized personnel.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation outlines the authority for accessing data in the interest of law enforcement.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Security Safeguards",
+      "requirement": "The Central Government may prescribe security procedures and practices for the purposes of sections 14 and 15 of the IT Act 2000.",
+      "source": "IT Act 2000, Section 16",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001610"
+      ],
+      "checkable_test": "Check if the organization has implemented security procedures and practices as prescribed by the Central Government.",
+      "applicability": "Applicable to organizations subject to the IT Act 2000.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is tied to the Central Government's authority to prescribe security measures.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "The Controller of Certifying Authorities must maintain a public database containing the disclosure record of every Certifying Authority.",
+      "source": "IT Act 2000, Section 16(n)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001638"
+      ],
+      "checkable_test": "Verify if the organization maintains a publicly accessible database of Certifying Authority disclosure records.",
+      "applicability": "Applicable to Certifying Authorities and the Controller of Certifying Authorities.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation requires transparency in the operations of Certifying Authorities.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "The Controller of Certifying Authorities must publish notice of suspension or revocation of a Certifying Authority in the database maintained by him.",
+      "source": "IT Act 2000, Section 16(17)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001677"
+      ],
+      "checkable_test": "Check if the organization publishes notices of suspension or revocation in the public database.",
+      "applicability": "Applicable to Certifying Authorities and the Controller of Certifying Authorities.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation ensures transparency in the status of Certifying Authorities.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "The database containing notices of suspension or revocation must be made available through a website accessible round the clock.",
+      "source": "IT Act 2000, Section 16(17)(Provided that)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001679"
+      ],
+      "checkable_test": "Verify if the organization provides 24/7 access to the database containing suspension or revocation notices.",
+      "applicability": "Applicable to Certifying Authorities and the Controller of Certifying Authorities.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation ensures continuous public access to critical information.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "The Controller or authorized person may access computers and data if there is reasonable cause to suspect a contravention of the provisions of this Chapter.",
+      "source": "IT Act 2000, Section 29(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001684"
+      ],
+      "checkable_test": "Check if the organization has access protocols for investigating potential contraventions of the IT Act 2000.",
+      "applicability": "Applicable to the Controller of Certifying Authorities and authorized personnel.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation outlines the authority for accessing data in the interest of law enforcement.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T11:48:08.685324+00:00",
+  "multi_mapped_records": []
+}

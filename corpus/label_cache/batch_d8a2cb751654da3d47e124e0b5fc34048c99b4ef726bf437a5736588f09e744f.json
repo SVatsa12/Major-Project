@@ -1,0 +1,53 @@
+{
+  "cache_key": "d8a2cb751654da3d47e124e0b5fc34048c99b4ef726bf437a5736588f09e744f",
+  "created_at_utc": "2026-09-16T13:16:39.230938+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S001219",
+    "S001220",
+    "S001221",
+    "S001222",
+    "S001223",
+    "S001224"
+  ],
+  "labels": [
+    {
+      "clause_id": "S001219",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S001220",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S001221",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S001222",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S001223",
+      "best_match_taxonomy_id": "DPDP_RUL-0378",
+      "verdict": "Compliant",
+      "justification": "The clause addresses the restriction on processing children's real-time location data for safety."
+    },
+    {
+      "clause_id": "S001224",
+      "best_match_taxonomy_id": "DPDP_RUL-0378",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses age restrictions but lacks specific details on data processing for children under 18."
+    }
+  ],
+  "status": "SUCCESS"
+}

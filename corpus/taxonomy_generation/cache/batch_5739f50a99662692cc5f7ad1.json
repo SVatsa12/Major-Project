@@ -1,0 +1,113 @@
+{
+  "batch_id": "5739f50a99662692cc5f7ad1",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G000436",
+    "G000443",
+    "G000445",
+    "G000449",
+    "G000452",
+    "G000453",
+    "G000462",
+    "G000463"
+  ],
+  "raw_response": "[  \n  {  \n    \"category\": \"Significant Data Fiduciary Obligations\",  \n    \"requirement\": \"A Data Fiduciary must process personal data only for a lawful purpose as defined by the DPDP Act 2023.\",  \n    \"source\": \"DPDP Act 2023, Section 3(1)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G000443\"],  \n    \"checkable_test\": \"Verify if the Data Fiduciary's processing of personal data is limited to lawful purposes as per the DPDP Act 2023.\",  \n    \"applicability\": \"Applies to all Data Fiduciaries processing personal data in India.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation is tied to the definition of a Data Fiduciary under the DPDP Act 2023.\"  \n  },  \n  {  \n    \"category\": \"Consent & Notice\",  \n    \"requirement\": \"Every request for consent from a Data Principal must be accompanied by a notice informing the Data Principal of the purpose of processing.\",  \n    \"source\": \"DPDP Act 2023, Section 5(1)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G000449\"],  \n    \"checkable_test\": \"Check if all consent requests include a notice describing the purpose of data processing.\",  \n    \"applicability\": \"Applies to all Data Fiduciaries seeking consent for data processing.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement applies to all data processing activities requiring consent under the DPDP Act 2023.\"  \n  },  \n  {  \n    \"category\": \"Data Principal Rights\",  \n    \"requirement\": \"A Data Fiduciary must provide a Data Principal with the means to make a complaint to the Board.\",  \n    \"source\": \"DPDP Act 2023, Section 4(1)(iii)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G000452\"],  \n    \"checkable_test\": \"Verify if the Data Fiduciary provides clear instructions on how to file a complaint with the Board.\",  \n    \"applicability\": \"Applies to all Data Fiduciaries processing personal data in India.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation is part of the Data Principal's right to complain under the DPDP Act 2023.\"  \n  },  \n  {  \n    \"category\": \"Consent & Notice\",  \n    \"requirement\": \"A Data Fiduciary must accompany or precede a request for personal data with a notice describing the personal data and the purpose of its processing.\",  \n    \"source\": \"DPDP Act 2023, Section 3(B)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G000453\"],  \n    \"checkable_test\": \"Check if all data processing requests include a notice describing the data and its purpose.\",  \n    \"applicability\": \"Applies to all Data Fiduciaries processing personal data for KYC requirements.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement applies specifically to data processing for KYC under the DPDP Act 2023.\"  \n  },  \n  {  \n    \"category\": \"Consent & Notice\",  \n    \"requirement\": \"A Data Fiduciary must inform a Data Principal of the right to withdraw consent and the consequences of withdrawal.\",  \n    \"source\": \"DPDP Act 2023, Section 4(1)(b)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G000462\"],  \n    \"checkable_test\": \"Verify if the Data Fiduciary provides information on how to withdraw consent and its effects.\",  \n    \"applicability\": \"Applies to all Data Fiduciaries processing personal data with prior consent.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation is tied to the right of Data Principals to withdraw consent under the DPDP Act 2023.\"  \n  },  \n  {  \n    \"category\": \"Consent & Notice\",  \n    \"requirement\": \"A Data Fiduciary must inform a Data Principal of the purpose of processing personal data upon the commencement of the DPDP Act 2023.\",  \n    \"source\": \"DPDP Act 2023, Section 4(1)(b)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G000463\"],  \n    \"checkable_test\": \"Check if the Data Fiduciary provides information on the purpose of data processing to Data Principals who gave consent before the Act's commencement.\",  \n    \"applicability\": \"Applies to all Data Fiduciaries who processed data before the DPDP Act 2023 came into effect.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement applies to Data Principals who gave consent prior to the DPDP Act 2023.\"  \n  }  \n]",
+  "parsed_entries": [
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "A Data Fiduciary must process personal data only for a lawful purpose as defined by the DPDP Act 2023.",
+      "source": "DPDP Act 2023, Section 3(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000443"
+      ],
+      "checkable_test": "Verify if the Data Fiduciary's processing of personal data is limited to lawful purposes as per the DPDP Act 2023.",
+      "applicability": "Applies to all Data Fiduciaries processing personal data in India.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is tied to the definition of a Data Fiduciary under the DPDP Act 2023.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Consent & Notice",
+      "requirement": "Every request for consent from a Data Principal must be accompanied by a notice informing the Data Principal of the purpose of processing.",
+      "source": "DPDP Act 2023, Section 5(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000449"
+      ],
+      "checkable_test": "Check if all consent requests include a notice describing the purpose of data processing.",
+      "applicability": "Applies to all Data Fiduciaries seeking consent for data processing.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement applies to all data processing activities requiring consent under the DPDP Act 2023.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Principal Rights",
+      "requirement": "A Data Fiduciary must provide a Data Principal with the means to make a complaint to the Board.",
+      "source": "DPDP Act 2023, Section 4(1)(iii)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000452"
+      ],
+      "checkable_test": "Verify if the Data Fiduciary provides clear instructions on how to file a complaint with the Board.",
+      "applicability": "Applies to all Data Fiduciaries processing personal data in India.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is part of the Data Principal's right to complain under the DPDP Act 2023.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Consent & Notice",
+      "requirement": "A Data Fiduciary must accompany or precede a request for personal data with a notice describing the personal data and the purpose of its processing.",
+      "source": "DPDP Act 2023, Section 3(B)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000453"
+      ],
+      "checkable_test": "Check if all data processing requests include a notice describing the data and its purpose.",
+      "applicability": "Applies to all Data Fiduciaries processing personal data for KYC requirements.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement applies specifically to data processing for KYC under the DPDP Act 2023.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Consent & Notice",
+      "requirement": "A Data Fiduciary must inform a Data Principal of the right to withdraw consent and the consequences of withdrawal.",
+      "source": "DPDP Act 2023, Section 4(1)(b)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000462"
+      ],
+      "checkable_test": "Verify if the Data Fiduciary provides information on how to withdraw consent and its effects.",
+      "applicability": "Applies to all Data Fiduciaries processing personal data with prior consent.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is tied to the right of Data Principals to withdraw consent under the DPDP Act 2023.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Consent & Notice",
+      "requirement": "A Data Fiduciary must inform a Data Principal of the purpose of processing personal data upon the commencement of the DPDP Act 2023.",
+      "source": "DPDP Act 2023, Section 4(1)(b)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000463"
+      ],
+      "checkable_test": "Check if the Data Fiduciary provides information on the purpose of data processing to Data Principals who gave consent before the Act's commencement.",
+      "applicability": "Applies to all Data Fiduciaries who processed data before the DPDP Act 2023 came into effect.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement applies to Data Principals who gave consent prior to the DPDP Act 2023.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T11:03:23.644342+00:00",
+  "multi_mapped_records": []
+}

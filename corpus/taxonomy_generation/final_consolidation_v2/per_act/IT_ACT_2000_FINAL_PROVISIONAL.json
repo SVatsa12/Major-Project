@@ -1,0 +1,89 @@
+[
+  {
+    "taxonomy_id": "IT_ACT_2-0151",
+    "act": "IT_ACT_2000",
+    "category": "Security Safeguards",
+    "requirement": "Organizations must implement measures to protect information, equipment, devices, and communication devices from unauthorized access, use, disclosure, disruption, modification, or destruction.",
+    "checkable_test": "Verify if the document outlines specific security measures to protect information and systems from unauthorized access or breaches.",
+    "applicability": "Applicable to entities handling electronic communications and data.",
+    "source": "IT Act 2000, Section 69B",
+    "weight": 3,
+    "assessability": "3",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000155"
+    ],
+    "source_clause_ids": [
+      "G001418"
+    ],
+    "source_legal_anchors": [
+      "section 69b"
+    ],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
+    "canonical_candidate_id": "TC-000155",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 1,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  },
+  {
+    "taxonomy_id": "IT_ACT_2-0155",
+    "act": "IT_ACT_2000",
+    "category": "Confidentiality & Misuse of Data",
+    "requirement": "The Central Government may prescribe control processes and procedures to ensure adequate integrity, security and confidentiality of electronic records or payments.",
+    "checkable_test": "Verify if the Central Government has prescribed control processes and procedures for ensuring the integrity, security, and confidentiality of electronic records or payments.",
+    "applicability": "Applies to entities handling electronic records or payments under the IT Act 2000.",
+    "source": "IT Act 2000, Section 10A",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000159"
+    ],
+    "source_clause_ids": [
+      "G001580"
+    ],
+    "source_legal_anchors": [
+      "section 10a"
+    ],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
+    "canonical_candidate_id": "TC-000159",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 1,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  },
+  {
+    "taxonomy_id": "IT_ACT_2-0164",
+    "act": "IT_ACT_2000",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Intermediaries must comply with directions issued by the government to block access to information generated, transmitted, received, stored, or hosted in any computer resource.",
+    "checkable_test": "Check if the document specifies procedures for complying with government directions to block access to information.",
+    "applicability": "Applicable to intermediaries hosting information subject to government blocking orders.",
+    "source": "IT Act 2000, Section 69A(1)",
+    "weight": 3,
+    "assessability": "3",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000168"
+    ],
+    "source_clause_ids": [
+      "G001915"
+    ],
+    "source_legal_anchors": [
+      "section 69a 1"
+    ],
+    "source_provenance_status": "RESOLVED",
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
+    "canonical_candidate_id": "TC-000168",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "candidate_count": 1,
+    "legal_approval": false,
+    "taxonomy_stage": "PROVISIONAL_FINAL"
+  }
+]

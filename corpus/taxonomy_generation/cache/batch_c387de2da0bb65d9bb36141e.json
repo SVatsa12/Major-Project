@@ -1,0 +1,68 @@
+{
+  "batch_id": "c387de2da0bb65d9bb36141e",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001280",
+    "G001281",
+    "G001282",
+    "G001284",
+    "G001285",
+    "G001286",
+    "G001289",
+    "G001291"
+  ],
+  "raw_response": "[{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Significant data fiduciaries must define and use terms consistently with definitions provided in other statutes.\",\"source\":\"DPDP Rules 2025, Rule 12(1)\",\"weight\":2,\"source_clause_ids\":[\"G001280\"],\"checkable_test\":\"Verify that terms like 'advertisement', 'allied healthcare professional', 'clinical establishment', 'healthcare professional', 'health services', and 'mental health establishment' are defined in accordance with their statutory definitions.\",\"applicability\":\"Applicable to all significant data fiduciaries.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"These definitions are critical for ensuring compliance with other relevant laws and regulations.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Significant data fiduciaries must ensure that their members are compensated in accordance with specified salary terms.\",\"source\":\"DPDP Rules 2025, Rule 12(2)\",\"weight\":2,\"source_clause_ids\":[\"G001289\"],\"checkable_test\":\"Verify that non-Chairperson members receive a consolidated salary of rupees four lakh per month without house and car facilities.\",\"applicability\":\"Applicable to all significant data fiduciaries with non-Chairperson members.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause outlines specific compensation terms for members of the Board.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Significant data fiduciaries must apply the same terms and conditions for provident fund contributions as those applicable to other officers and employees of the Board.\",\"source\":\"DPDP Rules 2025, Rule 12(3)\",\"weight\":2,\"source_clause_ids\":[\"G001291\"],\"checkable_test\":\"Verify that the provident fund terms and conditions for members are consistent with those applicable to other officers and employees of the Board.\",\"applicability\":\"Applicable to all significant data fiduciaries with members subject to provident fund contributions.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This ensures uniformity in financial obligations for all members.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Significant data fiduciaries must define and use terms consistently with definitions provided in other statutes.",
+      "source": "DPDP Rules 2025, Rule 12(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001280"
+      ],
+      "checkable_test": "Verify that terms like 'advertisement', 'allied healthcare professional', 'clinical establishment', 'healthcare professional', 'health services', and 'mental health establishment' are defined in accordance with their statutory definitions.",
+      "applicability": "Applicable to all significant data fiduciaries.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "These definitions are critical for ensuring compliance with other relevant laws and regulations.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Significant data fiduciaries must ensure that their members are compensated in accordance with specified salary terms.",
+      "source": "DPDP Rules 2025, Rule 12(2)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001289"
+      ],
+      "checkable_test": "Verify that non-Chairperson members receive a consolidated salary of rupees four lakh per month without house and car facilities.",
+      "applicability": "Applicable to all significant data fiduciaries with non-Chairperson members.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause outlines specific compensation terms for members of the Board.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Significant data fiduciaries must apply the same terms and conditions for provident fund contributions as those applicable to other officers and employees of the Board.",
+      "source": "DPDP Rules 2025, Rule 12(3)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001291"
+      ],
+      "checkable_test": "Verify that the provident fund terms and conditions for members are consistent with those applicable to other officers and employees of the Board.",
+      "applicability": "Applicable to all significant data fiduciaries with members subject to provident fund contributions.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This ensures uniformity in financial obligations for all members.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T14:26:31.858862+00:00",
+  "multi_mapped_records": []
+}

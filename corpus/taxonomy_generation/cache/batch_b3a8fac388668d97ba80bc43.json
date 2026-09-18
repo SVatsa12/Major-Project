@@ -1,0 +1,53 @@
+{
+  "batch_id": "b3a8fac388668d97ba80bc43",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001247",
+    "G001249",
+    "G001251",
+    "G001253",
+    "G001255",
+    "G001256",
+    "G001258",
+    "G001260"
+  ],
+  "raw_response": "[{\"category\":\"Children/Vulnerable Groups\",\"requirement\":\"Data processing by educational institutions is restricted to tracking and behavioural monitoring in the interests of safety of children entrusted in their care.\",\"source\":\"DPDP Rules 2025, Section 8(4)\",\"weight\":3,\"source_clause_ids\":[\"G001258\"],\"checkable_test\":\"Check if the document restricts data processing by educational institutions to tracking and behavioural monitoring solely for the safety of children in their care.\",\"applicability\":\"Applicable to educational institutions handling children's data.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This requirement is specific to the processing of children's data by educational institutions.\"},{\"category\":\"Children/Vulnerable Groups\",\"requirement\":\"Data processing by educational institutions is restricted to tracking and behavioural monitoring in the interests of safety of children entrusted in their care.\",\"source\":\"DPDP Rules 2025, Section 8(5)\",\"weight\":3,\"source_clause_ids\":[\"G001260\"],\"checkable_test\":\"Check if the document restricts data processing by educational institutions to tracking and behavioural monitoring solely for the safety of children in their care.\",\"applicability\":\"Applicable to educational institutions handling children's data.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This requirement is specific to the processing of children's data by educational institutions.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Children/Vulnerable Groups",
+      "requirement": "Data processing by educational institutions is restricted to tracking and behavioural monitoring in the interests of safety of children entrusted in their care.",
+      "source": "DPDP Rules 2025, Section 8(4)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001258"
+      ],
+      "checkable_test": "Check if the document restricts data processing by educational institutions to tracking and behavioural monitoring solely for the safety of children in their care.",
+      "applicability": "Applicable to educational institutions handling children's data.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This requirement is specific to the processing of children's data by educational institutions.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Children/Vulnerable Groups",
+      "requirement": "Data processing by educational institutions is restricted to tracking and behavioural monitoring in the interests of safety of children entrusted in their care.",
+      "source": "DPDP Rules 2025, Section 8(5)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001260"
+      ],
+      "checkable_test": "Check if the document restricts data processing by educational institutions to tracking and behavioural monitoring solely for the safety of children in their care.",
+      "applicability": "Applicable to educational institutions handling children's data.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This requirement is specific to the processing of children's data by educational institutions.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T14:24:01.841344+00:00",
+  "multi_mapped_records": []
+}

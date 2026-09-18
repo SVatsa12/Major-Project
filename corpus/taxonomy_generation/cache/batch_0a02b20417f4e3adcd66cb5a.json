@@ -1,0 +1,128 @@
+{
+  "batch_id": "0a02b20417f4e3adcd66cb5a",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001044",
+    "G001045",
+    "G001046",
+    "G001047",
+    "G001048",
+    "G001049",
+    "G001050",
+    "G001051"
+  ],
+  "raw_response": "[\n  {\n    \"category\": \"Security Safeguards\",\n    \"requirement\": \"Implement appropriate data security measures, such as encryption, obfuscation, masking, or the use of virtual tokens mapped to personal data.\",\n    \"source\": \"DPDP Rules 2025, Rule 8(2)(a)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G001045\"],\n    \"checkable_test\": \"Check if the document specifies encryption, obfuscation, masking, or virtual tokens for securing personal data.\",\n    \"applicability\": \"Applicable to all data fiduciaries and processors handling personal data.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Security Safeguards\",\n    \"requirement\": \"Implement appropriate measures to control access to computer resources used by the data fiduciary or data processor.\",\n    \"source\": \"DPDP Rules 2025, Rule 8(2)(b)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G001046\"],\n    \"checkable_test\": \"Check if the document specifies access control measures for computer resources.\",\n    \"applicability\": \"Applicable to all data fiduciaries and processors handling personal data.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Security Safeguards\",\n    \"requirement\": \"Maintain visibility on the accessing of personal data through appropriate logs, monitoring, and review to detect unauthorized access.\",\n    \"source\": \"DPDP Rules 2025, Rule 8(2)(c)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G001047\"],\n    \"checkable_test\": \"Check if the document specifies logging, monitoring, and review mechanisms for detecting unauthorized access.\",\n    \"applicability\": \"Applicable to all data fiduciaries and processors handling personal data.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Security Safeguards\",\n    \"requirement\": \"Implement reasonable measures for continued processing in the event of confidentiality, integrity, or availability of personal data being compromised, such as data-backups.\",\n    \"source\": \"DPDP Rules 2025, Rule 8(2)(d)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G001048\"],\n    \"checkable_test\": \"Check if the document specifies data-backup or continuity measures for data compromise.\",\n    \"applicability\": \"Applicable to all data fiduciaries and processors handling personal data.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Security Safeguards\",\n    \"requirement\": \"Retain logs and personal data for a period of one year for detecting unauthorized access, investigating it, and ensuring continued processing, unless required by law.\",\n    \"source\": \"DPDP Rules 2025, Rule 8(2)(e)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G001049\"],\n    \"checkable_test\": \"Check if the document specifies a one-year retention period for logs and personal data for security purposes.\",\n    \"applicability\": \"Applicable to all data fiduciaries and processors handling personal data.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Security Safeguards\",\n    \"requirement\": \"Include appropriate provisions in contracts between data fiduciaries and data processors for taking reasonable security safeguards.\",\n    \"source\": \"DPDP Rules 2025, Rule 8(2)(f)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G001050\"],\n    \"checkable_test\": \"Check if the document specifies contractual provisions for security safeguards between data fiduciaries and processors.\",\n    \"applicability\": \"Applicable to all data fiduciaries and processors handling personal data.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Security Safeguards\",\n    \"requirement\": \"Implement appropriate technical and organizational measures to ensure effective observance of security safeguards.\",\n    \"source\": \"DPDP Rules 2025, Rule 8(2)(g)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G001051\"],\n    \"checkable_test\": \"Check if the document specifies technical and organizational measures for security safeguards.\",\n    \"applicability\": \"Applicable to all data fiduciaries and processors handling personal data.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  }\n]",
+  "parsed_entries": [
+    {
+      "category": "Security Safeguards",
+      "requirement": "Implement appropriate data security measures, such as encryption, obfuscation, masking, or the use of virtual tokens mapped to personal data.",
+      "source": "DPDP Rules 2025, Rule 8(2)(a)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001045"
+      ],
+      "checkable_test": "Check if the document specifies encryption, obfuscation, masking, or virtual tokens for securing personal data.",
+      "applicability": "Applicable to all data fiduciaries and processors handling personal data.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Implement appropriate measures to control access to computer resources used by the data fiduciary or data processor.",
+      "source": "DPDP Rules 2025, Rule 8(2)(b)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001046"
+      ],
+      "checkable_test": "Check if the document specifies access control measures for computer resources.",
+      "applicability": "Applicable to all data fiduciaries and processors handling personal data.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Maintain visibility on the accessing of personal data through appropriate logs, monitoring, and review to detect unauthorized access.",
+      "source": "DPDP Rules 2025, Rule 8(2)(c)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001047"
+      ],
+      "checkable_test": "Check if the document specifies logging, monitoring, and review mechanisms for detecting unauthorized access.",
+      "applicability": "Applicable to all data fiduciaries and processors handling personal data.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Implement reasonable measures for continued processing in the event of confidentiality, integrity, or availability of personal data being compromised, such as data-backups.",
+      "source": "DPDP Rules 2025, Rule 8(2)(d)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001048"
+      ],
+      "checkable_test": "Check if the document specifies data-backup or continuity measures for data compromise.",
+      "applicability": "Applicable to all data fiduciaries and processors handling personal data.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Retain logs and personal data for a period of one year for detecting unauthorized access, investigating it, and ensuring continued processing, unless required by law.",
+      "source": "DPDP Rules 2025, Rule 8(2)(e)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001049"
+      ],
+      "checkable_test": "Check if the document specifies a one-year retention period for logs and personal data for security purposes.",
+      "applicability": "Applicable to all data fiduciaries and processors handling personal data.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Include appropriate provisions in contracts between data fiduciaries and data processors for taking reasonable security safeguards.",
+      "source": "DPDP Rules 2025, Rule 8(2)(f)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001050"
+      ],
+      "checkable_test": "Check if the document specifies contractual provisions for security safeguards between data fiduciaries and processors.",
+      "applicability": "Applicable to all data fiduciaries and processors handling personal data.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Implement appropriate technical and organizational measures to ensure effective observance of security safeguards.",
+      "source": "DPDP Rules 2025, Rule 8(2)(g)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001051"
+      ],
+      "checkable_test": "Check if the document specifies technical and organizational measures for security safeguards.",
+      "applicability": "Applicable to all data fiduciaries and processors handling personal data.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T11:26:44.231992+00:00",
+  "multi_mapped_records": []
+}

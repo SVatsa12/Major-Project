@@ -1,0 +1,53 @@
+{
+  "cache_key": "37e2b460bc508e0ac1559a7f4c611b1d4a9265561345fe7ca14f57ac5c773ada",
+  "created_at_utc": "2026-09-16T13:31:00.376706+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S001405",
+    "S001406",
+    "S001407",
+    "S001408",
+    "S001409",
+    "S001410"
+  ],
+  "labels": [
+    {
+      "clause_id": "S001405",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "No listed requirement is meaningfully addressed by the clause."
+    },
+    {
+      "clause_id": "S001406",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "No listed requirement is meaningfully addressed by the clause."
+    },
+    {
+      "clause_id": "S001407",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "No listed requirement is meaningfully addressed by the clause."
+    },
+    {
+      "clause_id": "S001408",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "No listed requirement is meaningfully addressed by the clause."
+    },
+    {
+      "clause_id": "S001409",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "No listed requirement is meaningfully addressed by the clause."
+    },
+    {
+      "clause_id": "S001410",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "No listed requirement is meaningfully addressed by the clause."
+    }
+  ],
+  "status": "SUCCESS"
+}

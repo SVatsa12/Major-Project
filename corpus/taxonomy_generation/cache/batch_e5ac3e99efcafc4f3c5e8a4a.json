@@ -1,0 +1,53 @@
+{
+  "batch_id": "e5ac3e99efcafc4f3c5e8a4a",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001685",
+    "G001714",
+    "G001787",
+    "G001794",
+    "G001801",
+    "G001804",
+    "G001818",
+    "G001875"
+  ],
+  "raw_response": "[  \n  {  \n    \"category\": \"Security Safeguards\",  \n    \"requirement\": \"A body corporate must implement and maintain reasonable security practices and procedures to protect sensitive personal data or information from unauthorized access, damage, use, modification, disclosure, or impairment.\",  \n    \"source\": \"IT Act 2000, Section 43A\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G001787\"],  \n    \"checkable_test\": \"Verify if the organization has implemented and maintains reasonable security practices and procedures as required by the IT Act 2000, Section 43A.\",  \n    \"applicability\": \"Applicable to all body corporates handling sensitive personal data or information.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation is directly tied to the definition of 'reasonable security practices and procedures' in the IT Act 2000, Section 43A.\"  \n  },  \n  {  \n    \"category\": \"Security Safeguards\",  \n    \"requirement\": \"Reasonable security practices and procedures must be designed to protect information from unauthorized access, damage, use, modification, disclosure, or impairment, as specified in agreements or laws, or prescribed by the Central Government.\",  \n    \"source\": \"IT Act 2000, Section 43A(2)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G001794\"],  \n    \"checkable_test\": \"Verify if the organization has implemented security practices and procedures that meet the criteria outlined in the IT Act 2000, Section 43A(2).\",  \n    \"applicability\": \"Applicable to all body corporates handling sensitive personal data or information.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This clause defines 'reasonable security practices and procedures' and is a core obligation under the IT Act 2000.\"  \n  }  \n]",
+  "parsed_entries": [
+    {
+      "category": "Security Safeguards",
+      "requirement": "A body corporate must implement and maintain reasonable security practices and procedures to protect sensitive personal data or information from unauthorized access, damage, use, modification, disclosure, or impairment.",
+      "source": "IT Act 2000, Section 43A",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001787"
+      ],
+      "checkable_test": "Verify if the organization has implemented and maintains reasonable security practices and procedures as required by the IT Act 2000, Section 43A.",
+      "applicability": "Applicable to all body corporates handling sensitive personal data or information.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to the definition of 'reasonable security practices and procedures' in the IT Act 2000, Section 43A.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Reasonable security practices and procedures must be designed to protect information from unauthorized access, damage, use, modification, disclosure, or impairment, as specified in agreements or laws, or prescribed by the Central Government.",
+      "source": "IT Act 2000, Section 43A(2)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001794"
+      ],
+      "checkable_test": "Verify if the organization has implemented security practices and procedures that meet the criteria outlined in the IT Act 2000, Section 43A(2).",
+      "applicability": "Applicable to all body corporates handling sensitive personal data or information.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause defines 'reasonable security practices and procedures' and is a core obligation under the IT Act 2000.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T11:48:57.009999+00:00",
+  "multi_mapped_records": []
+}

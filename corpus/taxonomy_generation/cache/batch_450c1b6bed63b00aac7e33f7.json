@@ -1,0 +1,98 @@
+{
+  "batch_id": "450c1b6bed63b00aac7e33f7",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G000497",
+    "G000498",
+    "G000500",
+    "G000502",
+    "G000503",
+    "G000505",
+    "G000509",
+    "G000510"
+  ],
+  "raw_response": "[\n  {\n    \"category\": \"Security Safeguards\",\n    \"requirement\": \"A Data Fiduciary shall protect personal data in its possession or under its control by taking reasonable security safeguards to prevent personal data breaches.\",\n    \"source\": \"DPDP Act 2023, Section 5(2)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G000502\"],\n    \"checkable_test\": \"Verify that the document specifies the use of reasonable security safeguards to prevent data breaches.\",\n    \"applicability\": \"All Data Fiduciaries processing personal data.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Breach Notification\",\n    \"requirement\": \"In the event of a personal data breach, the Data Fiduciary shall notify the Board and each affected Data Principal of the breach.\",\n    \"source\": \"DPDP Act 2023, Section 5(6)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G000503\"],\n    \"checkable_test\": \"Verify that the document specifies procedures for notifying the Board and affected Data Principals in case of a data breach.\",\n    \"applicability\": \"All Data Fiduciaries processing personal data.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Data Retention & Erasure\",\n    \"requirement\": \"A Data Fiduciary shall erase personal data upon the Data Principal withdrawing her consent.\",\n    \"source\": \"DPDP Act 2023, Section 5(5)(a)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G000505\"],\n    \"checkable_test\": \"Verify that the document specifies the obligation to erase personal data upon withdrawal of consent.\",\n    \"applicability\": \"All Data Fiduciaries processing personal data.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Data Retention & Erasure\",\n    \"requirement\": \"A Data Fiduciary shall retain personal data for a period of ten years beyond the closing of an account for compliance with legal requirements.\",\n    \"source\": \"DPDP Act 2023, Section 5(10)\",\n    \"weight\": 2,\n    \"source_clause_ids\": [\"G000510\"],\n    \"checkable_test\": \"Verify that the document specifies the retention of personal data for a period of ten years beyond account closure for legal compliance.\",\n    \"applicability\": \"Data Fiduciaries subject to legal retention requirements.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Data Retention & Erasure\",\n    \"requirement\": \"A Data Fiduciary shall no longer retain personal data once the purpose for which it was collected has been fulfilled.\",\n    \"source\": \"DPDP Act 2023, Section 5(9)\",\n    \"weight\": 2,\n    \"source_clause_ids\": [\"G000509\"],\n    \"checkable_test\": \"Verify that the document specifies the obligation to delete personal data once the purpose of processing has been fulfilled.\",\n    \"applicability\": \"All Data Fiduciaries processing personal data.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  }\n]",
+  "parsed_entries": [
+    {
+      "category": "Security Safeguards",
+      "requirement": "A Data Fiduciary shall protect personal data in its possession or under its control by taking reasonable security safeguards to prevent personal data breaches.",
+      "source": "DPDP Act 2023, Section 5(2)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000502"
+      ],
+      "checkable_test": "Verify that the document specifies the use of reasonable security safeguards to prevent data breaches.",
+      "applicability": "All Data Fiduciaries processing personal data.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Breach Notification",
+      "requirement": "In the event of a personal data breach, the Data Fiduciary shall notify the Board and each affected Data Principal of the breach.",
+      "source": "DPDP Act 2023, Section 5(6)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000503"
+      ],
+      "checkable_test": "Verify that the document specifies procedures for notifying the Board and affected Data Principals in case of a data breach.",
+      "applicability": "All Data Fiduciaries processing personal data.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "A Data Fiduciary shall erase personal data upon the Data Principal withdrawing her consent.",
+      "source": "DPDP Act 2023, Section 5(5)(a)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000505"
+      ],
+      "checkable_test": "Verify that the document specifies the obligation to erase personal data upon withdrawal of consent.",
+      "applicability": "All Data Fiduciaries processing personal data.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "A Data Fiduciary shall retain personal data for a period of ten years beyond the closing of an account for compliance with legal requirements.",
+      "source": "DPDP Act 2023, Section 5(10)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000510"
+      ],
+      "checkable_test": "Verify that the document specifies the retention of personal data for a period of ten years beyond account closure for legal compliance.",
+      "applicability": "Data Fiduciaries subject to legal retention requirements.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "A Data Fiduciary shall no longer retain personal data once the purpose for which it was collected has been fulfilled.",
+      "source": "DPDP Act 2023, Section 5(9)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000509"
+      ],
+      "checkable_test": "Verify that the document specifies the obligation to delete personal data once the purpose of processing has been fulfilled.",
+      "applicability": "All Data Fiduciaries processing personal data.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T11:10:20.428116+00:00",
+  "multi_mapped_records": []
+}

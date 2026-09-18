@@ -1,0 +1,38 @@
+{
+  "batch_id": "485905395989407677cf1428",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001731",
+    "G001732",
+    "G001733",
+    "G001735",
+    "G001736",
+    "G001739",
+    "G001747",
+    "G001754"
+  ],
+  "raw_response": "[{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"A Digital Signature Certificate shall not be revoked unless the subscriber has been given an opportunity of being heard in the matter.\",\"source\":\"IT Act 2000, Section 41(3)\",\"weight\":2,\"source_clause_ids\":[\"G001747\"],\"checkable_test\":\"Verify that the subscriber is provided with an opportunity to respond before revocation of the Digital Signature Certificate.\",\"applicability\":\"Applicable to Digital Signature Certificate holders.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause outlines a procedural requirement for revocation of Digital Signature Certificates, ensuring due process for subscribers.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "A Digital Signature Certificate shall not be revoked unless the subscriber has been given an opportunity of being heard in the matter.",
+      "source": "IT Act 2000, Section 41(3)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001747"
+      ],
+      "checkable_test": "Verify that the subscriber is provided with an opportunity to respond before revocation of the Digital Signature Certificate.",
+      "applicability": "Applicable to Digital Signature Certificate holders.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause outlines a procedural requirement for revocation of Digital Signature Certificates, ensuring due process for subscribers.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T15:50:56.434385+00:00",
+  "multi_mapped_records": []
+}

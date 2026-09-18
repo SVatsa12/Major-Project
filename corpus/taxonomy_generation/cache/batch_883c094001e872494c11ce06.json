@@ -1,0 +1,113 @@
+{
+  "batch_id": "883c094001e872494c11ce06",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G002207",
+    "G002208",
+    "G002209",
+    "G002210",
+    "G002213",
+    "G002214",
+    "G002215",
+    "G002216"
+  ],
+  "raw_response": "[{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Public authorities must disseminate information in an accessible format, including electronic formats, at a cost-effective manner.\",\"source\":\"RTI Act 2005, Section 4(4)\",\"weight\":2,\"source_clause_ids\":[\"G002208\"],\"checkable_test\":\"Check if the information is provided in accessible formats, including electronic formats, at cost-effective rates.\",\"applicability\":\"Public authorities providing information under the RTI Act.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This requirement focuses on the accessibility and cost-effectiveness of information dissemination.\"},{\"category\":\"Data Retention & Erasure\",\"requirement\":\"Public authorities must ensure that information is made accessible to the public through various means, including notice boards, newspapers, media broadcasts, and the internet.\",\"source\":\"RTI Act 2005, Section 4(3)\",\"weight\":2,\"source_clause_ids\":[\"G002207\"],\"checkable_test\":\"Verify that information is disseminated through multiple accessible channels as specified.\",\"applicability\":\"Public authorities disseminating information under the RTI Act.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This requirement mandates the use of diverse and accessible dissemination methods.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Public authorities must designate Public Information Officers to handle information requests and provide assistance to information seekers.\",\"source\":\"RTI Act 2005, Section 5(1)\",\"weight\":3,\"source_clause_ids\":[\"G002210\"],\"checkable_test\":\"Confirm that Public Information Officers are designated and available to assist information seekers.\",\"applicability\":\"Public authorities required to handle information requests under the RTI Act.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation ensures that there are designated officers to manage information requests and provide support.\"},{\"category\":\"Grievance Redressal\",\"requirement\":\"Public authorities must appoint Assistant Public Information Officers to receive and forward information requests and appeals promptly.\",\"source\":\"RTI Act 2005, Section 19(2)\",\"weight\":2,\"source_clause_ids\":[\"G002213\"],\"checkable_test\":\"Check if Assistant Public Information Officers are appointed and functioning to receive and forward information requests and appeals.\",\"applicability\":\"Public authorities handling information requests and appeals under the RTI Act.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures that there is a dedicated channel for receiving and processing information requests and appeals.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Public authorities must extend the response period by five days when information requests or appeals are submitted to Assistant Public Information Officers.\",\"source\":\"RTI Act 2005, Section 19(5)\",\"weight\":2,\"source_clause_ids\":[\"G002215\"],\"checkable_test\":\"Verify that the response period is extended by five days for submissions to Assistant Public Information Officers.\",\"applicability\":\"Public authorities handling information requests and appeals under the RTI Act.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures that there is an extended timeline for processing requests submitted to Assistant Public Information Officers.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Public authorities must deal with information requests and provide reasonable assistance to information seekers.\",\"source\":\"RTI Act 2005, Section 19(6)\",\"weight\":3,\"source_clause_ids\":[\"G002216\"],\"checkable_test\":\"Confirm that Public Information Officers are actively handling information requests and providing reasonable assistance.\",\"applicability\":\"Public authorities required to handle information requests under the RTI Act.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation ensures that information seekers receive adequate support and assistance when requesting information.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Public authorities must disseminate information in an accessible format, including electronic formats, at a cost-effective manner.",
+      "source": "RTI Act 2005, Section 4(4)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002208"
+      ],
+      "checkable_test": "Check if the information is provided in accessible formats, including electronic formats, at cost-effective rates.",
+      "applicability": "Public authorities providing information under the RTI Act.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This requirement focuses on the accessibility and cost-effectiveness of information dissemination.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "Public authorities must ensure that information is made accessible to the public through various means, including notice boards, newspapers, media broadcasts, and the internet.",
+      "source": "RTI Act 2005, Section 4(3)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002207"
+      ],
+      "checkable_test": "Verify that information is disseminated through multiple accessible channels as specified.",
+      "applicability": "Public authorities disseminating information under the RTI Act.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This requirement mandates the use of diverse and accessible dissemination methods.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Public authorities must designate Public Information Officers to handle information requests and provide assistance to information seekers.",
+      "source": "RTI Act 2005, Section 5(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G002210"
+      ],
+      "checkable_test": "Confirm that Public Information Officers are designated and available to assist information seekers.",
+      "applicability": "Public authorities required to handle information requests under the RTI Act.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation ensures that there are designated officers to manage information requests and provide support.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Grievance Redressal",
+      "requirement": "Public authorities must appoint Assistant Public Information Officers to receive and forward information requests and appeals promptly.",
+      "source": "RTI Act 2005, Section 19(2)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002213"
+      ],
+      "checkable_test": "Check if Assistant Public Information Officers are appointed and functioning to receive and forward information requests and appeals.",
+      "applicability": "Public authorities handling information requests and appeals under the RTI Act.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures that there is a dedicated channel for receiving and processing information requests and appeals.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Public authorities must extend the response period by five days when information requests or appeals are submitted to Assistant Public Information Officers.",
+      "source": "RTI Act 2005, Section 19(5)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002215"
+      ],
+      "checkable_test": "Verify that the response period is extended by five days for submissions to Assistant Public Information Officers.",
+      "applicability": "Public authorities handling information requests and appeals under the RTI Act.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures that there is an extended timeline for processing requests submitted to Assistant Public Information Officers.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Public authorities must deal with information requests and provide reasonable assistance to information seekers.",
+      "source": "RTI Act 2005, Section 19(6)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G002216"
+      ],
+      "checkable_test": "Confirm that Public Information Officers are actively handling information requests and providing reasonable assistance.",
+      "applicability": "Public authorities required to handle information requests under the RTI Act.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation ensures that information seekers receive adequate support and assistance when requesting information.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T11:57:04.901700+00:00",
+  "multi_mapped_records": []
+}

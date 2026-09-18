@@ -1,0 +1,53 @@
+{
+  "cache_key": "3e9a96880434fbe38d8ed571866da8eef19713d393b65631c0f5524af604eb20",
+  "created_at_utc": "2026-09-17T04:29:17.752303+00:00",
+  "prompt_version": "policy-labeling-v7-reliable-batches",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S000163",
+    "S000164",
+    "S000165",
+    "S000166",
+    "S000167",
+    "S000168"
+  ],
+  "labels": [
+    {
+      "clause_id": "S000163",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause defines 'Administrators' and their access rights but does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S000164",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause defines 'Affiliate' and does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S000165",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause defines 'Anti-Bribery Laws' and does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S000166",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause defines 'AUP' and does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S000167",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause defines 'BAA' and does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S000168",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause defines 'Brand Features' and does not meaningfully address any listed requirement."
+    }
+  ],
+  "status": "SUCCESS"
+}

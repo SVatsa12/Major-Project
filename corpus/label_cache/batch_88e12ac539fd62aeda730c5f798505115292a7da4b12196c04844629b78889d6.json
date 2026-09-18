@@ -1,0 +1,53 @@
+{
+  "cache_key": "88e12ac539fd62aeda730c5f798505115292a7da4b12196c04844629b78889d6",
+  "created_at_utc": "2026-09-16T11:51:36.815834+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S000205",
+    "S000206",
+    "S000207",
+    "S000208",
+    "S000209",
+    "S000210"
+  ],
+  "labels": [
+    {
+      "clause_id": "S000205",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause defines SecOps Services and does not meaningfully address any listed taxonomy requirement."
+    },
+    {
+      "clause_id": "S000206",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause defines Service Specific Terms and does not meaningfully address any listed taxonomy requirement."
+    },
+    {
+      "clause_id": "S000207",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause defines GCP Services terms and does not meaningfully address any listed taxonomy requirement."
+    },
+    {
+      "clause_id": "S000208",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause defines GWS Services terms and does not meaningfully address any listed taxonomy requirement."
+    },
+    {
+      "clause_id": "S000209",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause defines SecOps Services terms and does not meaningfully address any listed taxonomy requirement."
+    },
+    {
+      "clause_id": "S000210",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause defines Looker Services terms and does not meaningfully address any listed taxonomy requirement."
+    }
+  ],
+  "status": "SUCCESS"
+}

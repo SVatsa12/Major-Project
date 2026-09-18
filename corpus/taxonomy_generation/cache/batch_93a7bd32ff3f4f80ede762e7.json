@@ -1,0 +1,45 @@
+{
+  "batch_id": "93a7bd32ff3f4f80ede762e7",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G000482",
+    "G000483",
+    "G000484",
+    "G000485",
+    "G000486",
+    "G000490",
+    "G000495",
+    "G000496"
+  ],
+  "raw_response": "[{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"A Data Fiduciary must process personal data only for purposes explicitly permitted by law, including providing services, fulfilling legal obligations, and safeguarding employer interests.\",\"source\":\"DPDP Act 2023, Section 7\",\"weight\":3,\"source_clause_ids\":[\"G000482\",\"G000483\",\"G000484\",\"G000485\",\"G000486\",\"G000490\",\"G000495\",\"G000496\"],\"checkable_test\":\"Verify that the document specifies permitted purposes for data processing as outlined in the DPDP Act 2023.\",\"applicability\":\"All data fiduciaries processing personal data for permitted purposes.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement covers multiple clauses that define permissible data processing purposes under the DPDP Act 2023.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "A Data Fiduciary must process personal data only for purposes explicitly permitted by law, including providing services, fulfilling legal obligations, and safeguarding employer interests.",
+      "source": "DPDP Act 2023, Section 7",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000482",
+        "G000483",
+        "G000484",
+        "G000485",
+        "G000486",
+        "G000490",
+        "G000495",
+        "G000496"
+      ],
+      "checkable_test": "Verify that the document specifies permitted purposes for data processing as outlined in the DPDP Act 2023.",
+      "applicability": "All data fiduciaries processing personal data for permitted purposes.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement covers multiple clauses that define permissible data processing purposes under the DPDP Act 2023.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T11:08:58.682461+00:00",
+  "multi_mapped_records": []
+}

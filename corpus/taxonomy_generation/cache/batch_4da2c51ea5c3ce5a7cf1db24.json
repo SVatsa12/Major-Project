@@ -1,0 +1,53 @@
+{
+  "batch_id": "4da2c51ea5c3ce5a7cf1db24",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001380",
+    "G001381",
+    "G001382",
+    "G001384",
+    "G001385",
+    "G001386",
+    "G001388",
+    "G001389"
+  ],
+  "raw_response": "[{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"A subscriber must generate a key pair and fulfill their duties as outlined in the Electronic Signature Certificate regulations.\",\"source\":\"IT Act 2000, Section 40A\",\"weight\":2,\"source_clause_ids\":[\"G001388\"],\"checkable_test\":\"Verify if the subscriber's duties include generating a key pair and fulfilling their obligations as per the Electronic Signature Certificate regulations.\",\"applicability\":\"Applicable to subscribers of Electronic Signature Certificates.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is derived from the duties of subscribers under the IT Act 2000.\"},{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"A subscriber must accept the Digital Signature Certificate as issued, ensuring compliance with the associated obligations.\",\"source\":\"IT Act 2000, Section 41\",\"weight\":2,\"source_clause_ids\":[\"G001389\"],\"checkable_test\":\"Check if the subscriber's obligations include accepting the Digital Signature Certificate and adhering to its terms.\",\"applicability\":\"Applicable to subscribers of Digital Signature Certificates.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is derived from the acceptance obligations of subscribers under the IT Act 2000.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "A subscriber must generate a key pair and fulfill their duties as outlined in the Electronic Signature Certificate regulations.",
+      "source": "IT Act 2000, Section 40A",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001388"
+      ],
+      "checkable_test": "Verify if the subscriber's duties include generating a key pair and fulfilling their obligations as per the Electronic Signature Certificate regulations.",
+      "applicability": "Applicable to subscribers of Electronic Signature Certificates.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is derived from the duties of subscribers under the IT Act 2000.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "A subscriber must accept the Digital Signature Certificate as issued, ensuring compliance with the associated obligations.",
+      "source": "IT Act 2000, Section 41",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001389"
+      ],
+      "checkable_test": "Check if the subscriber's obligations include accepting the Digital Signature Certificate and adhering to its terms.",
+      "applicability": "Applicable to subscribers of Digital Signature Certificates.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is derived from the acceptance obligations of subscribers under the IT Act 2000.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T15:56:35.842544+00:00",
+  "multi_mapped_records": []
+}

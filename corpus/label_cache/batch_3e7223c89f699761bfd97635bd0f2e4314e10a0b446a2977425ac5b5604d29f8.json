@@ -1,0 +1,53 @@
+{
+  "cache_key": "3e7223c89f699761bfd97635bd0f2e4314e10a0b446a2977425ac5b5604d29f8",
+  "created_at_utc": "2026-09-17T04:50:39.289978+00:00",
+  "prompt_version": "policy-labeling-v7-reliable-batches",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S000415",
+    "S000416",
+    "S000417",
+    "S000418",
+    "S000419",
+    "S000420"
+  ],
+  "labels": [
+    {
+      "clause_id": "S000415",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause concerns intellectual property rights, not personal data protection or security safeguards."
+    },
+    {
+      "clause_id": "S000416",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause is a heading and does not meaningfully address any taxonomy requirement."
+    },
+    {
+      "clause_id": "S000417",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause concerns intellectual property rights, not personal data protection or security safeguards."
+    },
+    {
+      "clause_id": "S000418",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause is a heading and does not meaningfully address any taxonomy requirement."
+    },
+    {
+      "clause_id": "S000419",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause concerns intellectual property rights, not personal data protection or security safeguards."
+    },
+    {
+      "clause_id": "S000420",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause is a heading and does not meaningfully address any taxonomy requirement."
+    }
+  ],
+  "status": "SUCCESS"
+}

@@ -1,0 +1,38 @@
+{
+  "batch_id": "ddd82b2438f31e93c011e652",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001586",
+    "G001588",
+    "G001589",
+    "G001596",
+    "G001597",
+    "G001600",
+    "G001601",
+    "G001602"
+  ],
+  "raw_response": "[{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"An electronic record is deemed to be received at the place where the addressee has his place of business.\",\"source\":\"IT Act 2000, Section 12(3)\",\"weight\":2,\"source_clause_ids\":[\"G001600\"],\"checkable_test\":\"Verify that the platform designates the addressee's place of business as the location where electronic records are deemed received.\",\"applicability\":\"Applies to electronic records sent through digital platforms.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause defines the legal location of receipt for electronic records, which can be checked against platform governance documents.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "An electronic record is deemed to be received at the place where the addressee has his place of business.",
+      "source": "IT Act 2000, Section 12(3)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001600"
+      ],
+      "checkable_test": "Verify that the platform designates the addressee's place of business as the location where electronic records are deemed received.",
+      "applicability": "Applies to electronic records sent through digital platforms.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause defines the legal location of receipt for electronic records, which can be checked against platform governance documents.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T14:32:35.066202+00:00",
+  "multi_mapped_records": []
+}

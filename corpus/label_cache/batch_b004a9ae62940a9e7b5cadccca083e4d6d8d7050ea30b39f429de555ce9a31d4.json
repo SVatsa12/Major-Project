@@ -1,0 +1,53 @@
+{
+  "cache_key": "b004a9ae62940a9e7b5cadccca083e4d6d8d7050ea30b39f429de555ce9a31d4",
+  "created_at_utc": "2026-09-17T06:00:22.486946+00:00",
+  "prompt_version": "policy-labeling-v7-reliable-batches",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S001249",
+    "S001250",
+    "S001251",
+    "S001252",
+    "S001253",
+    "S001254"
+  ],
+  "labels": [
+    {
+      "clause_id": "S001249",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses intellectual property infringement and anti-circumvention, not personal data security or related safeguards."
+    },
+    {
+      "clause_id": "S001250",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses counterfeit products and intellectual property, not personal data security or related safeguards."
+    },
+    {
+      "clause_id": "S001251",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses false advertising and intellectual property, not personal data security or related safeguards."
+    },
+    {
+      "clause_id": "S001252",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses copyright infringement and reporting mechanisms, not personal data security or related safeguards."
+    },
+    {
+      "clause_id": "S001253",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses brand guidelines and intellectual property, not personal data security or related safeguards."
+    },
+    {
+      "clause_id": "S001254",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses ad quality and creative guidelines, not personal data security or related safeguards."
+    }
+  ],
+  "status": "SUCCESS"
+}

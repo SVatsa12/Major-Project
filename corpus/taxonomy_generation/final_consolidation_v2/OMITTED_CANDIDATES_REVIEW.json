@@ -1,0 +1,858 @@
+[
+  {
+    "candidate_id": "TC-000161",
+    "act": "IT_ACT_2000",
+    "category": "Security Safeguards",
+    "requirement": "The Controller of Certifying Authorities must maintain a public database containing the disclosure record of every Certifying Authority.",
+    "source_clause_ids": [
+      "G001638"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000162",
+    "act": "IT_ACT_2000",
+    "category": "Security Safeguards",
+    "requirement": "The Controller of Certifying Authorities must publish notice of suspension or revocation of a Certifying Authority in the database maintained by him.",
+    "source_clause_ids": [
+      "G001677"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000192",
+    "act": "RTI_ACT_2005",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Public authorities must disseminate information in an accessible format, including electronic formats, at a cost-effective manner.",
+    "source_clause_ids": [
+      "G002208"
+    ],
+    "reasons": [
+      "RTI public-authority procedural obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000195",
+    "act": "RTI_ACT_2005",
+    "category": "Grievance Redressal",
+    "requirement": "Public authorities must appoint Assistant Public Information Officers to receive and forward information requests and appeals promptly.",
+    "source_clause_ids": [
+      "G002213"
+    ],
+    "reasons": [
+      "RTI public-authority procedural obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000196",
+    "act": "RTI_ACT_2005",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Public authorities must extend the response period by five days when information requests or appeals are submitted to Assistant Public Information Officers.",
+    "source_clause_ids": [
+      "G002215"
+    ],
+    "reasons": [
+      "RTI public-authority procedural obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000197",
+    "act": "RTI_ACT_2005",
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "Public authorities must deal with information requests and provide reasonable assistance to information seekers.",
+    "source_clause_ids": [
+      "G002216"
+    ],
+    "reasons": [
+      "RTI public-authority procedural obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000199",
+    "act": "RTI_ACT_2005",
+    "category": "Data Retention & Erasure",
+    "requirement": "Public authorities must provide requested information within thirty days of receipt, unless exempted.",
+    "source_clause_ids": [
+      "G002229"
+    ],
+    "reasons": [
+      "RTI public-authority procedural obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000201",
+    "act": "RTI_ACT_2005",
+    "category": "Grievance Redressal",
+    "requirement": "Failure to respond within the specified period is deemed a refusal of the request.",
+    "source_clause_ids": [
+      "G002232"
+    ],
+    "reasons": [
+      "RTI public-authority procedural obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000224",
+    "act": "RTI_ACT_2005",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Information Officer must inform the applicant of the reasons for rejecting a request for information, including any findings on material questions of fact and the basis for those findings.",
+    "source_clause_ids": [
+      "G002267"
+    ],
+    "reasons": [
+      "RTI public-authority procedural obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000228",
+    "act": "RTI_ACT_2005",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Public Information Officer must provide a written notice to the third party within five days of receiving a request for information that has been treated as confidential by the third party.",
+    "source_clause_ids": [
+      "G002276"
+    ],
+    "reasons": [
+      "RTI public-authority procedural obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000229",
+    "act": "RTI_ACT_2005",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Public Information Officer must invite the third party to submit a written or oral representation regarding the disclosure of confidential information.",
+    "source_clause_ids": [
+      "G002277"
+    ],
+    "reasons": [
+      "RTI public-authority procedural obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000230",
+    "act": "RTI_ACT_2005",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Public Information Officer must provide the third party with an opportunity to make a representation against the proposed disclosure of confidential information within ten days of receiving the notice.",
+    "source_clause_ids": [
+      "G002279"
+    ],
+    "reasons": [
+      "RTI public-authority procedural obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000231",
+    "act": "RTI_ACT_2005",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Public Information Officer must make a decision on the disclosure of confidential information within forty days of receiving the request, after considering the third party's representation.",
+    "source_clause_ids": [
+      "G002281"
+    ],
+    "reasons": [
+      "RTI public-authority procedural obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000232",
+    "act": "RTI_ACT_2005",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Public Information Officer must include a statement in the notice that the third party has the right to appeal the decision regarding the disclosure of confidential information.",
+    "source_clause_ids": [
+      "G002282"
+    ],
+    "reasons": [
+      "RTI public-authority procedural obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000237",
+    "act": "RTI_ACT_2005",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Central Information Commission or State Information Commission must impose a penalty of up to twenty-five thousand rupees for unjustified refusals or malafidely denied requests for information.",
+    "source_clause_ids": [
+      "G002414"
+    ],
+    "reasons": [
+      "RTI public-authority procedural obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000238",
+    "act": "RTI_ACT_2005",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Public authorities must provide the postal and street address, phone and fax number, and electronic mail address of their Central Public Information Officer or State Public Information Officer.",
+    "source_clause_ids": [
+      "G002455"
+    ],
+    "reasons": [
+      "RTI public-authority procedural obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000240",
+    "act": "RTI_ACT_2005",
+    "category": "Data Retention & Erasure",
+    "requirement": "Public authorities must specify the manner and form in which requests for access to information shall be made to their Central Public Information Officer or State Public Information Officer.",
+    "source_clause_ids": [
+      "G002456"
+    ],
+    "reasons": [
+      "RTI public-authority procedural obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000241",
+    "act": "RTI_ACT_2005",
+    "category": "Data Principal Rights",
+    "requirement": "Public authorities must specify the assistance available from and the duties of their Central Public Information Officer or State Public Information Officer under the RTI Act.",
+    "source_clause_ids": [
+      "G002457"
+    ],
+    "reasons": [
+      "RTI public-authority procedural obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000421",
+    "act": "IT_ACT_2000",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "A Certifying Authority must comply with conditions and restrictions specified by regulations to maintain recognition under the IT Act 2000.",
+    "source_clause_ids": [
+      "G001642"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000422",
+    "act": "IT_ACT_2000",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "A Certifying Authority must maintain compliance with the conditions and restrictions to avoid revocation of recognition.",
+    "source_clause_ids": [
+      "G001642"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000423",
+    "act": "IT_ACT_2000",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "A Certifying Authority must obtain prior approval from the Central Government before being recognized under the IT Act 2000.",
+    "source_clause_ids": [
+      "G001640"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000424",
+    "act": "IT_ACT_2000",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "A Certifying Authority must issue valid electronic signature certificates that are recognized under the IT Act 2000.",
+    "source_clause_ids": [
+      "G001641"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000427",
+    "act": "IT_ACT_2000",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "A Certifying Authority's licence may not be suspended or revoked without providing a reasonable opportunity to show cause against the proposed action.",
+    "source_clause_ids": [
+      "G001669",
+      "G001670",
+      "G001674"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000428",
+    "act": "IT_ACT_2000",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "A Certifying Authority whose licence has been suspended may not issue any electronic signature Certificate during the suspension.",
+    "source_clause_ids": [
+      "G001675"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000433",
+    "act": "IT_ACT_2000",
+    "category": "Confidentiality & Misuse of Data",
+    "requirement": "Certifying Authorities must ensure that all employees and engaged personnel comply with the provisions of the IT Act, 2000, rules, regulations, and orders made thereunder.",
+    "source_clause_ids": [
+      "G001692"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000434",
+    "act": "IT_ACT_2000",
+    "category": "Confidentiality & Misuse of Data",
+    "requirement": "Certifying Authorities must display their licence at a conspicuous place of their premises.",
+    "source_clause_ids": [
+      "G001698"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000435",
+    "act": "IT_ACT_2000",
+    "category": "Confidentiality & Misuse of Data",
+    "requirement": "Certifying Authorities must surrender their licence immediately upon suspension or revocation.",
+    "source_clause_ids": [
+      "G001699"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000436",
+    "act": "IT_ACT_2000",
+    "category": "Confidentiality & Misuse of Data",
+    "requirement": "Certifying Authorities must disclose, in the manner specified by regulations, notice of the revocation or suspension of their Certifying Authority certificate.",
+    "source_clause_ids": [
+      "G001704"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000437",
+    "act": "IT_ACT_2000",
+    "category": "Confidentiality & Misuse of Data",
+    "requirement": "Certifying Authority must communicate suspension of a Digital Signature Certificate to the subscriber.",
+    "source_clause_ids": [
+      "G001737"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000438",
+    "act": "IT_ACT_2000",
+    "category": "Confidentiality & Misuse of Data",
+    "requirement": "Certifying Authority may revoke a Digital Signature Certificate under specified conditions.",
+    "source_clause_ids": [
+      "G001738"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000439",
+    "act": "IT_ACT_2000",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Certifying Authority must not reject an application unless the applicant is given a reasonable opportunity to show cause against the proposed rejection.",
+    "source_clause_ids": [
+      "G001718"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000440",
+    "act": "IT_ACT_2000",
+    "category": "Confidentiality & Misuse of Data",
+    "requirement": "Certifying Authority must issue a Digital Signature Certificate upon application, subject to prescribed conditions.",
+    "source_clause_ids": [
+      "G001710"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000441",
+    "act": "IT_ACT_2000",
+    "category": "Confidentiality & Misuse of Data",
+    "requirement": "Certifying Authority must charge a fee not exceeding twenty-five thousand rupees for the issuance of a Digital Signature Certificate.",
+    "source_clause_ids": [
+      "G001711"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000442",
+    "act": "IT_ACT_2000",
+    "category": "Confidentiality & Misuse of Data",
+    "requirement": "Certifying Authority must issue a certification practice statement or a statement containing specified particulars with the application for a Digital Signature Certificate.",
+    "source_clause_ids": [
+      "G001713"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000443",
+    "act": "IT_ACT_2000",
+    "category": "Confidentiality & Misuse of Data",
+    "requirement": "Certifying Authority must certify that the Digital Signature Certificate is issued in accordance with prescribed conditions.",
+    "source_clause_ids": [
+      "G001719"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000444",
+    "act": "IT_ACT_2000",
+    "category": "Confidentiality & Misuse of Data",
+    "requirement": "Certifying Authority must take action if any event occurs that may materially and adversely affect the integrity of its computer system or the conditions subject to which a Digital Signature Certificate was granted.",
+    "source_clause_ids": [
+      "G001706"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000445",
+    "act": "IT_ACT_2000",
+    "category": "Security Safeguards",
+    "requirement": "Certifying Authorities must revoke a Digital Signature Certificate if their private key or security system is compromised in a manner materially affecting the certificate's reliability.",
+    "source_clause_ids": [
+      "G001745"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000446",
+    "act": "IT_ACT_2000",
+    "category": "Security Safeguards",
+    "requirement": "Certifying Authorities must communicate the revocation of a Digital Signature Certificate to the subscriber.",
+    "source_clause_ids": [
+      "G001748"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000447",
+    "act": "IT_ACT_2000",
+    "category": "Security Safeguards",
+    "requirement": "Certifying Authorities must publish notices of suspension or revocation in the repository specified in the Digital Signature Certificate.",
+    "source_clause_ids": [
+      "G001749"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000448",
+    "act": "IT_ACT_2000",
+    "category": "Security Safeguards",
+    "requirement": "Certifying Authorities must publish notices of suspension or revocation in all specified repositories.",
+    "source_clause_ids": [
+      "G001752"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000449",
+    "act": "IT_ACT_2000",
+    "category": "Security Safeguards",
+    "requirement": "Subscribers must generate a key pair by applying the security procedure specified by the Certifying Authority.",
+    "source_clause_ids": [
+      "G001753"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000450",
+    "act": "IT_ACT_2000",
+    "category": "Security Safeguards",
+    "requirement": "Subscribers must ensure all representations made to the Certifying Authority are true and accurate.",
+    "source_clause_ids": [
+      "G001759"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000452",
+    "act": "IT_ACT_2000",
+    "category": "Security Safeguards",
+    "requirement": "A subscriber must promptly notify the Certifying Authority if the private key corresponding to their Digital Signature Certificate has been compromised.",
+    "source_clause_ids": [
+      "G001762"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000457",
+    "act": "IT_ACT_2000",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Intermediaries must furnish documents, returns, or reports to the Controller or Certifying Authority as required.",
+    "source_clause_ids": [
+      "G001797"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000479",
+    "act": "IT_ACT_2000",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Intermediaries must maintain records of Certifying Authority disclosures as specified in section 18(1)(n) of the IT Act 2000.",
+    "source_clause_ids": [
+      "G002073"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000480",
+    "act": "IT_ACT_2000",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Intermediaries must specify conditions and restrictions for recognizing foreign Certifying Authorities under section 19(1) of the IT Act 2000.",
+    "source_clause_ids": [
+      "G002074"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000482",
+    "act": "IT_ACT_2000",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Intermediaries must observe other standards set for Certifying Authorities under section 30(d) of the IT Act 2000.",
+    "source_clause_ids": [
+      "G002076"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000483",
+    "act": "IT_ACT_2000",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Intermediaries must specify the manner of disclosure by Certifying Authorities under section 34(1) of the IT Act 2000.",
+    "source_clause_ids": [
+      "G002077"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000485",
+    "act": "IT_ACT_2000",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Intermediaries must specify the manner of communication of private key compromise to Certifying Authorities under section 42(2) of the IT Act 2000.",
+    "source_clause_ids": [
+      "G002079"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000494",
+    "act": "RTI_ACT_2005",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Public authorities must designate a Public Information Officer within one hundred days of the enactment of the RTI Act.",
+    "source_clause_ids": [
+      "G002212"
+    ],
+    "reasons": [
+      "RTI public-authority procedural obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000504",
+    "act": "RTI_ACT_2005",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "An appeal against a decision of the Central Public Information Officer or State Public Information Officer must be filed within the time specified in sub-section (3) of section 7.",
+    "source_clause_ids": [
+      "G002389"
+    ],
+    "reasons": [
+      "RTI public-authority procedural obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000561",
+    "act": "IT_ACT_2000",
+    "category": "Security Safeguards",
+    "requirement": "Certifying Authorities must follow specific procedures when issuing electronic signature certificates.",
+    "source_clause_ids": [
+      "G001378"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000562",
+    "act": "IT_ACT_2000",
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "Certifying Authorities must ensure compliance with the IT Act and related regulations.",
+    "source_clause_ids": [
+      "G001379"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000576",
+    "act": "IT_ACT_2000",
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "Certifying Authorities must specify the conditions under which they conduct their business.",
+    "source_clause_ids": [
+      "G001629"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000577",
+    "act": "IT_ACT_2000",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Certifying Authorities must specify the manner in which they shall conduct their dealings with subscribers.",
+    "source_clause_ids": [
+      "G001635"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000579",
+    "act": "IT_ACT_2000",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Applications for Certifying Authority licenses must include a certification practice statement.",
+    "source_clause_ids": [
+      "G001655"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000580",
+    "act": "IT_ACT_2000",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Applications for Certifying Authority licenses must include a statement on procedures for identifying the applicant.",
+    "source_clause_ids": [
+      "G001656"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000589",
+    "act": "IT_ACT_2000",
+    "category": "Breach Notification",
+    "requirement": "Certifying authorities must use reasonable efforts to notify any person who is likely to be affected by an occurrence that materially and adversely affects the reliability of a certificate or the Authority's ability to perform its services.",
+    "source_clause_ids": [
+      "G001705"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000590",
+    "act": "IT_ACT_2000",
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "Certifying authorities must act in accordance with the procedure specified in their certification practice statement to deal with events or situations that materially and adversely affect the reliability of a certificate or the Authority's ability to perform its services.",
+    "source_clause_ids": [
+      "G001708"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000593",
+    "act": "IT_ACT_2000",
+    "category": "Consent & Notice",
+    "requirement": "Certifying authorities must provide a certification practice statement relevant to their operations.",
+    "source_clause_ids": [
+      "G001703"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  },
+  {
+    "candidate_id": "TC-000625",
+    "act": "IT_ACT_2000",
+    "category": "Security Safeguards",
+    "requirement": "Certifying authorities must ensure that their services provide a reasonable level of reliability suited to the intended functions.",
+    "source_clause_ids": [
+      "G001688"
+    ],
+    "reasons": [
+      "IT certifying-authority-specific obligation"
+    ],
+    "decision": "OMIT_REVIEW",
+    "human_review_required": true
+  }
+]

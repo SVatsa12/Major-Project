@@ -1,0 +1,53 @@
+{
+  "cache_key": "90fb50c34e2600ad11de571609c022f1440b1ad26fe8156fbc7820bd689f4497",
+  "created_at_utc": "2026-09-16T21:16:02.563587+00:00",
+  "prompt_version": "policy-labeling-v5-taxonomy-boundaries-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S000073",
+    "S000074",
+    "S000075",
+    "S000076",
+    "S000077",
+    "S000078"
+  ],
+  "labels": [
+    {
+      "clause_id": "S000073",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any of the specified data protection or privacy requirements."
+    },
+    {
+      "clause_id": "S000074",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause focuses on restrictions on use and compliance with laws, not on data security or privacy protections."
+    },
+    {
+      "clause_id": "S000075",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause pertains to documentation availability, not data security or privacy measures."
+    },
+    {
+      "clause_id": "S000076",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses copyright enforcement and safe harbor provisions, not data security or privacy protections."
+    },
+    {
+      "clause_id": "S000077",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause focuses on content enforcement and compliance with policies, not on data security or privacy measures."
+    },
+    {
+      "clause_id": "S000078",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause outlines additional terms for specific services, not data security or privacy protections."
+    }
+  ],
+  "status": "SUCCESS"
+}

@@ -1,0 +1,157 @@
+{
+  "batch_id": "98253ac878dbf7c1a63e9857",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G000511",
+    "G000513",
+    "G000514",
+    "G000515",
+    "G000516",
+    "G000517",
+    "G000518",
+    "G000519"
+  ],
+  "raw_response": "[\n  {\n    \"category\": \"Consent & Notice\",\n    \"requirement\": \"A Data Fiduciary must cease processing personal data if the Data Principal does not exercise her rights for a prescribed period.\",\n    \"source\": \"DPDP Act 2023, Section 8(8)\",\n    \"weight\": 2,\n    \"source_clause_ids\": [\"G000511\"],\n    \"checkable_test\": \"Verify if the document specifies a time period for inactivity before ceasing data processing.\",\n    \"applicability\": \"Applies to Data Fiduciaries who process personal data based on user inactivity.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Data Retention & Erasure\",\n    \"requirement\": \"A Data Fiduciary must establish a time period for the retention of personal data and erase it upon expiry.\",\n    \"source\": \"DPDP Act 2023, Section 8(8)\",\n    \"weight\": 2,\n    \"source_clause_ids\": [\"G000511\"],\n    \"checkable_test\": \"Check if the document specifies a time period for data retention and erasure.\",\n    \"applicability\": \"Applies to Data Fiduciaries who retain personal data for a specific period.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Security Safeguards\",\n    \"requirement\": \"A Data Fiduciary must publish business contact information for a Data Protection Officer or a person who can answer questions from Data Principals.\",\n    \"source\": \"DPDP Act 2023, Section 8(9)\",\n    \"weight\": 2,\n    \"source_clause_ids\": [\"G000514\"],\n    \"checkable_test\": \"Verify if the document provides contact details for a Data Protection Officer or a representative.\",\n    \"applicability\": \"Applies to Data Fiduciaries that have a Data Protection Officer.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Grievance Redressal\",\n    \"requirement\": \"A Data Fiduciary must establish an effective mechanism to redress grievances of Data Principals.\",\n    \"source\": \"DPDP Act 2023, Section 8(10)\",\n    \"weight\": 2,\n    \"source_clause_ids\": [\"G000515\"],\n    \"checkable_test\": \"Check if the document outlines a grievance redressal mechanism.\",\n    \"applicability\": \"Applies to all Data Fiduciaries.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Children/Vulnerable Groups\",\n    \"requirement\": \"A Data Fiduciary must obtain verifiable consent from the parent or lawful guardian of a child or person with disability before processing their personal data.\",\n    \"source\": \"DPDP Act 2023, Section 8(9)(1)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G000517\"],\n    \"checkable_test\": \"Verify if the document requires verifiable consent from a parent or guardian for children or persons with disabilities.\",\n    \"applicability\": \"Applies to Data Fiduciaries processing data of children or persons with disabilities.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Children/Vulnerable Groups\",\n    \"requirement\": \"A Data Fiduciary must not process personal data of children if it is likely to cause detrimental effects on their well-being.\",\n    \"source\": \"DPDP Act 2023, Section 8(9)(2)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G000518\"],\n    \"checkable_test\": \"Check if the document prohibits processing personal data of children that may harm their well-being.\",\n    \"applicability\": \"Applies to Data Fiduciaries processing data of children.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Children/Vulnerable Groups\",\n    \"requirement\": \"A Data Fiduciary must not engage in tracking or behavioral monitoring of children or targeted advertising directed at children.\",\n    \"source\": \"DPDP Act 2023, Section 8(9)(3)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G000519\"],\n    \"checkable_test\": \"Verify if the document prohibits tracking or targeted advertising of children.\",\n    \"applicability\": \"Applies to Data Fiduciaries processing data of children.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  }\n]",
+  "parsed_entries": [
+    {
+      "category": "Consent & Notice",
+      "requirement": "A Data Fiduciary must cease processing personal data if the Data Principal does not exercise her rights for a prescribed period.",
+      "source": "DPDP Act 2023, Section 8(8)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000511"
+      ],
+      "checkable_test": "Verify if the document specifies a time period for inactivity before ceasing data processing.",
+      "applicability": "Applies to Data Fiduciaries who process personal data based on user inactivity.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "A Data Fiduciary must establish a time period for the retention of personal data and erase it upon expiry.",
+      "source": "DPDP Act 2023, Section 8(8)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000511"
+      ],
+      "checkable_test": "Check if the document specifies a time period for data retention and erasure.",
+      "applicability": "Applies to Data Fiduciaries who retain personal data for a specific period.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "A Data Fiduciary must publish business contact information for a Data Protection Officer or a person who can answer questions from Data Principals.",
+      "source": "DPDP Act 2023, Section 8(9)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000514"
+      ],
+      "checkable_test": "Verify if the document provides contact details for a Data Protection Officer or a representative.",
+      "applicability": "Applies to Data Fiduciaries that have a Data Protection Officer.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Grievance Redressal",
+      "requirement": "A Data Fiduciary must establish an effective mechanism to redress grievances of Data Principals.",
+      "source": "DPDP Act 2023, Section 8(10)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000515"
+      ],
+      "checkable_test": "Check if the document outlines a grievance redressal mechanism.",
+      "applicability": "Applies to all Data Fiduciaries.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Children/Vulnerable Groups",
+      "requirement": "A Data Fiduciary must obtain verifiable consent from the parent or lawful guardian of a child or person with disability before processing their personal data.",
+      "source": "DPDP Act 2023, Section 8(9)(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000517"
+      ],
+      "checkable_test": "Verify if the document requires verifiable consent from a parent or guardian for children or persons with disabilities.",
+      "applicability": "Applies to Data Fiduciaries processing data of children or persons with disabilities.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Children/Vulnerable Groups",
+      "requirement": "A Data Fiduciary must not process personal data of children if it is likely to cause detrimental effects on their well-being.",
+      "source": "DPDP Act 2023, Section 8(9)(2)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000518"
+      ],
+      "checkable_test": "Check if the document prohibits processing personal data of children that may harm their well-being.",
+      "applicability": "Applies to Data Fiduciaries processing data of children.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Children/Vulnerable Groups",
+      "requirement": "A Data Fiduciary must not engage in tracking or behavioral monitoring of children or targeted advertising directed at children.",
+      "source": "DPDP Act 2023, Section 8(9)(3)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000519"
+      ],
+      "checkable_test": "Verify if the document prohibits tracking or targeted advertising of children.",
+      "applicability": "Applies to Data Fiduciaries processing data of children.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T11:12:17.159515+00:00",
+  "multi_mapped_records": [
+    {
+      "batch_id": "98253ac878dbf7c1a63e9857",
+      "source_clause_id": "G000511",
+      "total_entries": 2,
+      "distinct_categories": 2,
+      "categories": [
+        "Consent & Notice",
+        "Data Retention & Erasure"
+      ],
+      "decision": "KEPT_ALL_DISTINCT_CATEGORIES",
+      "kept_positions": [
+        0,
+        1
+      ],
+      "discarded_positions": [],
+      "entries_summary": [
+        {
+          "position": 0,
+          "category": "Consent & Notice",
+          "requirement": "A Data Fiduciary must cease processing personal data if the Data Principal does not exercise her rights for a prescribed"
+        },
+        {
+          "position": 1,
+          "category": "Data Retention & Erasure",
+          "requirement": "A Data Fiduciary must establish a time period for the retention of personal data and erase it upon expiry."
+        }
+      ]
+    }
+  ]
+}

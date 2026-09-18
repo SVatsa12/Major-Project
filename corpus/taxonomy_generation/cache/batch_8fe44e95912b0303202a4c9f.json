@@ -1,0 +1,114 @@
+{
+  "batch_id": "8fe44e95912b0303202a4c9f",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001224",
+    "G001226",
+    "G001227",
+    "G001230",
+    "G001242",
+    "G001243",
+    "G001244",
+    "G001246"
+  ],
+  "raw_response": "[{\"category\":\"Data Retention & Erasure\",\"requirement\":\"Data Fiduciary must delete Personal Data no later than three years from the date on which the Data Principal last approached the Data Fiduciary for the performance of the specified purpose or exercise of her rights, or the commencement of the Digital Personal Data Protection Rules, 2025, whichever is latest.\",\"source\":\"DPDP Rules 2025, Rule 8(2)\",\"weight\":3,\"source_clause_ids\":[\"G001226\"],\"checkable_test\":\"Check if the data retention period is explicitly limited to three years from the last interaction or rule commencement.\",\"applicability\":\"Applies to data fiduciaries handling personal data under the DPDP Rules 2025.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is tied to the specific retention period outlined in the clause.\"},{\"category\":\"Data Retention & Erasure\",\"requirement\":\"Data Fiduciary must enable the Data Principal to access her user account and any virtual token issued by or on behalf of the Data Fiduciary.\",\"source\":\"DPDP Rules 2025, Rule 8(1) and Rule 8(3)\",\"weight\":2,\"source_clause_ids\":[\"G001224\",\"G001230\"],\"checkable_test\":\"Verify if the Data Principal has access to their account and virtual tokens as per the specified obligations.\",\"applicability\":\"Applies to data fiduciaries handling personal data under the DPDP Rules 2025.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is tied to the specific access obligations outlined in the clause.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The term 'e-commerce entity' is defined as any person who owns, operates or manages a digital facility or platform for e-commerce as defined in the Consumer Protection Act, 2019, but does not include a seller offering her goods or services for sale on a marketplace e-commerce entity as defined in the said Act.\",\"source\":\"DPDP Rules 2025, Note:In this Schedule, — (a)\",\"weight\":1,\"source_clause_ids\":[\"G001242\"],\"checkable_test\":\"Check if the definition of 'e-commerce entity' aligns with the provided clause.\",\"applicability\":\"Applies to entities classified as e-commerce entities under the DPDP Rules 2025.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is tied to the specific definition of 'e-commerce entity' outlined in the clause.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The term 'online gaming intermediary' is defined as any intermediary who enables the users of its computer resource to access one or more online games.\",\"source\":\"DPDP Rules 2025, Note:In this Schedule, — (b)\",\"weight\":1,\"source_clause_ids\":[\"G001243\"],\"checkable_test\":\"Verify if the definition of 'online gaming intermediary' matches the provided clause.\",\"applicability\":\"Applies to entities classified as online gaming intermediaries under the DPDP Rules 2025.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is tied to the specific definition of 'online gaming intermediary' outlined in the clause.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The term 'social media intermediary' is defined as an intermediary as defined in clause (w) of sub-rule (1) of rule 2 of the Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021.\",\"source\":\"DPDP Rules 2025, Note:In this Schedule, — (c)\",\"weight\":1,\"source_clause_ids\":[\"G001244\"],\"checkable_test\":\"Check if the definition of 'social media intermediary' aligns with the provided clause.\",\"applicability\":\"Applies to entities classified as social media intermediaries under the DPDP Rules 2025.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is tied to the specific definition of 'social media intermediary' outlined in the clause.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The term 'e-commerce entity' includes any person who accesses or avails any computer resource of an e-commerce entity.\",\"source\":\"DPDP Rules 2025, Note:In this Schedule, — (i)\",\"weight\":1,\"source_clause_ids\":[\"G001246\"],\"checkable_test\":\"Verify if the definition of 'e-commerce entity' includes persons who access or avail computer resources of an e-commerce entity.\",\"applicability\":\"Applies to entities classified as e-commerce entities under the DPDP Rules 2025.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is tied to the specific definition of 'e-commerce entity' outlined in the clause.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "Data Fiduciary must delete Personal Data no later than three years from the date on which the Data Principal last approached the Data Fiduciary for the performance of the specified purpose or exercise of her rights, or the commencement of the Digital Personal Data Protection Rules, 2025, whichever is latest.",
+      "source": "DPDP Rules 2025, Rule 8(2)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001226"
+      ],
+      "checkable_test": "Check if the data retention period is explicitly limited to three years from the last interaction or rule commencement.",
+      "applicability": "Applies to data fiduciaries handling personal data under the DPDP Rules 2025.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is tied to the specific retention period outlined in the clause.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "Data Fiduciary must enable the Data Principal to access her user account and any virtual token issued by or on behalf of the Data Fiduciary.",
+      "source": "DPDP Rules 2025, Rule 8(1) and Rule 8(3)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001224",
+        "G001230"
+      ],
+      "checkable_test": "Verify if the Data Principal has access to their account and virtual tokens as per the specified obligations.",
+      "applicability": "Applies to data fiduciaries handling personal data under the DPDP Rules 2025.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is tied to the specific access obligations outlined in the clause.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The term 'e-commerce entity' is defined as any person who owns, operates or manages a digital facility or platform for e-commerce as defined in the Consumer Protection Act, 2019, but does not include a seller offering her goods or services for sale on a marketplace e-commerce entity as defined in the said Act.",
+      "source": "DPDP Rules 2025, Note:In this Schedule, — (a)",
+      "weight": 1,
+      "source_clause_ids": [
+        "G001242"
+      ],
+      "checkable_test": "Check if the definition of 'e-commerce entity' aligns with the provided clause.",
+      "applicability": "Applies to entities classified as e-commerce entities under the DPDP Rules 2025.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is tied to the specific definition of 'e-commerce entity' outlined in the clause.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The term 'online gaming intermediary' is defined as any intermediary who enables the users of its computer resource to access one or more online games.",
+      "source": "DPDP Rules 2025, Note:In this Schedule, — (b)",
+      "weight": 1,
+      "source_clause_ids": [
+        "G001243"
+      ],
+      "checkable_test": "Verify if the definition of 'online gaming intermediary' matches the provided clause.",
+      "applicability": "Applies to entities classified as online gaming intermediaries under the DPDP Rules 2025.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is tied to the specific definition of 'online gaming intermediary' outlined in the clause.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The term 'social media intermediary' is defined as an intermediary as defined in clause (w) of sub-rule (1) of rule 2 of the Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021.",
+      "source": "DPDP Rules 2025, Note:In this Schedule, — (c)",
+      "weight": 1,
+      "source_clause_ids": [
+        "G001244"
+      ],
+      "checkable_test": "Check if the definition of 'social media intermediary' aligns with the provided clause.",
+      "applicability": "Applies to entities classified as social media intermediaries under the DPDP Rules 2025.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is tied to the specific definition of 'social media intermediary' outlined in the clause.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The term 'e-commerce entity' includes any person who accesses or avails any computer resource of an e-commerce entity.",
+      "source": "DPDP Rules 2025, Note:In this Schedule, — (i)",
+      "weight": 1,
+      "source_clause_ids": [
+        "G001246"
+      ],
+      "checkable_test": "Verify if the definition of 'e-commerce entity' includes persons who access or avail computer resources of an e-commerce entity.",
+      "applicability": "Applies to entities classified as e-commerce entities under the DPDP Rules 2025.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is tied to the specific definition of 'e-commerce entity' outlined in the clause.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T14:23:36.129899+00:00",
+  "multi_mapped_records": []
+}

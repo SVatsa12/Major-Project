@@ -1,0 +1,38 @@
+{
+  "batch_id": "be82ee1e9bd044209754eae8",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001498",
+    "G001549",
+    "G001550",
+    "G001558",
+    "G001568",
+    "G001575",
+    "G001580",
+    "G001581"
+  ],
+  "raw_response": "[{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"The Central Government may prescribe control processes and procedures to ensure adequate integrity, security and confidentiality of electronic records or payments.\",\"source\":\"IT Act 2000, Section 10A\",\"weight\":3,\"source_clause_ids\":[\"G001580\"],\"checkable_test\":\"Verify if the Central Government has prescribed control processes and procedures for ensuring the integrity, security, and confidentiality of electronic records or payments.\",\"applicability\":\"Applies to entities handling electronic records or payments under the IT Act 2000.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This clause mandates the establishment of control processes and procedures for ensuring the security and confidentiality of electronic records and payments.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "The Central Government may prescribe control processes and procedures to ensure adequate integrity, security and confidentiality of electronic records or payments.",
+      "source": "IT Act 2000, Section 10A",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001580"
+      ],
+      "checkable_test": "Verify if the Central Government has prescribed control processes and procedures for ensuring the integrity, security, and confidentiality of electronic records or payments.",
+      "applicability": "Applies to entities handling electronic records or payments under the IT Act 2000.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause mandates the establishment of control processes and procedures for ensuring the security and confidentiality of electronic records and payments.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T11:46:54.693029+00:00",
+  "multi_mapped_records": []
+}

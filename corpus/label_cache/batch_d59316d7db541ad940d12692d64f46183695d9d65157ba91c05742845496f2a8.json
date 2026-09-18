@@ -1,0 +1,53 @@
+{
+  "cache_key": "d59316d7db541ad940d12692d64f46183695d9d65157ba91c05742845496f2a8",
+  "created_at_utc": "2026-09-17T06:45:50.776250+00:00",
+  "prompt_version": "policy-labeling-v7-reliable-batches",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S001831",
+    "S001832",
+    "S001833",
+    "S001834",
+    "S001835",
+    "S001836"
+  ],
+  "labels": [
+    {
+      "clause_id": "S001831",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S001832",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S001833",
+      "best_match_taxonomy_id": "DPDP_RUL-0118",
+      "verdict": "Partially Compliant",
+      "justification": "The clause mentions data transfer to entities outside India but lacks specific compliance requirements for cross-border transfers."
+    },
+    {
+      "clause_id": "S001834",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S001835",
+      "best_match_taxonomy_id": "DPDP_RUL-0118",
+      "verdict": "Partially Compliant",
+      "justification": "The clause references data protection laws for cross-border transfers but lacks specific compliance requirements."
+    },
+    {
+      "clause_id": "S001836",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    }
+  ],
+  "status": "SUCCESS"
+}

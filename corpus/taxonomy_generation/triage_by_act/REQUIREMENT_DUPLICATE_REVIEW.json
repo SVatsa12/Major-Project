@@ -1,0 +1,652 @@
+[
+  {
+    "category": "Consent & Notice",
+    "requirement": "The Central Government may require the Board to advise on the manner in which the notice given by the Data Fiduciary to a Data Principal shall inform her, under sub-section (1) of section 5.",
+    "source": "DPDP Act 2023, Section 12(a)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G000718"
+    ],
+    "checkable_test": "Check if the governance document includes a policy that outlines the manner in which notices to Data Principals must be provided under section 5(1) of the DPDP Act 2023.",
+    "applicability": "Applicable to any organization that is a Data Fiduciary.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This obligation is derived from the Central Government's authority to set notice requirements under the DPDP Act 2023.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G000718"
+    ],
+    "candidate_id": "TC-000070",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000070",
+    "source_acts": [
+      "DPDP_ACT_2023"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 2,
+    "policy_checkability_signal_terms": [
+      "data",
+      "notice"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "DPDP_ACT_2023",
+    "requirement_canonical_hash": "bd442915fbd1ee5728d3d739a38203d32efd95c5a58772a26d6dd05e7715cc17",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": "REQ-NEAR-00070"
+  },
+  {
+    "category": "Consent & Notice",
+    "requirement": "The Central Government may require the Board to advise on the manner in which the notice given by the Data Fiduciary to a Data Principal shall inform her, under sub-section (2) of section 5.",
+    "source": "DPDP Act 2023, Section 12(b)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G000719"
+    ],
+    "checkable_test": "Check if the governance document includes a policy that outlines the manner in which notices to Data Principals must be provided under section 5(2) of the DPDP Act 2023.",
+    "applicability": "Applicable to any organization that is a Data Fiduciary.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This obligation is derived from the Central Government's authority to set notice requirements under the DPDP Act 2023.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G000719"
+    ],
+    "candidate_id": "TC-000071",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000071",
+    "source_acts": [
+      "DPDP_ACT_2023"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 2,
+    "policy_checkability_signal_terms": [
+      "data",
+      "notice"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "DPDP_ACT_2023",
+    "requirement_canonical_hash": "6fb3a22eab8c4e6b46eac582ca0a1bad33787bae4a80428e9a7c3d6aa35989b1",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 0.931034,
+    "requirement_near_duplicate_group": "REQ-NEAR-00070"
+  },
+  {
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "Consent Managers must enable Data Principals to give consent to the processing of their personal data by a Data Fiduciary onboarded onto the platform.",
+    "source": "DPDP Rules 2025, Rule 10",
+    "weight": 3,
+    "source_clause_ids": [
+      "G001170"
+    ],
+    "checkable_test": "Check if the document specifies that the platform enables Data Principals to give consent to the processing of their personal data by a Data Fiduciary.",
+    "applicability": "Applicable to Consent Managers.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This obligation ensures that Consent Managers facilitate consent for data processing.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G001170"
+    ],
+    "candidate_id": "TC-000127",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000127",
+    "source_acts": [
+      "DPDP_RULES_2025"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 4,
+    "policy_checkability_signal_terms": [
+      "consent",
+      "data",
+      "personal data",
+      "process"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "DPDP_RULES_2025",
+    "requirement_canonical_hash": "2b538707b787dd31894bd00bdf32ba88272c0242ea581b2ecd2c147ffe6f1517",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": "REQ-NEAR-00126"
+  },
+  {
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "Consent Managers must enable Data Principals to give consent to the processing of their personal data by a Data Fiduciary through another Data Fiduciary onboarded onto the platform.",
+    "source": "DPDP Rules 2025, Rule 11",
+    "weight": 3,
+    "source_clause_ids": [
+      "G001171"
+    ],
+    "checkable_test": "Check if the document specifies that the platform enables Data Principals to give consent through another Data Fiduciary.",
+    "applicability": "Applicable to Consent Managers.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This obligation ensures that Consent Managers support indirect consent through other Data Fiduciaries.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G001171"
+    ],
+    "candidate_id": "TC-000128",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000128",
+    "source_acts": [
+      "DPDP_RULES_2025"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 4,
+    "policy_checkability_signal_terms": [
+      "consent",
+      "data",
+      "personal data",
+      "process"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "DPDP_RULES_2025",
+    "requirement_canonical_hash": "6a0e00248c57ddaaaa3044217f4ffa23aa46501edc155d7813901650ebcffe83",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 0.904762,
+    "requirement_near_duplicate_group": "REQ-NEAR-00126"
+  },
+  {
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "The national nodal agency designated under the IT Act 2000 shall be responsible for all measures including Research and Development relating to protection of Critical Information Infrastructure.",
+    "source": "IT Act 2000, Section 70B(2)",
+    "weight": 3,
+    "source_clause_ids": [
+      "G001931"
+    ],
+    "checkable_test": "Check if the document specifies that the national nodal agency is responsible for Research and Development in the protection of Critical Information Infrastructure.",
+    "applicability": "Applicable to entities designated as national nodal agencies.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This clause outlines the responsibility of the national nodal agency in protecting Critical Information Infrastructure.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G001931"
+    ],
+    "candidate_id": "TC-000176",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000176",
+    "source_acts": [
+      "IT_ACT_2000"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 2,
+    "policy_checkability_signal_terms": [
+      "information",
+      "protect"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "IT_ACT_2000",
+    "requirement_canonical_hash": "5caba37b11a95fde38c5f7640312a26ead84278bb24f9056f7384c2d32615b9b",
+    "requirement_exact_duplicate_group": "REQ-EXACT-00001",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Security Safeguards",
+    "requirement": "The national nodal agency designated under the IT Act 2000 shall be responsible for all measures including Research and Development relating to protection of Critical Information Infrastructure.",
+    "source": "IT Act 2000, Section 70B(2)",
+    "weight": 2,
+    "source_clause_ids": [
+      "G001931"
+    ],
+    "checkable_test": "Check if the document specifies that the national nodal agency is responsible for Research and Development in the protection of Critical Information Infrastructure.",
+    "applicability": "Applicable to entities designated as national nodal agencies.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This clause outlines the responsibility of the national nodal agency in protecting Critical Information Infrastructure.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G001931"
+    ],
+    "candidate_id": "TC-000178",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000178",
+    "source_acts": [
+      "IT_ACT_2000"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 2,
+    "policy_checkability_signal_terms": [
+      "information",
+      "protect"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "IT_ACT_2000",
+    "requirement_canonical_hash": "5caba37b11a95fde38c5f7640312a26ead84278bb24f9056f7384c2d32615b9b",
+    "requirement_exact_duplicate_group": "REQ-EXACT-00001",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The national nodal agency designated under the IT Act 2000 shall be responsible for all measures including Research and Development relating to protection of Critical Information Infrastructure.",
+    "source": "IT Act 2000, Section 70B(2)",
+    "weight": 3,
+    "source_clause_ids": [
+      "G001931"
+    ],
+    "checkable_test": "Verify if the document states that the national nodal agency is responsible for Research and Development in the protection of Critical Information Infrastructure.",
+    "applicability": "Applicable to entities designated as national nodal agencies.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This clause outlines the responsibility of the national nodal agency in protecting Critical Information Infrastructure.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G001931"
+    ],
+    "candidate_id": "TC-000181",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000181",
+    "source_acts": [
+      "IT_ACT_2000"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 2,
+    "policy_checkability_signal_terms": [
+      "information",
+      "protect"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "IT_ACT_2000",
+    "requirement_canonical_hash": "5caba37b11a95fde38c5f7640312a26ead84278bb24f9056f7384c2d32615b9b",
+    "requirement_exact_duplicate_group": "REQ-EXACT-00001",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": ""
+  },
+  {
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "Data fiduciaries must ensure that processing of personal data outside India is exempted under the provisions of the Act.",
+    "source": "DPDP Act 2023, Section Special Provisions (2)",
+    "weight": 3,
+    "source_clause_ids": [
+      "G000583"
+    ],
+    "checkable_test": "Verify that the processing of personal data outside India is exempted under the provisions of the Act.",
+    "applicability": "When processing personal data outside India.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This clause outlines an exemption for processing personal data outside India.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G000583"
+    ],
+    "candidate_id": "TC-000314",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000314",
+    "source_acts": [
+      "DPDP_ACT_2023"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 3,
+    "policy_checkability_signal_terms": [
+      "data",
+      "personal data",
+      "process"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "DPDP_ACT_2023",
+    "requirement_canonical_hash": "fb6d59694845fe3f517e6409a45d42fb050ce78a1e76beb27439d9f51c961ca8",
+    "requirement_exact_duplicate_group": "REQ-EXACT-00002",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": "REQ-NEAR-00312"
+  },
+  {
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "Data fiduciaries must ensure that processing of personal data outside India is exempted under the provisions of the Act.",
+    "source": "DPDP Act 2023, Section Special Provisions 31 of 2016",
+    "weight": 3,
+    "source_clause_ids": [
+      "G000585"
+    ],
+    "checkable_test": "Verify that the processing of personal data outside India is exempted under the provisions of the Act.",
+    "applicability": "When processing personal data outside India.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This clause outlines an exemption for processing personal data outside India.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G000585"
+    ],
+    "candidate_id": "TC-000315",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000315",
+    "source_acts": [
+      "DPDP_ACT_2023"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 3,
+    "policy_checkability_signal_terms": [
+      "data",
+      "personal data",
+      "process"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "DPDP_ACT_2023",
+    "requirement_canonical_hash": "fb6d59694845fe3f517e6409a45d42fb050ce78a1e76beb27439d9f51c961ca8",
+    "requirement_exact_duplicate_group": "REQ-EXACT-00002",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": "REQ-NEAR-00312"
+  },
+  {
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "The Data Protection Board of India must investigate and impose penalties for personal data breaches as provided by the DPDP Act 2023.",
+    "source": "DPDP Act 2023, Section 26(b)",
+    "weight": 3,
+    "source_clause_ids": [
+      "G000632"
+    ],
+    "checkable_test": "Check if the Data Protection Board has authority to investigate and impose penalties for personal data breaches.",
+    "applicability": "Applicable to all data fiduciaries subject to the DPDP Act 2023.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This obligation is tied to the powers of the Data Protection Board under the DPDP Act 2023.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G000632"
+    ],
+    "candidate_id": "TC-000318",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000318",
+    "source_acts": [
+      "DPDP_ACT_2023"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 4,
+    "policy_checkability_signal_terms": [
+      "breach",
+      "data",
+      "personal data",
+      "protect"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "DPDP_ACT_2023",
+    "requirement_canonical_hash": "8c4e602198213f414df33f6899ec16b748703ddf989858984bd3861459b5d420",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": "REQ-NEAR-00315"
+  },
+  {
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "The Data Protection Board of India must investigate and impose penalties for personal data breaches referred by the Central Government, as provided by the DPDP Act 2023.",
+    "source": "DPDP Act 2023, Section 26(e)",
+    "weight": 3,
+    "source_clause_ids": [
+      "G000640"
+    ],
+    "checkable_test": "Check if the Data Protection Board has authority to investigate and impose penalties for personal data breaches referred by the Central Government.",
+    "applicability": "Applicable to all data fiduciaries subject to the DPDP Act 2023.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This obligation is tied to the powers of the Data Protection Board under the DPDP Act 2023.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G000640"
+    ],
+    "candidate_id": "TC-000320",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000320",
+    "source_acts": [
+      "DPDP_ACT_2023"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 4,
+    "policy_checkability_signal_terms": [
+      "breach",
+      "data",
+      "personal data",
+      "protect"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "DPDP_ACT_2023",
+    "requirement_canonical_hash": "39fd1b43fcafacf891f1429a5677107b6ee70ea966cdabf9d7e1f0133ae7caf8",
+    "requirement_exact_duplicate_group": "",
+    "requirement_near_duplicate_similarity": 0.869565,
+    "requirement_near_duplicate_group": "REQ-NEAR-00315"
+  },
+  {
+    "category": "Children/Vulnerable Groups",
+    "requirement": "Data processing by educational institutions is restricted to tracking and behavioural monitoring in the interests of safety of children entrusted in their care.",
+    "source": "DPDP Rules 2025, Section 8(4)",
+    "weight": 3,
+    "source_clause_ids": [
+      "G001258"
+    ],
+    "checkable_test": "Check if the document restricts data processing by educational institutions to tracking and behavioural monitoring solely for the safety of children in their care.",
+    "applicability": "Applicable to educational institutions handling children's data.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This requirement is specific to the processing of children's data by educational institutions.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G001258"
+    ],
+    "candidate_id": "TC-000383",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000383",
+    "source_acts": [
+      "DPDP_RULES_2025"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 3,
+    "policy_checkability_signal_terms": [
+      "child",
+      "data",
+      "process"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "DPDP_RULES_2025",
+    "requirement_canonical_hash": "641bc2fa392d666cdd5c5c8e5e40d49f09658917874a9e721173e42921a1fcdc",
+    "requirement_exact_duplicate_group": "REQ-EXACT-00003",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": "REQ-NEAR-00379"
+  },
+  {
+    "category": "Children/Vulnerable Groups",
+    "requirement": "Data processing by educational institutions is restricted to tracking and behavioural monitoring in the interests of safety of children entrusted in their care.",
+    "source": "DPDP Rules 2025, Section 8(5)",
+    "weight": 3,
+    "source_clause_ids": [
+      "G001260"
+    ],
+    "checkable_test": "Check if the document restricts data processing by educational institutions to tracking and behavioural monitoring solely for the safety of children in their care.",
+    "applicability": "Applicable to educational institutions handling children's data.",
+    "assessability": "3",
+    "citation_confidence": "high",
+    "notes": "This requirement is specific to the processing of children's data by educational institutions.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G001260"
+    ],
+    "candidate_id": "TC-000384",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000384",
+    "source_acts": [
+      "DPDP_RULES_2025"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 3,
+    "policy_checkability_signal_terms": [
+      "child",
+      "data",
+      "process"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "DPDP_RULES_2025",
+    "requirement_canonical_hash": "641bc2fa392d666cdd5c5c8e5e40d49f09658917874a9e721173e42921a1fcdc",
+    "requirement_exact_duplicate_group": "REQ-EXACT-00003",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": "REQ-NEAR-00379"
+  },
+  {
+    "category": "Children/Vulnerable Groups",
+    "requirement": "Processing of children's location data is restricted to the extent necessary for creating a user account for communication by email.",
+    "source": "DPDP Rules 2025, Section 1271",
+    "weight": 3,
+    "source_clause_ids": [
+      "G001271"
+    ],
+    "checkable_test": "Check if the data processing of children's location data is limited to creating a user account for email communication purposes.",
+    "applicability": "Applies to data processing involving children's location data for email account creation.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This clause explicitly restricts the processing of children's location data to email account creation purposes.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G001271"
+    ],
+    "candidate_id": "TC-000388",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000388",
+    "source_acts": [
+      "DPDP_RULES_2025"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 6,
+    "policy_checkability_signal_terms": [
+      "account",
+      "child",
+      "data",
+      "process",
+      "purpose",
+      "use"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "DPDP_RULES_2025",
+    "requirement_canonical_hash": "5831481647cc17188fa3ffbe9f7732d09e463a2825e4260c089313deb9ad645a",
+    "requirement_exact_duplicate_group": "REQ-EXACT-00004",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": "REQ-NEAR-00383"
+  },
+  {
+    "category": "Children/Vulnerable Groups",
+    "requirement": "Processing of children's location data is restricted to the extent necessary for creating a user account for communication by email.",
+    "source": "DPDP Rules 2025, Section 1270",
+    "weight": 3,
+    "source_clause_ids": [
+      "G001270"
+    ],
+    "checkable_test": "Check if the data processing of children's location data is limited to creating a user account for email communication purposes.",
+    "applicability": "Applies to data processing involving children's location data for email account creation.",
+    "assessability": "High",
+    "citation_confidence": "high",
+    "notes": "This clause explicitly restricts the processing of children's location data to email account creation purposes.",
+    "human_review_status": "PENDING",
+    "representative_source_clause_ids": [
+      "G001270"
+    ],
+    "candidate_id": "TC-000389",
+    "duplicate_model_output_count": 1,
+    "triage_candidate_id": "TC-000389",
+    "source_acts": [
+      "DPDP_RULES_2025"
+    ],
+    "missing_source_clause_ids": [],
+    "source_provenance_status": "RESOLVED_SINGLE_ACT",
+    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
+    "policy_checkability_signal_count": 6,
+    "policy_checkability_signal_terms": [
+      "account",
+      "child",
+      "data",
+      "process",
+      "purpose",
+      "use"
+    ],
+    "administrative_signal_terms": [],
+    "recommended_action": "LEGAL_REVIEW",
+    "resolved_act": "DPDP_RULES_2025",
+    "requirement_canonical_hash": "5831481647cc17188fa3ffbe9f7732d09e463a2825e4260c089313deb9ad645a",
+    "requirement_exact_duplicate_group": "REQ-EXACT-00004",
+    "requirement_near_duplicate_similarity": 1.0,
+    "requirement_near_duplicate_group": "REQ-NEAR-00383"
+  }
+]

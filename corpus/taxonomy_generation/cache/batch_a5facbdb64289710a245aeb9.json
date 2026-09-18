@@ -1,0 +1,53 @@
+{
+  "batch_id": "a5facbdb64289710a245aeb9",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001277",
+    "G001283",
+    "G001290",
+    "G001304",
+    "G001311",
+    "G001350",
+    "G001351",
+    "G001356"
+  ],
+  "raw_response": "[{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Data fiduciaries must process personal data only to the extent necessary for the purpose of confirmation or observance.\",\"source\":\"DPDP Rules 2025, Section Purposes\",\"weight\":3,\"source_clause_ids\":[\"G001277\"],\"checkable_test\":\"Verify that data processing is limited to the minimum necessary for the stated purpose.\",\"applicability\":\"All data processing activities.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause imposes a restriction on data processing to ensure it is limited to what is necessary for the intended purpose.\"},{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"Data fiduciaries must ensure the absence of conflict of interest in the performance of their functions.\",\"source\":\"DPDP Rules 2025, Section 8(1)\",\"weight\":3,\"source_clause_ids\":[\"G001311\"],\"checkable_test\":\"Verify that data fiduciaries have no financial or other interests that could prejudice their functions.\",\"applicability\":\"All data fiduciaries.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause requires data fiduciaries to avoid conflicts of interest that could affect their obligations.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Data fiduciaries must process personal data only to the extent necessary for the purpose of confirmation or observance.",
+      "source": "DPDP Rules 2025, Section Purposes",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001277"
+      ],
+      "checkable_test": "Verify that data processing is limited to the minimum necessary for the stated purpose.",
+      "applicability": "All data processing activities.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause imposes a restriction on data processing to ensure it is limited to what is necessary for the intended purpose.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "Data fiduciaries must ensure the absence of conflict of interest in the performance of their functions.",
+      "source": "DPDP Rules 2025, Section 8(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001311"
+      ],
+      "checkable_test": "Verify that data fiduciaries have no financial or other interests that could prejudice their functions.",
+      "applicability": "All data fiduciaries.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause requires data fiduciaries to avoid conflicts of interest that could affect their obligations.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T15:41:54.863137+00:00",
+  "multi_mapped_records": []
+}

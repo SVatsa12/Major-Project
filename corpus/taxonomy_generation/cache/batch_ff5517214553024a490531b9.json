@@ -1,0 +1,99 @@
+{
+  "batch_id": "ff5517214553024a490531b9",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001915",
+    "G001916",
+    "G001917",
+    "G001918",
+    "G001919",
+    "G001923",
+    "G001924",
+    "G001925"
+  ],
+  "raw_response": "[{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Intermediaries must comply with directions issued by the government to block access to information generated, transmitted, received, stored, or hosted in any computer resource.\",\"source\":\"IT Act 2000, Section 69A(1)\",\"weight\":3,\"source_clause_ids\":[\"G001915\"],\"checkable_test\":\"Check if the document specifies procedures for complying with government directions to block access to information.\",\"applicability\":\"Applicable to intermediaries hosting information subject to government blocking orders.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is tied to the requirement to block access as per government direction.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Intermediaries must provide technical assistance and facilities to authorized agencies for monitoring and collecting traffic data or information.\",\"source\":\"IT Act 2000, Section 69B(2)\",\"weight\":3,\"source_clause_ids\":[\"G001918\"],\"checkable_test\":\"Check if the document outlines procedures for providing technical assistance to authorized agencies for traffic data monitoring.\",\"applicability\":\"Applicable to intermediaries hosting traffic data or information.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is tied to the requirement to assist authorized agencies in monitoring traffic data.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Intermediaries must follow prescribed procedures and safeguards for blocking access to information or monitoring traffic data.\",\"source\":\"IT Act 2000, Section 69A(2) and 69B(3)\",\"weight\":2,\"source_clause_ids\":[\"G001916\",\"G001919\"],\"checkable_test\":\"Check if the document specifies procedures and safeguards for blocking access or monitoring traffic data as required by law.\",\"applicability\":\"Applicable to intermediaries subject to government directions on blocking or monitoring.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation covers both blocking access and monitoring traffic data procedures.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Intermediaries must not attempt to secure access to protected systems without authorization.\",\"source\":\"IT Act 2000, Section 70(3)\",\"weight\":3,\"source_clause_ids\":[\"G001925\"],\"checkable_test\":\"Check if the document prohibits unauthorized access to protected systems and outlines consequences for such actions.\",\"applicability\":\"Applicable to intermediaries managing protected systems.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is tied to the prohibition against unauthorized access to protected systems.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Intermediaries must comply with government authorization to access protected systems.\",\"source\":\"IT Act 2000, Section 70(2)\",\"weight\":3,\"source_clause_ids\":[\"G001924\"],\"checkable_test\":\"Check if the document specifies procedures for complying with government authorization to access protected systems.\",\"applicability\":\"Applicable to intermediaries managing protected systems.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is tied to the requirement to comply with government authorization for accessing protected systems.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Intermediaries must comply with directions issued by the government to block access to information generated, transmitted, received, stored, or hosted in any computer resource.",
+      "source": "IT Act 2000, Section 69A(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001915"
+      ],
+      "checkable_test": "Check if the document specifies procedures for complying with government directions to block access to information.",
+      "applicability": "Applicable to intermediaries hosting information subject to government blocking orders.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is tied to the requirement to block access as per government direction.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Intermediaries must provide technical assistance and facilities to authorized agencies for monitoring and collecting traffic data or information.",
+      "source": "IT Act 2000, Section 69B(2)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001918"
+      ],
+      "checkable_test": "Check if the document outlines procedures for providing technical assistance to authorized agencies for traffic data monitoring.",
+      "applicability": "Applicable to intermediaries hosting traffic data or information.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is tied to the requirement to assist authorized agencies in monitoring traffic data.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Intermediaries must follow prescribed procedures and safeguards for blocking access to information or monitoring traffic data.",
+      "source": "IT Act 2000, Section 69A(2) and 69B(3)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001916",
+        "G001919"
+      ],
+      "checkable_test": "Check if the document specifies procedures and safeguards for blocking access or monitoring traffic data as required by law.",
+      "applicability": "Applicable to intermediaries subject to government directions on blocking or monitoring.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation covers both blocking access and monitoring traffic data procedures.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Intermediaries must not attempt to secure access to protected systems without authorization.",
+      "source": "IT Act 2000, Section 70(3)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001925"
+      ],
+      "checkable_test": "Check if the document prohibits unauthorized access to protected systems and outlines consequences for such actions.",
+      "applicability": "Applicable to intermediaries managing protected systems.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is tied to the prohibition against unauthorized access to protected systems.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Intermediaries must comply with government authorization to access protected systems.",
+      "source": "IT Act 2000, Section 70(2)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001924"
+      ],
+      "checkable_test": "Check if the document specifies procedures for complying with government authorization to access protected systems.",
+      "applicability": "Applicable to intermediaries managing protected systems.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is tied to the requirement to comply with government authorization for accessing protected systems.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T11:50:25.771953+00:00",
+  "multi_mapped_records": []
+}

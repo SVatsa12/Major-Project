@@ -1,0 +1,53 @@
+{
+  "cache_key": "9c27d01093ee66b4fe9264eb19312dfb8e859bf4d6bdb83cc1659fbc098f5406",
+  "created_at_utc": "2026-09-16T14:06:53.252412+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S001819",
+    "S001820",
+    "S001821",
+    "S001822",
+    "S001823",
+    "S001824"
+  ],
+  "labels": [
+    {
+      "clause_id": "S001819",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Compliant",
+      "justification": "The clause addresses security safeguards by mentioning encryption and other protective measures."
+    },
+    {
+      "clause_id": "S001820",
+      "best_match_taxonomy_id": "DPDP_RUL-0549",
+      "verdict": "Compliant",
+      "justification": "The clause addresses confidentiality obligations to prevent misuse of data."
+    },
+    {
+      "clause_id": "S001821",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Compliant",
+      "justification": "The clause addresses security safeguards by mentioning technical and organizational measures to protect personal information."
+    },
+    {
+      "clause_id": "S001822",
+      "best_match_taxonomy_id": "DPDP_RUL-0094",
+      "verdict": "Compliant",
+      "justification": "The clause addresses breach notification requirements by mentioning notification of a personal information breach."
+    },
+    {
+      "clause_id": "S001823",
+      "best_match_taxonomy_id": "DPDP_RUL-0094",
+      "verdict": "Compliant",
+      "justification": "The clause addresses breach notification requirements by mentioning notification of a personal information breach."
+    },
+    {
+      "clause_id": "S001824",
+      "best_match_taxonomy_id": "DPDP_RUL-0114",
+      "verdict": "Compliant",
+      "justification": "The clause addresses data principal rights by mentioning assistance in fulfilling obligations under data privacy law."
+    }
+  ],
+  "status": "SUCCESS"
+}

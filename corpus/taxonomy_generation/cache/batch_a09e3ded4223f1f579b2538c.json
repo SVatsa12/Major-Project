@@ -1,0 +1,98 @@
+{
+  "batch_id": "a09e3ded4223f1f579b2538c",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G002226",
+    "G002227",
+    "G002228",
+    "G002229",
+    "G002230",
+    "G002231",
+    "G002232",
+    "G002233"
+  ],
+  "raw_response": "[{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Public authorities must transfer an information request to the appropriate authority within five days of receipt.\",\"source\":\"RTI Act 2005, Section 6(2)\",\"weight\":2,\"source_clause_ids\":[\"G002227\"],\"checkable_test\":\"Check if the platform transfers requests to the correct authority within five days.\",\"applicability\":\"Applicable to public authorities handling information requests.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is specific to the transfer timeline for information requests.\"},{\"category\":\"Data Retention & Erasure\",\"requirement\":\"Public authorities must provide requested information within thirty days of receipt, unless exempted.\",\"source\":\"RTI Act 2005, Section 6(1)\",\"weight\":2,\"source_clause_ids\":[\"G002229\"],\"checkable_test\":\"Verify if the platform provides information within thirty days or rejects it with valid reasons.\",\"applicability\":\"Applicable to public authorities handling information requests.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation applies to the time limit for responding to information requests.\"},{\"category\":\"Breach Notification\",\"requirement\":\"Public authorities must provide information within forty-eight hours if it concerns the life or liberty of a person.\",\"source\":\"RTI Act 2005, Section 6(3)\",\"weight\":3,\"source_clause_ids\":[\"G002230\"],\"checkable_test\":\"Check if the platform provides information within forty-eight hours for life or liberty-related requests.\",\"applicability\":\"Applicable to public authorities handling sensitive information requests.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is specific to urgent information requests related to life or liberty.\"},{\"category\":\"Grievance Redressal\",\"requirement\":\"Failure to respond within the specified period is deemed a refusal of the request.\",\"source\":\"RTI Act 2005, Section 6(4)\",\"weight\":2,\"source_clause_ids\":[\"G002232\"],\"checkable_test\":\"Verify if the platform treats delayed responses as refusals.\",\"applicability\":\"Applicable to public authorities handling information requests.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation applies to the consequences of not responding within the time limit.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Public authorities must inform applicants immediately about the transfer of an application to another authority.\",\"source\":\"RTI Act 2005, Section 6(1)\",\"weight\":2,\"source_clause_ids\":[\"G002226\"],\"checkable_test\":\"Check if the platform informs applicants about the transfer of their request.\",\"applicability\":\"Applicable to public authorities handling information requests.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is specific to the notification requirement for transferred requests.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Public authorities must transfer an information request to the appropriate authority within five days of receipt.",
+      "source": "RTI Act 2005, Section 6(2)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002227"
+      ],
+      "checkable_test": "Check if the platform transfers requests to the correct authority within five days.",
+      "applicability": "Applicable to public authorities handling information requests.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is specific to the transfer timeline for information requests.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "Public authorities must provide requested information within thirty days of receipt, unless exempted.",
+      "source": "RTI Act 2005, Section 6(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002229"
+      ],
+      "checkable_test": "Verify if the platform provides information within thirty days or rejects it with valid reasons.",
+      "applicability": "Applicable to public authorities handling information requests.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation applies to the time limit for responding to information requests.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Breach Notification",
+      "requirement": "Public authorities must provide information within forty-eight hours if it concerns the life or liberty of a person.",
+      "source": "RTI Act 2005, Section 6(3)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G002230"
+      ],
+      "checkable_test": "Check if the platform provides information within forty-eight hours for life or liberty-related requests.",
+      "applicability": "Applicable to public authorities handling sensitive information requests.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is specific to urgent information requests related to life or liberty.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Grievance Redressal",
+      "requirement": "Failure to respond within the specified period is deemed a refusal of the request.",
+      "source": "RTI Act 2005, Section 6(4)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002232"
+      ],
+      "checkable_test": "Verify if the platform treats delayed responses as refusals.",
+      "applicability": "Applicable to public authorities handling information requests.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation applies to the consequences of not responding within the time limit.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Public authorities must inform applicants immediately about the transfer of an application to another authority.",
+      "source": "RTI Act 2005, Section 6(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002226"
+      ],
+      "checkable_test": "Check if the platform informs applicants about the transfer of their request.",
+      "applicability": "Applicable to public authorities handling information requests.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is specific to the notification requirement for transferred requests.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T11:58:05.907918+00:00",
+  "multi_mapped_records": []
+}

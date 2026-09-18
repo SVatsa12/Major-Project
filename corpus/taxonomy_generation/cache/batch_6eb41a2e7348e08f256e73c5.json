@@ -1,0 +1,68 @@
+{
+  "batch_id": "6eb41a2e7348e08f256e73c5",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G000210",
+    "G000211",
+    "G000214",
+    "G000218",
+    "G000219",
+    "G000220",
+    "G000222",
+    "G000225"
+  ],
+  "raw_response": "[  \n  {  \n    \"category\": \"Grievance Redressal\",  \n    \"requirement\": \"An aggrieved party may file an appeal with the Appellate Tribunal within thirty days of receiving a direction, decision, or order from the Authority.\",  \n    \"source\": \"AERA_ACT_2008, SECTION=22(2)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G000218\"],  \n    \"checkable_test\": \"Verify the existence of a time-bound appeal mechanism within thirty days for appeals to the Appellate Tribunal.\",  \n    \"applicability\": \"Applies to appeals by the Central Government, State Government, local authority, or aggrieved person.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This clause outlines the procedural requirement for filing an appeal within thirty days.\"  \n  },  \n  {  \n    \"category\": \"Grievance Redressal\",  \n    \"requirement\": \"The Appellate Tribunal must send a copy of every order made by it to the parties to the dispute or the appeal and to the Authority.\",  \n    \"source\": \"AERA_ACT_2008, SECTION=22(5)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G000225\"],  \n    \"checkable_test\": \"Verify that the Appellate Tribunal provides copies of its orders to all relevant parties and the Authority.\",  \n    \"applicability\": \"Applies to all orders made by the Appellate Tribunal.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This clause mandates the dissemination of orders to all affected parties and the Authority.\"  \n  },  \n  {  \n    \"category\": \"Grievance Redressal\",  \n    \"requirement\": \"The Appellate Tribunal may entertain an appeal even after the expiry of the thirty-day period if there is sufficient cause for the delay.\",  \n    \"source\": \"AERA_ACT_2008, SECTION=22(2)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G000222\"],  \n    \"checkable_test\": \"Verify whether the Appellate Tribunal allows late appeals with sufficient cause.\",  \n    \"applicability\": \"Applies to appeals filed after the thirty-day period.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This clause provides for an exception to the thirty-day appeal deadline under specific conditions.\"  \n  }  \n]",
+  "parsed_entries": [
+    {
+      "category": "Grievance Redressal",
+      "requirement": "An aggrieved party may file an appeal with the Appellate Tribunal within thirty days of receiving a direction, decision, or order from the Authority.",
+      "source": "AERA_ACT_2008, SECTION=22(2)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000218"
+      ],
+      "checkable_test": "Verify the existence of a time-bound appeal mechanism within thirty days for appeals to the Appellate Tribunal.",
+      "applicability": "Applies to appeals by the Central Government, State Government, local authority, or aggrieved person.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause outlines the procedural requirement for filing an appeal within thirty days.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Grievance Redressal",
+      "requirement": "The Appellate Tribunal must send a copy of every order made by it to the parties to the dispute or the appeal and to the Authority.",
+      "source": "AERA_ACT_2008, SECTION=22(5)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000225"
+      ],
+      "checkable_test": "Verify that the Appellate Tribunal provides copies of its orders to all relevant parties and the Authority.",
+      "applicability": "Applies to all orders made by the Appellate Tribunal.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause mandates the dissemination of orders to all affected parties and the Authority.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Grievance Redressal",
+      "requirement": "The Appellate Tribunal may entertain an appeal even after the expiry of the thirty-day period if there is sufficient cause for the delay.",
+      "source": "AERA_ACT_2008, SECTION=22(2)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000222"
+      ],
+      "checkable_test": "Verify whether the Appellate Tribunal allows late appeals with sufficient cause.",
+      "applicability": "Applies to appeals filed after the thirty-day period.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause provides for an exception to the thirty-day appeal deadline under specific conditions.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T13:21:48.749159+00:00",
+  "multi_mapped_records": []
+}

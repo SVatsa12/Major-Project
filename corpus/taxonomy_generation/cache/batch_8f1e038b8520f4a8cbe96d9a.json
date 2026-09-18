@@ -1,0 +1,53 @@
+{
+  "batch_id": "8f1e038b8520f4a8cbe96d9a",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001084",
+    "G001085",
+    "G001088",
+    "G001089",
+    "G001090",
+    "G001091",
+    "G001092",
+    "G001095"
+  ],
+  "raw_response": "[{\"category\":\"Children/Vulnerable Groups\",\"requirement\":\"Data Fiduciaries must verify that a parent or guardian is an identifiable adult before processing the personal data of a child.\",\"source\":\"DPDP Rules 2025, Rule 10(1)\",\"weight\":3,\"source_clause_ids\":[\"G001089\"],\"checkable_test\":\"Check if the platform verifies the identity and age of the parent/guardian through government-issued details or a digital locker service provider before creating a child's account.\",\"applicability\":\"Applicable when processing personal data of a child.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement is specific to the creation of user accounts for children and involves verification of the parent's identity and age.\"},{\"category\":\"Children/Vulnerable Groups\",\"requirement\":\"Data Fiduciaries must verify that a lawful guardian of a person with disability is appointed by a court of law, designated authority, or local level committee.\",\"source\":\"DPDP Rules 2025, Rule 11(1)\",\"weight\":3,\"source_clause_ids\":[\"G001092\"],\"checkable_test\":\"Check if the platform verifies the legal appointment of the guardian through court, authority, or committee documentation.\",\"applicability\":\"Applicable when processing personal data of a person with disability who has a lawful guardian.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This requirement ensures that the guardian has legal authority to consent to data processing on behalf of the person with disability.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Children/Vulnerable Groups",
+      "requirement": "Data Fiduciaries must verify that a parent or guardian is an identifiable adult before processing the personal data of a child.",
+      "source": "DPDP Rules 2025, Rule 10(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001089"
+      ],
+      "checkable_test": "Check if the platform verifies the identity and age of the parent/guardian through government-issued details or a digital locker service provider before creating a child's account.",
+      "applicability": "Applicable when processing personal data of a child.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is specific to the creation of user accounts for children and involves verification of the parent's identity and age.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Children/Vulnerable Groups",
+      "requirement": "Data Fiduciaries must verify that a lawful guardian of a person with disability is appointed by a court of law, designated authority, or local level committee.",
+      "source": "DPDP Rules 2025, Rule 11(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001092"
+      ],
+      "checkable_test": "Check if the platform verifies the legal appointment of the guardian through court, authority, or committee documentation.",
+      "applicability": "Applicable when processing personal data of a person with disability who has a lawful guardian.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures that the guardian has legal authority to consent to data processing on behalf of the person with disability.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T11:31:53.055536+00:00",
+  "multi_mapped_records": []
+}

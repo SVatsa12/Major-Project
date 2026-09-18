@@ -1,0 +1,53 @@
+{
+  "cache_key": "d8ed4e55d7573a9b326033455f1f09b73d0639d1a65a4520c9e02b1eb26e07d5",
+  "created_at_utc": "2026-09-17T06:25:38.088805+00:00",
+  "prompt_version": "policy-labeling-v7-reliable-batches",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S001573",
+    "S001574",
+    "S001575",
+    "S001576",
+    "S001577",
+    "S001578"
+  ],
+  "labels": [
+    {
+      "clause_id": "S001573",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Compliant",
+      "justification": "Clause addresses encryption and security measures for personal data, matching the requirement for clear and plain language consent notice."
+    },
+    {
+      "clause_id": "S001574",
+      "best_match_taxonomy_id": "DPDP_RUL-0099",
+      "verdict": "Compliant",
+      "justification": "Clause specifies deletion of personal data upon request, matching the data erasure requirement."
+    },
+    {
+      "clause_id": "S001575",
+      "best_match_taxonomy_id": "DPDP_RUL-0099",
+      "verdict": "Compliant",
+      "justification": "Clause outlines deletion of personal data and cooperation with payment providers, matching the data erasure requirement."
+    },
+    {
+      "clause_id": "S001576",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "Clause does not meaningfully address any listed requirement related to data security or protection."
+    },
+    {
+      "clause_id": "S001577",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Compliant",
+      "justification": "Clause describes security measures including encryption, matching the requirement for appropriate data security measures."
+    },
+    {
+      "clause_id": "S001578",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "Clause does not meaningfully address any listed requirement related to data security or protection."
+    }
+  ],
+  "status": "SUCCESS"
+}

@@ -1,0 +1,53 @@
+{
+  "cache_key": "cc74e3b0350aa7e3935bcd3e779d1dca79ec88792248d955971fac7152dc35cf",
+  "created_at_utc": "2026-09-17T07:41:27.273277+00:00",
+  "prompt_version": "policy-labeling-v7-reliable-batches",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S002521",
+    "S002522",
+    "S002523",
+    "S002524",
+    "S002525",
+    "S002526"
+  ],
+  "labels": [
+    {
+      "clause_id": "S002521",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S002522",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S002523",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S002524",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S002525",
+      "best_match_taxonomy_id": "DPDP_RUL-0376",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses age restrictions for children but lacks specific consent requirements for data processing."
+    },
+    {
+      "clause_id": "S002526",
+      "best_match_taxonomy_id": "DPDP_RUL-0376",
+      "verdict": "Partially Compliant",
+      "justification": "The clause mentions parental permission for minors but does not explicitly address data processing requirements for children."
+    }
+  ],
+  "status": "SUCCESS"
+}

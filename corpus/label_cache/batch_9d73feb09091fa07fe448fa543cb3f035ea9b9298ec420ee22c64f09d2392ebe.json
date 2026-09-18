@@ -1,0 +1,53 @@
+{
+  "cache_key": "9d73feb09091fa07fe448fa543cb3f035ea9b9298ec420ee22c64f09d2392ebe",
+  "created_at_utc": "2026-09-17T06:54:30.111595+00:00",
+  "prompt_version": "policy-labeling-v7-reliable-batches",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S001927",
+    "S001928",
+    "S001929",
+    "S001930",
+    "S001931",
+    "S001932"
+  ],
+  "labels": [
+    {
+      "clause_id": "S001927",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Partially Compliant",
+      "justification": "The clause mentions security but lacks specific data protection measures required by the taxonomy."
+    },
+    {
+      "clause_id": "S001928",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S001929",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S001930",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Partially Compliant",
+      "justification": "The clause mentions security but lacks specific data protection measures required by the taxonomy."
+    },
+    {
+      "clause_id": "S001931",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S001932",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    }
+  ],
+  "status": "SUCCESS"
+}

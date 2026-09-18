@@ -1,0 +1,113 @@
+{
+  "batch_id": "02905fa25947c38d67812f73",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G000622",
+    "G000632",
+    "G000635",
+    "G000639",
+    "G000640",
+    "G000641",
+    "G000643",
+    "G000644"
+  ],
+  "raw_response": "[{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Data Protection Board of India must investigate and impose penalties for personal data breaches as provided by the DPDP Act 2023.\",\"source\":\"DPDP Act 2023, Section 26(b)\",\"weight\":3,\"source_clause_ids\":[\"G000632\"],\"checkable_test\":\"Check if the Data Protection Board has authority to investigate and impose penalties for personal data breaches.\",\"applicability\":\"Applicable to all data fiduciaries subject to the DPDP Act 2023.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation is tied to the powers of the Data Protection Board under the DPDP Act 2023.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Data Protection Board of India must investigate and impose penalties for personal data breaches, including those involving a Consent Manager, as provided by the DPDP Act 2023.\",\"source\":\"DPDP Act 2023, Section 26(b)\",\"weight\":3,\"source_clause_ids\":[\"G000639\"],\"checkable_test\":\"Check if the Data Protection Board has authority to investigate and impose penalties for personal data breaches involving a Consent Manager.\",\"applicability\":\"Applicable to all data fiduciaries subject to the DPDP Act 2023.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation is tied to the powers of the Data Protection Board under the DPDP Act 2023.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Data Protection Board of India must investigate and impose penalties for personal data breaches referred by the Central Government, as provided by the DPDP Act 2023.\",\"source\":\"DPDP Act 2023, Section 26(e)\",\"weight\":3,\"source_clause_ids\":[\"G000640\"],\"checkable_test\":\"Check if the Data Protection Board has authority to investigate and impose penalties for personal data breaches referred by the Central Government.\",\"applicability\":\"Applicable to all data fiduciaries subject to the DPDP Act 2023.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation is tied to the powers of the Data Protection Board under the DPDP Act 2023.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Data Protection Board of India may issue directions to data principals, after providing an opportunity to be heard and recording reasons in writing, as provided by the DPDP Act 2023.\",\"source\":\"DPDP Act 2023, Section 26(2)\",\"weight\":3,\"source_clause_ids\":[\"G000641\"],\"checkable_test\":\"Check if the Data Protection Board has authority to issue directions to data principals after providing an opportunity to be heard and recording reasons in writing.\",\"applicability\":\"Applicable to all data fiduciaries subject to the DPDP Act 2023.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation is tied to the powers of the Data Protection Board under the DPDP Act 2023.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Data Protection Board of India may modify, suspend, withdraw, or cancel directions issued to data principals, subject to conditions, as provided by the DPDP Act 2023.\",\"source\":\"DPDP Act 2023, Section 26(3)\",\"weight\":3,\"source_clause_ids\":[\"G000643\"],\"checkable_test\":\"Check if the Data Protection Board has authority to modify, suspend, withdraw, or cancel directions issued to data principals, subject to conditions.\",\"applicability\":\"Applicable to all data fiduciaries subject to the DPDP Act 2023.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation is tied to the powers of the Data Protection Board under the DPDP Act 2023.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Data Protection Board of India must function as an independent body and adopt techno-legal measures to ensure digital operations, as provided by the DPDP Act 2023.\",\"source\":\"DPDP Act 2023, Section 28(1)\",\"weight\":3,\"source_clause_ids\":[\"G000644\"],\"checkable_test\":\"Check if the Data Protection Board is required to function as an independent body and adopt techno-legal measures for digital operations.\",\"applicability\":\"Applicable to all data fiduciaries subject to the DPDP Act 2023.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation is tied to the powers of the Data Protection Board under the DPDP Act 2023.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Data Protection Board of India must investigate and impose penalties for personal data breaches as provided by the DPDP Act 2023.",
+      "source": "DPDP Act 2023, Section 26(b)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000632"
+      ],
+      "checkable_test": "Check if the Data Protection Board has authority to investigate and impose penalties for personal data breaches.",
+      "applicability": "Applicable to all data fiduciaries subject to the DPDP Act 2023.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is tied to the powers of the Data Protection Board under the DPDP Act 2023.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Data Protection Board of India must investigate and impose penalties for personal data breaches, including those involving a Consent Manager, as provided by the DPDP Act 2023.",
+      "source": "DPDP Act 2023, Section 26(b)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000639"
+      ],
+      "checkable_test": "Check if the Data Protection Board has authority to investigate and impose penalties for personal data breaches involving a Consent Manager.",
+      "applicability": "Applicable to all data fiduciaries subject to the DPDP Act 2023.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is tied to the powers of the Data Protection Board under the DPDP Act 2023.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Data Protection Board of India must investigate and impose penalties for personal data breaches referred by the Central Government, as provided by the DPDP Act 2023.",
+      "source": "DPDP Act 2023, Section 26(e)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000640"
+      ],
+      "checkable_test": "Check if the Data Protection Board has authority to investigate and impose penalties for personal data breaches referred by the Central Government.",
+      "applicability": "Applicable to all data fiduciaries subject to the DPDP Act 2023.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is tied to the powers of the Data Protection Board under the DPDP Act 2023.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Data Protection Board of India may issue directions to data principals, after providing an opportunity to be heard and recording reasons in writing, as provided by the DPDP Act 2023.",
+      "source": "DPDP Act 2023, Section 26(2)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000641"
+      ],
+      "checkable_test": "Check if the Data Protection Board has authority to issue directions to data principals after providing an opportunity to be heard and recording reasons in writing.",
+      "applicability": "Applicable to all data fiduciaries subject to the DPDP Act 2023.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is tied to the powers of the Data Protection Board under the DPDP Act 2023.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Data Protection Board of India may modify, suspend, withdraw, or cancel directions issued to data principals, subject to conditions, as provided by the DPDP Act 2023.",
+      "source": "DPDP Act 2023, Section 26(3)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000643"
+      ],
+      "checkable_test": "Check if the Data Protection Board has authority to modify, suspend, withdraw, or cancel directions issued to data principals, subject to conditions.",
+      "applicability": "Applicable to all data fiduciaries subject to the DPDP Act 2023.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is tied to the powers of the Data Protection Board under the DPDP Act 2023.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Data Protection Board of India must function as an independent body and adopt techno-legal measures to ensure digital operations, as provided by the DPDP Act 2023.",
+      "source": "DPDP Act 2023, Section 28(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000644"
+      ],
+      "checkable_test": "Check if the Data Protection Board is required to function as an independent body and adopt techno-legal measures for digital operations.",
+      "applicability": "Applicable to all data fiduciaries subject to the DPDP Act 2023.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is tied to the powers of the Data Protection Board under the DPDP Act 2023.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T13:50:45.727296+00:00",
+  "multi_mapped_records": []
+}

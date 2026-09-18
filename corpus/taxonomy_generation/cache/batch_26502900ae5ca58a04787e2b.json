@@ -1,0 +1,68 @@
+{
+  "batch_id": "26502900ae5ca58a04787e2b",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001999",
+    "G002144",
+    "G002147",
+    "G002165",
+    "G002179",
+    "G002189",
+    "G002196",
+    "G002206"
+  ],
+  "raw_response": "[{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Public authorities must maintain records in a catalogued and indexed manner to facilitate access to information under the Right to Information Act.\",\"source\":\"RTI Act 2005, Section 6(1)(a)\",\"weight\":2,\"source_clause_ids\":[\"G002189\"],\"checkable_test\":\"Check if the document states that records are maintained in a catalogued and indexed manner to facilitate access to information.\",\"applicability\":\"Applicable to public authorities that hold records subject to the Right to Information Act.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This requirement is directly tied to the obligations of public authorities under the RTI Act 2005.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Public authorities must publish information within 120 days of the enactment of the Right to Information Act.\",\"source\":\"RTI Act 2005, Section 6(1)(b)\",\"weight\":2,\"source_clause_ids\":[\"G002196\"],\"checkable_test\":\"Check if the document states that information is published within 120 days of the enactment of the RTI Act.\",\"applicability\":\"Applicable to public authorities that hold information subject to the Right to Information Act.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This requirement mandates a specific timeline for publishing information under the RTI Act 2005.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Public authorities must ensure that information is accessible through various means of communication, including the internet, to minimize reliance on the Right to Information Act.\",\"source\":\"RTI Act 2005, Section 6(2)\",\"weight\":2,\"source_clause_ids\":[\"G002206\"],\"checkable_test\":\"Check if the document states that information is made accessible through various means of communication, including the internet, to reduce reliance on the RTI Act.\",\"applicability\":\"Applicable to public authorities that hold information subject to the Right to Information Act.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This requirement emphasizes proactive dissemination of information to enhance transparency and reduce the need for formal information requests.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Public authorities must maintain records in a catalogued and indexed manner to facilitate access to information under the Right to Information Act.",
+      "source": "RTI Act 2005, Section 6(1)(a)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002189"
+      ],
+      "checkable_test": "Check if the document states that records are maintained in a catalogued and indexed manner to facilitate access to information.",
+      "applicability": "Applicable to public authorities that hold records subject to the Right to Information Act.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligations of public authorities under the RTI Act 2005.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Public authorities must publish information within 120 days of the enactment of the Right to Information Act.",
+      "source": "RTI Act 2005, Section 6(1)(b)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002196"
+      ],
+      "checkable_test": "Check if the document states that information is published within 120 days of the enactment of the RTI Act.",
+      "applicability": "Applicable to public authorities that hold information subject to the Right to Information Act.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This requirement mandates a specific timeline for publishing information under the RTI Act 2005.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Public authorities must ensure that information is accessible through various means of communication, including the internet, to minimize reliance on the Right to Information Act.",
+      "source": "RTI Act 2005, Section 6(2)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002206"
+      ],
+      "checkable_test": "Check if the document states that information is made accessible through various means of communication, including the internet, to reduce reliance on the RTI Act.",
+      "applicability": "Applicable to public authorities that hold information subject to the Right to Information Act.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This requirement emphasizes proactive dissemination of information to enhance transparency and reduce the need for formal information requests.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T11:55:44.635411+00:00",
+  "multi_mapped_records": []
+}

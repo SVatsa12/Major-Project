@@ -1,0 +1,83 @@
+{
+  "batch_id": "db82ad23ee0231d97a2b54e9",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001634",
+    "G001635",
+    "G001649",
+    "G001652",
+    "G001654",
+    "G001655",
+    "G001656",
+    "G001659"
+  ],
+  "raw_response": "[{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Certifying Authorities must specify the manner in which they shall conduct their dealings with subscribers.\",\"source\":\"IT Act 2000, Section Regulation of Certifying Authorities (k)\",\"weight\":2,\"source_clause_ids\":[\"G001635\"],\"checkable_test\":\"Check if the Certifying Authority's policies specify the manner of dealings with subscribers.\",\"applicability\":\"Applicable to Certifying Authorities under the IT Act 2000.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is directly tied to the regulation of Certifying Authorities and their dealings with subscribers.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Licenses for Certifying Authorities must be subject to terms and conditions specified by regulations.\",\"source\":\"IT Act 2000, Section Regulation of Certifying Authorities (3)\",\"weight\":3,\"source_clause_ids\":[\"G001652\"],\"checkable_test\":\"Verify if the license terms and conditions are specified by regulations.\",\"applicability\":\"Applicable to Certifying Authorities under the IT Act 2000.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation requires that licenses be subject to terms and conditions specified by regulations.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Applications for Certifying Authority licenses must include a certification practice statement.\",\"source\":\"IT Act 2000, Section Regulation of Certifying Authorities (2)(a)\",\"weight\":2,\"source_clause_ids\":[\"G001655\"],\"checkable_test\":\"Check if the application includes a certification practice statement.\",\"applicability\":\"Applicable to Certifying Authorities under the IT Act 2000.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation mandates the inclusion of a certification practice statement in license applications.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Applications for Certifying Authority licenses must include a statement on procedures for identifying the applicant.\",\"source\":\"IT Act 2000, Section Regulation of Certifying Authorities (2)(b)\",\"weight\":2,\"source_clause_ids\":[\"G001656\"],\"checkable_test\":\"Verify if the application includes a statement on procedures for identifying the applicant.\",\"applicability\":\"Applicable to Certifying Authorities under the IT Act 2000.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation requires that the application include a statement on procedures for identifying the applicant.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Certifying Authorities must specify the manner in which they shall conduct their dealings with subscribers.",
+      "source": "IT Act 2000, Section Regulation of Certifying Authorities (k)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001635"
+      ],
+      "checkable_test": "Check if the Certifying Authority's policies specify the manner of dealings with subscribers.",
+      "applicability": "Applicable to Certifying Authorities under the IT Act 2000.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to the regulation of Certifying Authorities and their dealings with subscribers.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Licenses for Certifying Authorities must be subject to terms and conditions specified by regulations.",
+      "source": "IT Act 2000, Section Regulation of Certifying Authorities (3)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001652"
+      ],
+      "checkable_test": "Verify if the license terms and conditions are specified by regulations.",
+      "applicability": "Applicable to Certifying Authorities under the IT Act 2000.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation requires that licenses be subject to terms and conditions specified by regulations.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Applications for Certifying Authority licenses must include a certification practice statement.",
+      "source": "IT Act 2000, Section Regulation of Certifying Authorities (2)(a)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001655"
+      ],
+      "checkable_test": "Check if the application includes a certification practice statement.",
+      "applicability": "Applicable to Certifying Authorities under the IT Act 2000.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation mandates the inclusion of a certification practice statement in license applications.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Applications for Certifying Authority licenses must include a statement on procedures for identifying the applicant.",
+      "source": "IT Act 2000, Section Regulation of Certifying Authorities (2)(b)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001656"
+      ],
+      "checkable_test": "Verify if the application includes a statement on procedures for identifying the applicant.",
+      "applicability": "Applicable to Certifying Authorities under the IT Act 2000.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation requires that the application include a statement on procedures for identifying the applicant.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T15:47:04.703729+00:00",
+  "multi_mapped_records": []
+}

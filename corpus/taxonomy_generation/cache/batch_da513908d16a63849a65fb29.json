@@ -1,0 +1,128 @@
+{
+  "batch_id": "da513908d16a63849a65fb29",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G000682",
+    "G000684",
+    "G000686",
+    "G000687",
+    "G000694",
+    "G000700",
+    "G000701",
+    "G000703"
+  ],
+  "raw_response": "[{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"A data fiduciary must comply with terms of a voluntary undertaking accepted by the Board, as non-compliance is deemed a breach of the Act.\",\"source\":\"DPDP Act 2023, Section 32(5)\",\"weight\":3,\"source_clause_ids\":[\"G000686\"],\"checkable_test\":\"Verify if the data fiduciary has adhered to the terms of any voluntary undertaking accepted by the Board.\",\"applicability\":\"Applicable to any data fiduciary that has accepted a voluntary undertaking under the Act.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This obligation is tied to the consequences of non-compliance with a voluntary undertaking accepted by the Board.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Board may vary the terms of a voluntary undertaking accepted by a data fiduciary, provided it has the consent of the data fiduciary.\",\"source\":\"DPDP Act 2023, Section 32(3)\",\"weight\":3,\"source_clause_ids\":[\"G000684\"],\"checkable_test\":\"Check if the Board has modified the terms of a voluntary undertaking with the consent of the data fiduciary.\",\"applicability\":\"Applicable to data fiduciaries who have accepted a voluntary undertaking under the Act.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This obligation outlines the conditions under which the Board may alter the terms of a voluntary undertaking.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Board may impose penalties under the Act if a data fiduciary breaches its provisions or the rules made thereunder, and the breach is deemed significant.\",\"source\":\"DPDP Act 2023, Section 33(1)\",\"weight\":3,\"source_clause_ids\":[\"G000687\"],\"checkable_test\":\"Verify if the Board has imposed penalties for a significant breach of the Act or its rules.\",\"applicability\":\"Applicable to data fiduciaries that have breached the Act or its rules.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This obligation outlines the Board's authority to impose penalties for significant breaches of the Act.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Board must specify the type and nature of personal data affected by a breach when issuing orders under the Act.\",\"source\":\"DPDP Act 2023, Section 32(5)(b)\",\"weight\":3,\"source_clause_ids\":[\"G000694\"],\"checkable_test\":\"Check if the Board has included details about the type and nature of personal data affected by a breach in its orders.\",\"applicability\":\"Applicable to the Board when issuing orders related to breaches under the Act.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This obligation requires the Board to provide specific information about the data affected by a breach.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Penalties imposed by the Board under the Act must be credited to the Consolidated Fund of India.\",\"source\":\"DPDP Act 2023, Section 34\",\"weight\":3,\"source_clause_ids\":[\"G000700\"],\"checkable_test\":\"Verify if penalties imposed by the Board are credited to the Consolidated Fund of India.\",\"applicability\":\"Applicable to all penalties imposed by the Board under the Act.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This obligation outlines the financial handling of penalties imposed by the Board under the Act.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"No legal proceedings may be initiated against the Central Government, the Board, its Chairperson, or its Members, officers, or employees for actions taken in good faith under the Act or its rules.\",\"source\":\"DPDP Act 2023, Section 35\",\"weight\":3,\"source_clause_ids\":[\"G000701\"],\"checkable_test\":\"Check if legal proceedings have been initiated against the Central Government, the Board, or its officials for actions taken in good faith under the Act.\",\"applicability\":\"Applicable to the Central Government, the Board, its Chairperson, and its Members, officers, or employees.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This obligation protects the Central Government and the Board from legal action for actions taken in good faith under the Act.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Central Government or its authorized officers may take action upon a written reference from the Board regarding specific matters under the Act.\",\"source\":\"DPDP Act 2023, Section 37(1)\",\"weight\":3,\"source_clause_ids\":[\"G000703\"],\"checkable_test\":\"Verify if the Central Government or its authorized officers have taken action based on a written reference from the Board.\",\"applicability\":\"Applicable to the Central Government and its authorized officers when receiving a reference from the Board.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This obligation outlines the Central Government's authority to act on references from the Board under the Act.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "A data fiduciary must comply with terms of a voluntary undertaking accepted by the Board, as non-compliance is deemed a breach of the Act.",
+      "source": "DPDP Act 2023, Section 32(5)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000686"
+      ],
+      "checkable_test": "Verify if the data fiduciary has adhered to the terms of any voluntary undertaking accepted by the Board.",
+      "applicability": "Applicable to any data fiduciary that has accepted a voluntary undertaking under the Act.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "This obligation is tied to the consequences of non-compliance with a voluntary undertaking accepted by the Board.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Board may vary the terms of a voluntary undertaking accepted by a data fiduciary, provided it has the consent of the data fiduciary.",
+      "source": "DPDP Act 2023, Section 32(3)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000684"
+      ],
+      "checkable_test": "Check if the Board has modified the terms of a voluntary undertaking with the consent of the data fiduciary.",
+      "applicability": "Applicable to data fiduciaries who have accepted a voluntary undertaking under the Act.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "This obligation outlines the conditions under which the Board may alter the terms of a voluntary undertaking.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Board may impose penalties under the Act if a data fiduciary breaches its provisions or the rules made thereunder, and the breach is deemed significant.",
+      "source": "DPDP Act 2023, Section 33(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000687"
+      ],
+      "checkable_test": "Verify if the Board has imposed penalties for a significant breach of the Act or its rules.",
+      "applicability": "Applicable to data fiduciaries that have breached the Act or its rules.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "This obligation outlines the Board's authority to impose penalties for significant breaches of the Act.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Board must specify the type and nature of personal data affected by a breach when issuing orders under the Act.",
+      "source": "DPDP Act 2023, Section 32(5)(b)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000694"
+      ],
+      "checkable_test": "Check if the Board has included details about the type and nature of personal data affected by a breach in its orders.",
+      "applicability": "Applicable to the Board when issuing orders related to breaches under the Act.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "This obligation requires the Board to provide specific information about the data affected by a breach.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Penalties imposed by the Board under the Act must be credited to the Consolidated Fund of India.",
+      "source": "DPDP Act 2023, Section 34",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000700"
+      ],
+      "checkable_test": "Verify if penalties imposed by the Board are credited to the Consolidated Fund of India.",
+      "applicability": "Applicable to all penalties imposed by the Board under the Act.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "This obligation outlines the financial handling of penalties imposed by the Board under the Act.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "No legal proceedings may be initiated against the Central Government, the Board, its Chairperson, or its Members, officers, or employees for actions taken in good faith under the Act or its rules.",
+      "source": "DPDP Act 2023, Section 35",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000701"
+      ],
+      "checkable_test": "Check if legal proceedings have been initiated against the Central Government, the Board, or its officials for actions taken in good faith under the Act.",
+      "applicability": "Applicable to the Central Government, the Board, its Chairperson, and its Members, officers, or employees.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "This obligation protects the Central Government and the Board from legal action for actions taken in good faith under the Act.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Central Government or its authorized officers may take action upon a written reference from the Board regarding specific matters under the Act.",
+      "source": "DPDP Act 2023, Section 37(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000703"
+      ],
+      "checkable_test": "Verify if the Central Government or its authorized officers have taken action based on a written reference from the Board.",
+      "applicability": "Applicable to the Central Government and its authorized officers when receiving a reference from the Board.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "This obligation outlines the Central Government's authority to act on references from the Board under the Act.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T13:56:21.920583+00:00",
+  "multi_mapped_records": []
+}

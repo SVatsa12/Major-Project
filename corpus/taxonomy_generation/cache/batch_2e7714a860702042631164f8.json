@@ -1,0 +1,143 @@
+{
+  "batch_id": "2e7714a860702042631164f8",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G000473",
+    "G000474",
+    "G000476",
+    "G000477",
+    "G000478",
+    "G000479",
+    "G000480",
+    "G000481"
+  ],
+  "raw_response": "[  \n  {  \n    \"category\": \"Consent & Notice\",  \n    \"requirement\": \"A Data Fiduciary must cease processing personal data of a Data Principal who has withdrawn consent, unless processing is required or authorized by law.\",  \n    \"source\": \"DPDP Act 2023, Section 6(1)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G000473\"],  \n    \"checkable_test\": \"Verify if the document states that processing must cease upon withdrawal of consent, unless required by law.\",  \n    \"applicability\": \"Applies to all Data Fiduciaries handling personal data of Data Principals.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation is directly tied to the withdrawal of consent and cessation of processing.\"  \n  },  \n  {  \n    \"category\": \"Consent & Notice\",  \n    \"requirement\": \"A Data Fiduciary must cease processing personal data of a Data Principal who has withdrawn consent, unless processing is required or authorized by law.\",  \n    \"source\": \"DPDP Act 2023, Section 6(1)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G000474\"],  \n    \"checkable_test\": \"Verify if the document states that processing must cease upon withdrawal of consent, unless required by law.\",  \n    \"applicability\": \"Applies to all Data Fiduciaries handling personal data of Data Principals.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation is directly tied to the withdrawal of consent and cessation of processing.\"  \n  },  \n  {  \n    \"category\": \"Consent & Notice\",  \n    \"requirement\": \"A Data Fiduciary must cease processing personal data of a Data Principal who has withdrawn consent, unless processing is required or authorized by law.\",  \n    \"source\": \"DPDP Act 2023, Section 6(1)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G000476\"],  \n    \"checkable_test\": \"Verify if the document states that processing must cease upon withdrawal of consent, unless required by law.\",  \n    \"applicability\": \"Applies to all Data Fiduciaries handling personal data of Data Principals.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation is directly tied to the withdrawal of consent and cessation of processing.\"  \n  },  \n  {  \n    \"category\": \"Consent & Notice\",  \n    \"requirement\": \"A Data Principal may give, manage, review, or withdraw consent through a Consent Manager.\",  \n    \"source\": \"DPDP Act 2023, Section 6(7)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G000477\"],  \n    \"checkable_test\": \"Verify if the document allows a Data Principal to manage or withdraw consent through a Consent Manager.\",  \n    \"applicability\": \"Applies to all Data Fiduciaries handling personal data of Data Principals.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation is directly tied to the right of the Data Principal to manage or withdraw consent.\"  \n  },  \n  {  \n    \"category\": \"Consent & Notice\",  \n    \"requirement\": \"A Consent Manager must be accountable to the Data Principal and act on her behalf in accordance with prescribed obligations.\",  \n    \"source\": \"DPDP Act 2023, Section 6(8)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G000478\"],  \n    \"checkable_test\": \"Verify if the document states that the Consent Manager must act on behalf of the Data Principal in accordance with prescribed obligations.\",  \n    \"applicability\": \"Applies to all Data Fiduciaries using a Consent Manager.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation is directly tied to the accountability of the Consent Manager to the Data Principal.\"  \n  },  \n  {  \n    \"category\": \"Consent & Notice\",  \n    \"requirement\": \"A Consent Manager must be registered with the Board in accordance with prescribed conditions.\",  \n    \"source\": \"DPDP Act 2023, Section 6(9)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G000479\"],  \n    \"checkable_test\": \"Verify if the document states that the Consent Manager must be registered with the Board in accordance with prescribed conditions.\",  \n    \"applicability\": \"Applies to all Data Fiduciaries using a Consent Manager.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation is directly tied to the registration of the Consent Manager with the Board.\"  \n  },  \n  {  \n    \"category\": \"Consent & Notice\",  \n    \"requirement\": \"A Data Fiduciary must prove that a notice was given and consent was obtained in accordance with the Act and rules, if a question arises in a proceeding.\",  \n    \"source\": \"DPDP Act 2023, Section 6(10)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G000480\"],  \n    \"checkable_test\": \"Verify if the document states that the Data Fiduciary must prove that notice was given and consent was obtained in accordance with the Act and rules.\",  \n    \"applicability\": \"Applies to all Data Fiduciaries handling personal data of Data Principals.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation is directly tied to the requirement to prove that notice and consent were properly given.\"  \n  },  \n  {  \n    \"category\": \"Data Retention & Erasure\",  \n    \"requirement\": \"A Data Fiduciary may process personal data only for the specified purpose for which the Data Principal has voluntarily provided her data, unless she has indicated non-consent.\",  \n    \"source\": \"DPDP Act 2023, Section 7(a)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G000481\"],  \n    \"checkable_test\": \"Verify if the document states that data may be processed only for the specified purpose unless the Data Principal has indicated non-consent.\",  \n    \"applicability\": \"Applies to all Data Fiduciaries handling personal data of Data Principals.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation is directly tied to the purpose limitation of data processing.\"  \n  }  \n]",
+  "parsed_entries": [
+    {
+      "category": "Consent & Notice",
+      "requirement": "A Data Fiduciary must cease processing personal data of a Data Principal who has withdrawn consent, unless processing is required or authorized by law.",
+      "source": "DPDP Act 2023, Section 6(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000473"
+      ],
+      "checkable_test": "Verify if the document states that processing must cease upon withdrawal of consent, unless required by law.",
+      "applicability": "Applies to all Data Fiduciaries handling personal data of Data Principals.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to the withdrawal of consent and cessation of processing.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Consent & Notice",
+      "requirement": "A Data Fiduciary must cease processing personal data of a Data Principal who has withdrawn consent, unless processing is required or authorized by law.",
+      "source": "DPDP Act 2023, Section 6(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000474"
+      ],
+      "checkable_test": "Verify if the document states that processing must cease upon withdrawal of consent, unless required by law.",
+      "applicability": "Applies to all Data Fiduciaries handling personal data of Data Principals.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to the withdrawal of consent and cessation of processing.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Consent & Notice",
+      "requirement": "A Data Fiduciary must cease processing personal data of a Data Principal who has withdrawn consent, unless processing is required or authorized by law.",
+      "source": "DPDP Act 2023, Section 6(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000476"
+      ],
+      "checkable_test": "Verify if the document states that processing must cease upon withdrawal of consent, unless required by law.",
+      "applicability": "Applies to all Data Fiduciaries handling personal data of Data Principals.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to the withdrawal of consent and cessation of processing.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Consent & Notice",
+      "requirement": "A Data Principal may give, manage, review, or withdraw consent through a Consent Manager.",
+      "source": "DPDP Act 2023, Section 6(7)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000477"
+      ],
+      "checkable_test": "Verify if the document allows a Data Principal to manage or withdraw consent through a Consent Manager.",
+      "applicability": "Applies to all Data Fiduciaries handling personal data of Data Principals.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to the right of the Data Principal to manage or withdraw consent.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Consent & Notice",
+      "requirement": "A Consent Manager must be accountable to the Data Principal and act on her behalf in accordance with prescribed obligations.",
+      "source": "DPDP Act 2023, Section 6(8)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000478"
+      ],
+      "checkable_test": "Verify if the document states that the Consent Manager must act on behalf of the Data Principal in accordance with prescribed obligations.",
+      "applicability": "Applies to all Data Fiduciaries using a Consent Manager.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to the accountability of the Consent Manager to the Data Principal.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Consent & Notice",
+      "requirement": "A Consent Manager must be registered with the Board in accordance with prescribed conditions.",
+      "source": "DPDP Act 2023, Section 6(9)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000479"
+      ],
+      "checkable_test": "Verify if the document states that the Consent Manager must be registered with the Board in accordance with prescribed conditions.",
+      "applicability": "Applies to all Data Fiduciaries using a Consent Manager.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to the registration of the Consent Manager with the Board.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Consent & Notice",
+      "requirement": "A Data Fiduciary must prove that a notice was given and consent was obtained in accordance with the Act and rules, if a question arises in a proceeding.",
+      "source": "DPDP Act 2023, Section 6(10)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000480"
+      ],
+      "checkable_test": "Verify if the document states that the Data Fiduciary must prove that notice was given and consent was obtained in accordance with the Act and rules.",
+      "applicability": "Applies to all Data Fiduciaries handling personal data of Data Principals.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to the requirement to prove that notice and consent were properly given.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "A Data Fiduciary may process personal data only for the specified purpose for which the Data Principal has voluntarily provided her data, unless she has indicated non-consent.",
+      "source": "DPDP Act 2023, Section 7(a)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000481"
+      ],
+      "checkable_test": "Verify if the document states that data may be processed only for the specified purpose unless the Data Principal has indicated non-consent.",
+      "applicability": "Applies to all Data Fiduciaries handling personal data of Data Principals.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to the purpose limitation of data processing.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T11:08:36.783501+00:00",
+  "multi_mapped_records": []
+}

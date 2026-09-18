@@ -1,0 +1,143 @@
+{
+  "batch_id": "c496f8c32dccdd33b87e801f",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G000663",
+    "G000664",
+    "G000667",
+    "G000673",
+    "G000675",
+    "G000677",
+    "G000679",
+    "G000681"
+  ],
+  "raw_response": "[{\"category\":\"Grievance Redressal\",\"requirement\":\"The Board may close proceedings or proceed under section 33 after giving the person concerned an opportunity of being heard.\",\"source\":\"DPDP Act 2023, Section 11\",\"weight\":2,\"source_clause_ids\":[\"G000663\"],\"checkable_test\":\"Check if the Board provides an opportunity for the person concerned to be heard before closing proceedings or proceeding under section 33.\",\"applicability\":\"Applicable to complaints under the DPDP Act 2023.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause outlines the procedural requirement for the Board to provide an opportunity for the person concerned to be heard before taking action.\"},{\"category\":\"Grievance Redressal\",\"requirement\":\"The Board may issue a warning or impose costs on a complainant if it deems the complaint false or frivolous.\",\"source\":\"DPDP Act 2023, Section 12\",\"weight\":2,\"source_clause_ids\":[\"G000664\"],\"checkable_test\":\"Verify if the Board has the authority to issue a warning or impose costs on a complainant for a false or frivolous complaint.\",\"applicability\":\"Applicable to complaints under the DPDP Act 2023.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause establishes the Board's authority to take action against false or frivolous complaints.\"},{\"category\":\"Grievance Redressal\",\"requirement\":\"The Appellate Tribunal may entertain an appeal after the expiry of the period specified in sub-section (2) if there was sufficient cause for not preferring the appeal within that period.\",\"source\":\"DPDP Act 2023, Section 3\",\"weight\":2,\"source_clause_ids\":[\"G000667\"],\"checkable_test\":\"Check if the Appellate Tribunal allows appeals after the expiry of the specified period if there was sufficient cause for delay.\",\"applicability\":\"Applicable to appeals under the DPDP Act 2023.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause outlines the conditions under which the Appellate Tribunal may entertain an appeal after the expiry of the specified period.\"},{\"category\":\"Grievance Redressal\",\"requirement\":\"The Appellate Tribunal shall record its reasons in writing for not disposing of an appeal within six months.\",\"source\":\"DPDP Act 2023, Section 7\",\"weight\":2,\"source_clause_ids\":[\"G000673\"],\"checkable_test\":\"Verify if the Appellate Tribunal records its reasons in writing for not disposing of an appeal within six months.\",\"applicability\":\"Applicable to appeals under the DPDP Act 2023.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause mandates the Appellate Tribunal to record reasons for delays in disposing of appeals.\"},{\"category\":\"Grievance Redressal\",\"requirement\":\"The Appellate Tribunal shall deal with an appeal under this section in accordance with such procedure as may be prescribed.\",\"source\":\"DPDP Act 2023, Section 5\",\"weight\":2,\"source_clause_ids\":[\"G000675\"],\"checkable_test\":\"Check if the Appellate Tribunal follows prescribed procedures for handling appeals under this section.\",\"applicability\":\"Applicable to appeals under the DPDP Act 2023.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause requires the Appellate Tribunal to follow prescribed procedures for handling appeals.\"},{\"category\":\"Grievance Redressal\",\"requirement\":\"The provisions of section 18 of the Telecom Regulatory Authority of India Act, 1997 shall apply.\",\"source\":\"DPDP Act 2023, Section 6\",\"weight\":2,\"source_clause_ids\":[\"G000677\"],\"checkable_test\":\"Verify if the provisions of section 18 of the Telecom Regulatory Authority of India Act, 1997 apply to appeals under this section.\",\"applicability\":\"Applicable to appeals under the DPDP Act 2023.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause mandates the application of section 18 of the Telecom Regulatory Authority of India Act, 1997 to appeals under the DPDP Act 2023.\"},{\"category\":\"Grievance Redressal\",\"requirement\":\"An order passed by the Appellate Tribunal under this Act shall be executable by it as a decree of civil court.\",\"source\":\"DPDP Act 2023, Section 30(1)\",\"weight\":2,\"source_clause_ids\":[\"G000679\"],\"checkable_test\":\"Check if the Appellate Tribunal's order is executable as a decree of civil court.\",\"applicability\":\"Applicable to orders passed by the Appellate Tribunal under the DPDP Act 2023.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause establishes the executability of the Appellate Tribunal's orders as decrees of civil court.\"},{\"category\":\"Grievance Redressal\",\"requirement\":\"The Board may direct the parties concerned to attempt resolution of the dispute through mediation if it deems the complaint may be resolved by mediation.\",\"source\":\"DPDP Act 2023, Section 31\",\"weight\":2,\"source_clause_ids\":[\"G000681\"],\"checkable_test\":\"Verify if the Board has the authority to direct parties to resolve disputes through mediation if it deems the complaint may be resolved by mediation.\",\"applicability\":\"Applicable to complaints under the DPDP Act 2023.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This clause outlines the Board's authority to direct mediation for resolving disputes.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Grievance Redressal",
+      "requirement": "The Board may close proceedings or proceed under section 33 after giving the person concerned an opportunity of being heard.",
+      "source": "DPDP Act 2023, Section 11",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000663"
+      ],
+      "checkable_test": "Check if the Board provides an opportunity for the person concerned to be heard before closing proceedings or proceeding under section 33.",
+      "applicability": "Applicable to complaints under the DPDP Act 2023.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause outlines the procedural requirement for the Board to provide an opportunity for the person concerned to be heard before taking action.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Grievance Redressal",
+      "requirement": "The Board may issue a warning or impose costs on a complainant if it deems the complaint false or frivolous.",
+      "source": "DPDP Act 2023, Section 12",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000664"
+      ],
+      "checkable_test": "Verify if the Board has the authority to issue a warning or impose costs on a complainant for a false or frivolous complaint.",
+      "applicability": "Applicable to complaints under the DPDP Act 2023.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause establishes the Board's authority to take action against false or frivolous complaints.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Grievance Redressal",
+      "requirement": "The Appellate Tribunal may entertain an appeal after the expiry of the period specified in sub-section (2) if there was sufficient cause for not preferring the appeal within that period.",
+      "source": "DPDP Act 2023, Section 3",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000667"
+      ],
+      "checkable_test": "Check if the Appellate Tribunal allows appeals after the expiry of the specified period if there was sufficient cause for delay.",
+      "applicability": "Applicable to appeals under the DPDP Act 2023.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause outlines the conditions under which the Appellate Tribunal may entertain an appeal after the expiry of the specified period.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Grievance Redressal",
+      "requirement": "The Appellate Tribunal shall record its reasons in writing for not disposing of an appeal within six months.",
+      "source": "DPDP Act 2023, Section 7",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000673"
+      ],
+      "checkable_test": "Verify if the Appellate Tribunal records its reasons in writing for not disposing of an appeal within six months.",
+      "applicability": "Applicable to appeals under the DPDP Act 2023.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause mandates the Appellate Tribunal to record reasons for delays in disposing of appeals.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Grievance Redressal",
+      "requirement": "The Appellate Tribunal shall deal with an appeal under this section in accordance with such procedure as may be prescribed.",
+      "source": "DPDP Act 2023, Section 5",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000675"
+      ],
+      "checkable_test": "Check if the Appellate Tribunal follows prescribed procedures for handling appeals under this section.",
+      "applicability": "Applicable to appeals under the DPDP Act 2023.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause requires the Appellate Tribunal to follow prescribed procedures for handling appeals.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Grievance Redressal",
+      "requirement": "The provisions of section 18 of the Telecom Regulatory Authority of India Act, 1997 shall apply.",
+      "source": "DPDP Act 2023, Section 6",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000677"
+      ],
+      "checkable_test": "Verify if the provisions of section 18 of the Telecom Regulatory Authority of India Act, 1997 apply to appeals under this section.",
+      "applicability": "Applicable to appeals under the DPDP Act 2023.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause mandates the application of section 18 of the Telecom Regulatory Authority of India Act, 1997 to appeals under the DPDP Act 2023.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Grievance Redressal",
+      "requirement": "An order passed by the Appellate Tribunal under this Act shall be executable by it as a decree of civil court.",
+      "source": "DPDP Act 2023, Section 30(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000679"
+      ],
+      "checkable_test": "Check if the Appellate Tribunal's order is executable as a decree of civil court.",
+      "applicability": "Applicable to orders passed by the Appellate Tribunal under the DPDP Act 2023.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause establishes the executability of the Appellate Tribunal's orders as decrees of civil court.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Grievance Redressal",
+      "requirement": "The Board may direct the parties concerned to attempt resolution of the dispute through mediation if it deems the complaint may be resolved by mediation.",
+      "source": "DPDP Act 2023, Section 31",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000681"
+      ],
+      "checkable_test": "Verify if the Board has the authority to direct parties to resolve disputes through mediation if it deems the complaint may be resolved by mediation.",
+      "applicability": "Applicable to complaints under the DPDP Act 2023.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This clause outlines the Board's authority to direct mediation for resolving disputes.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T13:54:22.600093+00:00",
+  "multi_mapped_records": []
+}

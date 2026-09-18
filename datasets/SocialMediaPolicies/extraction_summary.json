@@ -1,0 +1,32 @@
+{
+  "run_timestamp_utc": "2026-09-16T05:33:02.113480+00:00",
+  "source_root": "datasets\\SocialMediaPolicies",
+  "discovered_files_total": 43,
+  "platform_count": 6,
+  "total_clauses": 2664,
+  "total_failed_files": 0,
+  "total_review_records": 21,
+  "documents_by_platform": {
+    "Google": 5,
+    "Meta": 5,
+    "Snapchat": 5,
+    "Telegram": 4,
+    "WhatsApp": 16,
+    "Youtube": 8
+  },
+  "clauses_by_platform": {
+    "Google": 513,
+    "Meta": 434,
+    "Snapchat": 547,
+    "Telegram": 254,
+    "WhatsApp": 621,
+    "Youtube": 295
+  },
+  "quality_status_counts": {
+    "PASS": 38,
+    "REVIEW": 5
+  },
+  "ocr_enabled": false,
+  "ocr_min_chars": 30,
+  "max_clause_chars": 1400
+}

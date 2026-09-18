@@ -1,0 +1,68 @@
+{
+  "batch_id": "b58be244a7b4d8d9db08e926",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001564",
+    "G001565",
+    "G001567",
+    "G001577",
+    "G001578",
+    "G001579",
+    "G001582",
+    "G001584"
+  ],
+  "raw_response": "[{\"category\":\"Security Safeguards\",\"requirement\":\"Electronic records must be retained in the original format or an equivalent format that accurately represents the original information.\",\"source\":\"IT Act 2000, Section 10(2)(b)\",\"weight\":2,\"source_clause_ids\":[\"G001565\"],\"checkable_test\":\"Check if the document specifies that electronic records are retained in the original format or an equivalent format that accurately represents the original information.\",\"applicability\":\"Applies to electronic records stored by the organization.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This requirement is derived from the IT Act 2000, Section 10(2)(b), which mandates the retention of electronic records in a format that accurately represents the original information.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"Electronic records must remain accessible for subsequent reference.\",\"source\":\"IT Act 2000, Section 10(2)(a)\",\"weight\":2,\"source_clause_ids\":[\"G001564\"],\"checkable_test\":\"Check if the document specifies that electronic records are kept accessible for subsequent reference.\",\"applicability\":\"Applies to electronic records stored by the organization.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This requirement is derived from the IT Act 2000, Section 10(2)(a), which mandates that electronic records remain accessible for subsequent reference.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"Electronic records must not be altered in a way that affects their original content or integrity.\",\"source\":\"IT Act 2000, Section 10(2)(b)\",\"weight\":2,\"source_clause_ids\":[\"G001567\"],\"checkable_test\":\"Check if the document specifies that electronic records are not altered in a way that affects their original content or integrity.\",\"applicability\":\"Applies to electronic records stored by the organization.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This requirement is derived from the IT Act 2000, Section 10(2)(b), which excludes information that is automatically generated solely for the purpose of enabling an electronic record to be despatched or received from the scope of the retention requirement, implying that such records must not be altered in a way that affects their original content or integrity.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Security Safeguards",
+      "requirement": "Electronic records must be retained in the original format or an equivalent format that accurately represents the original information.",
+      "source": "IT Act 2000, Section 10(2)(b)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001565"
+      ],
+      "checkable_test": "Check if the document specifies that electronic records are retained in the original format or an equivalent format that accurately represents the original information.",
+      "applicability": "Applies to electronic records stored by the organization.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This requirement is derived from the IT Act 2000, Section 10(2)(b), which mandates the retention of electronic records in a format that accurately represents the original information.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Electronic records must remain accessible for subsequent reference.",
+      "source": "IT Act 2000, Section 10(2)(a)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001564"
+      ],
+      "checkable_test": "Check if the document specifies that electronic records are kept accessible for subsequent reference.",
+      "applicability": "Applies to electronic records stored by the organization.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This requirement is derived from the IT Act 2000, Section 10(2)(a), which mandates that electronic records remain accessible for subsequent reference.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Electronic records must not be altered in a way that affects their original content or integrity.",
+      "source": "IT Act 2000, Section 10(2)(b)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001567"
+      ],
+      "checkable_test": "Check if the document specifies that electronic records are not altered in a way that affects their original content or integrity.",
+      "applicability": "Applies to electronic records stored by the organization.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This requirement is derived from the IT Act 2000, Section 10(2)(b), which excludes information that is automatically generated solely for the purpose of enabling an electronic record to be despatched or received from the scope of the retention requirement, implying that such records must not be altered in a way that affects their original content or integrity.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T14:32:20.616835+00:00",
+  "multi_mapped_records": []
+}

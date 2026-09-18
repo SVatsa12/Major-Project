@@ -1,0 +1,128 @@
+{
+  "batch_id": "6a5e83ba0e78acf18256d8d2",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G000568",
+    "G000569",
+    "G000570",
+    "G000571",
+    "G000572",
+    "G000577",
+    "G000578",
+    "G000579"
+  ],
+  "raw_response": "[\n  {\n    \"category\": \"Data Retention & Erasure\",\n    \"requirement\": \"A Data Principal must provide only verifiably authentic information and exercise the right to correction or erasure as provided under the Act or its rules.\",\n    \"source\": \"DPDP Act 2023, Section 15(e)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G000568\"],\n    \"checkable_test\": \"Verify if the document requires users to provide only authentic information and allows correction or erasure of personal data as per the Act.\",\n    \"applicability\": \"Applies to all data principals under the DPDP Act 2023.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Data Principal Rights\",\n    \"requirement\": \"A Data Principal has the right to correction and erasure of personal data as provided under the Act or its rules.\",\n    \"source\": \"DPDP Act 2023, Section 15(e)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G000569\"],\n    \"checkable_test\": \"Verify if the document allows users to correct or erase their personal data as per the Act.\",\n    \"applicability\": \"Applies to all data principals under the DPDP Act 2023.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Grievance Redressal\",\n    \"requirement\": \"A Data Principal has the right to grievance redressal as provided under the Act or its rules.\",\n    \"source\": \"DPDP Act 2023, Section 15(e)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G000570\"],\n    \"checkable_test\": \"Verify if the document provides a mechanism for users to raise grievances and obtain redressal as per the Act.\",\n    \"applicability\": \"Applies to all data principals under the DPDP Act 2023.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Data Principal Rights\",\n    \"requirement\": \"A Data Principal has the right to nominate as provided under the Act or its rules.\",\n    \"source\": \"DPDP Act 2023, Section 15(e)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G000571\"],\n    \"checkable_test\": \"Verify if the document allows users to nominate a representative to exercise their data rights as per the Act.\",\n    \"applicability\": \"Applies to all data principals under the DPDP Act 2023.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Significant Data Fiduciary Obligations\",\n    \"requirement\": \"Processing of personal data is necessary for enforcing any legal right or claim.\",\n    \"source\": \"DPDP Act 2023, Section SPECIAL PROVISIONS(a)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G000577\"],\n    \"checkable_test\": \"Verify if the document allows processing of personal data for enforcing legal rights or claims.\",\n    \"applicability\": \"Applies to data fiduciaries processing data for legal enforcement.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Significant Data Fiduciary Obligations\",\n    \"requirement\": \"Processing of personal data by courts, tribunals, or regulatory bodies is necessary for the performance of their functions.\",\n    \"source\": \"DPDP Act 2023, Section SPECIAL PROVISIONS(b)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G000578\"],\n    \"checkable_test\": \"Verify if the document allows processing of personal data by judicial or regulatory bodies for their functions.\",\n    \"applicability\": \"Applies to data fiduciaries processing data for judicial or regulatory functions.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  },\n  {\n    \"category\": \"Significant Data Fiduciary Obligations\",\n    \"requirement\": \"Processing of personal data is necessary for the prevention, detection, investigation, or prosecution of any offence or contravention of law in India.\",\n    \"source\": \"DPDP Act 2023, Section SPECIAL PROVISIONS(c)\",\n    \"weight\": 3,\n    \"source_clause_ids\": [\"G000579\"],\n    \"checkable_test\": \"Verify if the document allows processing of personal data for law enforcement or criminal investigations.\",\n    \"applicability\": \"Applies to data fiduciaries processing data for law enforcement purposes.\",\n    \"assessability\": \"High\",\n    \"citation_confidence\": \"high\",\n    \"notes\": \"\"\n  }\n]",
+  "parsed_entries": [
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "A Data Principal must provide only verifiably authentic information and exercise the right to correction or erasure as provided under the Act or its rules.",
+      "source": "DPDP Act 2023, Section 15(e)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000568"
+      ],
+      "checkable_test": "Verify if the document requires users to provide only authentic information and allows correction or erasure of personal data as per the Act.",
+      "applicability": "Applies to all data principals under the DPDP Act 2023.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Principal Rights",
+      "requirement": "A Data Principal has the right to correction and erasure of personal data as provided under the Act or its rules.",
+      "source": "DPDP Act 2023, Section 15(e)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000569"
+      ],
+      "checkable_test": "Verify if the document allows users to correct or erase their personal data as per the Act.",
+      "applicability": "Applies to all data principals under the DPDP Act 2023.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Grievance Redressal",
+      "requirement": "A Data Principal has the right to grievance redressal as provided under the Act or its rules.",
+      "source": "DPDP Act 2023, Section 15(e)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000570"
+      ],
+      "checkable_test": "Verify if the document provides a mechanism for users to raise grievances and obtain redressal as per the Act.",
+      "applicability": "Applies to all data principals under the DPDP Act 2023.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Principal Rights",
+      "requirement": "A Data Principal has the right to nominate as provided under the Act or its rules.",
+      "source": "DPDP Act 2023, Section 15(e)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000571"
+      ],
+      "checkable_test": "Verify if the document allows users to nominate a representative to exercise their data rights as per the Act.",
+      "applicability": "Applies to all data principals under the DPDP Act 2023.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Processing of personal data is necessary for enforcing any legal right or claim.",
+      "source": "DPDP Act 2023, Section SPECIAL PROVISIONS(a)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000577"
+      ],
+      "checkable_test": "Verify if the document allows processing of personal data for enforcing legal rights or claims.",
+      "applicability": "Applies to data fiduciaries processing data for legal enforcement.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Processing of personal data by courts, tribunals, or regulatory bodies is necessary for the performance of their functions.",
+      "source": "DPDP Act 2023, Section SPECIAL PROVISIONS(b)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000578"
+      ],
+      "checkable_test": "Verify if the document allows processing of personal data by judicial or regulatory bodies for their functions.",
+      "applicability": "Applies to data fiduciaries processing data for judicial or regulatory functions.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Processing of personal data is necessary for the prevention, detection, investigation, or prosecution of any offence or contravention of law in India.",
+      "source": "DPDP Act 2023, Section SPECIAL PROVISIONS(c)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000579"
+      ],
+      "checkable_test": "Verify if the document allows processing of personal data for law enforcement or criminal investigations.",
+      "applicability": "Applies to data fiduciaries processing data for law enforcement purposes.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T13:46:13.486317+00:00",
+  "multi_mapped_records": []
+}

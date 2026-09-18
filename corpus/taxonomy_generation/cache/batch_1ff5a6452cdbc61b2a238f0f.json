@@ -1,0 +1,87 @@
+{
+  "batch_id": "1ff5a6452cdbc61b2a238f0f",
+  "status": "PARTIAL_VALIDATION",
+  "input_clause_ids": [
+    "G000696",
+    "G000697",
+    "G000698",
+    "G000708",
+    "G000709",
+    "G000710",
+    "G000713",
+    "G000714"
+  ],
+  "raw_response": "[{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Significant data fiduciaries must ensure that monetary penalties imposed for breaches are proportionate and effective, taking into account the need to deter and secure observance of the Act.\",\"source\":\"DPDP Act 2023, Section 38(1)\",\"weight\":3,\"source_clause_ids\":[\"G000698\"],\"checkable_test\":\"Check if the penalty imposed for a breach is proportionate and effective.\",\"applicability\":\"Applicable to significant data fiduciaries.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This requirement is derived from the obligation to ensure penalties are proportionate and effective.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Significant data fiduciaries must ensure that penalties imposed for breaches are proportionate and effective, having regard to the need to secure observance of and deter breach of the provisions of the Act.\",\"source\":\"DPDP Act 2023, Section 38(1)\",\"weight\":3,\"source_clause_ids\":[\"G000698\"],\"checkable_test\":\"Check if the penalty imposed for a breach is proportionate and effective.\",\"applicability\":\"Applicable to significant data fiduciaries.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This requirement is derived from the obligation to ensure penalties are proportionate and effective.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Significant data fiduciaries must ensure that monetary penalties imposed for breaches are proportionate and effective, taking into account the need to deter and secure observance of the Act.",
+      "source": "DPDP Act 2023, Section 38(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000698"
+      ],
+      "checkable_test": "Check if the penalty imposed for a breach is proportionate and effective.",
+      "applicability": "Applicable to significant data fiduciaries.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "This requirement is derived from the obligation to ensure penalties are proportionate and effective.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [
+    {
+      "position": 1,
+      "entry": {
+        "category": "Significant Data Fiduciary Obligations",
+        "requirement": "Significant data fiduciaries must ensure that penalties imposed for breaches are proportionate and effective, having regard to the need to secure observance of and deter breach of the provisions of the Act.",
+        "source": "DPDP Act 2023, Section 38(1)",
+        "weight": 3,
+        "source_clause_ids": [
+          "G000698"
+        ],
+        "checkable_test": "Check if the penalty imposed for a breach is proportionate and effective.",
+        "applicability": "Applicable to significant data fiduciaries.",
+        "assessability": "2",
+        "citation_confidence": "high",
+        "notes": "This requirement is derived from the obligation to ensure penalties are proportionate and effective.",
+        "human_review_status": "PENDING"
+      },
+      "error": "discarded as same-category, semantically similar duplicate of another entry sharing this source clause"
+    }
+  ],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T15:38:50.564349+00:00",
+  "multi_mapped_records": [
+    {
+      "batch_id": "1ff5a6452cdbc61b2a238f0f",
+      "source_clause_id": "G000698",
+      "total_entries": 2,
+      "distinct_categories": 1,
+      "categories": [
+        "Significant Data Fiduciary Obligations"
+      ],
+      "decision": "KEPT_FIRST_PER_CATEGORY_OR_DEDUPED_BY_EMBEDDING",
+      "kept_positions": [
+        0
+      ],
+      "discarded_positions": [
+        1
+      ],
+      "entries_summary": [
+        {
+          "position": 0,
+          "category": "Significant Data Fiduciary Obligations",
+          "requirement": "Significant data fiduciaries must ensure that monetary penalties imposed for breaches are proportionate and effective, t"
+        },
+        {
+          "position": 1,
+          "category": "Significant Data Fiduciary Obligations",
+          "requirement": "Significant data fiduciaries must ensure that penalties imposed for breaches are proportionate and effective, having reg"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "cache_key": "f6d72dacf9a8feec97842d7bf89898a037a4a7e72eacd7f6bc5b5182c9fd6c92",
+  "created_at_utc": "2026-09-16T13:33:48.521258+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S001441",
+    "S001442",
+    "S001443",
+    "S001444",
+    "S001445",
+    "S001446"
+  ],
+  "labels": [
+    {
+      "clause_id": "S001441",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S001442",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S001443",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S001444",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Compliant",
+      "justification": "The clause addresses security safeguards by prohibiting deceptive practices that could compromise data integrity."
+    },
+    {
+      "clause_id": "S001445",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S001446",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Compliant",
+      "justification": "The clause addresses security safeguards by prohibiting deceptive calls to action that could compromise data integrity."
+    }
+  ],
+  "status": "SUCCESS"
+}

@@ -1,0 +1,115 @@
+{
+  "batch_id": "afd85543b85d1b8ed13324d2",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001669",
+    "G001670",
+    "G001674",
+    "G001675",
+    "G001678",
+    "G001680",
+    "G001681",
+    "G001682"
+  ],
+  "raw_response": "[{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"A Certifying Authority's licence may not be suspended or revoked without providing a reasonable opportunity to show cause against the proposed action.\",\"source\":\"IT Act 2000, Section Regulation of Certifying Authorities\",\"weight\":2,\"source_clause_ids\":[\"G001669\",\"G001670\",\"G001674\"],\"checkable_test\":\"Check if the licence suspension or revocation process includes a reasonable opportunity for the Certifying Authority to show cause.\",\"applicability\":\"Applicable to Certifying Authorities under the IT Act 2000.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation applies to the procedural requirements for licence suspension or revocation.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"A Certifying Authority whose licence has been suspended may not issue any electronic signature Certificate during the suspension.\",\"source\":\"IT Act 2000, Section Regulation of Certifying Authorities\",\"weight\":3,\"source_clause_ids\":[\"G001675\"],\"checkable_test\":\"Verify that the Certifying Authority is prohibited from issuing electronic signature certificates during the suspension period.\",\"applicability\":\"Applicable to Certifying Authorities under the IT Act 2000.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This is a core obligation regarding the restriction on issuing certificates during licence suspension.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The Controller must publish notices of suspension or revocation in all specified repositories.\",\"source\":\"IT Act 2000, Section Regulation of Certifying Authorities\",\"weight\":2,\"source_clause_ids\":[\"G001678\"],\"checkable_test\":\"Check if the Controller publishes notices of suspension or revocation in all specified repositories.\",\"applicability\":\"Applicable to Certifying Authorities under the IT Act 2000.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation ensures transparency in the suspension or revocation process.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The Controller may publicise the contents of a database in appropriate electronic or other media.\",\"source\":\"IT Act 2000, Section Regulation of Certifying Authorities\",\"weight\":1,\"source_clause_ids\":[\"G001680\"],\"checkable_test\":\"Verify if the Controller has the authority to publicise database contents in appropriate media.\",\"applicability\":\"Applicable to Certifying Authorities under the IT Act 2000.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This is a procedural obligation regarding the dissemination of database contents.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The Controller may delegate powers to officers under this Chapter.\",\"source\":\"IT Act 2000, Section Regulation of Certifying Authorities\",\"weight\":1,\"source_clause_ids\":[\"G001681\"],\"checkable_test\":\"Check if the Controller has delegated powers to officers for executing functions under this Chapter.\",\"applicability\":\"Applicable to Certifying Authorities under the IT Act 2000.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This is a procedural obligation regarding the delegation of authority.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The Controller or authorised officer may investigate contraventions of the Act, rules, or regulations.\",\"source\":\"IT Act 2000, Section Regulation of Certifying Authorities\",\"weight\":2,\"source_clause_ids\":[\"G001682\"],\"checkable_test\":\"Verify if the Controller or authorised officer has the authority to investigate contraventions.\",\"applicability\":\"Applicable to Certifying Authorities under the IT Act 2000.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation outlines the investigative powers of the Controller or authorised officers.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "A Certifying Authority's licence may not be suspended or revoked without providing a reasonable opportunity to show cause against the proposed action.",
+      "source": "IT Act 2000, Section Regulation of Certifying Authorities",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001669",
+        "G001670",
+        "G001674"
+      ],
+      "checkable_test": "Check if the licence suspension or revocation process includes a reasonable opportunity for the Certifying Authority to show cause.",
+      "applicability": "Applicable to Certifying Authorities under the IT Act 2000.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation applies to the procedural requirements for licence suspension or revocation.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "A Certifying Authority whose licence has been suspended may not issue any electronic signature Certificate during the suspension.",
+      "source": "IT Act 2000, Section Regulation of Certifying Authorities",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001675"
+      ],
+      "checkable_test": "Verify that the Certifying Authority is prohibited from issuing electronic signature certificates during the suspension period.",
+      "applicability": "Applicable to Certifying Authorities under the IT Act 2000.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This is a core obligation regarding the restriction on issuing certificates during licence suspension.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Controller must publish notices of suspension or revocation in all specified repositories.",
+      "source": "IT Act 2000, Section Regulation of Certifying Authorities",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001678"
+      ],
+      "checkable_test": "Check if the Controller publishes notices of suspension or revocation in all specified repositories.",
+      "applicability": "Applicable to Certifying Authorities under the IT Act 2000.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation ensures transparency in the suspension or revocation process.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Controller may publicise the contents of a database in appropriate electronic or other media.",
+      "source": "IT Act 2000, Section Regulation of Certifying Authorities",
+      "weight": 1,
+      "source_clause_ids": [
+        "G001680"
+      ],
+      "checkable_test": "Verify if the Controller has the authority to publicise database contents in appropriate media.",
+      "applicability": "Applicable to Certifying Authorities under the IT Act 2000.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "This is a procedural obligation regarding the dissemination of database contents.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Controller may delegate powers to officers under this Chapter.",
+      "source": "IT Act 2000, Section Regulation of Certifying Authorities",
+      "weight": 1,
+      "source_clause_ids": [
+        "G001681"
+      ],
+      "checkable_test": "Check if the Controller has delegated powers to officers for executing functions under this Chapter.",
+      "applicability": "Applicable to Certifying Authorities under the IT Act 2000.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "This is a procedural obligation regarding the delegation of authority.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Controller or authorised officer may investigate contraventions of the Act, rules, or regulations.",
+      "source": "IT Act 2000, Section Regulation of Certifying Authorities",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001682"
+      ],
+      "checkable_test": "Verify if the Controller or authorised officer has the authority to investigate contraventions.",
+      "applicability": "Applicable to Certifying Authorities under the IT Act 2000.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation outlines the investigative powers of the Controller or authorised officers.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T14:36:22.844390+00:00",
+  "multi_mapped_records": []
+}

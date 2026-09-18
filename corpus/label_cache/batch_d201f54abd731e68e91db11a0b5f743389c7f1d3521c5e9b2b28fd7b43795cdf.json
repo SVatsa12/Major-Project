@@ -1,0 +1,53 @@
+{
+  "cache_key": "d201f54abd731e68e91db11a0b5f743389c7f1d3521c5e9b2b28fd7b43795cdf",
+  "created_at_utc": "2026-09-17T07:32:14.686164+00:00",
+  "prompt_version": "policy-labeling-v7-reliable-batches",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S002407",
+    "S002408",
+    "S002409",
+    "S002410",
+    "S002411",
+    "S002412"
+  ],
+  "labels": [
+    {
+      "clause_id": "S002407",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses counterfeit goods and trademark issues, not personal data security or related requirements."
+    },
+    {
+      "clause_id": "S002408",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses harmful products and services, not personal data security or related requirements."
+    },
+    {
+      "clause_id": "S002409",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses dangerous content, not personal data security or related requirements."
+    },
+    {
+      "clause_id": "S002410",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses dishonest behaviour, not personal data security or related requirements."
+    },
+    {
+      "clause_id": "S002411",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses dishonest behaviour, not personal data security or related requirements."
+    },
+    {
+      "clause_id": "S002412",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses offensive content, not personal data security or related requirements."
+    }
+  ],
+  "status": "SUCCESS"
+}

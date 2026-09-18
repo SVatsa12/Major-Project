@@ -1,0 +1,53 @@
+{
+  "cache_key": "465cbaaf33ce35cf673cc5a12959f3c55c6f9e69cba6fa8226d79b01e84eeb3a",
+  "created_at_utc": "2026-09-16T18:33:10.661718+00:00",
+  "prompt_version": "policy-labeling-v6-structured-json-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S000001",
+    "S000002",
+    "S000003",
+    "S000004",
+    "S000005",
+    "S000006"
+  ],
+  "labels": [
+    {
+      "clause_id": "S000001",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause refers to the Cloud Acceptable Use Policy but does not specifically address any of the data protection, privacy, or compliance requirements outlined in the provided taxonomy."
+    },
+    {
+      "clause_id": "S000002",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "This clause only states that the use of the Services is subject to the acceptable use policy and does not address any specific data protection, privacy, or compliance requirements."
+    },
+    {
+      "clause_id": "S000003",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "This clause defines capitalized terms and refers to the applicable contract, but does not address any specific data protection, privacy, or compliance requirements."
+    },
+    {
+      "clause_id": "S000004",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "While this clause prohibits certain uses of the Services, it does not specifically address any of the data protection, privacy, or compliance requirements outlined in the provided taxonomy."
+    },
+    {
+      "clause_id": "S000005",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "This clause prohibits actions that violate the legal rights of others, but it does not specifically address any of the data protection, privacy, or compliance requirements outlined in the provided taxonomy."
+    },
+    {
+      "clause_id": "S000006",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "This clause prohibits illegal activities, including child sexual exploitation, child abuse, or terrorism, but it does not specifically address any of the data protection, privacy, or compliance requirements outlined in the provided taxonomy."
+    }
+  ],
+  "status": "SUCCESS"
+}

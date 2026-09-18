@@ -1,0 +1,38 @@
+{
+  "batch_id": "479543203a1ac7937a546c32",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001032",
+    "G001033",
+    "G001034",
+    "G001035",
+    "G001037",
+    "G001038",
+    "G001040",
+    "G001043"
+  ],
+  "raw_response": "[{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"A Data Fiduciary must implement reasonable security safeguards to protect personal data in its possession or under its control, including any processing undertaken by it or on its behalf.\",\"source\":\"DPDP Rules 2025, Rule 6(1)\",\"weight\":3,\"source_clause_ids\":[\"G001043\"],\"checkable_test\":\"Check if the document explicitly states that the organization implements reasonable security safeguards to protect personal data.\",\"applicability\":\"Applicable to all Data Fiduciaries handling personal data.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation is directly tied to the requirement for reasonable security safeguards under the DPDP Rules 2025.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "A Data Fiduciary must implement reasonable security safeguards to protect personal data in its possession or under its control, including any processing undertaken by it or on its behalf.",
+      "source": "DPDP Rules 2025, Rule 6(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001043"
+      ],
+      "checkable_test": "Check if the document explicitly states that the organization implements reasonable security safeguards to protect personal data.",
+      "applicability": "Applicable to all Data Fiduciaries handling personal data.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to the requirement for reasonable security safeguards under the DPDP Rules 2025.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T11:24:49.817331+00:00",
+  "multi_mapped_records": []
+}

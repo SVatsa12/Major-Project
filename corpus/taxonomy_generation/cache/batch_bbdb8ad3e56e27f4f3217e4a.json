@@ -1,0 +1,132 @@
+{
+  "batch_id": "bbdb8ad3e56e27f4f3217e4a",
+  "status": "PARTIAL_VALIDATION",
+  "input_clause_ids": [
+    "G001023",
+    "G001026",
+    "G001028",
+    "G001036",
+    "G001039",
+    "G001052",
+    "G001057",
+    "G001059"
+  ],
+  "raw_response": "[{\"category\":\"Grievance Redressal\",\"requirement\":\"The Data Fiduciary must provide a mechanism for Data Principals to exercise their rights under the Act.\",\"source\":\"DPDP Rules 2025, Rule 10(1)\",\"weight\":3,\"source_clause_ids\":[\"G001023\"],\"checkable_test\":\"Existence of a mechanism for Data Principals to exercise their rights.\",\"applicability\":\"All Data Fiduciaries subject to DPDP Rules 2025.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This requirement is directly tied to the obligation to provide means for Data Principals to exercise their rights.\"},{\"category\":\"Grievance Redressal\",\"requirement\":\"The Board may inquire into the fulfillment of conditions set out in Part A of First Schedule before deciding on an application.\",\"source\":\"DPDP Rules 2025, Rule 10(2)\",\"weight\":2,\"source_clause_ids\":[\"G001026\"],\"checkable_test\":\"Existence of a process for the Board to inquire into fulfillment of conditions.\",\"applicability\":\"All Data Fiduciaries subject to DPDP Rules 2025.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This requirement outlines the process for the Board to evaluate applications.\"},{\"category\":\"Grievance Reddressal\",\"requirement\":\"The Board may reject an application and communicate the reasons for rejection to the applicant.\",\"source\":\"DPDP Rules 2025, Rule 10(2)\",\"weight\":2,\"source_clause_ids\":[\"G001028\"],\"checkable_test\":\"Existence of a process for the Board to reject applications and communicate reasons.\",\"applicability\":\"All Data Fiduciaries subject to DPDP Rules 2025.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This requirement outlines the process for the Board to reject applications and communicate reasons.\"},{\"category\":\"Data Retention & Erasure\",\"requirement\":\"The reference to any subsidy, benefit, service, certificate, licence or permit provided or issued using public funds shall be construed as a reference to provision or issuance of such subsidy, benefit, service, certificate, licence or permit by incurring expenditure on the same from, or with accrual of receipts to, public funds.\",\"source\":\"DPDP Rules 2025, Rule 10(3)\",\"weight\":1,\"source_clause_ids\":[\"G001036\"],\"checkable_test\":\"Existence of a definition for references to subsidies, benefits, etc. provided using public funds.\",\"applicability\":\"All Data Fiduciaries subject to DPDP Rules 2025.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This requirement defines the scope of references to subsidies, benefits, etc. provided using public funds.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"The term 'computer resource' shall have the same meaning as assigned to it in the Information Technology Act, 2000.\",\"source\":\"DPDP Rules 2025, Rule 10(2)\",\"weight\":2,\"source_clause_ids\":[\"G001052\"],\"checkable_test\":\"Existence of a definition for 'computer resource' aligned with the Information Technology Act, 2000.\",\"applicability\":\"All Data Fiduciaries subject to DPDP Rules 2025.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This requirement defines 'computer resource' in alignment with the Information Technology Act, 2000.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"The Data Fiduciary must implement and disclose measures to mitigate risk.\",\"source\":\"DPDP Rules 2025, Rule 10(2)\",\"weight\":3,\"source_clause_ids\":[\"G001057\"],\"checkable_test\":\"Existence of a mechanism for the Data Fiduciary to implement and disclose risk mitigation measures.\",\"applicability\":\"All Data Fiduciaries subject to DPDP Rules 2025.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This requirement outlines the obligation to implement and disclose risk mitigation measures.\"},{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"The Data Fiduciary must provide business contact information of a person who can respond to queries from Data Principals.\",\"source\":\"DPDP Rules 2025, Rule 10(2)\",\"weight\":2,\"source_clause_ids\":[\"G001059\"],\"checkable_test\":\"Existence of a mechanism for the Data Fiduciary to provide contact information for responding to queries.\",\"applicability\":\"All Data Fiduciaries subject to DPDP Rules 2025.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"This requirement outlines the obligation to provide contact information for responding to queries from Data Principals.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Grievance Redressal",
+      "requirement": "The Data Fiduciary must provide a mechanism for Data Principals to exercise their rights under the Act.",
+      "source": "DPDP Rules 2025, Rule 10(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001023"
+      ],
+      "checkable_test": "Existence of a mechanism for Data Principals to exercise their rights.",
+      "applicability": "All Data Fiduciaries subject to DPDP Rules 2025.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation to provide means for Data Principals to exercise their rights.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Grievance Redressal",
+      "requirement": "The Board may inquire into the fulfillment of conditions set out in Part A of First Schedule before deciding on an application.",
+      "source": "DPDP Rules 2025, Rule 10(2)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001026"
+      ],
+      "checkable_test": "Existence of a process for the Board to inquire into fulfillment of conditions.",
+      "applicability": "All Data Fiduciaries subject to DPDP Rules 2025.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "This requirement outlines the process for the Board to evaluate applications.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "The reference to any subsidy, benefit, service, certificate, licence or permit provided or issued using public funds shall be construed as a reference to provision or issuance of such subsidy, benefit, service, certificate, licence or permit by incurring expenditure on the same from, or with accrual of receipts to, public funds.",
+      "source": "DPDP Rules 2025, Rule 10(3)",
+      "weight": 1,
+      "source_clause_ids": [
+        "G001036"
+      ],
+      "checkable_test": "Existence of a definition for references to subsidies, benefits, etc. provided using public funds.",
+      "applicability": "All Data Fiduciaries subject to DPDP Rules 2025.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "This requirement defines the scope of references to subsidies, benefits, etc. provided using public funds.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "The term 'computer resource' shall have the same meaning as assigned to it in the Information Technology Act, 2000.",
+      "source": "DPDP Rules 2025, Rule 10(2)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001052"
+      ],
+      "checkable_test": "Existence of a definition for 'computer resource' aligned with the Information Technology Act, 2000.",
+      "applicability": "All Data Fiduciaries subject to DPDP Rules 2025.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "This requirement defines 'computer resource' in alignment with the Information Technology Act, 2000.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "The Data Fiduciary must implement and disclose measures to mitigate risk.",
+      "source": "DPDP Rules 2025, Rule 10(2)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001057"
+      ],
+      "checkable_test": "Existence of a mechanism for the Data Fiduciary to implement and disclose risk mitigation measures.",
+      "applicability": "All Data Fiduciaries subject to DPDP Rules 2025.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "This requirement outlines the obligation to implement and disclose risk mitigation measures.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "The Data Fiduciary must provide business contact information of a person who can respond to queries from Data Principals.",
+      "source": "DPDP Rules 2025, Rule 10(2)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001059"
+      ],
+      "checkable_test": "Existence of a mechanism for the Data Fiduciary to provide contact information for responding to queries.",
+      "applicability": "All Data Fiduciaries subject to DPDP Rules 2025.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "This requirement outlines the obligation to provide contact information for responding to queries from Data Principals.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [
+    {
+      "position": 2,
+      "entry": {
+        "category": "Grievance Reddressal",
+        "requirement": "The Board may reject an application and communicate the reasons for rejection to the applicant.",
+        "source": "DPDP Rules 2025, Rule 10(2)",
+        "weight": 2,
+        "source_clause_ids": [
+          "G001028"
+        ],
+        "checkable_test": "Existence of a process for the Board to reject applications and communicate reasons.",
+        "applicability": "All Data Fiduciaries subject to DPDP Rules 2025.",
+        "assessability": 2,
+        "citation_confidence": "high",
+        "notes": "This requirement outlines the process for the Board to reject applications and communicate reasons."
+      },
+      "error": "invalid category: 'Grievance Reddressal'"
+    }
+  ],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T14:01:09.450355+00:00",
+  "multi_mapped_records": []
+}

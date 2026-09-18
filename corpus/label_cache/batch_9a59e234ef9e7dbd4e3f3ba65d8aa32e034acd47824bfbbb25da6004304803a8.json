@@ -1,0 +1,53 @@
+{
+  "cache_key": "9a59e234ef9e7dbd4e3f3ba65d8aa32e034acd47824bfbbb25da6004304803a8",
+  "created_at_utc": "2026-09-17T04:42:48.402265+00:00",
+  "prompt_version": "policy-labeling-v7-reliable-batches",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S000319",
+    "S000320",
+    "S000321",
+    "S000322",
+    "S000323",
+    "S000324"
+  ],
+  "labels": [
+    {
+      "clause_id": "S000319",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Partially Compliant",
+      "justification": "The clause allows users to manage data retention and personalization, but lacks explicit security safeguards as required by the taxonomy."
+    },
+    {
+      "clause_id": "S000320",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement related to data protection, security, or privacy."
+    },
+    {
+      "clause_id": "S000321",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Partially Compliant",
+      "justification": "The clause allows users to manage personal information but lacks explicit security safeguards as required by the taxonomy."
+    },
+    {
+      "clause_id": "S000322",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement related to data protection, security, or privacy."
+    },
+    {
+      "clause_id": "S000323",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement related to data protection, security, or privacy."
+    },
+    {
+      "clause_id": "S000324",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Partially Compliant",
+      "justification": "The clause allows users to review and control data saved to their account but lacks explicit security safeguards as required by the taxonomy."
+    }
+  ],
+  "status": "SUCCESS"
+}

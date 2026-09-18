@@ -1,0 +1,53 @@
+{
+  "cache_key": "613516a7b6495085ba174e04fee01004d1802bb3c0b58d850491578518561575",
+  "created_at_utc": "2026-09-16T12:42:07.652579+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S000805",
+    "S000806",
+    "S000807",
+    "S000808",
+    "S000809",
+    "S000810"
+  ],
+  "labels": [
+    {
+      "clause_id": "S000805",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S000806",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    },
+    {
+      "clause_id": "S000807",
+      "best_match_taxonomy_id": "DPDP_ACT-0046",
+      "verdict": "Compliant",
+      "justification": "The clause allows Data Principals to request access to their personal data, aligning with Data Principal Rights."
+    },
+    {
+      "clause_id": "S000808",
+      "best_match_taxonomy_id": "DPDP_ACT-0046",
+      "verdict": "Compliant",
+      "justification": "The clause provides mechanisms for Data Principals to access and manage their personal data, satisfying Data Principal Rights."
+    },
+    {
+      "clause_id": "S000809",
+      "best_match_taxonomy_id": "DPDP_ACT-0046",
+      "verdict": "Compliant",
+      "justification": "The clause enables Data Principals to exercise their rights by visiting Help Centres and settings, satisfying Data Principal Rights."
+    },
+    {
+      "clause_id": "S000810",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement in the taxonomy."
+    }
+  ],
+  "status": "SUCCESS"
+}

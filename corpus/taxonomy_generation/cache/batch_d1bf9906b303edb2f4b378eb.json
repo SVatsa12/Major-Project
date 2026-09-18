@@ -1,0 +1,68 @@
+{
+  "batch_id": "d1bf9906b303edb2f4b378eb",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G002030",
+    "G002031",
+    "G002032",
+    "G002046",
+    "G002047",
+    "G002049",
+    "G002050",
+    "G002051"
+  ],
+  "raw_response": "[  \n  {  \n    \"category\": \"Security Safeguards\",  \n    \"requirement\": \"Implement reasonable security practices and procedures to protect sensitive personal data or information.\",  \n    \"source\": \"IT Act 2000, Section 43A\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G002030\"],  \n    \"checkable_test\": \"Verify if the organization has implemented reasonable security practices and procedures to protect sensitive personal data or information.\",  \n    \"applicability\": \"Applicable to entities handling sensitive personal data or information.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation is directly tied to the requirement under Section 43A of the IT Act 2000.\"  \n  },  \n  {  \n    \"category\": \"Data Retention & Erasure\",  \n    \"requirement\": \"Specify the information, duration, manner, and form of such information to be retained and preserved.\",  \n    \"source\": \"IT Act 2000, Section 67C\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G002047\"],  \n    \"checkable_test\": \"Verify if the organization has specified the information, duration, manner, and form of such information to be retained and preserved.\",  \n    \"applicability\": \"Applicable to entities retaining information under Section 67C.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation is directly tied to the requirement under Section 67C of the IT Act 2000.\"  \n  },  \n  {  \n    \"category\": \"Security Safeguards\",  \n    \"requirement\": \"Implement information security practices and procedures for protected systems.\",  \n    \"source\": \"IT Act 2000, Section 70\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G002051\"],  \n    \"checkable_test\": \"Verify if the organization has implemented information security practices and procedures for protected systems.\",  \n    \"applicability\": \"Applicable to entities operating protected systems.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This obligation is directly tied to the requirement under Section 70 of the IT Act 2000.\"  \n  }  \n]",
+  "parsed_entries": [
+    {
+      "category": "Security Safeguards",
+      "requirement": "Implement reasonable security practices and procedures to protect sensitive personal data or information.",
+      "source": "IT Act 2000, Section 43A",
+      "weight": 3,
+      "source_clause_ids": [
+        "G002030"
+      ],
+      "checkable_test": "Verify if the organization has implemented reasonable security practices and procedures to protect sensitive personal data or information.",
+      "applicability": "Applicable to entities handling sensitive personal data or information.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to the requirement under Section 43A of the IT Act 2000.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "Specify the information, duration, manner, and form of such information to be retained and preserved.",
+      "source": "IT Act 2000, Section 67C",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002047"
+      ],
+      "checkable_test": "Verify if the organization has specified the information, duration, manner, and form of such information to be retained and preserved.",
+      "applicability": "Applicable to entities retaining information under Section 67C.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to the requirement under Section 67C of the IT Act 2000.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Implement information security practices and procedures for protected systems.",
+      "source": "IT Act 2000, Section 70",
+      "weight": 3,
+      "source_clause_ids": [
+        "G002051"
+      ],
+      "checkable_test": "Verify if the organization has implemented information security practices and procedures for protected systems.",
+      "applicability": "Applicable to entities operating protected systems.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to the requirement under Section 70 of the IT Act 2000.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T15:18:35.872939+00:00",
+  "multi_mapped_records": []
+}

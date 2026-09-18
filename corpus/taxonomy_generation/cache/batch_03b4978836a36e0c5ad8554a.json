@@ -1,0 +1,83 @@
+{
+  "batch_id": "03b4978836a36e0c5ad8554a",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001194",
+    "G001195",
+    "G001199",
+    "G001203",
+    "G001213",
+    "G001214",
+    "G001217",
+    "G001218"
+  ],
+  "raw_response": "[  \n  {  \n    \"category\": \"Security Safeguards\",  \n    \"requirement\": \"Implement reasonable security safeguards to prevent personal data breaches and protect personal data in the possession or under control of the Data Fiduciary.\",  \n    \"source\": \"DPDP Rules 2025, Rule 1214\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G001214\"],  \n    \"checkable_test\": \"Verify if the document specifies the implementation of reasonable security safeguards to prevent personal data breaches.\",  \n    \"applicability\": \"Applies to all Data Fiduciaries processing personal data.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement is directly tied to the obligation under DPDP Rules 2025, Rule 1214.\"  \n  },  \n  {  \n    \"category\": \"Data Retention & Erasure\",  \n    \"requirement\": \"Retain personal data only for the period necessary to fulfill the purposes for which it was collected or for compliance with legal obligations.\",  \n    \"source\": \"DPDP Rules 2025, Rule 1213\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G001213\"],  \n    \"checkable_test\": \"Verify if the document specifies the retention of personal data only for the period necessary to fulfill the purposes for which it was collected or for compliance with legal obligations.\",  \n    \"applicability\": \"Applies to all Data Fiduciaries processing personal data.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement is directly tied to the obligation under DPDP Rules 2025, Rule 1213.\"  \n  },  \n  {  \n    \"category\": \"Data Principal Rights\",  \n    \"requirement\": \"Provide a clear communication link for Data Principals to exercise their rights under the Act, including access to the website or app of the Data Fiduciary.\",  \n    \"source\": \"DPDP Rules 2025, Rule 1217\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G001217\"],  \n    \"checkable_test\": \"Verify if the document provides a clear communication link for Data Principals to exercise their rights under the Act, including access to the website or app of the Data Fiduciary.\",  \n    \"applicability\": \"Applies to all Data Fiduciaries processing personal data.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement is directly tied to the obligation under DPDP Rules 2025, Rule 1217.\"  \n  },  \n  {  \n    \"category\": \"Significant Data Fiduciary Obligations\",  \n    \"requirement\": \"Ensure that the processing of personal data is carried out in a manner consistent with applicable policies and legal standards issued by the Central Government.\",  \n    \"source\": \"DPDP Rules 2025, Rule 1218\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G001218\"],  \n    \"checkable_test\": \"Verify if the document ensures that the processing of personal data is carried out in a manner consistent with applicable policies and legal standards issued by the Central Government.\",  \n    \"applicability\": \"Applies to all Data Fiduciaries processing personal data.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement is directly tied to the obligation under DPDP Rules 2025, Rule 1218.\"  \n  }  \n]",
+  "parsed_entries": [
+    {
+      "category": "Security Safeguards",
+      "requirement": "Implement reasonable security safeguards to prevent personal data breaches and protect personal data in the possession or under control of the Data Fiduciary.",
+      "source": "DPDP Rules 2025, Rule 1214",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001214"
+      ],
+      "checkable_test": "Verify if the document specifies the implementation of reasonable security safeguards to prevent personal data breaches.",
+      "applicability": "Applies to all Data Fiduciaries processing personal data.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation under DPDP Rules 2025, Rule 1214.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "Retain personal data only for the period necessary to fulfill the purposes for which it was collected or for compliance with legal obligations.",
+      "source": "DPDP Rules 2025, Rule 1213",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001213"
+      ],
+      "checkable_test": "Verify if the document specifies the retention of personal data only for the period necessary to fulfill the purposes for which it was collected or for compliance with legal obligations.",
+      "applicability": "Applies to all Data Fiduciaries processing personal data.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation under DPDP Rules 2025, Rule 1213.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Principal Rights",
+      "requirement": "Provide a clear communication link for Data Principals to exercise their rights under the Act, including access to the website or app of the Data Fiduciary.",
+      "source": "DPDP Rules 2025, Rule 1217",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001217"
+      ],
+      "checkable_test": "Verify if the document provides a clear communication link for Data Principals to exercise their rights under the Act, including access to the website or app of the Data Fiduciary.",
+      "applicability": "Applies to all Data Fiduciaries processing personal data.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation under DPDP Rules 2025, Rule 1217.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Ensure that the processing of personal data is carried out in a manner consistent with applicable policies and legal standards issued by the Central Government.",
+      "source": "DPDP Rules 2025, Rule 1218",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001218"
+      ],
+      "checkable_test": "Verify if the document ensures that the processing of personal data is carried out in a manner consistent with applicable policies and legal standards issued by the Central Government.",
+      "applicability": "Applies to all Data Fiduciaries processing personal data.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation under DPDP Rules 2025, Rule 1218.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T11:42:43.662915+00:00",
+  "multi_mapped_records": []
+}

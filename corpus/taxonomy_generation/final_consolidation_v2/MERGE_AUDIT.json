@@ -1,0 +1,142 @@
+[
+  {
+    "merge_group_id": "DPDP_RUL-0094",
+    "canonical_candidate_id": "TC-000098",
+    "merged_candidate_ids": [
+      "TC-000094",
+      "TC-000098"
+    ],
+    "source_clause_ids": [
+      "G001055",
+      "G001061"
+    ],
+    "reason": "Candidates were consolidated because the automatic merge rules found substantive duplication within the same Act/category.",
+    "review_required": true
+  },
+  {
+    "merge_group_id": "DPDP_RUL-0103",
+    "canonical_candidate_id": "TC-000105",
+    "merged_candidate_ids": [
+      "TC-000104",
+      "TC-000105"
+    ],
+    "source_clause_ids": [
+      "G001077",
+      "G001078"
+    ],
+    "reason": "Candidates were consolidated because the automatic merge rules found substantive duplication within the same Act/category.",
+    "review_required": true
+  },
+  {
+    "merge_group_id": "DPDP_RUL-0108",
+    "canonical_candidate_id": "TC-000111",
+    "merged_candidate_ids": [
+      "TC-000110",
+      "TC-000111"
+    ],
+    "source_clause_ids": [
+      "G001104",
+      "G001105"
+    ],
+    "reason": "Candidates were consolidated because the automatic merge rules found substantive duplication within the same Act/category.",
+    "review_required": true
+  },
+  {
+    "merge_group_id": "DPDP_RUL-0124",
+    "canonical_candidate_id": "TC-000128",
+    "merged_candidate_ids": [
+      "TC-000127",
+      "TC-000128"
+    ],
+    "source_clause_ids": [
+      "G001170",
+      "G001171"
+    ],
+    "reason": "Candidates were consolidated because the automatic merge rules found substantive duplication within the same Act/category.",
+    "review_required": true
+  },
+  {
+    "merge_group_id": "DPDP_ACT-0298",
+    "canonical_candidate_id": "TC-000302",
+    "merged_candidate_ids": [
+      "TC-000302",
+      "TC-000303"
+    ],
+    "source_clause_ids": [
+      "G000554",
+      "G000555"
+    ],
+    "reason": "Candidates were consolidated because the automatic merge rules found substantive duplication within the same Act/category.",
+    "review_required": true
+  },
+  {
+    "merge_group_id": "DPDP_ACT-0309",
+    "canonical_candidate_id": "TC-000314",
+    "merged_candidate_ids": [
+      "TC-000314",
+      "TC-000315"
+    ],
+    "source_clause_ids": [
+      "G000583",
+      "G000585"
+    ],
+    "reason": "Candidates were consolidated because the automatic merge rules found substantive duplication within the same Act/category.",
+    "review_required": true
+  },
+  {
+    "merge_group_id": "DPDP_ACT-0312",
+    "canonical_candidate_id": "TC-000319",
+    "merged_candidate_ids": [
+      "TC-000318",
+      "TC-000319"
+    ],
+    "source_clause_ids": [
+      "G000632",
+      "G000639"
+    ],
+    "reason": "Candidates were consolidated because the automatic merge rules found substantive duplication within the same Act/category.",
+    "review_required": true
+  },
+  {
+    "merge_group_id": "DPDP_RUL-0376",
+    "canonical_candidate_id": "TC-000383",
+    "merged_candidate_ids": [
+      "TC-000383",
+      "TC-000384"
+    ],
+    "source_clause_ids": [
+      "G001258",
+      "G001260"
+    ],
+    "reason": "Candidates were consolidated because the automatic merge rules found substantive duplication within the same Act/category.",
+    "review_required": true
+  },
+  {
+    "merge_group_id": "DPDP_RUL-0378",
+    "canonical_candidate_id": "TC-000386",
+    "merged_candidate_ids": [
+      "TC-000386",
+      "TC-000387"
+    ],
+    "source_clause_ids": [
+      "G001272",
+      "G001273"
+    ],
+    "reason": "Candidates were consolidated because the automatic merge rules found substantive duplication within the same Act/category.",
+    "review_required": true
+  },
+  {
+    "merge_group_id": "DPDP_RUL-0379",
+    "canonical_candidate_id": "TC-000388",
+    "merged_candidate_ids": [
+      "TC-000388",
+      "TC-000389"
+    ],
+    "source_clause_ids": [
+      "G001270",
+      "G001271"
+    ],
+    "reason": "Candidates were consolidated because the automatic merge rules found substantive duplication within the same Act/category.",
+    "review_required": true
+  }
+]

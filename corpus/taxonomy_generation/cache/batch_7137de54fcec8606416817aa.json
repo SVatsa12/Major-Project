@@ -1,0 +1,83 @@
+{
+  "batch_id": "7137de54fcec8606416817aa",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G002367",
+    "G002369",
+    "G002370",
+    "G002375",
+    "G002377",
+    "G002378",
+    "G002379",
+    "G002380"
+  ],
+  "raw_response": "[  \n  {  \n    \"category\": \"Grievance Redressal\",  \n    \"requirement\": \"A person who has been refused access to information requested under the RTI Act may initiate an inquiry with the Central or State Information Commission.\",  \n    \"source\": \"RTI Act 2005, Section 20(1)(b)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G002375\"],  \n    \"checkable_test\": \"Verify if the document provides a mechanism for individuals to initiate an inquiry with the Information Commission if their request for information was denied.\",  \n    \"applicability\": \"Applicable to any organization subject to the RTI Act 2005.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement is tied to the right of access to information and the grievance mechanism under the RTI Act.\"  \n  },  \n  {  \n    \"category\": \"Grievance Redressal\",  \n    \"requirement\": \"A person who has not received a response to a request for information within the time limit specified under the RTI Act may initiate an inquiry with the Central or State Information Commission.\",  \n    \"source\": \"RTI Act 2005, Section 20(1)(c)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G002377\"],  \n    \"checkable_test\": \"Verify if the document specifies a time limit for responding to information requests and provides a mechanism for initiating an inquiry if the time limit is exceeded.\",  \n    \"applicability\": \"Applicable to any organization subject to the RTI Act 2005.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement ensures timely responses to information requests and provides a grievance mechanism for delays.\"  \n  },  \n  {  \n    \"category\": \"Grievance Redressal\",  \n    \"requirement\": \"A person who believes they have been given incomplete, misleading, or false information under the RTI Act may initiate an inquiry with the Central or State Information Commission.\",  \n    \"source\": \"RTI Act 2005, Section 20(1)(e)\",  \n    \"weight\": 2,  \n    \"source_clause_ids\": [\"G002379\"],  \n    \"checkable_test\": \"Verify if the document provides a mechanism for individuals to challenge the accuracy or completeness of information provided under the RTI Act.\",  \n    \"applicability\": \"Applicable to any organization subject to the RTI Act 2005.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement allows individuals to seek redress if they believe the information provided is inaccurate or incomplete.\"  \n  },  \n  {  \n    \"category\": \"Grievance Redressal\",  \n    \"requirement\": \"The Central or State Information Commission may initiate an inquiry if there are reasonable grounds to believe that an information request was mishandled.\",  \n    \"source\": \"RTI Act 2005, Section 20(2)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G002380\"],  \n    \"checkable_test\": \"Verify if the document outlines the conditions under which the Information Commission may initiate an inquiry into the handling of an information request.\",  \n    \"applicability\": \"Applicable to any organization subject to the RTI Act 2005.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement establishes the authority of the Information Commission to investigate complaints or concerns related to information requests.\"  \n  }  \n]",
+  "parsed_entries": [
+    {
+      "category": "Grievance Redressal",
+      "requirement": "A person who has been refused access to information requested under the RTI Act may initiate an inquiry with the Central or State Information Commission.",
+      "source": "RTI Act 2005, Section 20(1)(b)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002375"
+      ],
+      "checkable_test": "Verify if the document provides a mechanism for individuals to initiate an inquiry with the Information Commission if their request for information was denied.",
+      "applicability": "Applicable to any organization subject to the RTI Act 2005.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is tied to the right of access to information and the grievance mechanism under the RTI Act.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Grievance Redressal",
+      "requirement": "A person who has not received a response to a request for information within the time limit specified under the RTI Act may initiate an inquiry with the Central or State Information Commission.",
+      "source": "RTI Act 2005, Section 20(1)(c)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002377"
+      ],
+      "checkable_test": "Verify if the document specifies a time limit for responding to information requests and provides a mechanism for initiating an inquiry if the time limit is exceeded.",
+      "applicability": "Applicable to any organization subject to the RTI Act 2005.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement ensures timely responses to information requests and provides a grievance mechanism for delays.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Grievance Redressal",
+      "requirement": "A person who believes they have been given incomplete, misleading, or false information under the RTI Act may initiate an inquiry with the Central or State Information Commission.",
+      "source": "RTI Act 2005, Section 20(1)(e)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G002379"
+      ],
+      "checkable_test": "Verify if the document provides a mechanism for individuals to challenge the accuracy or completeness of information provided under the RTI Act.",
+      "applicability": "Applicable to any organization subject to the RTI Act 2005.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement allows individuals to seek redress if they believe the information provided is inaccurate or incomplete.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Grievance Redressal",
+      "requirement": "The Central or State Information Commission may initiate an inquiry if there are reasonable grounds to believe that an information request was mishandled.",
+      "source": "RTI Act 2005, Section 20(2)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G002380"
+      ],
+      "checkable_test": "Verify if the document outlines the conditions under which the Information Commission may initiate an inquiry into the handling of an information request.",
+      "applicability": "Applicable to any organization subject to the RTI Act 2005.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement establishes the authority of the Information Commission to investigate complaints or concerns related to information requests.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T15:25:29.721844+00:00",
+  "multi_mapped_records": []
+}

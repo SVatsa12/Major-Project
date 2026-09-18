@@ -1,0 +1,53 @@
+{
+  "cache_key": "68574e339b6e2bc77de342998a84ad8a251ccc16d03d86fde42666122c0f8294",
+  "created_at_utc": "2026-09-17T04:44:36.856780+00:00",
+  "prompt_version": "policy-labeling-v7-reliable-batches",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S000343",
+    "S000344",
+    "S000345",
+    "S000346",
+    "S000347",
+    "S000348"
+  ],
+  "labels": [
+    {
+      "clause_id": "S000343",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S000344",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Partially Compliant",
+      "justification": "The clause mentions confidentiality and security measures but lacks specific details on data protection safeguards."
+    },
+    {
+      "clause_id": "S000345",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S000346",
+      "best_match_taxonomy_id": "DPDP_ACT-0031",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses breach notification but lacks specific details on the notification process."
+    },
+    {
+      "clause_id": "S000347",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S000348",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Partially Compliant",
+      "justification": "The clause mentions security issues but lacks specific details on data protection safeguards."
+    }
+  ],
+  "status": "SUCCESS"
+}

@@ -1,0 +1,53 @@
+{
+  "cache_key": "293f82d9fd5548dea7aaa44a66b66e5cf1681ecade85ccb8335bfa64ba59f10a",
+  "created_at_utc": "2026-09-17T05:50:46.139451+00:00",
+  "prompt_version": "policy-labeling-v7-reliable-batches",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S001141",
+    "S001142",
+    "S001143",
+    "S001144",
+    "S001145",
+    "S001146"
+  ],
+  "labels": [
+    {
+      "clause_id": "S001141",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause discusses privacy and user control but does not meaningfully address any listed taxonomy requirement."
+    },
+    {
+      "clause_id": "S001142",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause provides general policy coverage and definitions but does not meaningfully address any listed taxonomy requirement."
+    },
+    {
+      "clause_id": "S001143",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause introduces the topic of user controls but does not meaningfully address any listed taxonomy requirement."
+    },
+    {
+      "clause_id": "S001144",
+      "best_match_taxonomy_id": "DPDP_ACT-0046",
+      "verdict": "Partially Compliant",
+      "justification": "The clause allows users to access, update, and delete their information, partially addressing Data Principal Rights."
+    },
+    {
+      "clause_id": "S001145",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause discusses user tools but does not meaningfully address any listed taxonomy requirement."
+    },
+    {
+      "clause_id": "S001146",
+      "best_match_taxonomy_id": "DPDP_ACT-0046",
+      "verdict": "Partially Compliant",
+      "justification": "The clause allows users to access and update their information, partially addressing Data Principal Rights."
+    }
+  ],
+  "status": "SUCCESS"
+}

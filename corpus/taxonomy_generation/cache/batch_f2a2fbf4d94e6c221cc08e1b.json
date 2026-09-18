@@ -1,0 +1,69 @@
+{
+  "batch_id": "f2a2fbf4d94e6c221cc08e1b",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G000186",
+    "G000187",
+    "G000188",
+    "G000205",
+    "G000206",
+    "G000207",
+    "G000212",
+    "G000215"
+  ],
+  "raw_response": "[{\"category\":\"Grievance Redressal\",\"requirement\":\"The Authority must ensure that all decisions are fully documented and explained.\",\"source\":\"AERA_ACT_2008, SECTION=POWERS AND FUNCTIONS OF THE AUTHORITY (c)\",\"weight\":2,\"source_clause_ids\":[\"G000188\"],\"checkable_test\":\"Check if all decisions of the Authority are fully documented and explained in the governance documents.\",\"applicability\":\"Applicable to all decisions made by the Authority.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation is directly tied to the transparency and accountability of the Authority's decision-making process.\"},{\"category\":\"Grievance Redressal\",\"requirement\":\"The Authority Appellate Tribunal must adjudicate disputes between service providers and consumers.\",\"source\":\"AERA_ACT_2008, SECTION=Authority Appellate Tribunal to— (a) and (ii)\",\"weight\":2,\"source_clause_ids\":[\"G000205\",\"G000207\"],\"checkable_test\":\"Verify that the Authority Appellate Tribunal is responsible for adjudicating disputes between service providers and consumers.\",\"applicability\":\"Applicable to disputes involving service providers and consumers.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation outlines the role of the Authority Appellate Tribunal in resolving disputes.\"},{\"category\":\"Grievance Redressal\",\"requirement\":\"The Authority Appellate Tribunal must hear and dispose of appeals against decisions of the Authority.\",\"source\":\"AERA_ACT_2008, SECTION=Authority Appellate Tribunal to— (b)\",\"weight\":2,\"source_clause_ids\":[\"G000215\"],\"checkable_test\":\"Check if the Authority Appellate Tribunal is responsible for hearing and disposing of appeals against Authority decisions.\",\"applicability\":\"Applicable to all appeals against Authority decisions.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This obligation ensures that there is a mechanism for appealing Authority decisions.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Grievance Redressal",
+      "requirement": "The Authority must ensure that all decisions are fully documented and explained.",
+      "source": "AERA_ACT_2008, SECTION=POWERS AND FUNCTIONS OF THE AUTHORITY (c)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000188"
+      ],
+      "checkable_test": "Check if all decisions of the Authority are fully documented and explained in the governance documents.",
+      "applicability": "Applicable to all decisions made by the Authority.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation is directly tied to the transparency and accountability of the Authority's decision-making process.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Grievance Redressal",
+      "requirement": "The Authority Appellate Tribunal must adjudicate disputes between service providers and consumers.",
+      "source": "AERA_ACT_2008, SECTION=Authority Appellate Tribunal to— (a) and (ii)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000205",
+        "G000207"
+      ],
+      "checkable_test": "Verify that the Authority Appellate Tribunal is responsible for adjudicating disputes between service providers and consumers.",
+      "applicability": "Applicable to disputes involving service providers and consumers.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation outlines the role of the Authority Appellate Tribunal in resolving disputes.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Grievance Redressal",
+      "requirement": "The Authority Appellate Tribunal must hear and dispose of appeals against decisions of the Authority.",
+      "source": "AERA_ACT_2008, SECTION=Authority Appellate Tribunal to— (b)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000215"
+      ],
+      "checkable_test": "Check if the Authority Appellate Tribunal is responsible for hearing and disposing of appeals against Authority decisions.",
+      "applicability": "Applicable to all appeals against Authority decisions.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This obligation ensures that there is a mechanism for appealing Authority decisions.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T15:32:29.887028+00:00",
+  "multi_mapped_records": []
+}

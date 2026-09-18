@@ -1,0 +1,113 @@
+{
+  "batch_id": "1c7b4e719ec1d2e8e7b8e355",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001585",
+    "G001587",
+    "G001591",
+    "G001598",
+    "G001599",
+    "G001606",
+    "G001608",
+    "G001629"
+  ],
+  "raw_response": "[{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"An information system programmed by or on behalf of the originator must operate automatically to ensure proper attribution, acknowledgment, and despatch of electronic records.\",\"source\":\"IT Act 2000, Section 8(1)\",\"weight\":2,\"source_clause_ids\":[\"G001585\"],\"checkable_test\":\"Verify if the information system operates automatically as per the clause.\",\"applicability\":\"Applicable to all electronic records despatched by the originator.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This clause mandates the use of an automated system for handling electronic records.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"The despatch of an electronic record occurs when it enters a computer resource outside the control of the originator, unless otherwise agreed upon.\",\"source\":\"IT Act 2000, Section 8(1)\",\"weight\":2,\"source_clause_ids\":[\"G001591\"],\"checkable_test\":\"Check if the despatch timing is defined as the entry into a computer resource outside the originator's control.\",\"applicability\":\"Applicable to all electronic records despatched by the originator.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This clause defines the timing of despatch for electronic records.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"Receipt of an electronic record occurs when it enters the designated computer resource, or when it is retrieved by the addressee if sent to a non-designated resource.\",\"source\":\"IT Act 2000, Section 8(1)\",\"weight\":2,\"source_clause_ids\":[\"G001598\"],\"checkable_test\":\"Verify if the receipt timing is defined based on entry into the designated resource or retrieval by the addressee.\",\"applicability\":\"Applicable to all electronic records sent to an addressee.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This clause defines the timing of receipt for electronic records.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"If no designated computer resource is specified, receipt occurs when the electronic record enters the addressee's computer resource.\",\"source\":\"IT Act 2000, Section 8(1)\",\"weight\":2,\"source_clause_ids\":[\"G001599\"],\"checkable_test\":\"Check if the receipt timing is defined as the entry into the addressee's computer resource when no designated resource is specified.\",\"applicability\":\"Applicable to all electronic records sent to an addressee without a designated resource.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This clause defines the timing of receipt for electronic records when no designated resource is specified.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"The signature creation data must be under the exclusive control of the signatory at the time of affixing the signature.\",\"source\":\"IT Act 2000, Section 8(1)\",\"weight\":2,\"source_clause_ids\":[\"G001608\"],\"checkable_test\":\"Verify if the signature creation data is under the exclusive control of the signatory at the time of signing.\",\"applicability\":\"Applicable to all electronic signatures used in electronic records.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This clause mandates exclusive control of signature creation data by the signatory.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Certifying Authorities must specify the conditions under which they conduct their business.\",\"source\":\"IT Act 2000, Section 8(1)\",\"weight\":2,\"source_clause_ids\":[\"G001629\"],\"checkable_test\":\"Check if the Certifying Authorities have specified the conditions for conducting their business.\",\"applicability\":\"Applicable to all Certifying Authorities under the IT Act 2000.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This clause requires Certifying Authorities to specify the conditions for their operations.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "An information system programmed by or on behalf of the originator must operate automatically to ensure proper attribution, acknowledgment, and despatch of electronic records.",
+      "source": "IT Act 2000, Section 8(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001585"
+      ],
+      "checkable_test": "Verify if the information system operates automatically as per the clause.",
+      "applicability": "Applicable to all electronic records despatched by the originator.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause mandates the use of an automated system for handling electronic records.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "The despatch of an electronic record occurs when it enters a computer resource outside the control of the originator, unless otherwise agreed upon.",
+      "source": "IT Act 2000, Section 8(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001591"
+      ],
+      "checkable_test": "Check if the despatch timing is defined as the entry into a computer resource outside the originator's control.",
+      "applicability": "Applicable to all electronic records despatched by the originator.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause defines the timing of despatch for electronic records.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Receipt of an electronic record occurs when it enters the designated computer resource, or when it is retrieved by the addressee if sent to a non-designated resource.",
+      "source": "IT Act 2000, Section 8(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001598"
+      ],
+      "checkable_test": "Verify if the receipt timing is defined based on entry into the designated resource or retrieval by the addressee.",
+      "applicability": "Applicable to all electronic records sent to an addressee.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause defines the timing of receipt for electronic records.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "If no designated computer resource is specified, receipt occurs when the electronic record enters the addressee's computer resource.",
+      "source": "IT Act 2000, Section 8(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001599"
+      ],
+      "checkable_test": "Check if the receipt timing is defined as the entry into the addressee's computer resource when no designated resource is specified.",
+      "applicability": "Applicable to all electronic records sent to an addressee without a designated resource.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause defines the timing of receipt for electronic records when no designated resource is specified.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "The signature creation data must be under the exclusive control of the signatory at the time of affixing the signature.",
+      "source": "IT Act 2000, Section 8(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001608"
+      ],
+      "checkable_test": "Verify if the signature creation data is under the exclusive control of the signatory at the time of signing.",
+      "applicability": "Applicable to all electronic signatures used in electronic records.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause mandates exclusive control of signature creation data by the signatory.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Certifying Authorities must specify the conditions under which they conduct their business.",
+      "source": "IT Act 2000, Section 8(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001629"
+      ],
+      "checkable_test": "Check if the Certifying Authorities have specified the conditions for conducting their business.",
+      "applicability": "Applicable to all Certifying Authorities under the IT Act 2000.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause requires Certifying Authorities to specify the conditions for their operations.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T15:46:18.364189+00:00",
+  "multi_mapped_records": []
+}

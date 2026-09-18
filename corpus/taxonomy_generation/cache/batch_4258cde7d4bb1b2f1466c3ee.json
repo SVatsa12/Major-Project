@@ -1,0 +1,162 @@
+{
+  "batch_id": "4258cde7d4bb1b2f1466c3ee",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001336",
+    "G001342",
+    "G001353",
+    "G001418",
+    "G001448",
+    "G001471",
+    "G001489",
+    "G001490"
+  ],
+  "raw_response": "[{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"Intermediaries must comply with directions issued by authorities for interception, monitoring, or decryption of information through computer resources.\",\"source\":\"IT Act 2000, Section 69\",\"weight\":2,\"source_clause_ids\":[\"G001418\"],\"checkable_test\":\"Check if the document states compliance with interception, monitoring, or decryption directions issued by authorities.\",\"applicability\":\"Applicable to intermediaries handling electronic communications.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This requirement is tied to the legal obligation under the IT Act 2000 to comply with state-issued directions for monitoring or intercepting communications.\"},{\"category\":\"Security Safeguards\",\"requirement\":\"Organizations must implement measures to protect information, equipment, devices, and communication devices from unauthorized access, use, disclosure, disruption, modification, or destruction.\",\"source\":\"IT Act 2000, Section 69B\",\"weight\":3,\"source_clause_ids\":[\"G001418\"],\"checkable_test\":\"Verify if the document outlines specific security measures to protect information and systems from unauthorized access or breaches.\",\"applicability\":\"Applicable to entities handling electronic communications and data.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This requirement is derived from the legal definition of cyber security under the IT Act 2000.\"},{\"category\":\"Confidentiality & Misuse of Data\",\"requirement\":\"Data must be processed in a manner that ensures it is protected and not misused, with appropriate safeguards in place.\",\"source\":\"IT Act 2000, Section 69B\",\"weight\":2,\"source_clause_ids\":[\"G001418\"],\"checkable_test\":\"Check if the document includes provisions for data protection and prevention of misuse.\",\"applicability\":\"Applicable to entities handling electronic data and communications.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This requirement is linked to the legal obligation under the IT Act 2000 to ensure data is protected and not misused.\"},{\"category\":\"Data Retention & Erasure\",\"requirement\":\"Data must be retained only for as long as necessary for the purpose for which it was collected, and must be erased or anonymized when no longer needed.\",\"source\":\"DPDP Rules 2025, Rule 3(2)\",\"weight\":2,\"source_clause_ids\":[\"G001342\"],\"checkable_test\":\"Verify if the document specifies data retention periods and procedures for erasure or anonymization.\",\"applicability\":\"Applicable to data fiduciaries handling personal data.\",\"assessability\":3,\"citation_confidence\":\"medium\",\"notes\":\"This requirement is derived from the obligation to retain data only for the purpose of fulfilling legal obligations under the DPDP Rules 2025.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Data fiduciaries must ensure that personal data is used only in the interest of sovereignty, integrity, or security of the State, as mandated by law.\",\"source\":\"DPDP Rules 2025, Rule 3(1)\",\"weight\":3,\"source_clause_ids\":[\"G001342\"],\"checkable_test\":\"Check if the document states that personal data is used only for purposes aligned with national security or sovereignty.\",\"applicability\":\"Applicable to significant data fiduciaries handling personal data.\",\"assessability\":3,\"citation_confidence\":\"medium\",\"notes\":\"This requirement is tied to the legal obligation under the DPDP Rules 2025 to use personal data only for specific national interests.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "Intermediaries must comply with directions issued by authorities for interception, monitoring, or decryption of information through computer resources.",
+      "source": "IT Act 2000, Section 69",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001418"
+      ],
+      "checkable_test": "Check if the document states compliance with interception, monitoring, or decryption directions issued by authorities.",
+      "applicability": "Applicable to intermediaries handling electronic communications.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This requirement is tied to the legal obligation under the IT Act 2000 to comply with state-issued directions for monitoring or intercepting communications.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Security Safeguards",
+      "requirement": "Organizations must implement measures to protect information, equipment, devices, and communication devices from unauthorized access, use, disclosure, disruption, modification, or destruction.",
+      "source": "IT Act 2000, Section 69B",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001418"
+      ],
+      "checkable_test": "Verify if the document outlines specific security measures to protect information and systems from unauthorized access or breaches.",
+      "applicability": "Applicable to entities handling electronic communications and data.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This requirement is derived from the legal definition of cyber security under the IT Act 2000.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Confidentiality & Misuse of Data",
+      "requirement": "Data must be processed in a manner that ensures it is protected and not misused, with appropriate safeguards in place.",
+      "source": "IT Act 2000, Section 69B",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001418"
+      ],
+      "checkable_test": "Check if the document includes provisions for data protection and prevention of misuse.",
+      "applicability": "Applicable to entities handling electronic data and communications.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This requirement is linked to the legal obligation under the IT Act 2000 to ensure data is protected and not misused.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "Data must be retained only for as long as necessary for the purpose for which it was collected, and must be erased or anonymized when no longer needed.",
+      "source": "DPDP Rules 2025, Rule 3(2)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001342"
+      ],
+      "checkable_test": "Verify if the document specifies data retention periods and procedures for erasure or anonymization.",
+      "applicability": "Applicable to data fiduciaries handling personal data.",
+      "assessability": "3",
+      "citation_confidence": "medium",
+      "notes": "This requirement is derived from the obligation to retain data only for the purpose of fulfilling legal obligations under the DPDP Rules 2025.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Data fiduciaries must ensure that personal data is used only in the interest of sovereignty, integrity, or security of the State, as mandated by law.",
+      "source": "DPDP Rules 2025, Rule 3(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001342"
+      ],
+      "checkable_test": "Check if the document states that personal data is used only for purposes aligned with national security or sovereignty.",
+      "applicability": "Applicable to significant data fiduciaries handling personal data.",
+      "assessability": "3",
+      "citation_confidence": "medium",
+      "notes": "This requirement is tied to the legal obligation under the DPDP Rules 2025 to use personal data only for specific national interests.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T11:46:38.581538+00:00",
+  "multi_mapped_records": [
+    {
+      "batch_id": "4258cde7d4bb1b2f1466c3ee",
+      "source_clause_id": "G001418",
+      "total_entries": 3,
+      "distinct_categories": 3,
+      "categories": [
+        "Intermediary/Platform Liability",
+        "Security Safeguards",
+        "Confidentiality & Misuse of Data"
+      ],
+      "decision": "KEPT_ALL_DISTINCT_CATEGORIES",
+      "kept_positions": [
+        0,
+        1,
+        2
+      ],
+      "discarded_positions": [],
+      "entries_summary": [
+        {
+          "position": 0,
+          "category": "Intermediary/Platform Liability",
+          "requirement": "Intermediaries must comply with directions issued by authorities for interception, monitoring, or decryption of informat"
+        },
+        {
+          "position": 1,
+          "category": "Security Safeguards",
+          "requirement": "Organizations must implement measures to protect information, equipment, devices, and communication devices from unautho"
+        },
+        {
+          "position": 2,
+          "category": "Confidentiality & Misuse of Data",
+          "requirement": "Data must be processed in a manner that ensures it is protected and not misused, with appropriate safeguards in place."
+        }
+      ]
+    },
+    {
+      "batch_id": "4258cde7d4bb1b2f1466c3ee",
+      "source_clause_id": "G001342",
+      "total_entries": 2,
+      "distinct_categories": 2,
+      "categories": [
+        "Data Retention & Erasure",
+        "Significant Data Fiduciary Obligations"
+      ],
+      "decision": "KEPT_ALL_DISTINCT_CATEGORIES",
+      "kept_positions": [
+        3,
+        4
+      ],
+      "discarded_positions": [],
+      "entries_summary": [
+        {
+          "position": 3,
+          "category": "Data Retention & Erasure",
+          "requirement": "Data must be retained only for as long as necessary for the purpose for which it was collected, and must be erased or an"
+        },
+        {
+          "position": 4,
+          "category": "Significant Data Fiduciary Obligations",
+          "requirement": "Data fiduciaries must ensure that personal data is used only in the interest of sovereignty, integrity, or security of t"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "batch_id": "d8743b2178bd00646ad5f688",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G000432",
+    "G000435",
+    "G000440",
+    "G000441",
+    "G000442",
+    "G000444",
+    "G000446",
+    "G000447"
+  ],
+  "raw_response": "[{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"A Data Fiduciary must obtain consent from the Data Principal before processing personal data.\",\"source\":\"DPDP Act 2023, Section 3(OBLIGATIONS OF DATA FIDUCIARY)(a)\",\"weight\":3,\"source_clause_ids\":[\"G000446\"],\"checkable_test\":\"Check if the document explicitly states that consent must be obtained from the Data Principal before processing personal data.\",\"applicability\":\"Applies to all Data Fiduciaries processing personal data.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This requirement is directly tied to the obligation to obtain consent under the DPDP Act 2023.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"A Data Fiduciary may process personal data for certain legitimate uses without explicit consent.\",\"source\":\"DPDP Act 2023, Section 3(OBLIGATIONS OF DATA FIDUCIARY)(b)\",\"weight\":3,\"source_clause_ids\":[\"G000447\"],\"checkable_test\":\"Check if the document specifies legitimate uses of personal data that do not require explicit consent.\",\"applicability\":\"Applies to Data Fiduciaries processing personal data for legitimate purposes.\",\"assessability\":3,\"citation_confidence\":\"high\",\"notes\":\"This requirement outlines the exceptions to the consent requirement under the DPDP Act 2023.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "A Data Fiduciary must obtain consent from the Data Principal before processing personal data.",
+      "source": "DPDP Act 2023, Section 3(OBLIGATIONS OF DATA FIDUCIARY)(a)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000446"
+      ],
+      "checkable_test": "Check if the document explicitly states that consent must be obtained from the Data Principal before processing personal data.",
+      "applicability": "Applies to all Data Fiduciaries processing personal data.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation to obtain consent under the DPDP Act 2023.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "A Data Fiduciary may process personal data for certain legitimate uses without explicit consent.",
+      "source": "DPDP Act 2023, Section 3(OBLIGATIONS OF DATA FIDUCIARY)(b)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000447"
+      ],
+      "checkable_test": "Check if the document specifies legitimate uses of personal data that do not require explicit consent.",
+      "applicability": "Applies to Data Fiduciaries processing personal data for legitimate purposes.",
+      "assessability": "3",
+      "citation_confidence": "high",
+      "notes": "This requirement outlines the exceptions to the consent requirement under the DPDP Act 2023.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T13:24:29.256007+00:00",
+  "multi_mapped_records": []
+}

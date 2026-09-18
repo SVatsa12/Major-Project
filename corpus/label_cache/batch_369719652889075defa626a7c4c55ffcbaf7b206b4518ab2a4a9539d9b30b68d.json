@@ -1,0 +1,53 @@
+{
+  "cache_key": "369719652889075defa626a7c4c55ffcbaf7b206b4518ab2a4a9539d9b30b68d",
+  "created_at_utc": "2026-09-17T07:03:19.938099+00:00",
+  "prompt_version": "policy-labeling-v7-reliable-batches",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S002041",
+    "S002042",
+    "S002043",
+    "S002044",
+    "S002045",
+    "S002046"
+  ],
+  "labels": [
+    {
+      "clause_id": "S002041",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Compliant",
+      "justification": "The clause describes encryption and secure handling of payment data, matching security safeguards."
+    },
+    {
+      "clause_id": "S002042",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Compliant",
+      "justification": "The clause mentions encryption of BHIM UPI PIN, matching security safeguards."
+    },
+    {
+      "clause_id": "S002043",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Compliant",
+      "justification": "The clause describes secure handling of payment transaction information, matching security safeguards."
+    },
+    {
+      "clause_id": "S002044",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S002045",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S002046",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Compliant",
+      "justification": "The clause describes encrypted storage of BHIM UPI transaction information, matching security safeguards."
+    }
+  ],
+  "status": "SUCCESS"
+}

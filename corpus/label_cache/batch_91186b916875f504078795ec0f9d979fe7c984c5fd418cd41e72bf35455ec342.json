@@ -1,0 +1,53 @@
+{
+  "cache_key": "91186b916875f504078795ec0f9d979fe7c984c5fd418cd41e72bf35455ec342",
+  "created_at_utc": "2026-09-17T05:10:44.499862+00:00",
+  "prompt_version": "policy-labeling-v7-reliable-batches",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S000655",
+    "S000656",
+    "S000657",
+    "S000658",
+    "S000659",
+    "S000660"
+  ],
+  "labels": [
+    {
+      "clause_id": "S000655",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause discusses cookies and personalization but does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S000656",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause outlines terms of service and does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S000657",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause outlines terms of service and does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S000658",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause outlines terms of service and does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S000659",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause discusses data sharing and advertising but does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S000660",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause discusses privacy choices and data use but does not meaningfully address any listed requirement."
+    }
+  ],
+  "status": "SUCCESS"
+}

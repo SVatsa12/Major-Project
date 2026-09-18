@@ -1,0 +1,53 @@
+{
+  "cache_key": "62fbfe1ce8d6d4508474cebb0c10e8ef3a909cfaac87b8aadba352e45f55dacf",
+  "created_at_utc": "2026-09-17T05:23:53.321649+00:00",
+  "prompt_version": "policy-labeling-v7-reliable-batches",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S000811",
+    "S000812",
+    "S000813",
+    "S000814",
+    "S000815",
+    "S000816"
+  ],
+  "labels": [
+    {
+      "clause_id": "S000811",
+      "best_match_taxonomy_id": "DPDP_RUL-0099",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses data retention but lacks specificity on erasure timelines or conditions."
+    },
+    {
+      "clause_id": "S000812",
+      "best_match_taxonomy_id": "DPDP_RUL-0099",
+      "verdict": "Partially Compliant",
+      "justification": "The clause outlines retention periods but lacks explicit mention of erasure upon completion of the retention period."
+    },
+    {
+      "clause_id": "S000813",
+      "best_match_taxonomy_id": "DPDP_RUL-0099",
+      "verdict": "Partially Compliant",
+      "justification": "The clause mentions legal obligations but lacks explicit mention of erasure upon completion of the retention period."
+    },
+    {
+      "clause_id": "S000814",
+      "best_match_taxonomy_id": "DPDP_RUL-0099",
+      "verdict": "Partially Compliant",
+      "justification": "The clause mentions extended retention but lacks explicit mention of erasure upon completion of the retention period."
+    },
+    {
+      "clause_id": "S000815",
+      "best_match_taxonomy_id": "DPDP_ACT-0055",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address a taxonomy requirement related to cross-border data transfer."
+    },
+    {
+      "clause_id": "S000816",
+      "best_match_taxonomy_id": "DPDP_ACT-0005",
+      "verdict": "Partially Compliant",
+      "justification": "The clause mentions safeguarding information but lacks specific security measures like encryption or access controls."
+    }
+  ],
+  "status": "SUCCESS"
+}

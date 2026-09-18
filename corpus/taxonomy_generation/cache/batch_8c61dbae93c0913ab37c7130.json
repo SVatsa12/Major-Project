@@ -1,0 +1,128 @@
+{
+  "batch_id": "8c61dbae93c0913ab37c7130",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G000460",
+    "G000466",
+    "G000487",
+    "G000489",
+    "G000491",
+    "G000492",
+    "G000494",
+    "G000499"
+  ],
+  "raw_response": "[  \n  {  \n    \"category\": \"Consent & Notice\",  \n    \"requirement\": \"Data principals must be informed of the grounds for processing their personal data.\",  \n    \"source\": \"DPDP Act 2023, Section 4(1)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G000460\"],  \n    \"checkable_test\": \"Check if the document provides a notice informing data principals of the grounds for processing their personal data.\",  \n    \"applicability\": \"Applicable to all data processing activities under the DPDP Act 2023.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement is directly tied to the obligation under Section 4(1) of the DPDP Act 2023.\"  \n  },  \n  {  \n    \"category\": \"Significant Data Fiduciary Obligations\",  \n    \"requirement\": \"Consent that infringes on the provisions of the DPDP Act or other applicable laws is invalid.\",  \n    \"source\": \"DPDP Act 2023, Section 4(2)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G000466\"],  \n    \"checkable_test\": \"Check if the document states that any consent infringing on the DPDP Act or other laws is invalid.\",  \n    \"applicability\": \"Applicable to all data processing activities involving consent under the DPDP Act 2023.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement is directly tied to the obligation under Section 4(2) of the DPDP Act 2023.\"  \n  },  \n  {  \n    \"category\": \"Significant Data Fiduciary Obligations\",  \n    \"requirement\": \"Processing of personal data is permitted for the performance of functions under any law for the time being in force in India, in the interest of sovereignty and integrity of India, or for security of the State.\",  \n    \"source\": \"DPDP Act 2023, Section 4(c)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G000489\"],  \n    \"checkable_test\": \"Check if the document states that processing is allowed for functions under any law for the time being in force in India, in the interest of sovereignty and integrity of India, or for security of the State.\",  \n    \"applicability\": \"Applicable to data processing activities under the DPDP Act 2023 for state functions.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement is directly tied to the obligation under Section 4(c) of the DPDP Act 2023.\"  \n  },  \n  {  \n    \"category\": \"Significant Data Fiduciary Obligations\",  \n    \"requirement\": \"Processing of personal data is permitted for compliance with any judgment, decree, or order issued under any law for the time being in force in India, or any judgment or order relating to claims of a contractual or civil nature under any law for the time being in force outside India.\",  \n    \"source\": \"DPDP Act 2023, Section 4(e)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G000491\"],  \n    \"checkable_test\": \"Check if the document states that processing is allowed for compliance with judgments, decrees, or orders under any law for the time being in force in India or outside India.\",  \n    \"applicability\": \"Applicable to data processing activities under the DPDP Act 2023 for compliance with legal orders.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement is directly tied to the obligation under Section 4(e) of the DPDP Act 2023.\"  \n  },  \n  {  \n    \"category\": \"Significant Data Fiduciary Obligations\",  \n    \"requirement\": \"Processing of personal data is permitted for responding to a medical emergency involving a threat to the life or immediate threat to the health of the Data Principal or any other individual.\",  \n    \"source\": \"DPDP Act 2023, Section 4(f)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G000492\"],  \n    \"checkable_test\": \"Check if the document states that processing is allowed for responding to a medical emergency involving a threat to life or health.\",  \n    \"applicability\": \"Applicable to data processing activities under the DPDP Act 2023 for medical emergencies.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement is directly tied to the obligation under Section 4(f) of the DPDP Act 2023.\"  \n  },  \n  {  \n    \"category\": \"Significant Data Fiduciary Obligations\",  \n    \"requirement\": \"Processing of personal data is permitted for taking measures to ensure safety of, or provide assistance or services to, any individual during any disaster or breakdown of public order.\",  \n    \"source\": \"DPDP Act 2023, Section 4(h)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G000494\"],  \n    \"checkable_test\": \"Check if the document states that processing is allowed for taking measures to ensure safety or provide assistance during a disaster or breakdown of public order.\",  \n    \"applicability\": \"Applicable to data processing activities under the DPDP Act 2023 for disaster or public order scenarios.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement is directly tied to the obligation under Section 4(h) of the DPDP Act 2023.\"  \n  },  \n  {  \n    \"category\": \"Significant Data Fiduciary Obligations\",  \n    \"requirement\": \"Processing of personal data is permitted if it is used to make a decision that affects the Data Principal.\",  \n    \"source\": \"DPDP Act 2023, Section 4(a)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G000499\"],  \n    \"checkable_test\": \"Check if the document states that processing is allowed if it is used to make a decision that affects the Data Principal.\",  \n    \"applicability\": \"Applicable to data processing activities under the DPDP Act 2023 for decisions affecting the Data Principal.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This requirement is directly tied to the obligation under Section 4(a) of the DPDP Act 2023.\"  \n  }  \n]",
+  "parsed_entries": [
+    {
+      "category": "Consent & Notice",
+      "requirement": "Data principals must be informed of the grounds for processing their personal data.",
+      "source": "DPDP Act 2023, Section 4(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000460"
+      ],
+      "checkable_test": "Check if the document provides a notice informing data principals of the grounds for processing their personal data.",
+      "applicability": "Applicable to all data processing activities under the DPDP Act 2023.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation under Section 4(1) of the DPDP Act 2023.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Consent that infringes on the provisions of the DPDP Act or other applicable laws is invalid.",
+      "source": "DPDP Act 2023, Section 4(2)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000466"
+      ],
+      "checkable_test": "Check if the document states that any consent infringing on the DPDP Act or other laws is invalid.",
+      "applicability": "Applicable to all data processing activities involving consent under the DPDP Act 2023.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation under Section 4(2) of the DPDP Act 2023.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Processing of personal data is permitted for the performance of functions under any law for the time being in force in India, in the interest of sovereignty and integrity of India, or for security of the State.",
+      "source": "DPDP Act 2023, Section 4(c)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000489"
+      ],
+      "checkable_test": "Check if the document states that processing is allowed for functions under any law for the time being in force in India, in the interest of sovereignty and integrity of India, or for security of the State.",
+      "applicability": "Applicable to data processing activities under the DPDP Act 2023 for state functions.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation under Section 4(c) of the DPDP Act 2023.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Processing of personal data is permitted for compliance with any judgment, decree, or order issued under any law for the time being in force in India, or any judgment or order relating to claims of a contractual or civil nature under any law for the time being in force outside India.",
+      "source": "DPDP Act 2023, Section 4(e)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000491"
+      ],
+      "checkable_test": "Check if the document states that processing is allowed for compliance with judgments, decrees, or orders under any law for the time being in force in India or outside India.",
+      "applicability": "Applicable to data processing activities under the DPDP Act 2023 for compliance with legal orders.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation under Section 4(e) of the DPDP Act 2023.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Processing of personal data is permitted for responding to a medical emergency involving a threat to the life or immediate threat to the health of the Data Principal or any other individual.",
+      "source": "DPDP Act 2023, Section 4(f)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000492"
+      ],
+      "checkable_test": "Check if the document states that processing is allowed for responding to a medical emergency involving a threat to life or health.",
+      "applicability": "Applicable to data processing activities under the DPDP Act 2023 for medical emergencies.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation under Section 4(f) of the DPDP Act 2023.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Processing of personal data is permitted for taking measures to ensure safety of, or provide assistance or services to, any individual during any disaster or breakdown of public order.",
+      "source": "DPDP Act 2023, Section 4(h)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000494"
+      ],
+      "checkable_test": "Check if the document states that processing is allowed for taking measures to ensure safety or provide assistance during a disaster or breakdown of public order.",
+      "applicability": "Applicable to data processing activities under the DPDP Act 2023 for disaster or public order scenarios.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation under Section 4(h) of the DPDP Act 2023.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Processing of personal data is permitted if it is used to make a decision that affects the Data Principal.",
+      "source": "DPDP Act 2023, Section 4(a)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000499"
+      ],
+      "checkable_test": "Check if the document states that processing is allowed if it is used to make a decision that affects the Data Principal.",
+      "applicability": "Applicable to data processing activities under the DPDP Act 2023 for decisions affecting the Data Principal.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This requirement is directly tied to the obligation under Section 4(a) of the DPDP Act 2023.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T13:28:23.021202+00:00",
+  "multi_mapped_records": []
+}

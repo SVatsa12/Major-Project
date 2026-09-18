@@ -1,0 +1,53 @@
+{
+  "cache_key": "6aa57abc82eb0b54c981fa093f8dd9e7249a21abd1ef2feda3f552c1131d7c16",
+  "created_at_utc": "2026-09-16T14:42:58.303164+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S002203",
+    "S002204",
+    "S002205",
+    "S002206",
+    "S002207",
+    "S002208"
+  ],
+  "labels": [
+    {
+      "clause_id": "S002203",
+      "best_match_taxonomy_id": "DPDP_RUL-0379",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement related to children's data processing."
+    },
+    {
+      "clause_id": "S002204",
+      "best_match_taxonomy_id": "DPDP_RUL-0379",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement related to children's data processing."
+    },
+    {
+      "clause_id": "S002205",
+      "best_match_taxonomy_id": "DPDP_RUL-0379",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement related to children's data processing."
+    },
+    {
+      "clause_id": "S002206",
+      "best_match_taxonomy_id": "DPDP_ACT-0009",
+      "verdict": "Partially Compliant",
+      "justification": "The clause acknowledges compliance with the law but lacks specificity on lawful purposes under the DPDP Act 2023."
+    },
+    {
+      "clause_id": "S002207",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    },
+    {
+      "clause_id": "S002208",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address any listed requirement."
+    }
+  ],
+  "status": "SUCCESS"
+}

@@ -1,0 +1,114 @@
+{
+  "batch_id": "5f828826c9f9665b08094bc6",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G000636",
+    "G000637",
+    "G000659",
+    "G000661",
+    "G000702",
+    "G000705",
+    "G000718",
+    "G000719"
+  ],
+  "raw_response": "[{\"category\":\"Grievance Redressal\",\"requirement\":\"The Board has the authority to investigate complaints made by Data Principals regarding breaches of obligations by Data Fiduciaries or Consent Managers and impose penalties as provided by the Act.\",\"source\":\"DPDP Act 2023, Section 12(1)\",\"weight\":3,\"source_clause_ids\":[\"G000636\",\"G000637\"],\"checkable_test\":\"Check if the governance document outlines procedures for investigating complaints and imposing penalties for breaches by Data Fiduciaries or Consent Managers.\",\"applicability\":\"Applicable to any organization that is a Data Fiduciary or Consent Manager.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation is derived from the powers granted to the Board under the DPDP Act 2023.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"The Board or its officers shall not prevent access to any premises or take into custody any equipment or item that may adversely affect the day-to-day functioning of a person.\",\"source\":\"DPDP Act 2023, Section 12(8)\",\"weight\":2,\"source_clause_ids\":[\"G000659\"],\"checkable_test\":\"Check if the governance document includes a policy that prohibits preventing access to premises or taking custody of equipment that affects day-to-day operations.\",\"applicability\":\"Applicable to any organization that is a Data Fiduciary or intermediary.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation is derived from the restrictions on the Board's powers under the DPDP Act 2023.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The Central Government may require the Board and any Data Fiduciary or intermediary to furnish information as it may call for.\",\"source\":\"DPDP Act 2023, Section 36\",\"weight\":2,\"source_clause_ids\":[\"G000702\"],\"checkable_test\":\"Check if the governance document includes a policy that allows the Central Government to request information from the Board, Data Fiduciaries, or intermediaries.\",\"applicability\":\"Applicable to any organization that is a Data Fiduciary or intermediary.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation is derived from the government's authority to request information under the DPDP Act 2023.\"},{\"category\":\"Intermediary/Platform Liability\",\"requirement\":\"The Central Government may, in the interests of the general public, direct any agency of the Central Government or any intermediary to block access to information generated, transmitted, received, stored, or hosted in any computer resource, after giving an opportunity of being heard to the Data Fiduciary.\",\"source\":\"DPDP Act 2023, Section 35(b)\",\"weight\":2,\"source_clause_ids\":[\"G000705\"],\"checkable_test\":\"Check if the governance document includes a policy that allows the Central Government to direct intermediaries to block access to information in the public interest.\",\"applicability\":\"Applicable to any organization that is an intermediary.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation is derived from the government's authority to block access to information under the DPDP Act 2023.\"},{\"category\":\"Consent & Notice\",\"requirement\":\"The Central Government may require the Board to advise on the manner in which the notice given by the Data Fiduciary to a Data Principal shall inform her, under sub-section (1) of section 5.\",\"source\":\"DPDP Act 2023, Section 12(a)\",\"weight\":2,\"source_clause_ids\":[\"G000718\"],\"checkable_test\":\"Check if the governance document includes a policy that outlines the manner in which notices to Data Principals must be provided under section 5(1) of the DPDP Act 2023.\",\"applicability\":\"Applicable to any organization that is a Data Fiduciary.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation is derived from the Central Government's authority to set notice requirements under the DPDP Act 2023.\"},{\"category\":\"Consent & Notice\",\"requirement\":\"The Central Government may require the Board to advise on the manner in which the notice given by the Data Fiduciary to a Data Principal shall inform her, under sub-section (2) of section 5.\",\"source\":\"DPDP Act 2023, Section 12(b)\",\"weight\":2,\"source_clause_ids\":[\"G000719\"],\"checkable_test\":\"Check if the governance document includes a policy that outlines the manner in which notices to Data Principals must be provided under section 5(2) of the DPDP Act 2023.\",\"applicability\":\"Applicable to any organization that is a Data Fiduciary.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation is derived from the Central Government's authority to set notice requirements under the DPDP Act 2023.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Grievance Redressal",
+      "requirement": "The Board has the authority to investigate complaints made by Data Principals regarding breaches of obligations by Data Fiduciaries or Consent Managers and impose penalties as provided by the Act.",
+      "source": "DPDP Act 2023, Section 12(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000636",
+        "G000637"
+      ],
+      "checkable_test": "Check if the governance document outlines procedures for investigating complaints and imposing penalties for breaches by Data Fiduciaries or Consent Managers.",
+      "applicability": "Applicable to any organization that is a Data Fiduciary or Consent Manager.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is derived from the powers granted to the Board under the DPDP Act 2023.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "The Board or its officers shall not prevent access to any premises or take into custody any equipment or item that may adversely affect the day-to-day functioning of a person.",
+      "source": "DPDP Act 2023, Section 12(8)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000659"
+      ],
+      "checkable_test": "Check if the governance document includes a policy that prohibits preventing access to premises or taking custody of equipment that affects day-to-day operations.",
+      "applicability": "Applicable to any organization that is a Data Fiduciary or intermediary.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is derived from the restrictions on the Board's powers under the DPDP Act 2023.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Central Government may require the Board and any Data Fiduciary or intermediary to furnish information as it may call for.",
+      "source": "DPDP Act 2023, Section 36",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000702"
+      ],
+      "checkable_test": "Check if the governance document includes a policy that allows the Central Government to request information from the Board, Data Fiduciaries, or intermediaries.",
+      "applicability": "Applicable to any organization that is a Data Fiduciary or intermediary.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is derived from the government's authority to request information under the DPDP Act 2023.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Intermediary/Platform Liability",
+      "requirement": "The Central Government may, in the interests of the general public, direct any agency of the Central Government or any intermediary to block access to information generated, transmitted, received, stored, or hosted in any computer resource, after giving an opportunity of being heard to the Data Fiduciary.",
+      "source": "DPDP Act 2023, Section 35(b)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000705"
+      ],
+      "checkable_test": "Check if the governance document includes a policy that allows the Central Government to direct intermediaries to block access to information in the public interest.",
+      "applicability": "Applicable to any organization that is an intermediary.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is derived from the government's authority to block access to information under the DPDP Act 2023.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Consent & Notice",
+      "requirement": "The Central Government may require the Board to advise on the manner in which the notice given by the Data Fiduciary to a Data Principal shall inform her, under sub-section (1) of section 5.",
+      "source": "DPDP Act 2023, Section 12(a)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000718"
+      ],
+      "checkable_test": "Check if the governance document includes a policy that outlines the manner in which notices to Data Principals must be provided under section 5(1) of the DPDP Act 2023.",
+      "applicability": "Applicable to any organization that is a Data Fiduciary.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is derived from the Central Government's authority to set notice requirements under the DPDP Act 2023.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Consent & Notice",
+      "requirement": "The Central Government may require the Board to advise on the manner in which the notice given by the Data Fiduciary to a Data Principal shall inform her, under sub-section (2) of section 5.",
+      "source": "DPDP Act 2023, Section 12(b)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G000719"
+      ],
+      "checkable_test": "Check if the governance document includes a policy that outlines the manner in which notices to Data Principals must be provided under section 5(2) of the DPDP Act 2023.",
+      "applicability": "Applicable to any organization that is a Data Fiduciary.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is derived from the Central Government's authority to set notice requirements under the DPDP Act 2023.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T11:20:55.027818+00:00",
+  "multi_mapped_records": []
+}

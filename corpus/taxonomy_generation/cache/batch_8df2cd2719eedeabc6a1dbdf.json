@@ -1,0 +1,98 @@
+{
+  "batch_id": "8df2cd2719eedeabc6a1dbdf",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G000520",
+    "G000521",
+    "G000522",
+    "G000524",
+    "G000534",
+    "G000541",
+    "G000544",
+    "G000548"
+  ],
+  "raw_response": "[  \n  {  \n    \"category\": \"Children/Vulnerable Groups\",  \n    \"requirement\": \"Data fiduciaries must ensure that processing of personal data of children is done in a manner that is verifiably safe.\",  \n    \"source\": \"DPDP Act 2023, Section 4(4)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G000520\"],  \n    \"checkable_test\": \"Check if the document specifies measures to ensure verifiably safe processing of children's data.\",  \n    \"applicability\": \"Applies to data fiduciaries processing children's personal data.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This clause establishes a general obligation for data fiduciaries to ensure safe processing of children's data, which can be checked against governance documents.\"  \n  },  \n  {  \n    \"category\": \"Children/Vulnerable Groups\",  \n    \"requirement\": \"The Central Government may exempt a data fiduciary from certain obligations if it ensures verifiably safe processing of children's data.\",  \n    \"source\": \"DPDP Act 2023, Section 4(5)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G000521\"],  \n    \"checkable_test\": \"Check if the document specifies the age threshold for exemption from obligations related to children's data processing, if any.\",  \n    \"applicability\": \"Applies to data fiduciaries subject to government exemption notifications.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This clause allows for exemptions from certain obligations if the government determines processing is verifiably safe, which can be checked against governance documents.\"  \n  },  \n  {  \n    \"category\": \"Significant Data Fiduciary Obligations\",  \n    \"requirement\": \"Significant data fiduciaries must appoint a Data Protection Officer.\",  \n    \"source\": \"DPDP Act 2023, Section 4(10)(a)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G000534\"],  \n    \"checkable_test\": \"Check if the document specifies the appointment of a Data Protection Officer.\",  \n    \"applicability\": \"Applies to significant data fiduciaries.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This clause mandates the appointment of a Data Protection Officer for significant data fiduciaries, which can be checked against governance documents.\"  \n  },  \n  {  \n    \"category\": \"Significant Data Fiduciary Obligations\",  \n    \"requirement\": \"Significant data fiduciaries must conduct periodic Data Protection Impact Assessments.\",  \n    \"source\": \"DPDP Act 2023, Section 4(10)(i)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G000541\"],  \n    \"checkable_test\": \"Check if the document specifies the conduct of periodic Data Protection Impact Assessments.\",  \n    \"applicability\": \"Applies to significant data fiduciaries.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This clause requires significant data fiduciaries to conduct periodic Data Protection Impact Assessments, which can be checked against governance documents.\"  \n  },  \n  {  \n    \"category\": \"Data Principal Rights\",  \n    \"requirement\": \"Data principals have the right to request access to their personal data from the data fiduciary.\",  \n    \"source\": \"DPDP Act 2023, Section 11(1)\",  \n    \"weight\": 3,  \n    \"source_clause_ids\": [\"G000544\"],  \n    \"checkable_test\": \"Check if the document specifies the right of data principals to request access to their personal data.\",  \n    \"applicability\": \"Applies to data principals who have given consent to data fiduciaries.\",  \n    \"assessability\": \"High\",  \n    \"citation_confidence\": \"high\",  \n    \"notes\": \"This clause establishes the right of data principals to request access to their personal data, which can be checked against governance documents.\"  \n  }  \n]",
+  "parsed_entries": [
+    {
+      "category": "Children/Vulnerable Groups",
+      "requirement": "Data fiduciaries must ensure that processing of personal data of children is done in a manner that is verifiably safe.",
+      "source": "DPDP Act 2023, Section 4(4)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000520"
+      ],
+      "checkable_test": "Check if the document specifies measures to ensure verifiably safe processing of children's data.",
+      "applicability": "Applies to data fiduciaries processing children's personal data.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause establishes a general obligation for data fiduciaries to ensure safe processing of children's data, which can be checked against governance documents.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Children/Vulnerable Groups",
+      "requirement": "The Central Government may exempt a data fiduciary from certain obligations if it ensures verifiably safe processing of children's data.",
+      "source": "DPDP Act 2023, Section 4(5)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000521"
+      ],
+      "checkable_test": "Check if the document specifies the age threshold for exemption from obligations related to children's data processing, if any.",
+      "applicability": "Applies to data fiduciaries subject to government exemption notifications.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause allows for exemptions from certain obligations if the government determines processing is verifiably safe, which can be checked against governance documents.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Significant data fiduciaries must appoint a Data Protection Officer.",
+      "source": "DPDP Act 2023, Section 4(10)(a)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000534"
+      ],
+      "checkable_test": "Check if the document specifies the appointment of a Data Protection Officer.",
+      "applicability": "Applies to significant data fiduciaries.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause mandates the appointment of a Data Protection Officer for significant data fiduciaries, which can be checked against governance documents.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Significant data fiduciaries must conduct periodic Data Protection Impact Assessments.",
+      "source": "DPDP Act 2023, Section 4(10)(i)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000541"
+      ],
+      "checkable_test": "Check if the document specifies the conduct of periodic Data Protection Impact Assessments.",
+      "applicability": "Applies to significant data fiduciaries.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause requires significant data fiduciaries to conduct periodic Data Protection Impact Assessments, which can be checked against governance documents.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Principal Rights",
+      "requirement": "Data principals have the right to request access to their personal data from the data fiduciary.",
+      "source": "DPDP Act 2023, Section 11(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G000544"
+      ],
+      "checkable_test": "Check if the document specifies the right of data principals to request access to their personal data.",
+      "applicability": "Applies to data principals who have given consent to data fiduciaries.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This clause establishes the right of data principals to request access to their personal data, which can be checked against governance documents.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T11:13:55.486873+00:00",
+  "multi_mapped_records": []
+}

@@ -1,0 +1,53 @@
+{
+  "cache_key": "6971163de871ce55be302c351cbb04d07ee704d66f9020b5721cb137e36fd901",
+  "created_at_utc": "2026-09-16T14:07:33.020067+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S001825",
+    "S001826",
+    "S001827",
+    "S001828",
+    "S001829",
+    "S001830"
+  ],
+  "labels": [
+    {
+      "clause_id": "S001825",
+      "best_match_taxonomy_id": "DPDP_RUL-0086",
+      "verdict": "Partially Compliant",
+      "justification": "Clause addresses security measures but lacks specific details on encryption or other safeguards required by the taxonomy."
+    },
+    {
+      "clause_id": "S001826",
+      "best_match_taxonomy_id": "DPDP_RUL-0114",
+      "verdict": "Partially Compliant",
+      "justification": "Clause mentions providing assistance for compliance but lacks specifics on how Data Principal rights are detailed as required by the taxonomy."
+    },
+    {
+      "clause_id": "S001827",
+      "best_match_taxonomy_id": "DPDP_RUL-0114",
+      "verdict": "Partially Compliant",
+      "justification": "Clause refers to compliance with obligations but does not explicitly detail how Data Principal rights are provided as required by the taxonomy."
+    },
+    {
+      "clause_id": "S001828",
+      "best_match_taxonomy_id": "DPDP_ACT-0055",
+      "verdict": "Partially Compliant",
+      "justification": "Clause mentions subcontracting to sub-processors but lacks specifics on meeting Central Government requirements for cross-border data transfers."
+    },
+    {
+      "clause_id": "S001829",
+      "best_match_taxonomy_id": "DPDP_ACT-0055",
+      "verdict": "Partially Compliant",
+      "justification": "Clause refers to cross-border data transfers but lacks specifics on meeting Central Government requirements for such transfers."
+    },
+    {
+      "clause_id": "S001830",
+      "best_match_taxonomy_id": "DPDP_ACT-0055",
+      "verdict": "Partially Compliant",
+      "justification": "Clause mentions cross-border data transfers but lacks specifics on meeting Central Government requirements for such transfers."
+    }
+  ],
+  "status": "SUCCESS"
+}

@@ -1,0 +1,53 @@
+{
+  "cache_key": "9d298dccf63279a3d350cfcfe1f39eef4d47d9f92f66f974f51b34bbbc5895c9",
+  "created_at_utc": "2026-09-17T06:37:11.668910+00:00",
+  "prompt_version": "policy-labeling-v7-reliable-batches",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S001717",
+    "S001718",
+    "S001719",
+    "S001720",
+    "S001721",
+    "S001722"
+  ],
+  "labels": [
+    {
+      "clause_id": "S001717",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses payment processing and disputes, not data protection or security safeguards."
+    },
+    {
+      "clause_id": "S001718",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause discusses payment processing by third parties, not data protection or security safeguards."
+    },
+    {
+      "clause_id": "S001719",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses payment data handling, not data protection or security safeguards."
+    },
+    {
+      "clause_id": "S001720",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause discusses payment processing by third parties, not data protection or security safeguards."
+    },
+    {
+      "clause_id": "S001721",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause addresses payment disputes and liability, not data protection or security safeguards."
+    },
+    {
+      "clause_id": "S001722",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause discusses data shared with third-party MAs, not data protection or security safeguards."
+    }
+  ],
+  "status": "SUCCESS"
+}

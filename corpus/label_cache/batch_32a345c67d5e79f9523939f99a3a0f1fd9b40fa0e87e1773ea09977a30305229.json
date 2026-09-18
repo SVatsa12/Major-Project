@@ -1,0 +1,53 @@
+{
+  "cache_key": "32a345c67d5e79f9523939f99a3a0f1fd9b40fa0e87e1773ea09977a30305229",
+  "created_at_utc": "2026-09-16T12:06:08.718428+00:00",
+  "prompt_version": "policy-labeling-v3-strict-resumable",
+  "model": "qwen3:8b",
+  "clause_ids": [
+    "S000373",
+    "S000374",
+    "S000375",
+    "S000376",
+    "S000377",
+    "S000378"
+  ],
+  "labels": [
+    {
+      "clause_id": "S000373",
+      "best_match_taxonomy_id": "DPDP_RUL-0379",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address a listed taxonomy requirement."
+    },
+    {
+      "clause_id": "S000374",
+      "best_match_taxonomy_id": "DPDP_RUL-0379",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address a listed taxonomy requirement."
+    },
+    {
+      "clause_id": "S000375",
+      "best_match_taxonomy_id": "DPDP_ACT-0009",
+      "verdict": "Partially Compliant",
+      "justification": "The clause addresses lawful processing but lacks specificity on data fiduciary obligations under the DPDP Act 2023."
+    },
+    {
+      "clause_id": "S000376",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address a listed taxonomy requirement."
+    },
+    {
+      "clause_id": "S000377",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address a listed taxonomy requirement."
+    },
+    {
+      "clause_id": "S000378",
+      "best_match_taxonomy_id": "NONE",
+      "verdict": "Not Addressed",
+      "justification": "The clause does not meaningfully address a listed taxonomy requirement."
+    }
+  ],
+  "status": "SUCCESS"
+}

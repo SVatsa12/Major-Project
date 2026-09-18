@@ -1,0 +1,114 @@
+{
+  "batch_id": "49975cdda4712288e7e35856",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001074",
+    "G001075",
+    "G001076",
+    "G001077",
+    "G001078",
+    "G001079",
+    "G001080",
+    "G001081"
+  ],
+  "raw_response": "[{\"category\":\"Data Retention & Erasure\",\"requirement\":\"A Data Fiduciary shall retain personal data, associated traffic data, and other logs of processing for a minimum period of one year from the date of processing, unless further retention is required for compliance with any other law.\",\"source\":\"DPDP Rules 2025, Rule 8(3)\",\"weight\":3,\"source_clause_ids\":[\"G001075\"],\"checkable_test\":\"Check if the document specifies a one-year retention period for personal data and logs of processing, with exceptions for legal compliance.\",\"applicability\":\"Applies to all data fiduciaries processing personal data.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation is explicitly stated in Rule 8(3) of the DPDP Rules 2025.\"},{\"category\":\"Data Retention & Erasure\",\"requirement\":\"A Data Fiduciary shall ensure that a Data Processor also retains data and associated logs for at least one year before erasure, unless any other applicable law requires a longer period.\",\"source\":\"DPDP Rules 2025, Rule 8(3)\",\"weight\":3,\"source_clause_ids\":[\"G001076\"],\"checkable_test\":\"Check if the document specifies that data processors must retain data and logs for at least one year, with exceptions for legal compliance.\",\"applicability\":\"Applies to data fiduciaries who engage data processors.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation is explicitly stated in Rule 8(3) of the DPDP Rules 2025.\"},{\"category\":\"Data Principal Rights\",\"requirement\":\"A Data Fiduciary shall prominently publish on its website or app, and mention in every response to a communication for the exercise of the rights of a Data Principal under the Act, the business contact information of the Data Fiduciary.\",\"source\":\"DPDP Rules 2025, Rule 8(9)\",\"weight\":2,\"source_clause_ids\":[\"G001077\"],\"checkable_test\":\"Check if the document provides prominent contact information for the data fiduciary in response to data principal communications.\",\"applicability\":\"Applies to all data fiduciaries.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation is explicitly stated in Rule 8(9) of the DPDP Rules 2025.\"},{\"category\":\"Data Principal Rights\",\"requirement\":\"Every Data Fiduciary shall prominently publish on its website or app, and mention in every response to a communication for the exercise of the rights of a Data Principal under the Act, the contact information of the Data Protection Officer, if applicable, or a person who is able to answer on behalf of the Data Fiduciary the questions of the Data Principal about the processing of her personal data.\",\"source\":\"DPDP Rules 2025, Rule 8(9)\",\"weight\":2,\"source_clause_ids\":[\"G001078\"],\"checkable_test\":\"Check if the document provides prominent contact information for the data protection officer or a representative in response to data principal communications.\",\"applicability\":\"Applies to all data fiduciaries.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation is explicitly stated in Rule 8(9) of the DPDP Rules 2025.\"},{\"category\":\"Children/Vulnerable Groups\",\"requirement\":\"A Data Fiduciary shall adopt appropriate technical and organisational measures to ensure that verifiable consent of the parent is obtained before the processing of any personal data of a child.\",\"source\":\"DPDP Rules 2025, Rule 8(10)(1)\",\"weight\":3,\"source_clause_ids\":[\"G001079\"],\"checkable_test\":\"Check if the document requires verifiable consent from a parent before processing personal data of a child.\",\"applicability\":\"Applies to all data fiduciaries processing personal data of children.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation is explicitly stated in Rule 8(10)(1) of the DPDP Rules 2025.\"},{\"category\":\"Children/Vulnerable Groups\",\"requirement\":\"A Data Fiduciary shall observe due diligence, for checking that the individual identifying herself as the parent is an adult who is identifiable if required in connection with compliance with any law for the time being in force in India, by reference to reliable details of identity and age of the individual available with the Data Fiduciary; or details of identity and age, voluntarily provided.\",\"source\":\"DPDP Rules 2025, Rule 8(10)(1)\",\"weight\":2,\"source_clause_ids\":[\"G001080\",\"G001081\"],\"checkable_test\":\"Check if the document requires due diligence to verify the identity and age of the parent before processing personal data of a child.\",\"applicability\":\"Applies to all data fiduciaries processing personal data of children.\",\"assessability\":\"High\",\"citation_confidence\":\"high\",\"notes\":\"This obligation is explicitly stated in Rule 8(10)(1) of the DPDP Rules 2025.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "A Data Fiduciary shall retain personal data, associated traffic data, and other logs of processing for a minimum period of one year from the date of processing, unless further retention is required for compliance with any other law.",
+      "source": "DPDP Rules 2025, Rule 8(3)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001075"
+      ],
+      "checkable_test": "Check if the document specifies a one-year retention period for personal data and logs of processing, with exceptions for legal compliance.",
+      "applicability": "Applies to all data fiduciaries processing personal data.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is explicitly stated in Rule 8(3) of the DPDP Rules 2025.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Retention & Erasure",
+      "requirement": "A Data Fiduciary shall ensure that a Data Processor also retains data and associated logs for at least one year before erasure, unless any other applicable law requires a longer period.",
+      "source": "DPDP Rules 2025, Rule 8(3)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001076"
+      ],
+      "checkable_test": "Check if the document specifies that data processors must retain data and logs for at least one year, with exceptions for legal compliance.",
+      "applicability": "Applies to data fiduciaries who engage data processors.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is explicitly stated in Rule 8(3) of the DPDP Rules 2025.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Principal Rights",
+      "requirement": "A Data Fiduciary shall prominently publish on its website or app, and mention in every response to a communication for the exercise of the rights of a Data Principal under the Act, the business contact information of the Data Fiduciary.",
+      "source": "DPDP Rules 2025, Rule 8(9)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001077"
+      ],
+      "checkable_test": "Check if the document provides prominent contact information for the data fiduciary in response to data principal communications.",
+      "applicability": "Applies to all data fiduciaries.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is explicitly stated in Rule 8(9) of the DPDP Rules 2025.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Data Principal Rights",
+      "requirement": "Every Data Fiduciary shall prominently publish on its website or app, and mention in every response to a communication for the exercise of the rights of a Data Principal under the Act, the contact information of the Data Protection Officer, if applicable, or a person who is able to answer on behalf of the Data Fiduciary the questions of the Data Principal about the processing of her personal data.",
+      "source": "DPDP Rules 2025, Rule 8(9)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001078"
+      ],
+      "checkable_test": "Check if the document provides prominent contact information for the data protection officer or a representative in response to data principal communications.",
+      "applicability": "Applies to all data fiduciaries.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is explicitly stated in Rule 8(9) of the DPDP Rules 2025.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Children/Vulnerable Groups",
+      "requirement": "A Data Fiduciary shall adopt appropriate technical and organisational measures to ensure that verifiable consent of the parent is obtained before the processing of any personal data of a child.",
+      "source": "DPDP Rules 2025, Rule 8(10)(1)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001079"
+      ],
+      "checkable_test": "Check if the document requires verifiable consent from a parent before processing personal data of a child.",
+      "applicability": "Applies to all data fiduciaries processing personal data of children.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is explicitly stated in Rule 8(10)(1) of the DPDP Rules 2025.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Children/Vulnerable Groups",
+      "requirement": "A Data Fiduciary shall observe due diligence, for checking that the individual identifying herself as the parent is an adult who is identifiable if required in connection with compliance with any law for the time being in force in India, by reference to reliable details of identity and age of the individual available with the Data Fiduciary; or details of identity and age, voluntarily provided.",
+      "source": "DPDP Rules 2025, Rule 8(10)(1)",
+      "weight": 2,
+      "source_clause_ids": [
+        "G001080",
+        "G001081"
+      ],
+      "checkable_test": "Check if the document requires due diligence to verify the identity and age of the parent before processing personal data of a child.",
+      "applicability": "Applies to all data fiduciaries processing personal data of children.",
+      "assessability": "High",
+      "citation_confidence": "high",
+      "notes": "This obligation is explicitly stated in Rule 8(10)(1) of the DPDP Rules 2025.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T11:31:18.797275+00:00",
+  "multi_mapped_records": []
+}

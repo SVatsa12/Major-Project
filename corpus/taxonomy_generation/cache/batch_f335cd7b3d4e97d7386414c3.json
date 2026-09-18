@@ -1,0 +1,98 @@
+{
+  "batch_id": "f335cd7b3d4e97d7386414c3",
+  "status": "SUCCESS",
+  "input_clause_ids": [
+    "G001206",
+    "G001207",
+    "G001209",
+    "G001210",
+    "G001211",
+    "G001215",
+    "G001216",
+    "G001219"
+  ],
+  "raw_response": "[{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Data fiduciaries must ensure that processing of personal data is limited to what is necessary for the purposes specified in the law.\",\"source\":\"DPDP Rules 2025, Rule 8(2)(c)\",\"weight\":3,\"source_clause_ids\":[\"G001210\"],\"checkable_test\":\"Check if the data processing is limited to necessary data for specified purposes.\",\"applicability\":\"Applicable to data fiduciaries processing personal data under the DPDP Rules 2025.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"Clause references the necessity of data minimization for specified purposes.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Data fiduciaries must ensure the completeness, accuracy, and consistency of personal data during processing.\",\"source\":\"DPDP Rules 2025, Rule 8(2)(d)\",\"weight\":3,\"source_clause_ids\":[\"G001211\"],\"checkable_test\":\"Verify that data processing includes measures to maintain data completeness, accuracy, and consistency.\",\"applicability\":\"Applicable to data fiduciaries processing personal data under the DPDP Rules 2025.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"Clause mandates data quality standards during processing.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Data fiduciaries must provide the Data Principal with business contact information of a representative to address questions about data processing.\",\"source\":\"DPDP Rules 2025, Rule 8(2)(i)\",\"weight\":3,\"source_clause_ids\":[\"G001216\"],\"checkable_test\":\"Check if the data fiduciary provides contact details for addressing Data Principal inquiries.\",\"applicability\":\"Applicable to data fiduciaries processing personal data under the DPDP Rules 2025.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"Clause requires transparency and accessibility for Data Principal inquiries.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Data fiduciaries must ensure accountability for the purpose and means of personal data processing.\",\"source\":\"DPDP Rules 2025, Rule 8(2)(h)\",\"weight\":3,\"source_clause_ids\":[\"G001219\"],\"checkable_test\":\"Verify that the data fiduciary establishes accountability for processing purposes and methods.\",\"applicability\":\"Applicable to data fiduciaries processing personal data under the DPDP Rules 2025.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"Clause mandates accountability for data processing decisions.\"},{\"category\":\"Significant Data Fiduciary Obligations\",\"requirement\":\"Data fiduciaries must provide the Data Principal with intimation regarding processing under specified legal provisions.\",\"source\":\"DPDP Rules 2025, Rule 8(2)(g)\",\"weight\":3,\"source_clause_ids\":[\"G001215\"],\"checkable_test\":\"Check if the data fiduciary provides notice to the Data Principal about processing under specified legal provisions.\",\"applicability\":\"Applicable to data fiduciaries processing personal data under the DPDP Rules 2025.\",\"assessability\":2,\"citation_confidence\":\"high\",\"notes\":\"Clause requires notification of processing under specific legal provisions.\"}]",
+  "parsed_entries": [
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Data fiduciaries must ensure that processing of personal data is limited to what is necessary for the purposes specified in the law.",
+      "source": "DPDP Rules 2025, Rule 8(2)(c)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001210"
+      ],
+      "checkable_test": "Check if the data processing is limited to necessary data for specified purposes.",
+      "applicability": "Applicable to data fiduciaries processing personal data under the DPDP Rules 2025.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "Clause references the necessity of data minimization for specified purposes.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Data fiduciaries must ensure the completeness, accuracy, and consistency of personal data during processing.",
+      "source": "DPDP Rules 2025, Rule 8(2)(d)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001211"
+      ],
+      "checkable_test": "Verify that data processing includes measures to maintain data completeness, accuracy, and consistency.",
+      "applicability": "Applicable to data fiduciaries processing personal data under the DPDP Rules 2025.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "Clause mandates data quality standards during processing.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Data fiduciaries must provide the Data Principal with business contact information of a representative to address questions about data processing.",
+      "source": "DPDP Rules 2025, Rule 8(2)(i)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001216"
+      ],
+      "checkable_test": "Check if the data fiduciary provides contact details for addressing Data Principal inquiries.",
+      "applicability": "Applicable to data fiduciaries processing personal data under the DPDP Rules 2025.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "Clause requires transparency and accessibility for Data Principal inquiries.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Data fiduciaries must ensure accountability for the purpose and means of personal data processing.",
+      "source": "DPDP Rules 2025, Rule 8(2)(h)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001219"
+      ],
+      "checkable_test": "Verify that the data fiduciary establishes accountability for processing purposes and methods.",
+      "applicability": "Applicable to data fiduciaries processing personal data under the DPDP Rules 2025.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "Clause mandates accountability for data processing decisions.",
+      "human_review_status": "PENDING"
+    },
+    {
+      "category": "Significant Data Fiduciary Obligations",
+      "requirement": "Data fiduciaries must provide the Data Principal with intimation regarding processing under specified legal provisions.",
+      "source": "DPDP Rules 2025, Rule 8(2)(g)",
+      "weight": 3,
+      "source_clause_ids": [
+        "G001215"
+      ],
+      "checkable_test": "Check if the data fiduciary provides notice to the Data Principal about processing under specified legal provisions.",
+      "applicability": "Applicable to data fiduciaries processing personal data under the DPDP Rules 2025.",
+      "assessability": "2",
+      "citation_confidence": "high",
+      "notes": "Clause requires notification of processing under specific legal provisions.",
+      "human_review_status": "PENDING"
+    }
+  ],
+  "invalid_records": [],
+  "error": null,
+  "attempts": 1,
+  "model": "qwen3:8b",
+  "created_at": "2026-09-11T14:21:41.690386+00:00",
+  "multi_mapped_records": []
+}
