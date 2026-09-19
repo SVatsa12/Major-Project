@@ -1,1 +1,74 @@
-./corpus/*
+# Byte-compiled / optimized / Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+ENV/
+env.bak/
+venv.bak/
+
+# Corpus cache, temporary files, and runtime states
+corpus/label_cache/
+corpus/label_cache/*
+corpus/*.tmp
+corpus/.*.tmp
+corpus/labeled_clauses_run_state.json
+corpus/labeled_clauses_failures.json
+
+# Model weights, checkpoints, and heavy training outputs
+models/inlegalbert_checkpoints/
+models/inlegalbert_classifier/*.safetensors
+models/inlegalbert_classifier/*.bin
+models/baseline/*.joblib
+logs/
+runs/
+wandb/
+
+# Hugging Face & PyTorch caches
+.cache/
+huggingface/
+
+# Jupyter / interactive notebooks
+.ipynb_checkpoints
+*-checkpoint.ipynb
+
+# Environment variables & local secrets
+.env
+.env.local
+*.env
+
+# IDEs and OS metadata
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary smoke test / debug artifacts
+datasets/SocialMediaPolicies/smoke_test_*.csv
+datasets/SocialMediaPolicies/temp_*.csv
+temp_check_dataset.py
