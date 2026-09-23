@@ -174,16 +174,11 @@ Granularity rules:
 4. Exclude institutional/personnel administration only when it cannot be
    checked in any social-media governance document. When uncertain, do not
    exclude it; return it for human review.
-5. HARD RULE -- one clause ID per entry, one entry per clause ID:
-   - Each clause ID from this batch may appear in source_clause_ids of AT MOST
-     ONE entry in the entire output array.
-   - If a clause contains multiple obligations, pick the SINGLE most important
-     one and produce exactly one entry for it.
-   - If you place the same clause ID in two or more entries, the system will
-     automatically DISCARD ALL entries that reference that clause ID. You will
-     lose coverage for the entire clause.
-   - If a clause has no independently checkable obligation, leave it unmapped
-     (do not produce an entry for it at all).
+5. COMPOUND STATUTORY CLAUSE RULE:
+   - If an input legal clause establishes multiple distinct, independently checkable obligations across different areas (e.g., both technical security safeguards and mandatory breach notification, or both notice content requirements and consent withdrawal mechanisms), you MAY generate a separate candidate entry for each distinct obligation.
+   - Do NOT duplicate the same obligation under two different categories.
+   - Every generated entry must have its own independently verifiable checkable_test and appropriate category.
+   - If a clause contains no independently checkable compliance obligation, leave it unmapped (do not produce an entry for it).
 6. Use exactly one category from the allowed category list below.
 7. Weight must be 1, 2, or 3, where 3 is a core obligation and 1 is procedural.
 
@@ -976,16 +971,8 @@ def main() -> int:
 
     output_dir = config.output_dir
     output_dir.mkdir(parents=True, exist_ok=True)
-    write_json(output_dir / "taxonomy_candidates_raw.json", all_entries)
     write_json(output_dir / "taxonomy_candidates_normalized.json", normalized_entries)
-    write_json(output_dir / "taxonomy_merge_candidates.json", merge_candidates)
-    write_json(output_dir / "taxonomy_unmapped_clauses.json", unmapped)
-    write_json(output_dir / "taxonomy_invalid_model_records.json", all_invalid)
-    write_json(output_dir / "taxonomy_multi_mapped_clauses.json", all_multi_mapped)
-    write_json(output_dir / "taxonomy_duplicate_model_outputs.json", duplicate_outputs)
-    write_json(output_dir / "taxonomy_batch_manifest.json", batch_manifest)
     write_json(output_dir / "taxonomy_run_summary.json", summary)
-
     print("\n=== Taxonomy-generation summary ===")
     print(json.dumps(summary, indent=2, ensure_ascii=False))
     print(f"\nOutputs written to: {output_dir}")

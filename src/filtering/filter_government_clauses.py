@@ -502,57 +502,27 @@ def main() -> int:
 
     config.output_dir.mkdir(parents=True, exist_ok=True)
 
-    # Remove internal helper columns from user-facing outputs while preserving
-    # the useful canonical hash for audit and duplicate reproduction.
-    output_dataframe = dataframe.drop(columns=["_tokens"], errors="ignore")
+## Retain only the 10 essential audit and context columns
+    essential_cols = [
+        "clause_id", "source_act", "source_file", "page_start", "page_end",
+        "section_heading", "clause_text", "relevance_signal_score",
+        "relevance_signal_level", "quality_flags"
+    ]
+    output_dataframe = dataframe[[c for c in essential_cols if c in dataframe.columns]]
     output_records = output_dataframe.to_dict(orient="records")
 
     main_json = config.output_dir / "government_clauses_filtered.json"
     main_csv = config.output_dir / "government_clauses_filtered.csv"
-    review_json = config.output_dir / "government_clause_review_queue.json"
-    duplicate_json = config.output_dir / "government_clause_duplicate_report.json"
-    summary_json = config.output_dir / "government_filter_summary.json"
 
     write_json(main_json, output_records)
     output_dataframe.to_csv(main_csv, index=False)
 
-    review_columns = [
-        column for column in [
-            "clause_id", "source_act", "source_file", "page_start", "section_heading",
-            "clause_text", "administrative_signal", "administrative_signal_score",
-            "administrative_reasons", "relevance_signal_level", "relevance_signal_score",
-            "relevance_categories", "quality_flags", "review_priority",
-            "exact_duplicate_group", "near_duplicate_group", "filter_decision",
-        ] if column in output_dataframe.columns
-    ]
-    review_dataframe = output_dataframe[review_columns].copy()
-    review_dataframe = review_dataframe[
-        (review_dataframe["review_priority"] != "standard_review")
-        | (review_dataframe["quality_flags"] != "[]")
-    ]
-    write_json(review_json, review_dataframe.to_dict(orient="records"))
-
-    duplicate_columns = [
-        column for column in [
-            "clause_id", "source_act", "source_file", "page_start", "clause_text",
-            "_canonical_hash", "exact_duplicate_group", "near_duplicate_group",
-            "near_duplicate_similarity",
-        ] if column in output_dataframe.columns
-    ]
-    duplicate_dataframe = output_dataframe[duplicate_columns].copy()
-    duplicate_dataframe = duplicate_dataframe[
-        (duplicate_dataframe["exact_duplicate_group"] != "")
-        | (duplicate_dataframe["near_duplicate_group"] != "")
-    ]
-    write_json(duplicate_json, duplicate_dataframe.to_dict(orient="records"))
-    write_json(summary_json, summary)
-
     print("\nSaved:")
-    for path in [main_json, main_csv, review_json, duplicate_json, summary_json]:
-        print(f"  {path}")
+    print(f"  {main_json}")
+    print(f"  {main_csv}")
     print(
-        "\nContract check: input rows = "
-        f"{len(dataframe)}, output rows = {len(output_dataframe)}, deleted = 0"
+        f"\nContract check: input rows = {len(dataframe)}, "
+        f"output rows = {len(output_dataframe)}, columns = {len(output_dataframe.columns)}"
     )
     return 0
 

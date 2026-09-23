@@ -1,6 +1,6 @@
 {
-  "run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
-  "clauses_input": "datasets\\GovernmentActs\\government_clauses_cleaned.csv",
+  "run_timestamp_utc": "2026-09-19T20:31:24.930919+00:00",
+  "clauses_input": "datasets\\GovernmentActs\\government_clauses_filtered.csv",
   "taxonomy_input": "corpus\\taxonomy_generation\\taxonomy_candidates_normalized.json",
   "taxonomy_candidate_count": 633,
   "processed_candidate_count": 633,
@@ -13,36 +13,36 @@
   "target_composition_note": "Target ranges are review guidance, not automatic deletion rules.",
   "target_counts": {
     "DPDP_ACT_2023": {
-      "min": 15,
+      "min": 18,
       "max": 20
     },
     "DPDP_RULES_2025": {
-      "min": 10,
-      "max": 15
+      "min": 14,
+      "max": 16
     },
     "IT_ACT_2000": {
-      "min": 2,
-      "max": 3
+      "min": 8,
+      "max": 10
     },
     "RTI_ACT_2005": {
       "min": 0,
-      "max": 1
+      "max": 0
     },
     "TRAI_ACT_1997": {
       "min": 0,
-      "max": 1
+      "max": 0
     },
     "AERA_ACT_2008": {
       "min": 0,
-      "max": 1
+      "max": 0
     },
     "DISASTER_MGMT_ACT_2005": {
-      "min": 1,
-      "max": 1
+      "min": 0,
+      "max": 0
     },
     "PATENTS_ACT_1970": {
       "min": 0,
-      "max": 1
+      "max": 0
     }
   },
   "bucket_summaries": [
@@ -50,7 +50,7 @@
       "act": "AERA_ACT_2008",
       "count": 20,
       "target_min": 0,
-      "target_max": 1,
+      "target_max": 0,
       "target_status": "ABOVE_TARGET",
       "rationale": "Airport tariff regulation; likely little or no user-policy-checkable content.",
       "government_facing_count": 0,
@@ -59,18 +59,18 @@
     {
       "act": "DPDP_ACT_2023",
       "count": 177,
-      "target_min": 15,
+      "target_min": 18,
       "target_max": 20,
       "target_status": "ABOVE_TARGET",
       "rationale": "Primary substantive law; should provide the majority of the final taxonomy.",
-      "government_facing_count": 3,
+      "government_facing_count": 0,
       "policy_checkability_review_count": 20
     },
     {
       "act": "DPDP_RULES_2025",
       "count": 128,
-      "target_min": 10,
-      "target_max": 15,
+      "target_min": 14,
+      "target_max": 16,
       "target_status": "ABOVE_TARGET",
       "rationale": "Operational detail; should provide the second-largest substantive contribution.",
       "government_facing_count": 0,
@@ -79,36 +79,36 @@
     {
       "act": "IT_ACT_2000",
       "count": 199,
-      "target_min": 2,
-      "target_max": 3,
+      "target_min": 8,
+      "target_max": 10,
       "target_status": "ABOVE_TARGET",
       "rationale": "Retain only genuinely policy-checkable confidentiality/security provisions; exclude surveillance/blocking content.",
-      "government_facing_count": 16,
+      "government_facing_count": 3,
       "policy_checkability_review_count": 83
     },
     {
       "act": "RTI_ACT_2005",
       "count": 88,
       "target_min": 0,
-      "target_max": 1,
+      "target_max": 0,
       "target_status": "ABOVE_TARGET",
       "rationale": "Government transparency framework; likely reviewed and not applicable to private social-media policy unless a specific checkable connection is established.",
-      "government_facing_count": 5,
+      "government_facing_count": 0,
       "policy_checkability_review_count": 8
     },
     {
       "act": "TRAI_ACT_1997",
       "count": 21,
       "target_min": 0,
-      "target_max": 1,
+      "target_max": 0,
       "target_status": "ABOVE_TARGET",
       "rationale": "Institutional telecom regulation; likely little or no user-policy-checkable content.",
-      "government_facing_count": 6,
+      "government_facing_count": 0,
       "policy_checkability_review_count": 7
     }
   ],
   "intermediary_platform_liability_total": 145,
-  "intermediary_likely_government_facing": 30,
+  "intermediary_likely_government_facing": 3,
   "exact_requirement_duplicate_rows": 9,
   "near_requirement_duplicate_rows": 12,
   "taxonomy_status": "DRAFT_TRIAGE_PENDING_LEGAL_REVIEW",

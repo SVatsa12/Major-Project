@@ -1,19 +1,23 @@
 {
-  "run_id": "run-540f4f7176658e23",
-  "completed_at_utc": "2026-09-17T07:52:03.050521+00:00",
-  "corpus": "datasets\\SocialMediaPolicies\\social_media_clauses_flagged.csv",
-  "corpus_sha256": "c54406459cfbf3bd8a4428ed7c16c0c06cdbccdce314bc4086dcb9ae2e1e4b0e",
-  "taxonomy": "corpus\\dpdp_taxonomy_final.json",
-  "taxonomy_sha256": "4fa2ea12cc5f312f8350eb237df0ab5418187564cf7da57ecb3f651cbe114bbb",
-  "model": "qwen3:8b",
-  "prompt_version": "policy-labeling-v7-reliable-batches",
-  "input_clause_count": 2664,
-  "labeled_success_count": 2664,
-  "needs_review_count": 0,
-  "cache_hits": 0,
-  "cache_bypassed": false,
-  "model_calls": 444,
-  "batches_processed_including_splits": 444,
-  "failure_event_count": 0,
-  "status": "COMPLETE"
+  "run_id": "run-c6bf936e43df-5d0fde37",
+  "input_clause_count": 771,
+  "labeled_success_count": 771,
+  "matched_positive_count": 100,
+  "verdict_distribution": {
+    "Not Addressed": 671,
+    "Partially Compliant": 63,
+    "Compliant": 36,
+    "Non-Compliant": 1
+  },
+  "category_distribution": {
+    "Not Applicable": 671,
+    "Children/Vulnerable Groups": 35,
+    "Data Retention & Erasure": 20,
+    "Security Safeguards": 18,
+    "Data Principal Rights": 10,
+    "Consent & Notice": 9,
+    "Cross-Border Transfer": 4,
+    "Intermediary/Platform Liability": 3,
+    "Breach Notification": 1
+  }
 }

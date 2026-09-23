@@ -3,8 +3,8 @@ Production-grade, non-destructive taxonomy triage by source Act.
 
 Purpose
 -------
-Split draft taxonomy candidates into per-Act review files and generate a
-structured review report against the project's target composition.
+Split draft taxonomy candidates into per-Act review summaries and audit
+provenance against the project's target composition.
 
 This script does NOT finalize, delete, merge, or legally approve entries. It
 creates an auditable review workspace. Every input taxonomy candidate appears
@@ -12,36 +12,22 @@ in exactly one primary output bucket, including unresolved and multi-Act
 candidates.
 
 The primary Act assignment is resolved from:
-    taxonomy entry -> source_clause_ids -> cleaned government clause dataset
+    taxonomy entry -> source_clause_ids -> filtered government clause dataset
 
-The script also:
-- validates source-clause provenance;
-- distinguishes single-Act, multi-Act, and unresolved entries;
-- flags likely government-facing Intermediary/Platform Liability entries;
-- flags entries that are not clearly policy-checkable;
-- flags duplicate or near-duplicate requirement text;
-- applies target ranges only as status labels, never as deletion rules;
-- records minor Acts as reviewed/not applicable candidates when appropriate;
-- writes per-Act files, an all-candidates audit file, and summary reports.
-
-Target ranges
--------------
-DPDP_ACT_2023:             15-20
-DPDP_RULES_2025:           10-15
-IT_ACT_2000:                 2-3
-RTI_ACT_2005:                0-1
-TRAI_ACT_1997:               0-1
-AERA_ACT_2008:               0-1
-DISASTER_MGMT_ACT_2005:      1-1
-PATENTS_ACT_1970:            0-1
-
-The ranges are review targets, not automatic filters. The legal team may keep
-zero entries for a substantively irrelevant Act and record the reason in the
-review report.
+Target ranges (Balanced Multi-Act Benchmark)
+--------------------------------------------
+DPDP_ACT_2023:             18-20
+DPDP_RULES_2025:           14-16
+IT_ACT_2000:                8-10
+RTI_ACT_2005:               0-0
+TRAI_ACT_1997:              0-0
+AERA_ACT_2008:              0-0
+DISASTER_MGMT_ACT_2005:     0-0
+PATENTS_ACT_1970:           0-0
 
 Input defaults
 --------------
-    datasets/GovernmentActs/government_clauses_cleaned.csv
+    datasets/GovernmentActs/government_clauses_filtered.csv
     corpus/taxonomy_generation/taxonomy_candidates_normalized.json
 
 Output defaults
@@ -50,18 +36,7 @@ Output defaults
 
 Run
 ---
-python triage_taxonomy_by_act_production.py
-
-Custom paths
-------------
-python triage_taxonomy_by_act_production.py \
-    --clauses datasets/GovernmentActs/government_clauses_cleaned.csv \
-    --taxonomy corpus/taxonomy_generation/taxonomy_candidates_normalized.json \
-    --output-dir corpus/taxonomy_generation/triage_by_act
-
-Dependencies
-------------
-pip install pandas
+python src/taxonomy/triage_by_act.py
 """
 
 from __future__ import annotations
@@ -80,19 +55,19 @@ from typing import Any
 import pandas as pd
 
 
-DEFAULT_CLAUSES = Path("datasets/GovernmentActs/government_clauses_cleaned.csv")
+DEFAULT_CLAUSES = Path("datasets/GovernmentActs/government_clauses_filtered.csv")
 DEFAULT_TAXONOMY = Path("corpus/taxonomy_generation/taxonomy_candidates_normalized.json")
 DEFAULT_OUTPUT = Path("corpus/taxonomy_generation/triage_by_act")
 
 TARGET_COUNTS: dict[str, tuple[int, int]] = {
-    "DPDP_ACT_2023": (15, 20),
-    "DPDP_RULES_2025": (10, 15),
-    "IT_ACT_2000": (2, 3),
-    "RTI_ACT_2005": (0, 1),
-    "TRAI_ACT_1997": (0, 1),
-    "AERA_ACT_2008": (0, 1),
-    "DISASTER_MGMT_ACT_2005": (1, 1),
-    "PATENTS_ACT_1970": (0, 1),
+    "DPDP_ACT_2023": (18, 20),
+    "DPDP_RULES_2025": (14, 16),
+    "IT_ACT_2000": (8, 10),
+    "RTI_ACT_2005": (0, 0),
+    "TRAI_ACT_1997": (0, 0),
+    "AERA_ACT_2008": (0, 0),
+    "DISASTER_MGMT_ACT_2005": (0, 0),
+    "PATENTS_ACT_1970": (0, 0),
 }
 
 ACT_NOTES: dict[str, str] = {
@@ -106,27 +81,12 @@ ACT_NOTES: dict[str, str] = {
     "PATENTS_ACT_1970": "Review only for a specific DPDP-connected legal-privilege or cross-reference obligation.",
 }
 
-# These signals are not legal conclusions. They prioritize review of entries
-# that often describe duties owed to the government rather than disclosures or
-# commitments that could appear in a user-facing policy.
 GOVERNMENT_FACING_SIGNALS = {
-    "comply with directions": "government-direction duty",
-    "central government": "central-government duty",
-    "state government": "state-government duty",
-    "government": "government-facing duty",
     "interception": "interception/surveillance duty",
     "monitoring": "monitoring duty",
     "decryption": "decryption/technical-assistance duty",
-    "block access": "blocking duty",
-    "blocking": "blocking duty",
-    "authorized agency": "authorized-agency duty",
-    "authorised agency": "authorised-agency duty",
     "traffic data": "traffic-data assistance duty",
-    "furnish information": "information-furnishing duty",
     "technical assistance": "technical-assistance duty",
-    "law enforcement": "law-enforcement cooperation duty",
-    "intermediary shall": "intermediary statutory duty",
-    "remove or disable access": "content-blocking duty",
 }
 
 # Requirement-level signals for policy-checkability review. These are broader
@@ -545,7 +505,7 @@ def main() -> int:
 
     config.output_dir.mkdir(parents=True, exist_ok=True)
 
-    # Write one file per resolved bucket, including MULTI_ACT and UNRESOLVED.
+# Write one file per resolved bucket, including MULTI_ACT and UNRESOLVED.
     for act, act_entries in sorted(by_bucket.items()):
         write_json(config.output_dir / f"{safe_filename(act)}.json", act_entries)
 

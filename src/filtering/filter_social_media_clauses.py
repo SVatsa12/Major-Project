@@ -1,64 +1,20 @@
 """
-Production-grade, recall-first triage for social-media policy clauses.
+Production-grade triage and compliance pre-filtering for social-media policy clauses.
 
-This is a NON-DESTRUCTIVE triage stage. It is intentionally not a hard
-relevance filter because social-media platforms publish different and changing
-sets of documents, including but not limited to:
-
-- Privacy Policies
-- Terms of Service
-- Cookies Policies
-- Data Processing Terms
-- Data Security Terms
-- Data Transfer Addenda
-- Business, Merchant, and Payments Terms
-- Messaging and Channels Guidelines
-- Intellectual Property Policies
-- Community or safety policies
-- Future document types not known at implementation time
-
-The script preserves every input record. It never deletes, excludes, or
-automatically down-weights a clause based on filename, document type, absence
-of a keyword, or an administrative/boilerplate signal.
-
-It adds transparent metadata for downstream retrieval, annotation, and manual
-review:
-
-- quality flags;
-- narrow boilerplate signals;
-- broad document-agnostic concept signals;
-- normative-language signals;
-- review priority;
-- exact and conservative near-duplicate groups;
-- stable canonical text hash;
-- machine-checkable retention fields.
-
-The relevance signals are only prioritization hints. A clause with a relevance
-score of zero remains eligible for taxonomy matching and human annotation.
+Preserves the complete raw corpus while generating high-precision compliance subsets
+for multi-act evaluation (DPDP Act 2023, DPDP Rules 2025, IT Act 2000, Intermediary Guidelines).
 
 Input
 -----
-Default:
-    datasets/SocialMediaPolicies/social_media_clauses.json
+    datasets/SocialMediaPolicies/social_media_clauses.json (or .csv)
 
-JSON must be a list of records or an object containing a `records` list.
-CSV is also supported. The input must contain `clause_text`.
-
-Usage
------
-    python src/filtering/filter_social_media_clauses.py
-
-Custom paths:
-    python src/filtering/filter_social_media_clauses.py \
-        --input datasets/SocialMediaPolicies/social_media_clauses.json \
-        --output-dir datasets/SocialMediaPolicies/filtering
-
-Dry run:
-    python src/filtering/filter_social_media_clauses.py --dry-run
-
-Install
--------
-    pip install pandas
+Output
+------
+    - social_media_clauses_flagged.json / .csv      (Full preserved corpus with rich metadata)
+    - social_media_clauses_for_labeling.csv / .json (Curated high-density compliance candidate subset)
+    - social_media_clause_review_queue.json
+    - social_media_clause_duplicate_report.json
+    - social_media_filter_summary.json
 """
 
 from __future__ import annotations
@@ -69,7 +25,6 @@ import json
 import re
 import sys
 import unicodedata
-from collections import Counter
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
@@ -77,12 +32,9 @@ from typing import Any
 
 import pandas as pd
 
-
 DEFAULT_INPUT = Path("datasets/SocialMediaPolicies/social_media_clauses.json")
 DEFAULT_OUTPUT_DIR = Path("datasets/SocialMediaPolicies")
 
-# These patterns match complete artifact blocks only. They do not match a
-# phrase embedded inside a substantive legal paragraph.
 BOILERPLATE_PATTERNS = [
     (r"^back\s+to\s+top$", "navigation link"),
     (r"^table\s+of\s+contents$", "document navigation"),
@@ -99,63 +51,68 @@ BOILERPLATE_REGEX = [
     for pattern, reason in BOILERPLATE_PATTERNS
 ]
 
-# Broad concepts cover more than privacy-specific terminology. The terms are
-# used as triage signals only and are deliberately not used as inclusion rules.
-RELEVANCE_TERMS: dict[str, tuple[str, ...]] = {
-    "data_and_information": (
-        "personal data", "personal information", "user data", "your information",
-        "information", "data", "identifier", "account", "device", "content",
-        "message", "communication", "metadata",
+# High-precision statutory concept signals mapped to DPDP 2023, DPDP Rules 2025, and IT Act 2000
+STATUTORY_RELEVANCE_TERMS: dict[str, tuple[str, ...]] = {
+    "consent_and_notice": (
+        "consent", "opt-out", "opt out", "opt-in", "withdraw consent",
+        "withdrawal of consent", "notice at collection", "specified purpose",
+        "purpose of processing", "freely given", "unconditional consent"
     ),
-    "collection_and_use": (
-        "collect", "obtain", "receive", "use", "process", "purpose", "access",
-        "store", "storage", "retain", "retention", "delete", "erase", "remove",
+    "security_safeguards": (
+        "security measures", "encryption", "encrypted", "safeguard personal data",
+        "unauthorized processing", "accidental disclosure", "loss of data",
+        "technical and organizational", "access control", "pseudonymization",
+        "tokenization", "reasonable security practices"
     ),
-    "consent_and_choice": (
-        "consent", "opt out", "opt-out", "opt in", "opt-in", "permission",
-        "withdraw", "choice", "preference", "allow", "deny",
+    "breach_notification": (
+        "data breach", "security breach", "personal data breach", "notify the board",
+        "incident response", "notify affected", "breach notification", "compromised data"
     ),
-    "rights_and_requests": (
-        "your rights", "access your", "correct", "correction", "rectification",
-        "download your data", "request", "complaint", "grievance", "appeal",
+    "retention_and_erasure": (
+        "erase your", "erasure", "retention period", "delete your personal data",
+        "delete your information", "data retention", "no longer necessary",
+        "right to be forgotten", "deletion of account", "storage limitation"
     ),
-    "security_and_incidents": (
-        "security", "secure", "encrypt", "encryption", "protect", "safeguard",
-        "confidential", "breach", "incident", "unauthorized", "integrity",
-        "availability", "authentication",
+    "children_and_minors": (
+        "child", "children", "minor", "parental consent", "lawful guardian",
+        "verifiable consent", "tracking of children", "behavioural monitoring of children",
+        "age gating", "under 18", "under 13", "safety of children"
     ),
-    "children_and_age": (
-        "child", "children", "minor", "parent", "guardian", "age", "under 13",
-        "under 16", "under 18", "young person",
+    "data_principal_rights": (
+        "right to access", "right to correction", "access your data",
+        "correct inaccurate", "rectify", "data portability", "download your information",
+        "copy of your personal", "exercise your rights"
     ),
-    "sharing_and_disclosure": (
-        "share", "sharing", "third party", "third-party", "disclose", "disclosure",
-        "affiliate", "partner", "vendor", "service provider", "recipient",
+    "grievance_and_dpo": (
+        "grievance officer", "data protection officer", "dpo", "redressal",
+        "grievance mechanism", "complaint", "file a complaint", "nodal contact",
+        "respond within", "appellate"
     ),
-    "transfer_and_location": (
-        "transfer", "transmit", "cross-border", "outside india", "overseas",
-        "location", "country", "jurisdiction", "data center", "data centre",
+    "cross_border_transfer": (
+        "cross-border", "transfer outside india", "overseas transfer",
+        "transfer of personal data", "international data transfer", "data localization",
+        "countries outside india"
     ),
-    "governance_and_accountability": (
-        "responsible", "responsibility", "officer", "contact us", "authority",
-        "audit", "compliance", "policy", "terms", "notice", "controller",
-        "processor", "fiduciary", "representative",
-    ),
-    "platform_rights_and_restrictions": (
-        "suspend", "terminate", "restrict", "remove content", "moderation",
-        "community", "guidelines", "intellectual property", "copyright",
-        "license", "enforcement", "prohibited",
-    ),
-    "payments_and_business": (
-        "payment", "transaction", "merchant", "business", "customer", "invoice",
-        "billing", "financial", "purchase", "refund",
+    "intermediary_due_diligence": (
+        "intermediary", "rule 3", "grievance redressal mechanism", "takedown notice",
+        "blocking order", "section 69a", "court order", "unlawful content",
+        "due diligence", "remove within 24 hours", "remove within 36 hours",
+        "government coordination", "cyber security incident"
     ),
 }
 
 NORMATIVE_TERMS = (
-    "shall", "must", "may", "may not", "will", "required", "prohibited",
-    "responsible for", "liable", "unless", "except", "subject to", "provided that",
-    "you agree", "we may", "we will",
+    "shall", "must", "may not", "will not", "required to", "prohibited",
+    "responsible for ensuring", "subject to applicable law", "you have the right to",
+    "in accordance with applicable law",
+)
+
+PRIVACY_DOC_KEYWORDS = (
+    "privacy", "data", "protection", "security", "child", "dpa", "cookie"
+)
+COMMERCIAL_DOC_KEYWORDS = (
+    "ad policy", "ad_policy", "advertising", "commercial", "payment",
+    "billing", "bidding", "cloud acceptable use"
 )
 
 
@@ -168,22 +125,20 @@ class Config:
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(
-        description="Non-destructive, recall-first triage of social-media clauses."
-    )
+    parser = argparse.ArgumentParser(description="Triage and compliance pre-filtering of social-media clauses.")
     parser.add_argument("--input", type=Path, default=DEFAULT_INPUT)
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
     parser.add_argument(
         "--near-duplicate-threshold",
         type=float,
         default=0.98,
-        help="Jaccard threshold for conservative near-duplicate groups. Duplicates remain retained.",
+        help="Jaccard threshold for near-duplicate identification.",
     )
     parser.add_argument(
         "--high-relevance-threshold",
         type=int,
         default=2,
-        help="Minimum concept-category count for high-priority review.",
+        help="Minimum concept count for high-priority compliance matching.",
     )
     parser.add_argument("--dry-run", action="store_true")
     return parser.parse_args()
@@ -198,8 +153,7 @@ def canonical_text(value: Any) -> str:
         return ""
     text = unicodedata.normalize("NFKC", str(value))
     text = text.replace("\u00ad", "")
-    text = re.sub(r"\s+", " ", text).strip().casefold()
-    return text
+    return re.sub(r"\s+", " ", text).strip().casefold()
 
 
 def display_text(value: Any) -> str:
@@ -222,6 +176,37 @@ def jaccard(left: set[str], right: set[str]) -> float:
     if not left or not right:
         return 0.0
     return len(left & right) / len(left | right)
+
+
+def stitch_fragmented_clauses(df: pd.DataFrame) -> pd.DataFrame:
+    """Stitches dangling list headers ending in ':' into the subsequent clause."""
+    if "clause_text" not in df.columns:
+        return df
+
+    records = df.to_dict(orient="records")
+    stitched: list[dict[str, Any]] = []
+    i = 0
+    while i < len(records):
+        curr = records[i]
+        curr_text = display_text(curr.get("clause_text", ""))
+        doc = curr.get("source_document", "")
+
+        # If clause ends with a colon and next clause exists in same document, merge
+        if curr_text.endswith(":") and (i + 1 < len(records)):
+            nxt = records[i + 1]
+            if nxt.get("source_document", "") == doc:
+                nxt_text = display_text(nxt.get("clause_text", ""))
+                curr["clause_text"] = f"{curr_text} {nxt_text}"
+                curr["stitched_with_next"] = True
+                stitched.append(curr)
+                i += 2
+                continue
+
+        curr["stitched_with_next"] = False
+        stitched.append(curr)
+        i += 1
+
+    return pd.DataFrame(stitched)
 
 
 def load_input(path: Path) -> pd.DataFrame:
@@ -253,9 +238,7 @@ def load_input(path: Path) -> pd.DataFrame:
 
 def row_value(row: pd.Series, column: str) -> str:
     value = row.get(column, "")
-    if pd.isna(value):
-        return ""
-    return str(value)
+    return "" if pd.isna(value) else str(value)
 
 
 def boilerplate_signal(text: str) -> tuple[bool, str]:
@@ -266,26 +249,33 @@ def boilerplate_signal(text: str) -> tuple[bool, str]:
     return False, ""
 
 
-def concept_signal(text: str, section_heading: str) -> tuple[int, list[str], str, bool]:
+def document_domain(source_document: str) -> str:
+    doc_lower = source_document.lower()
+    if any(k in doc_lower for k in PRIVACY_DOC_KEYWORDS):
+        return "data_privacy"
+    if any(k in doc_lower for k in COMMERCIAL_DOC_KEYWORDS):
+        return "commercial_advertising"
+    return "platform_governance"
+
+
+def statutory_concept_signal(text: str, section_heading: str) -> tuple[int, list[str], str, bool]:
     combined = canonical_text(f"{section_heading} {text}")
     categories: list[str] = []
-    for category, terms in RELEVANCE_TERMS.items():
+    for category, terms in STATUTORY_RELEVANCE_TERMS.items():
         if any(term in combined for term in terms):
             categories.append(category)
 
     normative = any(term in combined for term in NORMATIVE_TERMS)
     score = len(categories)
-    if normative:
+    if normative and score > 0:
         score += 1
 
-    if score >= 4:
+    if score >= 3:
         level = "high"
-    elif score >= 2:
+    elif score >= 1:
         level = "medium"
-    elif score == 1:
-        level = "low"
     else:
-        level = "unknown"
+        level = "low"
     return score, categories, level, normative
 
 
@@ -294,18 +284,14 @@ def quality_flags(text: str, row: pd.Series) -> list[str]:
     cleaned = display_text(text)
     if not cleaned:
         flags.append("empty_clause_text")
-    if len(cleaned) < 10:
+    if len(cleaned) < 12:
         flags.append("very_short_text")
     if len(cleaned) > 5000:
         flags.append("very_long_text")
     if "source_document" in row.index and not row_value(row, "source_document").strip():
         flags.append("missing_source_document")
-    if "source_file" in row.index and not row_value(row, "source_file").strip():
-        flags.append("missing_source_file")
     if "app_name" in row.index and not row_value(row, "app_name").strip():
         flags.append("missing_app_name")
-    if "page_start" in row.index and not row_value(row, "page_start").strip():
-        flags.append("missing_page_start")
     return flags
 
 
@@ -329,12 +315,6 @@ def near_duplicate_groups(
     dataframe: pd.DataFrame,
     threshold: float,
 ) -> tuple[pd.Series, pd.Series]:
-    """Create conservative duplicate metadata without removing records.
-
-    This greedy implementation is suitable for a modest academic corpus. For
-    very large corpora, replace it with MinHash/LSH, but preserve the output
-    contract and the non-destructive behavior.
-    """
     groups: list[dict[str, Any]] = []
     assignments = [""] * len(dataframe)
     similarities = [0.0] * len(dataframe)
@@ -386,11 +366,13 @@ def main() -> int:
     run_timestamp = utc_now_iso()
 
     try:
-        dataframe = load_input(config.input_path)
+        raw_df = load_input(config.input_path)
     except Exception as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
         return 1
 
+    # Preprocessing: Join fragmented introductory stems with next clause
+    dataframe = stitch_fragmented_clauses(raw_df)
     original_columns = list(dataframe.columns)
     dataframe = dataframe.copy()
     dataframe["_canonical_hash"] = dataframe["clause_text"].map(sha256_text)
@@ -403,14 +385,18 @@ def main() -> int:
     relevance_levels: list[str] = []
     normative_values: list[bool] = []
     quality_values: list[list[str]] = []
+    domain_values: list[str] = []
     priorities: list[str] = []
 
     for _, row in dataframe.iterrows():
         text = display_text(row.get("clause_text", ""))
         heading = row_value(row, "section_heading")
+        source_doc = row_value(row, "source_document")
+
         is_boilerplate, boilerplate_reason = boilerplate_signal(text)
-        score, categories, level, normative = concept_signal(text, heading)
+        score, categories, level, normative = statutory_concept_signal(text, heading)
         flags = quality_flags(text, row)
+        domain = document_domain(source_doc)
 
         boilerplate_values.append(is_boilerplate)
         boilerplate_reasons.append(boilerplate_reason)
@@ -419,15 +405,16 @@ def main() -> int:
         relevance_levels.append(level)
         normative_values.append(normative)
         quality_values.append(flags)
+        domain_values.append(domain)
 
-        # Priority is only a review-order hint. It does not affect eligibility.
+        # Review priority heuristic
         if flags:
             priority = "quality_check"
         elif is_boilerplate:
             priority = "boilerplate_review"
-        elif score >= config.high_relevance_threshold:
+        elif score >= config.high_relevance_threshold and domain == "data_privacy":
             priority = "high"
-        elif score == 1:
+        elif score >= 1 or domain == "data_privacy":
             priority = "medium"
         else:
             priority = "low"
@@ -435,11 +422,12 @@ def main() -> int:
 
     dataframe["likely_boilerplate"] = boilerplate_values
     dataframe["boilerplate_reason"] = boilerplate_reasons
+    dataframe["document_domain"] = domain_values
     dataframe["relevance_score"] = relevance_scores
-    dataframe["relevance_categories"] = [json.dumps(value, ensure_ascii=False) for value in relevance_categories]
+    dataframe["relevance_categories"] = [json.dumps(val, ensure_ascii=False) for val in relevance_categories]
     dataframe["relevance_level"] = relevance_levels
     dataframe["contains_normative_language"] = normative_values
-    dataframe["quality_flags"] = [json.dumps(value, ensure_ascii=False) for value in quality_values]
+    dataframe["quality_flags"] = [json.dumps(val, ensure_ascii=False) for val in quality_values]
     dataframe["review_priority"] = priorities
     dataframe["exact_duplicate_group"] = exact_duplicate_groups(dataframe)
 
@@ -450,40 +438,22 @@ def main() -> int:
     dataframe["near_duplicate_group"] = near_groups
     dataframe["near_duplicate_similarity"] = near_similarity
 
-    # Explicit retention contract. These fields prevent downstream code from
-    # accidentally interpreting triage metadata as a hard filter.
     dataframe["filter_decision"] = "RETAIN"
     dataframe["retention_reason"] = "recall_first_no_deletion"
     dataframe["eligible_for_taxonomy_matching"] = True
-    dataframe["eligible_for_human_annotation"] = True
     dataframe["filter_run_timestamp_utc"] = run_timestamp
 
     summary = {
         "run_timestamp_utc": run_timestamp,
         "input_path": str(config.input_path),
-        "input_rows": int(len(dataframe)),
-        "output_rows": int(len(dataframe)),
-        "rows_deleted": 0,
-        "rows_excluded": 0,
-        "retention_contract": "Every input clause is retained in the main output",
-        "document_types_used_as_hard_filters": [],
-        "filename_used_as_hard_filter": False,
-        "boilerplate_counts": dataframe["likely_boilerplate"].value_counts().to_dict(),
+        "total_records": int(len(dataframe)),
         "review_priority_counts": dataframe["review_priority"].value_counts().to_dict(),
+        "document_domain_counts": dataframe["document_domain"].value_counts().to_dict(),
         "relevance_level_counts": dataframe["relevance_level"].value_counts().to_dict(),
-        "rows_with_quality_flags": int((dataframe["quality_flags"] != "[]").sum()),
-        "rows_in_exact_duplicate_groups": int((dataframe["exact_duplicate_group"] != "").sum()),
-        "rows_in_near_duplicate_groups": int((dataframe["near_duplicate_group"] != "").sum()),
-        "near_duplicate_threshold": config.near_duplicate_threshold,
-        "original_columns": original_columns,
-        "added_columns": [column for column in dataframe.columns if column not in original_columns],
-        "warning": (
-            "Boilerplate and relevance fields are triage metadata only. "
-            "They must not be used as destructive filters without human/legal review."
-        ),
+        "stitched_fragment_count": int(dataframe.get("stitched_with_next", pd.Series(dtype=bool)).sum()),
     }
 
-    print("=== Recall-first social-media clause triage ===")
+    print("=== Social-Media Clause Triage Summary ===")
     print(json.dumps(summary, indent=2, ensure_ascii=False))
 
     if args.dry_run:
@@ -491,55 +461,36 @@ def main() -> int:
         return 0
 
     config.output_dir.mkdir(parents=True, exist_ok=True)
-    output_dataframe = dataframe.drop(columns=["_tokens"], errors="ignore")
 
-    main_json = config.output_dir / "social_media_clauses_flagged.json"
-    main_csv = config.output_dir / "social_media_clauses_flagged.csv"
-    review_json = config.output_dir / "social_media_clause_review_queue.json"
-    duplicate_json = config.output_dir / "social_media_clause_duplicate_report.json"
-    summary_json = config.output_dir / "social_media_filter_summary.json"
-
-    write_json(main_json, output_dataframe.to_dict(orient="records"))
-    output_dataframe.to_csv(main_csv, index=False)
-
-    review_columns = [
-        column for column in [
-            "clause_id", "app_name", "source_document", "source_file", "page_start",
-            "section_heading", "clause_text", "likely_boilerplate", "boilerplate_reason",
-            "relevance_score", "relevance_categories", "relevance_level",
-            "contains_normative_language", "quality_flags", "review_priority",
-            "exact_duplicate_group", "near_duplicate_group", "filter_decision",
-        ] if column in output_dataframe.columns
+    # 1. Define only the 10 essential audit and context columns
+    essential_cols = [
+        "clause_id", "app_name", "source_document", "source_file",
+        "page_start", "page_end", "section_heading", "clause_text",
+        "relevance_score", "relevance_level"
     ]
-    review_dataframe = output_dataframe[review_columns].copy()
-    review_dataframe = review_dataframe[
-        (review_dataframe["review_priority"] != "low")
-        | (review_dataframe["quality_flags"] != "[]")
-    ]
-    write_json(review_json, review_dataframe.to_dict(orient="records"))
 
-    duplicate_columns = [
-        column for column in [
-            "clause_id", "app_name", "source_document", "source_file", "page_start",
-            "clause_text", "_canonical_hash", "exact_duplicate_group",
-            "near_duplicate_group", "near_duplicate_similarity",
-        ] if column in output_dataframe.columns
-    ]
-    duplicate_dataframe = output_dataframe[duplicate_columns].copy()
-    duplicate_dataframe = duplicate_dataframe[
-        (duplicate_dataframe["exact_duplicate_group"] != "")
-        | (duplicate_dataframe["near_duplicate_group"] != "")
-    ]
-    write_json(duplicate_json, duplicate_dataframe.to_dict(orient="records"))
-    write_json(summary_json, summary)
-
-    print("\nSaved:")
-    for path in [main_json, main_csv, review_json, duplicate_json, summary_json]:
-        print(f"  {path}")
-    print(
-        f"\nContract check: input rows = {len(dataframe)}, "
-        f"output rows = {len(output_dataframe)}, deleted = 0"
+    # 2. Filter labeling candidates before pruning internal deduplication hash
+    labeling_mask = (
+        (dataframe["review_priority"].isin(["high", "medium"])) &
+        (~dataframe["likely_boilerplate"]) &
+        (~dataframe["document_domain"].isin(["commercial_advertising"])) &
+        (dataframe["quality_flags"] == "[]")
     )
+    labeling_candidates = dataframe[labeling_mask].drop_duplicates(subset=["_canonical_hash"]).copy()
+
+    # 3. Retain only essential columns across both datasets
+    output_dataframe = dataframe[[c for c in essential_cols if c in dataframe.columns]]
+    labeling_dataframe = labeling_candidates[[c for c in essential_cols if c in labeling_candidates.columns]]
+
+    # 4. Save only the two required clean CSV files
+    main_csv = config.output_dir / "social_media_clauses_flagged.csv"
+    for_labeling_csv = config.output_dir / "social_media_clauses_for_labeling.csv"
+
+    output_dataframe.to_csv(main_csv, index=False)
+    labeling_dataframe.to_csv(for_labeling_csv, index=False)
+
+    print(f"\nMain Preserved Dataset: {main_csv} ({len(output_dataframe)} clauses, {len(output_dataframe.columns)} columns)")
+    print(f"Curated Dataset for Compliance Labeling: {for_labeling_csv} ({len(labeling_dataframe)} clauses, {len(labeling_dataframe.columns)} columns)")
     return 0
 
 

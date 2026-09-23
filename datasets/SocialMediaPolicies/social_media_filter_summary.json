@@ -1,67 +1,22 @@
 {
-  "run_timestamp_utc": "2026-09-16T11:16:01.447362+00:00",
+  "run_timestamp_utc": "2026-09-18T06:25:07.606225+00:00",
   "input_path": "datasets\\SocialMediaPolicies\\social_media_clauses.json",
-  "input_rows": 2664,
-  "output_rows": 2664,
-  "rows_deleted": 0,
-  "rows_excluded": 0,
-  "retention_contract": "Every input clause is retained in the main output",
-  "document_types_used_as_hard_filters": [],
-  "filename_used_as_hard_filter": false,
-  "boilerplate_counts": {
-    "false": 2664
-  },
+  "total_records": 2459,
   "review_priority_counts": {
-    "high": 2184,
-    "medium": 336,
-    "low": 140,
-    "quality_check": 4
+    "low": 1634,
+    "medium": 811,
+    "high": 9,
+    "quality_check": 5
+  },
+  "document_domain_counts": {
+    "platform_governance": 1513,
+    "data_privacy": 693,
+    "commercial_advertising": 253
   },
   "relevance_level_counts": {
-    "high": 1103,
-    "medium": 1081,
-    "low": 338,
-    "unknown": 142
+    "low": 2251,
+    "medium": 202,
+    "high": 6
   },
-  "rows_with_quality_flags": 4,
-  "rows_in_exact_duplicate_groups": 183,
-  "rows_in_near_duplicate_groups": 187,
-  "near_duplicate_threshold": 0.98,
-  "original_columns": [
-    "clause_id",
-    "app_name",
-    "source_document",
-    "source_file",
-    "source_path",
-    "page_start",
-    "page_end",
-    "section_heading",
-    "clause_index_in_document",
-    "clause_text",
-    "extraction_method",
-    "extraction_quality",
-    "retrieved_at",
-    "file_sha256"
-  ],
-  "added_columns": [
-    "_canonical_hash",
-    "_tokens",
-    "likely_boilerplate",
-    "boilerplate_reason",
-    "relevance_score",
-    "relevance_categories",
-    "relevance_level",
-    "contains_normative_language",
-    "quality_flags",
-    "review_priority",
-    "exact_duplicate_group",
-    "near_duplicate_group",
-    "near_duplicate_similarity",
-    "filter_decision",
-    "retention_reason",
-    "eligible_for_taxonomy_matching",
-    "eligible_for_human_annotation",
-    "filter_run_timestamp_utc"
-  ],
-  "warning": "Boilerplate and relevance fields are triage metadata only. They must not be used as destructive filters without human/legal review."
+  "stitched_fragment_count": 205
 }

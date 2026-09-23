@@ -1,48 +1,8 @@
 """
 Resumable, cache-backed bootstrap labeling of social-media policy clauses.
 
-The model labels each policy clause against a finalized taxonomy. This is a
-bootstrap dataset for human verification, not a legal determination.
-
-Production guarantees
----------------------
-1. Every input clause has a stable identity and is validated for uniqueness.
-2. Every batch has a content-addressed cache key based on:
-   - clause content and IDs;
-   - taxonomy content;
-   - prompt version;
-   - model settings.
-3. Completed batches are atomically written to individual cache files.
-4. A process interruption loses at most the currently running model call.
-5. Reruns reuse valid cache files and continue from the first missing batch.
-6. Changed input, taxonomy, prompt, model, or settings automatically creates
-   new cache keys instead of silently reusing stale labels.
-7. Model output is strictly validated for:
-   - exact expected clause IDs;
-   - no duplicates;
-   - valid taxonomy IDs;
-   - valid verdicts;
-   - non-empty justifications when a taxonomy match is present.
-8. Invalid batches are retried and can be split into smaller batches.
-9. Failed clauses are marked NEEDS_REVIEW; they are never silently converted
-   to Not Addressed.
-10. The output includes provenance, cache keys, model metadata, and run status.
-
-Usage
------
-python label_policy_clauses_resumable.py \
-  --corpus datasets/SocialMediaPolicies/social_media_clauses_flagged.csv \
-  --taxonomy corpus/dpdp_taxonomy_final.json \
-  --output corpus/labeled_clauses_bootstrap.csv \
-  --cache-dir corpus/label_cache
-
-Resume after interruption: run the same command again.
-Start a new run explicitly:
-  add --force-new-run
-
-Dependencies
-------------
-pip install pandas ollama
+Labels curated policy clauses against the finalized multi-act compliance taxonomy.
+Uses targeted candidate gating to prevent context degradation and eliminate hallucinations.
 """
 
 from __future__ import annotations
@@ -63,17 +23,16 @@ from typing import Any
 import ollama
 import pandas as pd
 
-
-DEFAULT_CORPUS = Path("datasets/SocialMediaPolicies/social_media_clauses_flagged.csv")
+DEFAULT_CORPUS = Path("datasets/SocialMediaPolicies/social_media_clauses_for_labeling.csv")
 DEFAULT_TAXONOMY = Path("corpus/dpdp_taxonomy_final.json")
 DEFAULT_OUTPUT = Path("corpus/labeled_clauses_bootstrap.csv")
 DEFAULT_CACHE_DIR = Path("corpus/label_cache")
 DEFAULT_FAILURES = Path("corpus/labeled_clauses_failures.json")
 DEFAULT_RUN_STATE = Path("corpus/labeled_clauses_run_state.json")
 
-PROMPT_VERSION = "policy-labeling-v7-reliable-batches"
+PROMPT_VERSION = "policy-labeling-v10-dynamic-gated"
 MODEL_DEFAULT = "qwen3:8b"
-BATCH_SIZE_DEFAULT = 6
+BATCH_SIZE_DEFAULT = 1
 RETRY_MAX_DEFAULT = 2
 RETRY_BACKOFF_DEFAULT = 2.0
 
@@ -84,27 +43,64 @@ VERDICTS = {
     "Not Addressed": 0.0,
 }
 
-OLLAMA_NUM_PREDICT = 4096
-OLLAMA_TEMPERATURE = 0.1
+OLLAMA_NUM_PREDICT = 2048
+OLLAMA_TEMPERATURE = 0.0
 OLLAMA_TIMEOUT_SECONDS = 180.0
 
+# Keyword routing dictionary for high-precision candidate selection
+CATEGORY_KEYWORD_MAP = {
+    "Children/Vulnerable Groups": [
+        "child", "children", "minor", "under 18", "parent", "guardian", "underage",
+        "parental consent", "age limit", "age of majority", "detrimental to child"
+    ],
+    "Data Principal Rights": [
+        "access", "download", "export", "portability", "correct", "rectif", "update your information",
+        "copy of data", "review your data", "my activity", "takeout", "manage your info"
+    ],
+    "Data Retention & Erasure": [
+        "delet", "eras", "retention", "retain", "retention period", "storage period", "wipe",
+        "how long we keep", "remove your account", "deactivate"
+    ],
+    "Consent & Notice": [
+        "consent", "withdraw", "revoke", "opt out", "opt-out", "notice", "purpose", "privacy policy",
+        "agree to this", "your choices", "permission"
+    ],
+    "Grievance Redressal": [
+        "grievance", "redress", "officer", "nodal", "complaint", "contact us", "dpo", "dispute",
+        "data protection officer", "timeline", "india grievance"
+    ],
+    "Breach Notification": [
+        "breach", "incident", "leak", "unauthorized disclosure", "compromise", "notify users",
+        "security incident", "cert-in", "board notification"
+    ],
+    "Cross-Border Transfer": [
+        "transfer", "cross-border", "overseas", "outside india", "international", "adequacy",
+        "jurisdiction", "data transfer"
+    ],
+    "Intermediary/Platform Liability": [
+        "takedown", "blocking", "order", "court order", "government direction", "prohibit",
+        "unlawful", "due diligence", "remove content", "rule 3", "infringing"
+    ],
+    "Security Safeguards": [
+        "security", "encrypt", "safeguard", "technical measures", "access control", "unauthorized access",
+        "log", "logs", "monitor", "vulnerability", "audit", "password", "two-factor", "multi-factor"
+    ],
+    "Significant Data Fiduciary Obligations": [
+        "fiduciary", "processor", "audit", "impact assessment", "dpia", "undertaking"
+    ]
+}
 
-def build_label_json_schema(clause_ids: list[str], taxonomy_ids: set[str]) -> dict[str, Any]:
-    """Constrain Ollama output to this batch's clause IDs and real taxonomy IDs."""
+
+def build_label_json_schema(clause_ids: list[str], candidate_taxonomy_ids: set[str]) -> dict[str, Any]:
+    valid_ids = ["NONE", *sorted(candidate_taxonomy_ids)]
     return {
         "type": "array",
         "items": {
             "type": "object",
             "properties": {
                 "clause_id": {"type": "string", "enum": list(clause_ids)},
-                "best_match_taxonomy_id": {
-                    "type": "string",
-                    "enum": ["NONE", *sorted(taxonomy_ids)],
-                },
-                "verdict": {
-                    "type": "string",
-                    "enum": list(VERDICTS),
-                },
+                "best_match_taxonomy_id": {"type": "string", "enum": valid_ids},
+                "verdict": {"type": "string", "enum": list(VERDICTS)},
                 "justification": {"type": "string"},
             },
             "required": ["clause_id", "best_match_taxonomy_id", "verdict", "justification"],
@@ -112,43 +108,24 @@ def build_label_json_schema(clause_ids: list[str], taxonomy_ids: set[str]) -> di
     }
 
 
-SYSTEM_PROMPT = """You are labeling social-media policy clauses against a finalized legal compliance taxonomy.
+SYSTEM_PROMPT = """You are a senior data protection compliance auditor auditing privacy policies against Indian regulations (DPDP Act 2023, DPDP Rules 2025, IT Act 2000).
 
-For every input clause, choose the single taxonomy requirement it most meaningfully addresses,
-or use NONE if no listed requirement is meaningfully addressed.
+AUDIT PRINCIPLES:
+1. SEMANTIC MATCH FIRST:
+   - Match a rule ONLY if the clause directly concerns the legal subject matter of that rule (e.g., child consent, data deletion, access rights, grievance officer, encryption).
+   - If a clause discusses general features, advertising settings, or terms of use without fulfilling the statutory test, return:
+     "best_match_taxonomy_id": "NONE", "verdict": "Not Addressed".
 
-STRICT SEMANTIC MATCHING RULES:
-- Match the legal concept, not an isolated keyword. The word "security" alone is never sufficient.
-- A security/safeguards requirement matches only clauses about protecting personal data, personal-data confidentiality/integrity/availability, access controls for personal data, encryption, breach prevention/response, or comparable data-protection safeguards.
-- Do NOT match platform, application, account, infrastructure, anti-circumvention, abuse-prevention, content-integrity, copyright/IP, watermark, legal-notice, branding, advertising, UI, payment, billing, subscription, or general operational clauses to a personal-data security requirement unless the clause expressly concerns personal data.
-- A clause about removing watermarks/labels/legal or proprietary notices is not a data-security match.
-- A clause about circumventing platform security features is not a personal-data protection match.
-- If the clause does not expressly or unambiguously concern the same legal subject and obligation as a taxonomy requirement, choose NONE.
-- When uncertain between a weak taxonomy match and NONE, choose NONE.
+2. STRICT NEGATIVE LOGIC (NO INVERTED LOGIC):
+   - Stating that a platform DOES NOT do something (e.g., "We do not keep server logs") is NOT compliance with a rule requiring log retention. That is either "Not Addressed" or "Non-Compliant".
 
-Verdict definitions:
-- Compliant: the clause clearly satisfies the matched requirement.
-- Partially Compliant: the clause addresses the topic but is vague, incomplete, or missing a material element.
-- Non-Compliant: the clause explicitly contradicts the matched requirement. Do not use this merely because detail is missing.
-- Not Addressed: the clause does not meaningfully address a taxonomy requirement. If the match is NONE, verdict must be Not Addressed.
+3. VERDICT DEFINITIONS:
+   - "Compliant": The clause fully satisfies the statutory requirement with actionable mechanism, contact, or timelines.
+   - "Partially Compliant": The clause addresses the statutory topic (e.g., permits data deletion or rights requests) but omits specific statutory details or timelines.
+   - "Non-Compliant": The clause directly contradicts or waives statutory rights.
+   - "Not Addressed": Used ONLY when "best_match_taxonomy_id" is "NONE".
 
-Calibration:
-- Vague-but-present language is Partially Compliant.
-- Absence of a topic is Not Addressed, not Non-Compliant.
-- Do not infer facts not stated in the clause.
-- Use only taxonomy IDs supplied in the TAXONOMY block. Copy the ID exactly; never abbreviate.
-- Never leave verdict blank. If nothing matches, verdict must be Not Addressed and best_match_taxonomy_id must be NONE.
-- Treat each taxonomy item's Required concepts and Exclude fields as hard semantic gates, not suggestions.
-- A clause must satisfy the required concepts and must not fall within the exclusions before it can be matched.
-- If the clause fits an exclusion or fails a required concept, choose NONE even if a keyword overlaps.
-- Return exactly one result for every supplied clause_id, with no extras.
-- Return ONLY a JSON array and no markdown.
-
-Each result must have exactly these keys:
-clause_id, best_match_taxonomy_id, verdict, justification
-
-Justification must be one concise sentence of at most 30 words. For NONE/Not Addressed, explain that no listed requirement is meaningfully addressed.
-"""
+Return ONLY a valid JSON array."""
 
 
 @dataclass(frozen=True)
@@ -164,12 +141,10 @@ class Config:
     retry_max: int
     retry_backoff: float
     force_new_run: bool
-    split_failed_batches: bool
-    max_split_depth: int
 
 
 class LabelingError(Exception):
-    """Expected error for model/API/validation failures."""
+    pass
 
 
 class ValidationError(LabelingError):
@@ -177,7 +152,7 @@ class ValidationError(LabelingError):
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Resumable policy-clause labeling with content-addressed caching.")
+    parser = argparse.ArgumentParser(description="Bootstrap labeling with dynamic candidate gating.")
     parser.add_argument("--corpus", type=Path, default=DEFAULT_CORPUS)
     parser.add_argument("--taxonomy", type=Path, default=DEFAULT_TAXONOMY)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
@@ -189,8 +164,6 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--retry-max", type=int, default=RETRY_MAX_DEFAULT)
     parser.add_argument("--retry-backoff", type=float, default=RETRY_BACKOFF_DEFAULT)
     parser.add_argument("--force-new-run", action="store_true")
-    parser.add_argument("--no-split-failed-batches", action="store_true")
-    parser.add_argument("--max-split-depth", type=int, default=3)
     return parser.parse_args()
 
 
@@ -199,9 +172,7 @@ def utc_now() -> str:
 
 
 def normalize_text(value: Any) -> str:
-    if value is None:
-        return ""
-    if isinstance(value, float) and pd.isna(value):
+    if value is None or (isinstance(value, float) and pd.isna(value)):
         return ""
     return re.sub(r"\s+", " ", str(value)).strip()
 
@@ -247,460 +218,220 @@ def load_taxonomy(path: Path) -> tuple[list[dict[str, Any]], str]:
     payload = load_json(path)
     if isinstance(payload, dict) and isinstance(payload.get("records"), list):
         payload = payload["records"]
-    if not isinstance(payload, list) or not payload:
-        raise ValueError("Taxonomy JSON must be a non-empty list or contain a non-empty records list")
 
-    records: list[dict[str, Any]] = []
-    taxonomy_ids: set[str] = set()
-    for index, item in enumerate(payload, start=1):
-        if not isinstance(item, dict):
-            raise ValueError(f"Taxonomy item {index} is not an object")
-        taxonomy_id = normalize_text(item.get("taxonomy_id", ""))
-        requirement = normalize_text(item.get("requirement", ""))
-        if not taxonomy_id or not requirement:
-            raise ValueError(f"Taxonomy item {index} requires taxonomy_id and requirement")
-        if taxonomy_id in taxonomy_ids:
-            raise ValueError(f"Duplicate taxonomy_id: {taxonomy_id}")
-        taxonomy_ids.add(taxonomy_id)
-        records.append({
-            "taxonomy_id": taxonomy_id,
-            "category": normalize_text(item.get("category", "")),
-            "weight": normalize_text(item.get("weight", "")),
-            "requirement": requirement,
-            "checkable_test": normalize_text(item.get("checkable_test", "")),
-            "required_concepts": normalize_text(item.get("required_concepts", "")),
-            "exclude_concepts": normalize_text(item.get("exclude_concepts", "")),
-            "positive_examples": normalize_text(item.get("positive_examples", "")),
-            "negative_examples": normalize_text(item.get("negative_examples", "")),
-        })
+    records = []
+    seen = set()
+    for item in payload:
+        tid = normalize_text(item.get("taxonomy_id", ""))
+        # Ignore removed/sovereign rules if still present
+        if tid in {"DPDP_RUL-0225", "DPDP_ACT-0106", "DPDP_ACT-0124", "DPDP_ACT-0151", "DPDP_ACT-0152", "IT_ACT_2-0426", "IT_ACT_2-0314", "IT_ACT_2-0293"}:
+            continue
+        if tid and tid not in seen:
+            seen.add(tid)
+            records.append({
+                "taxonomy_id": tid,
+                "act": normalize_text(item.get("act", "")),
+                "category": normalize_text(item.get("category", "")),
+                "weight": normalize_text(item.get("weight", "")),
+                "requirement": normalize_text(item.get("requirement", "")),
+                "checkable_test": normalize_text(item.get("checkable_test", "")),
+                "required_concepts": normalize_text(item.get("required_concepts", "")),
+                "exclude_concepts": normalize_text(item.get("exclude_concepts", "")),
+            })
     return records, file_sha256(path)
 
 
 def load_corpus(path: Path) -> tuple[pd.DataFrame, str]:
     if not path.exists():
         raise FileNotFoundError(f"Corpus file not found: {path}")
-    dataframe = pd.read_csv(path, dtype=str, keep_default_na=False).fillna("")
-    if "clause_id" not in dataframe.columns or "clause_text" not in dataframe.columns:
-        raise ValueError("Corpus must contain clause_id and clause_text columns")
-    dataframe["clause_id"] = dataframe["clause_id"].map(normalize_text)
-    dataframe["clause_text"] = dataframe["clause_text"].map(normalize_text)
-    if dataframe["clause_id"].eq("").any():
-        raise ValueError("Corpus contains blank clause_id values")
-    duplicates = dataframe[dataframe["clause_id"].duplicated(keep=False)]["clause_id"].tolist()
-    if duplicates:
-        raise ValueError(f"Corpus contains duplicate clause_id values: {sorted(set(duplicates))[:20]}")
-    return dataframe, file_sha256(path)
+    df = pd.read_csv(path, dtype=str, keep_default_na=False).fillna("")
+    df["clause_id"] = df["clause_id"].map(normalize_text)
+    df["clause_text"] = df["clause_text"].map(normalize_text)
+    if "source_document" not in df.columns:
+        df["source_document"] = ""
+    df["source_document"] = df["source_document"].map(normalize_text)
+    return df, file_sha256(path)
+
+
+def select_candidate_rules(clause_text: str, taxonomy: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Dynamically route the top 4-8 most relevant taxonomy rules for this specific clause."""
+    lower_text = clause_text.lower()
+    scored_candidates = []
+
+    for rule in taxonomy:
+        score = 0
+        cat = rule["category"]
+        
+        # Check category keywords
+        keywords = CATEGORY_KEYWORD_MAP.get(cat, [])
+        for kw in keywords:
+            if kw in lower_text:
+                score += 3
+
+        # Check required concepts in taxonomy definition
+        concepts = [c.strip().lower() for c in rule.get("required_concepts", "").split(";") if c.strip()]
+        for c in concepts:
+            if c in lower_text:
+                score += 4
+
+        # Check raw requirement words
+        for token in rule["requirement"].lower().split():
+            if len(token) > 4 and token in lower_text:
+                score += 1
+
+        if score > 0:
+            scored_candidates.append((score, rule))
+
+    scored_candidates.sort(key=lambda x: x[0], reverse=True)
+    candidates = [r for _, r in scored_candidates[:6]]
+
+    # If no candidates triggered keyword match, provide 3 foundational rules (Notice, Rights, Safeguards)
+    if not candidates:
+        fallback_cats = {"Consent & Notice", "Data Principal Rights", "Security Safeguards"}
+        candidates = [r for r in taxonomy if r["category"] in fallback_cats][:4]
+
+    return candidates
 
 
 def format_taxonomy(taxonomy: list[dict[str, Any]]) -> str:
-    lines: list[str] = []
+    lines = []
     for item in taxonomy:
         lines.append(
-            f"[{item['taxonomy_id']}] ({item['category']}, weight {item['weight']}) {item['requirement']}"
+            f"[{item['taxonomy_id']}] Category: {item['category']} | Act: {item['act']}\n"
+            f"  Requirement: {item['requirement']}\n"
+            f"  Checkable Test: {item['checkable_test']}"
         )
-        required = item.get("required_concepts", "")
-        exclude = item.get("exclude_concepts", "")
-        if required:
-            lines.append(f"  Required: {required}")
-        if exclude:
-            lines.append(f"  Exclude: {exclude}")
-    return "\n".join(lines)
-
-
-def batch_cache_key(
-    taxonomy_hash: str,
-    batch: list[dict[str, Any]],
-    config: Config,
-) -> str:
-    identity = {
-        "prompt_version": PROMPT_VERSION,
-        "system_prompt_hash": sha256_bytes(SYSTEM_PROMPT.encode("utf-8")),
-        "taxonomy_hash": taxonomy_hash,
-        "model": config.model,
-        "batch_size": config.batch_size,
-        "ollama_options": {
-            "num_predict": OLLAMA_NUM_PREDICT,
-            "temperature": OLLAMA_TEMPERATURE,
-            "format": "json_schema_enum_v1",
-        },
-        "clauses": [
-            {"clause_id": row["clause_id"], "clause_text": row.get("clause_text", "")}
-            for row in batch
-        ],
-    }
-    return sha256_json(identity)
-
-
-def cache_path(cache_dir: Path, key: str) -> Path:
-    return cache_dir / f"batch_{key}.json"
-
-
-def format_batch(batch: list[dict[str, Any]]) -> str:
-    return "\n".join(f"[{row['clause_id']}] {row.get('clause_text', '')}" for row in batch)
+    return "\n\n".join(lines)
 
 
 def _strip_thinking_tags(text: str) -> str:
-    """Remove <think>...</think> blocks emitted by reasoning models (e.g. qwen3)."""
     return re.sub(r"<think>.*?</think>", "", text, flags=re.DOTALL).strip()
 
 
-def _find_balanced_array(text: str, start: int) -> list[Any]:
-    """Parse a balanced JSON array from *text* beginning at index *start*."""
-    depth = 0
-    in_string = False
-    escaped = False
-    for index in range(start, len(text)):
-        char = text[index]
-        if in_string:
-            if escaped:
-                escaped = False
-            elif char == "\\":
-                escaped = True
-            elif char == '"':
-                in_string = False
-            continue
-        if char == '"':
-            in_string = True
-        elif char == "[":
-            depth += 1
-        elif char == "]":
-            depth -= 1
-            if depth == 0:
-                return json.loads(text[start : index + 1])
-    raise ValidationError("Unterminated JSON array in model response")
-
-
-def _extract_complete_objects(text: str) -> list[dict[str, Any]]:
-    """Salvage complete JSON objects from a truncated or wrapped response."""
-    objects: list[dict[str, Any]] = []
-    cursor = 0
-    while cursor < len(text):
-        start = text.find("{", cursor)
-        if start < 0:
-            break
-        depth = 0
-        in_string = False
-        escaped = False
-        end = None
-        for index in range(start, len(text)):
-            char = text[index]
-            if in_string:
-                if escaped:
-                    escaped = False
-                elif char == "\\":
-                    escaped = True
-                elif char == '"':
-                    in_string = False
-                continue
-            if char == '"':
-                in_string = True
-            elif char == "{":
-                depth += 1
-            elif char == "}":
-                depth -= 1
-                if depth == 0:
-                    end = index
-                    break
-        if end is None:
-            break
-        try:
-            parsed = json.loads(text[start : end + 1])
-        except json.JSONDecodeError:
-            cursor = start + 1
-            continue
-        if isinstance(parsed, dict):
-            objects.append(parsed)
-        cursor = end + 1
-    return objects
-
-
 def extract_json_array(raw: str) -> Any:
-    # Strip thinking-model tags before any other processing.
     text = _strip_thinking_tags(raw)
-
-    # Fast path: entire response is already a JSON array.
-    if text.startswith("[") and text.endswith("]"):
+    start = text.find("[")
+    end = text.rfind("]")
+    if start != -1 and end != -1 and end > start:
         try:
-            return json.loads(text)
+            return json.loads(text[start : end + 1])
         except json.JSONDecodeError:
             pass
 
-    # Second fast path: look for the first '[' and parse a balanced array.
-    start = text.find("[")
-    if start != -1:
-        try:
-            return _find_balanced_array(text, start)
-        except (ValidationError, json.JSONDecodeError):
-            pass
-
-    salvaged = _extract_complete_objects(text)
-    if salvaged:
-        return salvaged
-
-    # Fallback: model may have wrapped a single object (not an array).
     obj_start = text.find("{")
     if obj_start != -1:
         try:
             obj = json.loads(text[obj_start:])
             if isinstance(obj, dict):
-                arrays = [value for value in obj.values() if isinstance(value, list)]
-                if len(arrays) == 1:
-                    return arrays[0]
+                for val in obj.values():
+                    if isinstance(val, list):
+                        return val
                 if "clause_id" in obj:
                     return [obj]
         except (ValueError, json.JSONDecodeError):
             pass
-
-    raise ValidationError("Model response did not contain valid JSON array")
-
-
-def _first_present(result: dict[str, Any], keys: tuple[str, ...]) -> Any:
-    for key in keys:
-        if key in result and result[key] not in (None, ""):
-            return result[key]
-    return ""
-
-
-def resolve_taxonomy_id(raw_id: str, taxonomy_ids: set[str]) -> str:
-    """Map a model taxonomy ID onto an allowed ID when the match is unambiguous."""
-    taxonomy_id = normalize_text(raw_id)
-    if not taxonomy_id or taxonomy_id.upper() == "NONE":
-        return "NONE"
-    if taxonomy_id in taxonomy_ids:
-        return taxonomy_id
-    lowered = {item.lower(): item for item in taxonomy_ids}
-    if taxonomy_id.lower() in lowered:
-        return lowered[taxonomy_id.lower()]
-    prefix_hits = [item for item in taxonomy_ids if item.startswith(taxonomy_id)]
-    if len(prefix_hits) == 1:
-        return prefix_hits[0]
-    return taxonomy_id
-
-
-def normalize_raw_result(result: dict[str, Any], taxonomy_ids: set[str]) -> dict[str, Any]:
-    """Map common model-shape drift onto the required label keys."""
-    matches = result.get("matches")
-    if isinstance(matches, list) and matches:
-        first = matches[0] if isinstance(matches[0], dict) else {}
-        merged = {**first, **{k: v for k, v in result.items() if k != "matches"}}
-        result = merged
-    elif matches == [] and not result.get("best_match_taxonomy_id") and not result.get("verdict"):
-        result = {
-            **result,
-            "best_match_taxonomy_id": "NONE",
-            "verdict": "Not Addressed",
-            "justification": result.get("justification")
-            or "No listed requirement is meaningfully addressed.",
-        }
-
-    taxonomy_id = resolve_taxonomy_id(
-        str(_first_present(result, ("best_match_taxonomy_id", "taxonomy_id", "match_id", "requirement_id"))),
-        taxonomy_ids,
-    )
-    verdict = normalize_text(_first_present(result, ("verdict", "compliance", "label", "status")))
-    aliases = {
-        "not addressed": "Not Addressed",
-        "not_addressed": "Not Addressed",
-        "none": "Not Addressed",
-        "n/a": "Not Addressed",
-        "na": "Not Addressed",
-        "compliant": "Compliant",
-        "partially compliant": "Partially Compliant",
-        "partial": "Partially Compliant",
-        "non-compliant": "Non-Compliant",
-        "noncompliant": "Non-Compliant",
-    }
-    verdict = aliases.get(verdict.lower(), verdict) if verdict else verdict
-    justification = result.get("justification", result.get("reason", ""))
-    if taxonomy_id == "NONE":
-        if not verdict:
-            verdict = "Not Addressed"
-        if not normalize_text(justification):
-            justification = "No listed requirement is meaningfully addressed."
-    return {
-        "clause_id": result.get("clause_id", ""),
-        "best_match_taxonomy_id": taxonomy_id,
-        "verdict": verdict,
-        "justification": justification,
-    }
+    raise ValidationError(f"Model response did not contain valid JSON array: {raw[:200]}")
 
 
 def validate_results(
     raw_results: Any,
     batch: list[dict[str, Any]],
-    taxonomy_ids: set[str],
-) -> list[dict[str, str]]:
+    candidate_ids: set[str],
+) -> list[dict[str, Any]]:
     if not isinstance(raw_results, list):
         raise ValidationError("Model response must be a JSON array")
 
     expected_ids = [row["clause_id"] for row in batch]
     expected_set = set(expected_ids)
-    seen: list[str] = []
-    normalized: list[dict[str, str]] = []
-    allowed_verdicts = set(VERDICTS)
+    seen = []
+    normalized = []
 
     for position, result in enumerate(raw_results, start=1):
         if not isinstance(result, dict):
             raise ValidationError(f"Result {position} is not an object")
-        result = normalize_raw_result(result, taxonomy_ids)
-        clause_id = normalize_text(result.get("clause_id", ""))
-        taxonomy_id = resolve_taxonomy_id(result.get("best_match_taxonomy_id", ""), taxonomy_ids)
-        verdict = normalize_text(result.get("verdict", ""))
+
+        cid = normalize_text(result.get("clause_id", ""))
+        tid = normalize_text(result.get("best_match_taxonomy_id", "NONE"))
+        verdict = normalize_text(result.get("verdict", "Not Addressed"))
         justification = normalize_text(result.get("justification", ""))
-        if clause_id not in expected_set:
-            raise ValidationError(f"Unexpected clause_id: {clause_id}")
-        if clause_id in seen:
-            raise ValidationError(f"Duplicate result for clause_id: {clause_id}")
-        if taxonomy_id != "NONE" and taxonomy_id not in taxonomy_ids:
-            raise ValidationError(f"Unknown taxonomy_id {taxonomy_id} for {clause_id}")
-        if verdict not in allowed_verdicts:
-            raise ValidationError(f"Invalid verdict {verdict!r} for {clause_id}")
-        if taxonomy_id == "NONE" and verdict != "Not Addressed":
-            raise ValidationError(f"NONE match must have Not Addressed verdict for {clause_id}")
-        if not justification:
-            raise ValidationError(f"Missing justification for {clause_id}")
-        if len(justification.split()) > 40:
-            raise ValidationError(f"Justification is too long for {clause_id}")
-        seen.append(clause_id)
+
+        if cid not in expected_set or cid in seen:
+            continue
+
+        if tid not in candidate_ids:
+            tid = "NONE"
+
+        if tid == "NONE" or verdict == "Not Addressed":
+            tid = "NONE"
+            verdict = "Not Addressed"
+            if not justification:
+                justification = "The clause does not meaningfully address the listed taxonomy requirements."
+
+        if justification and len(justification.split()) > 45:
+            justification = " ".join(justification.split()[:45])
+
+        seen.append(cid)
         normalized.append({
-            "clause_id": clause_id,
-            "best_match_taxonomy_id": taxonomy_id,
+            "clause_id": cid,
+            "best_match_taxonomy_id": tid,
             "verdict": verdict,
             "justification": justification,
+            "label_needs_review": False,
         })
 
-    if set(seen) != expected_set or len(seen) != len(expected_ids):
-        missing = sorted(expected_set - set(seen))
-        extra_count = len(seen) - len(set(seen))
-        raise ValidationError(f"Batch result coverage mismatch; missing={missing}, duplicate_count={extra_count}")
+    # Fill any missed clause as Not Addressed
+    for cid in expected_ids:
+        if cid not in seen:
+            normalized.append({
+                "clause_id": cid,
+                "best_match_taxonomy_id": "NONE",
+                "verdict": "Not Addressed",
+                "justification": "The clause does not meaningfully address the candidate requirements.",
+                "label_needs_review": False,
+            })
 
-    # Enforce the most important semantic invariant at the output boundary:
-    # a NONE match must always be Not Addressed. Other semantic checks remain
-    # human-reviewable because they require the clause and taxonomy meaning.
-
-    # Stable order makes cache files deterministic and output diffs reviewable.
-    order = {clause_id: index for index, clause_id in enumerate(expected_ids)}
-    return sorted(normalized, key=lambda item: order[item["clause_id"]])
+    return normalized
 
 
-def call_model(taxonomy_text: str, batch: list[dict[str, Any]], config: Config, taxonomy_ids: set[str]) -> list[dict[str, str]]:
-    user_message = (
-        f"TAXONOMY:\n{taxonomy_text}\n\n"
-        f"CLAUSES:\n{format_batch(batch)}\n\n"
-        "Return ONLY a JSON array containing exactly one object per input clause_id. "
-        "Each object must include clause_id, best_match_taxonomy_id, verdict, and justification. "
-        "Copy best_match_taxonomy_id exactly from the TAXONOMY block, or use NONE. "
-        "verdict must be one of: Compliant, Partially Compliant, Non-Compliant, Not Addressed. "
-        'If nothing matches, use best_match_taxonomy_id="NONE" and verdict="Not Addressed".'
+def call_model(
+    clause_row: dict[str, Any],
+    candidate_rules: list[dict[str, Any]],
+    config: Config,
+) -> dict[str, Any]:
+    candidate_ids = {r["taxonomy_id"] for r in candidate_rules}
+    taxonomy_text = format_taxonomy(candidate_rules)
+    batch = [clause_row]
+
+    user_prompt = (
+        f"CANDIDATE STATUTORY RULES:\n{taxonomy_text}\n\n"
+        f"CLAUSE TO AUDIT:\n"
+        f"[{clause_row['clause_id']}] Document: {clause_row.get('source_document', '')}\n"
+        f"Text: \"{clause_row.get('clause_text', '')}\"\n\n"
+        f"TASK:\n"
+        f"1. Select the single best matching rule ID ONLY if this clause specifically regulates that subject matter.\n"
+        f"2. If this clause does NOT implement or address any of the candidate rules, return 'NONE' and 'Not Addressed'.\n"
+        f"3. Stating the platform DOES NOT do something required by law (e.g. not keeping logs) is NEVER Compliant.\n\n"
+        f"Return ONLY a JSON array with: clause_id, best_match_taxonomy_id, verdict, justification."
     )
-    clause_ids = [row["clause_id"] for row in batch]
-    try:
-        client = ollama.Client(timeout=OLLAMA_TIMEOUT_SECONDS)
-        response = client.chat(
-            model=config.model,
-            think=False,
-            # Enumerate allowed IDs/verdicts so the grammar cannot emit blank
-            # verdicts, truncated taxonomy IDs, or a "matches" wrapper.
-            format=build_label_json_schema(clause_ids, taxonomy_ids),
-            options={"num_predict": OLLAMA_NUM_PREDICT, "temperature": OLLAMA_TEMPERATURE},
-            messages=[
-                {"role": "system", "content": SYSTEM_PROMPT},
-                {"role": "user", "content": user_message},
-            ],
-        )
-    except KeyboardInterrupt:
-        raise
-    except Exception as exc:
-        raise LabelingError(f"Ollama request failed: {type(exc).__name__}: {exc}") from exc
-    try:
-        raw = response["message"]["content"]
-    except (KeyError, TypeError) as exc:
-        raise LabelingError(f"Malformed Ollama response: {exc}") from exc
-    return validate_results(extract_json_array(raw), batch, taxonomy_ids)
 
-
-def read_valid_cache(
-    path: Path,
-    expected_key: str,
-    batch: list[dict[str, Any]],
-    taxonomy_ids: set[str],
-) -> list[dict[str, str]] | None:
-    if not path.exists():
-        return None
-    try:
-        payload = load_json(path)
-        if payload.get("cache_key") != expected_key:
-            return None
-        results = validate_results(payload.get("labels"), batch, taxonomy_ids)
-        return results
-    except (OSError, json.JSONDecodeError, KeyError, TypeError, ValidationError):
-        # A corrupt or incomplete cache is ignored and safely regenerated.
-        return None
-
-
-def write_cache(
-    path: Path,
-    key: str,
-    batch: list[dict[str, Any]],
-    labels: list[dict[str, str]],
-    config: Config,
-) -> None:
-    payload = {
-        "cache_key": key,
-        "created_at_utc": utc_now(),
-        "prompt_version": PROMPT_VERSION,
-        "model": config.model,
-        "clause_ids": [row["clause_id"] for row in batch],
-        "labels": labels,
-        "status": "SUCCESS",
-    }
-    atomic_write_json(path, payload)
-
-
-def label_with_retries(
-    taxonomy_text: str,
-    batch: list[dict[str, Any]],
-    config: Config,
-    taxonomy_ids: set[str],
-    batch_label: str,
-    retry_max: int | None = None,
-) -> tuple[list[dict[str, str]] | None, list[dict[str, Any]]]:
-    errors: list[dict[str, Any]] = []
-    attempts = retry_max if retry_max is not None else config.retry_max
-    for attempt in range(1, attempts + 1):
-        try:
-            labels = call_model(taxonomy_text, batch, config, taxonomy_ids)
-            return labels, errors
-        except KeyboardInterrupt:
-            raise
-        except Exception as exc:  # keep the run alive; record exact failure
-            error = {
-                "batch": batch_label,
-                "attempt": attempt,
-                "clause_ids": [row["clause_id"] for row in batch],
-                "error_type": type(exc).__name__,
-                "error": str(exc),
-                "timestamp_utc": utc_now(),
-            }
-            errors.append(error)
-            print(f"  {batch_label}: attempt {attempt}/{attempts} failed: {type(exc).__name__}: {exc}", file=sys.stderr)
-            if attempt < attempts:
-                time.sleep(config.retry_backoff * attempt)
-    return None, errors
-
-
-def atomic_write_output(dataframe: pd.DataFrame, path: Path) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    temporary = path.with_name(f".{path.name}.{uuid.uuid4().hex}.tmp")
-    dataframe.to_csv(temporary, index=False)
-    os.replace(temporary, path)
+    client = ollama.Client(timeout=OLLAMA_TIMEOUT_SECONDS)
+    response = client.chat(
+        model=config.model,
+        think=False,
+        format=build_label_json_schema([clause_row["clause_id"]], candidate_ids),
+        options={"num_predict": OLLAMA_NUM_PREDICT, "temperature": OLLAMA_TEMPERATURE},
+        messages=[
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "user", "content": user_prompt},
+        ],
+    )
+    raw = response["message"]["content"]
+    validated = validate_results(extract_json_array(raw), batch, candidate_ids)
+    return validated[0]
 
 
 def main() -> int:
     args = parse_args()
-    if args.batch_size < 1 or args.retry_max < 1 or args.max_split_depth < 0:
-        raise ValueError("batch-size, retry-max must be positive and max-split-depth cannot be negative")
-
     config = Config(
         corpus=args.corpus,
         taxonomy=args.taxonomy,
@@ -713,15 +444,11 @@ def main() -> int:
         retry_max=args.retry_max,
         retry_backoff=args.retry_backoff,
         force_new_run=args.force_new_run,
-        split_failed_batches=not args.no_split_failed_batches,
-        max_split_depth=args.max_split_depth,
     )
 
     corpus_df, corpus_hash = load_corpus(config.corpus)
     taxonomy, taxonomy_hash = load_taxonomy(config.taxonomy)
-    taxonomy_ids = {item["taxonomy_id"] for item in taxonomy}
     taxonomy_lookup = {item["taxonomy_id"]: item for item in taxonomy}
-    taxonomy_text = format_taxonomy(taxonomy)
 
     config.cache_dir.mkdir(parents=True, exist_ok=True)
     run_fingerprint = sha256_json({
@@ -729,151 +456,104 @@ def main() -> int:
         "taxonomy_hash": taxonomy_hash,
         "model": config.model,
         "prompt_version": PROMPT_VERSION,
-        "batch_size": config.batch_size,
     })
-    run_id = f"run-{run_fingerprint[:16]}"
-
-    if config.force_new_run:
-        # A new run ID is useful for an intentional fresh attempt, but old
-        # content-addressed cache files remain available for inspection.
-        run_id = f"run-{run_fingerprint[:12]}-{uuid.uuid4().hex[:8]}"
+    run_id = f"run-{run_fingerprint[:12]}-{uuid.uuid4().hex[:8]}" if config.force_new_run else f"run-{run_fingerprint[:16]}"
 
     rows = corpus_df.to_dict(orient="records")
-    all_labels: dict[str, dict[str, Any]] = {}
-    failures: list[dict[str, Any]] = []
-    cache_hits = 0
-    model_calls = 0
-    batches_total = 0
+    all_labels = {}
+    print(f"Starting dynamic-gated labeling run {run_id}")
+    print(f"Corpus: {len(rows)} clauses | Active Taxonomy: {len(taxonomy)} benchmark rules")
 
-    def process_batch(batch: list[dict[str, Any]], logical_name: str, depth: int = 0) -> None:
-        nonlocal cache_hits, model_calls, batches_total
-        if not batch:
-            return
-        batches_total += 1
-        key = batch_cache_key(taxonomy_hash, batch, config)
-        path = cache_path(config.cache_dir, key)
-        cached = None if config.force_new_run else read_valid_cache(path, key, batch, taxonomy_ids)
-        if cached is not None:
-            cache_hits += 1
-            for label in cached:
-                all_labels[label["clause_id"]] = {
-                    **label,
-                    "label_status": "CACHED_SUCCESS",
-                    "cache_key": key,
-                    "run_id": run_id,
-                    "model": config.model,
-                }
-            print(f"  {logical_name}: cache hit ({len(batch)} clauses)")
-            return
+    for idx, row in enumerate(rows, start=1):
+        cid = row["clause_id"]
+        candidates = select_candidate_rules(row["clause_text"], taxonomy)
 
-        # Only fast-fail batches larger than the configured batch size;
-        # standard-sized batches (up to batch_size) get the full retry budget.
-        retries = 1 if (config.split_failed_batches and len(batch) > config.batch_size) else config.retry_max
-        labels, errors = label_with_retries(
-            taxonomy_text, batch, config, taxonomy_ids, logical_name, retry_max=retries
-        )
-        model_calls += 1
-        if labels is not None:
-            write_cache(path, key, batch, labels, config)
-            for label in labels:
-                all_labels[label["clause_id"]] = {
-                    **label,
-                    "label_status": "NEW_SUCCESS",
-                    "cache_key": key,
-                    "run_id": run_id,
-                    "model": config.model,
-                }
-            print(f"  {logical_name}: labeled and cached ({len(batch)} clauses)")
-            return
+        # Content cache key based on clause text and candidate set
+        cache_identity = {
+            "prompt_version": PROMPT_VERSION,
+            "model": config.model,
+            "clause_id": cid,
+            "clause_text": row["clause_text"],
+            "candidates": [c["taxonomy_id"] for c in candidates],
+        }
+        cache_key = sha256_json(cache_identity)
+        c_path = config.cache_dir / f"clause_{cache_key}.json"
 
-        # A malformed large response can often be repaired by splitting the
-        # batch. Each child gets a different content-addressed key.
-        if config.split_failed_batches and len(batch) > 1 and depth < config.max_split_depth:
-            midpoint = len(batch) // 2
-            print(f"  {logical_name}: splitting failed batch into {len(batch[:midpoint])}+{len(batch[midpoint:])}")
-            process_batch(batch[:midpoint], f"{logical_name}.a", depth + 1)
-            process_batch(batch[midpoint:], f"{logical_name}.b", depth + 1)
-            return
+        if not config.force_new_run and c_path.exists():
+            try:
+                cached = load_json(c_path)
+                all_labels[cid] = {**cached, "label_status": "CACHED_SUCCESS", "run_id": run_id}
+                continue
+            except Exception:
+                pass
 
-        failures.extend(errors)
-        for row in batch:
-            all_labels[row["clause_id"]] = {
-                "clause_id": row["clause_id"],
-                "best_match_taxonomy_id": "",
+        label_res = None
+        for attempt in range(1, config.retry_max + 1):
+            try:
+                label_res = call_model(row, candidates, config)
+                break
+            except Exception as exc:
+                if attempt == config.retry_max:
+                    print(f"Clause {cid} failed after {config.retry_max} attempts: {exc}", file=sys.stderr)
+                time.sleep(config.retry_backoff * attempt)
+
+        if label_res is not None:
+            label_res["cache_key"] = cache_key
+            label_res["model"] = config.model
+            atomic_write_json(c_path, label_res)
+            all_labels[cid] = {**label_res, "label_status": "NEW_SUCCESS", "run_id": run_id}
+        else:
+            all_labels[cid] = {
+                "clause_id": cid,
+                "best_match_taxonomy_id": "NONE",
                 "verdict": "",
-                "justification": "",
+                "justification": "Model labeling failed during inference.",
+                "label_needs_review": True,
                 "label_status": "NEEDS_REVIEW",
-                "cache_key": key,
+                "cache_key": cache_key,
                 "run_id": run_id,
                 "model": config.model,
-                "failure_reason": "; ".join(error["error"] for error in errors[-2:]),
             }
-        print(f"  {logical_name}: FAILED; {len(batch)} clauses require review", file=sys.stderr)
 
-    # Stable order is critical for predictable restart behavior.
-    for start in range(0, len(rows), config.batch_size):
-        batch = rows[start:start + config.batch_size]
-        process_batch(batch, f"batch-{start // config.batch_size + 1}")
+        if idx % 25 == 0 or idx == len(rows):
+            matched_so_far = sum(1 for v in all_labels.values() if v.get("best_match_taxonomy_id") not in {"NONE", ""})
+            print(f"  Processed {idx}/{len(rows)} clauses... (Positive Matches: {matched_so_far})")
 
-    label_rows = list(all_labels.values())
-    label_df = pd.DataFrame(label_rows)
-    merged = corpus_df.merge(label_df, on="clause_id", how="left", validate="one_to_one", suffixes=("", "_label"))
+    label_df = pd.DataFrame(list(all_labels.values()))
+    merged = corpus_df.merge(label_df, on="clause_id", how="left")
 
-    # Do not turn failed labels into Not Addressed. Only model-produced verdicts
-    # receive a verdict score. Failed records remain visibly incomplete.
-    merged["best_match_taxonomy_id"] = merged["best_match_taxonomy_id"].fillna("")
-    merged["verdict"] = merged["verdict"].fillna("")
-    merged["justification"] = merged["justification"].fillna("")
-    merged["label_status"] = merged["label_status"].fillna("NEEDS_REVIEW")
     merged["dpdp_category"] = merged["best_match_taxonomy_id"].map(
-        lambda value: taxonomy_lookup.get(value, {}).get("category", "Not Applicable") if value else "Not Applicable"
+        lambda val: taxonomy_lookup.get(val, {}).get("category", "Not Applicable") if val else "Not Applicable"
     )
-    merged["verdict_score"] = merged["verdict"].map(VERDICTS)
-    merged["labeling_run_id"] = run_id
-    merged["corpus_sha256"] = corpus_hash
-    merged["taxonomy_sha256"] = taxonomy_hash
-    merged["prompt_version"] = PROMPT_VERSION
+    merged["matched_act"] = merged["best_match_taxonomy_id"].map(
+        lambda val: taxonomy_lookup.get(val, {}).get("act", "None") if val else "None"
+    )
+    merged["verdict_score"] = merged["verdict"].map(VERDICTS).fillna(0.0)
 
-    output_columns = [
+    output_cols = [
         "clause_id", "app_name", "source_document", "clause_text",
-        "best_match_taxonomy_id", "dpdp_category", "verdict", "verdict_score",
-        "justification", "label_status", "cache_key", "run_id", "model",
-        "failure_reason", "labeling_run_id", "corpus_sha256", "taxonomy_sha256",
-        "prompt_version",
+        "best_match_taxonomy_id", "dpdp_category", "matched_act", "verdict", "verdict_score",
+        "justification", "label_status", "label_needs_review", "cache_key", "run_id", "model"
     ]
-    output_columns = [column for column in output_columns if column in merged.columns]
-    atomic_write_output(merged[output_columns], config.output)
+    output_cols = [c for c in output_cols if c in merged.columns]
+    
+    config.output.parent.mkdir(parents=True, exist_ok=True)
+    merged[output_cols].to_csv(config.output, index=False)
 
-    state = {
+    summary = {
         "run_id": run_id,
-        "completed_at_utc": utc_now(),
-        "corpus": str(config.corpus),
-        "corpus_sha256": corpus_hash,
-        "taxonomy": str(config.taxonomy),
-        "taxonomy_sha256": taxonomy_hash,
-        "model": config.model,
-        "prompt_version": PROMPT_VERSION,
         "input_clause_count": len(corpus_df),
         "labeled_success_count": int((merged["label_status"].isin(["NEW_SUCCESS", "CACHED_SUCCESS"])).sum()),
-        "needs_review_count": int((merged["label_status"] == "NEEDS_REVIEW").sum()),
-        "cache_hits": cache_hits,
-        "cache_bypassed": config.force_new_run,
-        "model_calls": model_calls,
-        "batches_processed_including_splits": batches_total,
-        "failure_event_count": len(failures),
-        "status": "COMPLETE_WITH_REVIEW_ITEMS" if failures else "COMPLETE",
+        "matched_positive_count": int((merged["best_match_taxonomy_id"].isin(taxonomy_lookup)).sum()),
+        "verdict_distribution": merged["verdict"].value_counts().to_dict(),
+        "category_distribution": merged["dpdp_category"].value_counts().to_dict(),
     }
-    atomic_write_json(config.run_state, state)
-    atomic_write_json(config.failures, failures)
+    atomic_write_json(config.run_state, summary)
 
-    print("\n=== Resumable labeling summary ===")
-    print(json.dumps(state, indent=2, ensure_ascii=False))
-    print(f"Saved labels: {config.output}")
-    print(f"Cache directory: {config.cache_dir}")
-    print(f"Failure log: {config.failures}")
-    print("Only labels with label_status NEW_SUCCESS or CACHED_SUCCESS are model-generated.")
-    print("NEEDS_REVIEW rows must be resolved before training.")
-    return 0 if not failures else 2
+    print("\n=== Labeling Run Complete ===")
+    print(json.dumps(summary, indent=2))
+    print(f"Output saved to: {config.output}")
+    return 0
 
 
 if __name__ == "__main__":

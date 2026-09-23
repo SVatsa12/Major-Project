@@ -24,22 +24,16 @@
     ],
     "missing_source_clause_ids": [],
     "source_provenance_status": "RESOLVED_SINGLE_ACT",
-    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
-    "review_flags": [
-      "likely_government_facing"
-    ],
-    "likely_government_facing": true,
-    "government_facing_reasons": [
-      "central-government duty",
-      "government-facing duty",
-      "information-furnishing duty"
-    ],
+    "triage_run_timestamp_utc": "2026-09-19T20:31:24.930919+00:00",
+    "review_flags": [],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
     "policy_checkability_signal_count": 1,
     "policy_checkability_signal_terms": [
       "information"
     ],
     "administrative_signal_terms": [],
-    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "recommended_action": "LEGAL_REVIEW",
     "resolved_act": "TRAI_ACT_1997",
     "requirement_canonical_hash": "2079e5dbef41e3b4419e650592d5fcfba8118e2f1effe20a2857f44f3f3c7a5e",
     "requirement_exact_duplicate_group": "",
@@ -71,20 +65,16 @@
     ],
     "missing_source_clause_ids": [],
     "source_provenance_status": "RESOLVED_SINGLE_ACT",
-    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "triage_run_timestamp_utc": "2026-09-19T20:31:24.930919+00:00",
     "review_flags": [
-      "likely_government_facing",
       "low_policy_checkability_signal"
     ],
-    "likely_government_facing": true,
-    "government_facing_reasons": [
-      "central-government duty",
-      "government-facing duty"
-    ],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
     "policy_checkability_signal_count": 0,
     "policy_checkability_signal_terms": [],
     "administrative_signal_terms": [],
-    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "recommended_action": "REVIEW_APPLICABILITY",
     "resolved_act": "TRAI_ACT_1997",
     "requirement_canonical_hash": "e9d59db767ede964a798739dcfea3f12178aaf503ff275ab9bce40302629288f",
     "requirement_exact_duplicate_group": "",
@@ -116,7 +106,7 @@
     ],
     "missing_source_clause_ids": [],
     "source_provenance_status": "RESOLVED_SINGLE_ACT",
-    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "triage_run_timestamp_utc": "2026-09-19T20:31:24.930919+00:00",
     "review_flags": [
       "low_policy_checkability_signal"
     ],
@@ -157,7 +147,7 @@
     ],
     "missing_source_clause_ids": [],
     "source_provenance_status": "RESOLVED_SINGLE_ACT",
-    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "triage_run_timestamp_utc": "2026-09-19T20:31:24.930919+00:00",
     "review_flags": [],
     "likely_government_facing": false,
     "government_facing_reasons": [],
@@ -198,7 +188,7 @@
     ],
     "missing_source_clause_ids": [],
     "source_provenance_status": "RESOLVED_SINGLE_ACT",
-    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "triage_run_timestamp_utc": "2026-09-19T20:31:24.930919+00:00",
     "review_flags": [],
     "likely_government_facing": false,
     "government_facing_reasons": [],
@@ -239,7 +229,7 @@
     ],
     "missing_source_clause_ids": [],
     "source_provenance_status": "RESOLVED_SINGLE_ACT",
-    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "triage_run_timestamp_utc": "2026-09-19T20:31:24.930919+00:00",
     "review_flags": [],
     "likely_government_facing": false,
     "government_facing_reasons": [],
@@ -281,7 +271,7 @@
     ],
     "missing_source_clause_ids": [],
     "source_provenance_status": "RESOLVED_SINGLE_ACT",
-    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "triage_run_timestamp_utc": "2026-09-19T20:31:24.930919+00:00",
     "review_flags": [],
     "likely_government_facing": false,
     "government_facing_reasons": [],
@@ -322,16 +312,12 @@
     ],
     "missing_source_clause_ids": [],
     "source_provenance_status": "RESOLVED_SINGLE_ACT",
-    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "triage_run_timestamp_utc": "2026-09-19T20:31:24.930919+00:00",
     "review_flags": [
-      "likely_government_facing",
       "possible_institutional_or_administrative_content"
     ],
-    "likely_government_facing": true,
-    "government_facing_reasons": [
-      "central-government duty",
-      "government-facing duty"
-    ],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
     "policy_checkability_signal_count": 1,
     "policy_checkability_signal_terms": [
       "use"
@@ -339,7 +325,7 @@
     "administrative_signal_terms": [
       "appellate tribunal"
     ],
-    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "recommended_action": "REVIEW_SCOPE",
     "resolved_act": "TRAI_ACT_1997",
     "requirement_canonical_hash": "6c3134695f3e786a503e5cbd86cd07c9ffbffac483a4806c125f3195b3cb2717",
     "requirement_exact_duplicate_group": "",
@@ -371,7 +357,7 @@
     ],
     "missing_source_clause_ids": [],
     "source_provenance_status": "RESOLVED_SINGLE_ACT",
-    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "triage_run_timestamp_utc": "2026-09-19T20:31:24.930919+00:00",
     "review_flags": [
       "low_policy_checkability_signal",
       "possible_institutional_or_administrative_content"
@@ -415,7 +401,7 @@
     ],
     "missing_source_clause_ids": [],
     "source_provenance_status": "RESOLVED_SINGLE_ACT",
-    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "triage_run_timestamp_utc": "2026-09-19T20:31:24.930919+00:00",
     "review_flags": [
       "low_policy_checkability_signal"
     ],
@@ -456,24 +442,20 @@
     ],
     "missing_source_clause_ids": [],
     "source_provenance_status": "RESOLVED_SINGLE_ACT",
-    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "triage_run_timestamp_utc": "2026-09-19T20:31:24.930919+00:00",
     "review_flags": [
-      "likely_government_facing",
       "low_policy_checkability_signal",
       "possible_institutional_or_administrative_content"
     ],
-    "likely_government_facing": true,
-    "government_facing_reasons": [
-      "central-government duty",
-      "government-facing duty"
-    ],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
     "policy_checkability_signal_count": 0,
     "policy_checkability_signal_terms": [],
     "administrative_signal_terms": [
       "appellate tribunal",
       "chairperson"
     ],
-    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "recommended_action": "REVIEW_APPLICABILITY",
     "resolved_act": "TRAI_ACT_1997",
     "requirement_canonical_hash": "87ffeb4324b6f2435ff421c0a384862ddab0e1c6d03e0fd6737b9cbe3de0f7fa",
     "requirement_exact_duplicate_group": "",
@@ -505,7 +487,7 @@
     ],
     "missing_source_clause_ids": [],
     "source_provenance_status": "RESOLVED_SINGLE_ACT",
-    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "triage_run_timestamp_utc": "2026-09-19T20:31:24.930919+00:00",
     "review_flags": [
       "possible_institutional_or_administrative_content"
     ],
@@ -551,21 +533,16 @@
     ],
     "missing_source_clause_ids": [],
     "source_provenance_status": "RESOLVED_SINGLE_ACT",
-    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "triage_run_timestamp_utc": "2026-09-19T20:31:24.930919+00:00",
     "review_flags": [
-      "likely_government_facing",
       "low_policy_checkability_signal"
     ],
-    "likely_government_facing": true,
-    "government_facing_reasons": [
-      "central-government duty",
-      "state-government duty",
-      "government-facing duty"
-    ],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
     "policy_checkability_signal_count": 0,
     "policy_checkability_signal_terms": [],
     "administrative_signal_terms": [],
-    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "recommended_action": "REVIEW_APPLICABILITY",
     "resolved_act": "TRAI_ACT_1997",
     "requirement_canonical_hash": "d1a25993ba5d403e6af6e5e50a932bb7bb525c1464df2c4dfde343847315d2e5",
     "requirement_exact_duplicate_group": "",
@@ -597,24 +574,20 @@
     ],
     "missing_source_clause_ids": [],
     "source_provenance_status": "RESOLVED_SINGLE_ACT",
-    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "triage_run_timestamp_utc": "2026-09-19T20:31:24.930919+00:00",
     "review_flags": [
-      "likely_government_facing",
       "low_policy_checkability_signal",
       "possible_institutional_or_administrative_content"
     ],
-    "likely_government_facing": true,
-    "government_facing_reasons": [
-      "central-government duty",
-      "government-facing duty"
-    ],
+    "likely_government_facing": false,
+    "government_facing_reasons": [],
     "policy_checkability_signal_count": 0,
     "policy_checkability_signal_terms": [],
     "administrative_signal_terms": [
       "appellate tribunal",
       "chairperson"
     ],
-    "recommended_action": "REVIEW_FOR_REMOVAL_OR_RECLASSIFICATION",
+    "recommended_action": "REVIEW_APPLICABILITY",
     "resolved_act": "TRAI_ACT_1997",
     "requirement_canonical_hash": "925893525b446cace5bca3d8c6c0f0270a693d566309e49e3eb16e352742fbc4",
     "requirement_exact_duplicate_group": "",
@@ -646,7 +619,7 @@
     ],
     "missing_source_clause_ids": [],
     "source_provenance_status": "RESOLVED_SINGLE_ACT",
-    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "triage_run_timestamp_utc": "2026-09-19T20:31:24.930919+00:00",
     "review_flags": [
       "possible_institutional_or_administrative_content"
     ],
@@ -693,7 +666,7 @@
     ],
     "missing_source_clause_ids": [],
     "source_provenance_status": "RESOLVED_SINGLE_ACT",
-    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "triage_run_timestamp_utc": "2026-09-19T20:31:24.930919+00:00",
     "review_flags": [],
     "likely_government_facing": false,
     "government_facing_reasons": [],
@@ -734,7 +707,7 @@
     ],
     "missing_source_clause_ids": [],
     "source_provenance_status": "RESOLVED_SINGLE_ACT",
-    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "triage_run_timestamp_utc": "2026-09-19T20:31:24.930919+00:00",
     "review_flags": [],
     "likely_government_facing": false,
     "government_facing_reasons": [],
@@ -775,7 +748,7 @@
     ],
     "missing_source_clause_ids": [],
     "source_provenance_status": "RESOLVED_SINGLE_ACT",
-    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "triage_run_timestamp_utc": "2026-09-19T20:31:24.930919+00:00",
     "review_flags": [],
     "likely_government_facing": false,
     "government_facing_reasons": [],
@@ -816,7 +789,7 @@
     ],
     "missing_source_clause_ids": [],
     "source_provenance_status": "RESOLVED_SINGLE_ACT",
-    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "triage_run_timestamp_utc": "2026-09-19T20:31:24.930919+00:00",
     "review_flags": [],
     "likely_government_facing": false,
     "government_facing_reasons": [],
@@ -857,7 +830,7 @@
     ],
     "missing_source_clause_ids": [],
     "source_provenance_status": "RESOLVED_SINGLE_ACT",
-    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "triage_run_timestamp_utc": "2026-09-19T20:31:24.930919+00:00",
     "review_flags": [],
     "likely_government_facing": false,
     "government_facing_reasons": [],
@@ -898,7 +871,7 @@
     ],
     "missing_source_clause_ids": [],
     "source_provenance_status": "RESOLVED_SINGLE_ACT",
-    "triage_run_timestamp_utc": "2026-09-14T03:59:54.747751+00:00",
+    "triage_run_timestamp_utc": "2026-09-19T20:31:24.930919+00:00",
     "review_flags": [],
     "likely_government_facing": false,
     "government_facing_reasons": [],

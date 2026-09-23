@@ -1,0 +1,34 @@
+{
+  "Compliant": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2.0
+  },
+  "Not Addressed": {
+    "precision": 0.8415841584158416,
+    "recall": 0.9239130434782609,
+    "f1-score": 0.8808290155440415,
+    "support": 92.0
+  },
+  "Partially Compliant": {
+    "precision": 0.4666666666666667,
+    "recall": 0.3181818181818182,
+    "f1-score": 0.3783783783783784,
+    "support": 22.0
+  },
+  "accuracy": 0.7931034482758621,
+  "macro avg": {
+    "precision": 0.4360836083608361,
+    "recall": 0.4140316205533597,
+    "f1-score": 0.41973579797414,
+    "support": 116.0
+  },
+  "weighted avg": {
+    "precision": 0.7559690451803801,
+    "recall": 0.7931034482758621,
+    "f1-score": 0.770349946158415,
+    "support": 116.0
+  },
+  "macro_f1": 0.41973579797414
+}

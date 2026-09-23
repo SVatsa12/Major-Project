@@ -1,0 +1,35 @@
+{
+  "Not Addressed": {
+    "precision": 0.8850574712643678,
+    "recall": 0.8369565217391305,
+    "f1-score": 0.8603351955307262,
+    "support": 92.0
+  },
+  "Partially Compliant": {
+    "precision": 0.4074074074074074,
+    "recall": 0.5238095238095238,
+    "f1-score": 0.4583333333333333,
+    "support": 21.0
+  },
+  "Compliant": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3.0
+  },
+  "accuracy": 0.7586206896551724,
+  "macro avg": {
+    "precision": 0.43082162622392506,
+    "recall": 0.4535886818495514,
+    "f1-score": 0.43955617628801985,
+    "support": 116.0
+  },
+  "weighted avg": {
+    "precision": 0.7756969216541155,
+    "recall": 0.7586206896551724,
+    "f1-score": 0.7653089481795414,
+    "support": 116.0
+  },
+  "calibrated_macro_f1": 0.43955617628801985,
+  "calibrated_threshold": 0.15
+}

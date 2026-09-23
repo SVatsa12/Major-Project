@@ -1,68 +1,12 @@
 [
   {
-    "taxonomy_id": "DPDP_ACT-0005",
-    "act": "DPDP_ACT_2023",
-    "category": "Security Safeguards",
-    "requirement": "Data Fiduciaries must ensure that personal data is protected against unauthorized processing, accidental disclosure, or loss.",
-    "checkable_test": "Check if the organization has implemented measures to protect personal data against unauthorized processing, accidental disclosure, or loss.",
-    "applicability": "Applicable to all Data Fiduciaries.",
-    "source": "DPDP Act 2023, Section 2(u)",
-    "weight": 3,
-    "assessability": "3",
-    "citation_confidence": "high",
-    "source_candidate_ids": [
-      "TC-000005"
-    ],
-    "source_clause_ids": [
-      "G000425"
-    ],
-    "source_legal_anchors": [
-      "section 2 u"
-    ],
-    "source_provenance_status": "RESOLVED",
-    "consolidation_action": "KEEP",
-    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
-    "canonical_candidate_id": "TC-000005",
-    "review_status": "PENDING_HUMAN_REVIEW",
-    "candidate_count": 1,
-    "legal_approval": false,
-    "taxonomy_stage": "PROVISIONAL_FINAL"
-  },
-  {
-    "taxonomy_id": "DPDP_ACT-0028",
-    "act": "DPDP_ACT_2023",
-    "category": "Data Retention & Erasure",
-    "requirement": "A Data Fiduciary may process personal data only for the specified purpose for which the Data Principal has voluntarily provided her data, unless she has indicated non-consent.",
-    "checkable_test": "Verify if the document states that data may be processed only for the specified purpose unless the Data Principal has indicated non-consent.",
-    "applicability": "Applies to all Data Fiduciaries handling personal data of Data Principals.",
-    "source": "DPDP Act 2023, Section 7(a)",
-    "weight": 3,
-    "assessability": "High",
-    "citation_confidence": "high",
-    "source_candidate_ids": [
-      "TC-000028"
-    ],
-    "source_clause_ids": [
-      "G000481"
-    ],
-    "source_legal_anchors": [
-      "section 7 a"
-    ],
-    "source_provenance_status": "RESOLVED",
-    "consolidation_action": "KEEP",
-    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
-    "canonical_candidate_id": "TC-000028",
-    "review_status": "PENDING_HUMAN_REVIEW",
-    "candidate_count": 1,
-    "legal_approval": false,
-    "taxonomy_stage": "PROVISIONAL_FINAL"
-  },
-  {
-    "taxonomy_id": "DPDP_ACT-0031",
+    "taxonomy_id": "DPDP_ACT-0026",
     "act": "DPDP_ACT_2023",
     "category": "Breach Notification",
     "requirement": "In the event of a personal data breach, the Data Fiduciary shall notify the Board and each affected Data Principal of the breach.",
     "checkable_test": "Verify that the document specifies procedures for notifying the Board and affected Data Principals in case of a data breach.",
+    "required_concepts": "data breach report; notification to user; incident notice; compromised personal data; intimate cert-in; security incident",
+    "exclude_concepts": "generic terms of service; copyright infringement; ad payment billing; watermark removal; subscription pricing; account suspension for harassment; community standards violation; scheduled maintenance downtime; bug fixes; service discontinuation",
     "applicability": "All Data Fiduciaries processing personal data.",
     "source": "DPDP Act 2023, Section 5(6)",
     "weight": 3,
@@ -74,24 +18,22 @@
     "source_clause_ids": [
       "G000503"
     ],
-    "source_legal_anchors": [
-      "section 5 6"
-    ],
-    "source_provenance_status": "RESOLVED",
     "consolidation_action": "KEEP",
-    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
+    "consolidation_reason": "Consolidated 1 candidates within DPDP_ACT_2023 based on semantic equivalence.",
     "canonical_candidate_id": "TC-000031",
-    "review_status": "PENDING_HUMAN_REVIEW",
     "candidate_count": 1,
-    "legal_approval": false,
-    "taxonomy_stage": "PROVISIONAL_FINAL"
+    "review_status": "APPROVED_FIDUCIARY_BENCHMARK",
+    "legal_approval": true,
+    "taxonomy_stage": "FINAL"
   },
   {
-    "taxonomy_id": "DPDP_ACT-0039",
+    "taxonomy_id": "DPDP_ACT-0034",
     "act": "DPDP_ACT_2023",
     "category": "Children/Vulnerable Groups",
     "requirement": "A Data Fiduciary must obtain verifiable consent from the parent or lawful guardian of a child or person with disability before processing their personal data.",
     "checkable_test": "Verify if the document requires verifiable consent from a parent or guardian for children or persons with disabilities.",
+    "required_concepts": "parental consent; minor protection; verifiable guardian consent; underage data restriction; tracking of children; behavioral monitoring restriction",
+    "exclude_concepts": "generic terms of service; copyright infringement; ad payment billing; watermark removal; subscription pricing; account suspension for harassment; community standards violation; general family safety tips; mature content warnings",
     "applicability": "Applies to Data Fiduciaries processing data of children or persons with disabilities.",
     "source": "DPDP Act 2023, Section 8(9)(1)",
     "weight": 3,
@@ -103,287 +45,22 @@
     "source_clause_ids": [
       "G000517"
     ],
-    "source_legal_anchors": [
-      "section 8 9 1"
-    ],
-    "source_provenance_status": "RESOLVED",
     "consolidation_action": "KEEP",
-    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
+    "consolidation_reason": "Consolidated 1 candidates within DPDP_ACT_2023 based on semantic equivalence.",
     "canonical_candidate_id": "TC-000039",
-    "review_status": "PENDING_HUMAN_REVIEW",
     "candidate_count": 1,
-    "legal_approval": false,
-    "taxonomy_stage": "PROVISIONAL_FINAL"
-  },
-  {
-    "taxonomy_id": "DPDP_ACT-0046",
-    "act": "DPDP_ACT_2023",
-    "category": "Data Principal Rights",
-    "requirement": "Data principals have the right to request access to their personal data from the data fiduciary.",
-    "checkable_test": "Check if the document specifies the right of data principals to request access to their personal data.",
-    "applicability": "Applies to data principals who have given consent to data fiduciaries.",
-    "source": "DPDP Act 2023, Section 11(1)",
-    "weight": 3,
-    "assessability": "High",
-    "citation_confidence": "high",
-    "source_candidate_ids": [
-      "TC-000046"
-    ],
-    "source_clause_ids": [
-      "G000544"
-    ],
-    "source_legal_anchors": [
-      "section 11 1"
-    ],
-    "source_provenance_status": "RESOLVED",
-    "consolidation_action": "KEEP",
-    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
-    "canonical_candidate_id": "TC-000046",
-    "review_status": "PENDING_HUMAN_REVIEW",
-    "candidate_count": 1,
-    "legal_approval": false,
-    "taxonomy_stage": "PROVISIONAL_FINAL"
-  },
-  {
-    "taxonomy_id": "DPDP_ACT-0049",
-    "act": "DPDP_ACT_2023",
-    "category": "Grievance Redressal",
-    "requirement": "A Data Principal shall have the right to grievance redressal mechanisms provided by a Data Fiduciary or Consent Manager.",
-    "checkable_test": "Check if the document provides grievance redressal mechanisms for data principals regarding data fiduciary or consent manager actions.",
-    "applicability": "Applies to all data principals who have interacted with data fiduciaries or consent managers.",
-    "source": "DPDP Act 2023, Section 13(1)",
-    "weight": 3,
-    "assessability": "High",
-    "citation_confidence": "high",
-    "source_candidate_ids": [
-      "TC-000049"
-    ],
-    "source_clause_ids": [
-      "G000558"
-    ],
-    "source_legal_anchors": [
-      "section 13 1"
-    ],
-    "source_provenance_status": "RESOLVED",
-    "consolidation_action": "KEEP",
-    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
-    "canonical_candidate_id": "TC-000049",
-    "review_status": "PENDING_HUMAN_REVIEW",
-    "candidate_count": 1,
-    "legal_approval": false,
-    "taxonomy_stage": "PROVISIONAL_FINAL"
-  },
-  {
-    "taxonomy_id": "DPDP_ACT-0055",
-    "act": "DPDP_ACT_2023",
-    "category": "Cross-Border Transfer",
-    "requirement": "The Central Government may restrict the transfer of personal data by a Data Fiduciary to countries outside India.",
-    "checkable_test": "Check if the document provides for the possibility of government-imposed restrictions on cross-border data transfers.",
-    "applicability": "Applies to all Data Fiduciaries.",
-    "source": "DPDP Act 2023, Section 16(1)",
-    "weight": 3,
-    "assessability": "3",
-    "citation_confidence": "high",
-    "source_candidate_ids": [
-      "TC-000055"
-    ],
-    "source_clause_ids": [
-      "G000574"
-    ],
-    "source_legal_anchors": [
-      "section 16 1"
-    ],
-    "source_provenance_status": "RESOLVED",
-    "consolidation_action": "KEEP",
-    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
-    "canonical_candidate_id": "TC-000055",
-    "review_status": "PENDING_HUMAN_REVIEW",
-    "candidate_count": 1,
-    "legal_approval": false,
-    "taxonomy_stage": "PROVISIONAL_FINAL"
-  },
-  {
-    "taxonomy_id": "DPDP_ACT-0057",
-    "act": "DPDP_ACT_2023",
-    "category": "Confidentiality & Misuse of Data",
-    "requirement": "The Central Government may notify certain Data Fiduciaries, including startups, that are exempt from specific data protection provisions.",
-    "checkable_test": "Check if the document allows for the exemption of certain Data Fiduciaries, including startups, from specific data protection provisions.",
-    "applicability": "Applies to all Data Fiduciaries.",
-    "source": "DPDP Act 2023, Section 18(3)",
-    "weight": 2,
-    "assessability": "3",
-    "citation_confidence": "high",
-    "source_candidate_ids": [
-      "TC-000057"
-    ],
-    "source_clause_ids": [
-      "G000588"
-    ],
-    "source_legal_anchors": [
-      "section 18 3"
-    ],
-    "source_provenance_status": "RESOLVED",
-    "consolidation_action": "KEEP",
-    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
-    "canonical_candidate_id": "TC-000057",
-    "review_status": "PENDING_HUMAN_REVIEW",
-    "candidate_count": 1,
-    "legal_approval": false,
-    "taxonomy_stage": "PROVISIONAL_FINAL"
-  },
-  {
-    "taxonomy_id": "DPDP_ACT-0068",
-    "act": "DPDP_ACT_2023",
-    "category": "Intermediary/Platform Liability",
-    "requirement": "The Central Government may require the Board and any Data Fiduciary or intermediary to furnish information as it may call for.",
-    "checkable_test": "Check if the governance document includes a policy that allows the Central Government to request information from the Board, Data Fiduciaries, or intermediaries.",
-    "applicability": "Applicable to any organization that is a Data Fiduciary or intermediary.",
-    "source": "DPDP Act 2023, Section 36",
-    "weight": 2,
-    "assessability": "High",
-    "citation_confidence": "high",
-    "source_candidate_ids": [
-      "TC-000068"
-    ],
-    "source_clause_ids": [
-      "G000702"
-    ],
-    "source_legal_anchors": [
-      "section 36"
-    ],
-    "source_provenance_status": "RESOLVED",
-    "consolidation_action": "KEEP",
-    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
-    "canonical_candidate_id": "TC-000068",
-    "review_status": "PENDING_HUMAN_REVIEW",
-    "candidate_count": 1,
-    "legal_approval": false,
-    "taxonomy_stage": "PROVISIONAL_FINAL"
-  },
-  {
-    "taxonomy_id": "DPDP_ACT-0312",
-    "act": "DPDP_ACT_2023",
-    "category": "Significant Data Fiduciary Obligations",
-    "requirement": "The Data Protection Board of India must investigate and impose penalties for personal data breaches, including those involving a Consent Manager, as provided by the DPDP Act 2023.",
-    "checkable_test": "Check if the Data Protection Board has authority to investigate and impose penalties for personal data breaches involving a Consent Manager.",
-    "applicability": "Applicable to all data fiduciaries subject to the DPDP Act 2023.",
-    "source": "DPDP Act 2023, Section 26(b)",
-    "weight": 3,
-    "assessability": "High",
-    "citation_confidence": "high",
-    "source_candidate_ids": [
-      "TC-000318",
-      "TC-000319"
-    ],
-    "source_clause_ids": [
-      "G000632",
-      "G000639"
-    ],
-    "source_legal_anchors": [
-      "section 26 b"
-    ],
-    "source_provenance_status": "RESOLVED",
-    "consolidation_action": "MERGED",
-    "consolidation_reason": "Candidates were consolidated because the automatic merge rules found substantive duplication within the same Act/category.",
-    "canonical_candidate_id": "TC-000319",
-    "review_status": "PENDING_HUMAN_REVIEW",
-    "candidate_count": 2,
-    "legal_approval": false,
-    "taxonomy_stage": "PROVISIONAL_FINAL"
-  },
-  {
-    "taxonomy_id": "DPDP_ACT-0009",
-    "act": "DPDP_ACT_2023",
-    "category": "Significant Data Fiduciary Obligations",
-    "requirement": "A Data Fiduciary must process personal data only for a lawful purpose as defined by the DPDP Act 2023.",
-    "checkable_test": "Verify if the Data Fiduciary's processing of personal data is limited to lawful purposes as per the DPDP Act 2023.",
-    "applicability": "Applies to all Data Fiduciaries processing personal data in India.",
-    "source": "DPDP Act 2023, Section 3(1)",
-    "weight": 3,
-    "assessability": "High",
-    "citation_confidence": "high",
-    "source_candidate_ids": [
-      "TC-000009"
-    ],
-    "source_clause_ids": [
-      "G000443"
-    ],
-    "source_legal_anchors": [
-      "section 3 1"
-    ],
-    "source_provenance_status": "RESOLVED",
-    "consolidation_action": "KEEP",
-    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
-    "canonical_candidate_id": "TC-000009",
-    "review_status": "PENDING_HUMAN_REVIEW",
-    "candidate_count": 1,
-    "legal_approval": false,
-    "taxonomy_stage": "PROVISIONAL_FINAL"
+    "review_status": "APPROVED_FIDUCIARY_BENCHMARK",
+    "legal_approval": true,
+    "taxonomy_stage": "FINAL"
   },
   {
     "taxonomy_id": "DPDP_ACT-0010",
     "act": "DPDP_ACT_2023",
     "category": "Consent & Notice",
-    "requirement": "Every request for consent from a Data Principal must be accompanied by a notice informing the Data Principal of the purpose of processing.",
-    "checkable_test": "Check if all consent requests include a notice describing the purpose of data processing.",
-    "applicability": "Applies to all Data Fiduciaries seeking consent for data processing.",
-    "source": "DPDP Act 2023, Section 5(1)",
-    "weight": 3,
-    "assessability": "High",
-    "citation_confidence": "high",
-    "source_candidate_ids": [
-      "TC-000010"
-    ],
-    "source_clause_ids": [
-      "G000449"
-    ],
-    "source_legal_anchors": [
-      "section 5 1"
-    ],
-    "source_provenance_status": "RESOLVED",
-    "consolidation_action": "KEEP",
-    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
-    "canonical_candidate_id": "TC-000010",
-    "review_status": "PENDING_HUMAN_REVIEW",
-    "candidate_count": 1,
-    "legal_approval": false,
-    "taxonomy_stage": "PROVISIONAL_FINAL"
-  },
-  {
-    "taxonomy_id": "DPDP_ACT-0012",
-    "act": "DPDP_ACT_2023",
-    "category": "Consent & Notice",
-    "requirement": "A Data Fiduciary must accompany or precede a request for personal data with a notice describing the personal data and the purpose of its processing.",
-    "checkable_test": "Check if all data processing requests include a notice describing the data and its purpose.",
-    "applicability": "Applies to all Data Fiduciaries processing personal data for KYC requirements.",
-    "source": "DPDP Act 2023, Section 3(B)",
-    "weight": 3,
-    "assessability": "High",
-    "citation_confidence": "high",
-    "source_candidate_ids": [
-      "TC-000012"
-    ],
-    "source_clause_ids": [
-      "G000453"
-    ],
-    "source_legal_anchors": [
-      "section 3 b"
-    ],
-    "source_provenance_status": "RESOLVED",
-    "consolidation_action": "KEEP",
-    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
-    "canonical_candidate_id": "TC-000012",
-    "review_status": "PENDING_HUMAN_REVIEW",
-    "candidate_count": 1,
-    "legal_approval": false,
-    "taxonomy_stage": "PROVISIONAL_FINAL"
-  },
-  {
-    "taxonomy_id": "DPDP_ACT-0013",
-    "act": "DPDP_ACT_2023",
-    "category": "Consent & Notice",
     "requirement": "A Data Fiduciary must inform a Data Principal of the right to withdraw consent and the consequences of withdrawal.",
     "checkable_test": "Verify if the Data Fiduciary provides information on how to withdraw consent and its effects.",
+    "required_concepts": "notice of collection; specified purpose; consent withdrawal; opt-out mechanism; unconditional consent; itemized notice; privacy policy link",
+    "exclude_concepts": "generic terms of service; copyright infringement; ad payment billing; watermark removal; subscription pricing; account suspension for harassment; community standards violation; service availability disclaimer; warranty limitation",
     "applicability": "Applies to all Data Fiduciaries processing personal data with prior consent.",
     "source": "DPDP Act 2023, Section 4(1)(b)",
     "weight": 3,
@@ -395,331 +72,432 @@
     "source_clause_ids": [
       "G000462"
     ],
-    "source_legal_anchors": [
-      "section 4 1 b"
-    ],
-    "source_provenance_status": "RESOLVED",
     "consolidation_action": "KEEP",
-    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
+    "consolidation_reason": "Consolidated 1 candidates within DPDP_ACT_2023 based on semantic equivalence.",
     "canonical_candidate_id": "TC-000013",
-    "review_status": "PENDING_HUMAN_REVIEW",
     "candidate_count": 1,
-    "legal_approval": false,
-    "taxonomy_stage": "PROVISIONAL_FINAL"
+    "review_status": "APPROVED_FIDUCIARY_BENCHMARK",
+    "legal_approval": true,
+    "taxonomy_stage": "FINAL"
   },
   {
-    "taxonomy_id": "DPDP_ACT-0014",
+    "taxonomy_id": "DPDP_ACT-0048",
     "act": "DPDP_ACT_2023",
-    "category": "Consent & Notice",
-    "requirement": "A Data Fiduciary must inform a Data Principal of the purpose of processing personal data upon the commencement of the DPDP Act 2023.",
-    "checkable_test": "Check if the Data Fiduciary provides information on the purpose of data processing to Data Principals who gave consent before the Act's commencement.",
-    "applicability": "Applies to all Data Fiduciaries who processed data before the DPDP Act 2023 came into effect.",
-    "source": "DPDP Act 2023, Section 4(1)(b)",
+    "category": "Cross-Border Transfer",
+    "requirement": "The applicability of Indian laws providing higher protection for data transfers outside India is not restricted by this section.",
+    "checkable_test": "Check if the document acknowledges that higher protections for data transfers outside India may be provided by existing Indian laws.",
+    "required_concepts": "cross-border transfer; overseas transfer of data; transfer outside india; international data protection; data localization; adequacy",
+    "exclude_concepts": "generic terms of service; copyright infringement; ad payment billing; watermark removal; subscription pricing; account suspension for harassment; community standards violation; account migration; in-app payments",
+    "applicability": "Applies to all Data Fiduciaries.",
+    "source": "DPDP Act 2023, Section 16(2)",
+    "weight": 2,
+    "assessability": "3",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000056"
+    ],
+    "source_clause_ids": [
+      "G000575"
+    ],
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "Consolidated 1 candidates within DPDP_ACT_2023 based on semantic equivalence.",
+    "canonical_candidate_id": "TC-000056",
+    "candidate_count": 1,
+    "review_status": "APPROVED_FIDUCIARY_BENCHMARK",
+    "legal_approval": true,
+    "taxonomy_stage": "FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_ACT-0040",
+    "act": "DPDP_ACT_2023",
+    "category": "Data Principal Rights",
+    "requirement": "Data principals have the right to request access to their personal data from the data fiduciary.",
+    "checkable_test": "Check if the document specifies the right of data principals to request access to their personal data.",
+    "required_concepts": "right to access; right to correction; data portability; download personal data; rectification; erasure request",
+    "exclude_concepts": "generic terms of service; copyright infringement; ad payment billing; watermark removal; subscription pricing; account suspension for harassment; community standards violation; user rights to upload content; intellectual property ownership",
+    "applicability": "Applies to data principals who have given consent to data fiduciaries.",
+    "source": "DPDP Act 2023, Section 11(1)",
     "weight": 3,
     "assessability": "High",
     "citation_confidence": "high",
     "source_candidate_ids": [
-      "TC-000014"
+      "TC-000046"
     ],
     "source_clause_ids": [
-      "G000463"
+      "G000544"
     ],
-    "source_legal_anchors": [
-      "section 4 1 b"
-    ],
-    "source_provenance_status": "RESOLVED",
     "consolidation_action": "KEEP",
-    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
-    "canonical_candidate_id": "TC-000014",
-    "review_status": "PENDING_HUMAN_REVIEW",
+    "consolidation_reason": "Consolidated 1 candidates within DPDP_ACT_2023 based on semantic equivalence.",
+    "canonical_candidate_id": "TC-000046",
     "candidate_count": 1,
-    "legal_approval": false,
-    "taxonomy_stage": "PROVISIONAL_FINAL"
+    "review_status": "APPROVED_FIDUCIARY_BENCHMARK",
+    "legal_approval": true,
+    "taxonomy_stage": "FINAL"
   },
   {
-    "taxonomy_id": "DPDP_RUL-0094",
+    "taxonomy_id": "DPDP_ACT-0027",
+    "act": "DPDP_ACT_2023",
+    "category": "Data Retention & Erasure",
+    "requirement": "A Data Fiduciary shall erase personal data upon the Data Principal withdrawing her consent.",
+    "checkable_test": "Verify that the document specifies the obligation to erase personal data upon withdrawal of consent.",
+    "required_concepts": "deletion of personal data; retention period; purpose fulfillment erasure; account deletion data wipe; data retention policy; storage limitation",
+    "exclude_concepts": "generic terms of service; copyright infringement; ad payment billing; watermark removal; subscription pricing; account suspension for harassment; community standards violation; temporary account lock; caching for performance",
+    "applicability": "All Data Fiduciaries processing personal data.",
+    "source": "DPDP Act 2023, Section 5(5)(a)",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000032"
+    ],
+    "source_clause_ids": [
+      "G000505"
+    ],
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "Consolidated 1 candidates within DPDP_ACT_2023 based on semantic equivalence.",
+    "canonical_candidate_id": "TC-000032",
+    "candidate_count": 1,
+    "review_status": "APPROVED_FIDUCIARY_BENCHMARK",
+    "legal_approval": true,
+    "taxonomy_stage": "FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_ACT-0057",
+    "act": "DPDP_ACT_2023",
+    "category": "Grievance Redressal",
+    "requirement": "The Board has the authority to investigate complaints made by Data Principals regarding breaches of obligations by Data Fiduciaries or Consent Managers and impose penalties as provided by the Act.",
+    "checkable_test": "Check if the governance document outlines procedures for investigating complaints and imposing penalties for breaches by Data Fiduciaries or Consent Managers.",
+    "required_concepts": "grievance officer contact; redressal timeline; dpo email; nodal contact officer; physical address in india; grievance mechanism",
+    "exclude_concepts": "generic terms of service; copyright infringement; ad payment billing; watermark removal; subscription pricing; account suspension for harassment; community standards violation; customer support for billing; refund inquiries",
+    "applicability": "Applicable to any organization that is a Data Fiduciary or Consent Manager.",
+    "source": "DPDP Act 2023, Section 12(1)",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000066"
+    ],
+    "source_clause_ids": [
+      "G000636",
+      "G000637"
+    ],
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "Consolidated 1 candidates within DPDP_ACT_2023 based on semantic equivalence.",
+    "canonical_candidate_id": "TC-000066",
+    "candidate_count": 1,
+    "review_status": "APPROVED_FIDUCIARY_BENCHMARK",
+    "legal_approval": true,
+    "taxonomy_stage": "FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_ACT-0059",
+    "act": "DPDP_ACT_2023",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "The Central Government may, in the interests of the general public, direct any agency of the Central Government or any intermediary to block access to information generated, transmitted, received, stored, or hosted in any computer resource, after giving an opportunity of being heard to the Data Fiduciary.",
+    "checkable_test": "Check if the governance document includes a policy that allows the Central Government to direct intermediaries to block access to information in the public interest.",
+    "required_concepts": "takedown notice; due diligence; unlawful content removal; 24-36 hour blocking compliance; user agreement notification; rule 3 compliance; publish rules and regulations",
+    "exclude_concepts": "generic terms of service; copyright infringement; ad payment billing; watermark removal; subscription pricing; account suspension for harassment; community standards violation; dmca copyright notice; trademark dispute form",
+    "applicability": "Applicable to any organization that is an intermediary.",
+    "source": "DPDP Act 2023, Section 35(b)",
+    "weight": 2,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000069"
+    ],
+    "source_clause_ids": [
+      "G000705"
+    ],
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "Consolidated 1 candidates within DPDP_ACT_2023 based on semantic equivalence.",
+    "canonical_candidate_id": "TC-000069",
+    "candidate_count": 1,
+    "review_status": "APPROVED_FIDUCIARY_BENCHMARK",
+    "legal_approval": true,
+    "taxonomy_stage": "FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_ACT-0025",
+    "act": "DPDP_ACT_2023",
+    "category": "Security Safeguards",
+    "requirement": "A Data Fiduciary shall protect personal data in its possession or under its control by taking reasonable security safeguards to prevent personal data breaches.",
+    "checkable_test": "Verify that the document specifies the use of reasonable security safeguards to prevent data breaches.",
+    "required_concepts": "technical measures; encryption; unauthorized access prevention; reasonable security practices; access control; data protection safeguards; audit",
+    "exclude_concepts": "generic terms of service; copyright infringement; ad payment billing; watermark removal; subscription pricing; account suspension for harassment; community standards violation; platform uptime security; circumvention of software features; physical office security",
+    "applicability": "All Data Fiduciaries processing personal data.",
+    "source": "DPDP Act 2023, Section 5(2)",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000030"
+    ],
+    "source_clause_ids": [
+      "G000502"
+    ],
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "Consolidated 1 candidates within DPDP_ACT_2023 based on semantic equivalence.",
+    "canonical_candidate_id": "TC-000030",
+    "candidate_count": 1,
+    "review_status": "APPROVED_FIDUCIARY_BENCHMARK",
+    "legal_approval": true,
+    "taxonomy_stage": "FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_ACT-0016",
+    "act": "DPDP_ACT_2023",
+    "category": "Consent & Notice",
+    "requirement": "The Data Principal shall have the right to withdraw consent at any time, with the ease of doing so being comparable to the ease with which such consent was given.",
+    "checkable_test": "Check if the withdrawal of consent is as easy as the initial consent was obtained.",
+    "required_concepts": "notice of collection; specified purpose; consent withdrawal; opt-out mechanism; unconditional consent; itemized notice; privacy policy link",
+    "exclude_concepts": "generic terms of service; copyright infringement; ad payment billing; watermark removal; subscription pricing; account suspension for harassment; community standards violation; service availability disclaimer; warranty limitation",
+    "applicability": "All data fiduciaries processing personal data based on consent.",
+    "source": "DPDP Act 2023, Section 8(4)",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000019"
+    ],
+    "source_clause_ids": [
+      "G000470"
+    ],
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "Consolidated 1 candidates within DPDP_ACT_2023 based on semantic equivalence.",
+    "canonical_candidate_id": "TC-000019",
+    "candidate_count": 1,
+    "review_status": "APPROVED_FIDUCIARY_BENCHMARK",
+    "legal_approval": true,
+    "taxonomy_stage": "FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_ACT-0019",
+    "act": "DPDP_ACT_2023",
+    "category": "Consent & Notice",
+    "requirement": "A Data Fiduciary must cease processing personal data of a Data Principal who has withdrawn consent, unless processing is required or authorized by law.",
+    "checkable_test": "Verify if the document states that processing must cease upon withdrawal of consent, unless required by law.",
+    "required_concepts": "notice of collection; specified purpose; consent withdrawal; opt-out mechanism; unconditional consent; itemized notice; privacy policy link",
+    "exclude_concepts": "generic terms of service; copyright infringement; ad payment billing; watermark removal; subscription pricing; account suspension for harassment; community standards violation; service availability disclaimer; warranty limitation",
+    "applicability": "Applies to all Data Fiduciaries handling personal data of Data Principals.",
+    "source": "DPDP Act 2023, Section 6(1)",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000023"
+    ],
+    "source_clause_ids": [
+      "G000473",
+      "G000474",
+      "G000476"
+    ],
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "Consolidated 1 candidates within DPDP_ACT_2023 based on semantic equivalence.",
+    "canonical_candidate_id": "TC-000023",
+    "candidate_count": 1,
+    "review_status": "APPROVED_FIDUCIARY_BENCHMARK",
+    "legal_approval": true,
+    "taxonomy_stage": "FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_ACT-0020",
+    "act": "DPDP_ACT_2023",
+    "category": "Consent & Notice",
+    "requirement": "A Data Principal may give, manage, review, or withdraw consent through a Consent Manager.",
+    "checkable_test": "Verify if the document allows a Data Principal to manage or withdraw consent through a Consent Manager.",
+    "required_concepts": "notice of collection; specified purpose; consent withdrawal; opt-out mechanism; unconditional consent; itemized notice; privacy policy link",
+    "exclude_concepts": "generic terms of service; copyright infringement; ad payment billing; watermark removal; subscription pricing; account suspension for harassment; community standards violation; service availability disclaimer; warranty limitation",
+    "applicability": "Applies to all Data Fiduciaries handling personal data of Data Principals.",
+    "source": "DPDP Act 2023, Section 6(7)",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000024"
+    ],
+    "source_clause_ids": [
+      "G000477"
+    ],
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "Consolidated 1 candidates within DPDP_ACT_2023 based on semantic equivalence.",
+    "canonical_candidate_id": "TC-000024",
+    "candidate_count": 1,
+    "review_status": "APPROVED_FIDUCIARY_BENCHMARK",
+    "legal_approval": true,
+    "taxonomy_stage": "FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_ACT-0121",
+    "act": "DPDP_ACT_2023",
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "A data fiduciary must comply with terms of a voluntary undertaking accepted by the Board, as non-compliance is deemed a breach of the Act.",
+    "checkable_test": "Verify if the data fiduciary has adhered to the terms of any voluntary undertaking accepted by the Board.",
+    "required_concepts": "personal data processing obligation; compliance with data protection law",
+    "exclude_concepts": "generic terms of service; copyright infringement; ad payment billing; watermark removal; subscription pricing; account suspension for harassment; community standards violation",
+    "applicability": "Applicable to any data fiduciary that has accepted a voluntary undertaking under the Act.",
+    "source": "DPDP Act 2023, Section 32(5)",
+    "weight": 3,
+    "assessability": "2",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000337"
+    ],
+    "source_clause_ids": [
+      "G000686"
+    ],
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "Consolidated 1 candidates within DPDP_ACT_2023 based on semantic equivalence.",
+    "canonical_candidate_id": "TC-000337",
+    "candidate_count": 1,
+    "review_status": "APPROVED_FIDUCIARY_BENCHMARK",
+    "legal_approval": true,
+    "taxonomy_stage": "FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_ACT-0123",
+    "act": "DPDP_ACT_2023",
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "The Board may impose penalties under the Act if a data fiduciary breaches its provisions or the rules made thereunder, and the breach is deemed significant.",
+    "checkable_test": "Verify if the Board has imposed penalties for a significant breach of the Act or its rules.",
+    "required_concepts": "personal data processing obligation; compliance with data protection law",
+    "exclude_concepts": "generic terms of service; copyright infringement; ad payment billing; watermark removal; subscription pricing; account suspension for harassment; community standards violation",
+    "applicability": "Applicable to data fiduciaries that have breached the Act or its rules.",
+    "source": "DPDP Act 2023, Section 33(1)",
+    "weight": 3,
+    "assessability": "2",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000339"
+    ],
+    "source_clause_ids": [
+      "G000687"
+    ],
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "Consolidated 1 candidates within DPDP_ACT_2023 based on semantic equivalence.",
+    "canonical_candidate_id": "TC-000339",
+    "candidate_count": 1,
+    "review_status": "APPROVED_FIDUCIARY_BENCHMARK",
+    "legal_approval": true,
+    "taxonomy_stage": "FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_ACT-0153",
+    "act": "DPDP_ACT_2023",
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "Significant data fiduciaries must ensure that monetary penalties imposed for breaches are proportionate and effective, taking into account the need to deter and secure observance of the Act.",
+    "checkable_test": "Check if the penalty imposed for a breach is proportionate and effective.",
+    "required_concepts": "personal data processing obligation; compliance with data protection law",
+    "exclude_concepts": "generic terms of service; copyright infringement; ad payment billing; watermark removal; subscription pricing; account suspension for harassment; community standards violation",
+    "applicability": "Applicable to significant data fiduciaries.",
+    "source": "DPDP Act 2023, Section 38(1)",
+    "weight": 3,
+    "assessability": "2",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000546"
+    ],
+    "source_clause_ids": [
+      "G000698"
+    ],
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "Consolidated 1 candidates within DPDP_ACT_2023 based on semantic equivalence.",
+    "canonical_candidate_id": "TC-000546",
+    "candidate_count": 1,
+    "review_status": "APPROVED_FIDUCIARY_BENCHMARK",
+    "legal_approval": true,
+    "taxonomy_stage": "FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_ACT-0029",
+    "act": "DPDP_ACT_2023",
+    "category": "Data Retention & Erasure",
+    "requirement": "A Data Fiduciary shall erase personal data upon receipt of a request for erasure unless retention is necessary for a specified purpose or for compliance with law.",
+    "checkable_test": "Check if the document specifies that data fiduciaries must erase personal data upon request unless retention is required for a specified purpose or legal compliance.",
+    "required_concepts": "deletion of personal data; retention period; purpose fulfillment erasure; account deletion data wipe; data retention policy; storage limitation",
+    "exclude_concepts": "generic terms of service; copyright infringement; ad payment billing; watermark removal; subscription pricing; account suspension for harassment; community standards violation; temporary account lock; caching for performance",
+    "applicability": "Applies to all data fiduciaries handling personal data subject to erasure requests.",
+    "source": "DPDP Act 2023, Section 10(7)",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000034",
+      "TC-000048"
+    ],
+    "source_clause_ids": [
+      "G000509",
+      "G000557"
+    ],
+    "consolidation_action": "MERGED",
+    "consolidation_reason": "Consolidated 2 candidates within DPDP_ACT_2023 based on semantic equivalence.",
+    "canonical_candidate_id": "TC-000048",
+    "candidate_count": 2,
+    "review_status": "APPROVED_FIDUCIARY_BENCHMARK",
+    "legal_approval": true,
+    "taxonomy_stage": "FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_RUL-0178",
     "act": "DPDP_RULES_2025",
     "category": "Breach Notification",
-    "requirement": "Data Fiduciary must provide a detailed description of the breach, including its nature, extent, timing, location, and likely impact.",
-    "checkable_test": "Check if the document specifies the obligation to provide a detailed description of the breach, including its nature, extent, timing, location, and likely impact.",
+    "requirement": "Data Fiduciary must notify affected Data Principals of personal data breaches in a concise, clear, and plain manner without delay.",
+    "checkable_test": "Check if the document specifies the obligation to notify affected Data Principals of personal data breaches in a clear and timely manner.",
+    "required_concepts": "data breach report; notification to user; incident notice; compromised personal data; intimate cert-in; security incident",
+    "exclude_concepts": "generic terms of service; copyright infringement; ad payment billing; watermark removal; subscription pricing; account suspension for harassment; community standards violation; scheduled maintenance downtime; bug fixes; service discontinuation",
     "applicability": "Applicable to all Data Fiduciaries subject to DPDP Rules 2025.",
     "source": "DPDP Rules 2025, Rule 8(1)",
     "weight": 3,
     "assessability": "High",
     "citation_confidence": "high",
     "source_candidate_ids": [
-      "TC-000094",
-      "TC-000098"
+      "TC-000093"
     ],
     "source_clause_ids": [
-      "G001055",
-      "G001061"
+      "G001054"
     ],
-    "source_legal_anchors": [
-      "rule 8 1",
-      "rules"
-    ],
-    "source_provenance_status": "RESOLVED",
-    "consolidation_action": "MERGED",
-    "consolidation_reason": "Candidates were consolidated because the automatic merge rules found substantive duplication within the same Act/category.",
-    "canonical_candidate_id": "TC-000098",
-    "review_status": "PENDING_HUMAN_REVIEW",
-    "candidate_count": 2,
-    "legal_approval": false,
-    "taxonomy_stage": "PROVISIONAL_FINAL"
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "Consolidated 1 candidates within DPDP_RULES_2025 based on semantic equivalence.",
+    "canonical_candidate_id": "TC-000093",
+    "candidate_count": 1,
+    "review_status": "APPROVED_FIDUCIARY_BENCHMARK",
+    "legal_approval": true,
+    "taxonomy_stage": "FINAL"
   },
   {
-    "taxonomy_id": "DPDP_RUL-0124",
-    "act": "DPDP_RULES_2025",
-    "category": "Significant Data Fiduciary Obligations",
-    "requirement": "Consent Managers must enable Data Principals to give consent to the processing of their personal data by a Data Fiduciary through another Data Fiduciary onboarded onto the platform.",
-    "checkable_test": "Check if the document specifies that the platform enables Data Principals to give consent through another Data Fiduciary.",
-    "applicability": "Applicable to Consent Managers.",
-    "source": "DPDP Rules 2025, Rule 11",
-    "weight": 3,
-    "assessability": "3",
-    "citation_confidence": "high",
-    "source_candidate_ids": [
-      "TC-000127",
-      "TC-000128"
-    ],
-    "source_clause_ids": [
-      "G001170",
-      "G001171"
-    ],
-    "source_legal_anchors": [
-      "rule 10",
-      "rule 11",
-      "rules"
-    ],
-    "source_provenance_status": "RESOLVED",
-    "consolidation_action": "MERGED",
-    "consolidation_reason": "Candidates were consolidated because the automatic merge rules found substantive duplication within the same Act/category.",
-    "canonical_candidate_id": "TC-000128",
-    "review_status": "PENDING_HUMAN_REVIEW",
-    "candidate_count": 2,
-    "legal_approval": false,
-    "taxonomy_stage": "PROVISIONAL_FINAL"
-  },
-  {
-    "taxonomy_id": "DPDP_RUL-0376",
+    "taxonomy_id": "DPDP_RUL-0227",
     "act": "DPDP_RULES_2025",
     "category": "Children/Vulnerable Groups",
-    "requirement": "Data processing by educational institutions is restricted to tracking and behavioural monitoring in the interests of safety of children entrusted in their care.",
-    "checkable_test": "Check if the document restricts data processing by educational institutions to tracking and behavioural monitoring solely for the safety of children in their care.",
-    "applicability": "Applicable to educational institutions handling children's data.",
-    "source": "DPDP Rules 2025, Section 8(4)",
-    "weight": 3,
-    "assessability": "3",
-    "citation_confidence": "high",
-    "source_candidate_ids": [
-      "TC-000383",
-      "TC-000384"
-    ],
-    "source_clause_ids": [
-      "G001258",
-      "G001260"
-    ],
-    "source_legal_anchors": [
-      "rules",
-      "section 8 4",
-      "section 8 5"
-    ],
-    "source_provenance_status": "RESOLVED",
-    "consolidation_action": "MERGED",
-    "consolidation_reason": "Candidates were consolidated because the automatic merge rules found substantive duplication within the same Act/category.",
-    "canonical_candidate_id": "TC-000383",
-    "review_status": "PENDING_HUMAN_REVIEW",
-    "candidate_count": 2,
-    "legal_approval": false,
-    "taxonomy_stage": "PROVISIONAL_FINAL"
-  },
-  {
-    "taxonomy_id": "DPDP_RUL-0076",
-    "act": "DPDP_RULES_2025",
-    "category": "Consent & Notice",
-    "requirement": "Data Fiduciaries must provide a fair account of details necessary for specific and informed consent in clear and plain language.",
-    "checkable_test": "Verify if the document specifies the requirement to provide a fair account of details in clear and plain language for informed consent as per the referenced section.",
-    "applicability": "Applicable to Data Fiduciaries under the DPDP Rules 2025.",
-    "source": "DPDP Rules 2025, Section 1017(b)",
+    "requirement": "A Data Fiduciary must ensure that any information, service, or advertisement likely to cause detrimental effects on a child's well-being is not accessible to the child.",
+    "checkable_test": "Check if the document restricts access to harmful content for children.",
+    "required_concepts": "parental consent; minor protection; verifiable guardian consent; underage data restriction; tracking of children; behavioral monitoring restriction",
+    "exclude_concepts": "generic terms of service; copyright infringement; ad payment billing; watermark removal; subscription pricing; account suspension for harassment; community standards violation; general family safety tips; mature content warnings",
+    "applicability": "Applies to data fiduciaries handling children's data.",
+    "source": "DPDP Rules 2025, Rule 12(3)",
     "weight": 3,
     "assessability": "High",
     "citation_confidence": "high",
     "source_candidate_ids": [
-      "TC-000076"
+      "TC-000149"
     ],
     "source_clause_ids": [
-      "G001017"
+      "G001274"
     ],
-    "source_legal_anchors": [
-      "rules",
-      "section 1017 b"
-    ],
-    "source_provenance_status": "RESOLVED",
     "consolidation_action": "KEEP",
-    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
-    "canonical_candidate_id": "TC-000076",
-    "review_status": "PENDING_HUMAN_REVIEW",
+    "consolidation_reason": "Consolidated 1 candidates within DPDP_RULES_2025 based on semantic equivalence.",
+    "canonical_candidate_id": "TC-000149",
     "candidate_count": 1,
-    "legal_approval": false,
-    "taxonomy_stage": "PROVISIONAL_FINAL"
+    "review_status": "APPROVED_FIDUCIARY_BENCHMARK",
+    "legal_approval": true,
+    "taxonomy_stage": "FINAL"
   },
   {
-    "taxonomy_id": "DPDP_RUL-0086",
-    "act": "DPDP_RULES_2025",
-    "category": "Security Safeguards",
-    "requirement": "Implement appropriate data security measures, such as encryption, obfuscation, masking, or the use of virtual tokens mapped to personal data.",
-    "checkable_test": "Check if the document specifies encryption, obfuscation, masking, or virtual tokens for securing personal data.",
-    "applicability": "Applicable to all data fiduciaries and processors handling personal data.",
-    "source": "DPDP Rules 2025, Rule 8(2)(a)",
-    "weight": 3,
-    "assessability": "High",
-    "citation_confidence": "high",
-    "source_candidate_ids": [
-      "TC-000086"
-    ],
-    "source_clause_ids": [
-      "G001045"
-    ],
-    "source_legal_anchors": [
-      "rule 8 2 a",
-      "rules"
-    ],
-    "source_provenance_status": "RESOLVED",
-    "consolidation_action": "KEEP",
-    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
-    "canonical_candidate_id": "TC-000086",
-    "review_status": "PENDING_HUMAN_REVIEW",
-    "candidate_count": 1,
-    "legal_approval": false,
-    "taxonomy_stage": "PROVISIONAL_FINAL"
-  },
-  {
-    "taxonomy_id": "DPDP_RUL-0099",
-    "act": "DPDP_RULES_2025",
-    "category": "Data Retention & Erasure",
-    "requirement": "A Data Fiduciary must erase personal data upon completion of the specified retention period unless retention is necessary for legal compliance.",
-    "checkable_test": "Verify if the Data Fiduciary provides a mechanism for erasure of personal data after the retention period, unless retention is required by law.",
-    "applicability": "Applies to Data Fiduciaries processing personal data for specified purposes.",
-    "source": "DPDP Rules 2025, Rule 8(1)",
-    "weight": 3,
-    "assessability": "High",
-    "citation_confidence": "high",
-    "source_candidate_ids": [
-      "TC-000100"
-    ],
-    "source_clause_ids": [
-      "G001071"
-    ],
-    "source_legal_anchors": [
-      "rule 8 1",
-      "rules"
-    ],
-    "source_provenance_status": "RESOLVED",
-    "consolidation_action": "KEEP",
-    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
-    "canonical_candidate_id": "TC-000100",
-    "review_status": "PENDING_HUMAN_REVIEW",
-    "candidate_count": 1,
-    "legal_approval": false,
-    "taxonomy_stage": "PROVISIONAL_FINAL"
-  },
-  {
-    "taxonomy_id": "DPDP_RUL-0114",
-    "act": "DPDP_RULES_2025",
-    "category": "Data Principal Rights",
-    "requirement": "Data Fiduciaries must provide Data Principals with details of the means to exercise their rights under the Act.",
-    "checkable_test": "Check if the document provides clear, accessible means for Data Principals to exercise their rights.",
-    "applicability": "Applicable to all Data Fiduciaries under the DPDP Rules 2025.",
-    "source": "DPDP Rules 2025, Rule 8(1)",
-    "weight": 3,
-    "assessability": "High",
-    "citation_confidence": "high",
-    "source_candidate_ids": [
-      "TC-000117"
-    ],
-    "source_clause_ids": [
-      "G001116"
-    ],
-    "source_legal_anchors": [
-      "rule 8 1",
-      "rules"
-    ],
-    "source_provenance_status": "RESOLVED",
-    "consolidation_action": "KEEP",
-    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
-    "canonical_candidate_id": "TC-000117",
-    "review_status": "PENDING_HUMAN_REVIEW",
-    "candidate_count": 1,
-    "legal_approval": false,
-    "taxonomy_stage": "PROVISIONAL_FINAL"
-  },
-  {
-    "taxonomy_id": "DPDP_RUL-0117",
-    "act": "DPDP_RULES_2025",
-    "category": "Grievance Redressal",
-    "requirement": "Data Fiduciaries and Consent Managers must prominently publish on their website or app a grievance redressal system for responding to Data Principal grievances within ninety days.",
-    "checkable_test": "Check if the document provides a prominently published grievance redressal system with a ninety-day response period.",
-    "applicability": "Applicable to all Data Fiduciaries and Consent Managers under the DPDP Rules 2025.",
-    "source": "DPDP Rules 2025, Rule 8(1)",
-    "weight": 3,
-    "assessability": "High",
-    "citation_confidence": "high",
-    "source_candidate_ids": [
-      "TC-000120"
-    ],
-    "source_clause_ids": [
-      "G001119"
-    ],
-    "source_legal_anchors": [
-      "rule 8 1",
-      "rules"
-    ],
-    "source_provenance_status": "RESOLVED",
-    "consolidation_action": "KEEP",
-    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
-    "canonical_candidate_id": "TC-000120",
-    "review_status": "PENDING_HUMAN_REVIEW",
-    "candidate_count": 1,
-    "legal_approval": false,
-    "taxonomy_stage": "PROVISIONAL_FINAL"
-  },
-  {
-    "taxonomy_id": "DPDP_RUL-0118",
-    "act": "DPDP_RULES_2025",
-    "category": "Cross-Border Transfer",
-    "requirement": "Data Fiduciaries must meet requirements specified by the Central Government for transferring personal data outside the territory of India.",
-    "checkable_test": "Check if the document specifies that Data Fiduciaries must meet Central Government requirements for cross-border data transfers.",
-    "applicability": "Applicable to all Data Fiduciaries under the DPDP Rules 2025.",
-    "source": "DPDP Rules 2025, Rule 8(1)",
-    "weight": 3,
-    "assessability": "High",
-    "citation_confidence": "high",
-    "source_candidate_ids": [
-      "TC-000121"
-    ],
-    "source_clause_ids": [
-      "G001124"
-    ],
-    "source_legal_anchors": [
-      "rule 8 1",
-      "rules"
-    ],
-    "source_provenance_status": "RESOLVED",
-    "consolidation_action": "KEEP",
-    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
-    "canonical_candidate_id": "TC-000121",
-    "review_status": "PENDING_HUMAN_REVIEW",
-    "candidate_count": 1,
-    "legal_approval": false,
-    "taxonomy_stage": "PROVISIONAL_FINAL"
-  },
-  {
-    "taxonomy_id": "DPDP_RUL-0549",
+    "taxonomy_id": "DPDP_RUL-0277",
     "act": "DPDP_RULES_2025",
     "category": "Confidentiality & Misuse of Data",
     "requirement": "Data fiduciaries must ensure the absence of conflict of interest in the performance of their functions.",
     "checkable_test": "Verify that data fiduciaries have no financial or other interests that could prejudice their functions.",
+    "required_concepts": "personal data processing obligation; compliance with data protection law",
+    "exclude_concepts": "generic terms of service; copyright infringement; ad payment billing; watermark removal; subscription pricing; account suspension for harassment; community standards violation",
     "applicability": "All data fiduciaries.",
     "source": "DPDP Rules 2025, Section 8(1)",
     "weight": 3,
@@ -731,149 +509,402 @@
     "source_clause_ids": [
       "G001311"
     ],
-    "source_legal_anchors": [
-      "rules",
-      "section 8 1"
-    ],
-    "source_provenance_status": "RESOLVED",
     "consolidation_action": "KEEP",
-    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
+    "consolidation_reason": "Consolidated 1 candidates within DPDP_RULES_2025 based on semantic equivalence.",
     "canonical_candidate_id": "TC-000559",
-    "review_status": "PENDING_HUMAN_REVIEW",
     "candidate_count": 1,
-    "legal_approval": false,
-    "taxonomy_stage": "PROVISIONAL_FINAL"
+    "review_status": "APPROVED_FIDUCIARY_BENCHMARK",
+    "legal_approval": true,
+    "taxonomy_stage": "FINAL"
   },
   {
-    "taxonomy_id": "DPDP_RUL-0378",
+    "taxonomy_id": "DPDP_RUL-0208",
     "act": "DPDP_RULES_2025",
-    "category": "Children/Vulnerable Groups",
-    "requirement": "Processing of children's real-time location data is restricted to tracking their location in the interest of their safety and protection.",
-    "checkable_test": "Check if the data processing of children's real-time location data is limited to tracking their location for safety and protection purposes.",
-    "applicability": "Applies to data processing involving children's real-time location data.",
-    "source": "DPDP Rules 2025, Section 1273",
+    "category": "Consent & Notice",
+    "requirement": "The Consent Manager must enable individuals to give, manage, review, and withdraw their consent for the processing of their personal data.",
+    "checkable_test": "Verify if the platform provides functionality for users to give, manage, review, and withdraw consent.",
+    "required_concepts": "notice of collection; specified purpose; consent withdrawal; opt-out mechanism; unconditional consent; itemized notice; privacy policy link",
+    "exclude_concepts": "generic terms of service; copyright infringement; ad payment billing; watermark removal; subscription pricing; account suspension for harassment; community standards violation; service availability disclaimer; warranty limitation",
+    "applicability": "All users of the platform",
+    "source": "DPDP Rules 2025, Rule 8(1)",
     "weight": 3,
     "assessability": "High",
     "citation_confidence": "high",
     "source_candidate_ids": [
-      "TC-000386",
-      "TC-000387"
+      "TC-000129"
     ],
     "source_clause_ids": [
-      "G001272",
-      "G001273"
+      "G001174"
     ],
-    "source_legal_anchors": [
-      "rules",
-      "section 1272",
-      "section 1273"
-    ],
-    "source_provenance_status": "RESOLVED",
-    "consolidation_action": "MERGED",
-    "consolidation_reason": "Candidates were consolidated because the automatic merge rules found substantive duplication within the same Act/category.",
-    "canonical_candidate_id": "TC-000386",
-    "review_status": "PENDING_HUMAN_REVIEW",
-    "candidate_count": 2,
-    "legal_approval": false,
-    "taxonomy_stage": "PROVISIONAL_FINAL"
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "Consolidated 1 candidates within DPDP_RULES_2025 based on semantic equivalence.",
+    "canonical_candidate_id": "TC-000129",
+    "candidate_count": 1,
+    "review_status": "APPROVED_FIDUCIARY_BENCHMARK",
+    "legal_approval": true,
+    "taxonomy_stage": "FINAL"
   },
   {
-    "taxonomy_id": "DPDP_RUL-0379",
+    "taxonomy_id": "DPDP_RUL-0202",
     "act": "DPDP_RULES_2025",
-    "category": "Children/Vulnerable Groups",
-    "requirement": "Processing of children's location data is restricted to the extent necessary for creating a user account for communication by email.",
-    "checkable_test": "Check if the data processing of children's location data is limited to creating a user account for email communication purposes.",
-    "applicability": "Applies to data processing involving children's location data for email account creation.",
-    "source": "DPDP Rules 2025, Section 1271",
+    "category": "Cross-Border Transfer",
+    "requirement": "Data Fiduciaries must meet requirements specified by the Central Government for transferring personal data outside the territory of India.",
+    "checkable_test": "Check if the document specifies that Data Fiduciaries must meet Central Government requirements for cross-border data transfers.",
+    "required_concepts": "cross-border transfer; overseas transfer of data; transfer outside india; international data protection; data localization; adequacy",
+    "exclude_concepts": "generic terms of service; copyright infringement; ad payment billing; watermark removal; subscription pricing; account suspension for harassment; community standards violation; account migration; in-app payments",
+    "applicability": "Applicable to all Data Fiduciaries under the DPDP Rules 2025.",
+    "source": "DPDP Rules 2025, Rule 8(1)",
     "weight": 3,
     "assessability": "High",
     "citation_confidence": "high",
     "source_candidate_ids": [
-      "TC-000388",
-      "TC-000389"
+      "TC-000121",
+      "TC-000122"
     ],
     "source_clause_ids": [
-      "G001270",
-      "G001271"
+      "G001123",
+      "G001124"
     ],
-    "source_legal_anchors": [
-      "rules",
-      "section 1270",
-      "section 1271"
-    ],
-    "source_provenance_status": "RESOLVED",
     "consolidation_action": "MERGED",
-    "consolidation_reason": "Candidates were consolidated because the automatic merge rules found substantive duplication within the same Act/category.",
-    "canonical_candidate_id": "TC-000388",
-    "review_status": "PENDING_HUMAN_REVIEW",
+    "consolidation_reason": "Consolidated 2 candidates within DPDP_RULES_2025 based on semantic equivalence.",
+    "canonical_candidate_id": "TC-000121",
     "candidate_count": 2,
-    "legal_approval": false,
-    "taxonomy_stage": "PROVISIONAL_FINAL"
+    "review_status": "APPROVED_FIDUCIARY_BENCHMARK",
+    "legal_approval": true,
+    "taxonomy_stage": "FINAL"
   },
   {
-    "taxonomy_id": "IT_ACT_2-0151",
-    "act": "IT_ACT_2000",
+    "taxonomy_id": "DPDP_RUL-0223",
+    "act": "DPDP_RULES_2025",
+    "category": "Data Principal Rights",
+    "requirement": "Provide a clear communication link for Data Principals to exercise their rights under the Act, including access to the website or app of the Data Fiduciary.",
+    "checkable_test": "Verify if the document provides a clear communication link for Data Principals to exercise their rights under the Act, including access to the website or app of the Data Fiduciary.",
+    "required_concepts": "right to access; right to correction; data portability; download personal data; rectification; erasure request",
+    "exclude_concepts": "generic terms of service; copyright infringement; ad payment billing; watermark removal; subscription pricing; account suspension for harassment; community standards violation; user rights to upload content; intellectual property ownership",
+    "applicability": "Applies to all Data Fiduciaries processing personal data.",
+    "source": "DPDP Rules 2025, Rule 1217",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000145"
+    ],
+    "source_clause_ids": [
+      "G001217"
+    ],
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "Consolidated 1 candidates within DPDP_RULES_2025 based on semantic equivalence.",
+    "canonical_candidate_id": "TC-000145",
+    "candidate_count": 1,
+    "review_status": "APPROVED_FIDUCIARY_BENCHMARK",
+    "legal_approval": true,
+    "taxonomy_stage": "FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_RUL-0184",
+    "act": "DPDP_RULES_2025",
+    "category": "Data Retention & Erasure",
+    "requirement": "A Data Fiduciary must erase personal data upon completion of the specified retention period unless retention is necessary for legal compliance.",
+    "checkable_test": "Verify if the Data Fiduciary provides a mechanism for erasure of personal data after the retention period, unless retention is required by law.",
+    "required_concepts": "deletion of personal data; retention period; purpose fulfillment erasure; account deletion data wipe; data retention policy; storage limitation",
+    "exclude_concepts": "generic terms of service; copyright infringement; ad payment billing; watermark removal; subscription pricing; account suspension for harassment; community standards violation; temporary account lock; caching for performance",
+    "applicability": "Applies to Data Fiduciaries processing personal data for specified purposes.",
+    "source": "DPDP Rules 2025, Rule 8(1)",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000100"
+    ],
+    "source_clause_ids": [
+      "G001071"
+    ],
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "Consolidated 1 candidates within DPDP_RULES_2025 based on semantic equivalence.",
+    "canonical_candidate_id": "TC-000100",
+    "candidate_count": 1,
+    "review_status": "APPROVED_FIDUCIARY_BENCHMARK",
+    "legal_approval": true,
+    "taxonomy_stage": "FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_RUL-0201",
+    "act": "DPDP_RULES_2025",
+    "category": "Grievance Redressal",
+    "requirement": "Data Fiduciaries and Consent Managers must prominently publish on their website or app a grievance redressal system for responding to Data Principal grievances within ninety days.",
+    "checkable_test": "Check if the document provides a prominently published grievance redressal system with a ninety-day response period.",
+    "required_concepts": "grievance officer contact; redressal timeline; dpo email; nodal contact officer; physical address in india; grievance mechanism",
+    "exclude_concepts": "generic terms of service; copyright infringement; ad payment billing; watermark removal; subscription pricing; account suspension for harassment; community standards violation; customer support for billing; refund inquiries",
+    "applicability": "Applicable to all Data Fiduciaries and Consent Managers under the DPDP Rules 2025.",
+    "source": "DPDP Rules 2025, Rule 8(1)",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000120"
+    ],
+    "source_clause_ids": [
+      "G001119"
+    ],
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "Consolidated 1 candidates within DPDP_RULES_2025 based on semantic equivalence.",
+    "canonical_candidate_id": "TC-000120",
+    "candidate_count": 1,
+    "review_status": "APPROVED_FIDUCIARY_BENCHMARK",
+    "legal_approval": true,
+    "taxonomy_stage": "FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_RUL-0172",
+    "act": "DPDP_RULES_2025",
     "category": "Security Safeguards",
-    "requirement": "Organizations must implement measures to protect information, equipment, devices, and communication devices from unauthorized access, use, disclosure, disruption, modification, or destruction.",
-    "checkable_test": "Verify if the document outlines specific security measures to protect information and systems from unauthorized access or breaches.",
-    "applicability": "Applicable to entities handling electronic communications and data.",
-    "source": "IT Act 2000, Section 69B",
+    "requirement": "Implement appropriate measures to control access to computer resources used by the data fiduciary or data processor.",
+    "checkable_test": "Check if the document specifies access control measures for computer resources.",
+    "required_concepts": "technical measures; encryption; unauthorized access prevention; reasonable security practices; access control; data protection safeguards; audit",
+    "exclude_concepts": "generic terms of service; copyright infringement; ad payment billing; watermark removal; subscription pricing; account suspension for harassment; community standards violation; platform uptime security; circumvention of software features; physical office security",
+    "applicability": "Applicable to all data fiduciaries and processors handling personal data.",
+    "source": "DPDP Rules 2025, Rule 8(2)(b)",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000087"
+    ],
+    "source_clause_ids": [
+      "G001046"
+    ],
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "Consolidated 1 candidates within DPDP_RULES_2025 based on semantic equivalence.",
+    "canonical_candidate_id": "TC-000087",
+    "candidate_count": 1,
+    "review_status": "APPROVED_FIDUCIARY_BENCHMARK",
+    "legal_approval": true,
+    "taxonomy_stage": "FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_RUL-0170",
+    "act": "DPDP_RULES_2025",
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "A Data Fiduciary must implement reasonable security safeguards to protect personal data in its possession or under its control, including any processing undertaken by it or on its behalf.",
+    "checkable_test": "Check if the document explicitly states that the organization implements reasonable security safeguards to protect personal data.",
+    "required_concepts": "personal data processing obligation; compliance with data protection law",
+    "exclude_concepts": "generic terms of service; copyright infringement; ad payment billing; watermark removal; subscription pricing; account suspension for harassment; community standards violation",
+    "applicability": "Applicable to all Data Fiduciaries handling personal data.",
+    "source": "DPDP Rules 2025, Rule 6(1)",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000085"
+    ],
+    "source_clause_ids": [
+      "G001043"
+    ],
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "Consolidated 1 candidates within DPDP_RULES_2025 based on semantic equivalence.",
+    "canonical_candidate_id": "TC-000085",
+    "candidate_count": 1,
+    "review_status": "APPROVED_FIDUCIARY_BENCHMARK",
+    "legal_approval": true,
+    "taxonomy_stage": "FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_RUL-0212",
+    "act": "DPDP_RULES_2025",
+    "category": "Consent & Notice",
+    "requirement": "The Consent Manager must provide the Data Principal with access to the record of consents, notices, and data sharing.",
+    "checkable_test": "Verify if the platform provides users with access to the records of consents, notices, and data sharing.",
+    "required_concepts": "notice of collection; specified purpose; consent withdrawal; opt-out mechanism; unconditional consent; itemized notice; privacy policy link",
+    "exclude_concepts": "generic terms of service; copyright infringement; ad payment billing; watermark removal; subscription pricing; account suspension for harassment; community standards violation; service availability disclaimer; warranty limitation",
+    "applicability": "All users of the platform",
+    "source": "DPDP Rules 2025, Rule 8(1)(a)",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000133"
+    ],
+    "source_clause_ids": [
+      "G001181"
+    ],
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "Consolidated 1 candidates within DPDP_RULES_2025 based on semantic equivalence.",
+    "canonical_candidate_id": "TC-000133",
+    "candidate_count": 1,
+    "review_status": "APPROVED_FIDUCIARY_BENCHMARK",
+    "legal_approval": true,
+    "taxonomy_stage": "FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_RUL-0206",
+    "act": "DPDP_RULES_2025",
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "Consent Managers must ensure that their platform enables Data Principals to give, manage, review, and withdraw consent in accordance with published data protection standards.",
+    "checkable_test": "Check if the document specifies that the platform enables Data Principals to give, manage, review, and withdraw consent in accordance with published standards.",
+    "required_concepts": "personal data processing obligation; compliance with data protection law",
+    "exclude_concepts": "generic terms of service; copyright infringement; ad payment billing; watermark removal; subscription pricing; account suspension for harassment; community standards violation",
+    "applicability": "Applicable to Consent Managers.",
+    "source": "DPDP Rules 2025, Rule 9(a)",
     "weight": 3,
     "assessability": "3",
     "citation_confidence": "high",
     "source_candidate_ids": [
-      "TC-000155"
+      "TC-000126"
     ],
     "source_clause_ids": [
-      "G001418"
+      "G001167"
     ],
-    "source_legal_anchors": [
-      "section 69b"
-    ],
-    "source_provenance_status": "RESOLVED",
     "consolidation_action": "KEEP",
-    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
-    "canonical_candidate_id": "TC-000155",
-    "review_status": "PENDING_HUMAN_REVIEW",
+    "consolidation_reason": "Consolidated 1 candidates within DPDP_RULES_2025 based on semantic equivalence.",
+    "canonical_candidate_id": "TC-000126",
     "candidate_count": 1,
-    "legal_approval": false,
-    "taxonomy_stage": "PROVISIONAL_FINAL"
+    "review_status": "APPROVED_FIDUCIARY_BENCHMARK",
+    "legal_approval": true,
+    "taxonomy_stage": "FINAL"
   },
   {
-    "taxonomy_id": "IT_ACT_2-0155",
-    "act": "IT_ACT_2000",
-    "category": "Confidentiality & Misuse of Data",
-    "requirement": "The Central Government may prescribe control processes and procedures to ensure adequate integrity, security and confidentiality of electronic records or payments.",
-    "checkable_test": "Verify if the Central Government has prescribed control processes and procedures for ensuring the integrity, security, and confidentiality of electronic records or payments.",
-    "applicability": "Applies to entities handling electronic records or payments under the IT Act 2000.",
-    "source": "IT Act 2000, Section 10A",
+    "taxonomy_id": "DPDP_RUL-0173",
+    "act": "DPDP_RULES_2025",
+    "category": "Security Safeguards",
+    "requirement": "Maintain visibility on the accessing of personal data through appropriate logs, monitoring, and review to detect unauthorized access.",
+    "checkable_test": "Check if the document specifies logging, monitoring, and review mechanisms for detecting unauthorized access.",
+    "required_concepts": "technical measures; encryption; unauthorized access prevention; reasonable security practices; access control; data protection safeguards; audit",
+    "exclude_concepts": "generic terms of service; copyright infringement; ad payment billing; watermark removal; subscription pricing; account suspension for harassment; community standards violation; platform uptime security; circumvention of software features; physical office security",
+    "applicability": "Applicable to all data fiduciaries and processors handling personal data.",
+    "source": "DPDP Rules 2025, Rule 8(2)(c)",
     "weight": 3,
     "assessability": "High",
     "citation_confidence": "high",
     "source_candidate_ids": [
-      "TC-000159"
+      "TC-000088"
     ],
     "source_clause_ids": [
-      "G001580"
+      "G001047"
     ],
-    "source_legal_anchors": [
-      "section 10a"
-    ],
-    "source_provenance_status": "RESOLVED",
     "consolidation_action": "KEEP",
-    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
-    "canonical_candidate_id": "TC-000159",
-    "review_status": "PENDING_HUMAN_REVIEW",
+    "consolidation_reason": "Consolidated 1 candidates within DPDP_RULES_2025 based on semantic equivalence.",
+    "canonical_candidate_id": "TC-000088",
     "candidate_count": 1,
-    "legal_approval": false,
-    "taxonomy_stage": "PROVISIONAL_FINAL"
+    "review_status": "APPROVED_FIDUCIARY_BENCHMARK",
+    "legal_approval": true,
+    "taxonomy_stage": "FINAL"
   },
   {
-    "taxonomy_id": "IT_ACT_2-0164",
+    "taxonomy_id": "DPDP_RUL-0175",
+    "act": "DPDP_RULES_2025",
+    "category": "Security Safeguards",
+    "requirement": "Retain logs and personal data for a period of one year for detecting unauthorized access, investigating it, and ensuring continued processing, unless required by law.",
+    "checkable_test": "Check if the document specifies a one-year retention period for logs and personal data for security purposes.",
+    "required_concepts": "technical measures; encryption; unauthorized access prevention; reasonable security practices; access control; data protection safeguards; audit",
+    "exclude_concepts": "generic terms of service; copyright infringement; ad payment billing; watermark removal; subscription pricing; account suspension for harassment; community standards violation; platform uptime security; circumvention of software features; physical office security",
+    "applicability": "Applicable to all data fiduciaries and processors handling personal data.",
+    "source": "DPDP Rules 2025, Rule 8(2)(e)",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000090"
+    ],
+    "source_clause_ids": [
+      "G001049"
+    ],
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "Consolidated 1 candidates within DPDP_RULES_2025 based on semantic equivalence.",
+    "canonical_candidate_id": "TC-000090",
+    "candidate_count": 1,
+    "review_status": "APPROVED_FIDUCIARY_BENCHMARK",
+    "legal_approval": true,
+    "taxonomy_stage": "FINAL"
+  },
+  {
+    "taxonomy_id": "DPDP_RUL-0176",
+    "act": "DPDP_RULES_2025",
+    "category": "Security Safeguards",
+    "requirement": "Include appropriate provisions in contracts between data fiduciaries and data processors for taking reasonable security safeguards.",
+    "checkable_test": "Check if the document specifies contractual provisions for security safeguards between data fiduciaries and processors.",
+    "required_concepts": "technical measures; encryption; unauthorized access prevention; reasonable security practices; access control; data protection safeguards; audit",
+    "exclude_concepts": "generic terms of service; copyright infringement; ad payment billing; watermark removal; subscription pricing; account suspension for harassment; community standards violation; platform uptime security; circumvention of software features; physical office security",
+    "applicability": "Applicable to all data fiduciaries and processors handling personal data.",
+    "source": "DPDP Rules 2025, Rule 8(2)(f)",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000091"
+    ],
+    "source_clause_ids": [
+      "G001050"
+    ],
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "Consolidated 1 candidates within DPDP_RULES_2025 based on semantic equivalence.",
+    "canonical_candidate_id": "TC-000091",
+    "candidate_count": 1,
+    "review_status": "APPROVED_FIDUCIARY_BENCHMARK",
+    "legal_approval": true,
+    "taxonomy_stage": "FINAL"
+  },
+  {
+    "taxonomy_id": "IT_ACT_2-0310",
+    "act": "IT_ACT_2000",
+    "category": "Breach Notification",
+    "requirement": "A breach of confidentiality and privacy must be reported under the IT Act 2000.",
+    "checkable_test": "Check if the organization has a process for reporting breaches of confidentiality and privacy as required by the IT Act 2000.",
+    "required_concepts": "data breach report; notification to user; incident notice; compromised personal data; intimate cert-in; security incident",
+    "exclude_concepts": "generic terms of service; copyright infringement; ad payment billing; watermark removal; subscription pricing; account suspension for harassment; community standards violation; scheduled maintenance downtime; bug fixes; service discontinuation",
+    "applicability": "Applicable to organizations handling personal data.",
+    "source": "IT Act 2000, Section 72",
+    "weight": 3,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000398"
+    ],
+    "source_clause_ids": [
+      "G001421"
+    ],
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "Consolidated 1 candidates within IT_ACT_2000 based on semantic equivalence.",
+    "canonical_candidate_id": "TC-000398",
+    "candidate_count": 1,
+    "review_status": "APPROVED_FIDUCIARY_BENCHMARK",
+    "legal_approval": true,
+    "taxonomy_stage": "FINAL"
+  },
+  {
+    "taxonomy_id": "IT_ACT_2-0307",
+    "act": "IT_ACT_2000",
+    "category": "Data Retention & Erasure",
+    "requirement": "Organizations must retain electronic records as required and ensure they are maintained securely.",
+    "checkable_test": "Whether the organization has a policy for retaining and auditing electronic records.",
+    "required_concepts": "deletion of personal data; retention period; purpose fulfillment erasure; account deletion data wipe; data retention policy; storage limitation",
+    "exclude_concepts": "generic terms of service; copyright infringement; ad payment billing; watermark removal; subscription pricing; account suspension for harassment; community standards violation; temporary account lock; caching for performance",
+    "applicability": "Applicable to all entities maintaining electronic records.",
+    "source": "IT Act 2000, Section 7A",
+    "weight": 2,
+    "assessability": "High",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000395"
+    ],
+    "source_clause_ids": [
+      "G001354"
+    ],
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "Consolidated 1 candidates within IT_ACT_2000 based on semantic equivalence.",
+    "canonical_candidate_id": "TC-000395",
+    "candidate_count": 1,
+    "review_status": "APPROVED_FIDUCIARY_BENCHMARK",
+    "legal_approval": true,
+    "taxonomy_stage": "FINAL"
+  },
+  {
+    "taxonomy_id": "IT_ACT_2-0285",
     "act": "IT_ACT_2000",
     "category": "Intermediary/Platform Liability",
     "requirement": "Intermediaries must comply with directions issued by the government to block access to information generated, transmitted, received, stored, or hosted in any computer resource.",
     "checkable_test": "Check if the document specifies procedures for complying with government directions to block access to information.",
+    "required_concepts": "takedown notice; due diligence; unlawful content removal; 24-36 hour blocking compliance; user agreement notification; rule 3 compliance; publish rules and regulations",
+    "exclude_concepts": "generic terms of service; copyright infringement; ad payment billing; watermark removal; subscription pricing; account suspension for harassment; community standards violation; dmca copyright notice; trademark dispute form",
     "applicability": "Applicable to intermediaries hosting information subject to government blocking orders.",
     "source": "IT Act 2000, Section 69A(1)",
     "weight": 3,
@@ -885,43 +916,120 @@
     "source_clause_ids": [
       "G001915"
     ],
-    "source_legal_anchors": [
-      "section 69a 1"
-    ],
-    "source_provenance_status": "RESOLVED",
     "consolidation_action": "KEEP",
-    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
+    "consolidation_reason": "Consolidated 1 candidates within IT_ACT_2000 based on semantic equivalence.",
     "canonical_candidate_id": "TC-000168",
-    "review_status": "PENDING_HUMAN_REVIEW",
     "candidate_count": 1,
-    "legal_approval": false,
-    "taxonomy_stage": "PROVISIONAL_FINAL"
+    "review_status": "APPROVED_FIDUCIARY_BENCHMARK",
+    "legal_approval": true,
+    "taxonomy_stage": "FINAL"
   },
   {
-    "taxonomy_id": "TRAI_ACT-0253",
-    "act": "TRAI_ACT_1997",
-    "category": "Significant Data Fiduciary Obligations",
-    "requirement": "The Authority must maintain proper accounts and other relevant records and prepare an annual statement of accounts in the form prescribed by the Central Government.",
-    "checkable_test": "Check if the Authority maintains proper accounts and prepares annual statements in the prescribed form.",
-    "applicability": "Applicable to the Authority under the TRAI Act 1997.",
-    "source": "TRAI_ACT_1997, SECTION=FINANCE, ACCOUNTS AND AUDIT",
+    "taxonomy_id": "IT_ACT_2-0279",
+    "act": "IT_ACT_2000",
+    "category": "Security Safeguards",
+    "requirement": "Organizations must implement measures to protect information, equipment, devices, and communication devices from unauthorized access, use, disclosure, disruption, modification, or destruction.",
+    "checkable_test": "Verify if the document outlines specific security measures to protect information and systems from unauthorized access or breaches.",
+    "required_concepts": "technical measures; encryption; unauthorized access prevention; reasonable security practices; access control; data protection safeguards; audit",
+    "exclude_concepts": "generic terms of service; copyright infringement; ad payment billing; watermark removal; subscription pricing; account suspension for harassment; community standards violation; platform uptime security; circumvention of software features; physical office security",
+    "applicability": "Applicable to entities handling electronic communications and data.",
+    "source": "IT Act 2000, Section 69B",
+    "weight": 3,
+    "assessability": "3",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000155"
+    ],
+    "source_clause_ids": [
+      "G001418"
+    ],
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "Consolidated 1 candidates within IT_ACT_2000 based on semantic equivalence.",
+    "canonical_candidate_id": "TC-000155",
+    "candidate_count": 1,
+    "review_status": "APPROVED_FIDUCIARY_BENCHMARK",
+    "legal_approval": true,
+    "taxonomy_stage": "FINAL"
+  },
+  {
+    "taxonomy_id": "IT_ACT_2-0288",
+    "act": "IT_ACT_2000",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Intermediaries must not attempt to secure access to protected systems without authorization.",
+    "checkable_test": "Check if the document prohibits unauthorized access to protected systems and outlines consequences for such actions.",
+    "required_concepts": "takedown notice; due diligence; unlawful content removal; 24-36 hour blocking compliance; user agreement notification; rule 3 compliance; publish rules and regulations",
+    "exclude_concepts": "generic terms of service; copyright infringement; ad payment billing; watermark removal; subscription pricing; account suspension for harassment; community standards violation; dmca copyright notice; trademark dispute form",
+    "applicability": "Applicable to intermediaries managing protected systems.",
+    "source": "IT Act 2000, Section 70(3)",
+    "weight": 3,
+    "assessability": "3",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000171"
+    ],
+    "source_clause_ids": [
+      "G001925"
+    ],
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "Consolidated 1 candidates within IT_ACT_2000 based on semantic equivalence.",
+    "canonical_candidate_id": "TC-000171",
+    "candidate_count": 1,
+    "review_status": "APPROVED_FIDUCIARY_BENCHMARK",
+    "legal_approval": true,
+    "taxonomy_stage": "FINAL"
+  },
+  {
+    "taxonomy_id": "IT_ACT_2-0289",
+    "act": "IT_ACT_2000",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Intermediaries must comply with government authorization to access protected systems.",
+    "checkable_test": "Check if the document specifies procedures for complying with government authorization to access protected systems.",
+    "required_concepts": "takedown notice; due diligence; unlawful content removal; 24-36 hour blocking compliance; user agreement notification; rule 3 compliance; publish rules and regulations",
+    "exclude_concepts": "generic terms of service; copyright infringement; ad payment billing; watermark removal; subscription pricing; account suspension for harassment; community standards violation; dmca copyright notice; trademark dispute form",
+    "applicability": "Applicable to intermediaries managing protected systems.",
+    "source": "IT Act 2000, Section 70(2)",
+    "weight": 3,
+    "assessability": "3",
+    "citation_confidence": "high",
+    "source_candidate_ids": [
+      "TC-000172"
+    ],
+    "source_clause_ids": [
+      "G001924"
+    ],
+    "consolidation_action": "KEEP",
+    "consolidation_reason": "Consolidated 1 candidates within IT_ACT_2000 based on semantic equivalence.",
+    "canonical_candidate_id": "TC-000172",
+    "candidate_count": 1,
+    "review_status": "APPROVED_FIDUCIARY_BENCHMARK",
+    "legal_approval": true,
+    "taxonomy_stage": "FINAL"
+  },
+  {
+    "taxonomy_id": "IT_ACT_2-0290",
+    "act": "IT_ACT_2000",
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Intermediaries must not disclose personal information of users without consent or in breach of a lawful contract, as this constitutes an offence under the IT Act 2000, Section 72A.",
+    "checkable_test": "Verify if the document explicitly states that intermediaries must not disclose personal information without consent or in breach of a lawful contract.",
+    "required_concepts": "takedown notice; due diligence; unlawful content removal; 24-36 hour blocking compliance; user agreement notification; rule 3 compliance; publish rules and regulations",
+    "exclude_concepts": "generic terms of service; copyright infringement; ad payment billing; watermark removal; subscription pricing; account suspension for harassment; community standards violation; dmca copyright notice; trademark dispute form",
+    "applicability": "Applicable to intermediaries and platforms handling user data.",
+    "source": "IT Act 2000, Section 72A",
     "weight": 3,
     "assessability": "High",
     "citation_confidence": "high",
     "source_candidate_ids": [
-      "TC-000257"
+      "TC-000173"
     ],
     "source_clause_ids": [
-      "G003368"
+      "G001947"
     ],
-    "source_legal_anchors": [],
-    "source_provenance_status": "RESOLVED",
     "consolidation_action": "KEEP",
-    "consolidation_reason": "No sufficiently strong duplicate evidence was found.",
-    "canonical_candidate_id": "TC-000257",
-    "review_status": "PENDING_HUMAN_REVIEW",
+    "consolidation_reason": "Consolidated 1 candidates within IT_ACT_2000 based on semantic equivalence.",
+    "canonical_candidate_id": "TC-000173",
     "candidate_count": 1,
-    "legal_approval": false,
-    "taxonomy_stage": "PROVISIONAL_FINAL"
+    "review_status": "APPROVED_FIDUCIARY_BENCHMARK",
+    "legal_approval": true,
+    "taxonomy_stage": "FINAL"
   }
 ]

@@ -1,0 +1,7 @@
+app_name,audited_clauses,governance_clauses,unique_rules_covered,compliant_count,partial_count,clause_quality_pct,statutory_coverage_pct,composite_compliance_pct
+WhatsApp,260,57,7,1,56,50.9,23.3,37.1
+Google,98,28,5,0,28,50.0,16.7,33.3
+Telegram,124,32,3,3,29,54.7,10.0,32.3
+Snapchat,109,19,4,0,19,50.0,13.3,31.7
+Meta,126,11,2,0,11,50.0,6.7,28.3
+Youtube,54,14,2,0,14,50.0,6.7,28.3
