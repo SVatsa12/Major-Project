@@ -1,131 +1,229 @@
 {
+  "scoring_metadata": {
+    "total_statutory_rules": 38,
+    "active_in_scope_rules": 35,
+    "governance_only_excluded_rules": [
+      "DPDP_ACT-0121",
+      "DPDP_ACT-0123",
+      "DPDP_ACT-0153"
+    ],
+    "never_matched_rule_count": 15,
+    "never_matched_rule_ids": [
+      "DPDP_ACT-0019",
+      "DPDP_ACT-0026",
+      "DPDP_ACT-0048",
+      "DPDP_ACT-0057",
+      "DPDP_ACT-0059",
+      "DPDP_ACT-0121",
+      "DPDP_ACT-0123",
+      "DPDP_ACT-0153",
+      "DPDP_RUL-0170",
+      "DPDP_RUL-0201",
+      "DPDP_RUL-0277",
+      "IT_ACT_2-0288",
+      "IT_ACT_2-0289",
+      "IT_ACT_2-0307",
+      "IT_ACT_2-0310"
+    ],
+    "theoretical_max_strict_coverage_pct": 60.5,
+    "corpus_source": "corpus\\labeled_clauses_bootstrap.csv",
+    "total_clauses_evaluated": 771,
+    "act_denominators": {
+      "DPDP Act 2023": 16,
+      "DPDP Rules 2025": 15,
+      "IT Act 2000": 7
+    },
+    "dual_metric_note": "strict_coverage_pct uses denominator 38 (full taxonomy). applicable_scope_pct uses denominator 35 (consumer-checkable rules only, assessability >= 3, excluding board-sanction rules). combined_statutory_pct = macro-average of DPDP Act 2023 / DPDP Rules 2025 / IT Act 2000 (equal weight per framework). effective_compliance_pct = 0.5 x clause_quality_pct + 0.5 x applicable_scope_pct."
+  },
   "total_audited_clauses": 771,
-  "total_governance_clauses": 161,
-  "platforms": [
-    "Google",
-    "Meta",
-    "Snapchat",
-    "Telegram",
-    "WhatsApp",
-    "Youtube"
-  ],
+  "total_governance_clauses": 106,
   "platform_rankings": [
     {
       "app_name": "WhatsApp",
       "audited_clauses": 260,
-      "governance_clauses": 57,
-      "unique_rules_covered": 7,
-      "compliant_count": 1,
-      "partial_count": 56,
-      "clause_quality_pct": 50.9,
-      "statutory_coverage_pct": 23.3,
-      "composite_compliance_pct": 37.1
-    },
-    {
-      "app_name": "Google",
-      "audited_clauses": 98,
-      "governance_clauses": 28,
-      "unique_rules_covered": 5,
-      "compliant_count": 0,
-      "partial_count": 28,
-      "clause_quality_pct": 50.0,
-      "statutory_coverage_pct": 16.7,
-      "composite_compliance_pct": 33.3
+      "governance_clauses": 32,
+      "unique_rules_covered": 19,
+      "compliant_count": 10,
+      "partial_count": 22,
+      "clause_quality_pct": 65.6,
+      "strict_coverage_pct": 50.0,
+      "applicable_scope_pct": 54.3,
+      "combined_statutory_pct": 29.4,
+      "effective_compliance_pct": 60.0,
+      "dominant_rule_warning": ""
     },
     {
       "app_name": "Telegram",
       "audited_clauses": 124,
-      "governance_clauses": 32,
-      "unique_rules_covered": 3,
-      "compliant_count": 3,
-      "partial_count": 29,
-      "clause_quality_pct": 54.7,
-      "statutory_coverage_pct": 10.0,
-      "composite_compliance_pct": 32.3
+      "governance_clauses": 16,
+      "unique_rules_covered": 10,
+      "compliant_count": 9,
+      "partial_count": 7,
+      "clause_quality_pct": 78.1,
+      "strict_coverage_pct": 26.3,
+      "applicable_scope_pct": 28.6,
+      "combined_statutory_pct": 21.0,
+      "effective_compliance_pct": 53.3,
+      "dominant_rule_warning": ""
     },
     {
       "app_name": "Snapchat",
       "audited_clauses": 109,
-      "governance_clauses": 19,
-      "unique_rules_covered": 4,
-      "compliant_count": 0,
-      "partial_count": 19,
-      "clause_quality_pct": 50.0,
-      "statutory_coverage_pct": 13.3,
-      "composite_compliance_pct": 31.7
-    },
-    {
-      "app_name": "Meta",
-      "audited_clauses": 126,
-      "governance_clauses": 11,
-      "unique_rules_covered": 2,
-      "compliant_count": 0,
-      "partial_count": 11,
-      "clause_quality_pct": 50.0,
-      "statutory_coverage_pct": 6.7,
-      "composite_compliance_pct": 28.3
+      "governance_clauses": 16,
+      "unique_rules_covered": 9,
+      "compliant_count": 4,
+      "partial_count": 12,
+      "clause_quality_pct": 62.5,
+      "strict_coverage_pct": 23.7,
+      "applicable_scope_pct": 25.7,
+      "combined_statutory_pct": 11.9,
+      "effective_compliance_pct": 44.1,
+      "dominant_rule_warning": "[WARN] DPDP_RUL-0227 (38% of positives)"
     },
     {
       "app_name": "Youtube",
       "audited_clauses": 54,
-      "governance_clauses": 14,
-      "unique_rules_covered": 2,
+      "governance_clauses": 26,
+      "unique_rules_covered": 5,
+      "compliant_count": 9,
+      "partial_count": 17,
+      "clause_quality_pct": 67.3,
+      "strict_coverage_pct": 13.2,
+      "applicable_scope_pct": 14.3,
+      "combined_statutory_pct": 7.8,
+      "effective_compliance_pct": 40.8,
+      "dominant_rule_warning": "[WARN] DPDP_RUL-0227 (81% of positives)"
+    },
+    {
+      "app_name": "Google",
+      "audited_clauses": 98,
+      "governance_clauses": 12,
+      "unique_rules_covered": 9,
       "compliant_count": 0,
-      "partial_count": 14,
+      "partial_count": 12,
       "clause_quality_pct": 50.0,
-      "statutory_coverage_pct": 6.7,
-      "composite_compliance_pct": 28.3
+      "strict_coverage_pct": 23.7,
+      "applicable_scope_pct": 25.7,
+      "combined_statutory_pct": 11.0,
+      "effective_compliance_pct": 37.9,
+      "dominant_rule_warning": ""
+    },
+    {
+      "app_name": "Meta",
+      "audited_clauses": 126,
+      "governance_clauses": 4,
+      "unique_rules_covered": 3,
+      "compliant_count": 1,
+      "partial_count": 3,
+      "clause_quality_pct": 62.5,
+      "strict_coverage_pct": 7.9,
+      "applicable_scope_pct": 8.6,
+      "combined_statutory_pct": 6.9,
+      "effective_compliance_pct": 35.5,
+      "dominant_rule_warning": "[WARN] IT_ACT_2-0290 (50% of positives)"
     }
   ],
   "category_breakdown": [
     {
-      "dpdp_category": "Cross-Border Transfer",
-      "clauses_identified": 70,
-      "unique_platforms_addressing": 6,
-      "avg_quality_score": 51.4,
-      "platforms_missing": 0
-    },
-    {
-      "dpdp_category": "Data Retention & Erasure",
-      "clauses_identified": 54,
+      "dpdp_category": "Children/Vulnerable Groups",
+      "clauses_identified": 37,
       "unique_platforms_addressing": 5,
-      "avg_quality_score": 51.9,
+      "avg_quality_score": 71.6,
       "platforms_missing": 1
     },
     {
-      "dpdp_category": "Data Principal Rights",
-      "clauses_identified": 14,
-      "unique_platforms_addressing": 3,
-      "avg_quality_score": 50.0,
-      "platforms_missing": 3
-    },
-    {
-      "dpdp_category": "Significant Data Fiduciary Obligations",
-      "clauses_identified": 11,
-      "unique_platforms_addressing": 3,
-      "avg_quality_score": 50.0,
-      "platforms_missing": 3
+      "dpdp_category": "Data Retention & Erasure",
+      "clauses_identified": 22,
+      "unique_platforms_addressing": 5,
+      "avg_quality_score": 63.6,
+      "platforms_missing": 1
     },
     {
       "dpdp_category": "Security Safeguards",
+      "clauses_identified": 17,
+      "unique_platforms_addressing": 3,
+      "avg_quality_score": 64.7,
+      "platforms_missing": 3
+    },
+    {
+      "dpdp_category": "Data Principal Rights",
+      "clauses_identified": 10,
+      "unique_platforms_addressing": 5,
+      "avg_quality_score": 65.0,
+      "platforms_missing": 1
+    },
+    {
+      "dpdp_category": "Consent & Notice",
       "clauses_identified": 8,
+      "unique_platforms_addressing": 4,
+      "avg_quality_score": 56.2,
+      "platforms_missing": 2
+    },
+    {
+      "dpdp_category": "Intermediary/Platform Liability",
+      "clauses_identified": 6,
+      "unique_platforms_addressing": 4,
+      "avg_quality_score": 58.3,
+      "platforms_missing": 2
+    },
+    {
+      "dpdp_category": "Cross-Border Transfer",
+      "clauses_identified": 4,
       "unique_platforms_addressing": 2,
       "avg_quality_score": 50.0,
       "platforms_missing": 4
     },
     {
-      "dpdp_category": "Grievance Redressal",
-      "clauses_identified": 3,
-      "unique_platforms_addressing": 3,
-      "avg_quality_score": 50.0,
-      "platforms_missing": 3
+      "dpdp_category": "Breach Notification",
+      "clauses_identified": 1,
+      "unique_platforms_addressing": 1,
+      "avg_quality_score": 100.0,
+      "platforms_missing": 5
     },
     {
-      "dpdp_category": "Consent & Notice",
+      "dpdp_category": "Significant Data Fiduciary Obligations",
       "clauses_identified": 1,
       "unique_platforms_addressing": 1,
       "avg_quality_score": 50.0,
       "platforms_missing": 5
     }
-  ]
+  ],
+  "act_compliance_matrix": {
+    "Google": {
+      "DPDP Act 2023": "12.5%",
+      "DPDP Rules 2025": "13.3%",
+      "IT Act 2000": "7.1%",
+      "Combined Final %": "11.0%"
+    },
+    "Meta": {
+      "DPDP Act 2023": "3.1%",
+      "DPDP Rules 2025": "3.3%",
+      "IT Act 2000": "14.3%",
+      "Combined Final %": "6.9%"
+    },
+    "Snapchat": {
+      "DPDP Act 2023": "15.6%",
+      "DPDP Rules 2025": "20.0%",
+      "IT Act 2000": "0.0%",
+      "Combined Final %": "11.9%"
+    },
+    "Telegram": {
+      "DPDP Act 2023": "18.8%",
+      "DPDP Rules 2025": "30.0%",
+      "IT Act 2000": "14.3%",
+      "Combined Final %": "21.0%"
+    },
+    "WhatsApp": {
+      "DPDP Act 2023": "31.2%",
+      "DPDP Rules 2025": "50.0%",
+      "IT Act 2000": "7.1%",
+      "Combined Final %": "29.4%"
+    },
+    "Youtube": {
+      "DPDP Act 2023": "3.1%",
+      "DPDP Rules 2025": "13.3%",
+      "IT Act 2000": "7.1%",
+      "Combined Final %": "7.8%"
+    }
+  }
 }

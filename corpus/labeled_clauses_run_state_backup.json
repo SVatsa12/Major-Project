@@ -1,0 +1,23 @@
+{
+  "run_id": "run-c6bf936e43df-5d0fde37",
+  "input_clause_count": 771,
+  "labeled_success_count": 771,
+  "matched_positive_count": 100,
+  "verdict_distribution": {
+    "Not Addressed": 671,
+    "Partially Compliant": 63,
+    "Compliant": 36,
+    "Non-Compliant": 1
+  },
+  "category_distribution": {
+    "Not Applicable": 671,
+    "Children/Vulnerable Groups": 35,
+    "Data Retention & Erasure": 20,
+    "Security Safeguards": 18,
+    "Data Principal Rights": 10,
+    "Consent & Notice": 9,
+    "Cross-Border Transfer": 4,
+    "Intermediary/Platform Liability": 3,
+    "Breach Notification": 1
+  }
+}

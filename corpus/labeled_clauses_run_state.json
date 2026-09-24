@@ -1,23 +1,28 @@
 {
-  "run_id": "run-c6bf936e43df-5d0fde37",
-  "input_clause_count": 771,
-  "labeled_success_count": 771,
-  "matched_positive_count": 100,
+  "run_id": "run-88abf65b56c9595b",
+  "prompt_version": "policy-labeling-v11-debiased-semantic",
+  "platform_filter": [
+    "meta",
+    "telegram",
+    "youtube"
+  ],
+  "input_clause_count": 304,
+  "labeled_success_count": 304,
+  "matched_positive_count": 47,
   "verdict_distribution": {
-    "Not Addressed": 671,
-    "Partially Compliant": 63,
-    "Compliant": 36,
+    "Not Addressed": 257,
+    "Partially Compliant": 27,
+    "Compliant": 19,
     "Non-Compliant": 1
   },
   "category_distribution": {
-    "Not Applicable": 671,
-    "Children/Vulnerable Groups": 35,
-    "Data Retention & Erasure": 20,
-    "Security Safeguards": 18,
-    "Data Principal Rights": 10,
-    "Consent & Notice": 9,
-    "Cross-Border Transfer": 4,
+    "Not Applicable": 257,
+    "Children/Vulnerable Groups": 24,
+    "Data Retention & Erasure": 10,
+    "Security Safeguards": 5,
     "Intermediary/Platform Liability": 3,
-    "Breach Notification": 1
+    "Data Principal Rights": 3,
+    "Consent & Notice": 1,
+    "Significant Data Fiduciary Obligations": 1
   }
 }

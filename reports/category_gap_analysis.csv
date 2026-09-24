@@ -1,8 +1,10 @@
 dpdp_category,clauses_identified,unique_platforms_addressing,avg_quality_score,platforms_missing
-Cross-Border Transfer,70,6,51.4,0
-Data Retention & Erasure,54,5,51.9,1
-Data Principal Rights,14,3,50.0,3
-Significant Data Fiduciary Obligations,11,3,50.0,3
-Security Safeguards,8,2,50.0,4
-Grievance Redressal,3,3,50.0,3
-Consent & Notice,1,1,50.0,5
+Children/Vulnerable Groups,37,5,71.6,1
+Data Retention & Erasure,22,5,63.6,1
+Security Safeguards,17,3,64.7,3
+Data Principal Rights,10,5,65.0,1
+Consent & Notice,8,4,56.2,2
+Intermediary/Platform Liability,6,4,58.3,2
+Cross-Border Transfer,4,2,50.0,4
+Breach Notification,1,1,100.0,5
+Significant Data Fiduciary Obligations,1,1,50.0,5
