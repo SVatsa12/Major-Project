@@ -72,3 +72,15 @@ desktop.ini
 datasets/SocialMediaPolicies/smoke_test_*.csv
 datasets/SocialMediaPolicies/temp_*.csv
 temp_check_dataset.py
+src/training/smoke_test.py
+
+# -----------------------------------------------------------------------
+# Tracked evaluation & pipeline artifacts
+# Model weights (.safetensors, .bin) are gitignored to keep the repo lean.
+# However, the following lightweight artifacts MUST be committed:
+# -----------------------------------------------------------------------
+!models/inlegalbert_classifier/thresholds.json
+!models/inlegalbert_classifier/eval_test_report.json
+!models/inlegalbert_classifier/calibrated_test_report.json
+!models/inlegalbert_classifier/confusion_matrix.png
+!models/inlegalbert_classifier/confusion_matrix.csv

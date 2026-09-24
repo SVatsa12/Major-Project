@@ -253,39 +253,59 @@ def load_corpus(path: Path) -> tuple[pd.DataFrame, str]:
     return df, file_sha256(path)
 
 
+# Minimum aggregate score a rule must reach to be promoted as a candidate.
+# A score of 4 requires at least one required_concept hit (worth 4 pts) or
+# two category keyword hits (worth 3 pts each). This prevents low-signal
+# partial matches from polluting the candidate set and ensures that
+# best_match_taxonomy_id is set to NONE only when similarity genuinely
+# falls below this cutoff — which the inference model uses as an anchor
+# for predicting "Not Addressed".
+MIN_SCORE_THRESHOLD = 4
+
+
 def select_candidate_rules(clause_text: str, taxonomy: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    """Dynamically route the top 4-8 most relevant taxonomy rules for this specific clause."""
+    """Dynamically route the top relevant taxonomy rules for this specific clause.
+
+    Only rules whose aggregate keyword/concept score meets MIN_SCORE_THRESHOLD
+    are promoted as candidates. Rules below the cutoff are treated as
+    non-matching so that best_match_taxonomy_id is reliably set to NONE
+    for genuinely unrelated clauses — an anchor the downstream classifier
+    depends on to predict 'Not Addressed' correctly.
+    """
     lower_text = clause_text.lower()
     scored_candidates = []
 
     for rule in taxonomy:
         score = 0
         cat = rule["category"]
-        
-        # Check category keywords
+
+        # Check category keywords (3 pts per hit)
         keywords = CATEGORY_KEYWORD_MAP.get(cat, [])
         for kw in keywords:
             if kw in lower_text:
                 score += 3
 
-        # Check required concepts in taxonomy definition
+        # Check required concepts in taxonomy definition (4 pts per hit — highest signal)
         concepts = [c.strip().lower() for c in rule.get("required_concepts", "").split(";") if c.strip()]
         for c in concepts:
             if c in lower_text:
                 score += 4
 
-        # Check raw requirement words
+        # Check raw requirement words (1 pt per token >4 chars — low-weight tiebreaker)
         for token in rule["requirement"].lower().split():
             if len(token) > 4 and token in lower_text:
                 score += 1
 
-        if score > 0:
+        # Only promote rules that clear the retrieval cutoff
+        if score >= MIN_SCORE_THRESHOLD:
             scored_candidates.append((score, rule))
 
     scored_candidates.sort(key=lambda x: x[0], reverse=True)
     candidates = [r for _, r in scored_candidates[:6]]
 
-    # If no candidates triggered keyword match, provide 3 foundational rules (Notice, Rights, Safeguards)
+    # If no candidates cleared the threshold, use 3 foundational fallback rules.
+    # These are broad enough that the LLM will still return NONE/Not Addressed
+    # for genuinely off-topic clauses, but prevent an empty candidate context.
     if not candidates:
         fallback_cats = {"Consent & Notice", "Data Principal Rights", "Security Safeguards"}
         candidates = [r for r in taxonomy if r["category"] in fallback_cats][:4]
