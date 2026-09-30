@@ -9,7 +9,7 @@
 
 **Target Entities Audited:** WhatsApp, Meta, Telegram, Snapchat, Google, YouTube
 
-**Underlying Architecture:** Legal NLP · Local LLM Inference (`qwen3:8b`) · Transformer Classification (`law-ai/InLegalBERT`) · Vector Embedding Search (`all-MiniLM-L6-v2`)
+**Underlying Architecture:** Legal NLP · Local LLM Inference (`qwen3:8b`)  · Vector Embedding Search (`all-MiniLM-L6-v2`)
 
 ---
 
@@ -40,7 +40,7 @@ The repository implements a closed-loop regulatory engineering pipeline:
 [4. Bootstrap Labeling] ────────> labeled_clauses_bootstrap.csv (771 clauses)
          |
          v
-[5. Split & Training] ──────────> train.csv / val.csv / test.csv --> InLegalBERT Checkpoints
+[5. Split & Training] ──────────> train.csv / val.csv / test.csv 
          |
          v
 [6. Evaluation & Audit] ────────> platform_overall_rankings.csv / platform_act_compliance_matrix.csv

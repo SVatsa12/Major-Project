@@ -1,28 +1,28 @@
 {
-  "run_id": "run-88abf65b56c9595b",
-  "prompt_version": "policy-labeling-v11-debiased-semantic",
-  "platform_filter": [
-    "meta",
-    "telegram",
-    "youtube"
-  ],
-  "input_clause_count": 304,
-  "labeled_success_count": 304,
-  "matched_positive_count": 47,
+  "total_clauses": 771,
   "verdict_distribution": {
-    "Not Addressed": 257,
-    "Partially Compliant": 27,
-    "Compliant": 19,
-    "Non-Compliant": 1
+    "Not Addressed": 586,
+    "Partially Compliant": 134,
+    "Compliant": 51
   },
   "category_distribution": {
-    "Not Applicable": 257,
-    "Children/Vulnerable Groups": 24,
-    "Data Retention & Erasure": 10,
-    "Security Safeguards": 5,
-    "Intermediary/Platform Liability": 3,
-    "Data Principal Rights": 3,
-    "Consent & Notice": 1,
-    "Significant Data Fiduciary Obligations": 1
-  }
+    "Not Applicable": 586,
+    "Security Safeguards": 41,
+    "Data Retention & Erasure": 39,
+    "Children/Vulnerable Groups": 25,
+    "Data Principal Rights": 22,
+    "Consent & Notice": 20,
+    "Intermediary/Platform Liability": 18,
+    "Cross-Border Transfer": 10,
+    "Grievance Redressal": 7,
+    "Significant Data Fiduciary Obligations": 2,
+    "Breach Notification": 1
+  },
+  "act_distribution": {
+    "NONE": 586,
+    "DPDP Act 2023": 83,
+    "DPDP Rules 2025": 82,
+    "IT Act 2000": 20
+  },
+  "status": "STEP1_LABEL_ALIGNMENT_COMPLETE"
 }

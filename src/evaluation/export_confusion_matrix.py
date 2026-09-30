@@ -1,18 +1,18 @@
 """
 src/evaluation/export_confusion_matrix.py
 
-Evaluates the InLegalBERT compliance classifier on the test split using
-calibrated thresholds and generates publication-ready outputs:
+Evaluates the baseline compliance classifier on the test split and
+generates publication-ready outputs:
 
-  models/inlegalbert_classifier/confusion_matrix.png  — heatmap figure (300 dpi)
-  models/inlegalbert_classifier/confusion_matrix.csv  — raw tabular matrix
-  models/inlegalbert_classifier/calibrated_test_report.json — per-class metrics
+  models/baseline/confusion_matrix.png  — heatmap figure (300 dpi)
+  models/baseline/confusion_matrix.csv  — raw tabular matrix
+  models/baseline/calibrated_test_report.json — per-class metrics
 """
 
 import json
-import sys
 import pandas as pd
 import numpy as np
+import joblib
 import matplotlib
 matplotlib.use("Agg")   # Non-interactive backend — safe for headless/script execution
 import matplotlib.pyplot as plt
@@ -20,12 +20,13 @@ import seaborn as sns
 from pathlib import Path
 from sklearn.metrics import confusion_matrix, classification_report
 
-# Make the src package importable regardless of working directory
-sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
-from src.inference.predict import CompliancePredictor, LABEL_NAMES, LABEL2ID
+# Label constants (formerly in src/inference/predict.py)
+LABEL_NAMES = ["Not Addressed", "Partially Compliant", "Compliant"]
+LABEL2ID = {label: i for i, label in enumerate(LABEL_NAMES)}
 
 TEST_FILE  = Path("datasets/splits/test.csv")
-OUTPUT_DIR = Path("models/inlegalbert_classifier")
+MODEL_FILE = Path("models/baseline/baseline_model.joblib")
+OUTPUT_DIR = Path("models/baseline")
 
 
 def generate_evaluation_artifacts() -> None:
@@ -43,17 +44,24 @@ def generate_evaluation_artifacts() -> None:
     print(df["verdict"].value_counts().to_string())
 
     # ------------------------------------------------------------------ #
-    # 2. Run calibrated batch inference                                    #
+    # 2. Load baseline model and run inference                            #
     # ------------------------------------------------------------------ #
-    predictor = CompliancePredictor(model_dir=OUTPUT_DIR)
-    print(f"\nLoaded thresholds: {predictor.thresholds}")
-    print(f"\nRunning calibrated prediction on {len(df)} test samples...")
+    if not MODEL_FILE.exists():
+        raise FileNotFoundError(
+            f"Baseline model not found at {MODEL_FILE}. "
+            "Run: python src/training/train_baseline.py"
+        )
 
-    clauses_payload = df.to_dict(orient="records")
-    predictions = predictor.predict_batch(clauses_payload, batch_size=16)
+    bundle = joblib.load(MODEL_FILE)
+    vectorizer = bundle["vectorizer"]
+    classifier = bundle["classifier"]
+    print(f"\nRunning prediction on {len(df)} test samples...")
+
+    X_test = vectorizer.transform(df["clause_text"])
+    raw_preds = classifier.predict(X_test)
 
     y_true = df["verdict"].tolist()
-    y_pred = [p["verdict"] for p in predictions]
+    y_pred  = list(raw_preds)
 
     # ------------------------------------------------------------------ #
     # 3. Confusion Matrix — CSV                                           #
@@ -90,9 +98,8 @@ def generate_evaluation_artifacts() -> None:
         ax=ax,
     )
     ax.set_title(
-        "InLegalBERT Compliance Classifier — Test Set Confusion Matrix\n"
-        f"(Calibrated: Compliant ≥ {predictor.thresholds.get('compliant', 0.45)}, "
-        f"PC ≥ {predictor.thresholds.get('partially_compliant', 0.20)})",
+        "Baseline Compliance Classifier — Test Set Confusion Matrix\n"
+        "(TF-IDF + Logistic Regression)",
         fontsize=11,
         pad=14,
     )
@@ -116,16 +123,16 @@ def generate_evaluation_artifacts() -> None:
         output_dict=True,
         zero_division=0,
     )
-    report_path = OUTPUT_DIR / "calibrated_test_report.json"
+    report_path = OUTPUT_DIR / "test_report.json"
     with open(report_path, "w", encoding="utf-8") as f:
         json.dump(report, f, indent=2)
-    print(f"Calibrated report saved to {report_path}")
+    print(f"Test report saved to {report_path}")
 
     # ------------------------------------------------------------------ #
     # 6. Human-readable summary                                           #
     # ------------------------------------------------------------------ #
     print("\n" + "=" * 60)
-    print("FINAL TEST METRICS (Calibrated Thresholds)")
+    print("FINAL TEST METRICS (Baseline Model)")
     print("=" * 60)
     print(classification_report(
         y_true, y_pred,

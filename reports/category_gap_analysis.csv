@@ -1,10 +1,11 @@
 dpdp_category,clauses_identified,unique_platforms_addressing,avg_quality_score,platforms_missing
-Children/Vulnerable Groups,37,5,71.6,1
-Data Retention & Erasure,22,5,63.6,1
-Security Safeguards,17,3,64.7,3
-Data Principal Rights,10,5,65.0,1
-Consent & Notice,8,4,56.2,2
-Intermediary/Platform Liability,6,4,58.3,2
-Cross-Border Transfer,4,2,50.0,4
+Security Safeguards,41,5,68.3,1
+Data Retention & Erasure,39,5,65.4,1
+Children/Vulnerable Groups,25,5,60.0,1
+Data Principal Rights,22,6,72.7,0
+Consent & Notice,20,6,55.0,0
+Intermediary/Platform Liability,18,6,66.7,0
+Cross-Border Transfer,10,5,50.0,1
+Grievance Redressal,7,5,50.0,1
+Significant Data Fiduciary Obligations,2,1,50.0,5
 Breach Notification,1,1,100.0,5
-Significant Data Fiduciary Obligations,1,1,50.0,5

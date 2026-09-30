@@ -1,0 +1,85 @@
+{
+  "model": "Baseline (TF-IDF + Logistic Regression)",
+  "status": "ACTIVE (temporary rollback from broken InLegalBERT)",
+  "validation_metrics": {
+    "accuracy": 0.8695652173913043,
+    "macro_f1": 0.527035641842944,
+    "classification_report": {
+      "Compliant": {
+        "precision": 0.4,
+        "recall": 0.4,
+        "f1-score": 0.4,
+        "support": 5.0
+      },
+      "Partially Compliant": {
+        "precision": 0.3333333333333333,
+        "recall": 0.18181818181818182,
+        "f1-score": 0.23529411764705882,
+        "support": 11.0
+      },
+      "Not Addressed": {
+        "precision": 0.9230769230769231,
+        "recall": 0.9696969696969697,
+        "f1-score": 0.9458128078817734,
+        "support": 99.0
+      },
+      "accuracy": 0.8695652173913043,
+      "macro avg": {
+        "precision": 0.5521367521367522,
+        "recall": 0.5171717171717172,
+        "f1-score": 0.527035641842944,
+        "support": 115.0
+      },
+      "weighted avg": {
+        "precision": 0.8439241917502788,
+        "recall": 0.8695652173913043,
+        "f1-score": 0.854119158907941,
+        "support": 115.0
+      }
+    }
+  },
+  "test_metrics": {
+    "accuracy": 0.8879310344827587,
+    "macro_f1": 0.4895411605937922,
+    "classification_report": {
+      "Compliant": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 5.0
+      },
+      "Partially Compliant": {
+        "precision": 0.625,
+        "recall": 0.45454545454545453,
+        "f1-score": 0.5263157894736842,
+        "support": 11.0
+      },
+      "Not Addressed": {
+        "precision": 0.9074074074074074,
+        "recall": 0.98,
+        "f1-score": 0.9423076923076923,
+        "support": 100.0
+      },
+      "accuracy": 0.8879310344827587,
+      "macro avg": {
+        "precision": 0.5108024691358025,
+        "recall": 0.4781818181818182,
+        "f1-score": 0.4895411605937922,
+        "support": 116.0
+      },
+      "weighted avg": {
+        "precision": 0.8415150063856961,
+        "recall": 0.8879310344827587,
+        "f1-score": 0.8622434734049979,
+        "support": 116.0
+      }
+    }
+  },
+  "notes": [
+    "InLegalBERT classifier withdrawn due to critical failures detected in audit",
+    "True InLegalBERT test performance: 13.79% accuracy, 0.2612 macro-F1",
+    "Reported InLegalBERT accuracy (96.55%) was fraudulent (post-hoc threshold tuning on validation set)",
+    "Baseline provides stable performance while InLegalBERT is retrained with class weights and cleaned input",
+    "Expected retraining timeline: 4-6 weeks"
+  ]
+}
