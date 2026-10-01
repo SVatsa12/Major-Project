@@ -1,7 +1,7 @@
 platform,audited_clauses,governance_clauses,rules_covered,compliant_count,partial_count,clause_quality_pct,strict_coverage_pct,applicable_scope_pct,combined_statutory_pct,effective_compliance_pct
-Google,98,36,14,8,28,61.1,36.8,40.0,28.6,35.0
-Snapchat,109,25,14,6,19,62.0,36.8,40.0,27.1,35.0
-WhatsApp,260,70,19,23,47,66.4,50.0,54.3,44.3,35.0
-Telegram,124,22,10,10,12,72.7,26.3,28.6,24.3,35.0
-Meta,126,16,9,3,13,59.4,23.7,25.7,17.1,34.0
-Youtube,54,16,7,1,15,53.1,18.4,20.0,11.4,28.1
+Google,106,44,20,14,30,65.9,52.6,71.4,55.4,35.0
+Meta,149,39,19,21,18,76.9,50.0,67.9,57.1,35.0
+Snapchat,112,28,16,9,19,66.1,42.1,57.1,41.1,35.0
+Telegram,131,29,15,17,12,79.3,39.5,53.6,48.2,35.0
+WhatsApp,268,78,24,31,47,69.9,63.2,85.7,73.2,35.0
+YouTube,60,22,11,5,17,61.4,28.9,39.3,26.8,35.0

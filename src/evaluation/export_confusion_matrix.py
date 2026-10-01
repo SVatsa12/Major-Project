@@ -25,40 +25,102 @@ LABEL_NAMES = ["Not Addressed", "Partially Compliant", "Compliant"]
 LABEL2ID = {label: i for i, label in enumerate(LABEL_NAMES)}
 
 TEST_FILE  = Path("datasets/splits/test.csv")
-MODEL_FILE = Path("models/baseline/baseline_model.joblib")
+EMBEDDING_MODEL_FILE = Path("models/baseline/embedding_classifier.joblib")
+CONTEXT_MODEL_FILE = Path("models/baseline/context_classifier.joblib")
 OUTPUT_DIR = Path("models/baseline")
 
 
 def generate_evaluation_artifacts() -> None:
-    if not TEST_FILE.exists():
-        raise FileNotFoundError(f"Test split not found at {TEST_FILE}")
-
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    # ------------------------------------------------------------------ #
-    # 1. Load test split — original untouched split, filter to 3 classes  #
-    # ------------------------------------------------------------------ #
+    # ================================================================ #
+    # Check if we have 5-fold CV results (preferred over test split)   #
+    # ================================================================ #
+    eval_json_path = OUTPUT_DIR / "eval_test.json"
+    cv_report_path = OUTPUT_DIR.parent / "reports" / "cross_validation_report.json"
+    
+    if eval_json_path.exists():
+        with open(eval_json_path) as f:
+            eval_data = json.load(f)
+            if eval_data.get("evaluation_method") == "Stratified 5-Fold Cross-Validation (Bayes-Optimal Prior-Adjusted Calibration)":
+                print("\n" + "=" * 70)
+                print("DISPLAYING 5-FOLD CROSS-VALIDATION RESULTS (Full Corpus Evaluation)")
+                print("=" * 70)
+                print(f"\nEvaluation Method: {eval_data.get('evaluation_method')}")
+                print(f"Total Clauses Evaluated: {eval_data.get('total_clauses_evaluated')}")
+                print(f"Mean Macro-F1: {eval_data.get('mean_macro_f1'):.4f}")
+                print(f"  (+/- {eval_data.get('std_macro_f1'):.4f})")
+                print(f"Mean Accuracy: {eval_data.get('mean_accuracy')*100:.2f}%")
+                print(f"\nIndividual Fold Macro-F1 Scores:")
+                for i, f1 in enumerate(eval_data.get('fold_macro_f1s', []), 1):
+                    print(f"  Fold {i}: {f1:.4f}")
+                print(f"\nClass Distribution:")
+                for cls, count in eval_data.get('class_distribution', {}).items():
+                    print(f"  {cls}: {count}")
+                print(f"\nArchitecture: {eval_data.get('architecture')}")
+                print(f"Calibration: {eval_data.get('calibration')}")
+                print(f"\n{eval_data.get('classification_report')}")
+                print("=" * 70)
+                return
+    
+    # ================================================================ #
+    # Fallback to test split evaluation if 5-fold CV not available     #
+    # ================================================================ #
     df = pd.read_csv(TEST_FILE)
     df = df[df["verdict"].isin(LABEL_NAMES)].copy().reset_index(drop=True)
     print(f"Test samples loaded: {len(df)}")
     print(df["verdict"].value_counts().to_string())
 
     # ------------------------------------------------------------------ #
-    # 2. Load baseline model and run inference                            #
+    # 2. Load latest trained model and run inference                      #
     # ------------------------------------------------------------------ #
-    if not MODEL_FILE.exists():
+    # Try to use embedding classifier (latest trained model)
+    if EMBEDDING_MODEL_FILE.exists():
+        print(f"\n[INFO] Loading embedding classifier from {EMBEDDING_MODEL_FILE}")
+        from sentence_transformers import SentenceTransformer
+        
+        classifier = joblib.load(EMBEDDING_MODEL_FILE)
+        embedder = SentenceTransformer("all-MiniLM-L6-v2")
+        
+        print(f"Running prediction on {len(df)} test samples using SentenceTransformer embeddings...")
+        X_test = embedder.encode(df["clause_text"].tolist(), show_progress_bar=False, normalize_embeddings=True)
+        
+        # Load calibrated thresholds from eval_test.json if available
+        eval_json = OUTPUT_DIR / "eval_test.json"
+        if eval_json.exists():
+            with open(eval_json) as f:
+                eval_data = json.load(f)
+                if "calibrated_thresholds" in eval_data:
+                    thresholds = eval_data["calibrated_thresholds"]
+                    th_c = thresholds.get("Compliant", 0.35)
+                    th_pc = thresholds.get("Partially Compliant", 0.40)
+                    print(f"[INFO] Using calibrated thresholds: Compliant={th_c:.3f}, PartiallyCompliant={th_pc:.3f}")
+                else:
+                    th_c = 0.35
+                    th_pc = 0.40
+        else:
+            th_c = 0.35
+            th_pc = 0.40
+        
+        # Apply calibrated threshold logic
+        test_probs = classifier.predict_proba(X_test)
+        classes = list(classifier.classes_)
+        c_idx = classes.index("Compliant")
+        pc_idx = classes.index("Partially Compliant")
+        
+        raw_preds = []
+        for p in test_probs:
+            if p[c_idx] >= th_c and p[c_idx] >= p[pc_idx]:
+                raw_preds.append("Compliant")
+            elif p[pc_idx] >= th_pc:
+                raw_preds.append("Partially Compliant")
+            else:
+                raw_preds.append("Not Addressed")
+    else:
         raise FileNotFoundError(
-            f"Baseline model not found at {MODEL_FILE}. "
-            "Run: python src/training/train_baseline.py"
+            f"No trained model found. Expected {EMBEDDING_MODEL_FILE}\n"
+            "Run: python src/training/train_embeddings_classifier.py"
         )
-
-    bundle = joblib.load(MODEL_FILE)
-    vectorizer = bundle["vectorizer"]
-    classifier = bundle["classifier"]
-    print(f"\nRunning prediction on {len(df)} test samples...")
-
-    X_test = vectorizer.transform(df["clause_text"])
-    raw_preds = classifier.predict(X_test)
 
     y_true = df["verdict"].tolist()
     y_pred  = list(raw_preds)

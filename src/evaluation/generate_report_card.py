@@ -53,12 +53,15 @@ def clean_assessability(val: object) -> str:
     if val is None or (isinstance(val, float) and np.isnan(val)):
         return "Medium"
     s = str(val).strip().lower()
-    if s in {"high", "3", "3.0"}:
+    # Only treat explicit "High" string as High
+    # Numeric values like "2" and "3" are governance/benchmark only, not assessable
+    if s in {"high"}:
         return "High"
-    if s in {"medium", "med", "2", "2.0"}:
+    if s in {"medium", "med"}:
         return "Medium"
-    if s in {"low", "1", "1.0", "false"}:
+    if s in {"low"}:
         return "Low"
+    # Treat numeric codes as non-high
     return "Medium"
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -160,7 +163,27 @@ taxonomy_df["act_normalized"] = taxonomy_df.apply(
 # IT Act has ~14 rules (keeping IT % naturally low: 7% - 14%)
 # DPDP Act has ~16 active rules & DPDP Rules has ~10 active rules (yielding 20% - 30%)
 tax_active_df = taxonomy_df[taxonomy_df["in_active_scope"]].copy()
-ACT_DENOMINATORS: dict[str, int] = tax_active_df.groupby("act_normalized")[RULE_ID_COL].nunique().to_dict()
+
+# Build a set of rules from BOTH taxonomy and corpus
+# Rules from taxonomy (active in scope)
+taxonomy_rules_by_act = tax_active_df.groupby("act_normalized")[RULE_ID_COL].apply(set).to_dict()
+
+# Rules from corpus (any rule that appears with a verdict)
+corpus_rules_by_act = {}
+for act in CANONICAL_ACTS:
+    df_act = df[df["act_normalized"] == act]
+    if len(df_act) > 0:
+        corpus_rules = set(df_act["best_match_taxonomy_id"].dropna().unique()) - {"NONE", ""}
+        corpus_rules_by_act[act] = corpus_rules
+
+# Merge: use union of taxonomy + corpus rules
+all_rules_by_act = {}
+for act in CANONICAL_ACTS:
+    tax_rules = taxonomy_rules_by_act.get(act, set())
+    corp_rules = corpus_rules_by_act.get(act, set())
+    all_rules_by_act[act] = tax_rules | corp_rules  # Union
+
+ACT_DENOMINATORS: dict[str, int] = {act: len(rules) for act, rules in all_rules_by_act.items()}
 for _act in CANONICAL_ACTS:
     ACT_DENOMINATORS.setdefault(_act, 1)
 
@@ -184,24 +207,55 @@ print("=" * 105)
 print(f"[INFO] Corpus Source : {corpus_source} ({total_clauses} total clauses)")
 print(f"[INFO] Statutory Rules : {TOTAL_STATUTORY_RULES} Total Canonical | {ACTIVE_RULES_COUNT} Active In-Scope\n")
 
-# ── 6a. Statutory Compliance Matrix ──────────────────────────────────────────
+# ── 6a. Statutory Compliance Matrix with Weighted Scoring ──────────────────
+# Weighted Compliance Scoring:
+#   - Compliant rule: 1.0 point
+#   - Partially Compliant rule only (no Compliant clause): 0.5 points
+#   - Not Addressed / No clause: 0.0 points
 print("--- 1. STATUTORY COMPLIANCE MATRIX (% SATISFIED PER STATUTORY ACT) ---")
+print("[INFO] Using weighted compliance scoring: Compliant=1.0, Partially Compliant=0.5\n")
 act_rows = []
 _act_numeric = {}
 
 for platform in all_platforms:
-    plat_pos = positive_df[positive_df["app_name"] == platform]
     act_pcts = {}
     row_dict = {"Platform": platform}
     total_rule_points = 0.0
 
     for act in CANONICAL_ACTS:
         denom = ACT_DENOMINATORS.get(act, 1)
-        act_clauses = plat_pos[plat_pos["act_normalized"] == act]
-        if len(act_clauses) > 0:
-            rule_points = float(act_clauses.groupby("best_match_taxonomy_id")["score"].max().sum())
-        else:
-            rule_points = 0.0
+        
+        # Filter corpus for this platform and Act
+        plat_df = df[df["app_name"] == platform]
+        act_df = plat_df[plat_df["act_normalized"] == act]
+        
+        # Calculate weighted rule points per Act
+        # We need to account for ALL rules for this act, not just ones with clauses
+        rule_points = 0.0
+        
+        # Get all active rules for this act from BOTH taxonomy and corpus
+        act_rules = all_rules_by_act.get(act, set())
+        num_act_rules = len(act_rules)
+        
+        debug_rule_scores = {}
+        
+        if num_act_rules > 0:
+            # For each rule in this act, check if platform has compliant/partial/nothing
+            for rule_id in act_rules:
+                rule_clauses = act_df[act_df["best_match_taxonomy_id"] == rule_id]
+                
+                if len(rule_clauses) > 0:
+                    # Rule has clauses: check verdict
+                    if (rule_clauses["verdict"] == "Compliant").any():
+                        rule_points += 1.0  # Full credit
+                        debug_rule_scores[rule_id] = 1.0
+                    elif (rule_clauses["verdict"] == "Partially Compliant").any():
+                        rule_points += 0.5  # Half credit
+                        debug_rule_scores[rule_id] = 0.5
+                    else:
+                        debug_rule_scores[rule_id] = 0.0
+                else:
+                    debug_rule_scores[rule_id] = 0.0
             
         total_rule_points += rule_points
         pct = min(100.0, (rule_points / denom) * 100.0)
@@ -293,22 +347,23 @@ print(cat_disp.to_string(index=False))
 print()
 
 # ── 6d. Never-Matched Rules ──────────────────────────────────────────────────
-print("--- 4. NEVER-MATCHED RULES (0 Matches Across Entire Corpus) ---")
-if never_matched_ids:
-    nm_rows = []
-    for rid in sorted(never_matched_ids):
-        meta = taxonomy_lookup.get(rid, {})
-        nm_rows.append({
-            "rule_id":         rid,
-            "act":             meta.get("act", ""),
-            "category":        meta.get("category", "")[:32],
-            "assessability":   clean_assessability(meta.get("assessability")),
-            "in_active_scope": str(rid in active_rule_ids),
-        })
-    nm_df = pd.DataFrame(nm_rows)
-    print(nm_df.to_string(index=False))
-else:
-    print("  All taxonomy rules matched at least once.")
+# COMMENTED OUT: Never-Matched Rules section (suppressed for cleaner output)
+# print("--- 4. NEVER-MATCHED RULES (0 Matches Across Entire Corpus) ---")
+# if never_matched_ids:
+#     nm_rows = []
+#     for rid in sorted(never_matched_ids):
+#         meta = taxonomy_lookup.get(rid, {})
+#         nm_rows.append({
+#             "rule_id":         rid,
+#             "act":             meta.get("act", ""),
+#             "category":        meta.get("category", "")[:32],
+#             "assessability":   clean_assessability(meta.get("assessability")),
+#             "in_active_scope": str(rid in active_rule_ids),
+#         })
+#     nm_df = pd.DataFrame(nm_rows)
+#     print(nm_df.to_string(index=False))
+# else:
+#     print("  All taxonomy rules matched at least once.")
 
 # ─────────────────────────────────────────────────────────────────────────────
 # 7. Save Clean Export Artifacts

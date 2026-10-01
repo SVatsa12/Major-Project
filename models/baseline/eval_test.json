@@ -1,14 +1,22 @@
 {
-  "evaluation_method": "Stratified 5-Fold Cross-Validation (Semantic Actionability Gating)",
-  "total_clauses_evaluated": 771,
-  "mean_macro_f1": 0.6693,
-  "mean_accuracy": 0.882,
+  "evaluation_method": "Stratified 5-Fold Cross-Validation (Bayes-Optimal Prior-Adjusted Calibration)",
+  "total_clauses_evaluated": 826,
+  "mean_macro_f1": 0.8035,
+  "mean_accuracy": 0.9104,
   "fold_macro_f1s": [
-    0.6088,
-    0.7165,
-    0.6747,
-    0.667,
-    0.6795
+    0.7964,
+    0.815,
+    0.825,
+    0.7841,
+    0.797
   ],
-  "model": "Context-Conditioned Sentence Transformer (all-MiniLM-L6-v2) + Actionability Regularized Head"
+  "std_macro_f1": 0.0146,
+  "architecture": "Single-Stage: SentenceTransformer(all-MiniLM-L6-v2) 384-dim + 8 Advanced Actionability Features (hedging, actions, nav, length, requirements, commitment, mechanisms, actionability_ratio)",
+  "calibration": "Optimized Probability Thresholding (grid search per fold: 0.35-0.75 for C, 0.20-0.50 for PC with 0.03 step)",
+  "class_distribution": {
+    "Not Addressed": 586,
+    "Partially Compliant": 143,
+    "Compliant": 97
+  },
+  "classification_report": "                     precision    recall  f1-score   support\n\n          Compliant     0.6739    0.6392    0.6561        97\n      Not Addressed     0.9880    0.9846    0.9863       586\nPartially Compliant     0.7533    0.7902    0.7713       143\n\n           accuracy                         0.9104       826\n          macro avg     0.8051    0.8047    0.8046       826\n       weighted avg     0.9105    0.9104    0.9103       826\n"
 }
