@@ -5,43 +5,17 @@
   "active_in_scope_rules": 28,
   "platform_rankings": [
     {
-      "platform": "Google",
-      "audited_clauses": 106,
-      "governance_clauses": 44,
-      "rules_covered": 20,
-      "compliant_count": 14,
-      "partial_count": 30,
-      "clause_quality_pct": 65.9,
-      "strict_coverage_pct": 52.6,
-      "applicable_scope_pct": 71.4,
-      "combined_statutory_pct": 55.4,
-      "effective_compliance_pct": 35.0
-    },
-    {
-      "platform": "Meta",
-      "audited_clauses": 149,
-      "governance_clauses": 39,
-      "rules_covered": 19,
-      "compliant_count": 21,
-      "partial_count": 18,
-      "clause_quality_pct": 76.9,
-      "strict_coverage_pct": 50.0,
-      "applicable_scope_pct": 67.9,
-      "combined_statutory_pct": 57.1,
-      "effective_compliance_pct": 35.0
-    },
-    {
-      "platform": "Snapchat",
-      "audited_clauses": 112,
-      "governance_clauses": 28,
-      "rules_covered": 16,
-      "compliant_count": 9,
-      "partial_count": 19,
-      "clause_quality_pct": 66.1,
-      "strict_coverage_pct": 42.1,
-      "applicable_scope_pct": 57.1,
-      "combined_statutory_pct": 41.1,
-      "effective_compliance_pct": 35.0
+      "platform": "WhatsApp",
+      "audited_clauses": 268,
+      "governance_clauses": 78,
+      "rules_covered": 24,
+      "compliant_count": 31,
+      "partial_count": 47,
+      "clause_quality_pct": 69.9,
+      "strict_coverage_pct": 63.2,
+      "applicable_scope_pct": 85.7,
+      "combined_statutory_pct": 48.7,
+      "effective_compliance_pct": 57.2
     },
     {
       "platform": "Telegram",
@@ -53,21 +27,47 @@
       "clause_quality_pct": 79.3,
       "strict_coverage_pct": 39.5,
       "applicable_scope_pct": 53.6,
-      "combined_statutory_pct": 48.2,
-      "effective_compliance_pct": 35.0
+      "combined_statutory_pct": 27.6,
+      "effective_compliance_pct": 48.3
     },
     {
-      "platform": "WhatsApp",
-      "audited_clauses": 268,
-      "governance_clauses": 78,
-      "rules_covered": 24,
-      "compliant_count": 31,
-      "partial_count": 47,
-      "clause_quality_pct": 69.9,
-      "strict_coverage_pct": 63.2,
-      "applicable_scope_pct": 85.7,
-      "combined_statutory_pct": 73.2,
-      "effective_compliance_pct": 35.0
+      "platform": "Google",
+      "audited_clauses": 106,
+      "governance_clauses": 44,
+      "rules_covered": 20,
+      "compliant_count": 14,
+      "partial_count": 30,
+      "clause_quality_pct": 65.9,
+      "strict_coverage_pct": 52.6,
+      "applicable_scope_pct": 71.4,
+      "combined_statutory_pct": 32.9,
+      "effective_compliance_pct": 46.1
+    },
+    {
+      "platform": "Meta",
+      "audited_clauses": 149,
+      "governance_clauses": 39,
+      "rules_covered": 19,
+      "compliant_count": 21,
+      "partial_count": 18,
+      "clause_quality_pct": 76.9,
+      "strict_coverage_pct": 50.0,
+      "applicable_scope_pct": 67.9,
+      "combined_statutory_pct": 25.0,
+      "effective_compliance_pct": 45.8
+    },
+    {
+      "platform": "Snapchat",
+      "audited_clauses": 112,
+      "governance_clauses": 28,
+      "rules_covered": 16,
+      "compliant_count": 9,
+      "partial_count": 19,
+      "clause_quality_pct": 66.1,
+      "strict_coverage_pct": 42.1,
+      "applicable_scope_pct": 57.1,
+      "combined_statutory_pct": 27.6,
+      "effective_compliance_pct": 43.0
     },
     {
       "platform": "YouTube",
@@ -79,8 +79,8 @@
       "clause_quality_pct": 61.4,
       "strict_coverage_pct": 28.9,
       "applicable_scope_pct": 39.3,
-      "combined_statutory_pct": 26.8,
-      "effective_compliance_pct": 35.0
+      "combined_statutory_pct": 17.1,
+      "effective_compliance_pct": 34.8
     }
   ],
   "category_breakdown": [

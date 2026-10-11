@@ -1,5 +1,5 @@
 """
-Platform Compliance Report Card Generator -- Clean Formatted Edition.
+Platform Compliance Report Card Generator -- Fixed Clean Edition.
 
 Audits social media policies against Indian Data Governance Frameworks:
   - Digital Personal Data Protection Act, 2023 (DPDP Act 2023)
@@ -53,15 +53,12 @@ def clean_assessability(val: object) -> str:
     if val is None or (isinstance(val, float) and np.isnan(val)):
         return "Medium"
     s = str(val).strip().lower()
-    # Only treat explicit "High" string as High
-    # Numeric values like "2" and "3" are governance/benchmark only, not assessable
     if s in {"high"}:
         return "High"
     if s in {"medium", "med"}:
         return "Medium"
     if s in {"low"}:
         return "Low"
-    # Treat numeric codes as non-high
     return "Medium"
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -157,38 +154,21 @@ taxonomy_df["act_normalized"] = taxonomy_df.apply(
 )
 
 # ─────────────────────────────────────────────────────────────────────────────
-# DYNAMIC DENOMINATORS: In-Scope Assessable Rules per Statutory Act
+# 5. Fixed Statutory Act Denominators (Directly from Taxonomy)
 # ─────────────────────────────────────────────────────────────────────────────
-# We calculate denominators on active in-scope rules (ACTIVE_RULES_COUNT)
-# IT Act has ~14 rules (keeping IT % naturally low: 7% - 14%)
-# DPDP Act has ~16 active rules & DPDP Rules has ~10 active rules (yielding 20% - 30%)
-tax_active_df = taxonomy_df[taxonomy_df["in_active_scope"]].copy()
+# Derives canonical denominators directly from taxonomy rules per Act
+ACT_DENOMINATORS: dict[str, int] = {}
+taxonomy_rules_by_act: dict[str, set[str]] = {}
 
-# Build a set of rules from BOTH taxonomy and corpus
-# Rules from taxonomy (active in scope)
-taxonomy_rules_by_act = tax_active_df.groupby("act_normalized")[RULE_ID_COL].apply(set).to_dict()
-
-# Rules from corpus (any rule that appears with a verdict)
-corpus_rules_by_act = {}
 for act in CANONICAL_ACTS:
-    df_act = df[df["act_normalized"] == act]
-    if len(df_act) > 0:
-        corpus_rules = set(df_act["best_match_taxonomy_id"].dropna().unique()) - {"NONE", ""}
-        corpus_rules_by_act[act] = corpus_rules
+    rules = set(taxonomy_df[taxonomy_df["act_normalized"] == act][RULE_ID_COL].dropna().unique()) - {"", "NONE"}
+    taxonomy_rules_by_act[act] = rules
+    ACT_DENOMINATORS[act] = len(rules) if len(rules) > 0 else 1
 
-# Merge: use union of taxonomy + corpus rules
-all_rules_by_act = {}
-for act in CANONICAL_ACTS:
-    tax_rules = taxonomy_rules_by_act.get(act, set())
-    corp_rules = corpus_rules_by_act.get(act, set())
-    all_rules_by_act[act] = tax_rules | corp_rules  # Union
-
-ACT_DENOMINATORS: dict[str, int] = {act: len(rules) for act, rules in all_rules_by_act.items()}
-for _act in CANONICAL_ACTS:
-    ACT_DENOMINATORS.setdefault(_act, 1)
+total_taxonomy_scope_count = sum(ACT_DENOMINATORS.values())
 
 # ─────────────────────────────────────────────────────────────────────────────
-# 5. Score Verdicts
+# 6. Score Verdicts
 # ─────────────────────────────────────────────────────────────────────────────
 df["score"] = df["verdict"].map(VERDICT_SCORES).fillna(0.0).astype(float)
 positive_df = df[df["verdict"].isin(["Compliant", "Partially Compliant"])].copy()
@@ -196,74 +176,52 @@ all_platforms: list[str] = sorted(df["app_name"].dropna().unique())
 
 all_pos_ids = set(positive_df["best_match_taxonomy_id"].dropna().unique()) - {"NONE", ""}
 never_matched_ids = set(taxonomy_df[RULE_ID_COL]) - all_pos_ids
-theoretical_max_strict = round((len(all_pos_ids) / TOTAL_STATUTORY_RULES) * 100.0, 1)
 
 # ─────────────────────────────────────────────────────────────────────────────
-# 6. Generate Reports & Format Clean Terminal Tables
+# 7. Generate Reports & Format Clean Terminal Tables
 # ─────────────────────────────────────────────────────────────────────────────
 print("\n" + "=" * 105)
 print("                          INDIA DATA GOVERNANCE COMPLIANCE AUDIT REPORT CARD")
 print("=" * 105)
 print(f"[INFO] Corpus Source : {corpus_source} ({total_clauses} total clauses)")
-print(f"[INFO] Statutory Rules : {TOTAL_STATUTORY_RULES} Total Canonical | {ACTIVE_RULES_COUNT} Active In-Scope\n")
+print(f"[INFO] Statutory Rules : {TOTAL_STATUTORY_RULES} Total Canonical | {ACTIVE_RULES_COUNT} Active In-Scope")
+print(f"[INFO] Statutory Denominators : {ACT_DENOMINATORS}\n")
 
-# ── 6a. Statutory Compliance Matrix with Weighted Scoring ──────────────────
-# Weighted Compliance Scoring:
-#   - Compliant rule: 1.0 point
-#   - Partially Compliant rule only (no Compliant clause): 0.5 points
-#   - Not Addressed / No clause: 0.0 points
+# ── 7a. Statutory Compliance Matrix with Strict Weighted Scoring ─────────────
 print("--- 1. STATUTORY COMPLIANCE MATRIX (% SATISFIED PER STATUTORY ACT) ---")
-print("[INFO] Using weighted compliance scoring: Compliant=1.0, Partially Compliant=0.5\n")
+print("[INFO] Weighted scoring applied: Compliant = 1.0 pt | Partially Compliant = 0.5 pts\n")
+
 act_rows = []
 _act_numeric = {}
 
 for platform in all_platforms:
     act_pcts = {}
     row_dict = {"Platform": platform}
-    total_rule_points = 0.0
+    total_platform_points = 0.0
+
+    plat_df = df[df["app_name"] == platform]
 
     for act in CANONICAL_ACTS:
         denom = ACT_DENOMINATORS.get(act, 1)
-        
-        # Filter corpus for this platform and Act
-        plat_df = df[df["app_name"] == platform]
-        act_df = plat_df[plat_df["act_normalized"] == act]
-        
-        # Calculate weighted rule points per Act
-        # We need to account for ALL rules for this act, not just ones with clauses
-        rule_points = 0.0
-        
-        # Get all active rules for this act from BOTH taxonomy and corpus
-        act_rules = all_rules_by_act.get(act, set())
-        num_act_rules = len(act_rules)
-        
-        debug_rule_scores = {}
-        
-        if num_act_rules > 0:
-            # For each rule in this act, check if platform has compliant/partial/nothing
-            for rule_id in act_rules:
-                rule_clauses = act_df[act_df["best_match_taxonomy_id"] == rule_id]
-                
-                if len(rule_clauses) > 0:
-                    # Rule has clauses: check verdict
-                    if (rule_clauses["verdict"] == "Compliant").any():
-                        rule_points += 1.0  # Full credit
-                        debug_rule_scores[rule_id] = 1.0
-                    elif (rule_clauses["verdict"] == "Partially Compliant").any():
-                        rule_points += 0.5  # Half credit
-                        debug_rule_scores[rule_id] = 0.5
-                    else:
-                        debug_rule_scores[rule_id] = 0.0
-                else:
-                    debug_rule_scores[rule_id] = 0.0
-            
-        total_rule_points += rule_points
-        pct = min(100.0, (rule_points / denom) * 100.0)
+        act_rules = taxonomy_rules_by_act.get(act, set())
+        act_clauses = plat_df[plat_df["act_normalized"] == act]
+
+        act_points = 0.0
+        for rule_id in act_rules:
+            matched_clauses = act_clauses[act_clauses["best_match_taxonomy_id"] == rule_id]
+            if len(matched_clauses) > 0:
+                if (matched_clauses["verdict"] == "Compliant").any():
+                    act_points += 1.0
+                elif (matched_clauses["verdict"] == "Partially Compliant").any():
+                    act_points += 0.5
+
+        total_platform_points += act_points
+        pct = min(100.0, (act_points / denom) * 100.0)
         act_pcts[act] = round(pct, 1)
         row_dict[act] = f"{pct:5.1f}%"
 
-    # Combined Final is the exact fraction of all active in-scope rules satisfied
-    comb = round((total_rule_points / ACTIVE_RULES_COUNT) * 100.0, 1)
+    # Combined Final is based on all statutory rules across the 3 Acts
+    comb = round((total_platform_points / total_taxonomy_scope_count) * 100.0, 1)
     row_dict["Combined Final"] = f"{comb:5.1f}%"
     _act_numeric[platform] = {**act_pcts, "combined": comb}
     act_rows.append(row_dict)
@@ -272,10 +230,9 @@ act_matrix_df = pd.DataFrame(act_rows).set_index("Platform")
 print(act_matrix_df.to_string())
 print()
 
-# ── 6b. Platform Rankings ────────────────────────────────────────────────────
+# ── 7b. Platform Rankings ────────────────────────────────────────────────────
 print("--- 2. OVERALL PLATFORM COMPLIANCE RANKINGS ---")
 rankings_rows = []
-warnings_list = []
 
 for platform in all_platforms:
     plat_all = df[df["app_name"] == platform]
@@ -290,12 +247,6 @@ for platform in all_platforms:
         rule_scores = plat_pos.groupby("best_match_taxonomy_id")["score"].max()
         rules_cov   = int(len(rule_scores))
         quality_pct = float(plat_pos["score"].mean() * 100.0)
-        
-        # Check rule dominance
-        rule_counts = plat_pos["best_match_taxonomy_id"].value_counts()
-        top_share = rule_counts.iloc[0] / gov_cnt
-        if top_share > 0.30:
-            warnings_list.append(f"  • {platform:10s} : {rule_counts.index[0]} accounts for {top_share:.0%} of positive clauses")
     else:
         rules_cov   = 0
         quality_pct = 0.0
@@ -303,7 +254,9 @@ for platform in all_platforms:
     strict_cov = (rules_cov / TOTAL_STATUTORY_RULES) * 100.0
     scope_cov  = (rules_cov / ACTIVE_RULES_COUNT) * 100.0
     comb_pct   = _act_numeric.get(platform, {}).get("combined", 0.0)
-    effective  = round(min(35.0, (0.4 * quality_pct) + (0.6 * comb_pct)), 1)
+    
+    # Dynamic effective compliance score (no artificial 35.0% clamp)
+    effective  = round((0.4 * quality_pct) + (0.6 * comb_pct), 1)
 
     rankings_rows.append({
         "platform":                 platform,
@@ -326,10 +279,9 @@ for col in ["clause_quality_pct", "strict_coverage_pct", "applicable_scope_pct",
     display_df[col] = display_df[col].map(lambda x: f"{x:5.1f}%")
 
 print(display_df.to_string(index=False))
+print()
 
-
-
-# ── 6c. Regulatory Domain Gap Analysis ───────────────────────────────────────
+# ── 7c. Regulatory Domain Gap Analysis ───────────────────────────────────────
 print("--- 3. REGULATORY DOMAIN GAP ANALYSIS ---")
 count_col = "clause_id" if "clause_id" in positive_df.columns else "score"
 cat_summary = positive_df.groupby("dpdp_category").agg(
@@ -346,27 +298,8 @@ cat_disp["avg_quality_score"] = cat_disp["avg_quality_score"].map(lambda x: f"{x
 print(cat_disp.to_string(index=False))
 print()
 
-# ── 6d. Never-Matched Rules ──────────────────────────────────────────────────
-# COMMENTED OUT: Never-Matched Rules section (suppressed for cleaner output)
-# print("--- 4. NEVER-MATCHED RULES (0 Matches Across Entire Corpus) ---")
-# if never_matched_ids:
-#     nm_rows = []
-#     for rid in sorted(never_matched_ids):
-#         meta = taxonomy_lookup.get(rid, {})
-#         nm_rows.append({
-#             "rule_id":         rid,
-#             "act":             meta.get("act", ""),
-#             "category":        meta.get("category", "")[:32],
-#             "assessability":   clean_assessability(meta.get("assessability")),
-#             "in_active_scope": str(rid in active_rule_ids),
-#         })
-#     nm_df = pd.DataFrame(nm_rows)
-#     print(nm_df.to_string(index=False))
-# else:
-#     print("  All taxonomy rules matched at least once.")
-
 # ─────────────────────────────────────────────────────────────────────────────
-# 7. Save Clean Export Artifacts
+# 8. Save Clean Export Artifacts
 # ─────────────────────────────────────────────────────────────────────────────
 act_matrix_numeric = act_matrix_df.copy()
 for col in act_matrix_numeric.columns:
@@ -390,6 +323,6 @@ summary_meta = {
     json.dumps(summary_meta, indent=2, default=str), encoding="utf-8"
 )
 
-print("\n" + "=" * 105)
+print("=" * 105)
 print(f"Report card generated and successfully saved to '{REPORT_OUTPUT_DIR}/'")
 print("=" * 105 + "\n")
