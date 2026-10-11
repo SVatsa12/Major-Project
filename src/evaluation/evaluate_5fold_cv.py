@@ -1,211 +1,231 @@
 """
 src/evaluation/evaluate_5fold_cv.py
-Stratified 5-Fold Cross-Validation with Two-Tier Semantic Actionability Gating.
-Resolves the Partially Compliant vs Compliant boundary to reach >= 0.85 Macro-F1.
+Stratified 5-Fold Cross-Validation per Research Paper Specification.
+
+Implements leak-free threshold calibration with:
+- Context-formatted string-level conditioning
+- all-MiniLM-L6-v2 embeddings (384 dims, mean pooling, L2-normalized)
+- 8 actionability features, scaled with RobustScaler
+- LogisticRegression with specified hyperparameters
+- Inner stratified CV for threshold calibration on training fold only
 """
 
 import json
+import sys
 from pathlib import Path
-import re
 import numpy as np
 import pandas as pd
-import scipy.sparse as sp
 from sentence_transformers import SentenceTransformer
-from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report, f1_score, accuracy_score
 from sklearn.model_selection import StratifiedKFold
-from sklearn.preprocessing import StandardScaler
+import joblib
+
+# Add project root to path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+
+from src.training.feature_extraction import extract_actionability_features
+from src.training.train_classifier import (
+    build_context_texts,
+    train_and_evaluate_fold,
+)
 
 CORPUS_PATH = Path("corpus/labeled_clauses_bootstrap.csv")
 TAXONOMY_PATH = Path("corpus/dpdp_taxonomy_final.json")
 OUTPUT_DIR = Path("reports")
+MODELS_DIR = Path("models")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+MODELS_DIR.mkdir(parents=True, exist_ok=True)
 
+# Load data
 df = pd.read_csv(CORPUS_PATH)
 taxonomy = json.loads(TAXONOMY_PATH.read_text(encoding="utf-8"))
 tax_map = {item["taxonomy_id"]: item for item in taxonomy}
 
-print(f"[INFO] Loaded {len(df)} clauses across 6 platforms.")
+print(f"[INFO] Loaded {len(df)} clauses from {CORPUS_PATH}")
+print("\nClass distribution:")
 print(df["verdict"].value_counts().to_string())
 
-# 1. Advanced Feature Engineering: Multi-Tier Actionability Signals
-HEDGING_TERMS = ["may", "where feasible", "endeavor", "reasonable efforts", "strive", "when appropriate", "from time to time", "to the extent", "as applicable"]
-ACTION_TERMS = ["settings", "click", "delete your account", "will delete", "end-to-end encrypt", "transparency report", "do not share", "never sell", "must obtain", "you can request", "you can access", "download your data", "port your data", "opt-out", "unsubscribe", "disable", "turn off"]
-REQUIREMENT_KEYWORDS = ["requirement", "requirement:", "must", "shall", "required", "needs to", "has to", "is mandatory"]
-COMMITMENT_KEYWORDS = ["commit", "committed", "commitment", "commit to", "dedicated", "ensure", "guarantee"]
-MECHANISM_KEYWORDS = ["mechanism", "process", "procedure", "steps", "how to", "instructions", "click", "link", "button", "navigate"]
+# Verify expected corpus distribution
+expected_dist = {"Not Addressed": 586, "Partially Compliant": 143, "Compliant": 97}
+actual_dist = df["verdict"].value_counts().to_dict()
+print(f"\n[CHECK] Expected distribution: {expected_dist}")
+print(f"[CHECK] Actual distribution: {actual_dist}")
+for cls, expected_count in expected_dist.items():
+    actual_count = actual_dist.get(cls, 0)
+    if actual_count != expected_count:
+        print(f"[WARNING] Class '{cls}': expected {expected_count}, got {actual_count}")
 
-def extract_advanced_actionability(texts):
-    features = []
-    for t in texts:
-        tl = str(t).lower()
-        
-        # Core actionability signals
-        hedge_count = sum(1 for w in HEDGING_TERMS if w in tl)
-        action_count = sum(1 for w in ACTION_TERMS if w in tl)
-        has_nav = int(">" in t or "->" in t or "http" in t or "@" in t or "click" in tl)
-        length = len(t.split())
-        
-        # Secondary signals for Compliant detection
-        req_count = sum(1 for w in REQUIREMENT_KEYWORDS if w in tl)
-        commit_count = sum(1 for w in COMMITMENT_KEYWORDS if w in tl)
-        mechanism_count = sum(1 for w in MECHANISM_KEYWORDS if w in tl)
-        
-        # Compute actionability ratio
-        total_action_signals = action_count + mechanism_count + commit_count
-        actionability_ratio = total_action_signals / max(1, hedge_count + total_action_signals)
-        
-        features.append([
-            hedge_count,           # 0: hedging signals
-            action_count,          # 1: explicit action terms
-            has_nav,              # 2: UI/contact navigation
-            length / 100.0,       # 3: normalized length
-            req_count,            # 4: requirements language
-            commit_count,         # 5: commitment language
-            mechanism_count,      # 6: procedural clarity
-            actionability_ratio   # 7: overall actionability score
-        ])
-    return np.array(features, dtype=np.float32)
-scaler = StandardScaler()
-action_feats = extract_advanced_actionability(df["clause_text"])
-action_feats_scaled = scaler.fit_transform(action_feats)
+# Build context texts with format: [app_name] Mandate: checkable_test | Policy: clause_text
+print("\n[INFO] Building context-formatted input texts...")
+context_texts = build_context_texts(df, tax_map)
 
-# 2. Enrich Context
-enriched_texts = []
-for _, r in df.iterrows():
-    rule_id = str(r.get("best_match_taxonomy_id", "NONE"))
-    base_text = str(r["clause_text"]).strip()
-    app = str(r.get("app_name", "Platform"))
-    
-    if rule_id in tax_map:
-        rule_info = tax_map[rule_id]
-        req = rule_info.get("checkable_test", rule_info.get("requirement", ""))
-        cat = rule_info.get("category", "")
-        enriched = f"[{app}] Category: {cat} | Requirement: {req} | Policy Clause: {base_text}"
-    else:
-        enriched = f"[{app}] Category: General Terms | Policy Clause: {base_text}"
-    enriched_texts.append(enriched)
+# Extract 8 actionability features (early, before embeddings which are slow)
+print("[INFO] Extracting 8 actionability features...")
+action_features = extract_actionability_features(df["clause_text"].values)
 
-# 3. Dense Embeddings
-print("\n[INFO] Generating all-MiniLM-L6-v2 embeddings for full corpus...")
-embedder = SentenceTransformer("all-MiniLM-L6-v2")
-X_dense = embedder.encode(enriched_texts, show_progress_bar=True, normalize_embeddings=True)
-
-# Combine features with optimal emphasis
-X_all = np.hstack([X_dense, action_feats_scaled * 0.60])
+# Get class labels
 y_all = df["verdict"].values
 
-# 4. Stratified 5-Fold Cross Validation
+# Generate embeddings: all-MiniLM-L6-v2, max_seq_length=256, mean pooling, L2-normalized
+# This is done per-fold to avoid memory issues
+print("[INFO] Will generate all-MiniLM-L6-v2 embeddings per-fold (384-dim, L2-normalized)...")
+embedder = SentenceTransformer("all-MiniLM-L6-v2")
+
+# 5-Fold Stratified Cross-Validation
+print("\n" + "=" * 80)
+print("STRATIFIED 5-FOLD CROSS-VALIDATION WITH LEAK-FREE THRESHOLD CALIBRATION")
+print("=" * 80)
+
 skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
 
+fold_results = []
+all_true_labels = []
+all_pred_labels = []
 fold_f1s = []
 fold_accs = []
-all_true = []
-all_pred = []
 
-print("\n" + "=" * 72)
-print("EXECUTING STRATIFIED 5-FOLD CROSS-VALIDATION (CALIBRATED ACTIONABILITY)")
-print("=" * 72)
+# Pre-compute all embeddings to avoid doing it per-fold
+print("\n[INFO] Pre-computing embeddings for all clauses...")
+embeddings = embedder.encode(
+    context_texts,
+    show_progress_bar=True,
+    convert_to_numpy=True,
+    normalize_embeddings=True  # L2 normalization
+)
 
-for fold, (train_idx, test_idx) in enumerate(skf.split(X_all, y_all), 1):
-    X_tr, y_tr = X_all[train_idx], y_all[train_idx]
-    X_te, y_te = X_all[test_idx], y_all[test_idx]
+for fold_idx, (train_idx, test_idx) in enumerate(skf.split(embeddings, y_all), 1):
+    print(f"\n--- Fold {fold_idx}/5 ---")
     
-    clf = LogisticRegression(C=2.5, max_iter=1000, class_weight="balanced", random_state=42)
-    clf.fit(X_tr, y_tr)
+    # Split data
+    X_train_embedding = embeddings[train_idx]
+    X_test_embedding = embeddings[test_idx]
+    X_train_features = action_features[train_idx]
+    X_test_features = action_features[test_idx]
+    y_train = y_all[train_idx]
+    y_test = y_all[test_idx]
     
-    probs = clf.predict_proba(X_te)
-    classes = list(clf.classes_)
-    c_idx = classes.index("Compliant")
-    pc_idx = classes.index("Partially Compliant")
-    na_idx = classes.index("Not Addressed")
+    # Prepare data dict for train function
+    X_train_dict = {"embedding": X_train_embedding, "features": X_train_features}
+    X_test_dict = {"embedding": X_test_embedding, "features": X_test_features}
     
-    # Compute class priors from training fold
-    unique, counts = np.unique(y_tr, return_counts=True)
-    class_prior_dict = dict(zip(unique, counts / len(y_tr)))
-    class_priors = np.array([
-        class_prior_dict.get("Compliant", 0.07),
-        class_prior_dict.get("Not Addressed", 0.76),
-        class_prior_dict.get("Partially Compliant", 0.17)
-    ])
+    # Train and calibrate thresholds
+    result = train_and_evaluate_fold(X_train_dict, y_train, X_test_dict, y_test, inner_cv_splits=3)
     
-    # Extract probability columns for efficient grid search
-    p_compliant = probs[:, c_idx]
-    p_partial = probs[:, pc_idx]
-    p_not_addr = probs[:, na_idx]
+    # Get predictions
+    test_preds = result["predictions"]
+    tau_c = result["tau_compliant"]
+    tau_p = result["tau_partial"]
     
-    # Grid-search optimal thresholds for this fold to maximize Macro-F1
-    best_c_thresh = 0.50
-    best_pc_thresh = 0.35
-    best_f1_fold = 0.0
-    
-    for c_thresh in np.arange(0.25, 0.65, 0.02):
-        for pc_thresh in np.arange(0.15, 0.40, 0.02):
-            fold_preds = []
-            for i in range(len(probs)):
-                # High-precision hierarchical decision
-                # Require Compliant to have highest probability AND exceed threshold
-                if p_compliant[i] >= c_thresh and p_compliant[i] >= p_partial[i] and p_compliant[i] >= p_not_addr[i]:
-                    fold_preds.append("Compliant")
-                elif p_partial[i] >= pc_thresh and p_partial[i] >= p_not_addr[i]:
-                    fold_preds.append("Partially Compliant")
-                else:
-                    fold_preds.append("Not Addressed")
-            
-            f1_fold = f1_score(y_te, fold_preds, average="macro", zero_division=0)
-            if f1_fold > best_f1_fold:
-                best_f1_fold = f1_fold
-                best_c_thresh = c_thresh
-                best_pc_thresh = pc_thresh
-    
-    # Apply best thresholds to generate final predictions
-    fold_preds = []
-    for i in range(len(probs)):
-        if p_compliant[i] >= best_c_thresh and p_compliant[i] >= p_partial[i] and p_compliant[i] >= p_not_addr[i]:
-            fold_preds.append("Compliant")
-        elif p_partial[i] >= best_pc_thresh and p_partial[i] >= p_not_addr[i]:
-            fold_preds.append("Partially Compliant")
-        else:
-            fold_preds.append("Not Addressed")
-    
-    f1 = f1_score(y_te, fold_preds, average="macro", zero_division=0)
-    acc = accuracy_score(y_te, fold_preds)
+    # Compute metrics
+    f1 = f1_score(y_test, test_preds, average="macro", zero_division=0)
+    acc = accuracy_score(y_test, test_preds)
     
     fold_f1s.append(f1)
     fold_accs.append(acc)
-    all_true.extend(y_te)
-    all_pred.extend(fold_preds)
+    all_true_labels.extend(y_test)
+    all_pred_labels.extend(test_preds)
     
-    print(f"Fold {fold}/5 | Macro-F1: {f1:.4f} | Accuracy: {acc*100:.2f}% | C_thresh: {best_c_thresh:.2f} | PC_thresh: {best_pc_thresh:.2f}")
+    fold_results.append({
+        "fold": fold_idx,
+        "macro_f1": round(f1, 4),
+        "accuracy": round(acc, 4),
+        "tau_compliant": round(tau_c, 4),
+        "tau_partial": round(tau_p, 4),
+    })
+    
+    print(f"  Macro-F1: {f1:.4f} | Accuracy: {acc:.4f}")
+    print(f"  tau_compliant: {tau_c:.4f} | tau_partial: {tau_p:.4f}")
 
+# Compute aggregate metrics
 mean_f1 = float(np.mean(fold_f1s))
+std_f1 = float(np.std(fold_f1s))
 mean_acc = float(np.mean(fold_accs))
 
-print("\n" + "=" * 72)
-print(f"5-FOLD CROSS-VALIDATION FINAL AUDIT REPORT")
-print(f"Mean Macro-F1: {mean_f1:.4f} (+/- {np.std(fold_f1s):.4f}) | Mean Accuracy: {mean_acc*100:.2f}%")
-print("=" * 72)
+print("\n" + "=" * 80)
+print("CROSS-VALIDATION SUMMARY")
+print("=" * 80)
+print(f"Mean Macro-F1: {mean_f1:.4f} (std: {std_f1:.4f})")
+print(f"Mean Accuracy: {mean_acc:.4f}")
 
-print("\n--- Aggregate Classification Report (All 771 Evaluated Clauses) ---")
-print(classification_report(all_true, all_pred, digits=4, zero_division=0))
+# Per-fold thresholds
+thresholds_per_fold = [
+    {"fold": r["fold"], "tau_compliant": r["tau_compliant"], "tau_partial": r["tau_partial"]}
+    for r in fold_results
+]
+tau_compliant_median = float(np.median([r["tau_compliant"] for r in fold_results]))
+tau_partial_median = float(np.median([r["tau_partial"] for r in fold_results]))
 
+print(f"\nPer-fold tau_compliant: {[r['tau_compliant'] for r in fold_results]}")
+print(f"  Median: {tau_compliant_median:.4f}")
+print(f"Per-fold tau_partial: {[r['tau_partial'] for r in fold_results]}")
+print(f"  Median: {tau_partial_median:.4f}")
+
+# Classification report
+print("\n" + "-" * 80)
+print("POOLED CLASSIFICATION REPORT (All folds)")
+print("-" * 80)
+class_report_str = classification_report(
+    all_true_labels, all_pred_labels,
+    labels=["Not Addressed", "Partially Compliant", "Compliant"],
+    digits=4,
+    zero_division=0
+)
+print(class_report_str)
+
+# Parse classification report for JSON
+class_report_dict = classification_report(
+    all_true_labels, all_pred_labels,
+    labels=["Not Addressed", "Partially Compliant", "Compliant"],
+    output_dict=True,
+    digits=4,
+    zero_division=0
+)
+
+# Prepare output report
 report_data = {
-    "evaluation_method": "Stratified 5-Fold Cross-Validation (Bayes-Optimal Prior-Adjusted Calibration)",
+    "evaluation_method": "Stratified 5-Fold Cross-Validation (Leak-Free Threshold Calibration)",
     "total_clauses_evaluated": len(df),
+    "expected_corpus_distribution": expected_dist,
+    "actual_corpus_distribution": actual_dist,
     "mean_macro_f1": round(mean_f1, 4),
+    "std_macro_f1": round(std_f1, 4),
     "mean_accuracy": round(mean_acc, 4),
-    "fold_macro_f1s": [round(f, 4) for f in fold_f1s],
-    "std_macro_f1": round(float(np.std(fold_f1s)), 4),
-    "architecture": "Single-Stage: SentenceTransformer(all-MiniLM-L6-v2) 384-dim + 8 Advanced Actionability Features (hedging, actions, nav, length, requirements, commitment, mechanisms, actionability_ratio)",
-    "calibration": "Optimized Probability Thresholding (grid search per fold: 0.35-0.75 for C, 0.20-0.50 for PC with 0.03 step)",
-    "class_distribution": {
-        "Not Addressed": len(df[df["verdict"] == "Not Addressed"]),
-        "Partially Compliant": len(df[df["verdict"] == "Partially Compliant"]),
-        "Compliant": len(df[df["verdict"] == "Compliant"])
+    "per_fold_results": fold_results,
+    "per_fold_thresholds": thresholds_per_fold,
+    "tau_compliant_median": round(tau_compliant_median, 4),
+    "tau_partial_median": round(tau_partial_median, 4),
+    "embedding_model": "all-MiniLM-L6-v2 (384-dim, mean pooling, L2-normalized)",
+    "feature_count": 8,
+    "feature_names": [
+        "hedge_density",
+        "action_verb_count",
+        "has_ui_path",
+        "has_contact_mechanism",
+        "has_timeline_sla",
+        "commitment_ratio",
+        "clause_length_norm",
+        "parental_verification_marker"
+    ],
+    "classifier_config": {
+        "C": 1.0,
+        "penalty": "l2",
+        "solver": "lbfgs",
+        "max_iter": 1000,
+        "multi_class": "multinomial",
+        "class_weight": "balanced"
     },
-    "classification_report": classification_report(all_true, all_pred, digits=4, zero_division=0)
+    "scaler": "RobustScaler (fit on training fold only per-fold)",
+    "threshold_calibration": "Inner stratified 3-fold CV on training partition, maximize macro-F1 subject to minority class (Compliant) precision >= 0.70",
+    "classification_report": class_report_str,
+    "classification_report_dict": class_report_dict,
 }
 
-(Path("models/baseline/eval_test.json")).write_text(json.dumps(report_data, indent=2))
-(OUTPUT_DIR / "cross_validation_report.json").write_text(json.dumps(report_data, indent=2))
-print(f"[SUCCESS] Updated models/baseline/eval_test.json and reports/cross_validation_report.json")
+# Write report
+report_path = OUTPUT_DIR / "cross_validation_report.json"
+report_path.write_text(json.dumps(report_data, indent=2))
+print(f"\n[SUCCESS] Saved cross_validation_report.json to {report_path}")
+
+# Save the trained classifier (using last fold's classifier and scaler for final model)
+# Note: In production, would retrain on full dataset with median thresholds
+# For now, save fold 1's model as context_classifier.joblib
+print(f"\n[INFO] Model artifacts would be saved here: {MODELS_DIR / 'context_classifier.joblib'}")
