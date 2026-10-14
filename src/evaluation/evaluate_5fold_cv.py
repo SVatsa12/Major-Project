@@ -109,7 +109,7 @@ for fold_idx, (train_idx, test_idx) in enumerate(skf.split(embeddings, y_all), 1
     X_test_dict = {"embedding": X_test_embedding, "features": X_test_features}
     
     # Train and calibrate thresholds
-    result = train_and_evaluate_fold(X_train_dict, y_train, X_test_dict, y_test, inner_cv_splits=3)
+    result = train_and_evaluate_fold(X_train_dict, y_train, X_test_dict, y_test, inner_cv_splits=3, test_all_objectives=True)
     
     # Get predictions
     test_preds = result["predictions"]
@@ -131,6 +131,24 @@ for fold_idx, (train_idx, test_idx) in enumerate(skf.split(embeddings, y_all), 1
         "accuracy": round(acc, 4),
         "tau_compliant": round(tau_c, 4),
         "tau_partial": round(tau_p, 4),
+        "selected_objective": result.get("selected_objective", "constraint_0.70"),
+        "inner_scores": {
+            "constraint_0.70": {
+                "inner_f1": round(result["inner_scores_all"]["constraint_0.70"]["best_f1"], 4),
+                "tau_c": round(result["inner_scores_all"]["constraint_0.70"]["best_tau_c"], 4),
+                "tau_p": round(result["inner_scores_all"]["constraint_0.70"]["best_tau_p"], 4),
+            },
+            "constraint_0.60": {
+                "inner_f1": round(result["inner_scores_all"]["constraint_0.60"]["best_f1"], 4),
+                "tau_c": round(result["inner_scores_all"]["constraint_0.60"]["best_tau_c"], 4),
+                "tau_p": round(result["inner_scores_all"]["constraint_0.60"]["best_tau_p"], 4),
+            },
+            "no_constraint": {
+                "inner_f1": round(result["inner_scores_all"]["no_constraint"]["best_f1"], 4),
+                "tau_c": round(result["inner_scores_all"]["no_constraint"]["best_tau_c"], 4),
+                "tau_p": round(result["inner_scores_all"]["no_constraint"]["best_tau_p"], 4),
+            }
+        }
     })
     
     print(f"  Macro-F1: {f1:.4f} | Accuracy: {acc:.4f}")
@@ -183,7 +201,14 @@ class_report_dict = classification_report(
 
 # Prepare output report
 report_data = {
-    "evaluation_method": "Stratified 5-Fold Cross-Validation (Leak-Free Threshold Calibration)",
+    "evaluation_method": "Stratified 5-Fold Cross-Validation (Leak-Free Threshold Calibration with Phase A Objective Variants)",
+    "phase": "Phase A - Threshold Objective Variants",
+    "objectives_tested": {
+        "a": "maximize macro-F1 subject to Compliant precision >= 0.70",
+        "b": "maximize macro-F1 subject to Compliant precision >= 0.60",
+        "c": "maximize macro-F1, no precision constraint"
+    },
+    "selection_method": "Per outer fold: select variant with best inner out-of-fold macro-F1",
     "total_clauses_evaluated": len(df),
     "expected_corpus_distribution": expected_dist,
     "actual_corpus_distribution": actual_dist,
@@ -215,7 +240,7 @@ report_data = {
         "class_weight": "balanced"
     },
     "scaler": "RobustScaler (fit on training fold only per-fold)",
-    "threshold_calibration": "Inner stratified 3-fold CV on training partition, maximize macro-F1 subject to minority class (Compliant) precision >= 0.70",
+    "threshold_calibration": "Inner stratified 3-fold CV on training partition, select best of three objectives per inner fold",
     "classification_report": class_report_str,
     "classification_report_dict": class_report_dict,
 }
