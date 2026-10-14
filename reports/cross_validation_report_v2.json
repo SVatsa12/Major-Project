@@ -2,84 +2,84 @@
   "evaluation_method": "Stratified 5-Fold Cross-Validation (Leak-Free Threshold Calibration)",
   "total_clauses_evaluated": 826,
   "expected_corpus_distribution": {
-    "Not Addressed": 460,
-    "Partially Compliant": 248,
-    "Compliant": 118
+    "Not Addressed": 579,
+    "Partially Compliant": 160,
+    "Compliant": 87
   },
   "actual_corpus_distribution": {
-    "Not Addressed": 460,
-    "Partially Compliant": 248,
-    "Compliant": 118
+    "Not Addressed": 579,
+    "Partially Compliant": 160,
+    "Compliant": 87
   },
-  "mean_macro_f1": 0.7129,
-  "std_macro_f1": 0.0418,
-  "mean_accuracy": 0.8402,
+  "mean_macro_f1": 0.7454,
+  "std_macro_f1": 0.042,
+  "mean_accuracy": 0.8838,
   "per_fold_results": [
     {
       "fold": 1,
-      "macro_f1": 0.6679,
-      "accuracy": 0.8313,
-      "tau_compliant": 0.65,
-      "tau_partial": 0.25
+      "macro_f1": 0.795,
+      "accuracy": 0.8976,
+      "tau_compliant": 0.5,
+      "tau_partial": 0.3
     },
     {
       "fold": 2,
-      "macro_f1": 0.7305,
-      "accuracy": 0.8242,
-      "tau_compliant": 0.6,
-      "tau_partial": 0.3
+      "macro_f1": 0.6999,
+      "accuracy": 0.8848,
+      "tau_compliant": 0.55,
+      "tau_partial": 0.4
     },
     {
       "fold": 3,
-      "macro_f1": 0.7781,
-      "accuracy": 0.8848,
+      "macro_f1": 0.7131,
+      "accuracy": 0.8667,
       "tau_compliant": 0.65,
-      "tau_partial": 0.3
+      "tau_partial": 0.35
     },
     {
       "fold": 4,
-      "macro_f1": 0.7212,
-      "accuracy": 0.8303,
-      "tau_compliant": 0.6,
-      "tau_partial": 0.3
+      "macro_f1": 0.7219,
+      "accuracy": 0.8727,
+      "tau_compliant": 0.55,
+      "tau_partial": 0.35
     },
     {
       "fold": 5,
-      "macro_f1": 0.667,
-      "accuracy": 0.8303,
-      "tau_compliant": 0.6,
-      "tau_partial": 0.3
+      "macro_f1": 0.7972,
+      "accuracy": 0.897,
+      "tau_compliant": 0.55,
+      "tau_partial": 0.4
     }
   ],
   "per_fold_thresholds": [
     {
       "fold": 1,
-      "tau_compliant": 0.65,
-      "tau_partial": 0.25
+      "tau_compliant": 0.5,
+      "tau_partial": 0.3
     },
     {
       "fold": 2,
-      "tau_compliant": 0.6,
-      "tau_partial": 0.3
+      "tau_compliant": 0.55,
+      "tau_partial": 0.4
     },
     {
       "fold": 3,
       "tau_compliant": 0.65,
-      "tau_partial": 0.3
+      "tau_partial": 0.35
     },
     {
       "fold": 4,
-      "tau_compliant": 0.6,
-      "tau_partial": 0.3
+      "tau_compliant": 0.55,
+      "tau_partial": 0.35
     },
     {
       "fold": 5,
-      "tau_compliant": 0.6,
-      "tau_partial": 0.3
+      "tau_compliant": 0.55,
+      "tau_partial": 0.4
     }
   ],
-  "tau_compliant_median": 0.6,
-  "tau_partial_median": 0.3,
+  "tau_compliant_median": 0.55,
+  "tau_partial_median": 0.35,
   "embedding_model": "all-MiniLM-L6-v2 (384-dim, mean pooling, L2-normalized)",
   "feature_count": 8,
   "feature_names": [
@@ -102,37 +102,37 @@
   },
   "scaler": "RobustScaler (fit on training fold only per-fold)",
   "threshold_calibration": "Inner stratified 3-fold CV on training partition, maximize macro-F1 subject to minority class (Compliant) precision >= 0.70",
-  "classification_report": "                     precision    recall  f1-score   support\n\n      Not Addressed     0.9842    0.9457    0.9645       460\nPartially Compliant     0.6820    0.8992    0.7757       248\n          Compliant     0.6316    0.3051    0.4114       118\n\n           accuracy                         0.8402       826\n          macro avg     0.7659    0.7166    0.7172       826\n       weighted avg     0.8431    0.8402    0.8288       826\n",
+  "classification_report": "                     precision    recall  f1-score   support\n\n      Not Addressed     0.9690    0.9724    0.9707       579\nPartially Compliant     0.7039    0.7875    0.7434       160\n          Compliant     0.6212    0.4713    0.5359        87\n\n           accuracy                         0.8838       826\n          macro avg     0.7647    0.7437    0.7500       826\n       weighted avg     0.8810    0.8838    0.8809       826\n",
   "classification_report_dict": {
     "Not Addressed": {
-      "precision": 0.9841628959276018,
-      "recall": 0.9456521739130435,
-      "f1-score": 0.9645232815964523,
-      "support": 460.0
+      "precision": 0.9690189328743546,
+      "recall": 0.9723661485319517,
+      "f1-score": 0.9706896551724138,
+      "support": 579.0
     },
     "Partially Compliant": {
-      "precision": 0.6819571865443425,
-      "recall": 0.8991935483870968,
-      "f1-score": 0.7756521739130435,
-      "support": 248.0
+      "precision": 0.7039106145251397,
+      "recall": 0.7875,
+      "f1-score": 0.7433628318584071,
+      "support": 160.0
     },
     "Compliant": {
-      "precision": 0.631578947368421,
-      "recall": 0.3050847457627119,
-      "f1-score": 0.4114285714285714,
-      "support": 118.0
+      "precision": 0.6212121212121212,
+      "recall": 0.47126436781609193,
+      "f1-score": 0.5359477124183006,
+      "support": 87.0
     },
-    "accuracy": 0.8401937046004843,
+    "accuracy": 0.8837772397094431,
     "macro avg": {
-      "precision": 0.7658996766134551,
-      "recall": 0.716643489354284,
-      "f1-score": 0.7172013423126891,
+      "precision": 0.7647138895372052,
+      "recall": 0.7437101721160145,
+      "f1-score": 0.7500000664830405,
       "support": 826.0
     },
     "weighted avg": {
-      "precision": 0.8430588743089193,
-      "recall": 0.8401937046004843,
-      "f1-score": 0.8288026877643756,
+      "precision": 0.8810328268810268,
+      "recall": 0.8837772397094431,
+      "f1-score": 0.8808653927633957,
       "support": 826.0
     }
   }

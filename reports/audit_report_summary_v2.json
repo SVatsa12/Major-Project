@@ -1,143 +1,122 @@
 {
   "total_audited_clauses": 826,
-  "total_governance_clauses": 366,
+  "total_governance_clauses": 247,
   "total_statutory_rules": 42,
   "active_in_scope_rules": 35,
   "platform_rankings": [
     {
       "platform": "WhatsApp",
       "audited_clauses": 268,
-      "governance_clauses": 115,
-      "rules_covered": 30,
-      "compliant_count": 37,
-      "partial_count": 78,
-      "clause_quality_pct": 66.1,
-      "strict_coverage_pct": 71.4,
-      "applicable_scope_pct": 85.7,
-      "combined_statutory_pct": 59.5,
-      "effective_compliance_pct": 62.1
+      "governance_clauses": 80,
+      "rules_covered": 25,
+      "compliant_count": 31,
+      "partial_count": 49,
+      "clause_quality_pct": 69.4,
+      "strict_coverage_pct": 59.5,
+      "applicable_scope_pct": 71.4,
+      "combined_statutory_pct": 48.8,
+      "effective_compliance_pct": 57.0
     },
     {
       "platform": "Meta",
       "audited_clauses": 149,
-      "governance_clauses": 59,
-      "rules_covered": 23,
-      "compliant_count": 25,
-      "partial_count": 34,
-      "clause_quality_pct": 71.2,
-      "strict_coverage_pct": 54.8,
-      "applicable_scope_pct": 65.7,
-      "combined_statutory_pct": 42.9,
-      "effective_compliance_pct": 54.2
-    },
-    {
-      "platform": "Snapchat",
-      "audited_clauses": 112,
-      "governance_clauses": 56,
-      "rules_covered": 25,
-      "compliant_count": 17,
-      "partial_count": 39,
-      "clause_quality_pct": 65.2,
-      "strict_coverage_pct": 59.5,
-      "applicable_scope_pct": 71.4,
-      "combined_statutory_pct": 41.7,
-      "effective_compliance_pct": 51.1
+      "governance_clauses": 36,
+      "rules_covered": 16,
+      "compliant_count": 19,
+      "partial_count": 17,
+      "clause_quality_pct": 76.4,
+      "strict_coverage_pct": 38.1,
+      "applicable_scope_pct": 45.7,
+      "combined_statutory_pct": 32.1,
+      "effective_compliance_pct": 49.8
     },
     {
       "platform": "Telegram",
       "audited_clauses": 131,
-      "governance_clauses": 41,
-      "rules_covered": 19,
-      "compliant_count": 19,
-      "partial_count": 22,
-      "clause_quality_pct": 73.2,
-      "strict_coverage_pct": 45.2,
-      "applicable_scope_pct": 54.3,
-      "combined_statutory_pct": 35.7,
-      "effective_compliance_pct": 50.7
+      "governance_clauses": 31,
+      "rules_covered": 15,
+      "compliant_count": 15,
+      "partial_count": 16,
+      "clause_quality_pct": 74.2,
+      "strict_coverage_pct": 35.7,
+      "applicable_scope_pct": 42.9,
+      "combined_statutory_pct": 29.8,
+      "effective_compliance_pct": 47.6
     },
     {
       "platform": "Google",
       "audited_clauses": 106,
-      "governance_clauses": 60,
-      "rules_covered": 22,
-      "compliant_count": 12,
-      "partial_count": 48,
-      "clause_quality_pct": 60.0,
-      "strict_coverage_pct": 52.4,
-      "applicable_scope_pct": 62.9,
-      "combined_statutory_pct": 35.7,
-      "effective_compliance_pct": 45.4
+      "governance_clauses": 45,
+      "rules_covered": 19,
+      "compliant_count": 10,
+      "partial_count": 35,
+      "clause_quality_pct": 61.1,
+      "strict_coverage_pct": 45.2,
+      "applicable_scope_pct": 54.3,
+      "combined_statutory_pct": 31.0,
+      "effective_compliance_pct": 43.0
+    },
+    {
+      "platform": "Snapchat",
+      "audited_clauses": 112,
+      "governance_clauses": 32,
+      "rules_covered": 18,
+      "compliant_count": 8,
+      "partial_count": 24,
+      "clause_quality_pct": 62.5,
+      "strict_coverage_pct": 42.9,
+      "applicable_scope_pct": 51.4,
+      "combined_statutory_pct": 28.6,
+      "effective_compliance_pct": 42.2
     },
     {
       "platform": "YouTube",
       "audited_clauses": 60,
-      "governance_clauses": 35,
-      "rules_covered": 14,
-      "compliant_count": 8,
-      "partial_count": 27,
-      "clause_quality_pct": 61.4,
-      "strict_coverage_pct": 33.3,
-      "applicable_scope_pct": 40.0,
-      "combined_statutory_pct": 22.6,
-      "effective_compliance_pct": 38.1
+      "governance_clauses": 23,
+      "rules_covered": 12,
+      "compliant_count": 4,
+      "partial_count": 19,
+      "clause_quality_pct": 58.7,
+      "strict_coverage_pct": 28.6,
+      "applicable_scope_pct": 34.3,
+      "combined_statutory_pct": 17.9,
+      "effective_compliance_pct": 34.2
     }
   ],
   "category_breakdown": [
     {
-      "dpdp_category": "Children/Vulnerable Groups",
-      "clauses_identified": 66,
-      "unique_platforms_addressing": 6,
-      "avg_quality_score": 61.4,
-      "platforms_missing": 0
-    },
-    {
-      "dpdp_category": "Sensitive Data Handling",
-      "clauses_identified": 55,
-      "unique_platforms_addressing": 6,
-      "avg_quality_score": 62.7,
-      "platforms_missing": 0
-    },
-    {
       "dpdp_category": "Data Retention & Erasure",
-      "clauses_identified": 45,
-      "unique_platforms_addressing": 5,
-      "avg_quality_score": 65.6,
-      "platforms_missing": 1
+      "clauses_identified": 47,
+      "unique_platforms_addressing": 6,
+      "avg_quality_score": 64.9,
+      "platforms_missing": 0
     },
     {
       "dpdp_category": "Security Safeguards",
-      "clauses_identified": 43,
+      "clauses_identified": 45,
       "unique_platforms_addressing": 6,
-      "avg_quality_score": 68.6,
+      "avg_quality_score": 67.8,
       "platforms_missing": 0
     },
     {
       "dpdp_category": "Data Principal Rights",
-      "clauses_identified": 39,
+      "clauses_identified": 37,
       "unique_platforms_addressing": 6,
-      "avg_quality_score": 75.6,
+      "avg_quality_score": 81.1,
       "platforms_missing": 0
     },
     {
       "dpdp_category": "Consent & Notice",
-      "clauses_identified": 31,
+      "clauses_identified": 32,
       "unique_platforms_addressing": 6,
-      "avg_quality_score": 69.4,
+      "avg_quality_score": 68.8,
       "platforms_missing": 0
     },
     {
-      "dpdp_category": "Cross-Border Transfer",
-      "clauses_identified": 27,
+      "dpdp_category": "Children/Vulnerable Groups",
+      "clauses_identified": 28,
       "unique_platforms_addressing": 5,
-      "avg_quality_score": 61.1,
-      "platforms_missing": 1
-    },
-    {
-      "dpdp_category": "Breach Notification",
-      "clauses_identified": 22,
-      "unique_platforms_addressing": 5,
-      "avg_quality_score": 70.5,
+      "avg_quality_score": 62.5,
       "platforms_missing": 1
     },
     {
@@ -149,10 +128,31 @@
     },
     {
       "dpdp_category": "Grievance Redressal",
-      "clauses_identified": 15,
-      "unique_platforms_addressing": 6,
-      "avg_quality_score": 60.0,
-      "platforms_missing": 0
+      "clauses_identified": 11,
+      "unique_platforms_addressing": 5,
+      "avg_quality_score": 59.1,
+      "platforms_missing": 1
+    },
+    {
+      "dpdp_category": "Cross-Border Transfer",
+      "clauses_identified": 11,
+      "unique_platforms_addressing": 5,
+      "avg_quality_score": 50.0,
+      "platforms_missing": 1
+    },
+    {
+      "dpdp_category": "Sensitive Data Handling",
+      "clauses_identified": 9,
+      "unique_platforms_addressing": 5,
+      "avg_quality_score": 50.0,
+      "platforms_missing": 1
+    },
+    {
+      "dpdp_category": "Breach Notification",
+      "clauses_identified": 4,
+      "unique_platforms_addressing": 3,
+      "avg_quality_score": 100.0,
+      "platforms_missing": 3
     },
     {
       "dpdp_category": "Third-Party Data Sharing",
