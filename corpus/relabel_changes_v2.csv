@@ -1,161 +1,161 @@
-clause_id,old_taxonomy_id,old_verdict,new_taxonomy_id,new_verdict,model
-S000072,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,embedding-similarity-v1
-S000138,NONE,Not Addressed,DPDP_RUL-0095,Partially Compliant,embedding-similarity-v1
-S000150,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,embedding-similarity-v1
-S000278,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,embedding-similarity-v1
-S000286,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,embedding-similarity-v1
-S000312,NONE,Not Addressed,DPDP_RUL-0095,Partially Compliant,embedding-similarity-v1
-S000316,NONE,Not Addressed,IT_SPDI-001,Compliant,embedding-similarity-v1
-S000347,NONE,Not Addressed,DPDP_RUL-0095,Partially Compliant,embedding-similarity-v1
-S000348,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,embedding-similarity-v1
-S000349,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,embedding-similarity-v1
-S000350,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,embedding-similarity-v1
-S000351,NONE,Not Addressed,DPDP_RUL-0095,Partially Compliant,embedding-similarity-v1
-S000366,NONE,Not Addressed,IT_SPDI-001,Compliant,embedding-similarity-v1
-S000370,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,embedding-similarity-v1
-S000372,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,embedding-similarity-v1
-S000393,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,embedding-similarity-v1
-S000493,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,embedding-similarity-v1
-S001027,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,embedding-similarity-v1
-S001069,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,embedding-similarity-v1
-S001088,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,embedding-similarity-v1
-S001090,NONE,Not Addressed,DPDP_RUL-0095,Compliant,embedding-similarity-v1
-S001114,NONE,Not Addressed,DPDP_RUL-0094,Partially Compliant,embedding-similarity-v1
-S001122,NONE,Not Addressed,DPDP_RUL-0095,Partially Compliant,embedding-similarity-v1
-S001130,NONE,Not Addressed,DPDP_ACT-0038,Partially Compliant,embedding-similarity-v1
-S001139,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,embedding-similarity-v1
-S001160,NONE,Not Addressed,DPDP_RUL-0103,Partially Compliant,embedding-similarity-v1
-S001164,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,embedding-similarity-v1
-S001166,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,embedding-similarity-v1
-S001179,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,embedding-similarity-v1
-S001183,NONE,Not Addressed,DPDP_ACT-0041,Compliant,embedding-similarity-v1
-S001188,NONE,Not Addressed,IT_SPDI-002,Compliant,embedding-similarity-v1
-S001189,NONE,Not Addressed,DPDP_RUL-0119,Compliant,embedding-similarity-v1
-S001199,NONE,Not Addressed,DPDP_ACT-0038,Partially Compliant,embedding-similarity-v1
-S001201,NONE,Not Addressed,DPDP_RUL-0095,Compliant,embedding-similarity-v1
-S001207,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,embedding-similarity-v1
-S001212,NONE,Not Addressed,DPDP_RUL-0095,Compliant,embedding-similarity-v1
-S001213,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,embedding-similarity-v1
-S001218,NONE,Not Addressed,DPDP_RUL-0114,Partially Compliant,embedding-similarity-v1
-S001220,NONE,Not Addressed,IT_SPDI-002,Compliant,embedding-similarity-v1
-S001221,NONE,Not Addressed,DPDP_RUL-0119,Compliant,embedding-similarity-v1
-S001222,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,embedding-similarity-v1
-S001226,NONE,Not Addressed,IT_SPDI-002,Compliant,embedding-similarity-v1
-S001247,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,embedding-similarity-v1
-S001272,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,embedding-similarity-v1
-S001462,NONE,Not Addressed,DPDP_ACT-0160,Partially Compliant,embedding-similarity-v1
-S001467,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,embedding-similarity-v1
-S001786,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,embedding-similarity-v1
-S001787,NONE,Not Addressed,DPDP_RUL-0095,Partially Compliant,embedding-similarity-v1
-S001801,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,embedding-similarity-v1
-S001803,NONE,Not Addressed,DPDP_RUL-0095,Partially Compliant,embedding-similarity-v1
-S001805,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,embedding-similarity-v1
-S001808,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,embedding-similarity-v1
-S001810,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,embedding-similarity-v1
-S001811,NONE,Not Addressed,DPDP_ACT-0042,Partially Compliant,embedding-similarity-v1
-S001827,NONE,Not Addressed,DPDP_RUL-0119,Partially Compliant,embedding-similarity-v1
-S001831,NONE,Not Addressed,DPDP_RUL-0119,Partially Compliant,embedding-similarity-v1
-S001835,NONE,Not Addressed,DPDP_RUL-0119,Partially Compliant,embedding-similarity-v1
-S001837,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,embedding-similarity-v1
-S001840,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,embedding-similarity-v1
-S001844,DPDP_RUL-0170,Partially Compliant,IT_ACT_2-0310,Partially Compliant,embedding-similarity-v1
-S001850,NONE,Not Addressed,DPDP_RUL-0095,Compliant,embedding-similarity-v1
-S001855,DPDP_RUL-0170,Partially Compliant,DPDP_RUL-0095,Compliant,embedding-similarity-v1
-S001866,NONE,Not Addressed,DPDP_RUL-0119,Compliant,embedding-similarity-v1
-S001872,NONE,Not Addressed,DPDP_RUL-0095,Partially Compliant,embedding-similarity-v1
-S001878,NONE,Not Addressed,DPDP_RUL-0119,Partially Compliant,embedding-similarity-v1
-S001879,NONE,Not Addressed,DPDP_RUL-0119,Compliant,embedding-similarity-v1
-S001883,NONE,Not Addressed,DPDP_RUL-0119,Partially Compliant,embedding-similarity-v1
-S001884,NONE,Not Addressed,DPDP_RUL-0119,Compliant,embedding-similarity-v1
-S001885,NONE,Not Addressed,DPDP_RUL-0119,Partially Compliant,embedding-similarity-v1
-S001915,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,embedding-similarity-v1
-S001962,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,embedding-similarity-v1
-S001971,NONE,Not Addressed,DPDP_ACT-0038,Partially Compliant,embedding-similarity-v1
-S001977,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,embedding-similarity-v1
-S001991,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,embedding-similarity-v1
-S002138,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,embedding-similarity-v1
-S002140,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,embedding-similarity-v1
-S002170,NONE,Not Addressed,DPDP_ACT-0038,Compliant,embedding-similarity-v1
-S002194,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,embedding-similarity-v1
-S002200,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,embedding-similarity-v1
-S002233,NONE,Not Addressed,IT_SPDI-002,Compliant,embedding-similarity-v1
-S002281,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,embedding-similarity-v1
-S002318,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,embedding-similarity-v1
-S002331,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,embedding-similarity-v1
-S002338,NONE,Not Addressed,IT_SPDI-001,Compliant,embedding-similarity-v1
-S002359,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,embedding-similarity-v1
-S002368,NONE,Not Addressed,DPDP_RUL-0094,Partially Compliant,embedding-similarity-v1
-S000749,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,embedding-similarity-v1
-S000769,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,embedding-similarity-v1
-S000770,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,embedding-similarity-v1
-S000771,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,embedding-similarity-v1
-S000772,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,embedding-similarity-v1
-S000774,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,embedding-similarity-v1
-S000778,NONE,Not Addressed,IT_SPDI-001,Compliant,embedding-similarity-v1
-S000779,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,embedding-similarity-v1
-S000780,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,embedding-similarity-v1
-S000782,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,embedding-similarity-v1
-S000787,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,embedding-similarity-v1
-S000792,NONE,Not Addressed,DPDP_RUL-0103,Partially Compliant,embedding-similarity-v1
-S000802,NONE,Not Addressed,DPDP_RUL-0119,Partially Compliant,embedding-similarity-v1
-S000807,NONE,Not Addressed,DPDP_RUL-0114,Partially Compliant,embedding-similarity-v1
-S000815,NONE,Not Addressed,DPDP_RUL-0119,Compliant,embedding-similarity-v1
-S000817,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,embedding-similarity-v1
-S000855,NONE,Not Addressed,DPDP_ACT-0041,Compliant,embedding-similarity-v1
-S000856,NONE,Not Addressed,DPDP_ACT-0041,Compliant,embedding-similarity-v1
-S000872,NONE,Not Addressed,DPDP_RUL-0119,Partially Compliant,embedding-similarity-v1
-S000877,NONE,Not Addressed,DPDP_ACT-0042,Partially Compliant,embedding-similarity-v1
-S000879,NONE,Not Addressed,IT_SPDI-001,Compliant,embedding-similarity-v1
-S000942,NONE,Not Addressed,IT_SPDI-001,Compliant,embedding-similarity-v1
-S000943,NONE,Not Addressed,DPDP_RUL-0095,Partially Compliant,embedding-similarity-v1
-S001500,NONE,Not Addressed,IT_SPDI-002,Compliant,embedding-similarity-v1
-S001502,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,embedding-similarity-v1
-S001503,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,embedding-similarity-v1
-S001504,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,embedding-similarity-v1
-S001505,NONE,Not Addressed,IT_SPDI-002,Compliant,embedding-similarity-v1
-S001506,NONE,Not Addressed,IT_SPDI-002,Compliant,embedding-similarity-v1
-S001507,NONE,Not Addressed,DPDP_RUL-0103,Partially Compliant,embedding-similarity-v1
-S001510,NONE,Not Addressed,IT_SPDI-002,Compliant,embedding-similarity-v1
-S001546,NONE,Not Addressed,DPDP_RUL-0114,Partially Compliant,embedding-similarity-v1
-S001577,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,embedding-similarity-v1
-S001610,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,embedding-similarity-v1
-S001613,NONE,Not Addressed,DPDP_RUL-0119,Partially Compliant,embedding-similarity-v1
-S001623,NONE,Not Addressed,DPDP_ACT-0041,Compliant,embedding-similarity-v1
-S001729,NONE,Not Addressed,DPDP_ACT-0074,Partially Compliant,embedding-similarity-v1
-S002373,NONE,Not Addressed,DPDP_ACT-0041,Compliant,embedding-similarity-v1
-S002375,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,embedding-similarity-v1
-S002379,NONE,Not Addressed,DPDP_ACT-0160,Partially Compliant,embedding-similarity-v1
-S002381,NONE,Not Addressed,DPDP_ACT-0160,Compliant,embedding-similarity-v1
-S002382,NONE,Not Addressed,DPDP_ACT-0160,Compliant,embedding-similarity-v1
-S002384,NONE,Not Addressed,DPDP_ACT-0041,Compliant,embedding-similarity-v1
-S002393,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,embedding-similarity-v1
-S002395,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,embedding-similarity-v1
-S002413,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,embedding-similarity-v1
-S002429,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,embedding-similarity-v1
-S002433,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,embedding-similarity-v1
-S002544,NONE,Not Addressed,DPDP_ACT-0038,Partially Compliant,embedding-similarity-v1
-S002553,NONE,Not Addressed,DPDP_ACT-0160,Partially Compliant,embedding-similarity-v1
-S002660,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,embedding-similarity-v1
-S002666,DPDP_ACT-0043,Compliant,DPDP_RUL-0184,Compliant,embedding-similarity-v1
-S002667,DPDP_ACT-0041,Compliant,DPDP_RUL-0178,Partially Compliant,embedding-similarity-v1
-S002670,IT_ACT_2-0284,Compliant,DPDP_ACT-0038,Compliant,embedding-similarity-v1
-S002671,DPDP_ACT-0057,Compliant,DPDP_RUL-0201,Compliant,embedding-similarity-v1
-S002677,DPDP_ACT-0043,Compliant,NONE,Not Addressed,embedding-similarity-v1
-S002678,DPDP_ACT-0048,Compliant,DPDP_RUL-0119,Partially Compliant,embedding-similarity-v1
-S002679,DPDP_ACT-0043,Partially Compliant,DPDP_RUL-0184,Compliant,embedding-similarity-v1
-S002680,DPDP_ACT-0089,Partially Compliant,DPDP_ACT-0041,Partially Compliant,embedding-similarity-v1
-S002683,DPDP_ACT-0070,Partially Compliant,DPDP_ACT-0025,Compliant,embedding-similarity-v1
-S002685,DPDP_ACT-0067,Partially Compliant,NONE,Not Addressed,embedding-similarity-v1
-S002686,DPDP_ACT-0089,Partially Compliant,NONE,Not Addressed,embedding-similarity-v1
-S002691,DPDP_ACT-0043,Compliant,DPDP_RUL-0184,Partially Compliant,embedding-similarity-v1
-S002692,DPDP_ACT-0043,Compliant,DPDP_RUL-0184,Partially Compliant,embedding-similarity-v1
-S002693,DPDP_ACT-0043,Compliant,NONE,Not Addressed,embedding-similarity-v1
-S002697,DPDP_ACT-0089,Compliant,DPDP_ACT-0029,Partially Compliant,embedding-similarity-v1
-S002701,DPDP_ACT-0041,Compliant,NONE,Not Addressed,embedding-similarity-v1
-S002702,DPDP_ACT-0041,Compliant,NONE,Not Addressed,embedding-similarity-v1
-S002707,DPDP_ACT-0024,Compliant,DPDP_RUL-0119,Partially Compliant,embedding-similarity-v1
-S002708,DPDP_ACT-0024,Compliant,DPDP_RUL-0176,Partially Compliant,embedding-similarity-v1
-S002714,DPDP_ACT-0043,Compliant,NONE,Not Addressed,embedding-similarity-v1
-S002715,DPDP_ACT-0067,Compliant,NONE,Not Addressed,embedding-similarity-v1
-S002718,DPDP_ACT-0070,Compliant,NONE,Not Addressed,embedding-similarity-v1
-S002719,DPDP_ACT-0070,Compliant,DPDP_ACT-0027,Partially Compliant,embedding-similarity-v1
+clause_id,old_taxonomy_id,old_verdict,new_taxonomy_id,new_verdict,model,justification
+S000072,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S000138,NONE,Not Addressed,DPDP_RUL-0095,Partially Compliant,qwen3:8b,"Commercial/contractual term (liability, disputes, billing, licensing, service terms); no DPDP data-protection obligation or mechanism."
+S000150,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,"Commercial/contractual term (liability, disputes, billing, licensing, service terms); no DPDP data-protection obligation or mechanism."
+S000278,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S000286,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,qwen3:8b,"Describes what data is collected; no user right, retention limit, safeguard or grievance mechanism stated."
+S000312,NONE,Not Addressed,DPDP_RUL-0095,Partially Compliant,qwen3:8b,"Commercial/contractual term (liability, disputes, billing, licensing, service terms); no DPDP data-protection obligation or mechanism."
+S000316,NONE,Not Addressed,IT_SPDI-001,Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S000347,NONE,Not Addressed,DPDP_RUL-0095,Partially Compliant,qwen3:8b,"Commercial/contractual term (liability, disputes, billing, licensing, service terms); no DPDP data-protection obligation or mechanism."
+S000348,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S000349,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S000350,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,"Describes advertising, cookies or personalisation practice; no consent-withdrawal, rights or safeguard mechanism stated."
+S000351,NONE,Not Addressed,DPDP_RUL-0095,Partially Compliant,qwen3:8b,"Describes data sharing with third parties/affiliates in general terms; no consent, safeguard or transfer control matched to a taxonomy requirement."
+S000366,NONE,Not Addressed,IT_SPDI-001,Compliant,qwen3:8b,Describes purposes of use of data; no actionable compliance mechanism mapped to a taxonomy requirement.
+S000370,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S000372,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S000393,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
+S000493,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
+S001027,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,"Commercial/contractual term (liability, disputes, billing, licensing, service terms); no DPDP data-protection obligation or mechanism."
+S001069,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,Describes purposes of use of data; no actionable compliance mechanism mapped to a taxonomy requirement.
+S001088,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
+S001090,NONE,Not Addressed,DPDP_RUL-0095,Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
+S001114,NONE,Not Addressed,DPDP_RUL-0094,Partially Compliant,qwen3:8b,"Commercial/contractual term (liability, disputes, billing, licensing, service terms); no DPDP data-protection obligation or mechanism."
+S001122,NONE,Not Addressed,DPDP_RUL-0095,Partially Compliant,qwen3:8b,"Commercial/contractual term (liability, disputes, billing, licensing, service terms); no DPDP data-protection obligation or mechanism."
+S001130,NONE,Not Addressed,DPDP_ACT-0038,Partially Compliant,qwen3:8b,"Commercial/contractual term (liability, disputes, billing, licensing, service terms); no DPDP data-protection obligation or mechanism."
+S001139,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,"Describes what data is collected; no user right, retention limit, safeguard or grievance mechanism stated."
+S001160,NONE,Not Addressed,DPDP_RUL-0103,Partially Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
+S001164,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,qwen3:8b,"Describes what data is collected; no user right, retention limit, safeguard or grievance mechanism stated."
+S001166,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,qwen3:8b,"Describes data sharing with third parties/affiliates in general terms; no consent, safeguard or transfer control matched to a taxonomy requirement."
+S001179,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,Describes purposes of use of data; no actionable compliance mechanism mapped to a taxonomy requirement.
+S001183,NONE,Not Addressed,DPDP_ACT-0041,Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
+S001188,NONE,Not Addressed,IT_SPDI-002,Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S001189,NONE,Not Addressed,DPDP_RUL-0119,Compliant,qwen3:8b,"Describes data sharing with third parties/affiliates in general terms; no consent, safeguard or transfer control matched to a taxonomy requirement."
+S001199,NONE,Not Addressed,DPDP_ACT-0038,Partially Compliant,qwen3:8b,"Commercial/contractual term (liability, disputes, billing, licensing, service terms); no DPDP data-protection obligation or mechanism."
+S001201,NONE,Not Addressed,DPDP_RUL-0095,Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S001207,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S001212,NONE,Not Addressed,DPDP_RUL-0095,Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S001213,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,"Commercial/contractual term (liability, disputes, billing, licensing, service terms); no DPDP data-protection obligation or mechanism."
+S001218,NONE,Not Addressed,DPDP_RUL-0114,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S001220,NONE,Not Addressed,IT_SPDI-002,Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S001221,NONE,Not Addressed,DPDP_RUL-0119,Compliant,qwen3:8b,Describes purposes of use of data; no actionable compliance mechanism mapped to a taxonomy requirement.
+S001222,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S001226,NONE,Not Addressed,IT_SPDI-002,Compliant,qwen3:8b,"Describes advertising, cookies or personalisation practice; no consent-withdrawal, rights or safeguard mechanism stated."
+S001247,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,"Commercial/contractual term (liability, disputes, billing, licensing, service terms); no DPDP data-protection obligation or mechanism."
+S001272,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
+S001462,NONE,Not Addressed,DPDP_ACT-0160,Partially Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
+S001467,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
+S001786,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,qwen3:8b,"Describes what data is collected; no user right, retention limit, safeguard or grievance mechanism stated."
+S001787,NONE,Not Addressed,DPDP_RUL-0095,Partially Compliant,qwen3:8b,"Describes what data is collected; no user right, retention limit, safeguard or grievance mechanism stated."
+S001801,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S001803,NONE,Not Addressed,DPDP_RUL-0095,Partially Compliant,qwen3:8b,"Describes data sharing with third parties/affiliates in general terms; no consent, safeguard or transfer control matched to a taxonomy requirement."
+S001805,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,"Describes data sharing with third parties/affiliates in general terms; no consent, safeguard or transfer control matched to a taxonomy requirement."
+S001808,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S001810,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,Describes purposes of use of data; no actionable compliance mechanism mapped to a taxonomy requirement.
+S001811,NONE,Not Addressed,DPDP_ACT-0042,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S001827,NONE,Not Addressed,DPDP_RUL-0119,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S001831,NONE,Not Addressed,DPDP_RUL-0119,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S001835,NONE,Not Addressed,DPDP_RUL-0119,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S001837,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S001840,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S001844,DPDP_RUL-0170,Partially Compliant,IT_ACT_2-0310,Partially Compliant,qwen3:8b,Assigns oversight / disciplinary accountability for security of personal data; reasonable-safeguards intent without detail.
+S001850,NONE,Not Addressed,DPDP_RUL-0095,Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S001855,DPDP_RUL-0170,Partially Compliant,DPDP_RUL-0095,Compliant,qwen3:8b,Assigns oversight / disciplinary accountability for security of personal data; reasonable-safeguards intent without detail.
+S001866,NONE,Not Addressed,DPDP_RUL-0119,Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S001872,NONE,Not Addressed,DPDP_RUL-0095,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S001878,NONE,Not Addressed,DPDP_RUL-0119,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S001879,NONE,Not Addressed,DPDP_RUL-0119,Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S001883,NONE,Not Addressed,DPDP_RUL-0119,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S001884,NONE,Not Addressed,DPDP_RUL-0119,Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S001885,NONE,Not Addressed,DPDP_RUL-0119,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S001915,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,"Commercial/contractual term (liability, disputes, billing, licensing, service terms); no DPDP data-protection obligation or mechanism."
+S001962,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,Describes purposes of use of data; no actionable compliance mechanism mapped to a taxonomy requirement.
+S001971,NONE,Not Addressed,DPDP_ACT-0038,Partially Compliant,qwen3:8b,"Commercial/contractual term (liability, disputes, billing, licensing, service terms); no DPDP data-protection obligation or mechanism."
+S001977,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S001991,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
+S002138,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,qwen3:8b,Describes purposes of use of data; no actionable compliance mechanism mapped to a taxonomy requirement.
+S002140,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
+S002170,NONE,Not Addressed,DPDP_ACT-0038,Compliant,qwen3:8b,"Describes data sharing with third parties/affiliates in general terms; no consent, safeguard or transfer control matched to a taxonomy requirement."
+S002194,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,qwen3:8b,"Commercial/contractual term (liability, disputes, billing, licensing, service terms); no DPDP data-protection obligation or mechanism."
+S002200,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S002233,NONE,Not Addressed,IT_SPDI-002,Compliant,qwen3:8b,"Describes data sharing with third parties/affiliates in general terms; no consent, safeguard or transfer control matched to a taxonomy requirement."
+S002281,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
+S002318,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,Describes purposes of use of data; no actionable compliance mechanism mapped to a taxonomy requirement.
+S002331,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S002338,NONE,Not Addressed,IT_SPDI-001,Compliant,qwen3:8b,"Describes data sharing with third parties/affiliates in general terms; no consent, safeguard or transfer control matched to a taxonomy requirement."
+S002359,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,"Describes data sharing with third parties/affiliates in general terms; no consent, safeguard or transfer control matched to a taxonomy requirement."
+S002368,NONE,Not Addressed,DPDP_RUL-0094,Partially Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
+S000749,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S000769,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S000770,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,qwen3:8b,"Describes what data is collected; no user right, retention limit, safeguard or grievance mechanism stated."
+S000771,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,"Describes what data is collected; no user right, retention limit, safeguard or grievance mechanism stated."
+S000772,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S000774,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,qwen3:8b,"Describes what data is collected; no user right, retention limit, safeguard or grievance mechanism stated."
+S000778,NONE,Not Addressed,IT_SPDI-001,Compliant,qwen3:8b,"Describes what data is collected; no user right, retention limit, safeguard or grievance mechanism stated."
+S000779,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,Describes purposes of use of data; no actionable compliance mechanism mapped to a taxonomy requirement.
+S000780,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,qwen3:8b,Describes purposes of use of data; no actionable compliance mechanism mapped to a taxonomy requirement.
+S000782,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,qwen3:8b,Describes purposes of use of data; no actionable compliance mechanism mapped to a taxonomy requirement.
+S000787,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,Describes purposes of use of data; no actionable compliance mechanism mapped to a taxonomy requirement.
+S000792,NONE,Not Addressed,DPDP_RUL-0103,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S000802,NONE,Not Addressed,DPDP_RUL-0119,Partially Compliant,qwen3:8b,"Describes what data is collected; no user right, retention limit, safeguard or grievance mechanism stated."
+S000807,NONE,Not Addressed,DPDP_RUL-0114,Partially Compliant,qwen3:8b,Bare navigational question heading with no operative compliance mechanism.
+S000815,NONE,Not Addressed,DPDP_RUL-0119,Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S000817,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S000855,NONE,Not Addressed,DPDP_ACT-0041,Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
+S000856,NONE,Not Addressed,DPDP_ACT-0041,Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S000872,NONE,Not Addressed,DPDP_RUL-0119,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S000877,NONE,Not Addressed,DPDP_ACT-0042,Partially Compliant,qwen3:8b,"Describes advertising, cookies or personalisation practice; no consent-withdrawal, rights or safeguard mechanism stated."
+S000879,NONE,Not Addressed,IT_SPDI-001,Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
+S000942,NONE,Not Addressed,IT_SPDI-001,Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S000943,NONE,Not Addressed,DPDP_RUL-0095,Partially Compliant,qwen3:8b,Describes purposes of use of data; no actionable compliance mechanism mapped to a taxonomy requirement.
+S001500,NONE,Not Addressed,IT_SPDI-002,Compliant,qwen3:8b,Describes purposes of use of data; no actionable compliance mechanism mapped to a taxonomy requirement.
+S001502,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S001503,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S001504,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S001505,NONE,Not Addressed,IT_SPDI-002,Compliant,qwen3:8b,"Describes data sharing with third parties/affiliates in general terms; no consent, safeguard or transfer control matched to a taxonomy requirement."
+S001506,NONE,Not Addressed,IT_SPDI-002,Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S001507,NONE,Not Addressed,DPDP_RUL-0103,Partially Compliant,qwen3:8b,Describes purposes of use of data; no actionable compliance mechanism mapped to a taxonomy requirement.
+S001510,NONE,Not Addressed,IT_SPDI-002,Compliant,qwen3:8b,Describes purposes of use of data; no actionable compliance mechanism mapped to a taxonomy requirement.
+S001546,NONE,Not Addressed,DPDP_RUL-0114,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S001577,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,"Commercial/contractual term (liability, disputes, billing, licensing, service terms); no DPDP data-protection obligation or mechanism."
+S001610,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,"Describes advertising, cookies or personalisation practice; no consent-withdrawal, rights or safeguard mechanism stated."
+S001613,NONE,Not Addressed,DPDP_RUL-0119,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S001623,NONE,Not Addressed,DPDP_ACT-0041,Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
+S001729,NONE,Not Addressed,DPDP_ACT-0074,Partially Compliant,qwen3:8b,"Commercial/contractual term (liability, disputes, billing, licensing, service terms); no DPDP data-protection obligation or mechanism."
+S002373,NONE,Not Addressed,DPDP_ACT-0041,Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
+S002375,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S002379,NONE,Not Addressed,DPDP_ACT-0160,Partially Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
+S002381,NONE,Not Addressed,DPDP_ACT-0160,Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
+S002382,NONE,Not Addressed,DPDP_ACT-0160,Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S002384,NONE,Not Addressed,DPDP_ACT-0041,Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S002393,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
+S002395,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
+S002413,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
+S002429,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
+S002433,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
+S002544,NONE,Not Addressed,DPDP_ACT-0038,Partially Compliant,qwen3:8b,"Commercial/contractual term (liability, disputes, billing, licensing, service terms); no DPDP data-protection obligation or mechanism."
+S002553,NONE,Not Addressed,DPDP_ACT-0160,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S002660,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
+S002666,DPDP_ACT-0043,Compliant,DPDP_RUL-0184,Compliant,qwen3:8b,"Clear deletion mechanism with timeline, specific UI path, and legal carve-out."
+S002667,DPDP_ACT-0041,Compliant,DPDP_RUL-0178,Partially Compliant,qwen3:8b,Direct rectification mechanism with no approval delay; specific settings pathway.
+S002670,IT_ACT_2-0284,Compliant,DPDP_ACT-0038,Compliant,qwen3:8b,"Named Grievance Officer with complete contact details, acknowledgment and resolution timelines specified."
+S002671,DPDP_ACT-0057,Compliant,DPDP_RUL-0201,Compliant,qwen3:8b,"Explicit DPDP Act compliance with named officer, email, physical address, and SLA timelines."
+S002677,DPDP_ACT-0043,Compliant,NONE,Not Addressed,qwen3:8b,Granular deletion and pause options with specific 24-hour timeline for permanent deletion.
+S002678,DPDP_ACT-0048,Compliant,DPDP_RUL-0119,Partially Compliant,qwen3:8b,Explicit localization commitment with opt-in mechanism and contractual safeguards for transfers.
+S002679,DPDP_ACT-0043,Partially Compliant,DPDP_RUL-0184,Compliant,qwen3:8b,Timeline specified (90 days) but vague on 'reasonable period' and backup retention; legal carve-out present.
+S002680,DPDP_ACT-0089,Partially Compliant,DPDP_ACT-0041,Partially Compliant,qwen3:8b,Objection mechanism present but review availability qualified by 'feasibility'; unclear timeline.
+S002683,DPDP_ACT-0070,Partially Compliant,DPDP_ACT-0025,Compliant,qwen3:8b,Concrete measures described but qualified disclaimer limits enforceability; insurance mentioned but no SLA.
+S002685,DPDP_ACT-0067,Partially Compliant,NONE,Not Addressed,qwen3:8b,Opt-out provided for GPS but IP-based approximation continues; purpose list is broad (personalization).
+S002686,DPDP_ACT-0089,Partially Compliant,NONE,Not Addressed,qwen3:8b,Profile visibility and limited control provided; internal use only; but profiling cannot be opted out.
+S002691,DPDP_ACT-0043,Compliant,DPDP_RUL-0184,Partially Compliant,qwen3:8b,Clear deletion mechanism with specific 30-day timeline and irreversibility statement.
+S002692,DPDP_ACT-0043,Compliant,DPDP_RUL-0184,Partially Compliant,qwen3:8b,User-controlled deletion with granular timeline options and permanent erasure guarantee.
+S002693,DPDP_ACT-0043,Compliant,NONE,Not Addressed,qwen3:8b,Automatic deletion mechanism with explicit timeline and no recovery option.
+S002697,DPDP_ACT-0089,Compliant,DPDP_ACT-0029,Partially Compliant,qwen3:8b,Explicit objection mechanism with human review timeline.
+S002701,DPDP_ACT-0041,Compliant,NONE,Not Addressed,qwen3:8b,Self-service correction plus support channel with 10-day SLA.
+S002702,DPDP_ACT-0041,Compliant,NONE,Not Addressed,qwen3:8b,Immediate self-service correction with support escalation path.
+S002707,DPDP_ACT-0024,Compliant,DPDP_RUL-0119,Partially Compliant,qwen3:8b,Published transparency reporting with granular disclosure.
+S002708,DPDP_ACT-0024,Compliant,DPDP_RUL-0176,Partially Compliant,qwen3:8b,Living policy documentation with DPIA publication and AI accountability measures.
+S002714,DPDP_ACT-0043,Compliant,NONE,Not Addressed,qwen3:8b,Complete location data collection control and deletion.
+S002715,DPDP_ACT-0067,Compliant,NONE,Not Addressed,qwen3:8b,Biometric data control with retroactive deletion.
+S002718,DPDP_ACT-0070,Compliant,NONE,Not Addressed,qwen3:8b,Strong authentication mechanism with user control.
+S002719,DPDP_ACT-0070,Compliant,DPDP_ACT-0027,Partially Compliant,qwen3:8b,User-controlled account recovery with no delay.
