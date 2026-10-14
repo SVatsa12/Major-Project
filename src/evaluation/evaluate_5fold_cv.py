@@ -29,8 +29,8 @@ from src.training.train_classifier import (
     train_and_evaluate_fold,
 )
 
-CORPUS_PATH = Path("corpus/labeled_clauses_bootstrap.csv")
-TAXONOMY_PATH = Path("corpus/dpdp_taxonomy_final.json")
+CORPUS_PATH = Path("corpus/labeled_clauses_v2.csv")
+TAXONOMY_PATH = Path("corpus/dpdp_taxonomy_v2.json")
 OUTPUT_DIR = Path("reports")
 MODELS_DIR = Path("models")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -46,7 +46,7 @@ print("\nClass distribution:")
 print(df["verdict"].value_counts().to_string())
 
 # Verify expected corpus distribution
-expected_dist = {"Not Addressed": 586, "Partially Compliant": 143, "Compliant": 97}
+expected_dist = {"Not Addressed": 460, "Partially Compliant": 248, "Compliant": 118}
 actual_dist = df["verdict"].value_counts().to_dict()
 print(f"\n[CHECK] Expected distribution: {expected_dist}")
 print(f"[CHECK] Actual distribution: {actual_dist}")
@@ -221,9 +221,9 @@ report_data = {
 }
 
 # Write report
-report_path = OUTPUT_DIR / "cross_validation_report.json"
+report_path = OUTPUT_DIR / "cross_validation_report_v2.json"
 report_path.write_text(json.dumps(report_data, indent=2))
-print(f"\n[SUCCESS] Saved cross_validation_report.json to {report_path}")
+print(f"\n[SUCCESS] Saved cross_validation_report_v2.json to {report_path}")
 
 # Save the trained classifier (using last fold's classifier and scaler for final model)
 # Note: In production, would retrain on full dataset with median thresholds

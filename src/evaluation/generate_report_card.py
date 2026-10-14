@@ -29,10 +29,10 @@ pd.set_option("display.colheader_justify", "left")
 # ─────────────────────────────────────────────────────────────────────────────
 # Paths
 # ─────────────────────────────────────────────────────────────────────────────
-BOOTSTRAP_PATH    = Path("corpus/labeled_clauses_bootstrap.csv")
+BOOTSTRAP_PATH    = Path("corpus/labeled_clauses_v2.csv")
 SPLITS_DIR        = Path("datasets/splits")
 TRAIN_FALLBACK    = Path("corpus/labeled_clauses_final_train.csv")
-TAXONOMY_PATH     = Path("corpus/dpdp_taxonomy_final.json")
+TAXONOMY_PATH     = Path("corpus/dpdp_taxonomy_v2.json")
 REPORT_OUTPUT_DIR = Path("reports")
 REPORT_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -305,11 +305,11 @@ act_matrix_numeric = act_matrix_df.copy()
 for col in act_matrix_numeric.columns:
     act_matrix_numeric[col] = act_matrix_numeric[col].str.rstrip("%").astype(float)
 act_matrix_numeric.rename(columns={"Combined Final": "combined_final_pct"}).to_csv(
-    REPORT_OUTPUT_DIR / "platform_act_compliance_matrix.csv"
+    REPORT_OUTPUT_DIR / "platform_act_compliance_matrix_v2.csv"
 )
 
-rankings_df.to_csv(REPORT_OUTPUT_DIR / "platform_overall_rankings.csv", index=False)
-cat_summary.to_csv(REPORT_OUTPUT_DIR / "category_gap_analysis.csv", index=False)
+rankings_df.to_csv(REPORT_OUTPUT_DIR / "platform_overall_rankings_v2.csv", index=False)
+cat_summary.to_csv(REPORT_OUTPUT_DIR / "category_gap_analysis_v2.csv", index=False)
 
 summary_meta = {
     "total_audited_clauses":    total_clauses,
@@ -319,7 +319,7 @@ summary_meta = {
     "platform_rankings":        rankings_df.to_dict(orient="records"),
     "category_breakdown":       cat_summary.to_dict(orient="records"),
 }
-(REPORT_OUTPUT_DIR / "audit_report_summary.json").write_text(
+(REPORT_OUTPUT_DIR / "audit_report_summary_v2.json").write_text(
     json.dumps(summary_meta, indent=2, default=str), encoding="utf-8"
 )
 
