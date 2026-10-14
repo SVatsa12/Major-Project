@@ -1,0 +1,161 @@
+clause_id,candidate_rule,new_verdict,justification
+S000072,IT_SPDI-002,Not Addressed,Allocates consent responsibility to the enterprise customer; no platform statement on sensitive-data disclosure or security practices.
+S000150,IT_SPDI-002,Not Addressed,Governing-law clause; no data protection content in substance.
+S000278,IT_SPDI-002,Partially Compliant,"General assurance of working hard to protect information; hedged, states no disclosure rule and no specific security practice, and is not sensitive-data specific."
+S000350,IT_SPDI-002,Not Addressed,Describes sharing of non-personally identifiable information and partner cookie collection; no permission commitment for sensitive data and no security practices.
+S000372,IT_SPDI-002,Not Addressed,"Consent commitment concerns Privacy Policy changes, not disclosure of sensitive personal data."
+S000771,IT_SPDI-002,Not Addressed,Meta-description of what the Privacy Policy covers; states no disclosure restriction or security practice.
+S000772,IT_SPDI-002,Not Addressed,Describes user privacy settings and controls; no sensitive-data disclosure rule or security practice.
+S000779,IT_SPDI-002,Not Addressed,Concerns de-identified data received from third parties; no disclosure-without-permission commitment and no security practices.
+S001027,IT_SPDI-002,Not Addressed,Content moderation reservation of rights; unrelated to sensitive-data disclosure or protection practices.
+S001069,IT_SPDI-002,Not Addressed,"Prohibition on users building third-party apps without consent; governs user conduct, not platform disclosure of sensitive data."
+S001139,IT_SPDI-002,Not Addressed,"Privacy Policy introduction; topic description only, no disclosure rule or security practice stated."
+S001179,IT_SPDI-002,Not Addressed,Data minimization sentiment; states neither a disclosure restriction nor a security practice for sensitive data.
+S001188,IT_SPDI-002,Partially Compliant,"Commits to asking permission before using information in new or different ways; permission element present in general form, but not specific to sensitive-data disclosure and no security practices stated."
+S001220,IT_SPDI-002,Not Addressed,Applicability note for a U.S. state notice; navigational text only.
+S001226,IT_SPDI-002,Not Addressed,Commitment to announce policy updates; no disclosure or security content.
+S001500,IT_SPDI-002,Not Addressed,Table-of-contents fragment listing policy topics; states no commitment.
+S001503,IT_SPDI-002,Not Addressed,Table-of-contents fragment naming data safety as a topic; no practice stated.
+S001505,IT_SPDI-002,Not Addressed,Table-of-contents fragment naming sharing as a topic; no disclosure rule stated.
+S001506,IT_SPDI-002,Not Addressed,Table-of-contents fragment naming user rights; no disclosure or security content.
+S001510,IT_SPDI-002,Not Addressed,"States a legitimate-interests legal basis for processing; fraud and security appear as processing purposes, not as protection practices for sensitive data."
+S001577,IT_SPDI-002,Partially Compliant,Sharing occurs with users the person chose to communicate with and the clause claims appropriate technical and organizational measures; not specific to sensitive data and measures are unspecified.
+S001805,IT_SPDI-002,Not Addressed,Navigational pointer to the Privacy Policy; no commitment stated.
+S001810,IT_SPDI-002,Not Addressed,Definitions from data processing terms; no disclosure rule or security practice.
+S001837,IT_SPDI-002,Not Addressed,Incomplete fragment about sub-processors; no discernible commitment.
+S001840,IT_SPDI-002,Not Addressed,Asserts WhatsApp's independent right to use Personal Information; the opposite of a disclosure restriction.
+S001962,IT_SPDI-002,Not Addressed,"Confidentiality duty covering WhatsApp's corporate information, not users' sensitive personal data."
+S002233,IT_SPDI-002,Partially Compliant,"Requires businesses to secure all necessary notices, permissions and consents before collecting, using and sharing people's information; permission element present, but the duty binds businesses, is not sensitive-data specific, and states no security practices."
+S002318,IT_SPDI-002,Not Addressed,Navigational pointer to the Privacy Policy; no commitment stated.
+S002359,IT_SPDI-002,Not Addressed,Pointer to other Meta companies' policies; no commitment stated.
+S002660,IT_SPDI-002,Not Addressed,Vague claim that privacy tools empower users; no disclosure rule or security practice.
+S000286,IT_SPDI-001,Not Addressed,States that account information is collected and treated as personal information; no consent before collection and no sensitive data named.
+S000316,IT_SPDI-001,Partially Compliant,"Commits to asking consent before using information for purposes not covered by the policy; consent-before element present, but it concerns new uses rather than collection and is not specific to sensitive data."
+S000366,IT_SPDI-001,Not Addressed,States the policy is reviewed for compliance; no consent or collection content.
+S000749,IT_SPDI-001,Not Addressed,"Legacy-contact designation for post-mortem account access; concerns disclosure after death, not consent before collecting sensitive data."
+S000770,IT_SPDI-001,Not Addressed,Introductory statement about understanding collection; no consent mechanism stated.
+S000774,IT_SPDI-001,Not Addressed,Describes that collection varies by product use; no consent before collection of sensitive data.
+S000778,IT_SPDI-001,Not Addressed,Heading fragment about de-identified information; no commitment stated.
+S000780,IT_SPDI-001,Not Addressed,Video heading in the Privacy Centre; no commitment stated.
+S000782,IT_SPDI-001,Not Addressed,Describes automated processing and occasional manual review; no consent before collection of sensitive data.
+S000879,IT_SPDI-001,Partially Compliant,"Names special-protection categories (health, sexual orientation, religious and political views, ethnic origin) as information the user chooses to provide; choice element present, but no explicit prior-consent statement and no purpose named."
+S000942,IT_SPDI-001,Not Addressed,Processing described as circumstance-dependent with a law-enforcement pointer; no consent before collection of sensitive data.
+S001164,IT_SPDI-001,Partially Compliant,"Collection of device data (phonebook, camera, microphone, precise location) is gated on explicitly granted device permissions; permission-before-collection present, but the data types are not named as sensitive categories and no purpose is stated."
+S001166,IT_SPDI-001,Partially Compliant,"States permission will be asked before collecting additional information such as camera roll or contacts; explicit prior consent for collection, but the examples are not sensitive personal data under the rule and the purpose is only implied."
+S001207,IT_SPDI-001,Not Addressed,Retention section introduction; no consent or collection content.
+S001502,IT_SPDI-001,Not Addressed,Table-of-contents fragment; no commitment stated.
+S001504,IT_SPDI-001,Not Addressed,Table-of-contents fragment; no commitment stated.
+S001786,IT_SPDI-001,Not Addressed,Lead-in sentence listing additional collected information; no consent element.
+S001801,IT_SPDI-001,Not Addressed,States other products' own terms govern their use; no consent before collection of sensitive data.
+S001977,IT_SPDI-001,Not Addressed,"Consent here concerns assignment of contractual terms, not data collection."
+S002138,IT_SPDI-001,Not Addressed,Describes automated and human review of reported content; no consent before collecting sensitive data.
+S002194,IT_SPDI-001,Not Addressed,Notes separate consent may apply to separately governed services; no statement on collecting sensitive data.
+S002200,IT_SPDI-001,Not Addressed,Concerns amendments to the Terms requiring WhatsApp's consent; not data collection.
+S002281,IT_SPDI-001,Not Addressed,Describes violation detection and review; no consent before collecting sensitive data.
+S002331,IT_SPDI-001,Not Addressed,Describes collection of payment and transaction information; names financial data but states no consent obtained before collection.
+S002338,IT_SPDI-001,Partially Compliant,"Requires other users to have lawful rights to collect, use and share a person's information before providing it to WhatsApp; a prior-lawful-basis element, but it binds third parties, is not the platform's own consent practice, and is not sensitive-data specific."
+S000348,DPDP_ACT-0041,Not Addressed,Purpose fragment about addressing fraud and security; no prohibition on tracking or targeted advertising of children.
+S000349,DPDP_ACT-0041,Not Addressed,"General statement about protecting rights, property and safety; no children tracking or advertising prohibition."
+S000370,DPDP_ACT-0041,Not Addressed,Scope exclusion for third-party services; no relevant content.
+S000393,DPDP_ACT-0041,Not Addressed,"Acceptable-use rule against abusing or harming others including children; governs user conduct, not tracking or targeted advertising."
+S000493,DPDP_ACT-0041,Not Addressed,"Content takedown provision with child-safety examples; content moderation, not a prohibition on tracking or targeting children with ads."
+S000769,DPDP_ACT-0041,Not Addressed,Policy header fragment; no commitment stated.
+S000787,DPDP_ACT-0041,Not Addressed,"States information with special protections is not used to show ads; the restraint covers sensitive information generally, not children, and says nothing on tracking."
+S000817,DPDP_ACT-0041,Not Addressed,Section heading on legal requests and harm prevention; no commitment stated.
+S000855,DPDP_ACT-0041,Not Addressed,Account verification and violation handling; no children advertising or tracking prohibition.
+S000856,DPDP_ACT-0041,Not Addressed,"Detection of harmful or unlawful behaviour; content safety, not tracking or targeted advertising of children."
+S001088,DPDP_ACT-0041,Not Addressed,General safety commitment and reporting encouragement; no prohibition on tracking or targeted advertising of children.
+S001183,DPDP_ACT-0041,Not Addressed,Automated tools detect violations and confirm age-appropriate use; age confirmation is not a prohibition on tracking or targeted advertising of children.
+S001213,DPDP_ACT-0041,Not Addressed,Retention for harm prevention and investigations; no relevant prohibition.
+S001222,DPDP_ACT-0041,Not Addressed,"States services are directed to individuals 13 and older; an age-direction statement, not a prohibition on tracking or targeted advertising of children."
+S001247,DPDP_ACT-0041,Not Addressed,Advertising content rules on rights and likeness consent; no prohibition on targeting children.
+S001272,DPDP_ACT-0041,Not Addressed,Content guideline example about educational material; no relevant prohibition.
+S001467,DPDP_ACT-0041,Not Addressed,"Prohibits sexual exploitation and sexualization of minors in content; child-safety content rule, not a tracking or advertising prohibition."
+S001610,DPDP_ACT-0041,Not Addressed,Describes a policy update about advertising tools and geographic limits; no prohibition stated.
+S001623,DPDP_ACT-0041,Not Addressed,"Prohibits posting child sexual abuse material on public channels; content rule, not tracking or advertising."
+S001808,DPDP_ACT-0041,Not Addressed,Pointer to a business privacy policy; no commitment stated.
+S001915,DPDP_ACT-0041,Not Addressed,Business conduct prohibitions including predatory behaviour; not a prohibition on tracking or targeted advertising of children.
+S001991,DPDP_ACT-0041,Not Addressed,Enforcement actions for illegal content and violations; no relevant prohibition.
+S002140,DPDP_ACT-0041,Not Addressed,Enforcement actions for illegal content and violations; no relevant prohibition.
+S002373,DPDP_ACT-0041,Not Addressed,Reporting route for policy violations and child-danger situations; no tracking or advertising prohibition.
+S002375,DPDP_ACT-0041,Not Addressed,Exceptions for educational or documentary content; no relevant prohibition.
+S002384,DPDP_ACT-0041,Not Addressed,"Content rules for material targeting young minors with age-inappropriate themes; content policy, not data tracking or advertising practice."
+S002393,DPDP_ACT-0041,Not Addressed,Prohibited content showing minors in dangerous activities; content rule only.
+S002395,DPDP_ACT-0041,Not Addressed,Reminder fragment about policy examples; no commitment stated.
+S002413,DPDP_ACT-0041,Not Addressed,"Examples of inappropriate content including exploitation of minors; content rules, not tracking or advertising prohibitions."
+S002429,DPDP_ACT-0041,Partially Compliant,"States alcohol-related advertising must not target minors; a genuine targeted-advertising prohibition for one advertising category, but not a general prohibition and nothing on tracking or behavioural monitoring."
+S002433,DPDP_ACT-0041,Not Addressed,Gambling advertising rules on approved countries and certification; no prohibition on targeting minors is stated.
+S002680,DPDP_ACT-0041,Not Addressed,Describes automated decision-making for recommendations and ads targeting with an objection route; contains no prohibition on tracking or targeted advertising of children.
+S002686,DPDP_ACT-0041,Not Addressed,Describes behavioural profiling for content and advertising micro-targeting; no children-specific prohibition on tracking or targeted advertising.
+S001462,DPDP_ACT-0160,Not Addressed,"Prohibits content and behaviour posing severe harm including child exploitation; concerns harmful content, not processing of children's personal data."
+S002379,DPDP_ACT-0160,Not Addressed,"Content examples showing maltreatment of minors; content policy, not a prohibition on harmful data processing."
+S002381,DPDP_ACT-0160,Not Addressed,Exception for abuse content in educational or documentary context; content policy only.
+S002382,DPDP_ACT-0160,Not Addressed,"Content that could distress minor viewers, including misleading family content; content policy, not data processing."
+S002553,DPDP_ACT-0160,Not Addressed,"Acceptable-use rule against harming others including children; governs user conduct, not data processing."
+S000877,DPDP_ACT-0042,Not Addressed,"Describes processing of special-protection information for sharing, personalisation and analytics; not specific to children and states no verifiably safe processing measures."
+S001811,DPDP_ACT-0042,Not Addressed,Definition of processing from data processing terms; no measures stated.
+S000802,DPDP_RUL-0119,Not Addressed,Describes sharing and transfers within the Meta group of companies; no statement of compliance with Central Government restrictions on cross-border transfers.
+S000815,DPDP_RUL-0119,Not Addressed,Section heading on transfers; no commitment stated.
+S000872,DPDP_RUL-0119,Not Addressed,Pointer to the transfer section of the policy; no commitment stated.
+S001189,DPDP_RUL-0119,Not Addressed,Describes sharing including transfers outside the country of collection; states no compliance with Central Government transfer restrictions.
+S001221,DPDP_RUL-0119,Not Addressed,Pointer to jurisdiction-specific legal bases; no transfer restriction content.
+S001613,DPDP_RUL-0119,Not Addressed,GDPR request pointer for EU users; unrelated to Indian transfer restrictions.
+S001827,DPDP_RUL-0119,Not Addressed,Fragment about processor legal obligations; no transfer content in substance.
+S001831,DPDP_RUL-0119,Not Addressed,Names the contracting entity and an EU data transfer addendum; no Central Government restriction compliance.
+S001835,DPDP_RUL-0119,Not Addressed,Transfer framed under GDPR addendum laws; no Indian restriction compliance stated.
+S001866,DPDP_RUL-0119,Not Addressed,Heading on protection of data in transit; transit security is not transfer restriction compliance.
+S001878,DPDP_RUL-0119,Not Addressed,Priority-of-documents clause for the transfer addendum; no commitment stated.
+S001879,DPDP_RUL-0119,Not Addressed,Definition of EU Standard Contractual Clauses; no Indian restriction content.
+S001883,DPDP_RUL-0119,Not Addressed,Definition of European Data; no relevant commitment.
+S001884,DPDP_RUL-0119,Not Addressed,GDPR applicability statement; no Central Government restriction compliance.
+S001885,DPDP_RUL-0119,Not Addressed,Definition of processor-to-processor SCCs under EEA law; no Indian restriction content.
+S002678,DPDP_RUL-0119,Partially Compliant,"States Indian residents' data is stored in India or regional centres unless required by law, offers India-only storage, and ties cross-border transfers to DPDP Act requirements with data processing agreements; engages the transfer-compliance obligation but does not expressly state adherence to Central Government restrictions."
+S002707,DPDP_RUL-0119,Not Addressed,Concerns publication of transparency reports; no cross-border transfer content.
+S000138,DPDP_RUL-0095,Not Addressed,Contract assignment clause; no breach notification content.
+S000312,DPDP_RUL-0095,Not Addressed,"Use of information to detect fraud, abuse and security risks; no obligation to inform affected persons of breach consequences."
+S000347,DPDP_RUL-0095,Not Addressed,Enforcement of terms and investigation of violations; no breach notification content.
+S000351,DPDP_RUL-0095,Not Addressed,"Notice to users before information is transferred in a merger or asset sale; a corporate-transaction notice, not breach consequence information."
+S000943,DPDP_RUL-0095,Not Addressed,Sharing limited to what legal obligations require; no breach notification content.
+S001090,DPDP_RUL-0095,Not Addressed,"Consequences listed are enforcement sanctions against a non-compliant user, not consequences of a breach for affected data principals."
+S001122,DPDP_RUL-0095,Not Addressed,"Limitation of liability including for loss of data; a liability disclaimer, not a breach notification obligation."
+S001201,DPDP_RUL-0095,Not Addressed,Fragment about detecting fraud and security concerns; no breach notification content.
+S001212,DPDP_RUL-0095,Not Addressed,Retention duration factor (legal obligations); no breach notification content.
+S001787,DPDP_RUL-0095,Not Addressed,Heading about business account information; no commitment stated.
+S001803,DPDP_RUL-0095,Not Addressed,Sharing with successors in a merger or restructuring; no breach notification content.
+S001850,DPDP_RUL-0095,Not Addressed,List item on secure deletion procedures from security terms; no obligation to inform affected persons of breach consequences.
+S001872,DPDP_RUL-0095,Not Addressed,Conflict-of-terms clause; no relevant content.
+S001855,DPDP_RUL-0095,Not Addressed,Internal disciplinary action for unauthorized access by personnel; does not inform affected data principals of breach consequences.
+S001114,DPDP_RUL-0094,Not Addressed,Indemnification clause; no breach description obligation.
+S002368,DPDP_RUL-0094,Not Addressed,"Purposes including investigating violations and security issues; no obligation to describe a breach's nature, extent or impact."
+S000792,DPDP_RUL-0103,Not Addressed,Describes Meta using users' contact information to communicate with them; provides no data protection officer or representative contact for data principals.
+S001160,DPDP_RUL-0103,Not Addressed,Describes collecting information when users contact Support; provides no data protection officer or representative contact information.
+S001507,DPDP_RUL-0103,Partially Compliant,"Designates a named data protection representative (European Data Protection Office) for the EEA; a representative is designated, but no contact information is given and the designation is EEA-specific."
+S000807,DPDP_RUL-0114,Not Addressed,Section heading asking how users can manage or delete information and exercise rights; the means themselves are not provided in the clause.
+S001218,DPDP_RUL-0114,Not Addressed,Pointer to region-specific rights details; no accessible means stated.
+S001546,DPDP_RUL-0114,Not Addressed,Cross-reference stating rights in another section remain unaffected; no means stated.
+S001130,DPDP_ACT-0038,Partially Compliant,"Invites users to get in touch if they have a complaint; a complaint channel is acknowledged, but no mechanism (officer, process, timelines) is outlined."
+S001199,DPDP_ACT-0038,Not Addressed,Internal investigation and enforcement of violations; not a grievance mechanism for users.
+S001971,DPDP_ACT-0038,Partially Compliant,"Outlines a complaint route for business users: unresolved complaints go to voluntary mediation, with a published complaints email and a list of mediators; a mechanism is outlined, but it is framed for business disputes rather than data principal grievances."
+S002170,DPDP_ACT-0038,Not Addressed,Liability waiver boilerplate mentioning claims and complaints; no mechanism outlined.
+S002544,DPDP_ACT-0038,Not Addressed,"Rule against misusing reporting, complaint and appeals processes; presupposes such processes but outlines no grievance mechanism."
+S002670,DPDP_ACT-0038,Compliant,"Names a Grievance Officer with postal address and email for complaints under the IT Rules 2021, with acknowledgement within 24 hours and resolution or interim update within 15 days; a complete grievance redressal mechanism is outlined."
+S001729,DPDP_ACT-0074,Not Addressed,Directs warranty and service complaints to the service provider without involving Telegram; no grievance response period is specified.
+S002683,DPDP_ACT-0025,Compliant,"Names concrete security safeguards: industry-standard measures including encryption, access controls and regular audits, plus incident response procedures; the foolproof caveat does not remove the specified safeguards."
+S002715,DPDP_ACT-0027,Partially Compliant,"States existing facial recognition data is deleted when the user turns the feature off; erasure on withdrawal is specified for this one data type, not as a general obligation."
+S002719,DPDP_ACT-0025,Partially Compliant,"Reassigned from DPDP_ACT-0027, whose erasure test it does not meet. Specifies verified account recovery options (backup email, phone) as an account-security measure; a safeguard is stated, though it concerns account recovery rather than breach prevention."
+S002697,DPDP_ACT-0029,Not Addressed,"Provides objection to automated decision-making and cessation of profiling with human review; cessation of profiling is not erasure of personal data on request, and the automated-decision category has no rule in v2."
+S002693,DPDP_RUL-0184,Partially Compliant,"Reassigned from DPDP_RUL-0175, whose one-year log retention test it does not meet. States server-side copies are deleted after 30 days and viewed messages disappear; an erasure mechanism exists, scoped to messages."
+S002708,DPDP_RUL-0176,Not Addressed,"Describes maintaining the privacy policy and conducting impact assessments; no contractual security provisions between fiduciary and processors, and no other v2 test is met."
+S002667,DPDP_RUL-0114,Compliant,"Reassigned from DPDP_RUL-0178, a breach-notification test it does not meet. Provides a clear, accessible means to exercise the correction right: Settings > Personal Information, editable fields listed, changes effective immediately."
+S002701,DPDP_RUL-0114,Compliant,"Reassigned from DPDP_RUL-0178, a breach-notification test it does not meet. Provides two accessible means to exercise the correction right: direct profile editing in Settings and a support email route with corrections implemented within 10 business days."
+S002702,DPDP_RUL-0114,Compliant,"Reassigned from DPDP_RUL-0178, a breach-notification test it does not meet. Provides accessible means to exercise the correction right: immediate profile editing in Settings and a support route for other data with corrections within 5 business days."
+S002666,DPDP_RUL-0184,Compliant,"Provides a full erasure mechanism: permanent account deletion through a stated Settings path, with all associated personal data deleted or anonymized within 90 days of the request except where retention is legally required."
+S002677,DPDP_RUL-0184,Partially Compliant,"Provides permanent deletion of activity history within 24 hours through Activity Controls; the mechanism is real but scoped to activity data, and no legal-retention exception is stated."
+S002679,DPDP_RUL-0184,Partially Compliant,States erasure within 90 days of a deletion request unless retention is required by law; weakened by retention for a reasonable period for business purposes and backups retained up to 12 months.
+S002691,DPDP_RUL-0184,Compliant,"Provides permanent account deletion through a stated Settings path with all personal data (messages, media, contacts, metadata) permanently erased within 30 days and no recovery possible."
+S002692,DPDP_RUL-0184,Partially Compliant,Provides automatic permanent deletion of messages on user-configurable timelines (1 day to 1 week) from both devices; an erasure mechanism scoped to chat messages rather than personal data generally.
+S002714,DPDP_RUL-0184,Partially Compliant,"Provides permanent deletion of Location History through a stated account-controls path, with pausing that stops collection immediately; the mechanism is scoped to location history."
+S002671,DPDP_RUL-0201,Compliant,"Publishes a grievance route with a named Data Protection Officer and Grievance Redressal Officer, email and postal address, acknowledgement within 5 working days and substantive response within 30 days, inside the ninety-day period the test specifies."
+S002718,DPDP_ACT-0025,Partially Compliant,"Reassigned from DPDP_RUL-0208, a consent-functionality test it does not meet. Specifies a concrete security safeguard, mandatory two-factor authentication via Settings; a single user-side safeguard, with no platform-side safeguards described."
+S002685,DPDP_RUL-0208,Partially Compliant,"Reassigned from IT_ACT_2-0285, a government-blocking test it does not meet. Provides a Settings functionality to disable location sharing, after which location data is not collected; consent-withdrawal functionality for one data type, though IP-based approximate location may still be used."
+S001844,DPDP_ACT-0025,Partially Compliant,"Reassigned from IT_ACT_2-0310, a breach-notification test it does not meet. Specifies an organizational security safeguard, personnel responsible for oversight of security of the Business Services; no technical safeguards or breach-prevention specifics are stated."

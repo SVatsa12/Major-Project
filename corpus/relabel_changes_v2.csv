@@ -1,161 +1,161 @@
-clause_id,old_taxonomy_id,old_verdict,new_taxonomy_id,new_verdict,model,justification
-S000072,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S000138,NONE,Not Addressed,DPDP_RUL-0095,Partially Compliant,qwen3:8b,"Commercial/contractual term (liability, disputes, billing, licensing, service terms); no DPDP data-protection obligation or mechanism."
-S000150,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,"Commercial/contractual term (liability, disputes, billing, licensing, service terms); no DPDP data-protection obligation or mechanism."
-S000278,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S000286,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,qwen3:8b,"Describes what data is collected; no user right, retention limit, safeguard or grievance mechanism stated."
-S000312,NONE,Not Addressed,DPDP_RUL-0095,Partially Compliant,qwen3:8b,"Commercial/contractual term (liability, disputes, billing, licensing, service terms); no DPDP data-protection obligation or mechanism."
-S000316,NONE,Not Addressed,IT_SPDI-001,Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S000347,NONE,Not Addressed,DPDP_RUL-0095,Partially Compliant,qwen3:8b,"Commercial/contractual term (liability, disputes, billing, licensing, service terms); no DPDP data-protection obligation or mechanism."
-S000348,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S000349,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S000350,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,"Describes advertising, cookies or personalisation practice; no consent-withdrawal, rights or safeguard mechanism stated."
-S000351,NONE,Not Addressed,DPDP_RUL-0095,Partially Compliant,qwen3:8b,"Describes data sharing with third parties/affiliates in general terms; no consent, safeguard or transfer control matched to a taxonomy requirement."
-S000366,NONE,Not Addressed,IT_SPDI-001,Compliant,qwen3:8b,Describes purposes of use of data; no actionable compliance mechanism mapped to a taxonomy requirement.
-S000370,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S000372,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S000393,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
-S000493,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
-S001027,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,"Commercial/contractual term (liability, disputes, billing, licensing, service terms); no DPDP data-protection obligation or mechanism."
-S001069,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,Describes purposes of use of data; no actionable compliance mechanism mapped to a taxonomy requirement.
-S001088,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
-S001090,NONE,Not Addressed,DPDP_RUL-0095,Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
-S001114,NONE,Not Addressed,DPDP_RUL-0094,Partially Compliant,qwen3:8b,"Commercial/contractual term (liability, disputes, billing, licensing, service terms); no DPDP data-protection obligation or mechanism."
-S001122,NONE,Not Addressed,DPDP_RUL-0095,Partially Compliant,qwen3:8b,"Commercial/contractual term (liability, disputes, billing, licensing, service terms); no DPDP data-protection obligation or mechanism."
-S001130,NONE,Not Addressed,DPDP_ACT-0038,Partially Compliant,qwen3:8b,"Commercial/contractual term (liability, disputes, billing, licensing, service terms); no DPDP data-protection obligation or mechanism."
-S001139,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,"Describes what data is collected; no user right, retention limit, safeguard or grievance mechanism stated."
-S001160,NONE,Not Addressed,DPDP_RUL-0103,Partially Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
-S001164,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,qwen3:8b,"Describes what data is collected; no user right, retention limit, safeguard or grievance mechanism stated."
-S001166,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,qwen3:8b,"Describes data sharing with third parties/affiliates in general terms; no consent, safeguard or transfer control matched to a taxonomy requirement."
-S001179,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,Describes purposes of use of data; no actionable compliance mechanism mapped to a taxonomy requirement.
-S001183,NONE,Not Addressed,DPDP_ACT-0041,Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
-S001188,NONE,Not Addressed,IT_SPDI-002,Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S001189,NONE,Not Addressed,DPDP_RUL-0119,Compliant,qwen3:8b,"Describes data sharing with third parties/affiliates in general terms; no consent, safeguard or transfer control matched to a taxonomy requirement."
-S001199,NONE,Not Addressed,DPDP_ACT-0038,Partially Compliant,qwen3:8b,"Commercial/contractual term (liability, disputes, billing, licensing, service terms); no DPDP data-protection obligation or mechanism."
-S001201,NONE,Not Addressed,DPDP_RUL-0095,Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S001207,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S001212,NONE,Not Addressed,DPDP_RUL-0095,Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S001213,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,"Commercial/contractual term (liability, disputes, billing, licensing, service terms); no DPDP data-protection obligation or mechanism."
-S001218,NONE,Not Addressed,DPDP_RUL-0114,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S001220,NONE,Not Addressed,IT_SPDI-002,Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S001221,NONE,Not Addressed,DPDP_RUL-0119,Compliant,qwen3:8b,Describes purposes of use of data; no actionable compliance mechanism mapped to a taxonomy requirement.
-S001222,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S001226,NONE,Not Addressed,IT_SPDI-002,Compliant,qwen3:8b,"Describes advertising, cookies or personalisation practice; no consent-withdrawal, rights or safeguard mechanism stated."
-S001247,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,"Commercial/contractual term (liability, disputes, billing, licensing, service terms); no DPDP data-protection obligation or mechanism."
-S001272,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
-S001462,NONE,Not Addressed,DPDP_ACT-0160,Partially Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
-S001467,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
-S001786,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,qwen3:8b,"Describes what data is collected; no user right, retention limit, safeguard or grievance mechanism stated."
-S001787,NONE,Not Addressed,DPDP_RUL-0095,Partially Compliant,qwen3:8b,"Describes what data is collected; no user right, retention limit, safeguard or grievance mechanism stated."
-S001801,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S001803,NONE,Not Addressed,DPDP_RUL-0095,Partially Compliant,qwen3:8b,"Describes data sharing with third parties/affiliates in general terms; no consent, safeguard or transfer control matched to a taxonomy requirement."
-S001805,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,"Describes data sharing with third parties/affiliates in general terms; no consent, safeguard or transfer control matched to a taxonomy requirement."
-S001808,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S001810,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,Describes purposes of use of data; no actionable compliance mechanism mapped to a taxonomy requirement.
-S001811,NONE,Not Addressed,DPDP_ACT-0042,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S001827,NONE,Not Addressed,DPDP_RUL-0119,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S001831,NONE,Not Addressed,DPDP_RUL-0119,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S001835,NONE,Not Addressed,DPDP_RUL-0119,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S001837,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S001840,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S001844,DPDP_RUL-0170,Partially Compliant,IT_ACT_2-0310,Partially Compliant,qwen3:8b,Assigns oversight / disciplinary accountability for security of personal data; reasonable-safeguards intent without detail.
-S001850,NONE,Not Addressed,DPDP_RUL-0095,Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S001855,DPDP_RUL-0170,Partially Compliant,DPDP_RUL-0095,Compliant,qwen3:8b,Assigns oversight / disciplinary accountability for security of personal data; reasonable-safeguards intent without detail.
-S001866,NONE,Not Addressed,DPDP_RUL-0119,Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S001872,NONE,Not Addressed,DPDP_RUL-0095,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S001878,NONE,Not Addressed,DPDP_RUL-0119,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S001879,NONE,Not Addressed,DPDP_RUL-0119,Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S001883,NONE,Not Addressed,DPDP_RUL-0119,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S001884,NONE,Not Addressed,DPDP_RUL-0119,Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S001885,NONE,Not Addressed,DPDP_RUL-0119,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S001915,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,"Commercial/contractual term (liability, disputes, billing, licensing, service terms); no DPDP data-protection obligation or mechanism."
-S001962,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,Describes purposes of use of data; no actionable compliance mechanism mapped to a taxonomy requirement.
-S001971,NONE,Not Addressed,DPDP_ACT-0038,Partially Compliant,qwen3:8b,"Commercial/contractual term (liability, disputes, billing, licensing, service terms); no DPDP data-protection obligation or mechanism."
-S001977,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S001991,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
-S002138,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,qwen3:8b,Describes purposes of use of data; no actionable compliance mechanism mapped to a taxonomy requirement.
-S002140,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
-S002170,NONE,Not Addressed,DPDP_ACT-0038,Compliant,qwen3:8b,"Describes data sharing with third parties/affiliates in general terms; no consent, safeguard or transfer control matched to a taxonomy requirement."
-S002194,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,qwen3:8b,"Commercial/contractual term (liability, disputes, billing, licensing, service terms); no DPDP data-protection obligation or mechanism."
-S002200,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S002233,NONE,Not Addressed,IT_SPDI-002,Compliant,qwen3:8b,"Describes data sharing with third parties/affiliates in general terms; no consent, safeguard or transfer control matched to a taxonomy requirement."
-S002281,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
-S002318,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,Describes purposes of use of data; no actionable compliance mechanism mapped to a taxonomy requirement.
-S002331,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S002338,NONE,Not Addressed,IT_SPDI-001,Compliant,qwen3:8b,"Describes data sharing with third parties/affiliates in general terms; no consent, safeguard or transfer control matched to a taxonomy requirement."
-S002359,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,"Describes data sharing with third parties/affiliates in general terms; no consent, safeguard or transfer control matched to a taxonomy requirement."
-S002368,NONE,Not Addressed,DPDP_RUL-0094,Partially Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
-S000749,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S000769,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S000770,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,qwen3:8b,"Describes what data is collected; no user right, retention limit, safeguard or grievance mechanism stated."
-S000771,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,"Describes what data is collected; no user right, retention limit, safeguard or grievance mechanism stated."
-S000772,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S000774,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,qwen3:8b,"Describes what data is collected; no user right, retention limit, safeguard or grievance mechanism stated."
-S000778,NONE,Not Addressed,IT_SPDI-001,Compliant,qwen3:8b,"Describes what data is collected; no user right, retention limit, safeguard or grievance mechanism stated."
-S000779,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,Describes purposes of use of data; no actionable compliance mechanism mapped to a taxonomy requirement.
-S000780,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,qwen3:8b,Describes purposes of use of data; no actionable compliance mechanism mapped to a taxonomy requirement.
-S000782,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,qwen3:8b,Describes purposes of use of data; no actionable compliance mechanism mapped to a taxonomy requirement.
-S000787,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,Describes purposes of use of data; no actionable compliance mechanism mapped to a taxonomy requirement.
-S000792,NONE,Not Addressed,DPDP_RUL-0103,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S000802,NONE,Not Addressed,DPDP_RUL-0119,Partially Compliant,qwen3:8b,"Describes what data is collected; no user right, retention limit, safeguard or grievance mechanism stated."
-S000807,NONE,Not Addressed,DPDP_RUL-0114,Partially Compliant,qwen3:8b,Bare navigational question heading with no operative compliance mechanism.
-S000815,NONE,Not Addressed,DPDP_RUL-0119,Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S000817,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S000855,NONE,Not Addressed,DPDP_ACT-0041,Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
-S000856,NONE,Not Addressed,DPDP_ACT-0041,Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S000872,NONE,Not Addressed,DPDP_RUL-0119,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S000877,NONE,Not Addressed,DPDP_ACT-0042,Partially Compliant,qwen3:8b,"Describes advertising, cookies or personalisation practice; no consent-withdrawal, rights or safeguard mechanism stated."
-S000879,NONE,Not Addressed,IT_SPDI-001,Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
-S000942,NONE,Not Addressed,IT_SPDI-001,Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S000943,NONE,Not Addressed,DPDP_RUL-0095,Partially Compliant,qwen3:8b,Describes purposes of use of data; no actionable compliance mechanism mapped to a taxonomy requirement.
-S001500,NONE,Not Addressed,IT_SPDI-002,Compliant,qwen3:8b,Describes purposes of use of data; no actionable compliance mechanism mapped to a taxonomy requirement.
-S001502,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S001503,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S001504,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S001505,NONE,Not Addressed,IT_SPDI-002,Compliant,qwen3:8b,"Describes data sharing with third parties/affiliates in general terms; no consent, safeguard or transfer control matched to a taxonomy requirement."
-S001506,NONE,Not Addressed,IT_SPDI-002,Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S001507,NONE,Not Addressed,DPDP_RUL-0103,Partially Compliant,qwen3:8b,Describes purposes of use of data; no actionable compliance mechanism mapped to a taxonomy requirement.
-S001510,NONE,Not Addressed,IT_SPDI-002,Compliant,qwen3:8b,Describes purposes of use of data; no actionable compliance mechanism mapped to a taxonomy requirement.
-S001546,NONE,Not Addressed,DPDP_RUL-0114,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S001577,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,"Commercial/contractual term (liability, disputes, billing, licensing, service terms); no DPDP data-protection obligation or mechanism."
-S001610,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,"Describes advertising, cookies or personalisation practice; no consent-withdrawal, rights or safeguard mechanism stated."
-S001613,NONE,Not Addressed,DPDP_RUL-0119,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S001623,NONE,Not Addressed,DPDP_ACT-0041,Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
-S001729,NONE,Not Addressed,DPDP_ACT-0074,Partially Compliant,qwen3:8b,"Commercial/contractual term (liability, disputes, billing, licensing, service terms); no DPDP data-protection obligation or mechanism."
-S002373,NONE,Not Addressed,DPDP_ACT-0041,Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
-S002375,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S002379,NONE,Not Addressed,DPDP_ACT-0160,Partially Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
-S002381,NONE,Not Addressed,DPDP_ACT-0160,Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
-S002382,NONE,Not Addressed,DPDP_ACT-0160,Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S002384,NONE,Not Addressed,DPDP_ACT-0041,Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S002393,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
-S002395,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
-S002413,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
-S002429,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
-S002433,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,qwen3:8b,Content/community-conduct or advertising-policy rule; not a data-protection obligation under the DPDP taxonomy.
-S002544,NONE,Not Addressed,DPDP_ACT-0038,Partially Compliant,qwen3:8b,"Commercial/contractual term (liability, disputes, billing, licensing, service terms); no DPDP data-protection obligation or mechanism."
-S002553,NONE,Not Addressed,DPDP_ACT-0160,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S002660,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,qwen3:8b,"General descriptive, definitional or navigational text; no operational mechanism matching any taxonomy requirement."
-S002666,DPDP_ACT-0043,Compliant,DPDP_RUL-0184,Compliant,qwen3:8b,"Clear deletion mechanism with timeline, specific UI path, and legal carve-out."
-S002667,DPDP_ACT-0041,Compliant,DPDP_RUL-0178,Partially Compliant,qwen3:8b,Direct rectification mechanism with no approval delay; specific settings pathway.
-S002670,IT_ACT_2-0284,Compliant,DPDP_ACT-0038,Compliant,qwen3:8b,"Named Grievance Officer with complete contact details, acknowledgment and resolution timelines specified."
-S002671,DPDP_ACT-0057,Compliant,DPDP_RUL-0201,Compliant,qwen3:8b,"Explicit DPDP Act compliance with named officer, email, physical address, and SLA timelines."
-S002677,DPDP_ACT-0043,Compliant,NONE,Not Addressed,qwen3:8b,Granular deletion and pause options with specific 24-hour timeline for permanent deletion.
-S002678,DPDP_ACT-0048,Compliant,DPDP_RUL-0119,Partially Compliant,qwen3:8b,Explicit localization commitment with opt-in mechanism and contractual safeguards for transfers.
-S002679,DPDP_ACT-0043,Partially Compliant,DPDP_RUL-0184,Compliant,qwen3:8b,Timeline specified (90 days) but vague on 'reasonable period' and backup retention; legal carve-out present.
-S002680,DPDP_ACT-0089,Partially Compliant,DPDP_ACT-0041,Partially Compliant,qwen3:8b,Objection mechanism present but review availability qualified by 'feasibility'; unclear timeline.
-S002683,DPDP_ACT-0070,Partially Compliant,DPDP_ACT-0025,Compliant,qwen3:8b,Concrete measures described but qualified disclaimer limits enforceability; insurance mentioned but no SLA.
-S002685,DPDP_ACT-0067,Partially Compliant,NONE,Not Addressed,qwen3:8b,Opt-out provided for GPS but IP-based approximation continues; purpose list is broad (personalization).
-S002686,DPDP_ACT-0089,Partially Compliant,NONE,Not Addressed,qwen3:8b,Profile visibility and limited control provided; internal use only; but profiling cannot be opted out.
-S002691,DPDP_ACT-0043,Compliant,DPDP_RUL-0184,Partially Compliant,qwen3:8b,Clear deletion mechanism with specific 30-day timeline and irreversibility statement.
-S002692,DPDP_ACT-0043,Compliant,DPDP_RUL-0184,Partially Compliant,qwen3:8b,User-controlled deletion with granular timeline options and permanent erasure guarantee.
-S002693,DPDP_ACT-0043,Compliant,NONE,Not Addressed,qwen3:8b,Automatic deletion mechanism with explicit timeline and no recovery option.
-S002697,DPDP_ACT-0089,Compliant,DPDP_ACT-0029,Partially Compliant,qwen3:8b,Explicit objection mechanism with human review timeline.
-S002701,DPDP_ACT-0041,Compliant,NONE,Not Addressed,qwen3:8b,Self-service correction plus support channel with 10-day SLA.
-S002702,DPDP_ACT-0041,Compliant,NONE,Not Addressed,qwen3:8b,Immediate self-service correction with support escalation path.
-S002707,DPDP_ACT-0024,Compliant,DPDP_RUL-0119,Partially Compliant,qwen3:8b,Published transparency reporting with granular disclosure.
-S002708,DPDP_ACT-0024,Compliant,DPDP_RUL-0176,Partially Compliant,qwen3:8b,Living policy documentation with DPIA publication and AI accountability measures.
-S002714,DPDP_ACT-0043,Compliant,NONE,Not Addressed,qwen3:8b,Complete location data collection control and deletion.
-S002715,DPDP_ACT-0067,Compliant,NONE,Not Addressed,qwen3:8b,Biometric data control with retroactive deletion.
-S002718,DPDP_ACT-0070,Compliant,NONE,Not Addressed,qwen3:8b,Strong authentication mechanism with user control.
-S002719,DPDP_ACT-0070,Compliant,DPDP_ACT-0027,Partially Compliant,qwen3:8b,User-controlled account recovery with no delay.
+clause_id,old_taxonomy_id,old_verdict,new_taxonomy_id,new_verdict,judge,justification
+S000072,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Allocates consent responsibility to the enterprise customer; no platform statement on sensitive-data disclosure or security practices.
+S000150,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Governing-law clause; no data protection content in substance.
+S000278,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,Muse (manual audit),"General assurance of working hard to protect information; hedged, states no disclosure rule and no specific security practice, and is not sensitive-data specific."
+S000350,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Describes sharing of non-personally identifiable information and partner cookie collection; no permission commitment for sensitive data and no security practices.
+S000372,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),"Consent commitment concerns Privacy Policy changes, not disclosure of sensitive personal data."
+S000771,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Meta-description of what the Privacy Policy covers; states no disclosure restriction or security practice.
+S000772,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Describes user privacy settings and controls; no sensitive-data disclosure rule or security practice.
+S000779,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Concerns de-identified data received from third parties; no disclosure-without-permission commitment and no security practices.
+S001027,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Content moderation reservation of rights; unrelated to sensitive-data disclosure or protection practices.
+S001069,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),"Prohibition on users building third-party apps without consent; governs user conduct, not platform disclosure of sensitive data."
+S001139,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),"Privacy Policy introduction; topic description only, no disclosure rule or security practice stated."
+S001179,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Data minimization sentiment; states neither a disclosure restriction nor a security practice for sensitive data.
+S001188,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,Muse (manual audit),"Commits to asking permission before using information in new or different ways; permission element present in general form, but not specific to sensitive-data disclosure and no security practices stated."
+S001220,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Applicability note for a U.S. state notice; navigational text only.
+S001226,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Commitment to announce policy updates; no disclosure or security content.
+S001500,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Table-of-contents fragment listing policy topics; states no commitment.
+S001503,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Table-of-contents fragment naming data safety as a topic; no practice stated.
+S001505,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Table-of-contents fragment naming sharing as a topic; no disclosure rule stated.
+S001506,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Table-of-contents fragment naming user rights; no disclosure or security content.
+S001510,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),"States a legitimate-interests legal basis for processing; fraud and security appear as processing purposes, not as protection practices for sensitive data."
+S001577,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,Muse (manual audit),Sharing occurs with users the person chose to communicate with and the clause claims appropriate technical and organizational measures; not specific to sensitive data and measures are unspecified.
+S001805,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Navigational pointer to the Privacy Policy; no commitment stated.
+S001810,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Definitions from data processing terms; no disclosure rule or security practice.
+S001837,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Incomplete fragment about sub-processors; no discernible commitment.
+S001840,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Asserts WhatsApp's independent right to use Personal Information; the opposite of a disclosure restriction.
+S001962,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),"Confidentiality duty covering WhatsApp's corporate information, not users' sensitive personal data."
+S002233,NONE,Not Addressed,IT_SPDI-002,Partially Compliant,Muse (manual audit),"Requires businesses to secure all necessary notices, permissions and consents before collecting, using and sharing people's information; permission element present, but the duty binds businesses, is not sensitive-data specific, and states no security practices."
+S002318,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Navigational pointer to the Privacy Policy; no commitment stated.
+S002359,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Pointer to other Meta companies' policies; no commitment stated.
+S002660,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Vague claim that privacy tools empower users; no disclosure rule or security practice.
+S000286,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),States that account information is collected and treated as personal information; no consent before collection and no sensitive data named.
+S000316,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,Muse (manual audit),"Commits to asking consent before using information for purposes not covered by the policy; consent-before element present, but it concerns new uses rather than collection and is not specific to sensitive data."
+S000366,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),States the policy is reviewed for compliance; no consent or collection content.
+S000749,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),"Legacy-contact designation for post-mortem account access; concerns disclosure after death, not consent before collecting sensitive data."
+S000770,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Introductory statement about understanding collection; no consent mechanism stated.
+S000774,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Describes that collection varies by product use; no consent before collection of sensitive data.
+S000778,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Heading fragment about de-identified information; no commitment stated.
+S000780,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Video heading in the Privacy Centre; no commitment stated.
+S000782,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Describes automated processing and occasional manual review; no consent before collection of sensitive data.
+S000879,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,Muse (manual audit),"Names special-protection categories (health, sexual orientation, religious and political views, ethnic origin) as information the user chooses to provide; choice element present, but no explicit prior-consent statement and no purpose named."
+S000942,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Processing described as circumstance-dependent with a law-enforcement pointer; no consent before collection of sensitive data.
+S001164,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,Muse (manual audit),"Collection of device data (phonebook, camera, microphone, precise location) is gated on explicitly granted device permissions; permission-before-collection present, but the data types are not named as sensitive categories and no purpose is stated."
+S001166,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,Muse (manual audit),"States permission will be asked before collecting additional information such as camera roll or contacts; explicit prior consent for collection, but the examples are not sensitive personal data under the rule and the purpose is only implied."
+S001207,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Retention section introduction; no consent or collection content.
+S001502,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Table-of-contents fragment; no commitment stated.
+S001504,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Table-of-contents fragment; no commitment stated.
+S001786,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Lead-in sentence listing additional collected information; no consent element.
+S001801,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),States other products' own terms govern their use; no consent before collection of sensitive data.
+S001977,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),"Consent here concerns assignment of contractual terms, not data collection."
+S002138,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Describes automated and human review of reported content; no consent before collecting sensitive data.
+S002194,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Notes separate consent may apply to separately governed services; no statement on collecting sensitive data.
+S002200,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Concerns amendments to the Terms requiring WhatsApp's consent; not data collection.
+S002281,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Describes violation detection and review; no consent before collecting sensitive data.
+S002331,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Describes collection of payment and transaction information; names financial data but states no consent obtained before collection.
+S002338,NONE,Not Addressed,IT_SPDI-001,Partially Compliant,Muse (manual audit),"Requires other users to have lawful rights to collect, use and share a person's information before providing it to WhatsApp; a prior-lawful-basis element, but it binds third parties, is not the platform's own consent practice, and is not sensitive-data specific."
+S000348,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Purpose fragment about addressing fraud and security; no prohibition on tracking or targeted advertising of children.
+S000349,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),"General statement about protecting rights, property and safety; no children tracking or advertising prohibition."
+S000370,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Scope exclusion for third-party services; no relevant content.
+S000393,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),"Acceptable-use rule against abusing or harming others including children; governs user conduct, not tracking or targeted advertising."
+S000493,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),"Content takedown provision with child-safety examples; content moderation, not a prohibition on tracking or targeting children with ads."
+S000769,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Policy header fragment; no commitment stated.
+S000787,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),"States information with special protections is not used to show ads; the restraint covers sensitive information generally, not children, and says nothing on tracking."
+S000817,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Section heading on legal requests and harm prevention; no commitment stated.
+S000855,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Account verification and violation handling; no children advertising or tracking prohibition.
+S000856,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),"Detection of harmful or unlawful behaviour; content safety, not tracking or targeted advertising of children."
+S001088,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),General safety commitment and reporting encouragement; no prohibition on tracking or targeted advertising of children.
+S001183,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Automated tools detect violations and confirm age-appropriate use; age confirmation is not a prohibition on tracking or targeted advertising of children.
+S001213,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Retention for harm prevention and investigations; no relevant prohibition.
+S001222,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),"States services are directed to individuals 13 and older; an age-direction statement, not a prohibition on tracking or targeted advertising of children."
+S001247,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Advertising content rules on rights and likeness consent; no prohibition on targeting children.
+S001272,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Content guideline example about educational material; no relevant prohibition.
+S001467,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),"Prohibits sexual exploitation and sexualization of minors in content; child-safety content rule, not a tracking or advertising prohibition."
+S001610,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Describes a policy update about advertising tools and geographic limits; no prohibition stated.
+S001623,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),"Prohibits posting child sexual abuse material on public channels; content rule, not tracking or advertising."
+S001808,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Pointer to a business privacy policy; no commitment stated.
+S001915,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Business conduct prohibitions including predatory behaviour; not a prohibition on tracking or targeted advertising of children.
+S001991,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Enforcement actions for illegal content and violations; no relevant prohibition.
+S002140,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Enforcement actions for illegal content and violations; no relevant prohibition.
+S002373,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Reporting route for policy violations and child-danger situations; no tracking or advertising prohibition.
+S002375,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Exceptions for educational or documentary content; no relevant prohibition.
+S002384,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),"Content rules for material targeting young minors with age-inappropriate themes; content policy, not data tracking or advertising practice."
+S002393,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Prohibited content showing minors in dangerous activities; content rule only.
+S002395,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Reminder fragment about policy examples; no commitment stated.
+S002413,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),"Examples of inappropriate content including exploitation of minors; content rules, not tracking or advertising prohibitions."
+S002429,NONE,Not Addressed,DPDP_ACT-0041,Partially Compliant,Muse (manual audit),"States alcohol-related advertising must not target minors; a genuine targeted-advertising prohibition for one advertising category, but not a general prohibition and nothing on tracking or behavioural monitoring."
+S002433,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Gambling advertising rules on approved countries and certification; no prohibition on targeting minors is stated.
+S002680,DPDP_ACT-0089,Partially Compliant,NONE,Not Addressed,Muse (manual audit),Describes automated decision-making for recommendations and ads targeting with an objection route; contains no prohibition on tracking or targeted advertising of children.
+S002686,DPDP_ACT-0089,Partially Compliant,NONE,Not Addressed,Muse (manual audit),Describes behavioural profiling for content and advertising micro-targeting; no children-specific prohibition on tracking or targeted advertising.
+S001462,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),"Prohibits content and behaviour posing severe harm including child exploitation; concerns harmful content, not processing of children's personal data."
+S002379,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),"Content examples showing maltreatment of minors; content policy, not a prohibition on harmful data processing."
+S002381,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Exception for abuse content in educational or documentary context; content policy only.
+S002382,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),"Content that could distress minor viewers, including misleading family content; content policy, not data processing."
+S002553,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),"Acceptable-use rule against harming others including children; governs user conduct, not data processing."
+S000877,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),"Describes processing of special-protection information for sharing, personalisation and analytics; not specific to children and states no verifiably safe processing measures."
+S001811,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Definition of processing from data processing terms; no measures stated.
+S000802,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Describes sharing and transfers within the Meta group of companies; no statement of compliance with Central Government restrictions on cross-border transfers.
+S000815,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Section heading on transfers; no commitment stated.
+S000872,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Pointer to the transfer section of the policy; no commitment stated.
+S001189,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Describes sharing including transfers outside the country of collection; states no compliance with Central Government transfer restrictions.
+S001221,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Pointer to jurisdiction-specific legal bases; no transfer restriction content.
+S001613,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),GDPR request pointer for EU users; unrelated to Indian transfer restrictions.
+S001827,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Fragment about processor legal obligations; no transfer content in substance.
+S001831,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Names the contracting entity and an EU data transfer addendum; no Central Government restriction compliance.
+S001835,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Transfer framed under GDPR addendum laws; no Indian restriction compliance stated.
+S001866,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Heading on protection of data in transit; transit security is not transfer restriction compliance.
+S001878,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Priority-of-documents clause for the transfer addendum; no commitment stated.
+S001879,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Definition of EU Standard Contractual Clauses; no Indian restriction content.
+S001883,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Definition of European Data; no relevant commitment.
+S001884,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),GDPR applicability statement; no Central Government restriction compliance.
+S001885,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Definition of processor-to-processor SCCs under EEA law; no Indian restriction content.
+S002678,DPDP_ACT-0048,Compliant,DPDP_RUL-0119,Partially Compliant,Muse (manual audit),"States Indian residents' data is stored in India or regional centres unless required by law, offers India-only storage, and ties cross-border transfers to DPDP Act requirements with data processing agreements; engages the transfer-compliance obligation but does not expressly state adherence to Central Government restrictions."
+S002707,DPDP_ACT-0024,Compliant,NONE,Not Addressed,Muse (manual audit),Concerns publication of transparency reports; no cross-border transfer content.
+S000138,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Contract assignment clause; no breach notification content.
+S000312,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),"Use of information to detect fraud, abuse and security risks; no obligation to inform affected persons of breach consequences."
+S000347,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Enforcement of terms and investigation of violations; no breach notification content.
+S000351,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),"Notice to users before information is transferred in a merger or asset sale; a corporate-transaction notice, not breach consequence information."
+S000943,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Sharing limited to what legal obligations require; no breach notification content.
+S001090,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),"Consequences listed are enforcement sanctions against a non-compliant user, not consequences of a breach for affected data principals."
+S001122,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),"Limitation of liability including for loss of data; a liability disclaimer, not a breach notification obligation."
+S001201,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Fragment about detecting fraud and security concerns; no breach notification content.
+S001212,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Retention duration factor (legal obligations); no breach notification content.
+S001787,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Heading about business account information; no commitment stated.
+S001803,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Sharing with successors in a merger or restructuring; no breach notification content.
+S001850,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),List item on secure deletion procedures from security terms; no obligation to inform affected persons of breach consequences.
+S001872,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Conflict-of-terms clause; no relevant content.
+S001855,DPDP_RUL-0170,Partially Compliant,NONE,Not Addressed,Muse (manual audit),Internal disciplinary action for unauthorized access by personnel; does not inform affected data principals of breach consequences.
+S001114,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Indemnification clause; no breach description obligation.
+S002368,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),"Purposes including investigating violations and security issues; no obligation to describe a breach's nature, extent or impact."
+S000792,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Describes Meta using users' contact information to communicate with them; provides no data protection officer or representative contact for data principals.
+S001160,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Describes collecting information when users contact Support; provides no data protection officer or representative contact information.
+S001507,NONE,Not Addressed,DPDP_RUL-0103,Partially Compliant,Muse (manual audit),"Designates a named data protection representative (European Data Protection Office) for the EEA; a representative is designated, but no contact information is given and the designation is EEA-specific."
+S000807,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Section heading asking how users can manage or delete information and exercise rights; the means themselves are not provided in the clause.
+S001218,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Pointer to region-specific rights details; no accessible means stated.
+S001546,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Cross-reference stating rights in another section remain unaffected; no means stated.
+S001130,NONE,Not Addressed,DPDP_ACT-0038,Partially Compliant,Muse (manual audit),"Invites users to get in touch if they have a complaint; a complaint channel is acknowledged, but no mechanism (officer, process, timelines) is outlined."
+S001199,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Internal investigation and enforcement of violations; not a grievance mechanism for users.
+S001971,NONE,Not Addressed,DPDP_ACT-0038,Partially Compliant,Muse (manual audit),"Outlines a complaint route for business users: unresolved complaints go to voluntary mediation, with a published complaints email and a list of mediators; a mechanism is outlined, but it is framed for business disputes rather than data principal grievances."
+S002170,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Liability waiver boilerplate mentioning claims and complaints; no mechanism outlined.
+S002544,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),"Rule against misusing reporting, complaint and appeals processes; presupposes such processes but outlines no grievance mechanism."
+S002670,IT_ACT_2-0284,Compliant,DPDP_ACT-0038,Compliant,Muse (manual audit),"Names a Grievance Officer with postal address and email for complaints under the IT Rules 2021, with acknowledgement within 24 hours and resolution or interim update within 15 days; a complete grievance redressal mechanism is outlined."
+S001729,NONE,Not Addressed,NONE,Not Addressed,Muse (manual audit),Directs warranty and service complaints to the service provider without involving Telegram; no grievance response period is specified.
+S002683,DPDP_ACT-0070,Partially Compliant,DPDP_ACT-0025,Compliant,Muse (manual audit),"Names concrete security safeguards: industry-standard measures including encryption, access controls and regular audits, plus incident response procedures; the foolproof caveat does not remove the specified safeguards."
+S002715,DPDP_ACT-0067,Compliant,DPDP_ACT-0027,Partially Compliant,Muse (manual audit),"States existing facial recognition data is deleted when the user turns the feature off; erasure on withdrawal is specified for this one data type, not as a general obligation."
+S002719,DPDP_ACT-0070,Compliant,DPDP_ACT-0025,Partially Compliant,Muse (manual audit),"Reassigned from DPDP_ACT-0027, whose erasure test it does not meet. Specifies verified account recovery options (backup email, phone) as an account-security measure; a safeguard is stated, though it concerns account recovery rather than breach prevention."
+S002697,DPDP_ACT-0089,Compliant,NONE,Not Addressed,Muse (manual audit),"Provides objection to automated decision-making and cessation of profiling with human review; cessation of profiling is not erasure of personal data on request, and the automated-decision category has no rule in v2."
+S002693,DPDP_ACT-0043,Compliant,DPDP_RUL-0184,Partially Compliant,Muse (manual audit),"Reassigned from DPDP_RUL-0175, whose one-year log retention test it does not meet. States server-side copies are deleted after 30 days and viewed messages disappear; an erasure mechanism exists, scoped to messages."
+S002708,DPDP_ACT-0024,Compliant,NONE,Not Addressed,Muse (manual audit),"Describes maintaining the privacy policy and conducting impact assessments; no contractual security provisions between fiduciary and processors, and no other v2 test is met."
+S002667,DPDP_ACT-0041,Compliant,DPDP_RUL-0114,Compliant,Muse (manual audit),"Reassigned from DPDP_RUL-0178, a breach-notification test it does not meet. Provides a clear, accessible means to exercise the correction right: Settings > Personal Information, editable fields listed, changes effective immediately."
+S002701,DPDP_ACT-0041,Compliant,DPDP_RUL-0114,Compliant,Muse (manual audit),"Reassigned from DPDP_RUL-0178, a breach-notification test it does not meet. Provides two accessible means to exercise the correction right: direct profile editing in Settings and a support email route with corrections implemented within 10 business days."
+S002702,DPDP_ACT-0041,Compliant,DPDP_RUL-0114,Compliant,Muse (manual audit),"Reassigned from DPDP_RUL-0178, a breach-notification test it does not meet. Provides accessible means to exercise the correction right: immediate profile editing in Settings and a support route for other data with corrections within 5 business days."
+S002666,DPDP_ACT-0043,Compliant,DPDP_RUL-0184,Compliant,Muse (manual audit),"Provides a full erasure mechanism: permanent account deletion through a stated Settings path, with all associated personal data deleted or anonymized within 90 days of the request except where retention is legally required."
+S002677,DPDP_ACT-0043,Compliant,DPDP_RUL-0184,Partially Compliant,Muse (manual audit),"Provides permanent deletion of activity history within 24 hours through Activity Controls; the mechanism is real but scoped to activity data, and no legal-retention exception is stated."
+S002679,DPDP_ACT-0043,Partially Compliant,DPDP_RUL-0184,Partially Compliant,Muse (manual audit),States erasure within 90 days of a deletion request unless retention is required by law; weakened by retention for a reasonable period for business purposes and backups retained up to 12 months.
+S002691,DPDP_ACT-0043,Compliant,DPDP_RUL-0184,Compliant,Muse (manual audit),"Provides permanent account deletion through a stated Settings path with all personal data (messages, media, contacts, metadata) permanently erased within 30 days and no recovery possible."
+S002692,DPDP_ACT-0043,Compliant,DPDP_RUL-0184,Partially Compliant,Muse (manual audit),Provides automatic permanent deletion of messages on user-configurable timelines (1 day to 1 week) from both devices; an erasure mechanism scoped to chat messages rather than personal data generally.
+S002714,DPDP_ACT-0043,Compliant,DPDP_RUL-0184,Partially Compliant,Muse (manual audit),"Provides permanent deletion of Location History through a stated account-controls path, with pausing that stops collection immediately; the mechanism is scoped to location history."
+S002671,DPDP_ACT-0057,Compliant,DPDP_RUL-0201,Compliant,Muse (manual audit),"Publishes a grievance route with a named Data Protection Officer and Grievance Redressal Officer, email and postal address, acknowledgement within 5 working days and substantive response within 30 days, inside the ninety-day period the test specifies."
+S002718,DPDP_ACT-0070,Compliant,DPDP_ACT-0025,Partially Compliant,Muse (manual audit),"Reassigned from DPDP_RUL-0208, a consent-functionality test it does not meet. Specifies a concrete security safeguard, mandatory two-factor authentication via Settings; a single user-side safeguard, with no platform-side safeguards described."
+S002685,DPDP_ACT-0067,Partially Compliant,DPDP_RUL-0208,Partially Compliant,Muse (manual audit),"Reassigned from IT_ACT_2-0285, a government-blocking test it does not meet. Provides a Settings functionality to disable location sharing, after which location data is not collected; consent-withdrawal functionality for one data type, though IP-based approximate location may still be used."
+S001844,DPDP_RUL-0170,Partially Compliant,DPDP_ACT-0025,Partially Compliant,Muse (manual audit),"Reassigned from IT_ACT_2-0310, a breach-notification test it does not meet. Specifies an organizational security safeguard, personnel responsible for oversight of security of the Business Services; no technical safeguards or breach-prevention specifics are stated."

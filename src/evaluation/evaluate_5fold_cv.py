@@ -46,7 +46,7 @@ print("\nClass distribution:")
 print(df["verdict"].value_counts().to_string())
 
 # Verify expected corpus distribution
-expected_dist = {"Not Addressed": 460, "Partially Compliant": 248, "Compliant": 118}
+expected_dist = {"Not Addressed": 579, "Partially Compliant": 160, "Compliant": 87}
 actual_dist = df["verdict"].value_counts().to_dict()
 print(f"\n[CHECK] Expected distribution: {expected_dist}")
 print(f"[CHECK] Actual distribution: {actual_dist}")
