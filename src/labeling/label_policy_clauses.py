@@ -371,7 +371,7 @@ def _get_embedder() -> "SentenceTransformer | None":
         return None
     if _taxonomy_embedder is None:
         try:
-            _taxonomy_embedder = SentenceTransformer("all-mpnet-base-v2")
+            _taxonomy_embedder = SentenceTransformer("all-MiniLM-L6-v2")
         except Exception as exc:  # pragma: no cover
             print(f"[WARN] Could not load SentenceTransformer: {exc}", file=sys.stderr)
             return None

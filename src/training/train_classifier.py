@@ -7,7 +7,6 @@ Implements the full training pipeline per research paper specifications:
 - Feature extraction and scaling (RobustScaler, fit only on training fold)
 - LogisticRegression with specified hyperparameters
 - Leak-free inner CV threshold calibration
-- Phase A: Multiple threshold tuning objectives
 """
 
 import json
@@ -113,8 +112,7 @@ def pair_with_taxonomy_runtime(clause_embedding, tax_embeddings, similarity_thre
 
 def train_and_evaluate_fold(
     X_train, y_train, X_test, y_test,
-    inner_cv_splits=3,
-    test_all_objectives=False
+    inner_cv_splits=3
 ):
     """
     Train classifier on fold and perform leak-free threshold calibration.
@@ -123,26 +121,22 @@ def train_and_evaluate_fold(
     Inner CV for threshold tuning uses only the training partition.
     Thresholds are applied to the test fold.
     
-    Phase A: Tests three threshold tuning objectives and selects best per inner fold.
-    
     Args:
         X_train: dict with keys "embedding" (N_tr, 384) and "features" (N_tr, 8)
         y_train: class labels for training fold
         X_test: dict with keys "embedding" (N_te, 384) and "features" (N_te, 8)
         y_test: class labels for test fold
         inner_cv_splits: number of inner CV folds for threshold calibration
-        test_all_objectives: if True, evaluate all three objectives and return results
     
     Returns:
-        dict with predictions, thresholds, and metrics
-        if test_all_objectives=True: also includes per-objective results
+        dict with keys: predictions, probs, thresholds_chosen, inner_f1
     """
     # Fit RobustScaler ONLY on training partition of this fold
     scaler = RobustScaler()
     features_train_scaled = scaler.fit_transform(X_train["features"])
     features_test_scaled = scaler.transform(X_test["features"])
     
-    # Combine embedding and scaled features (768 + 8 = 776 dimensions)
+    # Combine embedding and scaled features (392 dimensions)
     X_train_combined = np.hstack([X_train["embedding"], features_train_scaled])
     X_test_combined = np.hstack([X_test["embedding"], features_test_scaled])
     
@@ -161,12 +155,9 @@ def train_and_evaluate_fold(
     # Perform inner stratified CV for threshold calibration
     inner_skf = StratifiedKFold(n_splits=inner_cv_splits, shuffle=True, random_state=42)
     
-    # Track results for all three objectives (Phase A)
-    objectives = {
-        "constraint_0.70": {"best_tau_c": 0.5, "best_tau_p": 0.35, "best_f1": 0.0},
-        "constraint_0.60": {"best_tau_c": 0.5, "best_tau_p": 0.35, "best_f1": 0.0},
-        "no_constraint": {"best_tau_c": 0.5, "best_tau_p": 0.35, "best_f1": 0.0},
-    }
+    best_tau_compliant = 0.5
+    best_tau_partial = 0.35
+    best_inner_f1 = 0.0
     
     for inner_train_idx, inner_val_idx in inner_skf.split(X_train_combined, y_train):
         X_inner_train = X_train_combined[inner_train_idx]
@@ -190,19 +181,13 @@ def train_and_evaluate_fold(
         inner_probs = inner_clf.predict_proba(X_inner_val)
         classes = list(inner_clf.classes_)
         
-        if "Compliant" not in classes:
-            continue
-        
-        c_idx = classes.index("Compliant")
-        p_idx = classes.index("Partially Compliant")
-        
         # Grid search over thresholds
         for tau_c in np.arange(0.30, 0.70, 0.05):
             for tau_p in np.arange(0.20, 0.45, 0.05):
                 preds = []
                 for i in range(len(inner_probs)):
-                    p_compliant = inner_probs[i, c_idx]
-                    p_partial = inner_probs[i, p_idx]
+                    p_compliant = inner_probs[i, classes.index("Compliant")]
+                    p_partial = inner_probs[i, classes.index("Partially Compliant")]
                     
                     if p_compliant >= tau_c:
                         preds.append("Compliant")
@@ -211,70 +196,36 @@ def train_and_evaluate_fold(
                     else:
                         preds.append("Not Addressed")
                 
-                # Compute precision for Compliant class
-                try:
-                    compliant_precision = precision_score(
-                        y_inner_val, preds, labels=["Compliant"], average=None, zero_division=0
-                    )[0]
-                except:
-                    compliant_precision = 0.0
+                # Check constraint: minority class precision >= 0.70
+                compliant_precision = precision_score(
+                    y_inner_val, preds, labels=["Compliant"], average=None, zero_division=0
+                )[0]
                 
-                # Compute macro-F1
-                inner_f1 = f1_score(y_inner_val, preds, average="macro", zero_division=0)
-                
-                # (a) Maximize macro-F1 subject to Compliant precision >= 0.70
+                # Maximize inner macro-F1 subject to precision constraint
                 if compliant_precision >= 0.70:
-                    if inner_f1 > objectives["constraint_0.70"]["best_f1"]:
-                        objectives["constraint_0.70"]["best_f1"] = inner_f1
-                        objectives["constraint_0.70"]["best_tau_c"] = tau_c
-                        objectives["constraint_0.70"]["best_tau_p"] = tau_p
-                
-                # (b) Maximize macro-F1 subject to Compliant precision >= 0.60
-                if compliant_precision >= 0.60:
-                    if inner_f1 > objectives["constraint_0.60"]["best_f1"]:
-                        objectives["constraint_0.60"]["best_f1"] = inner_f1
-                        objectives["constraint_0.60"]["best_tau_c"] = tau_c
-                        objectives["constraint_0.60"]["best_tau_p"] = tau_p
-                
-                # (c) Maximize macro-F1 with no constraint
-                if inner_f1 > objectives["no_constraint"]["best_f1"]:
-                    objectives["no_constraint"]["best_f1"] = inner_f1
-                    objectives["no_constraint"]["best_tau_c"] = tau_c
-                    objectives["no_constraint"]["best_tau_p"] = tau_p
-    
-    # Select best objective for this fold
-    # Priority: select the variant with best inner F1
-    best_variant = max(
-        objectives.keys(),
-        key=lambda k: objectives[k]["best_f1"]
-    )
-    best_tau_compliant = objectives[best_variant]["best_tau_c"]
-    best_tau_partial = objectives[best_variant]["best_tau_p"]
-    best_inner_f1 = objectives[best_variant]["best_f1"]
+                    inner_f1 = f1_score(y_inner_val, preds, average="macro", zero_division=0)
+                    if inner_f1 > best_inner_f1:
+                        best_inner_f1 = inner_f1
+                        best_tau_compliant = tau_c
+                        best_tau_partial = tau_p
     
     # Apply best thresholds to test fold
     test_probs = clf.predict_proba(X_test_combined)
     classes = list(clf.classes_)
     test_preds = []
     
-    if "Compliant" in classes:
-        c_idx = classes.index("Compliant")
-        p_idx = classes.index("Partially Compliant")
+    for i in range(len(test_probs)):
+        p_compliant = test_probs[i, classes.index("Compliant")]
+        p_partial = test_probs[i, classes.index("Partially Compliant")]
         
-        for i in range(len(test_probs)):
-            p_compliant = test_probs[i, c_idx]
-            p_partial = test_probs[i, p_idx]
-            
-            if p_compliant >= best_tau_compliant:
-                test_preds.append("Compliant")
-            elif p_partial >= best_tau_partial:
-                test_preds.append("Partially Compliant")
-            else:
-                test_preds.append("Not Addressed")
-    else:
-        test_preds = ["Not Addressed"] * len(test_probs)
+        if p_compliant >= best_tau_compliant:
+            test_preds.append("Compliant")
+        elif p_partial >= best_tau_partial:
+            test_preds.append("Partially Compliant")
+        else:
+            test_preds.append("Not Addressed")
     
-    result = {
+    return {
         "predictions": test_preds,
         "probs": test_probs,
         "classes": classes,
@@ -284,10 +235,3 @@ def train_and_evaluate_fold(
         "scaler": scaler,
         "classifier": clf,
     }
-    
-    # If test_all_objectives, include all objective scores for this fold
-    if test_all_objectives:
-        result["inner_scores_all"] = objectives
-        result["selected_objective"] = best_variant
-    
-    return result

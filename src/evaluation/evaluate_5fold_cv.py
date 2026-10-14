@@ -1,10 +1,10 @@
 """
 src/evaluation/evaluate_5fold_cv.py
-Stratified 5-Fold Cross-Validation - Phase E: MPNet Encoder.
+Stratified 5-Fold Cross-Validation per Research Paper Specification.
 
 Implements leak-free threshold calibration with:
 - Context-formatted string-level conditioning
-- all-mpnet-base-v2 embeddings (768 dims, mean pooling, L2-normalized)
+- all-MiniLM-L6-v2 embeddings (384 dims, mean pooling, L2-normalized)
 - 8 actionability features, scaled with RobustScaler
 - LogisticRegression with specified hyperparameters
 - Inner stratified CV for threshold calibration on training fold only
@@ -66,10 +66,10 @@ action_features = extract_actionability_features(df["clause_text"].values)
 # Get class labels
 y_all = df["verdict"].values
 
-# Generate embeddings: all-mpnet-base-v2, max_seq_length=256, mean pooling, L2-normalized
+# Generate embeddings: all-MiniLM-L6-v2, max_seq_length=256, mean pooling, L2-normalized
 # This is done per-fold to avoid memory issues
-print("[INFO] Will generate all-mpnet-base-v2 embeddings per-fold (768-dim, L2-normalized)...")
-embedder = SentenceTransformer("all-mpnet-base-v2")
+print("[INFO] Will generate all-MiniLM-L6-v2 embeddings per-fold (384-dim, L2-normalized)...")
+embedder = SentenceTransformer("all-MiniLM-L6-v2")
 
 # 5-Fold Stratified Cross-Validation
 print("\n" + "=" * 80)
@@ -183,7 +183,6 @@ class_report_dict = classification_report(
 
 # Prepare output report
 report_data = {
-    "phase": "Phase E - MPNet Encoder",
     "evaluation_method": "Stratified 5-Fold Cross-Validation (Leak-Free Threshold Calibration)",
     "total_clauses_evaluated": len(df),
     "expected_corpus_distribution": expected_dist,
@@ -195,7 +194,7 @@ report_data = {
     "per_fold_thresholds": thresholds_per_fold,
     "tau_compliant_median": round(tau_compliant_median, 4),
     "tau_partial_median": round(tau_partial_median, 4),
-    "embedding_model": "all-mpnet-base-v2 (768-dim, mean pooling, L2-normalized)",
+    "embedding_model": "all-MiniLM-L6-v2 (384-dim, mean pooling, L2-normalized)",
     "feature_count": 8,
     "feature_names": [
         "hedge_density",

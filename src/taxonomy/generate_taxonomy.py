@@ -151,7 +151,7 @@ def _get_dedup_model() -> Any:
     """
     global _DEDUP_MODEL
     if _DEDUP_MODEL is None and SentenceTransformer is not None:
-        _DEDUP_MODEL = SentenceTransformer("all-mpnet-base-v2")
+        _DEDUP_MODEL = SentenceTransformer("all-MiniLM-L6-v2")
     return _DEDUP_MODEL
 
 SYSTEM_PROMPT = """You are assisting a legal researcher in drafting a candidate taxonomy

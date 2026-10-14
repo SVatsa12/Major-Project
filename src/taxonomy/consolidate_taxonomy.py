@@ -61,7 +61,7 @@ ACT_TARGETS = {
 
 AUTO_MERGE_SEMANTIC = 0.90
 USE_SENTENCE_TRANSFORMER = True
-EMBEDDING_MODEL_NAME = "all-mpnet-base-v2"
+EMBEDDING_MODEL_NAME = "all-MiniLM-L6-v2"
 _sentence_model = None
 
 try:
