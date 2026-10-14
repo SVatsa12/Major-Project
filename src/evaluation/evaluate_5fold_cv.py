@@ -1,13 +1,14 @@
 """
 src/evaluation/evaluate_5fold_cv.py
-Stratified 5-Fold Cross-Validation per Research Paper Specification.
+Stratified 5-Fold Cross-Validation - Phase B: Feature Union.
 
 Implements leak-free threshold calibration with:
 - Context-formatted string-level conditioning
 - all-MiniLM-L6-v2 embeddings (384 dims, mean pooling, L2-normalized)
-- 8 actionability features, scaled with RobustScaler
+- 15 actionability features (8 baseline + 7 count-based union), scaled with RobustScaler
 - LogisticRegression with specified hyperparameters
 - Inner stratified CV for threshold calibration on training fold only
+- Baseline objective only: maximize macro-F1 subject to Compliant precision >= 0.70
 """
 
 import json
@@ -16,18 +17,17 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 from sentence_transformers import SentenceTransformer
-from sklearn.metrics import classification_report, f1_score, accuracy_score
+from sklearn.metrics import classification_report, f1_score, accuracy_score, precision_score
 from sklearn.model_selection import StratifiedKFold
+from sklearn.preprocessing import RobustScaler
+from sklearn.linear_model import LogisticRegression
 import joblib
 
 # Add project root to path for imports
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
 from src.training.feature_extraction import extract_actionability_features
-from src.training.train_classifier import (
-    build_context_texts,
-    train_and_evaluate_fold,
-)
+from src.training.train_classifier import build_context_texts
 
 CORPUS_PATH = Path("corpus/labeled_clauses_bootstrap.csv")
 TAXONOMY_PATH = Path("corpus/dpdp_taxonomy_final.json")
@@ -59,21 +59,21 @@ for cls, expected_count in expected_dist.items():
 print("\n[INFO] Building context-formatted input texts...")
 context_texts = build_context_texts(df, tax_map)
 
-# Extract 8 actionability features (early, before embeddings which are slow)
-print("[INFO] Extracting 8 actionability features...")
+# Extract 15 actionability features (Phase B: Feature Union)
+print("[INFO] Extracting 15 actionability features (Phase B: Feature Union)...")
 action_features = extract_actionability_features(df["clause_text"].values)
+print(f"[INFO] Feature shape: {action_features.shape}")
 
 # Get class labels
 y_all = df["verdict"].values
 
 # Generate embeddings: all-MiniLM-L6-v2, max_seq_length=256, mean pooling, L2-normalized
-# This is done per-fold to avoid memory issues
-print("[INFO] Will generate all-MiniLM-L6-v2 embeddings per-fold (384-dim, L2-normalized)...")
+print("[INFO] Will generate all-MiniLM-L6-v2 embeddings (384-dim, L2-normalized)...")
 embedder = SentenceTransformer("all-MiniLM-L6-v2")
 
 # 5-Fold Stratified Cross-Validation
 print("\n" + "=" * 80)
-print("STRATIFIED 5-FOLD CROSS-VALIDATION WITH LEAK-FREE THRESHOLD CALIBRATION")
+print("STRATIFIED 5-FOLD CROSS-VALIDATION - PHASE B: FEATURE UNION")
 print("=" * 80)
 
 skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
@@ -84,7 +84,7 @@ all_pred_labels = []
 fold_f1s = []
 fold_accs = []
 
-# Pre-compute all embeddings to avoid doing it per-fold
+# Pre-compute all embeddings
 print("\n[INFO] Pre-computing embeddings for all clauses...")
 embeddings = embedder.encode(
     context_texts,
@@ -104,17 +104,115 @@ for fold_idx, (train_idx, test_idx) in enumerate(skf.split(embeddings, y_all), 1
     y_train = y_all[train_idx]
     y_test = y_all[test_idx]
     
-    # Prepare data dict for train function
-    X_train_dict = {"embedding": X_train_embedding, "features": X_train_features}
-    X_test_dict = {"embedding": X_test_embedding, "features": X_test_features}
+    # Fit RobustScaler ONLY on training partition of this fold
+    scaler = RobustScaler()
+    X_train_features_scaled = scaler.fit_transform(X_train_features)
+    X_test_features_scaled = scaler.transform(X_test_features)
     
-    # Train and calibrate thresholds
-    result = train_and_evaluate_fold(X_train_dict, y_train, X_test_dict, y_test, inner_cv_splits=3)
+    # Combine embedding and scaled features (384 + 15 = 399 dimensions)
+    X_train_combined = np.hstack([X_train_embedding, X_train_features_scaled])
+    X_test_combined = np.hstack([X_test_embedding, X_test_features_scaled])
     
-    # Get predictions
-    test_preds = result["predictions"]
-    tau_c = result["tau_compliant"]
-    tau_p = result["tau_partial"]
+    # Train classifier
+    clf = LogisticRegression(
+        C=1.0,
+        penalty="l2",
+        solver="lbfgs",
+        max_iter=1000,
+        multi_class="multinomial",
+        class_weight="balanced",
+        random_state=42
+    )
+    clf.fit(X_train_combined, y_train)
+    
+    # Perform inner stratified CV for threshold calibration
+    # Use training fold to search for best thresholds
+    inner_skf = StratifiedKFold(n_splits=3, shuffle=True, random_state=42)
+    
+    best_tau_compliant = 0.5
+    best_tau_partial = 0.35
+    best_inner_f1 = 0.0
+    
+    for inner_train_idx, inner_val_idx in inner_skf.split(X_train_combined, y_train):
+        X_inner_train = X_train_combined[inner_train_idx]
+        y_inner_train = y_train[inner_train_idx]
+        X_inner_val = X_train_combined[inner_val_idx]
+        y_inner_val = y_train[inner_val_idx]
+        
+        # Train classifier on inner training
+        inner_clf = LogisticRegression(
+            C=1.0,
+            penalty="l2",
+            solver="lbfgs",
+            max_iter=1000,
+            multi_class="multinomial",
+            class_weight="balanced",
+            random_state=42
+        )
+        inner_clf.fit(X_inner_train, y_inner_train)
+        
+        # Get probabilities on inner validation fold
+        inner_probs = inner_clf.predict_proba(X_inner_val)
+        classes = list(inner_clf.classes_)
+        
+        if "Compliant" not in classes:
+            continue
+        
+        c_idx = classes.index("Compliant")
+        p_idx = classes.index("Partially Compliant")
+        
+        # Grid search over thresholds
+        for tau_c in np.arange(0.30, 0.70, 0.05):
+            for tau_p in np.arange(0.20, 0.45, 0.05):
+                preds = []
+                for i in range(len(inner_probs)):
+                    p_compliant = inner_probs[i, c_idx]
+                    p_partial = inner_probs[i, p_idx]
+                    
+                    if p_compliant >= tau_c:
+                        preds.append("Compliant")
+                    elif p_partial >= tau_p:
+                        preds.append("Partially Compliant")
+                    else:
+                        preds.append("Not Addressed")
+                
+                # Compute precision for Compliant class
+                try:
+                    compliant_precision = precision_score(
+                        y_inner_val, preds, labels=["Compliant"], average=None, zero_division=0
+                    )[0]
+                except:
+                    compliant_precision = 0.0
+                
+                # Maximize inner macro-F1 subject to precision constraint (baseline objective)
+                if compliant_precision >= 0.70:
+                    inner_f1 = f1_score(y_inner_val, preds, average="macro", zero_division=0)
+                    if inner_f1 > best_inner_f1:
+                        best_inner_f1 = inner_f1
+                        best_tau_compliant = tau_c
+                        best_tau_partial = tau_p
+    
+    # Apply best thresholds to test fold
+    test_probs = clf.predict_proba(X_test_combined)
+    classes = list(clf.classes_)
+    test_preds = []
+    
+    if "Compliant" in classes:
+        c_idx = classes.index("Compliant")
+        p_idx = classes.index("Partially Compliant")
+        
+        for i in range(len(test_probs)):
+            p_compliant = test_probs[i, c_idx]
+            p_partial = test_probs[i, p_idx]
+            
+            if p_compliant >= best_tau_compliant:
+                test_preds.append("Compliant")
+            elif p_partial >= best_tau_partial:
+                test_preds.append("Partially Compliant")
+            else:
+                test_preds.append("Not Addressed")
+    else:
+        test_preds = ["Not Addressed"] * len(test_probs)
     
     # Compute metrics
     f1 = f1_score(y_test, test_preds, average="macro", zero_division=0)
@@ -129,12 +227,12 @@ for fold_idx, (train_idx, test_idx) in enumerate(skf.split(embeddings, y_all), 1
         "fold": fold_idx,
         "macro_f1": round(f1, 4),
         "accuracy": round(acc, 4),
-        "tau_compliant": round(tau_c, 4),
-        "tau_partial": round(tau_p, 4),
+        "tau_compliant": round(best_tau_compliant, 4),
+        "tau_partial": round(best_tau_partial, 4),
     })
     
     print(f"  Macro-F1: {f1:.4f} | Accuracy: {acc:.4f}")
-    print(f"  tau_compliant: {tau_c:.4f} | tau_partial: {tau_p:.4f}")
+    print(f"  tau_compliant: {best_tau_compliant:.4f} | tau_partial: {best_tau_partial:.4f}")
 
 # Compute aggregate metrics
 mean_f1 = float(np.mean(fold_f1s))
@@ -183,6 +281,7 @@ class_report_dict = classification_report(
 
 # Prepare output report
 report_data = {
+    "phase": "Phase B - Feature Union",
     "evaluation_method": "Stratified 5-Fold Cross-Validation (Leak-Free Threshold Calibration)",
     "total_clauses_evaluated": len(df),
     "expected_corpus_distribution": expected_dist,
@@ -195,17 +294,25 @@ report_data = {
     "tau_compliant_median": round(tau_compliant_median, 4),
     "tau_partial_median": round(tau_partial_median, 4),
     "embedding_model": "all-MiniLM-L6-v2 (384-dim, mean pooling, L2-normalized)",
-    "feature_count": 8,
+    "feature_count": 15,
     "feature_names": [
-        "hedge_density",
-        "action_verb_count",
-        "has_ui_path",
-        "has_contact_mechanism",
-        "has_timeline_sla",
-        "commitment_ratio",
-        "clause_length_norm",
-        "parental_verification_marker"
+        "hedge_density (baseline)",
+        "action_verb_count (baseline)",
+        "has_ui_path (baseline)",
+        "has_contact_mechanism (baseline)",
+        "has_timeline_sla (baseline)",
+        "commitment_ratio (baseline)",
+        "clause_length_norm (baseline)",
+        "parental_verification_marker (baseline)",
+        "hedge_phrase_count (union)",
+        "action_phrase_count (union)",
+        "requirement_count (union)",
+        "commitment_phrase_count (union)",
+        "mechanism_count (union)",
+        "actionability_ratio (union)",
+        "has_nav (union)"
     ],
+    "duplicate_analysis": "No duplicates detected. All 15 features retained: hedge_density and hedge_phrase_count differ in computation (density vs count); action_verb_count and action_phrase_count use different lexicons; commitment_ratio and commitment_phrase_count differ (ratio vs count); has_ui_path and has_nav use different regex patterns.",
     "classifier_config": {
         "C": 1.0,
         "penalty": "l2",
@@ -214,8 +321,8 @@ report_data = {
         "multi_class": "multinomial",
         "class_weight": "balanced"
     },
-    "scaler": "RobustScaler (fit on training fold only per-fold)",
-    "threshold_calibration": "Inner stratified 3-fold CV on training partition, maximize macro-F1 subject to minority class (Compliant) precision >= 0.70",
+    "scaler": "RobustScaler (fit on training fold only, applied to 15-dim handcrafted features)",
+    "threshold_calibration": "Inner stratified 3-fold CV on training partition, maximize macro-F1 subject to Compliant precision >= 0.70 (baseline objective only)",
     "classification_report": class_report_str,
     "classification_report_dict": class_report_dict,
 }
@@ -224,8 +331,3 @@ report_data = {
 report_path = OUTPUT_DIR / "cross_validation_report.json"
 report_path.write_text(json.dumps(report_data, indent=2))
 print(f"\n[SUCCESS] Saved cross_validation_report.json to {report_path}")
-
-# Save the trained classifier (using last fold's classifier and scaler for final model)
-# Note: In production, would retrain on full dataset with median thresholds
-# For now, save fold 1's model as context_classifier.joblib
-print(f"\n[INFO] Model artifacts would be saved here: {MODELS_DIR / 'context_classifier.joblib'}")
