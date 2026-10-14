@@ -142,7 +142,7 @@ def train_and_evaluate_fold(
     features_train_scaled = scaler.fit_transform(X_train["features"])
     features_test_scaled = scaler.transform(X_test["features"])
     
-    # Combine embedding and scaled features (392 dimensions)
+    # Combine embedding and scaled features (768 + 8 = 776 dimensions)
     X_train_combined = np.hstack([X_train["embedding"], features_train_scaled])
     X_test_combined = np.hstack([X_test["embedding"], features_test_scaled])
     

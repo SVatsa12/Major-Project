@@ -1,5 +1,5 @@
 {
-  "phase": "Phase B - Feature Union",
+  "phase": "Phase E - MPNet Encoder",
   "evaluation_method": "Stratified 5-Fold Cross-Validation (Leak-Free Threshold Calibration)",
   "total_clauses_evaluated": 826,
   "expected_corpus_distribution": {
@@ -12,95 +12,87 @@
     "Partially Compliant": 143,
     "Compliant": 97
   },
-  "mean_macro_f1": 0.7732,
-  "std_macro_f1": 0.0331,
-  "mean_accuracy": 0.8862,
+  "mean_macro_f1": 0.7353,
+  "std_macro_f1": 0.0349,
+  "mean_accuracy": 0.8499,
   "per_fold_results": [
     {
       "fold": 1,
-      "macro_f1": 0.7642,
-      "accuracy": 0.8855,
-      "tau_compliant": 0.6,
+      "macro_f1": 0.6903,
+      "accuracy": 0.8072,
+      "tau_compliant": 0.5,
       "tau_partial": 0.35
     },
     {
       "fold": 2,
-      "macro_f1": 0.7527,
-      "accuracy": 0.8788,
-      "tau_compliant": 0.55,
-      "tau_partial": 0.4
+      "macro_f1": 0.7699,
+      "accuracy": 0.8848,
+      "tau_compliant": 0.6,
+      "tau_partial": 0.35
     },
     {
       "fold": 3,
-      "macro_f1": 0.7703,
-      "accuracy": 0.8848,
-      "tau_compliant": 0.55,
+      "macro_f1": 0.7565,
+      "accuracy": 0.8727,
+      "tau_compliant": 0.6,
       "tau_partial": 0.4
     },
     {
       "fold": 4,
-      "macro_f1": 0.8367,
-      "accuracy": 0.9212,
-      "tau_compliant": 0.6,
+      "macro_f1": 0.7642,
+      "accuracy": 0.8727,
+      "tau_compliant": 0.65,
       "tau_partial": 0.35
     },
     {
       "fold": 5,
-      "macro_f1": 0.7423,
-      "accuracy": 0.8606,
+      "macro_f1": 0.6957,
+      "accuracy": 0.8121,
       "tau_compliant": 0.6,
-      "tau_partial": 0.35
+      "tau_partial": 0.3
     }
   ],
   "per_fold_thresholds": [
     {
       "fold": 1,
-      "tau_compliant": 0.6,
+      "tau_compliant": 0.5,
       "tau_partial": 0.35
     },
     {
       "fold": 2,
-      "tau_compliant": 0.55,
-      "tau_partial": 0.4
+      "tau_compliant": 0.6,
+      "tau_partial": 0.35
     },
     {
       "fold": 3,
-      "tau_compliant": 0.55,
+      "tau_compliant": 0.6,
       "tau_partial": 0.4
     },
     {
       "fold": 4,
-      "tau_compliant": 0.6,
+      "tau_compliant": 0.65,
       "tau_partial": 0.35
     },
     {
       "fold": 5,
       "tau_compliant": 0.6,
-      "tau_partial": 0.35
+      "tau_partial": 0.3
     }
   ],
   "tau_compliant_median": 0.6,
   "tau_partial_median": 0.35,
-  "embedding_model": "all-MiniLM-L6-v2 (384-dim, mean pooling, L2-normalized)",
-  "feature_count": 15,
+  "embedding_model": "all-mpnet-base-v2 (768-dim, mean pooling, L2-normalized)",
+  "feature_count": 8,
   "feature_names": [
-    "hedge_density (baseline)",
-    "action_verb_count (baseline)",
-    "has_ui_path (baseline)",
-    "has_contact_mechanism (baseline)",
-    "has_timeline_sla (baseline)",
-    "commitment_ratio (baseline)",
-    "clause_length_norm (baseline)",
-    "parental_verification_marker (baseline)",
-    "hedge_phrase_count (union)",
-    "action_phrase_count (union)",
-    "requirement_count (union)",
-    "commitment_phrase_count (union)",
-    "mechanism_count (union)",
-    "actionability_ratio (union)",
-    "has_nav (union)"
+    "hedge_density",
+    "action_verb_count",
+    "has_ui_path",
+    "has_contact_mechanism",
+    "has_timeline_sla",
+    "commitment_ratio",
+    "clause_length_norm",
+    "parental_verification_marker"
   ],
-  "duplicate_analysis": "No duplicates detected. All 15 features retained: hedge_density and hedge_phrase_count differ in computation (density vs count); action_verb_count and action_phrase_count use different lexicons; commitment_ratio and commitment_phrase_count differ (ratio vs count); has_ui_path and has_nav use different regex patterns.",
   "classifier_config": {
     "C": 1.0,
     "penalty": "l2",
@@ -109,39 +101,39 @@
     "multi_class": "multinomial",
     "class_weight": "balanced"
   },
-  "scaler": "RobustScaler (fit on training fold only, applied to 15-dim handcrafted features)",
-  "threshold_calibration": "Inner stratified 3-fold CV on training partition, maximize macro-F1 subject to Compliant precision >= 0.70 (baseline objective only)",
-  "classification_report": "                     precision    recall  f1-score   support\n\n      Not Addressed     0.9791    0.9573    0.9681       586\nPartially Compliant     0.6667    0.8252    0.7375       143\n          Compliant     0.6974    0.5464    0.6127        97\n\n           accuracy                         0.8862       826\n          macro avg     0.7810    0.7763    0.7728       826\n       weighted avg     0.8919    0.8862    0.8864       826\n",
+  "scaler": "RobustScaler (fit on training fold only per-fold)",
+  "threshold_calibration": "Inner stratified 3-fold CV on training partition, maximize macro-F1 subject to minority class (Compliant) precision >= 0.70",
+  "classification_report": "                     precision    recall  f1-score   support\n\n      Not Addressed     0.9504    0.9164    0.9331       586\nPartially Compliant     0.5961    0.8462    0.6994       143\n          Compliant     0.7586    0.4536    0.5677        97\n\n           accuracy                         0.8499       826\n          macro avg     0.7684    0.7387    0.7334       826\n       weighted avg     0.8666    0.8499    0.8497       826\n",
   "classification_report_dict": {
     "Not Addressed": {
-      "precision": 0.9790575916230366,
-      "recall": 0.9573378839590444,
-      "f1-score": 0.9680759275237274,
+      "precision": 0.9504424778761061,
+      "recall": 0.9163822525597269,
+      "f1-score": 0.9331016507384883,
       "support": 586.0
     },
     "Partially Compliant": {
-      "precision": 0.6666666666666666,
-      "recall": 0.8251748251748252,
-      "f1-score": 0.7375,
+      "precision": 0.5960591133004927,
+      "recall": 0.8461538461538461,
+      "f1-score": 0.6994219653179191,
       "support": 143.0
     },
     "Compliant": {
-      "precision": 0.6973684210526315,
-      "recall": 0.5463917525773195,
-      "f1-score": 0.6127167630057804,
+      "precision": 0.7586206896551724,
+      "recall": 0.4536082474226804,
+      "f1-score": 0.567741935483871,
       "support": 97.0
     },
-    "accuracy": 0.8861985472154964,
+    "accuracy": 0.8498789346246973,
     "macro avg": {
-      "precision": 0.7810308931141116,
-      "recall": 0.7763014872370629,
-      "f1-score": 0.7727642301765026,
+      "precision": 0.7683740936105904,
+      "recall": 0.738714782045418,
+      "f1-score": 0.7334218505134261,
       "support": 826.0
     },
     "weighted avg": {
-      "precision": 0.8918956644873341,
-      "recall": 0.8861985472154964,
-      "f1-score": 0.8864267791046792,
+      "precision": 0.8665641066996616,
+      "recall": 0.8498789346246973,
+      "f1-score": 0.8497407701151962,
       "support": 826.0
     }
   }

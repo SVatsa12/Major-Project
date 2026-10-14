@@ -35,7 +35,7 @@ context_texts = build_context_texts(df, tax_map)
 
 # Generate embeddings
 print("[INFO] Generating embeddings...")
-embedder = SentenceTransformer("all-MiniLM-L6-v2")
+embedder = SentenceTransformer("all-mpnet-base-v2")
 embeddings = embedder.encode(
     context_texts,
     show_progress_bar=True,
@@ -73,7 +73,7 @@ clf.fit(X_combined, y)
 model_artifact = {
     "classifier": clf,
     "scaler": scaler,
-    "embedder_model_name": "all-MiniLM-L6-v2",
+    "embedder_model_name": "all-mpnet-base-v2",
     "feature_names": [
         "hedge_density",
         "action_verb_count",
