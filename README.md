@@ -89,9 +89,20 @@ python src/training/train_final_model.py
 │   ├── GROUPING_DISCREPANCY_ANALYSIS.md # Fold grouping verification
 │   └── PAPER_DELIVERABLES_SUMMARY.md   # Paper results summary
 ├── src/                       # Core pipeline code
-│   ├── api/
-│   │   └── server.py                   # Flask API (not deployed)
-│   ├── evaluation/            # Evaluation scripts
+│   ├── extraction/            # Clause extraction
+│   │   ├── extract_government_clauses.py   # Extract .gov policy clauses
+│   │   └── extract_social_media_clauses.py # Extract social media clauses
+│   ├── filtering/             # Clause filtering
+│   │   ├── filter_government_clauses.py    # Filter .gov clauses
+│   │   └── filter_social_media_clauses.py  # Filter social media clauses
+│   ├── taxonomy/              # Taxonomy generation
+│   │   ├── generate_taxonomy.py        # Generate DPDP taxonomy from Act
+│   │   ├── triage_by_act.py            # Parse Act sections
+│   │   └── consolidate_taxonomy.py     # Merge taxonomy variants
+│   ├── labeling/              # Clause labeling
+│   │   ├── label_policy_clauses.py     # Label clauses (LLM-assisted)
+│   │   └── export_label_disagreements.py # Export disagreements for review
+│   ├── evaluation/            # Evaluation & metrics
 │   │   ├── evaluate_5fold_cv.py        # CV evaluation framework
 │   │   ├── run_feature_experiments.py  # Feature ablation runner
 │   │   ├── run_confirmation_experiments.py # Confirmation validation
@@ -101,21 +112,22 @@ python src/training/train_final_model.py
 │   │   ├── compute_confusion_matrix.py # Confusion matrix generator
 │   │   ├── paired_comparison.py        # Statistical comparison
 │   │   ├── extract_top_features.py     # Feature importance analysis
+│   │   ├── generate_report_card.py     # Generate compliance report card
 │   │   ├── generate_fixed_folds.py     # Training fold generator
 │   │   └── generate_confirm_folds.py   # Confirmation fold generator
-│   └── training/              # Training scripts
-│       ├── train_classifier.py         # Core training logic
-│       ├── train_final_model.py        # Final model trainer
-│       ├── feature_extraction.py       # Actionability features
-│       └── two_stage_classifier.py     # Two-stage variant
+│   ├── training/              # Model training
+│   │   ├── train_classifier.py         # Core training logic
+│   │   ├── train_final_model.py        # Final model trainer
+│   │   ├── feature_extraction.py       # Actionability features
+│   │   └── two_stage_classifier.py     # Two-stage variant
+│   └── api/
+│       └── server.py                   # Flask API (not deployed)
 ├── scripts/                   # One-off/utility scripts
 │   ├── analysis/              # Analysis utilities
-│   ├── data_collection/       # Data extraction/filtering
-│   ├── data_prep/             # Data preparation
-│   ├── debug/                 # Debug utilities
-│   ├── reporting/             # Report generation
-│   ├── taxonomy/              # Taxonomy generation
-│   └── validation/            # Validation scripts
+│   ├── data_prep/             # Data preparation (align, recalibrate, split, ingest)
+│   ├── debug/                 # Debug utilities (diagnose.py)
+│   ├── reporting/             # Report generation (comparison tables, etc.)
+│   └── validation/            # Validation scripts (audit_rule_leakage.py)
 ├── frontend/                  # Demo UI (React + Flask)
 │   └── README.md              # Frontend documentation
 └── archive_stale_scripts/     # Historical experiments (archived)
