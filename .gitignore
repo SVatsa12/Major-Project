@@ -74,6 +74,17 @@ datasets/SocialMediaPolicies/temp_*.csv
 temp_check_dataset.py
 src/training/smoke_test.py
 
+# Logs
+*_log.txt
+*.log
+
+# Embedding caches (regenerated on-demand)
+cache_embeddings/
+reports/experiments/embedding_cache/*.npy
+
+# Build artifacts
+.dist/
+
 # -----------------------------------------------------------------------
 # Tracked evaluation & pipeline artifacts
 # Model weights (.safetensors, .bin) are gitignored to keep the repo lean.
@@ -84,3 +95,7 @@ src/training/smoke_test.py
 !models/inlegalbert_classifier/calibrated_test_report.json
 !models/inlegalbert_classifier/confusion_matrix.png
 !models/inlegalbert_classifier/confusion_matrix.csv
+
+# Final classifier model artifacts (paper results - keep tracked)
+!models/final_classifier/*.joblib
+!models/final_classifier/*.json

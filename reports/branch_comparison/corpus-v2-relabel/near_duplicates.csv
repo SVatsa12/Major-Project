@@ -1,8 +1,0 @@
-split_a,split_b,clause_id_train,clause_id_val,cosine_similarity,text_train,text_val,clause_id_test,text_test
-train,val,S002310,S000641,0.9339,Cookies and other technologies are used to store and receive information (including identifiers) on ...,Cookies are small pieces of text used to store information in web browsers. Cookies are used to stor...,,
-train,val,S001539,S001496,0.9032,"Unlike other services, we don't use the contents of your private chats or contacts lists for ad targ...",Telegram has two fundamental principles when it comes to collecting and processing private data: We ...,,
-train,val,S000858,S000920,0.9859,detail on each information category). The actual information that we use depends on your factual cir...,Learn more detail on each information category). The actual information that we use depends on your ...,,
-train,val,S001014,S001223,0.9601,Our Services are not directed to children under the age of 13 or those below the applicable minimum ...,"Our Services are not directed to children under the age of 13, and you must confirm that you are 13 ...",,
-train,test,S001541,,0.9097,Telegram Premium users don’t see ads and are not affected by the Telegram Ad Platform....,,S001543,Telegram Premium users don’t see ads and are not affected by the Ad Platform. Targeting-related data...
-train,test,S002594,,0.9528,"California law will govern all disputes arising out of or relating to these terms or the Service, re...",,S000504,"California law will govern these terms and all disputes arising out of or relating to these terms, s..."
-train,test,S001842,,0.9237,"October 29, 2020 These WhatsApp Business Data Security Terms (“Data Security Terms”) apply in respec...",,S001841,"WhatsApp Business Data Security Terms (""Data Security Terms"")..."
