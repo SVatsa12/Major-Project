@@ -1,0 +1,99 @@
+{
+  "tag": "run_20261023_004408",
+  "timestamp": "2026-10-23T00:44:20.635187",
+  "git_commit": "90bae23514b543d2c8654a9702cd892b17beecb2",
+  "config": {
+    "data_path": "corpus\\labeled_clauses_bootstrap.csv",
+    "taxonomy_path": "corpus\\dpdp_taxonomy_final.json",
+    "seeds": [
+      42
+    ],
+    "group_near_dupes": false,
+    "n_multi_member_groups": null
+  },
+  "data_distribution": {
+    "Not Addressed": 586,
+    "Partially Compliant": 143,
+    "Compliant": 97
+  },
+  "aggregate_metrics": {
+    "accuracy_mean": 0.8825921869295362,
+    "accuracy_std": 0.029219132498894962,
+    "macro_f1_mean": 0.7711524245481642,
+    "macro_f1_std": 0.0398126311261922,
+    "weighted_f1_mean": 0.8816602469455539,
+    "weighted_f1_std": 0.0,
+    "macro_precision_mean": 0.7820626940396925,
+    "macro_precision_std": 0.0,
+    "weighted_precision_mean": 0.8857668746135515,
+    "weighted_precision_std": 0.0
+  },
+  "per_class_metrics": {
+    "Not Addressed": {
+      "precision": 0.9671848013816926,
+      "precision_std": 0.0,
+      "recall": 0.9556313993174061,
+      "recall_std": 0.0,
+      "f1": 0.9613733905579399,
+      "f1_std": 0.0
+    },
+    "Partially Compliant": {
+      "precision": 0.6763005780346821,
+      "precision_std": 0.0,
+      "recall": 0.8181818181818182,
+      "recall_std": 0.0,
+      "f1": 0.740506329113924,
+      "f1_std": 0.0
+    },
+    "Compliant": {
+      "precision": 0.7027027027027027,
+      "precision_std": 0.0,
+      "recall": 0.5360824742268041,
+      "recall_std": 0.0,
+      "f1": 0.6081871345029239,
+      "f1_std": 0.0
+    }
+  },
+  "per_fold_results": [
+    {
+      "fold": 1,
+      "seed": 42,
+      "macro_f1": 0.7396790005485657,
+      "accuracy": 0.8614457831325302,
+      "tau_compliant": 0.44999999999999996,
+      "tau_partial": 0.3
+    },
+    {
+      "fold": 2,
+      "seed": 42,
+      "macro_f1": 0.7917907713400941,
+      "accuracy": 0.9030303030303031,
+      "tau_compliant": 0.6499999999999999,
+      "tau_partial": 0.39999999999999997
+    },
+    {
+      "fold": 3,
+      "seed": 42,
+      "macro_f1": 0.7779723206046035,
+      "accuracy": 0.896969696969697,
+      "tau_compliant": 0.5499999999999999,
+      "tau_partial": 0.39999999999999997
+    },
+    {
+      "fold": 4,
+      "seed": 42,
+      "macro_f1": 0.8299673138948416,
+      "accuracy": 0.9151515151515152,
+      "tau_compliant": 0.49999999999999994,
+      "tau_partial": 0.39999999999999997
+    },
+    {
+      "fold": 5,
+      "seed": 42,
+      "macro_f1": 0.7163527163527164,
+      "accuracy": 0.8363636363636363,
+      "tau_compliant": 0.5999999999999999,
+      "tau_partial": 0.3
+    }
+  ]
+}
