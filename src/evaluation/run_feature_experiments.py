@@ -145,7 +145,7 @@ def main():
     parser.add_argument("--data", type=str, default="corpus/labeled_clauses_bootstrap.csv")
     parser.add_argument("--seeds", type=str, default="42,43,44")
     parser.add_argument("--features", type=str, required=True,
-                        choices=list(FEATURE_EXTRACTORS.keys()) + ["two_stage_bge", "two_stage_e5", "two_stage_inlegal"],
+                        choices=list(FEATURE_EXTRACTORS.keys()) + ["two_stage_e5_b2a"],
                         help="Feature variant to test")
     parser.add_argument("--tag", type=str, required=True, help="Experiment tag")
     args = parser.parse_args()
@@ -173,8 +173,11 @@ def main():
     
     two_stage = args.features.startswith("two_stage_")
     if two_stage:
-        # Two-stage uses pairing features from best encoder
-        encoder_name = args.features.replace("two_stage_", "pairing_")
+        # Two-stage uses B2a features
+        if "b2a" in args.features:
+            encoder_name = "pairing_e5_b2a"
+        else:
+            encoder_name = args.features.replace("two_stage_", "pairing_")
         feature_data = FEATURE_EXTRACTORS[encoder_name](df, taxonomy)
         description = feature_data["description"] + " [TWO-STAGE]"
     else:

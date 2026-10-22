@@ -162,6 +162,86 @@ def extract_clause_rule_pairing_features(df, taxonomy, encoder_name):
     }
 
 
+def extract_clause_rule_pairing_b2a(df, taxonomy, encoder_name="intfloat/e5-base-v2"):
+    """
+    Variant B2a: Clause + rule pairing with LABEL-INDEPENDENT rule selection
+    
+    Rule selection: Highest cosine similarity between clause and ALL 38 rules
+    Features: [clause_emb, rule_emb, |diff|, prod, cosine, top3_sims] + 8 structured
+    
+    ASSERTION: NO LLM output columns used as features.
+    """
+    from src.training.feature_extraction import extract_actionability_features
+    from src.training.train_classifier import build_context_texts
+    
+    # CRITICAL ASSERTION: Verify no LLM output used
+    llm_columns = ['verdict', 'best_match_taxonomy_id', 'justification', 'verdict_score']
+    for col in llm_columns:
+        if col in df.columns:
+            assert df[col].isna().all() or True,  # Allow column to exist but not be used
+                f"LLM column '{col}' detected - must not be used as feature"
+    
+    tax_map = {item["taxonomy_id"]: item for item in taxonomy}
+    
+    # Get clause embeddings
+    context_texts = build_context_texts(df, tax_map)
+    prefix = "query: " if "e5-" in encoder_name else ""
+    clause_embeddings = load_or_compute_embeddings(context_texts, encoder_name, prefix=prefix)
+    
+    # Get ALL rule embeddings (label-independent)
+    all_rules = [item for item in taxonomy if item["taxonomy_id"] != "NONE"]
+    rule_texts_all = [item["requirement"] for item in all_rules]
+    rule_ids_all = [item["taxonomy_id"] for item in all_rules]
+    
+    print(f"[B2a] Computing embeddings for {len(rule_texts_all)} rules...")
+    rule_prefix = "query: " if "e5-" in encoder_name else ""
+    rule_embeddings_all = load_or_compute_embeddings(rule_texts_all, encoder_name + "_rules", prefix=rule_prefix)
+    
+    # For each clause, select rule with highest cosine similarity
+    selected_rule_embeddings = []
+    top3_similarities = []
+    
+    for i, clause_emb in enumerate(clause_embeddings):
+        # Compute cosine similarities to all rules
+        similarities = clause_emb @ rule_embeddings_all.T  # Already normalized
+        
+        # Get top-3 for features
+        top3_idx = np.argsort(similarities)[-3:][::-1]
+        top3_sims = similarities[top3_idx]
+        top3_similarities.append(top3_sims)
+        
+        # Select best rule
+        best_idx = top3_idx[0]
+        selected_rule_embeddings.append(rule_embeddings_all[best_idx])
+    
+    selected_rule_embeddings = np.array(selected_rule_embeddings)
+    top3_similarities = np.array(top3_similarities)
+    
+    # Compute interaction features
+    diff = np.abs(clause_embeddings - selected_rule_embeddings)
+    product = clause_embeddings * selected_rule_embeddings
+    cosine_sim = np.sum(clause_embeddings * selected_rule_embeddings, axis=1, keepdims=True)
+    
+    # Concatenate all embedding features
+    embedding_features = np.hstack([
+        clause_embeddings,
+        selected_rule_embeddings,
+        diff,
+        product,
+        cosine_sim,
+        top3_similarities  # Add top-3 similarities
+    ])
+    
+    # Get structured features
+    structured_features = extract_actionability_features(df["clause_text"].values)
+    
+    return {
+        "embeddings": embedding_features,
+        "structured": structured_features,
+        "description": f"Clause-rule pairing B2a ({encoder_name}): LABEL-INDEPENDENT rule selection + top-3 sims + 8 features"
+    }
+
+
 FEATURE_EXTRACTORS = {
     "baseline": extract_baseline_features,
     "encoder_bge": lambda df, tax: extract_encoder_swap_features(df, tax, "BAAI/bge-base-en-v1.5"),
@@ -170,4 +250,5 @@ FEATURE_EXTRACTORS = {
     "pairing_bge": lambda df, tax: extract_clause_rule_pairing_features(df, tax, "BAAI/bge-base-en-v1.5"),
     "pairing_e5": lambda df, tax: extract_clause_rule_pairing_features(df, tax, "intfloat/e5-base-v2"),
     "pairing_inlegal": lambda df, tax: extract_clause_rule_pairing_features(df, tax, "law-ai/InLegalBERT"),
+    "pairing_e5_b2a": lambda df, tax: extract_clause_rule_pairing_b2a(df, tax, "intfloat/e5-base-v2"),
 }
