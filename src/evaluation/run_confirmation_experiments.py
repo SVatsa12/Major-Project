@@ -42,7 +42,8 @@ def load_confirm_folds(seed):
     if str(seed) not in folds_data["seeds"]:
         raise ValueError(f"Seed {seed} not in confirmation folds")
     
-    return folds_data["seeds"][str(seed)], folds_data["group_metadata"]
+    # Return fold assignments only (group metadata not needed for execution)
+    return folds_data["seeds"][str(seed)], None
 
 
 def run_single_fold(X_train, y_train, X_test, y_test, fold_idx, seed):
