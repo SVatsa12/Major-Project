@@ -665,18 +665,18 @@ print("\n" + "=" * 80)
 print("DIAGNOSTIC SUMMARY")
 print("=" * 80)
 
-print(f"\n✓ Label Distribution:")
+print(f"\n[OK] Label Distribution:")
 print(f"  - Train: {len(df_train)} samples")
 print(f"  - Val:   {len(df_val)} samples")
 print(f"  - Test:  {len(df_test)} samples")
 print(f"  - Majority class: {majority_class} ({label_stats['train']['Not Addressed']['percentage']}% of train)")
 
-print(f"\n✓ Majority-Class Baseline (Test):")
+print(f"\n[OK] Majority-Class Baseline (Test):")
 print(f"  - Accuracy:  {baseline_acc:.4f}")
 print(f"  - Macro-F1:  {baseline_macro_f1:.4f}")
 
 if model_available:
-    print(f"\n✓ Current Model Performance:")
+    print(f"\n[OK] Current Model Performance:")
     print(f"  - Val Accuracy:   {val_metrics['accuracy']:.4f}")
     print(f"  - Val Macro-F1:   {val_metrics['macro_f1']:.4f}")
     print(f"  - Test Accuracy:  {test_metrics['accuracy']:.4f}")
@@ -684,25 +684,25 @@ if model_available:
     print(f"  - 95% CI (Test Accuracy):  [{acc_ci[0]:.4f}, {acc_ci[1]:.4f}]")
     print(f"  - 95% CI (Test Macro-F1):  [{f1_ci[0]:.4f}, {f1_ci[1]:.4f}]")
 else:
-    print(f"\n⚠ Model not available - skipped performance evaluation")
+    print(f"\n[WARNING] Model not available - skipped performance evaluation")
 
-print(f"\n✓ Data Leakage Check:")
+print(f"\n[OK] Data Leakage Check:")
 print(f"  - Exact duplicates:  {len(exact_duplicates)}")
 print(f"  - Near-duplicates (cosine >= {SIMILARITY_THRESHOLD}): {len(near_duplicates)}")
 if len(exact_duplicates) > 0 or len(near_duplicates) > 10:
-    print(f"  ⚠ WARNING: Potential data leakage detected!")
+    print(f"  [WARNING] Potential data leakage detected!")
 
-print(f"\n✓ Taxonomy Rule Concentration:")
+print(f"\n[OK] Taxonomy Rule Concentration:")
 print(f"  - Rules holding >{LABEL_CONCENTRATION_THRESHOLD*100}% of positive labels: {len(flagged_rules)}")
 if len(flagged_rules) > 0:
-    print(f"  ⚠ WARNING: Some rules are over-represented in positive labels")
+    print(f"  [WARNING] Some rules are over-represented in positive labels")
 
 if model_available:
-    print(f"\n✓ Misclassifications:")
+    print(f"\n[OK] Misclassifications:")
     print(f"  - Total test misclassifications: {len(misclassifications)}")
     print(f"  - Top 30 saved for review")
 
-print(f"\n✓ All diagnostic reports saved to: {OUTPUT_DIR}")
+print(f"\n[OK] All diagnostic reports saved to: {OUTPUT_DIR}")
 print(f"\nFiles generated:")
 print(f"  - branch_fingerprint.json")
 print(f"  - label_distribution.json")
