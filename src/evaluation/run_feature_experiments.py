@@ -56,31 +56,45 @@ def find_near_duplicate_groups(embeddings, threshold=0.90):
     return labels, n_multi_member
 
 
-def run_single_seed_cv(df, taxonomy, feature_data, groups, args, seed, two_stage=False):
-    """Run 5-fold CV for a single seed with given features."""
+def load_fixed_folds(seed):
+    """Load pre-computed fixed fold assignments."""
+    folds_path = Path("datasets/folds/fixed_folds_v1.json")
+    
+    if not folds_path.exists():
+        raise FileNotFoundError(
+            f"Fixed folds file not found: {folds_path}\n"
+            f"Run: python src/evaluation/generate_fixed_folds.py"
+        )
+    
+    folds_data = json.loads(folds_path.read_text())
+    
+    if str(seed) not in folds_data["seeds"]:
+        raise ValueError(f"Seed {seed} not found in fixed folds. Available: {list(folds_data['seeds'].keys())}")
+    
+    return folds_data["seeds"][str(seed)], folds_data["groups"]
+
+
+def run_single_seed_cv(df, taxonomy, feature_data, args, seed, two_stage=False):
+    """Run 5-fold CV for a single seed with given features using FIXED FOLDS."""
     embeddings = feature_data["embeddings"]
     structured_features = feature_data["structured"]
     y_all = df["verdict"].values
     
-    # Choose cross-validator
-    # If too few groups, fall back to regular StratifiedKFold
-    n_unique_groups = len(np.unique(groups))
-    if n_unique_groups < 100:  # Arbitrary threshold
-        print(f"[WARNING] Only {n_unique_groups} groups found - falling back to StratifiedKFold (no grouping)")
-        from sklearn.model_selection import StratifiedKFold
-        skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=seed)
-        splits = skf.split(embeddings, y_all)
-        use_groups = False
-    else:
-        skf = StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=seed)
-        splits = skf.split(embeddings, y_all, groups)
-        use_groups = True
+    # Load fixed fold assignments
+    fold_assignments, groups = load_fixed_folds(seed)
+    groups = np.array(groups)
+    
+    print(f"[INFO] Using fixed folds from datasets/folds/fixed_folds_v1.json")
+    print(f"[INFO] Seed {seed}: {len(fold_assignments)} folds with {len(np.unique(groups))} groups")
     
     fold_results = []
     all_true_labels = []
     all_pred_labels = []
     
-    for fold_idx, (train_idx, test_idx) in enumerate(splits, 1):
+    for fold_assignment in fold_assignments:
+        fold_idx = fold_assignment["fold"]
+        train_idx = np.array(fold_assignment["train"])
+        test_idx = np.array(fold_assignment["test"])
         # Split data
         X_train_dict = {
             "embedding": embeddings[train_idx],
@@ -170,18 +184,8 @@ def main():
     print(f"[INFO] Feature description: {description}")
     print(f"[INFO] Embedding dim: {feature_data['embeddings'].shape[1]}, Structured: {feature_data['structured'].shape[1]}")
     
-    # Find near-duplicate groups
-    print(f"\n[INFO] Computing near-duplicate groups (cosine >= 0.90)...")
-    # Use only the clause embeddings (first part) for grouping
-    clause_emb_dim = 384 if "MiniLM" in description else 768  # MiniLM=384, others=768
-    if "Clause-rule pairing" in description:
-        # For pairing, clause embeddings are first part
-        grouping_embeddings = feature_data["embeddings"][:, :clause_emb_dim]
-    else:
-        grouping_embeddings = feature_data["embeddings"]
-    
-    groups, n_multi_member = find_near_duplicate_groups(grouping_embeddings, threshold=0.90)
-    print(f"[INFO] Found {len(np.unique(groups))} groups, {n_multi_member} with size > 1")
+    # Fixed folds will be loaded per-seed (groups are pre-computed)
+    print(f"\n[INFO] Will use fixed folds from datasets/folds/fixed_folds_v1.json")
     
     # Run CV for each seed
     print(f"\n{'='*80}")
@@ -194,7 +198,7 @@ def main():
     for seed_idx, seed in enumerate(seeds, 1):
         print(f"\n--- Seed {seed} ({seed_idx}/{len(seeds)}) ---")
         fold_results, class_report = run_single_seed_cv(
-            df, taxonomy, feature_data, groups, args, seed, two_stage=two_stage
+            df, taxonomy, feature_data, args, seed, two_stage=two_stage
         )
         all_fold_results.extend(fold_results)
         all_class_reports.append(class_report)
@@ -243,6 +247,11 @@ def main():
     
     # Save experiment
     git_commit = get_git_commit()
+    
+    # Load groups info from fixed folds
+    folds_data = json.loads(Path("datasets/folds/fixed_folds_v1.json").read_text())
+    n_multi_member = folds_data["metadata"]["n_multi_member_groups"]
+    
     experiment_data = {
         "tag": args.tag,
         "timestamp": datetime.now().isoformat(),
