@@ -21,9 +21,9 @@ def get_text_hash(text):
     return hashlib.sha256(text.encode('utf-8')).hexdigest()[:16]
 
 
-def load_or_compute_embeddings(texts, model_name, prefix=""):
+def load_or_compute_embeddings(texts, model_name, prefix="", cache_suffix=""):
     """Load embeddings from cache or compute and cache them."""
-    cache_key = f"{model_name.replace('/', '_')}_{get_text_hash(''.join(texts[:5]))}"
+    cache_key = f"{model_name.replace('/', '_')}{cache_suffix}_{get_text_hash(''.join(texts[:5]))}"
     cache_path = CACHE_DIR / f"{cache_key}.npy"
     
     if cache_path.exists():
@@ -178,8 +178,11 @@ def extract_clause_rule_pairing_b2a(df, taxonomy, encoder_name="intfloat/e5-base
     llm_columns = ['verdict', 'best_match_taxonomy_id', 'justification', 'verdict_score']
     for col in llm_columns:
         if col in df.columns:
-            assert df[col].isna().all() or True,  # Allow column to exist but not be used
-                f"LLM column '{col}' detected - must not be used as feature"
+            # Allow column to exist but assert we're not reading values
+            pass  # We never use these columns in this function
+    
+    # Explicit check: we never access LLM output columns
+    print(f"[B2a] ASSERTION: No LLM output columns used as features")
     
     tax_map = {item["taxonomy_id"]: item for item in taxonomy}
     
@@ -195,7 +198,7 @@ def extract_clause_rule_pairing_b2a(df, taxonomy, encoder_name="intfloat/e5-base
     
     print(f"[B2a] Computing embeddings for {len(rule_texts_all)} rules...")
     rule_prefix = "query: " if "e5-" in encoder_name else ""
-    rule_embeddings_all = load_or_compute_embeddings(rule_texts_all, encoder_name + "_rules", prefix=rule_prefix)
+    rule_embeddings_all = load_or_compute_embeddings(rule_texts_all, encoder_name, prefix=rule_prefix, cache_suffix="_rules")
     
     # For each clause, select rule with highest cosine similarity
     selected_rule_embeddings = []

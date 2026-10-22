@@ -1,0 +1,144 @@
+{
+  "tag": "fixed_C_e5",
+  "timestamp": "2026-10-23T00:25:25.179453",
+  "git_commit": "bb5a4e64a53aca5aeff55a2662f36aa2c96de652",
+  "config": {
+    "data_path": "corpus\\labeled_clauses_bootstrap.csv",
+    "taxonomy_path": "corpus\\dpdp_taxonomy_final.json",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "feature_variant": "two_stage_e5_b2a",
+    "feature_description": "Clause-rule pairing B2a (intfloat/e5-base-v2): LABEL-INDEPENDENT rule selection + top-3 sims + 8 features [TWO-STAGE]",
+    "two_stage": true,
+    "n_multi_member_groups": 60
+  },
+  "aggregate_metrics": {
+    "accuracy_mean": 0.8925449132353175,
+    "accuracy_std": 0.02249854999953765,
+    "macro_f1_mean": 0.7675070501374298,
+    "macro_f1_std": 0.0338649683076948,
+    "macro_precision_mean": 0.779962802432013,
+    "macro_precision_std": 0.023273059401868024
+  },
+  "per_class_metrics": {
+    "Not Addressed": {
+      "precision": 0.9884437490800413,
+      "precision_std": 0.001598966167352031,
+      "recall": 0.9726962457337883,
+      "recall_std": 0.0036864281560909365,
+      "f1": 0.9805016869682323,
+      "f1_std": 0.0017997715499397735
+    },
+    "Partially Compliant": {
+      "precision": 0.6839701838976939,
+      "precision_std": 0.008033992068423241,
+      "recall": 0.8438228438228439,
+      "recall_std": 0.049885628342733544,
+      "f1": 0.7550832874952977,
+      "f1_std": 0.024727222105950967
+    },
+    "Compliant": {
+      "precision": 0.667474474318304,
+      "precision_std": 0.06097469721992446,
+      "recall": 0.49828178694158076,
+      "recall_std": 0.0048598404205260825,
+      "f1": 0.569574708057655,
+      "f1_std": 0.025281180699719227
+    }
+  },
+  "per_fold_results": [
+    {
+      "fold": 1,
+      "seed": 42,
+      "macro_f1": 0.814879852891234,
+      "accuracy": 0.90625
+    },
+    {
+      "fold": 2,
+      "seed": 42,
+      "macro_f1": 0.7893086524665472,
+      "accuracy": 0.8866666666666667
+    },
+    {
+      "fold": 3,
+      "seed": 42,
+      "macro_f1": 0.7689370996457611,
+      "accuracy": 0.9090909090909091
+    },
+    {
+      "fold": 4,
+      "seed": 42,
+      "macro_f1": 0.7791715060007743,
+      "accuracy": 0.8926174496644296
+    },
+    {
+      "fold": 5,
+      "seed": 42,
+      "macro_f1": 0.775841981195979,
+      "accuracy": 0.905829596412556
+    },
+    {
+      "fold": 1,
+      "seed": 43,
+      "macro_f1": 0.7678085803085803,
+      "accuracy": 0.865546218487395
+    },
+    {
+      "fold": 2,
+      "seed": 43,
+      "macro_f1": 0.8244207677997633,
+      "accuracy": 0.9377593360995851
+    },
+    {
+      "fold": 3,
+      "seed": 43,
+      "macro_f1": 0.7335527598685494,
+      "accuracy": 0.8606060606060606
+    },
+    {
+      "fold": 4,
+      "seed": 43,
+      "macro_f1": 0.7743201511317453,
+      "accuracy": 0.9144736842105263
+    },
+    {
+      "fold": 5,
+      "seed": 43,
+      "macro_f1": 0.7636346579608991,
+      "accuracy": 0.8926174496644296
+    },
+    {
+      "fold": 1,
+      "seed": 44,
+      "macro_f1": 0.7431711295385169,
+      "accuracy": 0.855072463768116
+    },
+    {
+      "fold": 2,
+      "seed": 44,
+      "macro_f1": 0.6809992112787143,
+      "accuracy": 0.8711340206185567
+    },
+    {
+      "fold": 3,
+      "seed": 44,
+      "macro_f1": 0.7872365998503051,
+      "accuracy": 0.8940397350993378
+    },
+    {
+      "fold": 4,
+      "seed": 44,
+      "macro_f1": 0.7320032490608184,
+      "accuracy": 0.8793103448275862
+    },
+    {
+      "fold": 5,
+      "seed": 44,
+      "macro_f1": 0.7773195530632601,
+      "accuracy": 0.9171597633136095
+    }
+  ]
+}
