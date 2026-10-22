@@ -1,0 +1,44 @@
+{
+  "git": {
+    "branch": "taxonomy-v2",
+    "commit_hash": "d516b08c2685d97cb3d90c5e680e50ff56c4f1c3"
+  },
+  "taxonomy": {
+    "file": "corpus\\dpdp_taxonomy_final.json",
+    "n_rules": 38
+  },
+  "labeling_prompt_version": "STEP1_LABEL_ALIGNMENT_COMPLETE",
+  "test_set": {
+    "file": "datasets\\splits\\test.csv",
+    "sha256_hash": "4231689b0c0ea143c8e3d5f98b029c52a18a5206a77cf58cf4b2039ac2c18077",
+    "n_samples": 116,
+    "shared_clause_ids_with_reference": 116
+  },
+  "model": {
+    "file": "models\\context_classifier.joblib",
+    "exists": true,
+    "type": "LogisticRegression",
+    "hyperparameters": {
+      "C": 1.0,
+      "class_weight": "balanced",
+      "dual": false,
+      "fit_intercept": true,
+      "intercept_scaling": 1,
+      "l1_ratio": null,
+      "max_iter": 1000,
+      "multi_class": "multinomial",
+      "n_jobs": null,
+      "penalty": "l2",
+      "random_state": 42,
+      "solver": "lbfgs",
+      "tol": 0.0001,
+      "verbose": 0,
+      "warm_start": false
+    },
+    "thresholds": {
+      "tau_compliant": 0.55,
+      "tau_partial": 0.4
+    },
+    "thresholds_tuned_on": "inferred: train or validation"
+  }
+}

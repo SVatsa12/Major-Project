@@ -1,0 +1,83 @@
+{
+  "exact_duplicates": {
+    "count": 0,
+    "pairs": []
+  },
+  "near_duplicates": {
+    "threshold": 0.9,
+    "count": 7,
+    "pairs": [
+      {
+        "split_a": "train",
+        "split_b": "val",
+        "clause_id_train": "S002310",
+        "clause_id_val": "S000641",
+        "cosine_similarity": 0.9339,
+        "text_train": "Cookies and other technologies are used to store and receive information (including identifiers) on ...",
+        "text_val": "Cookies are small pieces of text used to store information in web browsers. Cookies are used to stor..."
+      },
+      {
+        "split_a": "train",
+        "split_b": "val",
+        "clause_id_train": "S001539",
+        "clause_id_val": "S001496",
+        "cosine_similarity": 0.9032,
+        "text_train": "Unlike other services, we don't use the contents of your private chats or contacts lists for ad targ...",
+        "text_val": "Telegram has two fundamental principles when it comes to collecting and processing private data: We ..."
+      },
+      {
+        "split_a": "train",
+        "split_b": "val",
+        "clause_id_train": "S000858",
+        "clause_id_val": "S000920",
+        "cosine_similarity": 0.9859,
+        "text_train": "detail on each information category). The actual information that we use depends on your factual cir...",
+        "text_val": "Learn more detail on each information category). The actual information that we use depends on your ..."
+      },
+      {
+        "split_a": "train",
+        "split_b": "val",
+        "clause_id_train": "S001014",
+        "clause_id_val": "S001223",
+        "cosine_similarity": 0.9601,
+        "text_train": "Our Services are not directed to children under the age of 13 or those below the applicable minimum ...",
+        "text_val": "Our Services are not directed to children under the age of 13, and you must confirm that you are 13 ..."
+      },
+      {
+        "split_a": "train",
+        "split_b": "test",
+        "clause_id_train": "S001541",
+        "clause_id_test": "S001543",
+        "cosine_similarity": 0.9097,
+        "text_train": "Telegram Premium users don\u2019t see ads and are not affected by the Telegram Ad Platform....",
+        "text_test": "Telegram Premium users don\u2019t see ads and are not affected by the Ad Platform. Targeting-related data..."
+      },
+      {
+        "split_a": "train",
+        "split_b": "test",
+        "clause_id_train": "S002594",
+        "clause_id_test": "S000504",
+        "cosine_similarity": 0.9528,
+        "text_train": "California law will govern all disputes arising out of or relating to these terms or the Service, re...",
+        "text_test": "California law will govern these terms and all disputes arising out of or relating to these terms, s..."
+      },
+      {
+        "split_a": "train",
+        "split_b": "test",
+        "clause_id_train": "S001842",
+        "clause_id_test": "S001841",
+        "cosine_similarity": 0.9237,
+        "text_train": "October 29, 2020 These WhatsApp Business Data Security Terms (\u201cData Security Terms\u201d) apply in respec...",
+        "text_test": "WhatsApp Business Data Security Terms (\"Data Security Terms\")..."
+      }
+    ]
+  },
+  "summary": {
+    "train_val_exact": 0,
+    "train_test_exact": 0,
+    "val_test_exact": 0,
+    "train_val_near": 4,
+    "train_test_near": 3,
+    "val_test_near": 0
+  }
+}

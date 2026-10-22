@@ -1,0 +1,62 @@
+{
+  "train": {
+    "Not Addressed": {
+      "count": 410,
+      "percentage": 76.07
+    },
+    "Partially Compliant": {
+      "count": 94,
+      "percentage": 17.44
+    },
+    "Compliant": {
+      "count": 35,
+      "percentage": 6.49
+    },
+    "total": 539
+  },
+  "val": {
+    "Not Addressed": {
+      "count": 88,
+      "percentage": 75.86
+    },
+    "Partially Compliant": {
+      "count": 20,
+      "percentage": 17.24
+    },
+    "Compliant": {
+      "count": 8,
+      "percentage": 6.9
+    },
+    "total": 116
+  },
+  "test": {
+    "Not Addressed": {
+      "count": 88,
+      "percentage": 75.86
+    },
+    "Partially Compliant": {
+      "count": 20,
+      "percentage": 17.24
+    },
+    "Compliant": {
+      "count": 8,
+      "percentage": 6.9
+    },
+    "total": 116
+  },
+  "overall": {
+    "Not Addressed": {
+      "count": 586,
+      "percentage": 76.01
+    },
+    "Partially Compliant": {
+      "count": 134,
+      "percentage": 17.38
+    },
+    "Compliant": {
+      "count": 51,
+      "percentage": 6.61
+    },
+    "total": 771
+  }
+}

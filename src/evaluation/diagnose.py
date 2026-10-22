@@ -75,6 +75,8 @@ print(f"Output Directory: {OUTPUT_DIR}")
 # 0. Branch Fingerprint
 # ─────────────────────────────────────────────────────────────────────────────
 print(f"\n[0/8] Generating branch fingerprint...")
+print(f"\n[DEBUG] ABSOLUTE PATHS BEING USED:")
+print(f"  Working directory: {Path.cwd()}")
 
 # Git information
 try:
@@ -87,6 +89,8 @@ except:
     git_commit = "unknown"
 
 # Load taxonomy
+print(f"  Taxonomy path (relative): {TAXONOMY_PATH}")
+print(f"  Taxonomy path (absolute): {TAXONOMY_PATH.absolute()}")
 taxonomy = json.loads(TAXONOMY_PATH.read_text(encoding="utf-8"))
 tax_map = {item["taxonomy_id"]: item for item in taxonomy}
 n_taxonomy_rules = len(taxonomy)
@@ -148,6 +152,9 @@ print(f"  Shared test samples with reference: {shared_test_count}/{len(df_test_t
 # Load Data
 # ─────────────────────────────────────────────────────────────────────────────
 print(f"\n[1/8] Loading data splits...")
+print(f"  Train path (absolute): {TRAIN_PATH.absolute()}")
+print(f"  Val path (absolute): {VAL_PATH.absolute()}")
+print(f"  Test path (absolute): {TEST_PATH.absolute()}")
 df_train = pd.read_csv(TRAIN_PATH)
 df_val = pd.read_csv(VAL_PATH)
 df_test = pd.read_csv(TEST_PATH)
@@ -245,6 +252,7 @@ if not MODEL_PATH.exists():
     print(f"  [INFO] Skipping model evaluation. Please train a model first.")
     model_available = False
 else:
+    print(f"  Model path (absolute): {MODEL_PATH.absolute()}")
     model_artifact = joblib.load(MODEL_PATH)
     model_available = True
     

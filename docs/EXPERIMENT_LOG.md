@@ -158,3 +158,136 @@ None! All planned steps completed.
 ---
 
 **Updated:** 2026-10-23 (after Step 4 completion - ALL STEPS DONE)
+
+## Incremental Feature Experiments (Starting from fixed_A_e5)
+
+**Baseline:** fixed_A_e5 = 0.7703 ± 0.0314
+- Features: E5 clause embeddings (768 dims) + 8 structured features
+- Fixed folds (seeds 42,43,44), proper near-duplicate grouping
+- Total: 776 features
+
+### Experiment 1: All-Rules Similarity ✅ BEST
+**Tag:** incr_1_all_rules
+**Description:** Add similarity to ALL 38 taxonomy rules
+**Features Added:** 
+- 38 individual rule cosine similarities
+- 11 category-level max similarities
+- Total: 49 new features → 825 total
+
+**Results:**
+- Macro-F1: **0.8118 ± 0.0315** (+4.2% over baseline)
+- Accuracy: 0.9137 ± 0.0219
+- Compliant F1: 0.6711 ± 0.0080
+- Partially Compliant F1: 0.7749 ± 0.0042
+
+**Status:** ✅ **BEST SINGLE IMPROVEMENT**
+
+---
+
+### Experiment 2: Rubric Features
+**Tag:** incr_2_rubric
+**Description:** Add linguistic compliance signals
+**Features Added:** 14 rubric features
+- Time: specific_time, vague_time (counts + binary flags)
+- Modals: strong/weak modal counts, strength ratio
+- Hedging: hedge count and density
+- Actions: user_action counts
+- Structure: numeric/procedure counts
+
+**Results:**
+- Macro-F1: 0.7797 ± 0.0461 (+0.9% over baseline)
+- Accuracy: 0.8868 ± 0.0403
+- Compliant F1: 0.6281 ± 0.0103
+- Partially Compliant F1: 0.7397 ± 0.0042
+
+**Status:** ⚠️ Minor improvement, higher variance
+
+---
+
+### Experiment 3: Combined (All-Rules + Rubric)
+**Tag:** incr_3_combined
+**Description:** Combine all-rules similarity + rubric features
+**Features:** E5 (768) + structured (8) + all-rules (49) + rubric (14) = 839 total
+
+**Results:**
+- Macro-F1: 0.7779 ± 0.0417 (+0.8% over baseline)
+- Accuracy: 0.8838 ± 0.0334
+- Compliant F1: 0.6266 ± 0.0046
+- Partially Compliant F1: 0.7448 ± 0.0023
+
+**Status:** ❌ **WORSE than all-rules alone** (feature redundancy/noise)
+
+---
+
+### Experiment 4: Classifier Tuning
+**Tag:** incr_4_tuned
+**Description:** Try LogisticRegression (C=0.1,0.3,1.0,3.0,10.0), LinearSVC, LightGBM
+**Features:** Combined features (E5 + structured + all-rules + rubric) = 839
+
+**Results:**
+- Macro-F1: 0.7795 ± 0.0339 (+0.9% over baseline)
+- Accuracy: 0.8837 ± 0.0358
+- Compliant F1: 0.6356 ± 0.0023
+- Partially Compliant F1: 0.7426 ± 0.0042
+
+**Status:** ❌ No improvement over default LogReg (C=1.0)
+
+---
+
+### Experiment 5: Seed Ensemble
+**Tag:** incr_5_ensemble_v3
+**Description:** Train 5 classifiers with different random seeds (42-46), average predicted probabilities
+**Features:** E5 (768) + structured (8) + all-rules (49) = 825 (best feature set)
+
+**Results:**
+- Macro-F1: 0.8118 ± 0.0315 (IDENTICAL to single classifier)
+- Accuracy: 0.9137 ± 0.0219
+- Compliant F1: 0.6711 ± 0.0080
+- Partially Compliant F1: 0.7749 ± 0.0042
+
+**Status:** ⚠️ **NO IMPROVEMENT** - seed ensemble provides no benefit with fixed folds
+
+---
+
+## Final Comparison Table
+
+| Tag | Features | Macro-F1 | Δ vs Baseline | Recommended |
+|-----|----------|----------|---------------|-------------|
+| fixed_A_e5 | E5 + 8 structured | 0.7703 ± 0.0314 | baseline | - |
+| incr_1_all_rules | + all-rules sim | **0.8118 ± 0.0315** | **+4.2%** | ✅ **YES** |
+| incr_2_rubric | + rubric | 0.7797 ± 0.0461 | +0.9% | ❌ No (high variance) |
+| incr_3_combined | + all-rules + rubric | 0.7779 ± 0.0417 | +0.8% | ❌ No (worse than #1) |
+| incr_4_tuned | combined + tuning | 0.7795 ± 0.0339 | +0.9% | ❌ No |
+| incr_5_ensemble_v3 | all-rules + ensemble | 0.8118 ± 0.0315 | +4.2% | ⚠️ No benefit over #1 |
+
+---
+
+## Recommended Model
+
+**Configuration:**
+- Encoder: intfloat/e5-base-v2 (clause embeddings)
+- Features: E5 embeddings (768) + structured (8) + all-rules similarity (49) = **825 features**
+- Classifier: LogisticRegression (C=1.0, balanced class weights)
+- Cross-validation: Fixed folds with near-duplicate grouping (MiniLM, cosine ≥ 0.90)
+
+**Performance:**
+- Macro-F1: 0.8118 ± 0.0315
+- Accuracy: 0.9137 ± 0.0219
+- Compliant F1: 0.6711
+- Partially Compliant F1: 0.7749
+
+**Why This Model:**
+1. ✅ No label leakage (uses E5 similarity, not LLM rule assignments)
+2. ✅ Proper near-duplicate grouping (fixed folds)
+3. ✅ +4.2% F1 improvement over baseline
+4. ✅ Lower variance than rubric features
+5. ✅ Simpler than combined models (fewer features = better generalization)
+
+---
+
+## Next Steps
+
+1. **Train final model** on all 826 clauses using recommended configuration
+2. **Save model artifacts**: trained classifier, scaler, taxonomy embeddings
+3. **Create inference pipeline** for new policy clauses
+4. **Document feature extraction** for production deployment

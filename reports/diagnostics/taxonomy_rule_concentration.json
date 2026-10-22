@@ -1,0 +1,6 @@
+{
+  "total_positive_labels": 185,
+  "concentration_threshold": 0.15,
+  "flagged_rules": [],
+  "flagged_count": 0
+}

@@ -191,6 +191,87 @@ def run_single_seed_cv(df, all_features, args, seed, clf_configs):
     return fold_results, class_report_dict
 
 
+def run_ensemble_cv(df, all_features, args, data_seed, ensemble_seeds):
+    """
+    Run 5-fold CV with ensemble of classifiers trained with different seeds.
+    For each fold: train N classifiers with different random seeds, average their
+    predicted probabilities, then convert to final predictions.
+    """
+    y_all = df["verdict"].values
+    
+    # Load fixed folds
+    fold_assignments, groups = load_fixed_folds(data_seed)
+    
+    fold_results = []
+    all_true_labels = []
+    all_pred_labels = []
+    
+    for fold_assignment in fold_assignments:
+        fold_idx = fold_assignment["fold"]
+        train_idx = np.array(fold_assignment["train"])
+        test_idx = np.array(fold_assignment["test"])
+        
+        # Split features
+        X_train_raw = all_features[train_idx]
+        X_test_raw = all_features[test_idx]
+        y_train = y_all[train_idx]
+        y_test = y_all[test_idx]
+        
+        # Scale features
+        scaler = RobustScaler()
+        X_train = scaler.fit_transform(X_train_raw)
+        X_test = scaler.transform(X_test_raw)
+        
+        # Train ensemble of classifiers with different seeds
+        all_proba = []
+        for clf_seed in ensemble_seeds:
+            clf = LogisticRegression(
+                C=1.0,
+                penalty="l2",
+                solver="lbfgs",
+                max_iter=1000,
+                class_weight="balanced",
+                random_state=clf_seed
+            )
+            clf.fit(X_train, y_train)
+            
+            # Get predicted probabilities (aligned to clf.classes_)
+            proba = clf.predict_proba(X_test)
+            all_proba.append(proba)
+        
+        # Average probabilities across all ensemble members
+        avg_proba = np.mean(all_proba, axis=0)
+        
+        # Convert to final predictions using the first classifier's classes
+        # (all classifiers will have the same class order for the same training data)
+        test_preds = clf.classes_[np.argmax(avg_proba, axis=1)]
+        
+        # Metrics
+        f1 = f1_score(y_test, test_preds, average="macro", zero_division=0)
+        acc = accuracy_score(y_test, test_preds)
+        
+        all_true_labels.extend(y_test)
+        all_pred_labels.extend(test_preds)
+        
+        fold_results.append({
+            "fold": fold_idx,
+            "seed": data_seed,
+            "ensemble_size": len(ensemble_seeds),
+            "macro_f1": float(f1),
+            "accuracy": float(acc),
+        })
+    
+    # Compute per-class metrics
+    class_report_dict = classification_report(
+        all_true_labels, all_pred_labels,
+        labels=["Not Addressed", "Partially Compliant", "Compliant"],
+        output_dict=True,
+        zero_division=0
+    )
+    
+    return fold_results, class_report_dict
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--variant", required=True, choices=["all_rules_sim", "rubric", "all_rules_sim+rubric", "tuned", "ensemble"])
@@ -237,12 +318,11 @@ def main():
         description = "E5 clause + 8 structured + all-rules sim + rubric"
     
     elif args.variant in ["tuned", "ensemble"]:
-        # Use best feature combo
-        print("\n[INFO] Using best feature combination for tuning/ensemble...")
+        # Use best feature combo (all-rules similarity only, NOT rubric)
+        print("\n[INFO] Using best feature combination (all-rules similarity only)...")
         all_rules_sim = extract_all_rules_similarity(df, taxonomy, "intfloat/e5-base-v2")
-        rubric_feats, rubric_names = extract_rubric_features(df)
-        all_features = np.hstack([e5_embeddings, structured_features, all_rules_sim, rubric_feats])
-        description = f"E5 + 8 + all-rules + rubric [{args.variant}]"
+        all_features = np.hstack([e5_embeddings, structured_features, all_rules_sim])
+        description = f"E5 + 8 + all-rules [{args.variant}]"
     
     else:
         # Baseline (fixed_A_e5)
@@ -268,19 +348,34 @@ def main():
     
     # Run experiments
     print(f"\n{'='*80}")
-    print(f"RUNNING {len(seeds)} SEEDS × 5 FOLDS")
+    if args.variant == "ensemble":
+        print(f"RUNNING {len(seeds)} SEEDS × 5 FOLDS with ENSEMBLE")
+    else:
+        print(f"RUNNING {len(seeds)} SEEDS × 5 FOLDS")
     print(f"{'='*80}")
     
     all_fold_results = []
     all_class_reports = []
     
-    for seed_idx, seed in enumerate(seeds, 1):
-        print(f"\n--- Seed {seed} ({seed_idx}/{len(seeds)}) ---")
-        print(f"[INFO] Using fixed folds, seed {seed}")
+    if args.variant == "ensemble":
+        # Use ensemble of 5 classifier seeds for each data seed
+        ensemble_seeds = [42, 43, 44, 45, 46]
         
-        fold_results, class_report = run_single_seed_cv(df, all_features, args, seed, clf_configs)
-        all_fold_results.extend(fold_results)
-        all_class_reports.append(class_report)
+        for seed_idx, data_seed in enumerate(seeds, 1):
+            print(f"\n--- Data Seed {data_seed} ({seed_idx}/{len(seeds)}) with Ensemble {ensemble_seeds} ---")
+            
+            fold_results, class_report = run_ensemble_cv(df, all_features, args, data_seed, ensemble_seeds)
+            all_fold_results.extend(fold_results)
+            all_class_reports.append(class_report)
+    else:
+        # Standard single-classifier per fold
+        for seed_idx, seed in enumerate(seeds, 1):
+            print(f"\n--- Seed {seed} ({seed_idx}/{len(seeds)}) ---")
+            print(f"[INFO] Using fixed folds, seed {seed}")
+            
+            fold_results, class_report = run_single_seed_cv(df, all_features, args, seed, clf_configs)
+            all_fold_results.extend(fold_results)
+            all_class_reports.append(class_report)
     
     # Aggregate
     all_f1s = [r["macro_f1"] for r in all_fold_results]
