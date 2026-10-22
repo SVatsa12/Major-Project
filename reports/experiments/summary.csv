@@ -1,0 +1,4 @@
+tag,timestamp,git_commit,data,seeds,grouped,n_multi_member_groups,accuracy_mean,accuracy_std,macro_f1_mean,macro_f1_std,weighted_f1_mean,weighted_f1_std,NA_f1,PC_f1,C_f1
+baseline_v1,2026-10-22T23:33:16.295473,d516b08c,labeled_clauses_bootstrap,"42,43,44",False,0,0.8818,0.0243,0.7599,0.0466,0.8781,0.0040,0.9618,0.7317,0.5884
+baseline_v1_grouped,2026-10-22T23:34:11.802092,d516b08c,labeled_clauses_bootstrap,"42,43,44",True,60,0.8718,0.0311,0.7473,0.0354,0.8731,0.0014,0.9624,0.7120,0.5710
+baseline_v2_grouped,2026-10-22T23:35:01.649355,d516b08c,labeled_clauses_v2,"42,43,44",True,61,0.8796,0.0299,0.7469,0.0373,0.8791,0.0069,0.9681,0.7403,0.5420

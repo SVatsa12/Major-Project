@@ -1,0 +1,25 @@
+﻿# ============================================================================
+# EXPERIMENT RESULTS: Multi-Seed Cross-Validation with Near-Duplicate Grouping
+# ============================================================================
+
+Tag                   | Data                      | Seeds      | Grouped | Dupes | Accuracy         | Macro-F1         | Per-Class F1 (NA / PC / C)
+--------------------- | ------------------------- | ---------- | ------- | ----- | ---------------- | ---------------- | ---------------------------
+baseline_v1           | labeled_clauses_bootstrap | 42,43,44   | No      | 0     | 0.8818 ± 0.0243  | 0.7599 ± 0.0466  | 0.9618 / 0.7317 / 0.5884
+baseline_v1_grouped   | labeled_clauses_bootstrap | 42,43,44   | Yes     | 60    | 0.8718 ± 0.0311  | 0.7473 ± 0.0354  | 0.9624 / 0.7120 / 0.5710
+baseline_v2_grouped   | labeled_clauses_v2        | 42,43,44   | Yes     | 61    | 0.8796 ± 0.0299  | 0.7469 ± 0.0373  | 0.9681 / 0.7403 / 0.5420
+
+# KEY FINDINGS:
+# 1. Near-duplicate grouping found 60-61 multi-member groups (cosine ≥ 0.90)
+# 2. Grouping reduces macro-F1 by ~1.3% (0.7599 → 0.7473), primarily affecting Compliant class
+#    - This suggests ~1.3% of original performance was inflated by near-duplicate leakage
+# 3. With proper grouping, v1 and v2 perform nearly identically (0.7473 vs 0.7469)
+# 4. V2 relabeling found 28 disagreements (3.4%): mostly Not Addressed → Partially Compliant (13)
+# 5. Multi-seed evaluation shows robust results with low variance (std ~0.03-0.05)
+
+# LABEL DISAGREEMENTS (v1 → v2):
+#   Not Addressed → Partially Compliant: 13
+#   Compliant → Partially Compliant: 8
+#   Compliant → Not Addressed: 3
+#   Partially Compliant → Not Addressed: 3
+#   Partially Compliant → Compliant: 1
+
