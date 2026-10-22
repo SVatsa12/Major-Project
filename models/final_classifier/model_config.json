@@ -1,0 +1,26 @@
+{
+  "model_type": "LogisticRegression",
+  "hyperparameters": {
+    "C": 1.0,
+    "class_weight": "balanced",
+    "max_iter": 1000,
+    "random_state": 42
+  },
+  "calibration": {
+    "method": "isotonic",
+    "cv": 3
+  },
+  "training_data": {
+    "corpus": "labeled_clauses_bootstrap.csv",
+    "taxonomy": "dpdp_taxonomy_final.json",
+    "n_samples": 826,
+    "n_classes": 3,
+    "class_distribution": {
+      "Compliant": 97,
+      "Not Addressed": 586,
+      "Partially Compliant": 143
+    }
+  },
+  "timestamp": "2026-10-23T02:05:55.736761",
+  "git_commit": "a33477d3b0002c55416085ec5488206f1a90fa1c"
+}

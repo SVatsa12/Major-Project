@@ -1,0 +1,21 @@
+{
+  "total_features": 825,
+  "feature_breakdown": {
+    "e5_embeddings": 768,
+    "actionability_features": 8,
+    "all_rules_similarity": 49
+  },
+  "encoder_model": "intfloat/e5-base-v2",
+  "actionability_features_list": [
+    "clause_word_count",
+    "policy_word_count",
+    "has_shall",
+    "has_must",
+    "has_will",
+    "has_should",
+    "has_may",
+    "has_can"
+  ],
+  "all_rules_mode": "full (requirement field from taxonomy)",
+  "all_rules_details": "38 rule similarities + 11 category max similarities = 49 features"
+}
