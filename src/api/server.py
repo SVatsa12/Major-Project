@@ -1,18 +1,47 @@
 """
 src/api/server.py
-FastAPI backend with normalized keys and automated final % computation
-to ensure frontend tables and gauges render non-zero values.
+FastAPI backend for DPDP Compliance API.
+
+Uses the final model (E5-base + 825 features) via ClauseClassifier.
+Model and embedder are loaded once at startup for efficient serving.
 """
 from pathlib import Path
-import json
-import joblib
+from contextlib import asynccontextmanager
+from typing import Dict, Any
 import numpy as np
 import pandas as pd
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
-app = FastAPI(title="DPDP Statutory Compliance API", version="1.0.0")
+# Import ClauseClassifier (single source of truth)
+from src.inference.predictor import ClauseClassifier
+
+# Global classifier instance (loaded at startup)
+classifier: ClauseClassifier = None
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    """Startup: Load model once. Shutdown: cleanup."""
+    global classifier
+    print("\n" + "=" * 80)
+    print("DPDP COMPLIANCE API - STARTUP")
+    print("=" * 80)
+    classifier = ClauseClassifier()
+    print("=" * 80)
+    print("API READY - Model loaded and cached")
+    print("=" * 80 + "\n")
+    yield
+    # Cleanup (if needed)
+    print("[API] Shutting down...")
+
+
+app = FastAPI(
+    title="DPDP Statutory Compliance API",
+    version="2.0.0",
+    lifespan=lifespan
+)
 
 app.add_middleware(
     CORSMiddleware,
@@ -24,10 +53,18 @@ app.add_middleware(
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 REPORTS_DIR = PROJECT_ROOT / "reports"
-MODELS_DIR = PROJECT_ROOT / "models" / "baseline"
 
 class ClauseRequest(BaseModel):
     clause_text: str
+    app_name: str = "Platform"  # Optional, defaults to "Platform"
+
+
+class PredictionResponse(BaseModel):
+    verdict: str
+    confidence: float
+    probabilities: Dict[str, float]
+    related_rule: Dict[str, Any]
+
 
 def clean_matrix_records(df: pd.DataFrame) -> list[dict]:
     """
@@ -123,78 +160,76 @@ def get_matrix():
     df = pd.read_csv(matrix_file)
     return clean_matrix_records(df)
 
-@app.get("/api/metrics")
-def get_metrics():
-    baseline_eval_path = MODELS_DIR / "eval_test.json"
-    baseline = {}
-    if baseline_eval_path.exists():
-        with open(baseline_eval_path, "r", encoding="utf-8") as f:
-            baseline = json.load(f)
-
-    return {
-        "primary_model": {
-            "name": "TF-IDF + Balanced Logistic Regression",
-            "accuracy": baseline.get("accuracy", 0.8879),
-            "macro_f1": baseline.get("macro_f1", 0.4895),
-            "type": "Trained from scratch (Zero pre-trained transformer checkpoints)"
-        },
-        "baseline": {
-            "accuracy": baseline.get("accuracy", 0.8879),
-            "macro_f1": baseline.get("macro_f1", 0.4895),
-            "status": "Active Production"
+@app.get("/health")
+def health_check():
+    """Health check endpoint with model info."""
+    if classifier is None:
+        return {
+            "status": "starting",
+            "model_loaded": False
         }
+    
+    return {
+        "status": "healthy",
+        "model_loaded": True,
+        "model_type": classifier.model_config["model_type"],
+        "feature_dimensions": classifier.feature_config["total_features"],
+        "encoder": classifier.feature_config["encoder_model"],
+        "active_rules": len(classifier.active_rules)
     }
 
-@app.post("/api/predict")
+
+@app.get("/api/metrics")
+def get_metrics():
+    """Return model performance metrics."""
+    if classifier is None:
+        raise HTTPException(status_code=503, detail="Model not loaded")
+    
+    return {
+        "primary_model": {
+            "name": "E5-base + 825 features (Logistic Regression)",
+            "accuracy": "91.66%",  # From confirmation experiments
+            "macro_f1": 0.8132,
+            "features": "768 E5-base + 8 actionability + 49 all-rules similarity",
+            "type": "Final production model from paper"
+        },
+        "model_config": {
+            "encoder": classifier.feature_config["encoder_model"],
+            "total_features": classifier.feature_config["total_features"],
+            "hyperparameters": classifier.model_config["hyperparameters"],
+            "thresholds": {
+                "tau_compliant": classifier.tau_compliant,
+                "tau_partial": classifier.tau_partial
+            }
+        },
+        "status": "Active Production"
+    }
+
+
+@app.post("/api/predict", response_model=PredictionResponse)
 def predict_clause(req: ClauseRequest):
-    bundle_path = MODELS_DIR / "baseline_model.joblib"
-    model_path = MODELS_DIR / "model.joblib"
-    vectorizer_path = MODELS_DIR / "vectorizer.joblib"
-
-    classifier = None
-    vectorizer = None
-
-    if bundle_path.exists():
-        try:
-            bundle = joblib.load(bundle_path)
-            classifier = bundle.get("classifier") or bundle.get("model")
-            vectorizer = bundle.get("vectorizer")
-        except Exception:
-            pass
-
-    if classifier is None or vectorizer is None:
-        if model_path.exists() and vectorizer_path.exists():
-            try:
-                classifier = joblib.load(model_path)
-                vectorizer = joblib.load(vectorizer_path)
-            except Exception:
-                pass
-
-    if classifier is None or vectorizer is None:
-        return {
-            "verdict": "Partially Compliant",
-            "probabilities": {
-                "Not Addressed": 0.20,
-                "Partially Compliant": 0.65,
-                "Compliant": 0.15
-            },
-            "note": "Baseline model weights not found on disk; returned mock estimation."
-        }
-
+    """
+    Predict compliance verdict for a policy clause.
+    
+    Uses the final model (E5-base + 825 features) trained on 826 clauses.
+    Returns verdict, confidence, probabilities, and most related statutory rule.
+    """
+    if classifier is None:
+        raise HTTPException(status_code=503, detail="Model not loaded")
+    
     try:
-        X = vectorizer.transform([req.clause_text])
-        pred = classifier.predict(X)[0]
-        probs = classifier.predict_proba(X)[0]
-        classes = classifier.classes_
-
-        prob_dict = {cls: float(round(p, 4)) for cls, p in zip(classes, probs)}
-        return {
-            "verdict": str(pred),
-            "probabilities": prob_dict
-        }
+        result = classifier.predict(req.clause_text, req.app_name)
+        return result
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Inference error: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Prediction error: {str(e)}")
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("src.api.server:app", host="0.0.0.0", port=8000, reload=True)
+    print("\n[INFO] Starting DPDP Compliance API server...")
+    print("[INFO] Model will be loaded on startup (may take ~30s for E5-base download)...")
+    uvicorn.run(
+        "src.api.server:app",
+        host="0.0.0.0",
+        port=8000,
+        reload=False  # Disable reload to prevent double model loading
+    )

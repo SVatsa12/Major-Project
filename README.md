@@ -165,14 +165,14 @@ Expected output: `Macro-F1: 0.8132`
 - **Pooling**: Mean pooling, L2-normalized
 
 ### Structured Features (8 dims)
-1. `clause_word_count` - Length of clause
-2. `policy_word_count` - Length of matched policy description
-3. `has_shall` - Contains "shall" modal
-4. `has_must` - Contains "must" modal
-5. `has_will` - Contains "will" modal
-6. `has_should` - Contains "should" modal
-7. `has_may` - Contains "may" modal
-8. `has_can` - Contains "can" modal
+1. `hedge_density` - (hedge word count) / (clause word count)
+2. `action_verb_count` - Raw count of specific action verbs (delete, erase, notify, provide, restrict, rectify, withdraw, inform, escalate, terminate, purge)
+3. `has_ui_path` - Binary: regex for settings navigation patterns
+4. `has_contact_mechanism` - Binary: regex for contact info (email, grievance officer, DPO)
+5. `has_timeline_sla` - Binary: regex for time commitments (N days/hours, promptly)
+6. `commitment_ratio` - C / (C + H + ε), where C = commitment verbs (will, shall, must, guarantee, ensure) and H = hedge words
+7. `clause_length_norm` - min(1.0, word_count / 100.0)
+8. `parental_verification_marker` - Binary: regex for child/parental consent markers
 
 ### All-Rules Similarity Features (49 dims)
 - 38 cosine similarities: clause vs each DPDP rule

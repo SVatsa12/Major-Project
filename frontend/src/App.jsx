@@ -40,10 +40,32 @@ const PLATFORM_INITIALS = (name) => name.slice(0, 2).toUpperCase();
 const mockPredict = (text) => {
   const lower = text.toLowerCase();
   if (lower.includes("delet") || lower.includes("erase") || lower.includes("remove"))
-    return { verdict: "Compliant",         confidence: 0.92, rule: "DPDP_ACT-0047", category: "Data Retention & Erasure" };
+    return { 
+      verdict: "Compliant",         
+      confidence: 0.92, 
+      related_rule: {
+        rule_id: "DPDP_ACT-0047",
+        category: "Data Retention & Erasure",
+        similarity: 0.85,
+        statutory_text: "Data must be erased when no longer needed for the purpose collected"
+      }
+    };
   if (lower.includes("may") || lower.includes("certain") || lower.includes("as needed"))
-    return { verdict: "Partially Compliant", confidence: 0.68, rule: "DPDP_RUL-0227", category: "Transparency" };
-  return { verdict: "Not Addressed", confidence: 0.78, rule: null, category: null };
+    return { 
+      verdict: "Partially Compliant", 
+      confidence: 0.68, 
+      related_rule: {
+        rule_id: "DPDP_RUL-0227",
+        category: "Transparency",
+        similarity: 0.72,
+        statutory_text: "Notice must clearly state data retention period"
+      }
+    };
+  return { 
+    verdict: "Not Addressed", 
+    confidence: 0.78, 
+    related_rule: null
+  };
 };
 
 /* ─────────────────────────────────────────
@@ -165,13 +187,13 @@ export default function App() {
       icon: <Gavel size={18} />, accent: "var(--saffron)", accentDim: "var(--saffron-dim)",
     },
     {
-      label: "Production Macro-F1", value: metrics ? metrics.baseline.macro_f1.toFixed(4) : "0.4895",
-      sub: "TF-IDF + LogReg · target ≥ 0.50",
+      label: "Production Macro-F1", value: metrics ? metrics.primary_model.macro_f1.toFixed(4) : "0.8132",
+      sub: "E5-base + 825 features · Confirmation folds",
       icon: <Activity size={18} />, accent: "var(--jade)", accentDim: "var(--jade-dim)",
     },
     {
-      label: "Baseline Test Accuracy", value: metrics ? `${(metrics.baseline.accuracy * 100).toFixed(1)}%` : "88.8%",
-      sub: "116 test clauses",
+      label: "Model Accuracy", value: metrics ? metrics.primary_model.accuracy : "91.66%",
+      sub: "LogisticRegression C=1.0 · 826 clauses",
       icon: <Zap size={18} />, accent: "var(--jade)", accentDim: "var(--jade-dim)",
     },
   ];
@@ -553,15 +575,22 @@ export default function App() {
                       </div>
                     </div>
 
-                    {/* Rule match */}
-                    {prediction.rule && (
+                    {/* Most related statutory rule */}
+                    {prediction.related_rule && (
                       <div style={{ background: "rgba(255,255,255,0.03)", borderRadius: 8, padding: "12px 14px",
                         border: "1px solid rgba(255,255,255,0.06)" }}>
                         <div style={{ fontSize: 10, color: "var(--text-3)", letterSpacing: "0.06em", fontWeight: 700, marginBottom: 6 }}>
-                          MATCHED RULE
+                          MOST RELATED STATUTORY RULE (SIMILARITY)
                         </div>
-                        <div style={{ fontSize: 14, fontWeight: 700, color: "var(--indigo)", marginBottom: 4 }}>{prediction.rule}</div>
-                        <div style={{ fontSize: 12, color: "var(--text-2)" }}>{prediction.category}</div>
+                        <div style={{ fontSize: 13, fontWeight: 700, color: "var(--indigo)", marginBottom: 4 }}>
+                          {prediction.related_rule.rule_id} · {(prediction.related_rule.similarity * 100).toFixed(1)}% similar
+                        </div>
+                        <div style={{ fontSize: 11, color: "var(--text-2)", marginBottom: 4 }}>
+                          Category: {prediction.related_rule.category}
+                        </div>
+                        <div style={{ fontSize: 11, color: "var(--text-3)", fontStyle: "italic", lineHeight: 1.5 }}>
+                          "{prediction.related_rule.statutory_text.slice(0, 120)}{prediction.related_rule.statutory_text.length > 120 ? '...' : ''}"
+                        </div>
                       </div>
                     )}
                   </div>
@@ -587,17 +616,17 @@ export default function App() {
                 background: "linear-gradient(90deg, transparent, var(--jade), transparent)" }} />
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 24 }}>
                 <div>
-                  <div className="section-title" style={{ marginBottom: 4 }}>TF-IDF + Logistic Regression</div>
-                  <div style={{ fontSize: 12, color: "var(--text-3)" }}>Production baseline model · Trained on 771 labelled privacy clauses</div>
+                  <div className="section-title" style={{ marginBottom: 4 }}>E5-base + 825 Features (Logistic Regression)</div>
+                  <div style={{ fontSize: 12, color: "var(--text-3)" }}>Production model · Trained on 826 labeled clauses · 768 E5-base + 8 actionability + 49 all-rules similarity</div>
                 </div>
                 <span className="badge badge-success">● PRODUCTION</span>
               </div>
               <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 14 }}>
                 {[
-                  { label: "Test Accuracy",    value: "88.8%",  color: "var(--jade)",    sub: "116 test clauses"       },
-                  { label: "Macro-F1",          value: "0.4895", color: "var(--indigo)",  sub: "target ≥ 0.50"         },
-                  { label: "F1 Not Addressed",  value: "0.94",   color: "var(--jade)",    sub: "highest class F1"       },
-                  { label: "F1 Partially Compliant", value: "0.53", color: "var(--saffron)", sub: "mid-range class"    },
+                  { label: "Confirmation Accuracy", value: metrics ? metrics.primary_model.accuracy : "91.66%", color: "var(--jade)", sub: "25 confirmation folds" },
+                  { label: "Macro-F1", value: metrics ? metrics.primary_model.macro_f1.toFixed(4) : "0.8132", color: "var(--indigo)", sub: "Seeds 45-49 average" },
+                  { label: "Total Features", value: metrics ? metrics.model_config.total_features : "825", color: "var(--saffron)", sub: "768+8+49 dimensions" },
+                  { label: "F1 Compliant", value: "0.6688", color: "var(--jade)", sub: "minority class" },
                 ].map((m, i) => (
                   <div key={i} style={{ background: "rgba(255,255,255,0.03)", borderRadius: 10,
                     padding: "16px 18px", border: "1px solid rgba(255,255,255,0.06)" }}>
@@ -627,9 +656,9 @@ export default function App() {
       }}>
         <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
           <div style={{ width: 6, height: 6, borderRadius: "50%", background: "var(--jade)" }} />
-          <span>Production · TF-IDF + LogReg · Macro-F1 <strong style={{ color: "var(--text-2)" }}>0.4895</strong></span>
+          <span>Production · E5-base + 825 features · Macro-F1 <strong style={{ color: "var(--text-2)" }}>0.8132</strong></span>
         </div>
-        <span>Taxonomy v38 · 35 in-scope · Corpus 771 clauses</span>
+        <span>Taxonomy v38 · 35 in-scope · Corpus 826 clauses</span>
       </footer>
     </div>
   );
