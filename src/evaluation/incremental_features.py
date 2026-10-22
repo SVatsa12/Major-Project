@@ -10,7 +10,7 @@ from sentence_transformers import SentenceTransformer
 from src.evaluation.feature_variants import load_or_compute_embeddings
 
 
-def extract_all_rules_similarity(df, taxonomy, encoder_name="intfloat/e5-base-v2"):
+def extract_all_rules_similarity(df, taxonomy, encoder_name="intfloat/e5-base-v2", rule_text_mode="full"):
     """
     Feature Set 1: All-rules similarity
     
@@ -18,6 +18,11 @@ def extract_all_rules_similarity(df, taxonomy, encoder_name="intfloat/e5-base-v2
     per-category max similarity features.
     
     NO LLM output used.
+    
+    Args:
+        rule_text_mode: "full" (default) or "desc_only"
+            - "full": Uses full statutory requirement text
+            - "desc_only": Uses only category + requirement (same as full for current taxonomy)
     """
     from src.training.train_classifier import build_context_texts
     
@@ -34,13 +39,26 @@ def extract_all_rules_similarity(df, taxonomy, encoder_name="intfloat/e5-base-v2
     
     # Get ALL rule embeddings (exclude NONE)
     all_rules = [item for item in taxonomy if item["taxonomy_id"] != "NONE"]
-    rule_texts = [item["requirement"] for item in all_rules]
+    
+    if rule_text_mode == "desc_only":
+        # Use ONLY statutory requirement (no checkable_test, no concepts)
+        # Since current implementation already does this, this is identical
+        # but we make it explicit
+        rule_texts = [item["requirement"] for item in all_rules]
+        print(f"[ALL-RULES-SIM] Using desc_only mode: statutory requirement only")
+    else:
+        # Full mode: just requirement (already statutory only)
+        rule_texts = [item["requirement"] for item in all_rules]
+        print(f"[ALL-RULES-SIM] Using full mode: statutory requirement")
+    
     rule_ids = [item["taxonomy_id"] for item in all_rules]
     rule_categories = [item.get("category", "Unknown") for item in all_rules]
     
     print(f"[ALL-RULES-SIM] Computing embeddings for {len(rule_texts)} rules...")
+    
+    cache_suffix = "_rules" if rule_text_mode == "full" else "_rules_desc_only"
     rule_prefix = "query: " if "e5-" in encoder_name else ""
-    rule_embeddings = load_or_compute_embeddings(rule_texts, encoder_name, prefix=rule_prefix, cache_suffix="_rules")
+    rule_embeddings = load_or_compute_embeddings(rule_texts, encoder_name, prefix=rule_prefix, cache_suffix=cache_suffix)
     
     # Compute all similarities (N_clauses x N_rules)
     similarities_all = clause_embeddings @ rule_embeddings.T
