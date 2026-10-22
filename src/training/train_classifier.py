@@ -165,6 +165,10 @@ def train_and_evaluate_fold(
         X_inner_val = X_train_combined[inner_val_idx]
         y_inner_val = y_train[inner_val_idx]
         
+        # Skip if training data doesn't have all classes
+        if len(np.unique(y_inner_train)) < 2:
+            continue
+        
         # Train classifier on inner training
         inner_clf = LogisticRegression(
             C=1.0,
@@ -175,11 +179,19 @@ def train_and_evaluate_fold(
             class_weight="balanced",
             random_state=42
         )
-        inner_clf.fit(X_inner_train, y_inner_train)
+        try:
+            inner_clf.fit(X_inner_train, y_inner_train)
+        except ValueError:
+            # Skip if fit fails (e.g., only one class)
+            continue
         
         # Get probabilities on inner validation fold
         inner_probs = inner_clf.predict_proba(X_inner_val)
         classes = list(inner_clf.classes_)
+        
+        # Skip this inner fold if not all classes present
+        if len(classes) < 3:
+            continue
         
         # Grid search over thresholds
         for tau_c in np.arange(0.30, 0.70, 0.05):
@@ -214,9 +226,27 @@ def train_and_evaluate_fold(
     classes = list(clf.classes_)
     test_preds = []
     
+    # Get class indices (handle missing classes)
+    try:
+        compliant_idx = classes.index("Compliant")
+    except ValueError:
+        compliant_idx = None
+    
+    try:
+        partial_idx = classes.index("Partially Compliant")
+    except ValueError:
+        partial_idx = None
+    
     for i in range(len(test_probs)):
-        p_compliant = test_probs[i, classes.index("Compliant")]
-        p_partial = test_probs[i, classes.index("Partially Compliant")]
+        if compliant_idx is not None:
+            p_compliant = test_probs[i, compliant_idx]
+        else:
+            p_compliant = 0.0
+        
+        if partial_idx is not None:
+            p_partial = test_probs[i, partial_idx]
+        else:
+            p_partial = 0.0
         
         if p_compliant >= best_tau_compliant:
             test_preds.append("Compliant")

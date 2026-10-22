@@ -1,0 +1,144 @@
+{
+  "tag": "variant_B_inlegal",
+  "timestamp": "2026-10-22T23:52:38.417418",
+  "git_commit": "d611a8fd61414208d37e13fd98c8445410bae523",
+  "config": {
+    "data_path": "corpus\\labeled_clauses_bootstrap.csv",
+    "taxonomy_path": "corpus\\dpdp_taxonomy_final.json",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "feature_variant": "pairing_inlegal",
+    "feature_description": "Clause-rule pairing (law-ai/InLegalBERT): [clause, rule, |diff|, prod, cosine] + 8 features",
+    "two_stage": false,
+    "n_multi_member_groups": 1
+  },
+  "aggregate_metrics": {
+    "accuracy_mean": 0.9148594377510041,
+    "accuracy_std": 0.017852073809094485,
+    "macro_f1_mean": 0.7953969981005936,
+    "macro_f1_std": 0.04304878942146771,
+    "macro_precision_mean": 0.817684759349838,
+    "macro_precision_std": 0.012078715486679076
+  },
+  "per_class_metrics": {
+    "Not Addressed": {
+      "precision": 0.9820925685710526,
+      "precision_std": 0.0007983588990398817,
+      "recall": 0.9982935153583616,
+      "recall_std": 0.0013933388753033075,
+      "f1": 0.9901266193963169,
+      "f1_std": 0.0010584993974404422
+    },
+    "Partially Compliant": {
+      "precision": 0.7498121860754167,
+      "precision_std": 0.017129722012979545,
+      "recall": 0.8368298368298368,
+      "recall_std": 0.006593070220853575,
+      "f1": 0.7908518083530347,
+      "f1_std": 0.011249266328528466
+    },
+    "Compliant": {
+      "precision": 0.7211495234030446,
+      "precision_std": 0.020228374242923352,
+      "recall": 0.5257731958762887,
+      "recall_std": 0.036690990556808634,
+      "f1": 0.607758845203559,
+      "f1_std": 0.030672394909970493
+    }
+  },
+  "per_fold_results": [
+    {
+      "fold": 1,
+      "seed": 42,
+      "macro_f1": 0.7913633357852424,
+      "accuracy": 0.9216867469879518
+    },
+    {
+      "fold": 2,
+      "seed": 42,
+      "macro_f1": 0.7909251412429379,
+      "accuracy": 0.9151515151515152
+    },
+    {
+      "fold": 3,
+      "seed": 42,
+      "macro_f1": 0.7773121222488312,
+      "accuracy": 0.9030303030303031
+    },
+    {
+      "fold": 4,
+      "seed": 42,
+      "macro_f1": 0.8909604519774011,
+      "accuracy": 0.9515151515151515
+    },
+    {
+      "fold": 5,
+      "seed": 42,
+      "macro_f1": 0.7829866550336103,
+      "accuracy": 0.9090909090909091
+    },
+    {
+      "fold": 1,
+      "seed": 43,
+      "macro_f1": 0.7298226335883239,
+      "accuracy": 0.8975903614457831
+    },
+    {
+      "fold": 2,
+      "seed": 43,
+      "macro_f1": 0.8351288056206089,
+      "accuracy": 0.9333333333333333
+    },
+    {
+      "fold": 3,
+      "seed": 43,
+      "macro_f1": 0.8180028129395218,
+      "accuracy": 0.9212121212121213
+    },
+    {
+      "fold": 4,
+      "seed": 43,
+      "macro_f1": 0.7118327999683932,
+      "accuracy": 0.8727272727272727
+    },
+    {
+      "fold": 5,
+      "seed": 43,
+      "macro_f1": 0.7810831872199494,
+      "accuracy": 0.9151515151515152
+    },
+    {
+      "fold": 1,
+      "seed": 44,
+      "macro_f1": 0.7571157495256168,
+      "accuracy": 0.9036144578313253
+    },
+    {
+      "fold": 2,
+      "seed": 44,
+      "macro_f1": 0.8424335961817805,
+      "accuracy": 0.9333333333333333
+    },
+    {
+      "fold": 3,
+      "seed": 44,
+      "macro_f1": 0.8046872042101544,
+      "accuracy": 0.9151515151515152
+    },
+    {
+      "fold": 4,
+      "seed": 44,
+      "macro_f1": 0.7935628960019203,
+      "accuracy": 0.9030303030303031
+    },
+    {
+      "fold": 5,
+      "seed": 44,
+      "macro_f1": 0.8237375799646114,
+      "accuracy": 0.9272727272727272
+    }
+  ]
+}

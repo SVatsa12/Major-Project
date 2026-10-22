@@ -1,0 +1,144 @@
+{
+  "tag": "variant_A_inlegal",
+  "timestamp": "2026-10-22T23:50:05.527629",
+  "git_commit": "d611a8fd61414208d37e13fd98c8445410bae523",
+  "config": {
+    "data_path": "corpus\\labeled_clauses_bootstrap.csv",
+    "taxonomy_path": "corpus\\dpdp_taxonomy_final.json",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "feature_variant": "encoder_inlegal",
+    "feature_description": "Clause embedding (law-ai/InLegalBERT) + 8 features",
+    "two_stage": false,
+    "n_multi_member_groups": 1
+  },
+  "aggregate_metrics": {
+    "accuracy_mean": 0.8478544480954119,
+    "accuracy_std": 0.031048910314056738,
+    "macro_f1_mean": 0.7306788942932492,
+    "macro_f1_std": 0.04045967048222433,
+    "macro_precision_mean": 0.7672573520107436,
+    "macro_precision_std": 0.006439765731414321
+  },
+  "per_class_metrics": {
+    "Not Addressed": {
+      "precision": 0.9477588126450337,
+      "precision_std": 0.0025640984319798416,
+      "recall": 0.9180887372013652,
+      "recall_std": 0.006966694376516447,
+      "f1": 0.9326665743816905,
+      "f1_std": 0.0029494369528692012
+    },
+    "Partially Compliant": {
+      "precision": 0.5892349182640445,
+      "precision_std": 0.017166051206271904,
+      "recall": 0.8251748251748251,
+      "recall_std": 0.020586855166265374,
+      "f1": 0.6874435803963093,
+      "f1_std": 0.01740298756754677
+    },
+    "Compliant": {
+      "precision": 0.7647783251231527,
+      "precision_std": 0.015216545971141738,
+      "recall": 0.4570446735395189,
+      "recall_std": 0.0048598404205261085,
+      "f1": 0.5720512472733312,
+      "f1_std": 0.003145835739937277
+    }
+  },
+  "per_fold_results": [
+    {
+      "fold": 1,
+      "seed": 42,
+      "macro_f1": 0.6668740678505708,
+      "accuracy": 0.8132530120481928
+    },
+    {
+      "fold": 2,
+      "seed": 42,
+      "macro_f1": 0.7302101457323017,
+      "accuracy": 0.8484848484848485
+    },
+    {
+      "fold": 3,
+      "seed": 42,
+      "macro_f1": 0.7208352812840891,
+      "accuracy": 0.8424242424242424
+    },
+    {
+      "fold": 4,
+      "seed": 42,
+      "macro_f1": 0.8335630916276077,
+      "accuracy": 0.9030303030303031
+    },
+    {
+      "fold": 5,
+      "seed": 42,
+      "macro_f1": 0.74518845801876,
+      "accuracy": 0.8606060606060606
+    },
+    {
+      "fold": 1,
+      "seed": 43,
+      "macro_f1": 0.706213732177221,
+      "accuracy": 0.8734939759036144
+    },
+    {
+      "fold": 2,
+      "seed": 43,
+      "macro_f1": 0.7928338001867413,
+      "accuracy": 0.8909090909090909
+    },
+    {
+      "fold": 3,
+      "seed": 43,
+      "macro_f1": 0.7555374923795976,
+      "accuracy": 0.8484848484848485
+    },
+    {
+      "fold": 4,
+      "seed": 43,
+      "macro_f1": 0.7200670498084291,
+      "accuracy": 0.8424242424242424
+    },
+    {
+      "fold": 5,
+      "seed": 43,
+      "macro_f1": 0.6758656390943386,
+      "accuracy": 0.793939393939394
+    },
+    {
+      "fold": 1,
+      "seed": 44,
+      "macro_f1": 0.7312559189183743,
+      "accuracy": 0.8734939759036144
+    },
+    {
+      "fold": 2,
+      "seed": 44,
+      "macro_f1": 0.7168444915871134,
+      "accuracy": 0.8424242424242424
+    },
+    {
+      "fold": 3,
+      "seed": 44,
+      "macro_f1": 0.7026961875092717,
+      "accuracy": 0.7878787878787878
+    },
+    {
+      "fold": 4,
+      "seed": 44,
+      "macro_f1": 0.7166253101736973,
+      "accuracy": 0.8363636363636363
+    },
+    {
+      "fold": 5,
+      "seed": 44,
+      "macro_f1": 0.7455727480506256,
+      "accuracy": 0.8606060606060606
+    }
+  ]
+}
