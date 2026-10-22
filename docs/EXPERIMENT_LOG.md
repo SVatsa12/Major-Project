@@ -291,3 +291,120 @@ None! All planned steps completed.
 2. **Save model artifacts**: trained classifier, scaler, taxonomy embeddings
 3. **Create inference pipeline** for new policy clauses
 4. **Document feature extraction** for production deployment
+
+
+---
+
+## Confirmation Experiments (Unseen Folds 45-49)
+
+**Purpose:** Validate model generalization on completely unseen fold assignments
+
+**Method:**
+- Generated NEW fold assignments with seeds 45, 46, 47, 48, 49
+- Same near-duplicate grouping algorithm (MiniLM, cosine ≥ 0.90)
+- Different groups discovered: 815 groups (11 multi-member) vs 639 groups (60 multi-member) in training
+- 5 seeds × 5 folds = 25 total evaluation folds
+
+**Variants Tested:**
+| Variant | Features | Macro-F1 (45-49) | Δ vs Training (42-44) |
+|---------|----------|------------------|-----------------------|
+| confirm_baseline_v1 | MiniLM + 8 | 0.7323 ± 0.0381 | -1.5% |
+| **confirm_fixed_A_e5** | **E5 + 8** | **0.7975 ± 0.0294** | **+2.7%** |
+| confirm_all_rules | E5 + 8 + all-rules | 0.7977 ± 0.0284 | **-1.4%** ⚠️ |
+| confirm_allrules_desc_only | E5 + 8 + all-rules (desc) | 0.7977 ± 0.0284 | -1.4% |
+
+**Critical Finding: All-Rules Similarity Does NOT Generalize**
+
+The all-rules similarity features that showed +4.2% improvement on training folds (seeds 42-44) provide **ZERO improvement** on confirmation folds (seeds 45-49):
+- Training (42-44): 0.8118 vs 0.7703 baseline (+4.2%)
+- Confirmation (45-49): 0.7977 vs 0.7975 baseline (+0.0%)
+
+This suggests **overfitting to the training fold structure**. The all-rules features capture patterns specific to how seeds 42-44 split the data, but do not represent genuine generalizable signal.
+
+**Per-Class Performance (Confirmation):**
+| Variant | Not Addressed F1 | Partial F1 | Compliant F1 |
+|---------|------------------|------------|--------------|
+| confirm_baseline_v1 | 0.9793 | 0.6800 | 0.5376 |
+| **confirm_fixed_A_e5** | **0.9911** | **0.7695** | **0.6319** |
+| confirm_all_rules | 0.9913 | 0.7679 | 0.6339 |
+
+**Paired Comparison (Winner vs Baseline):**
+- Mean F1 difference: +0.0654 ± 0.0469
+- Winner wins: 22/25 folds (88% win rate)
+- Largest win: +0.1648 (seed 48, fold 0)
+- Largest loss: -0.0082 (seed 45, fold 1)
+
+**Recommendation Change:**
+
+Based on confirmation results, we now recommend **fixed_A_e5 (E5 + 8 structured)** as the final model:
+
+✅ **Advantages:**
+1. Simpler (776 features vs 825)
+2. Better generalization (stable +2.7% on unseen folds)
+3. No overfitting to fold structure
+4. Lower variance (0.0294 vs 0.0315)
+5. Same performance as all-rules on confirmation
+
+❌ **All-rules variant rejected because:**
+1. +4.2% gain on training folds does NOT generalize
+2. 0% improvement on confirmation folds
+3. Overfit to training fold structure (seeds 42-44)
+4. More complex with no confirmed benefit
+
+---
+
+## Final Model Recommendation (Revised)
+
+**Configuration:**
+```python
+encoder = "intfloat/e5-base-v2"
+features = [
+    "clause_embeddings",      # 768 dims
+    "structured_features",    # 8 dims (length, modals, etc.)
+]
+total_features = 776
+
+classifier = LogisticRegression(
+    C=1.0,
+    penalty="l2",
+    solver="lbfgs",
+    max_iter=1000,
+    class_weight="balanced",
+    random_state=42
+)
+```
+
+**Performance:**
+```
+Training (seeds 42-44):
+  Macro-F1: 0.7703 ± 0.0314
+  Accuracy: 0.8880 ± 0.0228
+  
+Confirmation (seeds 45-49):
+  Macro-F1: 0.7975 ± 0.0294
+  Accuracy: 0.9118 ± 0.0143
+
+Improvement over baseline:
+  Training: +2.3%
+  Confirmation: +6.5%
+  Average: +4.4%
+```
+
+**Why This Model:**
+1. ✅ No label leakage
+2. ✅ Proper near-duplicate grouping
+3. ✅ **Confirmed generalization** to unseen folds (+2.7% better on confirmation)
+4. ✅ Simpler (776 features)
+5. ✅ More stable (lower variance)
+6. ✅ Consistent improvement on both training and confirmation
+
+---
+
+## Complete Ablation Table
+
+See `docs/ABLATION_TABLE.md` for the complete ablation study documenting all 30+ variants tested, including:
+- 5 excluded for no near-duplicate grouping
+- 3 excluded for encoder-specific grouping
+- 4 excluded for label leakage (1 kept as reference)
+- 1 excluded for wrong corpus version
+- 17 valid variants, 4 recommended for paper
