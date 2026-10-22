@@ -75,6 +75,8 @@
 - Generated `datasets/folds/fixed_folds_v1.json`
 - 639 groups (60 multi-member), 3 seeds × 5 folds
 - **Commit:** 57fd6b7
+- **Completed:** Updated `run_feature_experiments.py` to load fixed folds, removed fallback
+- **Commit:** da20b28
 
 ### ✅ Step 2: Rule Leakage Audit
 - Created `src/evaluation/audit_rule_leakage.py`
@@ -82,98 +84,77 @@
 - Confirmed gating candidates not available
 - **Commit:** 23822af
 
+### ✅ Step 3: Label-Independent Rule Selection
+- Implemented `extract_clause_rule_pairing_b2a()` in `feature_variants.py`
+- Rule selection: highest cosine similarity (clause vs ALL 38 rules)
+- Features: [clause, rule, |diff|, prod, cosine, top3_sims] + 8 structured
+- NO LLM output used (assertion added)
+- **Commit:** bb5a4e6
+
+### ✅ Step 4: Re-run with Fixed Folds
+- Ran 5 experiments: baseline, A_e5, B_e5 (leaky ref), B2a_e5, C_e5
+- All use fixed folds (639 groups, proper grouping)
+- **Commit:** 65a7083
+
+---
+
+## Final Results
+
+### Experiments with Fixed Folds + Proper Grouping
+
+| Variant | Rule Source | Grouped | Accuracy | Macro-F1 | Macro-Prec | Compliant F1 | Partial F1 |
+|---------|-------------|---------|----------|----------|------------|--------------|------------|
+| **fixed_B_e5_ref** | LLM output (LEAK) | ✅ YES | 0.9115 ± 0.0224 | **0.7923 ± 0.0317** | 0.8133 ± 0.0196 | 0.5994 | 0.7879 |
+| **fixed_A_e5** | N/A | ✅ YES | 0.8880 ± 0.0228 | **0.7703 ± 0.0314** | 0.7887 ± 0.0059 | 0.5776 | 0.7625 |
+| **fixed_C_e5** | B2a (independent) | ✅ YES | 0.8925 ± 0.0225 | **0.7675 ± 0.0339** | 0.7800 ± 0.0233 | 0.5696 | 0.7551 |
+| **fixed_B2a_e5** | Label-independent | ✅ YES | 0.8889 ± 0.0217 | **0.7663 ± 0.0274** | 0.8031 ± 0.0242 | 0.5680 | 0.7643 |
+| **fixed_baseline_v1** | N/A | ✅ YES | 0.8718 ± 0.0311 | **0.7473 ± 0.0354** | 0.7610 ± 0.0089 | 0.5710 | 0.7120 |
+
+---
+
+## Key Findings
+
+### 1. Label Leakage Impact
+- **Leaky B (LLM rule):** 0.7923 macro-F1
+- **Clean B2a (independent rule):** 0.7663 macro-F1
+- **Leakage inflation:** +2.6% absolute, ~3.4% relative
+
+### 2. Missing Grouping Impact  
+- **Previous B_e5 (no grouping):** 0.8050 macro-F1
+- **Fixed B_e5 (with grouping):** 0.7923 macro-F1
+- **Grouping correction:** -1.3% absolute
+
+### 3. TRUE Improvements Over Baseline (0.7473)
+- **E5 encoder (A):** +2.3% → 0.7703 (BEST single change)
+- **B2a pairing (independent):** +1.9% → 0.7663
+- **Two-stage (C):** +2.0% → 0.7675
+- **Leaky B (reference only):** +4.5% → 0.7923 (UNTRUSTWORTHY)
+
+### 4. Combined Effects
+Previous inflated results had:
+- Label leakage: ~+2.6%
+- Missing grouping: ~+1.3%
+- **Total inflation:** ~+3.9% over true performance
+
+### 5. Trustworthy Conclusion
+**Real clause-rule pairing improvement:** ~2% macro-F1
+- Previous claim: 5-8% improvement
+- Actual improvement: 1.9-2.0% improvement
+- **Leakage + no grouping accounted for 3.9% of the 5.8% gain**
+
 ---
 
 ## Remaining Steps
 
-### ⏳ Step 3: Label-Independent Rule Selection
-**Goal:** Implement variant B2a without using any LLM output
-
-**Requirements:**
-- B2a: Select rule by highest cosine similarity (E5 embeddings)
-  - Compute clause embedding vs ALL 38 rule embeddings
-  - Select max similarity rule
-  - Features: [clause, rule, |diff|, prod, cosine] + top-3 similarities + 8 structured
-- Add assertion: No LLM columns (verdict, best_match_taxonomy_id, justification) used as features
-- Update feature_variants.py with new extractors
-
-**Files to Create/Modify:**
-- `src/evaluation/feature_variants.py` (add B2a extractor)
-- Add assertion checks
-
-### ⏳ Step 4: Re-run All Experiments with Fixed Folds
-**Experiments to run:**
-1. baseline_v1_grouped (MiniLM + 8 features)
-2. variant_A_e5 (E5 clause only + 8 features)
-3. variant_B_e5 (E5 pairing with LLM rule - for reference only)
-4. variant_B2a_e5 (E5 pairing with label-independent rule)
-5. variant_C_e5 (two-stage with B2a features)
-
-**Requirements:**
-- ALL must use fixed_folds_v1.json (no fallback)
-- Seeds: 42, 43, 44
-- Grouped: YES for all
-- Output table: variant | rule source | grouped | acc | macro-F1 | macro-prec | C_F1 | PC_F1
-
-**Files to Create/Modify:**
-- Update `src/evaluation/run_feature_experiments.py` to load fixed folds
-- Remove fallback logic (raise error if folds not found)
-- Add B2a support
-
----
-
-## Commands to Resume
-
-### Step 3: Implement B2a
-```bash
-# Edit feature_variants.py to add label-independent rule selection
-# Add assertion checks for no LLM columns
-git add src/evaluation/feature_variants.py
-git commit -m "Step 3: Implement label-independent rule selection (B2a)"
-```
-
-### Step 4: Re-run with Fixed Folds
-```bash
-# Update run_feature_experiments.py to use fixed folds
-# Remove fallback logic
-
-# Run experiments
-python src/evaluation/run_feature_experiments.py --features baseline --tag fixed_baseline_v1 --seeds 42,43,44
-python src/evaluation/run_feature_experiments.py --features encoder_e5 --tag fixed_A_e5 --seeds 42,43,44
-python src/evaluation/run_feature_experiments.py --features pairing_e5 --tag fixed_B_e5_ref --seeds 42,43,44
-python src/evaluation/run_feature_experiments.py --features pairing_e5_b2a --tag fixed_B2a_e5 --seeds 42,43,44
-python src/evaluation/run_feature_experiments.py --features two_stage_e5_b2a --tag fixed_C_e5 --seeds 42,43,44
-
-# Generate final table
-python reports/experiments/generate_comparison_table.py
-
-git add reports/experiments/
-git commit -m "Step 4: Re-run all experiments with fixed folds"
-```
-
----
-
-## Expected Outcomes
-
-### Hypothesis
-- Variant B (LLM rule) results will **drop significantly** when using fixed folds
-- Variant B2a (label-independent rule) will show TRUE performance without leakage
-- Likely outcome: B2a < B (leaky) but still > baseline
-- Real improvement should be ~2-3% F1, not the 5-8% seen with leakage
-
-### Trustworthy Results Criteria
-✅ Fixed folds used (no encoder-specific grouping)
-✅ Near-duplicate protection applied (60 groups)
-✅ No LLM output used as features
-✅ Rule selection independent of labels
+None! All planned steps completed.
 
 ---
 
 ## Git Status
 - Current branch: taxonomy-v2
-- Last commit: 23822af (Step 2 audit)
-- Uncommitted: docs/EXPERIMENT_LOG.md (this file)
+- Last commit: 65a7083 (Step 4 completion)
+- All steps 1-4 completed
 
 ---
 
-**Updated:** 2026-10-23 (after Step 2 completion)
+**Updated:** 2026-10-23 (after Step 4 completion - ALL STEPS DONE)
