@@ -225,6 +225,14 @@ def predict_clause(req: ClauseRequest):
 
 if __name__ == "__main__":
     import uvicorn
+    import sys
+    from pathlib import Path
+    
+    # Add project root to path if not already there
+    project_root = Path(__file__).parent.parent.parent
+    if str(project_root) not in sys.path:
+        sys.path.insert(0, str(project_root))
+    
     print("\n[INFO] Starting DPDP Compliance API server...")
     print("[INFO] Model will be loaded on startup (may take ~30s for E5-base download)...")
     uvicorn.run(
