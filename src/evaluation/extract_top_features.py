@@ -9,6 +9,9 @@ import numpy as np
 import pandas as pd
 from pathlib import Path
 import joblib
+import sys
+
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))  # model.joblib unpickles src.training.ordinal
 
 
 def main():
@@ -59,8 +62,9 @@ def main():
     print(f"\n[INFO] All-rules features start at index {all_rules_start}, span {all_rules_dims} dimensions")
     
     # Get model coefficients
-    coef = model.coef_  # shape: (n_classes, n_features)
-    classes = model.classes_
+    # Ordinal final model: one coefficient row per cumulative boundary (features RobustScaled inside the model)
+    coef = np.vstack([model.model_.gt_na_.coef_[0], model.model_.gt_partial_.coef_[0]])
+    classes = np.array(["P(y > Not Addressed)", "P(y > Partially Compliant)"])
     
     print(f"[INFO] Model classes: {classes.tolist()}")
     print(f"[INFO] Coefficient matrix shape: {coef.shape}")

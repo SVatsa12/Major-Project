@@ -5,6 +5,7 @@
     "actionability_features": 8,
     "all_rules_similarity": 49
   },
+  "feature_order": "[e5_embeddings | actionability_features | all_rules_similarity]",
   "encoder_model": "intfloat/e5-base-v2",
   "input_text": {
     "format": "encoder_prefix + clause_text",
@@ -24,5 +25,6 @@
     "parental_verification_marker"
   ],
   "all_rules_mode": "full (requirement field from taxonomy)",
-  "all_rules_details": "38 rule similarities + 11 category max similarities (categories in sorted order) = 49 features"
+  "all_rules_details": "38 rule similarities + 11 category max similarities (categories in sorted order) = 49 features",
+  "scaling": "RobustScaler fit inside the model on the training rows"
 }

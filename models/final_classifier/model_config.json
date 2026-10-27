@@ -1,25 +1,84 @@
 {
-  "model_type": "LogisticRegression",
+  "model_type": "OrdinalLogisticRegression",
+  "model_class": "src.training.ordinal.OrdinalLRCV",
+  "description": "Two cumulative binary LogRegs on RobustScaled features: P(y > Not Addressed), P(y > Partially Compliant); P(Partial) = P(>NA) - P(>Partial), P(>Partial) capped at P(>NA)",
+  "class_order": [
+    "Not Addressed",
+    "Partially Compliant",
+    "Compliant"
+  ],
   "hyperparameters": {
-    "C": 1.0,
+    "C": 0.1,
+    "C_grid": [
+      0.1,
+      0.3,
+      1.0,
+      3.0
+    ],
+    "C_selection": "3-fold stratified inner CV on all 826 rows, mean argmax macro-F1, ties to smaller C",
+    "inner_cv_macro_f1_by_C": {
+      "0.1": 0.6552504360226439,
+      "0.3": 0.6439133908844257,
+      "1.0": 0.629410756769868,
+      "3.0": 0.6364413702176902
+    },
+    "penalty": "l2",
+    "solver": "lbfgs",
     "class_weight": "balanced",
     "max_iter": 1000,
     "random_state": 42
   },
   "calibration": null,
-  "probabilities": "raw LogisticRegression predict_proba (no probability calibration)",
+  "probabilities": "from the two cumulative LogRegs (no probability calibration)",
   "classes": [
     "Compliant",
     "Not Addressed",
     "Partially Compliant"
   ],
   "threshold_tuning": {
-    "method": "inner stratified CV, classifier refit per inner fold (tune_thresholds_inner_cv)",
+    "method": "inner stratified CV, full model (incl. C selection) refit per inner fold (tune_thresholds_inner_cv)",
     "inner_cv_splits": 3,
     "objective": "macro-F1 subject to Compliant precision >= 0.70",
     "grid": {
       "tau_compliant": "0.30-0.65 step 0.05",
       "tau_partial": "0.20-0.40 step 0.05"
+    }
+  },
+  "evaluation": {
+    "selected_by": "training-fold mean macro-F1 only (reports/experiments/round2/selection.json)",
+    "training_folds": {
+      "folds": "datasets/folds/fixed_folds_v1.json",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "n_folds": 15,
+      "macro_f1_mean": 0.6311,
+      "macro_f1_std": 0.0262,
+      "result": "reports/experiments/round2/train_r1_ordinal.json"
+    },
+    "confirmation_folds": {
+      "folds": "datasets/folds/confirm_folds_v1.json",
+      "seeds": [
+        45,
+        46,
+        47,
+        48,
+        49
+      ],
+      "n_folds": 25,
+      "macro_f1_mean": 0.6436,
+      "macro_f1_std": 0.0374,
+      "accuracy_mean": 0.7421,
+      "accuracy_std": 0.0305,
+      "per_class_f1": {
+        "Not Addressed": 0.8437,
+        "Partially Compliant": 0.4154,
+        "Compliant": 0.6717
+      },
+      "vs_previous_final_model": "+0.0304 macro-F1, 23/25 folds, Wilcoxon p = 1.8e-5",
+      "result": "reports/experiments/round2/confirm_r1_ordinal.json"
     }
   },
   "training_data": {
@@ -33,6 +92,6 @@
       "Partially Compliant": 143
     }
   },
-  "timestamp": "2026-10-27T12:16:41.470195",
-  "git_commit": "9e410c59cc9c204dd85258ed29031e976f7e65cb"
+  "timestamp": "2026-10-27T13:40:35.972433",
+  "git_commit": "7d71cf40bd90c83371b2604b9510c1a2bcfbc270"
 }

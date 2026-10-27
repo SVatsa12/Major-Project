@@ -187,12 +187,12 @@ export default function App() {
       icon: <Gavel size={18} />, accent: "var(--saffron)", accentDim: "var(--saffron-dim)",
     },
     {
-      label: "Production Macro-F1", value: metrics ? metrics.primary_model.macro_f1.toFixed(4) : "0.8132",
+      label: "Production Macro-F1", value: metrics ? metrics.primary_model.macro_f1.toFixed(4) : "0.6436",
       sub: "E5-base + 825 features · Confirmation folds",
       icon: <Activity size={18} />, accent: "var(--jade)", accentDim: "var(--jade-dim)",
     },
     {
-      label: "Model Accuracy", value: metrics ? metrics.primary_model.accuracy : "91.66%",
+      label: "Model Accuracy", value: metrics ? metrics.primary_model.accuracy : "74.21%",
       sub: "LogisticRegression C=1.0 · 826 clauses",
       icon: <Zap size={18} />, accent: "var(--jade)", accentDim: "var(--jade-dim)",
     },
@@ -616,15 +616,15 @@ export default function App() {
                 background: "linear-gradient(90deg, transparent, var(--jade), transparent)" }} />
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 24 }}>
                 <div>
-                  <div className="section-title" style={{ marginBottom: 4 }}>E5-base + 825 Features (Logistic Regression)</div>
+                  <div className="section-title" style={{ marginBottom: 4 }}>E5-base + 825 Features (Ordinal Logistic Regression)</div>
                   <div style={{ fontSize: 12, color: "var(--text-3)" }}>Production model · Trained on 826 labeled clauses · 768 E5-base + 8 actionability + 49 all-rules similarity</div>
                 </div>
                 <span className="badge badge-success">● PRODUCTION</span>
               </div>
               <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 14 }}>
                 {[
-                  { label: "Confirmation Accuracy", value: metrics ? metrics.primary_model.accuracy : "91.66%", color: "var(--jade)", sub: "25 confirmation folds" },
-                  { label: "Macro-F1", value: metrics ? metrics.primary_model.macro_f1.toFixed(4) : "0.8132", color: "var(--indigo)", sub: "Seeds 45-49 average" },
+                  { label: "Confirmation Accuracy", value: metrics ? metrics.primary_model.accuracy : "74.21%", color: "var(--jade)", sub: "25 confirmation folds" },
+                  { label: "Macro-F1", value: metrics ? metrics.primary_model.macro_f1.toFixed(4) : "0.6436", color: "var(--indigo)", sub: "Seeds 45-49 average" },
                   { label: "Total Features", value: metrics ? metrics.model_config.total_features : "825", color: "var(--saffron)", sub: "768+8+49 dimensions" },
                   { label: "F1 Compliant", value: "0.6688", color: "var(--jade)", sub: "minority class" },
                 ].map((m, i) => (
@@ -656,7 +656,7 @@ export default function App() {
       }}>
         <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
           <div style={{ width: 6, height: 6, borderRadius: "50%", background: "var(--jade)" }} />
-          <span>Production · E5-base + 825 features · Macro-F1 <strong style={{ color: "var(--text-2)" }}>0.8132</strong></span>
+          <span>Production · E5-base + 825 features · Macro-F1 <strong style={{ color: "var(--text-2)" }}>0.6436</strong></span>
         </div>
         <span>Taxonomy v38 · 35 in-scope · Corpus 826 clauses</span>
       </footer>

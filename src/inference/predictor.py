@@ -3,8 +3,8 @@ src/inference/predictor.py
 
 ClauseClassifier: Single source of truth for DPDP compliance prediction.
 
-Loads the final model (E5+825 features) and provides prediction interface
-by importing the EXACT feature extraction functions used in training.
+Loads the final model (E5+825 features, ordinal LogReg) and provides prediction
+interface by importing the EXACT feature extraction functions used in training.
 
 Usage:
     classifier = ClauseClassifier()
@@ -24,11 +24,14 @@ from sentence_transformers import SentenceTransformer
 from src.training.model_inputs import build_input_texts, encode_texts, encoder_prefix, model_inputs
 from src.training.feature_extraction import extract_actionability_features
 from src.evaluation.incremental_features import all_rules_similarity_from_embeddings, get_active_rules
+from src.training.ordinal import OrdinalLRCV
+from src.training.train_classifier import apply_thresholds
 
 
 class ClauseClassifier:
     """
-    DPDP Compliance Classifier using the final model (E5-base + 8 actionability + 49 all-rules similarity).
+    DPDP Compliance Classifier using the final model (E5-base + 8 actionability + 49 all-rules similarity,
+    ordinal LogReg: cumulative P(y > Not Addressed), P(y > Partially Compliant); scaling inside the model).
     
     Loads models/final_classifier/ artifacts and provides prediction interface.
     Feature extraction imports the exact functions used in src/training/ (single source of truth).
@@ -48,10 +51,9 @@ class ClauseClassifier:
         print(f"[ClauseClassifier] Loading model from {self.model_dir}...")
         start_time = time.time()
         
-        # Load model artifacts
+        # Load model artifacts (RobustScaler is fit inside the ordinal model)
         self.model = joblib.load(self.model_dir / "model.joblib")
-        self.scaler = joblib.load(self.model_dir / "scaler.joblib")
-        
+
         with open(self.model_dir / "thresholds.json", 'r') as f:
             thresholds = json.load(f)
             self.tau_compliant = thresholds["tau_compliant"]
@@ -69,6 +71,9 @@ class ClauseClassifier:
         assert self.feature_config["encoder_model"] == "intfloat/e5-base-v2", \
             f"Expected intfloat/e5-base-v2, got {self.feature_config['encoder_model']}"
         self.encoder_name = self.feature_config["encoder_model"]
+        assert self.model_config["model_type"] == "OrdinalLogisticRegression" and isinstance(self.model, OrdinalLRCV), \
+            f"Expected the ordinal final model, got {self.model_config['model_type']} / {type(self.model).__name__}; " \
+            f"retrain with src/training/train_final_model.py"
 
         # The model must have been trained on label-free "query: " + clause_text inputs
         input_text = self.feature_config.get("input_text", {})
@@ -162,26 +167,15 @@ class ClauseClassifier:
         # Build features
         features = self._build_features(clause_text, app_name)
         
-        # Scale features
-        features_scaled = self.scaler.transform(features.reshape(1, -1))
-        
-        # Get probabilities
-        probs = self.model.predict_proba(features_scaled)[0]
-        
+        # Get probabilities (the ordinal model scales features internally)
+        probs = self.model.predict_proba(features.reshape(1, -1))
+
         # Build probability dict
-        prob_dict = {cls: float(probs[i]) for i, cls in enumerate(self.model.classes_)}
-        
-        # Apply calibrated thresholds
-        p_compliant = prob_dict.get("Compliant", 0.0)
-        p_partial = prob_dict.get("Partially Compliant", 0.0)
-        
-        if p_compliant >= self.tau_compliant:
-            verdict = "Compliant"
-        elif p_partial >= self.tau_partial:
-            verdict = "Partially Compliant"
-        else:
-            verdict = "Not Addressed"
-        
+        prob_dict = {cls: float(probs[0, i]) for i, cls in enumerate(self.model.classes_)}
+
+        # Apply inner-CV-tuned thresholds (same decision rule as evaluation)
+        verdict = apply_thresholds(probs, self.model.classes_, self.tau_compliant, self.tau_partial)[0]
+
         confidence = prob_dict[verdict]
         
         # Find most related taxonomy rule (highest similarity)

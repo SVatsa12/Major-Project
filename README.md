@@ -6,11 +6,12 @@ Automated classification of privacy policy clauses for compliance with India's D
 
 > **⛔ Earlier results are INVALID (label leakage, found 2026-10-27).** All numbers published before commit `359f281`, including the former headline **0.8132 ± 0.030** macro-F1, used model inputs that contained the LLM-chosen rule (`build_context_texts`). That rule is `NONE` exactly when the label is "Not Addressed", so the label leaked into every input. Do not cite them. The valid label-free results are in `docs/EXPERIMENT_LOG.md` ("Label-free results") and `reports/paper/`.
 
-This repository contains the code and data to reproduce the results from our paper. With label-free inputs (`"query: " + clause_text`), the final model achieves **0.6106 ± 0.0323 macro-F1** on confirmation folds (seeds 45-49) using:
+This repository contains the code and data to reproduce the results from our paper. With label-free inputs (`"query: " + clause_text`), the final model achieves **0.6436 ± 0.0374 macro-F1** on confirmation folds (seeds 45-49). It was selected on the training folds only and run once on the confirmation folds. It uses:
 - **E5-base embeddings** (768 dims)
 - **8 actionability features** (structured)
 - **All-rules similarity features** (49 dims)
 - **Total**: 825 features
+- **Ordinal classifier**: two cumulative logistic regressions, P(y > Not Addressed) and P(y > Partially Compliant), with C chosen by inner CV. Decision thresholds are tuned by inner CV.
 
 **Tag**: ~~`paper-results-v1`~~ — ⛔ INVALID (label leakage): produced the old leaky results; do not use it to reproduce results  
 **Paper Deliverables**: `reports/paper/` — Tables, confusion matrix, comparisons, feature analysis
@@ -27,21 +28,28 @@ pip install -r requirements.txt
 ### Reproduce Paper Results
 
 ```bash
-# 1. Confirmation fold evaluation (seeds 45-49, 25 folds) - PRIMARY
+# 1. Final-model selection: variants on the training folds (seeds 42-44), best by training macro-F1 only
+python src/evaluation/build_backtranslation_cache.py      # paraphrases for the augmentation variant
+python src/evaluation/run_round2_variants.py --stage train
+
+# 2. Final model on the confirmation folds (seeds 45-49, 25 folds) - PRIMARY (runs once)
+python src/evaluation/run_round2_variants.py --stage confirm
+
+# 3. Feature-set comparison (MiniLM / E5 / E5+all-rules, one-step LogReg) on confirmation folds
 python src/evaluation/run_confirmation_experiments.py \
   --variant all_rules \
   --tag confirm_all_rules_labelfree
 
-# 2. Generate paper tables (CSV + LaTeX)
+# 4. Generate paper tables (CSV + LaTeX) for the feature-set comparison
 python src/evaluation/generate_paper_results.py
 
-# 3. Generate confusion matrix (PNG + CSV)
+# 5. Confusion matrix (PNG + CSV) for the E5+8+all-rules one-step model
 python src/evaluation/compute_confusion_matrix.py
 
-# 4. Paired statistical comparison (Wilcoxon test)
+# 6. Paired statistical comparison (Wilcoxon test), E5+8+all-rules vs baseline
 python src/evaluation/paired_comparison.py
 
-# 5. Extract top influential features
+# 7. Top influential all-rules features of the final ordinal model
 python src/evaluation/extract_top_features.py
 ```
 
@@ -66,9 +74,8 @@ python src/training/train_final_model.py
 │       └── groups_v1.json              # 639 near-duplicate groups
 ├── models/
 │   └── final_classifier/      # Final trained model (paper)
-│       ├── model.joblib                # Logistic regression classifier
-│       ├── scaler.joblib               # RobustScaler
-│       ├── thresholds.json             # Calibrated decision thresholds
+│       ├── model.joblib                # Ordinal LogReg (src/training/ordinal.py), RobustScaler inside
+│       ├── thresholds.json             # Inner-CV-tuned decision thresholds
 │       ├── model_config.json           # Training configuration
 │       └── feature_config.json         # Feature specification (825 dims)
 ├── reports/
@@ -143,21 +150,22 @@ To verify the label-free results (run from `taxonomy-v2` at or after `359f281`; 
 # 1. Label-leakage guard tests
 python -m unittest discover -s tests -v
 
-# 2. Re-run confirmation evaluation (seeds 45-49)
-python src/evaluation/run_confirmation_experiments.py \
-  --variant all_rules \
-  --tag verify_confirm
+# 2. Reproduce the final model's confirmation run (seeds 45-49) into verify_* files
+python src/evaluation/run_round2_variants.py --stage confirm --verify
 
-# 3. Compare macro-F1 (should match to 4 decimals: 0.6106)
+# 3. Compare macro-F1 (should match to 4 decimals: 0.6436)
 python -c "
 import json
-with open('reports/experiments/confirmation/verify_confirm.json') as f:
+with open('reports/experiments/round2/verify_confirm_r1_ordinal.json') as f:
     data = json.load(f)
     print(f'Macro-F1: {data[\"aggregates\"][\"macro_f1_mean\"]:.4f}')
 "
+
+# 4. Training/inference parity of the saved model (start the API first: python src/api/server.py)
+python test_smoke_parity.py
 ```
 
-Expected output: `Macro-F1: 0.6106` (the old `0.8132` is ⛔ INVALID, label leakage)
+Expected output: `Macro-F1: 0.6436` (the old `0.8132` is ⛔ INVALID, label leakage)
 
 ## Features
 
@@ -190,22 +198,47 @@ Label-free input: "query: " + clause_text
   ↓
 E5-base Encoder (768 dims) + Actionability Features (8 dims) + All-Rules Similarity (49 dims)
   ↓
-Feature Scaling: RobustScaler (fit on training fold)
+Feature Scaling: RobustScaler (fit on training rows, inside the model)
   ↓
-Logistic Regression (C=1.0, balanced class weights)
+Ordinal Logistic Regression: P(y > Not Addressed), P(y > Partially Compliant)
+  (two cumulative binary LogRegs, balanced class weights, C by 3-fold inner CV; final model C = 0.1)
   ↓
-Threshold Calibration: 3-fold inner CV (grid search)
+Decision thresholds: 3-fold inner CV (final model τ_compliant = 0.60, τ_partial = 0.40)
   ↓
 Output: {Not Addressed, Partially Compliant, Compliant}
 ```
 
 ## Performance
 
-### Confirmation Folds (seeds 45-49, 25 folds) - PRIMARY
+### Final model: confirmation folds (seeds 45-49, 25 folds) - PRIMARY
 
-Label-free inputs (`*_labelfree` runs). Full per-class P/R/F1 and the 40-fold pooled table: `reports/paper/` and `docs/EXPERIMENT_LOG.md`.
+The final model was selected by training-fold macro-F1 only, from ordinal, context, augmentation and ensemble variants, and run once on the confirmation folds (`reports/experiments/round2/`). The previous final model, a one-step LogReg with C = 1 and inner-CV thresholds, is shown for comparison.
 
-| Metric | Baseline (MiniLM+8) | E5+8 | E5+8+all-rules (FINAL) |
+| Metric | Previous final model (one-step LogReg) | **Final model (ordinal)** |
+|--------|----------------------------------------|---------------------------|
+| Macro-F1 | 0.6132 ± 0.0344 | **0.6436 ± 0.0374** |
+| Accuracy | 0.7282 ± 0.0321 | 0.7421 ± 0.0305 |
+| Not Addressed P / R / F1 | 0.863 / 0.823 / 0.841 | 0.867 / 0.824 / 0.844 |
+| Partially Compliant P / R / F1 | 0.355 / 0.438 / 0.387 | 0.378 / 0.470 / 0.415 |
+| Compliant P / R / F1 | 0.646 / 0.601 / 0.612 | 0.710 / 0.659 / 0.672 |
+
+- **Vs the previous final model:** +0.030 macro-F1, 23/25 folds, Wilcoxon p = 1.8e-5.
+- **Training folds:** 0.6311 ± 0.0262 vs 0.6134 (12/15 folds, p = 0.018).
+- **Caveat:** on the training folds most of the gain is also achieved by simply choosing C by inner CV in the one-step model. A benefit from the ordinal structure itself is not established (see `docs/EXPERIMENT_LOG.md`).
+
+### Confusion Matrix (Recall), final model, confirmation folds
+
+|                     | Not Addressed | Partially Compliant | Compliant |
+|---------------------|---------------|---------------------|-----------|
+| **Not Addressed**       | **82.6%**         | 15.9%               | 1.5%      |
+| **Partially Compliant** | 38.9%             | **47.3%**           | 13.8%     |
+| **Compliant**           | 17.1%             | 17.9%               | **64.9%** |
+
+### Feature-set comparison: confirmation folds (seeds 45-49, 25 folds)
+
+One-step LogReg (C = 1, argmax), label-free inputs (`*_labelfree` runs). Full per-class P/R/F1 and the 40-fold pooled table: `reports/paper/` and `docs/EXPERIMENT_LOG.md`.
+
+| Metric | Baseline (MiniLM+8) | E5+8 | E5+8+all-rules |
 |--------|---------------------|------|------------------------|
 | Accuracy | 0.7096 ± 0.0308 | 0.7391 ± 0.0327 | 0.7381 ± 0.0290 |
 | Macro-F1 | 0.5662 ± 0.0425 | 0.6127 ± 0.0353 | 0.6106 ± 0.0323 |
@@ -215,17 +248,11 @@ Label-free inputs (`*_labelfree` runs). Full per-class P/R/F1 and the 40-fold po
 E5+8 and E5+8+all-rules are tied (within 1 std).
 
 **Statistical Test**: Wilcoxon signed-rank (E5+8+all-rules vs Baseline)
-- Final model wins: 22/25 folds (88.0%)
+- E5+8+all-rules wins: 22/25 folds (88.0%)
 - Mean difference: +0.0444 ± 0.0404
 - p-value: < 0.001
 
-### Confusion Matrix (Recall)
-
-|                     | Not Addressed | Partially Compliant | Compliant |
-|---------------------|---------------|---------------------|-----------|
-| **Not Addressed**       | **84.7%**         | 12.5%               | 2.9%      |
-| **Partially Compliant** | 46.0%             | **39.2%**           | 14.8%     |
-| **Compliant**           | 16.5%             | 22.5%               | **61.0%** |
+Recall of the E5+8+all-rules one-step model (`reports/paper/confusion_matrix.png`): 84.7% / 39.2% / 61.0%.
 
 > ⛔ INVALID (label leakage): the previously published table (macro-F1 0.7347 / 0.8160 / 0.8132, 24/25 fold wins, 95.7% / 80.1% / 50.7% recall) came from leaky inputs.
 

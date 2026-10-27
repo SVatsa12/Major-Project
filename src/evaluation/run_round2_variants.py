@@ -26,6 +26,7 @@ thresholds) refits scaler, classifier and augmentation on its own training rows.
 Stages:
   python src/evaluation/run_round2_variants.py --stage train     # folds 42-44, all variants, writes selection
   python src/evaluation/run_round2_variants.py --stage confirm   # folds 45-49, selected config only, once
+  python src/evaluation/run_round2_variants.py --stage confirm --verify   # reproduce it into verify_* files
 """
 
 import argparse
@@ -53,6 +54,7 @@ from src.evaluation.run_honest_variants import (
     C_GRID, ENCODER_NAME, INNER_CV_SPLITS, make_lr, pooled_confusion, print_class_report, summarize,
 )
 from src.training.model_inputs import build_input_texts, model_inputs
+from src.training.ordinal import OrdinalLR
 from src.training.train_classifier import apply_thresholds, tune_thresholds_inner_cv
 
 FULL_CLAUSES = Path("datasets/SocialMediaPolicies/social_media_clauses.csv")
@@ -177,29 +179,6 @@ def augmentation_table(df, taxonomy):
 
 
 # ---------------------------------------------------------------- models
-
-class OrdinalLR:
-    """Two cumulative binary LogRegs on RobustScaled features: P(y > NA), P(y > Partial)."""
-
-    def __init__(self, C):
-        self.C = C
-
-    def fit(self, X, y):
-        y = np.asarray(y)
-        self.scaler_ = RobustScaler().fit(X)
-        Z = self.scaler_.transform(X)
-        self.gt_na_ = make_lr(self.C).fit(Z, y != "Not Addressed")
-        self.gt_partial_ = make_lr(self.C).fit(Z, y == "Compliant")
-        self.classes_ = np.array(sorted({cls for cls, _ in CLASS_KEYS}))
-        return self
-
-    def predict_proba(self, X):
-        Z = self.scaler_.transform(X)
-        p_gt_na = self.gt_na_.predict_proba(Z)[:, list(self.gt_na_.classes_).index(True)]
-        p_gt_partial = np.minimum(self.gt_partial_.predict_proba(Z)[:, list(self.gt_partial_.classes_).index(True)], p_gt_na)
-        by_class = {"Not Addressed": 1 - p_gt_na, "Partially Compliant": p_gt_na - p_gt_partial, "Compliant": p_gt_partial}
-        return np.column_stack([by_class[c] for c in self.classes_])
-
 
 class IndexModel:
     """
@@ -345,6 +324,8 @@ def write_table(rows, prefix):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--stage", choices=["train", "confirm"], required=True)
+    parser.add_argument("--verify", action="store_true",
+                        help="confirm stage: reproduce the selected run into verify_* files (the original is untouched)")
     args = parser.parse_args()
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -418,8 +399,10 @@ def main():
     else:
         selection = json.loads(SELECTION_PATH.read_text())
         best = selection["best"]
-        out = OUT_DIR / f"confirm_{best}.json"
-        assert not out.exists(), f"{out} exists: the selected config is run on the confirmation folds only once"
+        prefix = "verify_confirm" if args.verify else "confirm"
+        out = OUT_DIR / f"{prefix}_{best}.json"
+        if not args.verify:
+            assert not out.exists(), f"{out} exists: the selected config is run on the confirmation folds only once"
         if best == "v1_final":
             print("[INFO] v1 was best on training folds; its confirmation result is honest_v1_final.json")
             return
@@ -439,7 +422,7 @@ def main():
         data = save_variant(out, best, descriptions[best], results, v1_confirm,
                             {"folds": str(CONFIRM_FOLDS), "seeds": seeds, "selection": selection, "provenance": provenance})
         print_class_report(f"{best} on confirmation folds", results)
-        write_table([table_row(best, data, len(folds))], OUT_DIR / "confirm_summary")
+        write_table([table_row(best, data, len(folds))], OUT_DIR / f"{prefix}_summary")
 
 
 if __name__ == "__main__":

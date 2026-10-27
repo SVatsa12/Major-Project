@@ -62,8 +62,8 @@ X_infer_features = np.vstack([
     for _, row in test_df.iterrows()
 ])
 feature_max_diff = float(np.max(np.abs(X_train_features - X_infer_features)))
-train_probs = classifier.model.predict_proba(classifier.scaler.transform(X_train_features))
-infer_probs = classifier.model.predict_proba(classifier.scaler.transform(X_infer_features))
+train_probs = classifier.model.predict_proba(X_train_features)
+infer_probs = classifier.model.predict_proba(X_infer_features)
 prob_max_diff = float(np.max(np.abs(train_probs - infer_probs)))
 feature_parity = feature_max_diff < 1e-4 and prob_max_diff < 1e-3
 print(f"  Max |feature diff|:     {feature_max_diff:.2e}")

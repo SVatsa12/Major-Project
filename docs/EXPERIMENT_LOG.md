@@ -50,9 +50,31 @@ Mean ± std over folds. Result files: `reports/experiments/**/*_labelfree.json`;
 - Caveat inherited from the existing scripts (unchanged here): the pooled baseline and E5+8 rows mix two decision rules. Their 15 training folds come from `run_feature_experiments.py` (inner-CV thresholds via `train_and_evaluate_fold`), while their 25 confirmation folds and every all-rules fold use plain argmax LogisticRegression.
 - Caveat: the near-duplicate groups in `fixed_folds_v1.json`/`groups_v1.json` were computed (MiniLM, cos ≥ 0.90) on the old leaky context texts. Groups only decide fold membership and never enter features, so they cannot leak the label. They may be slightly different from groups computed on clause text alone. Kept unchanged as instructed.
 
-### Final model (retrained 2026-10-27)
+### Final model (retrained 2026-10-27, ordinal): **0.6436 ± 0.0374** confirmation macro-F1
 
-`models/final_classifier/`: E5+8+all-rules (825 features) trained on all 826 clauses with `"query: " + clause_text` inputs, the same feature functions as evaluation, and thresholds tuned by real 3-fold inner CV (refit per inner fold, `tune_thresholds_inner_cv`): τ_compliant = 0.50, τ_partial = 0.25. No probability calibration. The 8 true actionability feature names are in `feature_config.json`. The 20-clause smoke test passes: training vs inference features max |diff| 4.2e-7, classifier vs API 20/20 identical.
+`models/final_classifier/` is the round-2 winner **r1_ordinal**. It was selected by training-fold macro-F1 only and run once on the confirmation folds; see "Round 2" below.
+
+**Results**
+- **Confirmation folds** (seeds 45–49): macro-F1 **0.6436 ± 0.0374**, accuracy 0.7421. Per-class F1 is 0.844 (Not Addressed), 0.415 (Partially Compliant), 0.672 (Compliant).
+- **Training folds** (seeds 42–44): 0.6311 ± 0.0262.
+- **Vs the previous final model:** +0.030, 23/25 folds, p = 1.8e-5.
+
+**Configuration**
+- **Features:** E5+8+all-rules (825 features), built from `"query: " + clause_text` with the same feature functions as evaluation.
+- **Classifier:** `src/training/ordinal.py:OrdinalLRCV`. Two cumulative binary LogRegs, P(y > Not Addressed) and P(y > Partially Compliant), on RobustScaled features. Balanced class weights.
+- **C:** chosen by 3-fold inner CV on all 826 rows: **C = 0.1**. Inner macro-F1 by C: 0.1 → 0.655, 0.3 → 0.644, 1 → 0.629, 3 → 0.636.
+- **Thresholds:** `tune_thresholds_inner_cv`, with the full model, including its C selection, refit on each inner split: **τ_compliant = 0.60, τ_partial = 0.40**. τ_partial is at the upper edge of the existing grid (0.20–0.40); the grid was not widened.
+- **Probabilities:** no probability calibration. Scaling lives inside the model, so there is no `scaler.joblib`.
+- **Configs:** `feature_config.json` lists the 8 true actionability feature names and the label-free input format. `model_config.json` records the C search, threshold tuning and the evaluation results above. `/api/metrics` serves those numbers from `model_config.json`.
+
+**Checks**
+- `OrdinalLRCV` reproduces the evaluated r1 model exactly on a training fold (same C, probability difference 0.0).
+- `run_round2_variants.py --stage confirm --verify` reproduces the confirmation run.
+- 20-clause smoke test: training vs inference features max |diff| 4.2e-7, probabilities 7.3e-7; classifier vs API 20/20 identical.
+
+**Caveat:** on the training folds the one-step LogReg with C chosen by inner CV scores about the same (0.6291 vs 0.6311). The gain is mainly from stronger regularisation; a benefit from the ordinal structure is not established.
+
+*Superseded:* the earlier 2026-10-27 retrain (one-step LogReg, C = 1, τ = 0.50 / 0.25; confirmation 0.6132 with thresholds, 0.6106 argmax).
 
 ### Label-free variants of the final model (2026-10-27, VALID)
 
@@ -99,7 +121,7 @@ v5 two-step details: step (a) Not Addressed vs Addressed macro-F1 **0.7658 ± 0.
 - Variant 5's base config (v4) was chosen as the best of v1–v4 by mean macro-F1 on these same confirmation folds, so the v5 figure carries a small selection bias. The training-fold check below does not reproduce a significant gain.
 - The binary thresholds in v5 come from `tune_binary_threshold_inner_cv`, a binary analogue of `tune_thresholds_inner_cv` (same inner split, refit per inner fold, same best-inner-fold selection, τ ∈ [0.20, 0.80), no precision constraint). C is selected by mean inner-fold argmax macro-F1, with ties going to the smaller C.
 - In v3, TF-IDF columns are L2-normalised and unscaled, while dense columns are RobustScaled. Under a single L2 penalty the two blocks are not equally weighted. This scaling was not tuned.
-- Nothing was retrained: `models/final_classifier/` is still v1 (C = 1, one-step).
+- Nothing was retrained: `models/final_classifier/` is still v1 (C = 1, one-step). *(Superseded: `models/final_classifier/` was retrained with r1_ordinal; see "Final model" above.)*
 
 #### Training-fold check of v5 (2026-10-27)
 
@@ -193,7 +215,7 @@ v1 pooled confusion matrix (training folds; rows = true, row-normalised recall i
 - **The confirmation gain is significant:** +0.030 over v1, and larger than on training (+0.018). It appears on rows with real document context too.
 - **But ordinal vs plain C tuning is inconsistent.** Comparing r1 with the earlier confirmation run of C-tuned multinomial (`honest_v4_C_select.json`, which selects C once per outer fold rather than nested in threshold tuning) gives +0.019, 19/25 wins, p = 0.006. On training the same comparison is +0.002, p = 0.60. The robust finding across both fold sets is "stronger regularisation (C ≈ 0.1–0.3) helps"; a specific benefit from the ordinal structure is not established.
 - **Partially Compliant remains the bottleneck:** best F1 is 0.42.
-- **No model was retrained:** `models/final_classifier/` is still v1. Adopting r1 (or C-tuned multinomial) would need a retrain plus predictor support for the cumulative model.
+- **No model was retrained:** `models/final_classifier/` is still v1. Adopting r1 (or C-tuned multinomial) would need a retrain plus predictor support for the cumulative model. *(Superseded: `models/final_classifier/` was retrained with r1_ordinal; see "Final model" above.)*
 
 ---
 

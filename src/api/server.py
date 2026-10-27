@@ -191,13 +191,18 @@ def get_metrics():
     if classifier is None:
         raise HTTPException(status_code=503, detail="Model not loaded")
     
+    # Label-free confirmation-fold results recorded by src/training/train_final_model.py
+    confirmation = classifier.model_config["evaluation"]["confirmation_folds"]
     return {
         "primary_model": {
-            "name": "E5-base + 825 features (Logistic Regression)",
-            "accuracy": "91.66%",  # From confirmation experiments
-            "macro_f1": 0.8132,
+            "name": "E5-base + 825 features (Ordinal Logistic Regression)",
+            "accuracy": f"{confirmation['accuracy_mean'] * 100:.2f}%",
+            "macro_f1": confirmation["macro_f1_mean"],
+            "macro_f1_std": confirmation["macro_f1_std"],
+            "per_class_f1": confirmation["per_class_f1"],
+            "evaluation": f"{confirmation['n_folds']} confirmation folds (seeds 45-49), label-free inputs",
             "features": "768 E5-base + 8 actionability + 49 all-rules similarity",
-            "type": "Final production model from paper"
+            "type": "Final production model"
         },
         "model_config": {
             "encoder": classifier.feature_config["encoder_model"],

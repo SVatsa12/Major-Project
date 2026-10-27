@@ -1,13 +1,16 @@
 """
 src/training/train_final_model.py
-Train the final model (E5+8+all-rules, 825 features) on all 826 clauses.
+Train the final model (E5+8+all-rules, 825 features; ordinal classifier) on all 826 clauses.
 Save the model, config, thresholds, feature list, and git commit hash.
 
-Features are built by the same functions as evaluation
-(run_confirmation_experiments.py --variant all_rules):
+Config = r1_ordinal from run_round2_variants.py (selected on training folds only,
+confirmation macro-F1 0.6436 ± 0.0374):
     input text = "query: " + clause_text  (label-free, src/training/model_inputs.py)
-Thresholds are tuned with real inner CV (a fresh classifier is refit on each
-inner training split) via tune_thresholds_inner_cv, as in train_and_evaluate_fold.
+    classifier = two cumulative LogRegs, P(y > NA) and P(y > Partial), on RobustScaled
+                 features (src/training/ordinal.py), C in {0.1, 0.3, 1, 3} chosen by
+                 inner CV on all 826 rows
+    thresholds = tune_thresholds_inner_cv with real inner CV: the full model, including
+                 its C selection, is refit on each inner training split
 """
 
 import json
@@ -16,8 +19,6 @@ import pandas as pd
 import subprocess
 from pathlib import Path
 from datetime import datetime
-from sklearn.linear_model import LogisticRegression
-from sklearn.preprocessing import RobustScaler
 import joblib
 
 # Import project modules
@@ -26,12 +27,12 @@ project_root = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(project_root))
 
 from src.training.model_inputs import model_inputs, encoder_prefix
+from src.training.ordinal import C_GRID, INNER_CV_SPLITS, OrdinalLRCV
 from src.training.train_classifier import tune_thresholds_inner_cv
 from src.evaluation.feature_variants import extract_encoder_swap_features
 from src.evaluation.incremental_features import extract_all_rules_similarity, get_active_rules
 
 ENCODER_NAME = "intfloat/e5-base-v2"
-INNER_CV_SPLITS = 3
 
 # Names of the 8 actionability features, in the order of extract_actionability_features
 ACTIONABILITY_FEATURE_NAMES = [
@@ -44,6 +45,20 @@ ACTIONABILITY_FEATURE_NAMES = [
     "clause_length_norm",
     "parental_verification_marker",
 ]
+
+# Label-free evaluation of this exact config (reports/experiments/round2/)
+EVALUATION = {
+    "selected_by": "training-fold mean macro-F1 only (reports/experiments/round2/selection.json)",
+    "training_folds": {"folds": "datasets/folds/fixed_folds_v1.json", "seeds": [42, 43, 44], "n_folds": 15,
+                       "macro_f1_mean": 0.6311, "macro_f1_std": 0.0262,
+                       "result": "reports/experiments/round2/train_r1_ordinal.json"},
+    "confirmation_folds": {"folds": "datasets/folds/confirm_folds_v1.json", "seeds": [45, 46, 47, 48, 49], "n_folds": 25,
+                           "macro_f1_mean": 0.6436, "macro_f1_std": 0.0374,
+                           "accuracy_mean": 0.7421, "accuracy_std": 0.0305,
+                           "per_class_f1": {"Not Addressed": 0.8437, "Partially Compliant": 0.4154, "Compliant": 0.6717},
+                           "vs_previous_final_model": "+0.0304 macro-F1, 23/25 folds, Wilcoxon p = 1.8e-5",
+                           "result": "reports/experiments/round2/confirm_r1_ordinal.json"},
+}
 
 
 def get_git_commit():
@@ -61,14 +76,8 @@ def get_git_commit():
 
 
 def make_final_classifier():
-    """LogisticRegression configuration of the final model (also refit per inner CV fold)."""
-    return LogisticRegression(
-        C=1.0,
-        class_weight='balanced',
-        max_iter=1000,
-        random_state=42,
-        n_jobs=-1
-    )
+    """Ordinal classifier with C selected by inner CV (also refit per threshold-tuning fold)."""
+    return OrdinalLRCV(C_GRID, inner_cv_splits=INNER_CV_SPLITS)
 
 
 def build_feature_matrix(inputs, taxonomy):
@@ -99,34 +108,23 @@ def main():
 
     # Build features (only clause_text/app_name reach the feature builders)
     embeddings, action_features, all_rules_features = build_feature_matrix(model_inputs(df), taxonomy)
-    print(f"[INFO] Embedding shape: {embeddings.shape}")
-    print(f"[INFO] Actionability features shape: {action_features.shape}")
-    print(f"[INFO] All-rules similarity features shape: {all_rules_features.shape}")
-
-    # Combine features
-    X_all = np.hstack([embeddings, action_features, all_rules_features])
+    X_all = np.hstack([embeddings, action_features, all_rules_features]).astype(np.float64)
     y_all = df["verdict"].values
 
     print(f"\n[INFO] Final feature matrix shape: {X_all.shape}")
     print(f"[INFO] Feature breakdown: {embeddings.shape[1]} (E5) + {action_features.shape[1]} (actionability) + {all_rules_features.shape[1]} (all-rules) = {X_all.shape[1]} total")
 
-    # Scale features
-    print("\n[INFO] Scaling features with RobustScaler...")
-    scaler = RobustScaler()
-    X_scaled = scaler.fit_transform(X_all)
-
-    # Train model
-    print("[INFO] Training LogisticRegression (C=1.0, class_weight='balanced', max_iter=1000)...")
-    model = make_final_classifier()
-    model.fit(X_scaled, y_all)
-
+    # Train ordinal model; RobustScaler is fit inside it
+    print(f"\n[INFO] Training ordinal model, C in {list(C_GRID)} by {INNER_CV_SPLITS}-fold inner CV on all rows...")
+    model = make_final_classifier().fit(X_all, y_all)
+    print(f"[INFO] Inner-CV macro-F1 per C: {model.cv_scores_}")
+    print(f"[INFO] Chosen C: {model.C_}")
     print(f"[INFO] Model classes: {model.classes_.tolist()}")
-    print(f"[INFO] Model coefficients shape: {model.coef_.shape}")
 
-    # Tune thresholds with real inner CV (refit per inner fold)
+    # Tune thresholds with real inner CV (the whole model, incl. C selection, refit per inner fold)
     print(f"\n[INFO] Tuning decision thresholds with {INNER_CV_SPLITS}-fold inner CV (refit per inner fold)...")
     tau_compliant, tau_partial, inner_f1 = tune_thresholds_inner_cv(
-        X_scaled, y_all, make_final_classifier, inner_cv_splits=INNER_CV_SPLITS
+        X_all, y_all, make_final_classifier, inner_cv_splits=INNER_CV_SPLITS
     )
     constraint_met = inner_f1 > 0.0
     if not constraint_met:
@@ -140,20 +138,19 @@ def main():
 
     print(f"\n[INFO] Saving final model to {output_dir}...")
 
-    # Save model
+    # Save model (scaling is inside the model; there is no separate scaler artifact)
     model_path = output_dir / "model.joblib"
     joblib.dump(model, model_path)
     print(f"[SUCCESS] Saved model to {model_path}")
-
-    # Save scaler
-    scaler_path = output_dir / "scaler.joblib"
-    joblib.dump(scaler, scaler_path)
-    print(f"[SUCCESS] Saved scaler to {scaler_path}")
+    stale_scaler = output_dir / "scaler.joblib"
+    if stale_scaler.exists():
+        stale_scaler.unlink()
+        print(f"[INFO] Removed {stale_scaler} (scaler now lives inside the ordinal model)")
 
     # Save thresholds
     thresholds_dict = {
-        "tau_compliant": float(tau_compliant),
-        "tau_partial": float(tau_partial),
+        "tau_compliant": round(float(tau_compliant), 4),
+        "tau_partial": round(float(tau_partial), 4),
         "inner_cv_best_macro_f1": float(inner_f1),
         "compliant_precision_constraint_met": bool(constraint_met),
     }
@@ -171,6 +168,7 @@ def main():
             "actionability_features": int(action_features.shape[1]),
             "all_rules_similarity": int(all_rules_features.shape[1])
         },
+        "feature_order": "[e5_embeddings | actionability_features | all_rules_similarity]",
         "encoder_model": ENCODER_NAME,
         "input_text": {
             "format": "encoder_prefix + clause_text",
@@ -181,7 +179,8 @@ def main():
         },
         "actionability_features_list": ACTIONABILITY_FEATURE_NAMES,
         "all_rules_mode": "full (requirement field from taxonomy)",
-        "all_rules_details": f"{n_rules} rule similarities + {all_rules_features.shape[1] - n_rules} category max similarities (categories in sorted order) = {all_rules_features.shape[1]} features"
+        "all_rules_details": f"{n_rules} rule similarities + {all_rules_features.shape[1] - n_rules} category max similarities (categories in sorted order) = {all_rules_features.shape[1]} features",
+        "scaling": "RobustScaler fit inside the model on the training rows"
     }
 
     feature_config_path = output_dir / "feature_config.json"
@@ -191,22 +190,32 @@ def main():
 
     # Save model configuration
     model_config = {
-        "model_type": "LogisticRegression",
+        "model_type": "OrdinalLogisticRegression",
+        "model_class": "src.training.ordinal.OrdinalLRCV",
+        "description": "Two cumulative binary LogRegs on RobustScaled features: P(y > Not Addressed), "
+                       "P(y > Partially Compliant); P(Partial) = P(>NA) - P(>Partial), P(>Partial) capped at P(>NA)",
+        "class_order": ["Not Addressed", "Partially Compliant", "Compliant"],
         "hyperparameters": {
-            "C": 1.0,
+            "C": float(model.C_),
+            "C_grid": list(C_GRID),
+            "C_selection": f"{INNER_CV_SPLITS}-fold stratified inner CV on all {len(df)} rows, mean argmax macro-F1, ties to smaller C",
+            "inner_cv_macro_f1_by_C": {str(k): v for k, v in model.cv_scores_.items()},
+            "penalty": "l2",
+            "solver": "lbfgs",
             "class_weight": "balanced",
             "max_iter": 1000,
             "random_state": 42
         },
         "calibration": None,
-        "probabilities": "raw LogisticRegression predict_proba (no probability calibration)",
+        "probabilities": "from the two cumulative LogRegs (no probability calibration)",
         "classes": model.classes_.tolist(),
         "threshold_tuning": {
-            "method": "inner stratified CV, classifier refit per inner fold (tune_thresholds_inner_cv)",
+            "method": "inner stratified CV, full model (incl. C selection) refit per inner fold (tune_thresholds_inner_cv)",
             "inner_cv_splits": INNER_CV_SPLITS,
             "objective": "macro-F1 subject to Compliant precision >= 0.70",
             "grid": {"tau_compliant": "0.30-0.65 step 0.05", "tau_partial": "0.20-0.40 step 0.05"}
         },
+        "evaluation": EVALUATION,
         "training_data": {
             "corpus": "labeled_clauses_bootstrap.csv",
             "taxonomy": "dpdp_taxonomy_final.json",
@@ -227,11 +236,10 @@ def main():
     print("FINAL MODEL SAVED SUCCESSFULLY")
     print("=" * 120)
     print(f"\nModel artifacts in: {output_dir}")
-    print(f"  - model.joblib (LogisticRegression trained on all {len(df)} clauses)")
-    print(f"  - scaler.joblib (RobustScaler)")
+    print(f"  - model.joblib (ordinal LogReg, C={model.C_}, trained on all {len(df)} clauses)")
     print(f"  - thresholds.json (tau_compliant={tau_compliant:.3f}, tau_partial={tau_partial:.3f})")
     print(f"  - feature_config.json ({X_all.shape[1]} features)")
-    print(f"  - model_config.json (hyperparameters, training data, git commit)")
+    print(f"  - model_config.json (hyperparameters, evaluation, training data, git commit)")
     print(f"\nGit commit: {model_config['git_commit']}")
     print(f"Timestamp: {model_config['timestamp']}")
 

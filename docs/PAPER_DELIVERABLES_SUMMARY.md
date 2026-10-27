@@ -10,6 +10,8 @@
 > **Valid label-free results** (input = `"query: " + clause_text`, fixed in commit `359f281`):
 > `docs/EXPERIMENT_LOG.md` → "Label-free results", and `reports/paper/`. In brief, confirmation macro-F1 is
 > 0.5662 ± 0.0425 (MiniLM+8), 0.6127 ± 0.0353 (E5+8) and 0.6106 ± 0.0323 (E5+8+all-rules); E5+8 and E5+8+all-rules are tied.
+> The **final model** (E5+8+all-rules with an ordinal classifier, selected on the training folds) scores
+> **0.6436 ± 0.0374** on the confirmation folds (`models/final_classifier/`, `reports/experiments/round2/`).
 
 ---
 
