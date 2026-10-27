@@ -17,7 +17,7 @@ from sklearn.model_selection import StratifiedGroupKFold
 import sys
 
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
-from src.training.train_classifier import build_context_texts
+from src.training.model_inputs import build_input_texts, model_inputs
 
 
 def find_near_duplicate_groups(embeddings, threshold=0.90):
@@ -47,9 +47,10 @@ def main():
     print("\nClass distribution:")
     print(df["verdict"].value_counts().to_string())
     
-    # Build context texts
-    tax_map = {item["taxonomy_id"]: item for item in taxonomy}
-    context_texts = build_context_texts(df, tax_map)
+    # Label-free texts for grouping. NOTE: the committed fixed_folds_v1.json was
+    # grouped on the old label-leaking context texts; re-running this script
+    # would produce different groups, so the committed file is kept as-is.
+    context_texts = build_input_texts(model_inputs(df))
     
     # Generate embeddings with all-MiniLM-L6-v2
     print(f"\n[INFO] Generating all-MiniLM-L6-v2 embeddings...")

@@ -2,12 +2,12 @@
   "test": "Wilcoxon signed-rank test",
   "alternative": "greater (final > baseline)",
   "n_folds": 25,
-  "final_wins": 24,
-  "baseline_wins": 1,
+  "final_wins": 22,
+  "baseline_wins": 3,
   "ties": 0,
-  "mean_difference": 0.07855456885076174,
-  "std_difference": 0.054170960986925004,
-  "statistic": 324.0,
-  "p_value": 5.960464477539063e-08,
+  "mean_difference": 0.04437071043164868,
+  "std_difference": 0.040402431869955166,
+  "statistic": 308.0,
+  "p_value": 6.16908073425293e-06,
   "significant_at_0.05": true
 }

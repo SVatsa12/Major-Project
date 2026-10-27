@@ -17,7 +17,6 @@ import numpy as np
 import pandas as pd
 from pathlib import Path
 from datetime import datetime
-from sklearn.metrics import classification_report, f1_score, accuracy_score, precision_score, recall_score
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import RobustScaler
 import sys
@@ -26,6 +25,8 @@ sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
 from src.evaluation.feature_variants import extract_encoder_swap_features
 from src.evaluation.incremental_features import extract_all_rules_similarity
+from src.evaluation.fold_metrics import fold_metrics, CLASS_KEYS
+from src.training.model_inputs import model_inputs
 
 
 OUTPUT_DIR = Path("reports/experiments/confirmation")
@@ -68,32 +69,12 @@ def run_single_fold(X_train, y_train, X_test, y_test, fold_idx, seed):
     # Predict
     y_pred = clf.predict(X_test_scaled)
     
-    # Metrics
-    acc = accuracy_score(y_test, y_pred)
-    macro_f1 = f1_score(y_test, y_pred, average="macro", zero_division=0)
-    macro_prec = precision_score(y_test, y_pred, average="macro", zero_division=0)
-    macro_rec = recall_score(y_test, y_pred, average="macro", zero_division=0)
-    
-    # Per-class metrics
-    report_dict = classification_report(
-        y_test, y_pred,
-        labels=["Not Addressed", "Partially Compliant", "Compliant"],
-        output_dict=True,
-        zero_division=0
-    )
-    
     return {
         "fold": fold_idx,
         "seed": seed,
-        "accuracy": float(acc),
-        "macro_f1": float(macro_f1),
-        "macro_precision": float(macro_prec),
-        "macro_recall": float(macro_rec),
-        "not_addressed_f1": float(report_dict["Not Addressed"]["f1-score"]),
-        "partial_f1": float(report_dict["Partially Compliant"]["f1-score"]),
-        "compliant_precision": float(report_dict["Compliant"]["precision"]),
-        "compliant_recall": float(report_dict["Compliant"]["recall"]),
-        "compliant_f1": float(report_dict["Compliant"]["f1-score"]),
+        **fold_metrics(y_test, y_pred),
+        "y_true": [str(v) for v in y_test],
+        "y_pred": [str(v) for v in y_pred],
     }
 
 
@@ -124,9 +105,9 @@ def run_confirmation(variant_name, all_features, df, seeds):
             print(f"  Fold {fold_idx}: F1={fold_result['macro_f1']:.4f}, Acc={fold_result['accuracy']:.4f}")
     
     # Aggregate
-    metrics = ["accuracy", "macro_f1", "macro_precision", "macro_recall", 
-               "not_addressed_f1", "partial_f1", 
-               "compliant_precision", "compliant_recall", "compliant_f1"]
+    metrics = ["accuracy", "macro_f1", "macro_precision", "macro_recall"] + [
+        f"{key}_{m}" for _, key in CLASS_KEYS for m in ("precision", "recall", "f1")
+    ]
     
     aggregates = {}
     for metric in metrics:
@@ -156,36 +137,39 @@ def main():
     
     print(f"[INFO] Loaded {len(df)} clauses")
     print(f"[INFO] Variant: {args.variant}")
+    
+    # Feature builders only ever see clause_text/app_name (no LLM output columns)
+    inputs = model_inputs(df)
     print(f"[INFO] Confirmation seeds: {seeds}")
     
     # Extract features based on variant
     if args.variant == "baseline":
         # MiniLM + 8 structured
         print("\n[INFO] Extracting baseline features (MiniLM + 8 structured)...")
-        feature_data = extract_encoder_swap_features(df, taxonomy, "sentence-transformers/all-MiniLM-L6-v2")
+        feature_data = extract_encoder_swap_features(inputs, taxonomy, "sentence-transformers/all-MiniLM-L6-v2")
         all_features = np.hstack([feature_data["embeddings"], feature_data["structured"]])
         description = "MiniLM clause + 8 structured"
     
     elif args.variant == "fixed_A_e5":
         # E5 + 8 structured
         print("\n[INFO] Extracting E5 features (E5 + 8 structured)...")
-        feature_data = extract_encoder_swap_features(df, taxonomy, "intfloat/e5-base-v2")
+        feature_data = extract_encoder_swap_features(inputs, taxonomy, "intfloat/e5-base-v2")
         all_features = np.hstack([feature_data["embeddings"], feature_data["structured"]])
         description = "E5 clause + 8 structured"
     
     elif args.variant == "all_rules":
         # E5 + 8 + all-rules (WINNER)
         print("\n[INFO] Extracting winner features (E5 + 8 + all-rules)...")
-        feature_data = extract_encoder_swap_features(df, taxonomy, "intfloat/e5-base-v2")
-        all_rules_sim = extract_all_rules_similarity(df, taxonomy, "intfloat/e5-base-v2", rule_text_mode="full")
+        feature_data = extract_encoder_swap_features(inputs, taxonomy, "intfloat/e5-base-v2")
+        all_rules_sim = extract_all_rules_similarity(inputs, taxonomy, "intfloat/e5-base-v2", rule_text_mode="full")
         all_features = np.hstack([feature_data["embeddings"], feature_data["structured"], all_rules_sim])
         description = "E5 clause + 8 structured + all-rules similarity"
     
     elif args.variant == "allrules_desc_only":
         # E5 + 8 + all-rules (desc_only mode - same as full for current taxonomy)
         print("\n[INFO] Extracting desc_only features (E5 + 8 + all-rules statutory only)...")
-        feature_data = extract_encoder_swap_features(df, taxonomy, "intfloat/e5-base-v2")
-        all_rules_sim = extract_all_rules_similarity(df, taxonomy, "intfloat/e5-base-v2", rule_text_mode="desc_only")
+        feature_data = extract_encoder_swap_features(inputs, taxonomy, "intfloat/e5-base-v2")
+        all_rules_sim = extract_all_rules_similarity(inputs, taxonomy, "intfloat/e5-base-v2", rule_text_mode="desc_only")
         all_features = np.hstack([feature_data["embeddings"], feature_data["structured"], all_rules_sim])
         description = "E5 clause + 8 structured + all-rules similarity (statutory requirement only)"
     
@@ -226,6 +210,7 @@ def main():
             "seeds": seeds,
             "n_features": all_features.shape[1],
             "fold_type": "confirmation",
+            "input_text": "encoder_prefix + clause_text (label-free, src/training/model_inputs.py)",
             "total_folds": len(fold_results)
         },
         "aggregates": aggregates,

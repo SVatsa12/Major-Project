@@ -22,6 +22,8 @@ sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 from src.evaluation.feature_variants import extract_encoder_swap_features
 from src.evaluation.incremental_features import extract_all_rules_similarity, extract_rubric_features
 from src.training.feature_extraction import extract_actionability_features
+from src.training.model_inputs import model_inputs
+from src.evaluation.fold_metrics import fold_metrics
 
 try:
     import lightgbm as lgb
@@ -166,18 +168,13 @@ def run_single_seed_cv(df, all_features, args, seed, clf_configs):
         # Predict on test
         test_preds = best_clf.predict(X_test)
         
-        # Metrics
-        f1 = f1_score(y_test, test_preds, average="macro", zero_division=0)
-        acc = accuracy_score(y_test, test_preds)
-        
         all_true_labels.extend(y_test)
         all_pred_labels.extend(test_preds)
         
         fold_results.append({
             "fold": fold_idx,
             "seed": seed,
-            "macro_f1": float(f1),
-            "accuracy": float(acc),
+            **fold_metrics(y_test, test_preds),
         })
     
     # Compute per-class metrics
@@ -291,36 +288,39 @@ def main():
     print(f"[INFO] Loaded {len(df)} clauses")
     print(f"[INFO] Variant: {args.variant}")
     
+    # Feature builders only ever see clause_text/app_name (no LLM output columns)
+    inputs = model_inputs(df)
+    
     # Extract base features (E5 + 8 structured)
     print("\n[INFO] Extracting base features (E5 clause + 8 structured)...")
-    base_feature_data = extract_encoder_swap_features(df, taxonomy, "intfloat/e5-base-v2")
+    base_feature_data = extract_encoder_swap_features(inputs, taxonomy, "intfloat/e5-base-v2")
     e5_embeddings = base_feature_data["embeddings"]
     structured_features = base_feature_data["structured"]
     
     # Add incremental features based on variant
     if args.variant == "all_rules_sim":
         print("\n[INFO] Adding all-rules similarity features...")
-        all_rules_sim = extract_all_rules_similarity(df, taxonomy, "intfloat/e5-base-v2")
+        all_rules_sim = extract_all_rules_similarity(inputs, taxonomy, "intfloat/e5-base-v2")
         all_features = np.hstack([e5_embeddings, structured_features, all_rules_sim])
         description = "E5 clause + 8 structured + all-rules similarity"
     
     elif args.variant == "rubric":
         print("\n[INFO] Adding rubric features...")
-        rubric_feats, rubric_names = extract_rubric_features(df)
+        rubric_feats, rubric_names = extract_rubric_features(inputs, labels=df["verdict"].values)
         all_features = np.hstack([e5_embeddings, structured_features, rubric_feats])
         description = "E5 clause + 8 structured + rubric features"
     
     elif args.variant == "all_rules_sim+rubric":
         print("\n[INFO] Adding all-rules similarity + rubric features...")
-        all_rules_sim = extract_all_rules_similarity(df, taxonomy, "intfloat/e5-base-v2")
-        rubric_feats, rubric_names = extract_rubric_features(df)
+        all_rules_sim = extract_all_rules_similarity(inputs, taxonomy, "intfloat/e5-base-v2")
+        rubric_feats, rubric_names = extract_rubric_features(inputs, labels=df["verdict"].values)
         all_features = np.hstack([e5_embeddings, structured_features, all_rules_sim, rubric_feats])
         description = "E5 clause + 8 structured + all-rules sim + rubric"
     
     elif args.variant in ["tuned", "ensemble"]:
         # Use best feature combo (all-rules similarity only, NOT rubric)
         print("\n[INFO] Using best feature combination (all-rules similarity only)...")
-        all_rules_sim = extract_all_rules_similarity(df, taxonomy, "intfloat/e5-base-v2")
+        all_rules_sim = extract_all_rules_similarity(inputs, taxonomy, "intfloat/e5-base-v2")
         all_features = np.hstack([e5_embeddings, structured_features, all_rules_sim])
         description = f"E5 + 8 + all-rules [{args.variant}]"
     

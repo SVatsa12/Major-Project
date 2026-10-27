@@ -3,7 +3,7 @@ src/training/train_classifier.py
 Training and Cross-Validation Pipeline with Leak-Free Threshold Calibration.
 
 Implements the full training pipeline per research paper specifications:
-- Context-conditioned embedding generation
+- Label-free clause embeddings (see src/training/model_inputs.py)
 - Feature extraction and scaling (RobustScaler, fit only on training fold)
 - LogisticRegression with specified hyperparameters
 - Leak-free inner CV threshold calibration
@@ -19,38 +19,6 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import StratifiedKFold
 from sklearn.metrics import f1_score, precision_score
 from src.training.feature_extraction import extract_actionability_features
-
-
-def build_context_texts(df, taxonomy_map):
-    """
-    Build context-formatted input texts for encoding.
-    
-    Format: f"[{app_name}] Mandate: {statutory_test} | Policy: {clause_text}"
-    where statutory_test is from the taxonomy checkable_test field.
-    
-    Args:
-        df: DataFrame with columns [app_name, clause_text, best_match_taxonomy_id]
-        taxonomy_map: dict mapping taxonomy_id -> taxonomy_item
-    
-    Returns:
-        list of context-formatted strings
-    """
-    contexts = []
-    for _, row in df.iterrows():
-        app_name = str(row.get("app_name", "Platform")).strip()
-        clause_text = str(row["clause_text"]).strip()
-        tax_id = str(row.get("best_match_taxonomy_id", "NONE"))
-        
-        if tax_id != "NONE" and tax_id in taxonomy_map:
-            tax_item = taxonomy_map[tax_id]
-            statutory_test = tax_item.get("checkable_test", "")
-        else:
-            statutory_test = "General Policy"
-        
-        context = f"[{app_name}] Mandate: {statutory_test} | Policy: {clause_text}"
-        contexts.append(context)
-    
-    return contexts
 
 
 def get_taxonomy_embeddings(taxonomy_list, embedder):
@@ -110,6 +78,107 @@ def pair_with_taxonomy_runtime(clause_embedding, tax_embeddings, similarity_thre
     return best_tax_id
 
 
+def make_fold_classifier():
+    """LogisticRegression configuration used by train_and_evaluate_fold."""
+    return LogisticRegression(
+        C=1.0,
+        penalty="l2",
+        solver="lbfgs",
+        max_iter=1000,
+        multi_class="multinomial",
+        class_weight="balanced",
+        random_state=42
+    )
+
+
+def apply_thresholds(probs, classes, tau_compliant, tau_partial):
+    """
+    Two-threshold decision rule. Probability columns are looked up by name in
+    `classes` (the classifier's classes_), never by an assumed order.
+    """
+    classes = list(classes)
+    compliant_idx = classes.index("Compliant") if "Compliant" in classes else None
+    partial_idx = classes.index("Partially Compliant") if "Partially Compliant" in classes else None
+    
+    preds = []
+    for i in range(len(probs)):
+        p_compliant = probs[i, compliant_idx] if compliant_idx is not None else 0.0
+        p_partial = probs[i, partial_idx] if partial_idx is not None else 0.0
+        
+        if p_compliant >= tau_compliant:
+            preds.append("Compliant")
+        elif p_partial >= tau_partial:
+            preds.append("Partially Compliant")
+        else:
+            preds.append("Not Addressed")
+    return preds
+
+
+def tune_thresholds_inner_cv(X_train, y_train, make_classifier, inner_cv_splits=3):
+    """
+    Leak-free threshold calibration: stratified inner CV on the training data only.
+    A fresh classifier is refit on each inner training split and thresholds are
+    scored on the held-out inner split. Grid: tau_c in [0.30, 0.70), tau_p in
+    [0.20, 0.45), step 0.05. Objective: inner macro-F1 subject to Compliant
+    precision >= 0.70. Falls back to (0.5, 0.35) if no setting meets the constraint.
+    
+    Returns:
+        (tau_compliant, tau_partial, best_inner_f1)
+    """
+    y_train = np.asarray(y_train)
+    inner_skf = StratifiedKFold(n_splits=inner_cv_splits, shuffle=True, random_state=42)
+    
+    best_tau_compliant = 0.5
+    best_tau_partial = 0.35
+    best_inner_f1 = 0.0
+    
+    for inner_train_idx, inner_val_idx in inner_skf.split(X_train, y_train):
+        X_inner_train = X_train[inner_train_idx]
+        y_inner_train = y_train[inner_train_idx]
+        X_inner_val = X_train[inner_val_idx]
+        y_inner_val = y_train[inner_val_idx]
+        
+        # Skip if training data doesn't have all classes
+        if len(np.unique(y_inner_train)) < 2:
+            continue
+        
+        # Train classifier on inner training
+        inner_clf = make_classifier()
+        try:
+            inner_clf.fit(X_inner_train, y_inner_train)
+        except ValueError:
+            # Skip if fit fails (e.g., only one class)
+            continue
+        
+        # Get probabilities on inner validation fold
+        inner_probs = inner_clf.predict_proba(X_inner_val)
+        classes = list(inner_clf.classes_)
+        
+        # Skip this inner fold if not all classes present
+        if len(classes) < 3:
+            continue
+        
+        # Grid search over thresholds
+        for tau_c in np.arange(0.30, 0.70, 0.05):
+            for tau_p in np.arange(0.20, 0.45, 0.05):
+                preds = apply_thresholds(inner_probs, classes, tau_c, tau_p)
+                
+                # Check constraint: minority class precision >= 0.70
+                compliant_precision = precision_score(
+                    y_inner_val, preds, labels=["Compliant"], average=None, zero_division=0
+                )[0]
+                
+                # Maximize inner macro-F1 subject to precision constraint
+                if compliant_precision >= 0.70:
+                    inner_f1 = f1_score(y_inner_val, preds, average="macro", zero_division=0)
+                    if inner_f1 > best_inner_f1:
+                        best_inner_f1 = inner_f1
+                        best_tau_compliant = tau_c
+                        best_tau_partial = tau_p
+    
+    return float(best_tau_compliant), float(best_tau_partial), float(best_inner_f1)
+
+
 def train_and_evaluate_fold(
     X_train, y_train, X_test, y_test,
     inner_cv_splits=3
@@ -141,119 +210,18 @@ def train_and_evaluate_fold(
     X_test_combined = np.hstack([X_test["embedding"], features_test_scaled])
     
     # Train classifier
-    clf = LogisticRegression(
-        C=1.0,
-        penalty="l2",
-        solver="lbfgs",
-        max_iter=1000,
-        multi_class="multinomial",
-        class_weight="balanced",
-        random_state=42
-    )
+    clf = make_fold_classifier()
     clf.fit(X_train_combined, y_train)
     
-    # Perform inner stratified CV for threshold calibration
-    inner_skf = StratifiedKFold(n_splits=inner_cv_splits, shuffle=True, random_state=42)
-    
-    best_tau_compliant = 0.5
-    best_tau_partial = 0.35
-    best_inner_f1 = 0.0
-    
-    for inner_train_idx, inner_val_idx in inner_skf.split(X_train_combined, y_train):
-        X_inner_train = X_train_combined[inner_train_idx]
-        y_inner_train = y_train[inner_train_idx]
-        X_inner_val = X_train_combined[inner_val_idx]
-        y_inner_val = y_train[inner_val_idx]
-        
-        # Skip if training data doesn't have all classes
-        if len(np.unique(y_inner_train)) < 2:
-            continue
-        
-        # Train classifier on inner training
-        inner_clf = LogisticRegression(
-            C=1.0,
-            penalty="l2",
-            solver="lbfgs",
-            max_iter=1000,
-            multi_class="multinomial",
-            class_weight="balanced",
-            random_state=42
-        )
-        try:
-            inner_clf.fit(X_inner_train, y_inner_train)
-        except ValueError:
-            # Skip if fit fails (e.g., only one class)
-            continue
-        
-        # Get probabilities on inner validation fold
-        inner_probs = inner_clf.predict_proba(X_inner_val)
-        classes = list(inner_clf.classes_)
-        
-        # Skip this inner fold if not all classes present
-        if len(classes) < 3:
-            continue
-        
-        # Grid search over thresholds
-        for tau_c in np.arange(0.30, 0.70, 0.05):
-            for tau_p in np.arange(0.20, 0.45, 0.05):
-                preds = []
-                for i in range(len(inner_probs)):
-                    p_compliant = inner_probs[i, classes.index("Compliant")]
-                    p_partial = inner_probs[i, classes.index("Partially Compliant")]
-                    
-                    if p_compliant >= tau_c:
-                        preds.append("Compliant")
-                    elif p_partial >= tau_p:
-                        preds.append("Partially Compliant")
-                    else:
-                        preds.append("Not Addressed")
-                
-                # Check constraint: minority class precision >= 0.70
-                compliant_precision = precision_score(
-                    y_inner_val, preds, labels=["Compliant"], average=None, zero_division=0
-                )[0]
-                
-                # Maximize inner macro-F1 subject to precision constraint
-                if compliant_precision >= 0.70:
-                    inner_f1 = f1_score(y_inner_val, preds, average="macro", zero_division=0)
-                    if inner_f1 > best_inner_f1:
-                        best_inner_f1 = inner_f1
-                        best_tau_compliant = tau_c
-                        best_tau_partial = tau_p
+    # Inner stratified CV on the training partition only (refit per inner fold)
+    best_tau_compliant, best_tau_partial, best_inner_f1 = tune_thresholds_inner_cv(
+        X_train_combined, y_train, make_fold_classifier, inner_cv_splits=inner_cv_splits
+    )
     
     # Apply best thresholds to test fold
     test_probs = clf.predict_proba(X_test_combined)
     classes = list(clf.classes_)
-    test_preds = []
-    
-    # Get class indices (handle missing classes)
-    try:
-        compliant_idx = classes.index("Compliant")
-    except ValueError:
-        compliant_idx = None
-    
-    try:
-        partial_idx = classes.index("Partially Compliant")
-    except ValueError:
-        partial_idx = None
-    
-    for i in range(len(test_probs)):
-        if compliant_idx is not None:
-            p_compliant = test_probs[i, compliant_idx]
-        else:
-            p_compliant = 0.0
-        
-        if partial_idx is not None:
-            p_partial = test_probs[i, partial_idx]
-        else:
-            p_partial = 0.0
-        
-        if p_compliant >= best_tau_compliant:
-            test_preds.append("Compliant")
-        elif p_partial >= best_tau_partial:
-            test_preds.append("Partially Compliant")
-        else:
-            test_preds.append("Not Addressed")
+    test_preds = apply_thresholds(test_probs, classes, best_tau_compliant, best_tau_partial)
     
     return {
         "predictions": test_preds,

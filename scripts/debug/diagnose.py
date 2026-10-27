@@ -228,23 +228,8 @@ print(f"  Test Macro-F1:  {baseline_macro_f1:.4f}")
 # ─────────────────────────────────────────────────────────────────────────────
 print(f"\n[4/8] Evaluating current model...")
 
-# Helper function to build context texts
-def build_context_texts(df, tax_map):
-    contexts = []
-    for _, row in df.iterrows():
-        app_name = str(row.get("app_name", "Platform")).strip()
-        clause_text = str(row["clause_text"]).strip()
-        tax_id = str(row.get("best_match_taxonomy_id", "NONE"))
-        
-        if tax_id != "NONE" and tax_id in tax_map:
-            statutory_test = tax_map[tax_id].get("checkable_test", "General Policy")
-        else:
-            statutory_test = "General Policy"
-        
-        context = f"[{app_name}] Mandate: {statutory_test} | Policy: {clause_text}"
-        contexts.append(context)
-    
-    return contexts
+# Label-free input texts (clause_text only); see src/training/model_inputs.py
+from src.training.model_inputs import build_input_texts, model_inputs
 
 # Load model
 if not MODEL_PATH.exists():
@@ -296,8 +281,8 @@ else:
     print(f"  Generating embeddings with {EMBEDDER_NAME}...")
     embedder = SentenceTransformer(EMBEDDER_NAME)
     
-    val_texts = build_context_texts(df_val, tax_map)
-    test_texts = build_context_texts(df_test, tax_map)
+    val_texts = build_input_texts(model_inputs(df_val))
+    test_texts = build_input_texts(model_inputs(df_test))
     
     val_embeddings = embedder.encode(val_texts, show_progress_bar=False, convert_to_numpy=True, normalize_embeddings=True)
     test_embeddings = embedder.encode(test_texts, show_progress_bar=False, convert_to_numpy=True, normalize_embeddings=True)

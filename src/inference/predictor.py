@@ -21,9 +21,9 @@ import joblib
 from sentence_transformers import SentenceTransformer
 
 # Import the EXACT functions used in training (single source of truth)
-from src.training.train_classifier import build_context_texts
+from src.training.model_inputs import build_input_texts, encode_texts, encoder_prefix, model_inputs
 from src.training.feature_extraction import extract_actionability_features
-from src.evaluation.incremental_features import extract_all_rules_similarity
+from src.evaluation.incremental_features import all_rules_similarity_from_embeddings, get_active_rules
 
 
 class ClauseClassifier:
@@ -68,48 +68,38 @@ class ClauseClassifier:
             f"Expected 825 features, got {self.feature_config['total_features']}"
         assert self.feature_config["encoder_model"] == "intfloat/e5-base-v2", \
             f"Expected intfloat/e5-base-v2, got {self.feature_config['encoder_model']}"
-        
+        self.encoder_name = self.feature_config["encoder_model"]
+
+        # The model must have been trained on label-free "query: " + clause_text inputs
+        input_text = self.feature_config.get("input_text", {})
+        assert input_text.get("llm_output_columns_used") is False and \
+            input_text.get("encoder_prefix") == encoder_prefix(self.encoder_name) and \
+            input_text.get("include_app_name") is False, \
+            f"Model was not trained on label-free inputs (input_text={input_text}); retrain with src/training/train_final_model.py"
+
         # Load taxonomy
         print(f"[ClauseClassifier] Loading taxonomy from {self.taxonomy_path}...")
         with open(self.taxonomy_path, 'r', encoding='utf-8') as f:
             self.taxonomy = json.load(f)
         
-        self.taxonomy_map = {item["taxonomy_id"]: item for item in self.taxonomy}
-        
         # Filter out NONE taxonomy items for rule similarity
-        self.active_rules = [item for item in self.taxonomy if item["taxonomy_id"] != "NONE"]
+        self.active_rules = get_active_rules(self.taxonomy)
         print(f"[ClauseClassifier] Loaded {len(self.active_rules)} active taxonomy rules")
         
         # Load and cache E5-base embedder
         print(f"[ClauseClassifier] Loading E5-base embedder (first load may take ~30s)...")
         embedder_start = time.time()
-        self.embedder = SentenceTransformer("intfloat/e5-base-v2")
+        self.embedder = SentenceTransformer(self.encoder_name)
         embedder_time = time.time() - embedder_start
         print(f"[ClauseClassifier] E5-base loaded in {embedder_time:.2f}s")
         
         # Pre-compute and cache taxonomy rule embeddings (38 rules)
         print(f"[ClauseClassifier] Pre-computing taxonomy rule embeddings...")
         rule_texts = [item["requirement"] for item in self.active_rules]
-        rule_prefix = "query: "  # E5 models need query prefix
-        rule_texts_prefixed = [rule_prefix + text for text in rule_texts]
-        
-        self.rule_embeddings = self.embedder.encode(
-            rule_texts_prefixed,
-            convert_to_numpy=True,
-            normalize_embeddings=True,
-            show_progress_bar=False
-        )
+        self.rule_embeddings = encode_texts(self.embedder, rule_texts, self.encoder_name)
         
         self.rule_ids = [item["taxonomy_id"] for item in self.active_rules]
         self.rule_categories = [item.get("category", "Unknown") for item in self.active_rules]
-        
-        # Cache category indices for per-category max similarity
-        unique_categories = sorted(list(set(self.rule_categories)))  # SORT for determinism
-        self.category_to_indices = {
-            cat: [i for i, c in enumerate(self.rule_categories) if c == cat]
-            for cat in unique_categories
-        }
-        self.unique_categories = unique_categories
         
         total_time = time.time() - start_time
         print(f"[ClauseClassifier] Initialization complete in {total_time:.2f}s")
@@ -124,45 +114,22 @@ class ClauseClassifier:
         
         Args:
             clause_text: Policy clause text
-            app_name: Platform name (for context)
+            app_name: Platform name (accepted for API compatibility; not a model input)
         
         Returns:
             np.ndarray of shape (825,) with features in training order
         """
-        # Create minimal dataframe for compatibility with training functions
-        df = pd.DataFrame([{
-            "clause_text": clause_text,
-            "app_name": app_name,
-            "best_match_taxonomy_id": "NONE"  # Will be determined by similarity
-        }])
+        # Only clause_text/app_name reach the feature builders (same as training)
+        inputs = model_inputs(pd.DataFrame([{"clause_text": clause_text, "app_name": app_name}]))
         
-        # 1. E5-base embeddings (768 dims) - using training function
-        context_texts = build_context_texts(df, self.taxonomy_map)
-        prefix = "query: "  # E5 models need query prefix
-        context_texts_prefixed = [prefix + text for text in context_texts]
-        
-        embeddings = self.embedder.encode(
-            context_texts_prefixed,
-            convert_to_numpy=True,
-            normalize_embeddings=True,
-            show_progress_bar=False
-        )
+        # 1. E5-base embeddings (768 dims): "query: " + clause_text, as in training
+        embeddings = encode_texts(self.embedder, build_input_texts(inputs), self.encoder_name)
         
         # 2. Actionability features (8 dims) - using training function
-        action_features = extract_actionability_features(df["clause_text"].values)
+        action_features = extract_actionability_features(inputs["clause_text"].values)
         
-        # 3. All-rules similarity features (49 dims) - manual computation using cached rule embeddings
-        # Compute similarities: clause vs all 38 rules
-        similarities_all = embeddings @ self.rule_embeddings.T  # (1, 38)
-        
-        # Per-category max similarity (11 dims)
-        per_category_max = np.zeros((1, len(self.unique_categories)))
-        for cat_idx, cat in enumerate(self.unique_categories):
-            rule_indices = self.category_to_indices[cat]
-            if rule_indices:
-                per_category_max[0, cat_idx] = similarities_all[0, rule_indices].max()
-        
-        all_rules_features = np.hstack([similarities_all, per_category_max])
+        # 3. All-rules similarity features (49 dims) - training function on cached rule embeddings
+        all_rules_features = all_rules_similarity_from_embeddings(embeddings, self.rule_embeddings, self.rule_categories)
         
         # Combine in training order: embeddings (768) + actionability (8) + all-rules (49)
         features = np.hstack([embeddings, action_features, all_rules_features])

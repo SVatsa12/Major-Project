@@ -11,6 +11,8 @@ import torch
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 
+from src.training.model_inputs import assert_label_free, build_input_texts, encode_texts, encoder_prefix
+
 # Embedding cache directory
 CACHE_DIR = Path("reports/experiments/embedding_cache")
 CACHE_DIR.mkdir(parents=True, exist_ok=True)
@@ -21,30 +23,27 @@ def get_text_hash(text):
     return hashlib.sha256(text.encode('utf-8')).hexdigest()[:16]
 
 
-def load_or_compute_embeddings(texts, model_name, prefix="", cache_suffix=""):
-    """Load embeddings from cache or compute and cache them."""
-    cache_key = f"{model_name.replace('/', '_')}{cache_suffix}_{get_text_hash(''.join(texts[:5]))}"
+def load_or_compute_embeddings(texts, model_name, cache_suffix=""):
+    """
+    Load embeddings from cache or compute and cache them.
+    
+    The cache key covers the model, the encoder prefix and EVERY input text, so
+    a change to the input format can never silently reuse stale embeddings.
+    Texts are encoded by encode_texts (encoder prefix + normalisation), the same
+    function the final model and the predictor use.
+    """
+    prefix = encoder_prefix(model_name)
+    content_hash = get_text_hash(json.dumps([model_name, prefix, list(texts)]))
+    cache_key = f"{model_name.replace('/', '_')}{cache_suffix}_{content_hash}"
     cache_path = CACHE_DIR / f"{cache_key}.npy"
     
     if cache_path.exists():
         print(f"[CACHE] Loading embeddings from {cache_path}")
         return np.load(cache_path)
     
-    print(f"[COMPUTE] Generating embeddings with {model_name}...")
+    print(f"[COMPUTE] Generating embeddings with {model_name} (prefix={prefix!r})...")
     model = SentenceTransformer(model_name)
-    
-    # Add prefix if specified (for e5 models)
-    if prefix:
-        texts_with_prefix = [prefix + text for text in texts]
-    else:
-        texts_with_prefix = texts
-    
-    embeddings = model.encode(
-        texts_with_prefix,
-        show_progress_bar=True,
-        convert_to_numpy=True,
-        normalize_embeddings=True
-    )
+    embeddings = encode_texts(model, list(texts), model_name, show_progress_bar=True)
     
     # Cache embeddings
     np.save(cache_path, embeddings)
@@ -57,15 +56,16 @@ def extract_baseline_features(df, taxonomy, model_name="all-MiniLM-L6-v2"):
     """
     Variant: Baseline (baseline_v1_grouped)
     Features: MiniLM embeddings + 8 structured features
+    
+    df must be model_inputs(...) (clause_text, app_name only).
     """
     from src.training.feature_extraction import extract_actionability_features
-    from src.training.train_classifier import build_context_texts
     
-    tax_map = {item["taxonomy_id"]: item for item in taxonomy}
-    context_texts = build_context_texts(df, tax_map)
+    assert_label_free(df)
+    input_texts = build_input_texts(df)
     
     # Get embeddings
-    embeddings = load_or_compute_embeddings(context_texts, model_name)
+    embeddings = load_or_compute_embeddings(input_texts, model_name)
     
     # Get structured features
     structured_features = extract_actionability_features(df["clause_text"].values)
@@ -81,18 +81,17 @@ def extract_encoder_swap_features(df, taxonomy, encoder_name):
     """
     Variant A: Encoder swap
     Test different encoders: bge-base, e5-base, InLegalBERT
+    
+    df must be model_inputs(...) (clause_text, app_name only).
+    Input text = encoder_prefix(encoder_name) + clause_text ("query: " for E5).
     """
     from src.training.feature_extraction import extract_actionability_features
-    from src.training.train_classifier import build_context_texts
     
-    tax_map = {item["taxonomy_id"]: item for item in taxonomy}
-    context_texts = build_context_texts(df, tax_map)
+    assert_label_free(df)
+    input_texts = build_input_texts(df)
     
-    # Handle e5 prefix
-    prefix = "query: " if "e5-" in encoder_name else ""
-    
-    # Get embeddings
-    embeddings = load_or_compute_embeddings(context_texts, encoder_name, prefix=prefix)
+    # Get embeddings (encoder prefix, e.g. "query: " for e5, added inside)
+    embeddings = load_or_compute_embeddings(input_texts, encoder_name)
     
     # Get structured features
     structured_features = extract_actionability_features(df["clause_text"].values)
@@ -104,62 +103,10 @@ def extract_encoder_swap_features(df, taxonomy, encoder_name):
     }
 
 
-def extract_clause_rule_pairing_features(df, taxonomy, encoder_name):
-    """
-    Variant B: Clause + rule pairing
-    Features: [clause_emb, rule_emb, |clause - rule|, clause * rule, cosine] + 8 structured
-    
-    ASSERTION: Never use justification column as feature.
-    """
-    from src.training.feature_extraction import extract_actionability_features
-    from src.training.train_classifier import build_context_texts
-    
-    # ASSERTION: Verify justification column is not used
-    assert "justification" not in df.columns or df["justification"].isna().all() or True, \
-        "Justification column must not be used as feature"
-    
-    tax_map = {item["taxonomy_id"]: item for item in taxonomy}
-    
-    # Get clause embeddings
-    context_texts = build_context_texts(df, tax_map)
-    prefix = "query: " if "e5-" in encoder_name else ""
-    clause_embeddings = load_or_compute_embeddings(context_texts, encoder_name, prefix=prefix)
-    
-    # Get rule texts from taxonomy ONLY
-    rule_texts = []
-    for _, row in df.iterrows():
-        rule_id = row["best_match_taxonomy_id"]
-        rule_text = tax_map.get(rule_id, {}).get("requirement", "")
-        rule_texts.append(rule_text)
-    
-    # Get rule embeddings
-    rule_prefix = "query: " if "e5-" in encoder_name else ""
-    rule_embeddings = load_or_compute_embeddings(rule_texts, encoder_name, prefix=rule_prefix)
-    
-    # Compute interaction features
-    diff = np.abs(clause_embeddings - rule_embeddings)
-    product = clause_embeddings * rule_embeddings
-    
-    # Compute cosine similarity (embeddings already normalized)
-    cosine_sim = np.sum(clause_embeddings * rule_embeddings, axis=1, keepdims=True)
-    
-    # Concatenate all embedding features
-    embedding_features = np.hstack([
-        clause_embeddings,
-        rule_embeddings,
-        diff,
-        product,
-        cosine_sim
-    ])
-    
-    # Get structured features
-    structured_features = extract_actionability_features(df["clause_text"].values)
-    
-    return {
-        "embeddings": embedding_features,
-        "structured": structured_features,
-        "description": f"Clause-rule pairing ({encoder_name}): [clause, rule, |diff|, prod, cosine] + 8 features"
-    }
+# Variant B (extract_clause_rule_pairing_features) was removed: it selected the
+# paired rule from best_match_taxonomy_id, an LLM output that is NONE exactly when
+# the label is "Not Addressed". It cannot be made label-free; B2a below is its
+# label-independent replacement.
 
 
 def extract_clause_rule_pairing_b2a(df, taxonomy, encoder_name="intfloat/e5-base-v2"):
@@ -169,27 +116,15 @@ def extract_clause_rule_pairing_b2a(df, taxonomy, encoder_name="intfloat/e5-base
     Rule selection: Highest cosine similarity between clause and ALL 38 rules
     Features: [clause_emb, rule_emb, |diff|, prod, cosine, top3_sims] + 8 structured
     
-    ASSERTION: NO LLM output columns used as features.
+    df must be model_inputs(...) (clause_text, app_name only).
     """
     from src.training.feature_extraction import extract_actionability_features
-    from src.training.train_classifier import build_context_texts
     
-    # CRITICAL ASSERTION: Verify no LLM output used
-    llm_columns = ['verdict', 'best_match_taxonomy_id', 'justification', 'verdict_score']
-    for col in llm_columns:
-        if col in df.columns:
-            # Allow column to exist but assert we're not reading values
-            pass  # We never use these columns in this function
-    
-    # Explicit check: we never access LLM output columns
-    print(f"[B2a] ASSERTION: No LLM output columns used as features")
-    
-    tax_map = {item["taxonomy_id"]: item for item in taxonomy}
+    assert_label_free(df)
     
     # Get clause embeddings
-    context_texts = build_context_texts(df, tax_map)
-    prefix = "query: " if "e5-" in encoder_name else ""
-    clause_embeddings = load_or_compute_embeddings(context_texts, encoder_name, prefix=prefix)
+    input_texts = build_input_texts(df)
+    clause_embeddings = load_or_compute_embeddings(input_texts, encoder_name)
     
     # Get ALL rule embeddings (label-independent)
     all_rules = [item for item in taxonomy if item["taxonomy_id"] != "NONE"]
@@ -197,8 +132,7 @@ def extract_clause_rule_pairing_b2a(df, taxonomy, encoder_name="intfloat/e5-base
     rule_ids_all = [item["taxonomy_id"] for item in all_rules]
     
     print(f"[B2a] Computing embeddings for {len(rule_texts_all)} rules...")
-    rule_prefix = "query: " if "e5-" in encoder_name else ""
-    rule_embeddings_all = load_or_compute_embeddings(rule_texts_all, encoder_name, prefix=rule_prefix, cache_suffix="_rules")
+    rule_embeddings_all = load_or_compute_embeddings(rule_texts_all, encoder_name, cache_suffix="_rules")
     
     # For each clause, select rule with highest cosine similarity
     selected_rule_embeddings = []
@@ -250,8 +184,5 @@ FEATURE_EXTRACTORS = {
     "encoder_bge": lambda df, tax: extract_encoder_swap_features(df, tax, "BAAI/bge-base-en-v1.5"),
     "encoder_e5": lambda df, tax: extract_encoder_swap_features(df, tax, "intfloat/e5-base-v2"),
     "encoder_inlegal": lambda df, tax: extract_encoder_swap_features(df, tax, "law-ai/InLegalBERT"),
-    "pairing_bge": lambda df, tax: extract_clause_rule_pairing_features(df, tax, "BAAI/bge-base-en-v1.5"),
-    "pairing_e5": lambda df, tax: extract_clause_rule_pairing_features(df, tax, "intfloat/e5-base-v2"),
-    "pairing_inlegal": lambda df, tax: extract_clause_rule_pairing_features(df, tax, "law-ai/InLegalBERT"),
     "pairing_e5_b2a": lambda df, tax: extract_clause_rule_pairing_b2a(df, tax, "intfloat/e5-base-v2"),
 }

@@ -8,6 +8,29 @@ import numpy as np
 from pathlib import Path
 from sentence_transformers import SentenceTransformer
 from src.evaluation.feature_variants import load_or_compute_embeddings
+from src.training.model_inputs import assert_label_free, build_input_texts
+
+
+def get_active_rules(taxonomy):
+    """Taxonomy rules used for all-rules similarity (NONE excluded), in taxonomy order."""
+    return [item for item in taxonomy if item["taxonomy_id"] != "NONE"]
+
+
+def all_rules_similarity_from_embeddings(clause_embeddings, rule_embeddings, rule_categories):
+    """
+    All-rules similarity features from normalised embeddings:
+    [cosine(clause, rule_i) for every rule] + [max cosine per category].
+    Categories are taken in sorted order so training and inference agree.
+    """
+    similarities_all = clause_embeddings @ rule_embeddings.T
+    
+    unique_categories = sorted(set(rule_categories))
+    per_category_max = np.zeros((similarities_all.shape[0], len(unique_categories)))
+    for cat_idx, cat in enumerate(unique_categories):
+        rule_indices = [i for i, c in enumerate(rule_categories) if c == cat]
+        per_category_max[:, cat_idx] = similarities_all[:, rule_indices].max(axis=1)
+    
+    return np.hstack([similarities_all, per_category_max])
 
 
 def extract_all_rules_similarity(df, taxonomy, encoder_name="intfloat/e5-base-v2", rule_text_mode="full"):
@@ -17,72 +40,39 @@ def extract_all_rules_similarity(df, taxonomy, encoder_name="intfloat/e5-base-v2
     Adds 38-dim vector of cosine similarities (clause vs every rule) +
     per-category max similarity features.
     
-    NO LLM output used.
+    df must be model_inputs(...) (clause_text, app_name only); no LLM output is used.
     
     Args:
         rule_text_mode: "full" (default) or "desc_only"
             - "full": Uses full statutory requirement text
             - "desc_only": Uses only category + requirement (same as full for current taxonomy)
     """
-    from src.training.train_classifier import build_context_texts
-    
-    # ASSERTION: No LLM columns used
-    llm_columns = ['verdict', 'best_match_taxonomy_id', 'justification', 'verdict_score']
-    assert all(col not in df.columns or True for col in llm_columns), "LLM columns must not be accessed"
-    
-    tax_map = {item["taxonomy_id"]: item for item in taxonomy}
+    assert_label_free(df)
     
     # Get clause embeddings
-    context_texts = build_context_texts(df, tax_map)
-    prefix = "query: " if "e5-" in encoder_name else ""
-    clause_embeddings = load_or_compute_embeddings(context_texts, encoder_name, prefix=prefix)
+    input_texts = build_input_texts(df)
+    clause_embeddings = load_or_compute_embeddings(input_texts, encoder_name)
     
     # Get ALL rule embeddings (exclude NONE)
-    all_rules = [item for item in taxonomy if item["taxonomy_id"] != "NONE"]
+    all_rules = get_active_rules(taxonomy)
     
-    if rule_text_mode == "desc_only":
-        # Use ONLY statutory requirement (no checkable_test, no concepts)
-        # Since current implementation already does this, this is identical
-        # but we make it explicit
-        rule_texts = [item["requirement"] for item in all_rules]
-        print(f"[ALL-RULES-SIM] Using desc_only mode: statutory requirement only")
-    else:
-        # Full mode: just requirement (already statutory only)
-        rule_texts = [item["requirement"] for item in all_rules]
-        print(f"[ALL-RULES-SIM] Using full mode: statutory requirement")
-    
-    rule_ids = [item["taxonomy_id"] for item in all_rules]
+    # Both modes use only the statutory requirement text for the current taxonomy
+    rule_texts = [item["requirement"] for item in all_rules]
+    print(f"[ALL-RULES-SIM] Using {rule_text_mode} mode: statutory requirement")
     rule_categories = [item.get("category", "Unknown") for item in all_rules]
     
     print(f"[ALL-RULES-SIM] Computing embeddings for {len(rule_texts)} rules...")
-    
     cache_suffix = "_rules" if rule_text_mode == "full" else "_rules_desc_only"
-    rule_prefix = "query: " if "e5-" in encoder_name else ""
-    rule_embeddings = load_or_compute_embeddings(rule_texts, encoder_name, prefix=rule_prefix, cache_suffix=cache_suffix)
+    rule_embeddings = load_or_compute_embeddings(rule_texts, encoder_name, cache_suffix=cache_suffix)
     
-    # Compute all similarities (N_clauses x N_rules)
-    similarities_all = clause_embeddings @ rule_embeddings.T
-    
-    # Per-category max similarity
-    unique_categories = list(set(rule_categories))
-    category_to_indices = {cat: [i for i, c in enumerate(rule_categories) if c == cat] 
-                          for cat in unique_categories}
-    
-    per_category_max = np.zeros((len(df), len(unique_categories)))
-    for cat_idx, cat in enumerate(unique_categories):
-        rule_indices = category_to_indices[cat]
-        if rule_indices:
-            per_category_max[:, cat_idx] = similarities_all[:, rule_indices].max(axis=1)
-    
-    # Combine: 38 rule similarities + per-category max
-    all_rules_features = np.hstack([similarities_all, per_category_max])
-    
-    print(f"[ALL-RULES-SIM] Features: {similarities_all.shape[1]} rule similarities + {per_category_max.shape[1]} category max = {all_rules_features.shape[1]} dims")
+    all_rules_features = all_rules_similarity_from_embeddings(clause_embeddings, rule_embeddings, rule_categories)
+    n_rules = len(rule_texts)
+    print(f"[ALL-RULES-SIM] Features: {n_rules} rule similarities + {all_rules_features.shape[1] - n_rules} category max = {all_rules_features.shape[1]} dims")
     
     return all_rules_features
 
 
-def extract_rubric_features(df):
+def extract_rubric_features(df, labels=None):
     """
     Feature Set 2: Rubric-based features for Compliant vs Partial boundary
     
@@ -97,12 +87,10 @@ def extract_rubric_features(df):
     4. User-action mechanisms
     5. Numeric quantities and named procedures
     
-    NO LLM output used.
+    df must be model_inputs(...) (clause_text, app_name only); no LLM output is used.
+    labels (optional) are only used to print per-class feature means.
     """
-    
-    # ASSERTION: No LLM columns used
-    llm_columns = ['verdict', 'best_match_taxonomy_id', 'justification', 'verdict_score']
-    assert all(col not in df.columns or True for col in llm_columns), "LLM columns must not be accessed"
+    assert_label_free(df)
     
     clauses = df["clause_text"].values
     features = []
@@ -198,9 +186,9 @@ def extract_rubric_features(df):
     print("-" * 80)
     
     for i, fname in enumerate(feature_names):
-        not_addr_mean = rubric_features[df['verdict'] == 'Not Addressed', i].mean()
-        partial_mean = rubric_features[df['verdict'] == 'Partially Compliant', i].mean()
-        compliant_mean = rubric_features[df['verdict'] == 'Compliant', i].mean()
+        not_addr_mean = rubric_features[labels == 'Not Addressed', i].mean()
+        partial_mean = rubric_features[labels == 'Partially Compliant', i].mean()
+        compliant_mean = rubric_features[labels == 'Compliant', i].mean()
         print(f"{fname:<25} {not_addr_mean:<18.4f} {partial_mean:<18.4f} {compliant_mean:<18.4f}")
     
     return rubric_features, feature_names

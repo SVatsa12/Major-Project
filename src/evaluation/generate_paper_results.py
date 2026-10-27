@@ -1,6 +1,9 @@
 """
 src/evaluation/generate_paper_results.py
 Generate paper-ready results tables (CSV + LaTeX) for confirmation and pooled results.
+
+Reads the *_labelfree runs (input = "query: " + clause_text). Earlier runs built
+their inputs with build_context_texts, which leaked the label, and are INVALID.
 """
 
 import json
@@ -102,9 +105,9 @@ def pool_results(training_results, confirmation_results):
     # Available metrics - check first fold
     available_metrics = list(all_folds[0].keys())
     
-    pooled = {}
+    pooled = {"n_folds": len(all_folds)}
     for metric in available_metrics:
-        if metric in ['fold', 'seed']:
+        if metric in ['fold', 'seed'] or not isinstance(all_folds[0][metric], (int, float)):
             continue
         values = [r[metric] for r in all_folds if metric in r]
         if values:
@@ -112,6 +115,24 @@ def pool_results(training_results, confirmation_results):
             pooled[f"{metric}_std"] = float(np.std(values))
     
     return pooled
+
+
+def metric_row(name, agg):
+    """One table row: accuracy, macro P/R/F1 and per-class P/R/F1 as mean ± std over folds."""
+    def fmt(key):
+        return f"{agg[key + '_mean']:.4f} ± {agg[key + '_std']:.4f}"
+    row = {
+        "Model": name,
+        "Accuracy": fmt("accuracy"),
+        "Macro-Prec": fmt("macro_precision"),
+        "Macro-Rec": fmt("macro_recall"),
+        "Macro-F1": fmt("macro_f1"),
+    }
+    for label, key in [("NA", "not_addressed"), ("Partial", "partial"), ("Compliant", "compliant")]:
+        row[f"{label}-Prec"] = fmt(f"{key}_precision")
+        row[f"{label}-Rec"] = fmt(f"{key}_recall")
+        row[f"{label}-F1"] = fmt(f"{key}_f1")
+    return row
 
 
 def main():
@@ -123,14 +144,14 @@ def main():
     print("\n[INFO] Loading results...")
     
     # Confirmation (seeds 45-49) - PRIMARY
-    confirm_baseline = load_results("confirm_baseline_v1_corrected")
-    confirm_e5 = load_results("confirm_fixed_A_e5_corrected")
-    confirm_all_rules = load_results("confirm_all_rules_corrected")
+    confirm_baseline = load_results("confirm_baseline_v1_labelfree")
+    confirm_e5 = load_results("confirm_fixed_A_e5_labelfree")
+    confirm_all_rules = load_results("confirm_all_rules_labelfree")
     
     # Training (seeds 42-44)
-    train_baseline = load_results("fixed_baseline_v1")
-    train_e5 = load_results("fixed_A_e5")
-    train_all_rules = load_results("incr_1_all_rules")
+    train_baseline = load_results("fixed_baseline_v1_labelfree")
+    train_e5 = load_results("fixed_A_e5_labelfree")
+    train_all_rules = load_results("incr_1_all_rules_labelfree")
     
     # Table 1: Confirmation Results (PRIMARY, seeds 45-49, 25 folds)
     print("\n[INFO] Generating Table 1: Confirmation Results...")
@@ -139,19 +160,7 @@ def main():
     for name, results in [("Baseline (MiniLM+8)", confirm_baseline),
                           ("E5+8", confirm_e5),
                           ("E5+8+all-rules", confirm_all_rules)]:
-        agg = results["aggregates"]
-        row = {
-            "Model": name,
-            "Accuracy": f"{agg['accuracy_mean']:.4f} ± {agg['accuracy_std']:.4f}",
-            "Macro-Prec": f"{agg['macro_precision_mean']:.4f} ± {agg['macro_precision_std']:.4f}",
-            "Macro-Rec": f"{agg['macro_recall_mean']:.4f} ± {agg['macro_recall_std']:.4f}",
-            "Macro-F1": f"{agg['macro_f1_mean']:.4f} ± {agg['macro_f1_std']:.4f}",
-            "NA-F1": f"{agg['not_addressed_f1_mean']:.4f} ± {agg['not_addressed_f1_std']:.4f}",
-            "Partial-F1": f"{agg['partial_f1_mean']:.4f} ± {agg['partial_f1_std']:.4f}",
-            "Compliant-Prec": f"{agg['compliant_precision_mean']:.4f} ± {agg['compliant_precision_std']:.4f}",
-            "Compliant-Rec": f"{agg['compliant_recall_mean']:.4f} ± {agg['compliant_recall_std']:.4f}",
-            "Compliant-F1": f"{agg['compliant_f1_mean']:.4f} ± {agg['compliant_f1_std']:.4f}",
-        }
+        row = metric_row(name, results["aggregates"])
         confirm_rows.append(row)
     
     df_confirm = pd.DataFrame(confirm_rows)
@@ -163,15 +172,13 @@ def main():
     print(f"[SUCCESS] Saved confirmation results to {csv_path}")
     
     # Generate LaTeX table
-    latex_confirm = df_confirm.to_latex(index=False, escape=False, column_format='l' + 'c' * 8)
+    latex_confirm = df_confirm.to_latex(index=False, escape=False, column_format='l' + 'c' * (len(df_confirm.columns) - 1))
     latex_path = Path("reports/paper/confirmation_results.tex")
     latex_path.write_text(latex_confirm)
     print(f"[SUCCESS] Saved LaTeX table to {latex_path}")
     
     # Table 2: Pooled Results (SECONDARY, seeds 42-49, 40 folds)
-    # Note: Training folds only have macro_f1 and accuracy, so pooled results are limited
     print("\n[INFO] Generating Table 2: Pooled Results...")
-    print("[NOTE] Pooled results show only metrics available in both training and confirmation folds")
     
     pooled_baseline = pool_results(train_baseline, confirm_baseline)
     pooled_e5 = pool_results(train_e5, confirm_e5)
@@ -181,11 +188,8 @@ def main():
     for name, pooled in [("Baseline (MiniLM+8)", pooled_baseline),
                          ("E5+8", pooled_e5),
                          ("E5+8+all-rules", pooled_all_rules)]:
-        row = {
-            "Model": name,
-            "Accuracy": f"{pooled['accuracy_mean']:.4f} ± {pooled['accuracy_std']:.4f}",
-            "Macro-F1": f"{pooled['macro_f1_mean']:.4f} ± {pooled['macro_f1_std']:.4f}",
-        }
+        assert pooled["n_folds"] == 40, f"{name}: expected 40 pooled folds, got {pooled['n_folds']}"
+        row = metric_row(name, pooled)
         pooled_rows.append(row)
     
     df_pooled = pd.DataFrame(pooled_rows)
@@ -196,7 +200,7 @@ def main():
     print(f"[SUCCESS] Saved pooled results to {csv_pooled_path}")
     
     # Generate LaTeX table
-    latex_pooled = df_pooled.to_latex(index=False, escape=False, column_format='l' + 'c' * 2)
+    latex_pooled = df_pooled.to_latex(index=False, escape=False, column_format='l' + 'c' * (len(df_pooled.columns) - 1))
     latex_pooled_path = Path("reports/paper/pooled_results.tex")
     latex_pooled_path.write_text(latex_pooled)
     print(f"[SUCCESS] Saved LaTeX table to {latex_pooled_path}")

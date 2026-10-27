@@ -19,7 +19,7 @@ def main():
     print("=" * 120)
     
     # Load confirmation results for E5+8+all-rules
-    result_path = Path("reports/experiments/confirmation/confirm_all_rules_corrected.json")
+    result_path = Path("reports/experiments/confirmation/confirm_all_rules_labelfree.json")
     print(f"\n[INFO] Loading results from {result_path}")
     
     with open(result_path, 'r', encoding='utf-8') as f:

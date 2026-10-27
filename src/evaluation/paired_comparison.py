@@ -19,8 +19,8 @@ def main():
     # Load confirmation results
     print("\n[INFO] Loading confirmation results...")
     
-    baseline_path = Path("reports/experiments/confirmation/confirm_baseline_v1_corrected.json")
-    final_path = Path("reports/experiments/confirmation/confirm_all_rules_corrected.json")
+    baseline_path = Path("reports/experiments/confirmation/confirm_baseline_v1_labelfree.json")
+    final_path = Path("reports/experiments/confirmation/confirm_all_rules_labelfree.json")
     
     with open(baseline_path, 'r', encoding='utf-8') as f:
         baseline_data = json.load(f)

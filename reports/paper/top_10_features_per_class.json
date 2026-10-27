@@ -2,271 +2,271 @@
   {
     "class": "Compliant",
     "rank": 1,
-    "rule_id": "DPDP_ACT-0040",
-    "coefficient": 0.10199241417729481,
-    "abs_coefficient": 0.10199241417729481,
+    "rule_id": "DPDP_RUL-0223",
+    "coefficient": 0.11660151955452995,
+    "abs_coefficient": 0.11660151955452995,
     "category": "Data Principal Rights",
-    "requirement": "Data principals have the right to request access to their personal data from the data fiduciary."
+    "requirement": "Provide a clear communication link for Data Principals to exercise their rights under the Act, including access to the website or app of the Data Fiduciary."
   },
   {
     "class": "Compliant",
     "rank": 2,
-    "rule_id": "DPDP_ACT-0048",
-    "coefficient": 0.09068716922327909,
-    "abs_coefficient": 0.09068716922327909,
-    "category": "Cross-Border Transfer",
-    "requirement": "The applicability of Indian laws providing higher protection for data transfers outside India is not restricted by this section."
+    "rule_id": "DPDP_RUL-0175",
+    "coefficient": 0.09869213414524523,
+    "abs_coefficient": 0.09869213414524523,
+    "category": "Security Safeguards",
+    "requirement": "Retain logs and personal data for a period of one year for detecting unauthorized access, investigating it, and ensuring continued processing, unless required by law."
   },
   {
     "class": "Compliant",
     "rank": 3,
+    "rule_id": "IT_ACT_2-0285",
+    "coefficient": 0.07643427852086987,
+    "abs_coefficient": 0.07643427852086987,
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Intermediaries must comply with directions issued by the government to block access to information generated, transmitted, received, stored, or hosted in any computer resource."
+  },
+  {
+    "class": "Compliant",
+    "rank": 4,
+    "rule_id": "IT_ACT_2-0290",
+    "coefficient": 0.07003911328113573,
+    "abs_coefficient": 0.07003911328113573,
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Intermediaries must not disclose personal information of users without consent or in breach of a lawful contract, as this constitutes an offence under the IT Act 2000, Section 72A."
+  },
+  {
+    "class": "Compliant",
+    "rank": 5,
+    "rule_id": "DPDP_RUL-0201",
+    "coefficient": 0.06575277835134975,
+    "abs_coefficient": 0.06575277835134975,
+    "category": "Grievance Redressal",
+    "requirement": "Data Fiduciaries and Consent Managers must prominently publish on their website or app a grievance redressal system for responding to Data Principal grievances within ninety days."
+  },
+  {
+    "class": "Compliant",
+    "rank": 6,
     "rule_id": "DPDP_RUL-0202",
-    "coefficient": 0.06774794771613175,
-    "abs_coefficient": 0.06774794771613175,
+    "coefficient": 0.06016044552070705,
+    "abs_coefficient": 0.06016044552070705,
     "category": "Cross-Border Transfer",
     "requirement": "Data Fiduciaries must meet requirements specified by the Central Government for transferring personal data outside the territory of India."
   },
   {
     "class": "Compliant",
-    "rank": 4,
-    "rule_id": "IT_ACT_2-0289",
-    "coefficient": 0.06559599629672717,
-    "abs_coefficient": 0.06559599629672717,
-    "category": "Intermediary/Platform Liability",
-    "requirement": "Intermediaries must comply with government authorization to access protected systems."
-  },
-  {
-    "class": "Compliant",
-    "rank": 5,
-    "rule_id": "DPDP_ACT-0034",
-    "coefficient": 0.06213268785490499,
-    "abs_coefficient": 0.06213268785490499,
-    "category": "Children/Vulnerable Groups",
-    "requirement": "A Data Fiduciary must obtain verifiable consent from the parent or lawful guardian of a child or person with disability before processing their personal data."
-  },
-  {
-    "class": "Compliant",
-    "rank": 6,
-    "rule_id": "DPDP_RUL-0172",
-    "coefficient": 0.05626559784189769,
-    "abs_coefficient": 0.05626559784189769,
-    "category": "Security Safeguards",
-    "requirement": "Implement appropriate measures to control access to computer resources used by the data fiduciary or data processor."
-  },
-  {
-    "class": "Compliant",
     "rank": 7,
-    "rule_id": "DPDP_RUL-0175",
-    "coefficient": 0.052327175423684716,
-    "abs_coefficient": 0.052327175423684716,
-    "category": "Security Safeguards",
-    "requirement": "Retain logs and personal data for a period of one year for detecting unauthorized access, investigating it, and ensuring continued processing, unless required by law."
+    "rule_id": "IT_ACT_2-0310",
+    "coefficient": 0.05959023808540687,
+    "abs_coefficient": 0.05959023808540687,
+    "category": "Breach Notification",
+    "requirement": "A breach of confidentiality and privacy must be reported under the IT Act 2000."
   },
   {
     "class": "Compliant",
     "rank": 8,
-    "rule_id": "DPDP_ACT-0016",
-    "coefficient": 0.048469434974392586,
-    "abs_coefficient": 0.048469434974392586,
-    "category": "Consent & Notice",
-    "requirement": "The Data Principal shall have the right to withdraw consent at any time, with the ease of doing so being comparable to the ease with which such consent was given."
+    "rule_id": "DPDP_RUL-0173",
+    "coefficient": 0.05608742785498641,
+    "abs_coefficient": 0.05608742785498641,
+    "category": "Security Safeguards",
+    "requirement": "Maintain visibility on the accessing of personal data through appropriate logs, monitoring, and review to detect unauthorized access."
   },
   {
     "class": "Compliant",
     "rank": 9,
-    "rule_id": "DPDP_ACT-0029",
-    "coefficient": -0.047814990295293264,
-    "abs_coefficient": 0.047814990295293264,
-    "category": "Data Retention & Erasure",
-    "requirement": "A Data Fiduciary shall erase personal data upon receipt of a request for erasure unless retention is necessary for a specified purpose or for compliance with law."
-  },
-  {
-    "class": "Compliant",
-    "rank": 10,
-    "rule_id": "IT_ACT_2-0307",
-    "coefficient": 0.04774050411723945,
-    "abs_coefficient": 0.04774050411723945,
-    "category": "Data Retention & Erasure",
-    "requirement": "Organizations must retain electronic records as required and ensure they are maintained securely."
-  },
-  {
-    "class": "Not Addressed",
-    "rank": 1,
-    "rule_id": "DPDP_RUL-0201",
-    "coefficient": -0.06954127550155943,
-    "abs_coefficient": 0.06954127550155943,
-    "category": "Grievance Redressal",
-    "requirement": "Data Fiduciaries and Consent Managers must prominently publish on their website or app a grievance redressal system for responding to Data Principal grievances within ninety days."
-  },
-  {
-    "class": "Not Addressed",
-    "rank": 2,
-    "rule_id": "DPDP_ACT-0034",
-    "coefficient": -0.06341440130033203,
-    "abs_coefficient": 0.06341440130033203,
-    "category": "Children/Vulnerable Groups",
-    "requirement": "A Data Fiduciary must obtain verifiable consent from the parent or lawful guardian of a child or person with disability before processing their personal data."
-  },
-  {
-    "class": "Not Addressed",
-    "rank": 3,
-    "rule_id": "DPDP_ACT-0019",
-    "coefficient": -0.06203892339635033,
-    "abs_coefficient": 0.06203892339635033,
-    "category": "Consent & Notice",
-    "requirement": "A Data Fiduciary must cease processing personal data of a Data Principal who has withdrawn consent, unless processing is required or authorized by law."
-  },
-  {
-    "class": "Not Addressed",
-    "rank": 4,
     "rule_id": "IT_ACT_2-0289",
-    "coefficient": -0.06179272791953753,
-    "abs_coefficient": 0.06179272791953753,
+    "coefficient": 0.05566289737140631,
+    "abs_coefficient": 0.05566289737140631,
     "category": "Intermediary/Platform Liability",
     "requirement": "Intermediaries must comply with government authorization to access protected systems."
   },
   {
-    "class": "Not Addressed",
-    "rank": 5,
-    "rule_id": "DPDP_ACT-0040",
-    "coefficient": -0.05892182144540962,
-    "abs_coefficient": 0.05892182144540962,
-    "category": "Data Principal Rights",
-    "requirement": "Data principals have the right to request access to their personal data from the data fiduciary."
+    "class": "Compliant",
+    "rank": 10,
+    "rule_id": "DPDP_RUL-0176",
+    "coefficient": -0.05530578803331606,
+    "abs_coefficient": 0.05530578803331606,
+    "category": "Security Safeguards",
+    "requirement": "Include appropriate provisions in contracts between data fiduciaries and data processors for taking reasonable security safeguards."
   },
   {
     "class": "Not Addressed",
-    "rank": 6,
+    "rank": 1,
+    "rule_id": "DPDP_RUL-0184",
+    "coefficient": -0.10645186069062511,
+    "abs_coefficient": 0.10645186069062511,
+    "category": "Data Retention & Erasure",
+    "requirement": "A Data Fiduciary must erase personal data upon completion of the specified retention period unless retention is necessary for legal compliance."
+  },
+  {
+    "class": "Not Addressed",
+    "rank": 2,
     "rule_id": "DPDP_ACT-0027",
-    "coefficient": -0.05395819499725966,
-    "abs_coefficient": 0.05395819499725966,
+    "coefficient": -0.08575946959367128,
+    "abs_coefficient": 0.08575946959367128,
     "category": "Data Retention & Erasure",
     "requirement": "A Data Fiduciary shall erase personal data upon the Data Principal withdrawing her consent."
   },
   {
     "class": "Not Addressed",
-    "rank": 7,
-    "rule_id": "IT_ACT_2-0307",
-    "coefficient": -0.053255133602870514,
-    "abs_coefficient": 0.053255133602870514,
+    "rank": 3,
+    "rule_id": "DPDP_ACT-0029",
+    "coefficient": -0.07926459828665729,
+    "abs_coefficient": 0.07926459828665729,
     "category": "Data Retention & Erasure",
-    "requirement": "Organizations must retain electronic records as required and ensure they are maintained securely."
+    "requirement": "A Data Fiduciary shall erase personal data upon receipt of a request for erasure unless retention is necessary for a specified purpose or for compliance with law."
+  },
+  {
+    "class": "Not Addressed",
+    "rank": 4,
+    "rule_id": "DPDP_RUL-0170",
+    "coefficient": -0.07111120678384364,
+    "abs_coefficient": 0.07111120678384364,
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "A Data Fiduciary must implement reasonable security safeguards to protect personal data in its possession or under its control, including any processing undertaken by it or on its behalf."
+  },
+  {
+    "class": "Not Addressed",
+    "rank": 5,
+    "rule_id": "DPDP_RUL-0202",
+    "coefficient": -0.0672010179315897,
+    "abs_coefficient": 0.0672010179315897,
+    "category": "Cross-Border Transfer",
+    "requirement": "Data Fiduciaries must meet requirements specified by the Central Government for transferring personal data outside the territory of India."
+  },
+  {
+    "class": "Not Addressed",
+    "rank": 6,
+    "rule_id": "DPDP_ACT-0019",
+    "coefficient": -0.06518240830993564,
+    "abs_coefficient": 0.06518240830993564,
+    "category": "Consent & Notice",
+    "requirement": "A Data Fiduciary must cease processing personal data of a Data Principal who has withdrawn consent, unless processing is required or authorized by law."
+  },
+  {
+    "class": "Not Addressed",
+    "rank": 7,
+    "rule_id": "DPDP_ACT-0025",
+    "coefficient": -0.06384742943462034,
+    "abs_coefficient": 0.06384742943462034,
+    "category": "Security Safeguards",
+    "requirement": "A Data Fiduciary shall protect personal data in its possession or under its control by taking reasonable security safeguards to prevent personal data breaches."
   },
   {
     "class": "Not Addressed",
     "rank": 8,
-    "rule_id": "DPDP_RUL-0184",
-    "coefficient": -0.05266007500199647,
-    "abs_coefficient": 0.05266007500199647,
-    "category": "Data Retention & Erasure",
-    "requirement": "A Data Fiduciary must erase personal data upon completion of the specified retention period unless retention is necessary for legal compliance."
+    "rule_id": "DPDP_ACT-0123",
+    "coefficient": 0.06300801213917137,
+    "abs_coefficient": 0.06300801213917137,
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "The Board may impose penalties under the Act if a data fiduciary breaches its provisions or the rules made thereunder, and the breach is deemed significant."
   },
   {
     "class": "Not Addressed",
     "rank": 9,
-    "rule_id": "DPDP_RUL-0175",
-    "coefficient": -0.051131083867527675,
-    "abs_coefficient": 0.051131083867527675,
-    "category": "Security Safeguards",
-    "requirement": "Retain logs and personal data for a period of one year for detecting unauthorized access, investigating it, and ensuring continued processing, unless required by law."
+    "rule_id": "IT_ACT_2-0288",
+    "coefficient": 0.05945299135157045,
+    "abs_coefficient": 0.05945299135157045,
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Intermediaries must not attempt to secure access to protected systems without authorization."
   },
   {
     "class": "Not Addressed",
     "rank": 10,
-    "rule_id": "DPDP_RUL-0173",
-    "coefficient": -0.05000185210720651,
-    "abs_coefficient": 0.05000185210720651,
+    "rule_id": "DPDP_RUL-0175",
+    "coefficient": -0.057168883101662314,
+    "abs_coefficient": 0.057168883101662314,
     "category": "Security Safeguards",
-    "requirement": "Maintain visibility on the accessing of personal data through appropriate logs, monitoring, and review to detect unauthorized access."
+    "requirement": "Retain logs and personal data for a period of one year for detecting unauthorized access, investigating it, and ensuring continued processing, unless required by law."
   },
   {
     "class": "Partially Compliant",
     "rank": 1,
+    "rule_id": "DPDP_RUL-0170",
+    "coefficient": 0.10536464928132466,
+    "abs_coefficient": 0.10536464928132466,
+    "category": "Significant Data Fiduciary Obligations",
+    "requirement": "A Data Fiduciary must implement reasonable security safeguards to protect personal data in its possession or under its control, including any processing undertaken by it or on its behalf."
+  },
+  {
+    "class": "Partially Compliant",
+    "rank": 2,
+    "rule_id": "DPDP_RUL-0184",
+    "coefficient": 0.09957991295441752,
+    "abs_coefficient": 0.09957991295441752,
+    "category": "Data Retention & Erasure",
+    "requirement": "A Data Fiduciary must erase personal data upon completion of the specified retention period unless retention is necessary for legal compliance."
+  },
+  {
+    "class": "Partially Compliant",
+    "rank": 3,
+    "rule_id": "IT_ACT_2-0289",
+    "coefficient": -0.09684462914230825,
+    "abs_coefficient": 0.09684462914230825,
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Intermediaries must comply with government authorization to access protected systems."
+  },
+  {
+    "class": "Partially Compliant",
+    "rank": 4,
     "rule_id": "DPDP_ACT-0029",
-    "coefficient": 0.09417709060969022,
-    "abs_coefficient": 0.09417709060969022,
+    "coefficient": 0.09192820193663442,
+    "abs_coefficient": 0.09192820193663442,
     "category": "Data Retention & Erasure",
     "requirement": "A Data Fiduciary shall erase personal data upon receipt of a request for erasure unless retention is necessary for a specified purpose or for compliance with law."
   },
   {
     "class": "Partially Compliant",
-    "rank": 2,
-    "rule_id": "DPDP_ACT-0048",
-    "coefficient": -0.08522739090788643,
-    "abs_coefficient": 0.08522739090788643,
-    "category": "Cross-Border Transfer",
-    "requirement": "The applicability of Indian laws providing higher protection for data transfers outside India is not restricted by this section."
-  },
-  {
-    "class": "Partially Compliant",
-    "rank": 3,
-    "rule_id": "DPDP_RUL-0184",
-    "coefficient": 0.06579146261592392,
-    "abs_coefficient": 0.06579146261592392,
-    "category": "Data Retention & Erasure",
-    "requirement": "A Data Fiduciary must erase personal data upon completion of the specified retention period unless retention is necessary for legal compliance."
-  },
-  {
-    "class": "Partially Compliant",
-    "rank": 4,
-    "rule_id": "DPDP_ACT-0019",
-    "coefficient": 0.06387151767848223,
-    "abs_coefficient": 0.06387151767848223,
-    "category": "Consent & Notice",
-    "requirement": "A Data Fiduciary must cease processing personal data of a Data Principal who has withdrawn consent, unless processing is required or authorized by law."
-  },
-  {
-    "class": "Partially Compliant",
     "rank": 5,
-    "rule_id": "DPDP_ACT-0010",
-    "coefficient": 0.06012436557155315,
-    "abs_coefficient": 0.06012436557155315,
-    "category": "Consent & Notice",
-    "requirement": "A Data Fiduciary must inform a Data Principal of the right to withdraw consent and the consequences of withdrawal."
+    "rule_id": "IT_ACT_2-0288",
+    "coefficient": -0.09187505150980493,
+    "abs_coefficient": 0.09187505150980493,
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Intermediaries must not attempt to secure access to protected systems without authorization."
   },
   {
     "class": "Partially Compliant",
     "rank": 6,
-    "rule_id": "DPDP_RUL-0277",
-    "coefficient": 0.06007019123302817,
-    "abs_coefficient": 0.06007019123302817,
-    "category": "Confidentiality & Misuse of Data",
-    "requirement": "Data fiduciaries must ensure the absence of conflict of interest in the performance of their functions."
+    "rule_id": "DPDP_RUL-0208",
+    "coefficient": 0.08825421400483702,
+    "abs_coefficient": 0.08825421400483702,
+    "category": "Consent & Notice",
+    "requirement": "The Consent Manager must enable individuals to give, manage, review, and withdraw their consent for the processing of their personal data."
   },
   {
     "class": "Partially Compliant",
     "rank": 7,
-    "rule_id": "DPDP_RUL-0227",
-    "coefficient": 0.057026500378939235,
-    "abs_coefficient": 0.057026500378939235,
-    "category": "Children/Vulnerable Groups",
-    "requirement": "A Data Fiduciary must ensure that any information, service, or advertisement likely to cause detrimental effects on a child's well-being is not accessible to the child."
+    "rule_id": "IT_ACT_2-0310",
+    "coefficient": -0.08652404764277517,
+    "abs_coefficient": 0.08652404764277517,
+    "category": "Breach Notification",
+    "requirement": "A breach of confidentiality and privacy must be reported under the IT Act 2000."
   },
   {
     "class": "Partially Compliant",
     "rank": 8,
-    "rule_id": "DPDP_RUL-0176",
-    "coefficient": 0.0530835227550404,
-    "abs_coefficient": 0.0530835227550404,
-    "category": "Security Safeguards",
-    "requirement": "Include appropriate provisions in contracts between data fiduciaries and data processors for taking reasonable security safeguards."
+    "rule_id": "IT_ACT_2-0290",
+    "coefficient": -0.08533128642520132,
+    "abs_coefficient": 0.08533128642520132,
+    "category": "Intermediary/Platform Liability",
+    "requirement": "Intermediaries must not disclose personal information of users without consent or in breach of a lawful contract, as this constitutes an offence under the IT Act 2000, Section 72A."
   },
   {
     "class": "Partially Compliant",
     "rank": 9,
-    "rule_id": "DPDP_RUL-0206",
-    "coefficient": 0.0517036344030072,
-    "abs_coefficient": 0.0517036344030072,
-    "category": "Significant Data Fiduciary Obligations",
-    "requirement": "Consent Managers must ensure that their platform enables Data Principals to give, manage, review, and withdraw consent in accordance with published data protection standards."
+    "rule_id": "DPDP_ACT-0020",
+    "coefficient": 0.08203250259943921,
+    "abs_coefficient": 0.08203250259943921,
+    "category": "Consent & Notice",
+    "requirement": "A Data Principal may give, manage, review, or withdraw consent through a Consent Manager."
   },
   {
     "class": "Partially Compliant",
     "rank": 10,
-    "rule_id": "DPDP_RUL-0201",
-    "coefficient": 0.04786559385227003,
-    "abs_coefficient": 0.04786559385227003,
-    "category": "Grievance Redressal",
-    "requirement": "Data Fiduciaries and Consent Managers must prominently publish on their website or app a grievance redressal system for responding to Data Principal grievances within ninety days."
+    "rule_id": "DPDP_RUL-0176",
+    "coefficient": 0.0806739062249473,
+    "abs_coefficient": 0.0806739062249473,
+    "category": "Security Safeguards",
+    "requirement": "Include appropriate provisions in contracts between data fiduciaries and data processors for taking reasonable security safeguards."
   }
 ]

@@ -31,10 +31,8 @@ import joblib
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
 from src.training.feature_extraction import extract_actionability_features
-from src.training.train_classifier import (
-    build_context_texts,
-    train_and_evaluate_fold,
-)
+from src.training.train_classifier import train_and_evaluate_fold
+from src.training.model_inputs import build_input_texts, model_inputs
 
 # Default paths
 DEFAULT_CORPUS_PATH = "corpus/labeled_clauses_bootstrap.csv"
@@ -97,8 +95,8 @@ def run_single_seed_cv(df, taxonomy, embedder, groups, args, seed):
     """Run 5-fold CV for a single seed."""
     tax_map = {item["taxonomy_id"]: item for item in taxonomy}
     
-    # Build context texts
-    context_texts = build_context_texts(df, tax_map)
+    # Build label-free input texts (clause_text only; MiniLM takes no prefix)
+    context_texts = build_input_texts(model_inputs(df))
     
     # Extract actionability features
     action_features = extract_actionability_features(df["clause_text"].values)
@@ -221,7 +219,7 @@ def main():
         print("\n[INFO] Computing near-duplicate groups (cosine >= 0.90)...")
         # Pre-compute embeddings for grouping
         tax_map = {item["taxonomy_id"]: item for item in taxonomy}
-        context_texts = build_context_texts(df, tax_map)
+        context_texts = build_input_texts(model_inputs(df))
         embeddings_for_grouping = embedder.encode(
             context_texts,
             show_progress_bar=True,

@@ -2,6 +2,7 @@
 Smoke Test: 20-clause parity between ClauseClassifier and API.
 
 Tests:
+0. Training/inference feature parity (predictor features == train_final_model features)
 1. Direct ClauseClassifier predictions
 2. API predictions via HTTP
 3. Compare results for consistency
@@ -23,6 +24,8 @@ project_root = Path(__file__).parent
 sys.path.insert(0, str(project_root))
 
 from src.inference.predictor import ClauseClassifier
+from src.training.model_inputs import model_inputs
+from src.training.train_final_model import build_feature_matrix
 
 print("=" * 80)
 print("20-CLAUSE SMOKE TEST: ClauseClassifier vs API")
@@ -46,6 +49,26 @@ print(f"  - 5 Not Addressed")
 # Initialize ClauseClassifier
 print(f"\n[INFO] Initializing ClauseClassifier...")
 classifier = ClauseClassifier()
+
+# Test 0: training/inference feature parity
+print(f"\n{'='*80}")
+print("TEST 0: Training vs Inference Feature Parity")
+print('='*80)
+
+train_parts = build_feature_matrix(model_inputs(test_df), classifier.taxonomy)
+X_train_features = np.hstack(train_parts)
+X_infer_features = np.vstack([
+    classifier._build_features(row["clause_text"], row.get("app_name", "Platform"))
+    for _, row in test_df.iterrows()
+])
+feature_max_diff = float(np.max(np.abs(X_train_features - X_infer_features)))
+train_probs = classifier.model.predict_proba(classifier.scaler.transform(X_train_features))
+infer_probs = classifier.model.predict_proba(classifier.scaler.transform(X_infer_features))
+prob_max_diff = float(np.max(np.abs(train_probs - infer_probs)))
+feature_parity = feature_max_diff < 1e-4 and prob_max_diff < 1e-3
+print(f"  Max |feature diff|:     {feature_max_diff:.2e}")
+print(f"  Max |probability diff|: {prob_max_diff:.2e}")
+print(f"  {'✓' if feature_parity else '✗'} Feature parity {'OK' if feature_parity else 'FAILED'}")
 
 # Test 1: Direct classifier predictions
 print(f"\n{'='*80}")
@@ -196,11 +219,15 @@ print(f"\nLatency:")
 print(f"  Classifier: {avg_classifier_latency:.1f}ms avg")
 print(f"  API:        {avg_api_latency:.1f}ms avg")
 print(f"  Overhead:   {avg_api_latency - avg_classifier_latency:.1f}ms")
+print(f"\nTraining/inference feature parity: {'OK' if feature_parity else 'FAILED'} (max feature diff {feature_max_diff:.2e})")
 print(f"\nParity:")
 print(f"  Exact matches: {matches}/20 ({matches/20*100:.1f}%)")
 print(f"  Discrepancies: {len(mismatches)}/20 ({len(mismatches)/20*100:.1f}%)")
 
-if matches == 20:
+if not feature_parity:
+    print(f"\n✗ SMOKE TEST FAILED - Training and inference features differ")
+    exit_code = 1
+elif matches == 20:
     print(f"\n✓ SMOKE TEST PASSED - Perfect parity!")
     exit_code = 0
 elif matches >= 18:

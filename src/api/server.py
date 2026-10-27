@@ -13,6 +13,12 @@ import pandas as pd
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
+import sys
+
+# Project root on sys.path before importing src.* (needed for `python src/api/server.py`)
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
 
 # Import ClauseClassifier (single source of truth)
 from src.inference.predictor import ClauseClassifier

@@ -6,16 +6,23 @@
     "all_rules_similarity": 49
   },
   "encoder_model": "intfloat/e5-base-v2",
+  "input_text": {
+    "format": "encoder_prefix + clause_text",
+    "encoder_prefix": "query: ",
+    "include_app_name": false,
+    "llm_output_columns_used": false,
+    "builder": "src/training/model_inputs.py:build_input_texts"
+  },
   "actionability_features_list": [
-    "clause_word_count",
-    "policy_word_count",
-    "has_shall",
-    "has_must",
-    "has_will",
-    "has_should",
-    "has_may",
-    "has_can"
+    "hedge_density",
+    "action_verb_count",
+    "has_ui_path",
+    "has_contact_mechanism",
+    "has_timeline_sla",
+    "commitment_ratio",
+    "clause_length_norm",
+    "parental_verification_marker"
   ],
   "all_rules_mode": "full (requirement field from taxonomy)",
-  "all_rules_details": "38 rule similarities + 11 category max similarities = 49 features"
+  "all_rules_details": "38 rule similarities + 11 category max similarities (categories in sorted order) = 49 features"
 }

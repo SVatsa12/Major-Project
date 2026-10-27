@@ -1,4 +1,6 @@
 {
-  "tau_compliant": 0.5,
-  "tau_partial": 0.5
+  "tau_compliant": 0.49999999999999994,
+  "tau_partial": 0.25,
+  "inner_cv_best_macro_f1": 0.6017939410064103,
+  "compliant_precision_constraint_met": true
 }

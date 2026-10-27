@@ -23,6 +23,8 @@ sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 from src.evaluation.feature_variants import FEATURE_EXTRACTORS
 from src.training.train_classifier import train_and_evaluate_fold
 from src.training.two_stage_classifier import train_two_stage_fold
+from src.training.model_inputs import model_inputs
+from src.evaluation.fold_metrics import fold_metrics
 
 OUTPUT_DIR = Path("reports/experiments")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -115,18 +117,13 @@ def run_single_seed_cv(df, taxonomy, feature_data, args, seed, two_stage=False):
         
         test_preds = result["predictions"]
         
-        # Compute metrics
-        f1 = f1_score(y_test, test_preds, average="macro", zero_division=0)
-        acc = accuracy_score(y_test, test_preds)
-        
         all_true_labels.extend(y_test)
         all_pred_labels.extend(test_preds)
         
         fold_results.append({
             "fold": fold_idx,
             "seed": seed,
-            "macro_f1": float(f1),
-            "accuracy": float(acc),
+            **fold_metrics(y_test, test_preds),
         })
     
     # Compute per-class metrics
@@ -178,10 +175,10 @@ def main():
             encoder_name = "pairing_e5_b2a"
         else:
             encoder_name = args.features.replace("two_stage_", "pairing_")
-        feature_data = FEATURE_EXTRACTORS[encoder_name](df, taxonomy)
+        feature_data = FEATURE_EXTRACTORS[encoder_name](model_inputs(df), taxonomy)
         description = feature_data["description"] + " [TWO-STAGE]"
     else:
-        feature_data = FEATURE_EXTRACTORS[args.features](df, taxonomy)
+        feature_data = FEATURE_EXTRACTORS[args.features](model_inputs(df), taxonomy)
         description = feature_data["description"]
     
     print(f"[INFO] Feature description: {description}")

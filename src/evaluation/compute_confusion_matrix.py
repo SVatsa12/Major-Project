@@ -2,6 +2,10 @@
 src/evaluation/compute_confusion_matrix.py
 Compute confusion matrix for the final model (E5+8+all-rules) on confirmation folds
 by re-running predictions on those folds.
+
+Uses exactly the features and per-fold classifier of
+run_confirmation_experiments.py --variant all_rules (label-free inputs:
+"query: " + clause_text), so the figure matches the reported table.
 """
 
 import json
@@ -10,8 +14,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.metrics import confusion_matrix
-from sklearn.linear_model import LogisticRegression
-from sentence_transformers import SentenceTransformer
 
 # Import project modules
 import sys
@@ -19,9 +21,10 @@ from pathlib import Path
 project_root = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(project_root))
 
-from src.training.feature_extraction import extract_actionability_features
-from src.training.train_classifier import build_context_texts, train_and_evaluate_fold
+from src.training.model_inputs import model_inputs
+from src.evaluation.feature_variants import extract_encoder_swap_features
 from src.evaluation.incremental_features import extract_all_rules_similarity
+from src.evaluation.run_confirmation_experiments import run_single_fold
 
 
 def main():
@@ -61,27 +64,12 @@ def main():
     
     print(f"[INFO] Loaded {len(confirm_folds)} confirmation folds")
     
-    # Load embedder
-    print("[INFO] Loading E5-small embedder...")
-    embedder = SentenceTransformer("intfloat/e5-small-v2")
-    
-    # Build features
-    tax_map = {item["taxonomy_id"]: item for item in taxonomy}
-    context_texts = build_context_texts(df, tax_map)
-    
-    print("[INFO] Generating embeddings...")
-    embeddings = embedder.encode(
-        context_texts,
-        show_progress_bar=True,
-        convert_to_numpy=True,
-        normalize_embeddings=True
-    )
-    
-    print("[INFO] Extracting actionability features...")
-    action_features = extract_actionability_features(df["clause_text"].values)
-    
-    print("[INFO] Computing all-rules similarity features...")
-    all_rules_features = extract_all_rules_similarity(df, taxonomy, "intfloat/e5-small-v2", rule_text_mode="full")
+    # Build features (label-free: only clause_text/app_name reach the builders)
+    inputs = model_inputs(df)
+    encoder_name = "intfloat/e5-base-v2"
+    feature_data = extract_encoder_swap_features(inputs, taxonomy, encoder_name)
+    all_rules_features = extract_all_rules_similarity(inputs, taxonomy, encoder_name, rule_text_mode="full")
+    all_features = np.hstack([feature_data["embeddings"], feature_data["structured"], all_rules_features])
     
     y_all = df["verdict"].values
     
@@ -95,28 +83,14 @@ def main():
         seed = fold_info["seed"]
         train_idx = np.array(fold_info["train_idx"])
         test_idx = np.array(fold_info["test_idx"])
-        
-        # Split data
-        X_train_embedding = embeddings[train_idx]
-        X_test_embedding = embeddings[test_idx]
-        X_train_action = action_features[train_idx]
-        X_test_action = action_features[test_idx]
-        X_train_rules = all_rules_features[train_idx]
-        X_test_rules = all_rules_features[test_idx]
-        y_train = y_all[train_idx]
         y_test = y_all[test_idx]
         
-        # Combine features: embedding + action + all_rules
-        X_train = np.hstack([X_train_embedding, X_train_action, X_train_rules])
-        X_test = np.hstack([X_test_embedding, X_test_action, X_test_rules])
-        
-        # Prepare data dict for training
-        X_train_dict = {"embedding": X_train_embedding, "features": X_train_action, "all_rules": X_train_rules}
-        X_test_dict = {"embedding": X_test_embedding, "features": X_test_action, "all_rules": X_test_rules}
-        
-        # Train and get predictions
-        result = train_and_evaluate_fold(X_train_dict, y_train, X_test_dict, y_test, inner_cv_splits=3)
-        test_preds = result["predictions"]
+        result = run_single_fold(
+            all_features[train_idx], y_all[train_idx],
+            all_features[test_idx], y_test,
+            fold_info["fold"], seed
+        )
+        test_preds = result["y_pred"]
         
         all_y_true.extend(y_test)
         all_y_pred.extend(test_preds)
