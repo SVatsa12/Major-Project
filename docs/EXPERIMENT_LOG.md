@@ -54,6 +54,53 @@ Mean ± std over folds. Result files: `reports/experiments/**/*_labelfree.json`;
 
 `models/final_classifier/`: E5+8+all-rules (825 features) trained on all 826 clauses with `"query: " + clause_text` inputs, the same feature functions as evaluation, and thresholds tuned by real 3-fold inner CV (refit per inner fold, `tune_thresholds_inner_cv`): τ_compliant = 0.50, τ_partial = 0.25. No probability calibration. The 8 true actionability feature names are in `feature_config.json`. The 20-clause smoke test passes: training vs inference features max |diff| 4.2e-7, classifier vs API 20/20 identical.
 
+### Label-free variants of the final model (2026-10-27, VALID)
+
+**Script**: `python src/evaluation/run_honest_variants.py`. **Results**: `reports/experiments/confirmation/honest_*.json` (per-fold metrics and predictions, pooled confusion matrix) and `reports/experiments/honest_variants_summary.{csv,md}`.
+
+Same confirmation folds (`confirm_folds_v1.json`, seeds 45–49, 25 folds), same labels, clause text only (no LLM columns). Each variant changes one thing against the current final model (E5+8+all-rules, LogReg C=1, balanced). Every model is a Pipeline, so the TF-IDF vectorizer and RobustScaler are refit on the training rows of each outer fold, each inner C-selection fold and each inner threshold-tuning fold. Thresholds use the existing `tune_thresholds_inner_cv`.
+
+**1. Current final model: per-class report (25 folds, mean ± std)**
+
+| Decision rule | Macro-F1 | NA P / R / F1 | Partial P / R / F1 | Compliant P / R / F1 |
+|---|---|---|---|---|
+| argmax (as reported, reproduces 0.6106) | 0.6106 ± 0.0323 | 0.855 / 0.846 / 0.850 | 0.367 / 0.386 / 0.372 | 0.619 / 0.619 / 0.610 |
+| inner-CV thresholds (**v1, reference below**) | 0.6132 ± 0.0344 | 0.863 / 0.823 / 0.841 | 0.355 / 0.438 / 0.387 | 0.646 / 0.601 / 0.612 |
+
+Pooled confusion matrix, v1 (rows = true, columns = predicted; row-normalised recall in brackets):
+
+| | Not Addressed | Partially Compliant | Compliant |
+|---|---|---|---|
+| **Not Addressed** (2930) | **2413** (0.824) | 448 (0.153) | 69 (0.024) |
+| **Partially Compliant** (715) | 299 (0.418) | **316** (0.442) | 100 (0.140) |
+| **Compliant** (485) | 74 (0.153) | 124 (0.256) | **287** (0.592) |
+
+**Variants (confirmation folds; Δ and two-sided paired Wilcoxon p are against v1 over the 25 folds)**
+
+| Variant | Macro-F1 | NA F1 | Partial F1 | Compliant F1 | Δ vs v1 (wins/25) | p |
+|---|---|---|---|---|---|---|
+| ref: final model, argmax | 0.6106 ± 0.0323 | 0.8498 ± 0.0229 | 0.3718 ± 0.0845 | 0.6102 ± 0.0722 | −0.0026 (10) | 0.44 |
+| v1: final model, inner-CV thresholds | 0.6132 ± 0.0344 | 0.8414 ± 0.0263 | 0.3865 ± 0.0817 | 0.6118 ± 0.0746 | — | — |
+| v2: TF-IDF + LogReg alone | 0.6148 ± 0.0364 | 0.8304 ± 0.0436 | 0.3839 ± 0.0706 | 0.6302 ± 0.0694 | +0.0016 (12) | 0.81 |
+| v3: TF-IDF + E5+8+all-rules | 0.6170 ± 0.0339 | 0.8423 ± 0.0252 | 0.3917 ± 0.0817 | 0.6170 ± 0.0755 | +0.0037 (10) | 0.11 |
+| v4: C ∈ {0.1, 0.3, 1, 3} by inner CV | 0.6250 ± 0.0346 | 0.8385 ± 0.0291 | 0.4087 ± 0.0846 | 0.6279 ± 0.0702 | +0.0118 (17) | 0.012 |
+| **v5: two-step on v4** | **0.6370 ± 0.0387** | 0.8598 ± 0.0257 | 0.4075 ± 0.0850 | 0.6439 ± 0.0742 | +0.0238 (19) | 0.002 |
+
+v5 two-step details: step (a) Not Addressed vs Addressed macro-F1 **0.7658 ± 0.0359**; step (b) Partially Compliant vs Compliant on truly-Addressed test rows **0.7401 ± 0.0569**; combined 3-class macro-F1 **0.6370 ± 0.0387**. v5 vs v4: +0.0120, p = 0.071.
+
+**Findings**
+- TF-IDF alone matches the E5 model (0.6148 vs 0.6132). Stacking TF-IDF onto E5+8+all-rules adds +0.004, which is not significant (p = 0.11). Lexical features carry about the same signal as the embeddings.
+- Stronger regularisation helps: inner CV picks C = 0.1 in 19 of 25 folds (0.3 ×4, 1 ×1, 3 ×1), giving +0.012 (17/25 wins, p = 0.012), mostly on Partially Compliant F1 (0.387 → 0.409).
+- The two-step model is the best variant: +0.024 over v1 (19/25 wins, p = 0.002). Most of the gain is on Not Addressed and Compliant F1. Its improvement over the one-step v4 (+0.012, p = 0.07) is not significant.
+- The bottleneck is unchanged: Partially Compliant F1 stays at about 0.39–0.41 in every variant, and 42% of Partially Compliant clauses are still predicted Not Addressed.
+- Thresholds vs argmax for the current model: +0.003, not significant (p = 0.44).
+
+**Caveats**
+- Variant 5's base config (v4) was chosen as the best of v1–v4 by mean macro-F1 on these same confirmation folds, so the v5 figure carries a small selection bias. Confirm it on the training folds (seeds 42–44) before adopting it.
+- The binary thresholds in v5 come from `tune_binary_threshold_inner_cv`, a binary analogue of `tune_thresholds_inner_cv` (same inner split, refit per inner fold, same best-inner-fold selection, τ ∈ [0.20, 0.80), no precision constraint). C is selected by mean inner-fold argmax macro-F1, with ties going to the smaller C.
+- In v3, TF-IDF columns are L2-normalised and unscaled, while dense columns are RobustScaled. Under a single L2 penalty the two blocks are not equally weighted. This scaling was not tuned.
+- Nothing was retrained: `models/final_classifier/` is still v1 (C = 1, one-step).
+
 ---
 
 
