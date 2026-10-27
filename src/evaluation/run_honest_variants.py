@@ -18,8 +18,13 @@ threshold tuning -- refits the vectorizer and scaler on its own training rows
 only. Only clause_text reaches the features (model_inputs + label-free guard).
 
 Run: python src/evaluation/run_honest_variants.py
+     (confirmation folds, all variants; v5 uses the best of v1-v4)
+Training folds, v1 + v5 on a pre-specified base:
+     python src/evaluation/run_honest_variants.py --folds datasets/folds/fixed_folds_v1.json \
+         --variants v1_final,v5_two_step --two-step-base v4_C_select --suffix train
 """
 
+import argparse
 import json
 import sys
 from datetime import datetime
@@ -209,19 +214,32 @@ def print_class_report(title, results):
     for cls, key in CLASS_KEYS:
         print(f"{cls:<22}" + "".join(
             f"{agg[f'{key}_{m}_mean']:>10.4f} ± {agg[f'{key}_{m}_std']:.3f}" for m in ("precision", "recall", "f1")))
-    print("\nPooled confusion matrix over 25 folds (rows = true, cols = predicted):")
+    print(f"\nPooled confusion matrix over {len(results)} folds (rows = true, cols = predicted):")
     print(pd.DataFrame(cm, index=CLASSES, columns=CLASSES).to_string())
     print("\nRow-normalised (recall):")
     print(pd.DataFrame(cm / cm.sum(axis=1, keepdims=True), index=CLASSES, columns=CLASSES).round(3).to_string())
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--folds", default="datasets/folds/confirm_folds_v1.json")
+    parser.add_argument("--variants", default="all",
+                        help="comma list of ref_argmax,v1_final,v2_tfidf,v3_tfidf_stacked,v4_C_select,v5_two_step")
+    parser.add_argument("--two-step-base", default="auto",
+                        help="config for v5; 'auto' = best mean macro-F1 among the v1-v4 variants that were run")
+    parser.add_argument("--suffix", default="", help="appended to output names, e.g. 'train'")
+    args = parser.parse_args()
+
     df = pd.read_csv("corpus/labeled_clauses_bootstrap.csv")
     taxonomy = json.loads(Path("corpus/dpdp_taxonomy_final.json").read_text(encoding="utf-8"))
-    folds_data = json.loads(Path("datasets/folds/confirm_folds_v1.json").read_text())
+    folds_data = json.loads(Path(args.folds).read_text())
     folds = [{"seed": int(s), **f} for s, fs in folds_data["seeds"].items() for f in fs]
+    seeds = [int(s) for s in folds_data["seeds"]]
     y = df["verdict"].values
-    print(f"[INFO] {len(df)} clauses, {len(folds)} confirmation folds (seeds {list(folds_data['seeds'])})")
+    n_folds = len(folds)
+    suffix = f"_{args.suffix}" if args.suffix else ""
+    output_dir = OUTPUT_DIR if "confirm" in Path(args.folds).name else Path("reports/experiments")
+    print(f"[INFO] {len(df)} clauses, {n_folds} folds from {args.folds} (seeds {seeds})")
 
     # Label-free inputs only
     inputs = model_inputs(df)
@@ -246,22 +264,35 @@ def main():
                             description="E5+8+all-rules, LogReg C in {0.1,0.3,1,3} by inner CV, inner-CV thresholds"),
     }
 
+    requested = list(configs) + ["v5_two_step"] if args.variants == "all" else args.variants.split(",")
+    unknown = set(requested) - set(configs) - {"v5_two_step"}
+    assert not unknown, f"Unknown variants: {unknown}"
+    assert "v1_final" in requested, "v1_final is the reference and must be run"
+
     all_results = {}
     for name, cfg in configs.items():
+        if name not in requested:
+            continue
         print(f"\n[RUN] {name}: {cfg['description']}")
         all_results[name] = run_three_class(cfg["X"], y, folds, cfg["model"], cfg["Cs"], cfg["decision"])
         if name == "v1_final":
-            print_class_report("1. CURRENT FINAL MODEL, argmax (as reported)", all_results["ref_argmax"])
+            if "ref_argmax" in all_results:
+                print_class_report("1. CURRENT FINAL MODEL, argmax (as reported)", all_results["ref_argmax"])
             print_class_report("1. CURRENT FINAL MODEL, inner-CV thresholds (reference for v2-v5)", all_results["v1_final"])
 
-    # 5. Two-step on the best single-model variant among v1-v4
-    candidates = ["v1_final", "v2_tfidf", "v3_tfidf_stacked", "v4_C_select"]
-    best = max(candidates, key=lambda n: np.mean([r["macro_f1"] for r in all_results[n]]))
-    cfg = configs[best]
-    print(f"\n[RUN] v5_two_step on best config: {best}")
-    all_results["v5_two_step"] = run_two_step(cfg["X"], y, folds, cfg["model"], cfg["Cs"])
-    configs["v5_two_step"] = dict(description=f"Two-step on {best}: (a) NA vs Addressed, (b) Partial vs Compliant "
-                                              f"(truly-Addressed rows), binary inner-CV thresholds", Cs=cfg["Cs"])
+    # 5. Two-step on the best single-model variant among v1-v4 (or a pre-specified base)
+    best = None
+    if "v5_two_step" in requested:
+        if args.two_step_base == "auto":
+            candidates = [n for n in ["v1_final", "v2_tfidf", "v3_tfidf_stacked", "v4_C_select"] if n in all_results]
+            best = max(candidates, key=lambda n: np.mean([r["macro_f1"] for r in all_results[n]]))
+        else:
+            best = args.two_step_base
+        cfg = configs[best]
+        print(f"\n[RUN] v5_two_step on {'best' if args.two_step_base == 'auto' else 'pre-specified'} config: {best}")
+        all_results["v5_two_step"] = run_two_step(cfg["X"], y, folds, cfg["model"], cfg["Cs"])
+        configs["v5_two_step"] = dict(description=f"Two-step on {best}: (a) NA vs Addressed, (b) Partial vs Compliant "
+                                                  f"(truly-Addressed rows), binary inner-CV thresholds", Cs=cfg["Cs"])
 
     # Save per-variant JSON + summary table
     reference = np.array([r["macro_f1"] for r in all_results["v1_final"]])
@@ -272,9 +303,9 @@ def main():
         f1s = np.array([r["macro_f1"] for r in results])
         diff = f1s - reference
         data = {
-            "tag": f"honest_{name}", "variant": name, "description": configs[name]["description"],
+            "tag": f"honest_{name}{suffix}", "variant": name, "description": configs[name]["description"],
             "timestamp": datetime.now().isoformat(),
-            "config": {"folds": "datasets/folds/confirm_folds_v1.json", "seeds": [45, 46, 47, 48, 49],
+            "config": {"folds": args.folds, "seeds": seeds,
                        "n_folds": len(results), "C_grid": configs[name]["Cs"],
                        "input_text": "clause_text only (label-free, src/training/model_inputs.py)"},
             "aggregates": agg,
@@ -286,13 +317,14 @@ def main():
         }
         if name == "v5_two_step":
             data["config"]["best_config"] = best
-        (OUTPUT_DIR / f"honest_{name}.json").write_text(json.dumps(data, indent=2))
+            data["config"]["base_selection"] = "auto (best of run variants)" if args.two_step_base == "auto" else "pre-specified"
+        (output_dir / f"honest_{name}{suffix}.json").write_text(json.dumps(data, indent=2))
 
         row = {"variant": name, "description": configs[name]["description"],
                "macro_f1": f"{agg['macro_f1_mean']:.4f} ± {agg['macro_f1_std']:.4f}"}
         for cls, key in CLASS_KEYS:
             row[f"{cls} F1"] = f"{agg[f'{key}_f1_mean']:.4f} ± {agg[f'{key}_f1_std']:.4f}"
-        row["Δ vs v1 (wins/25)"] = f"{diff.mean():+.4f} ({int((diff > 0).sum())}/25)"
+        row[f"Δ vs v1 (wins/{n_folds})"] = f"{diff.mean():+.4f} ({int((diff > 0).sum())}/{n_folds})"
         row["Wilcoxon p vs v1"] = f"{wilcoxon(diff).pvalue:.4f}" if diff.any() else ""
         if extra:
             row["step (a) macro-F1"] = f"{agg['step_a_macro_f1_mean']:.4f} ± {agg['step_a_macro_f1_std']:.4f}"
@@ -303,13 +335,14 @@ def main():
         rows.append(row)
 
     table = pd.DataFrame(rows)
-    table.to_csv(f"{SUMMARY_PREFIX}.csv", index=False)
+    summary_prefix = f"{SUMMARY_PREFIX}{suffix}"
+    table.to_csv(f"{summary_prefix}.csv", index=False)
     md_rows = [list(table.columns), ["---"] * len(table.columns)] + table.fillna("").astype(str).values.tolist()
-    Path(f"{SUMMARY_PREFIX}.md").write_text(
+    Path(f"{summary_prefix}.md").write_text(
         "\n".join("| " + " | ".join(r) + " |" for r in md_rows) + "\n", encoding="utf-8")
-    print(f"\n{'=' * 100}\nSUMMARY (confirmation folds, seeds 45-49, 25 folds)\n{'=' * 100}")
+    print(f"\n{'=' * 100}\nSUMMARY ({args.folds}, seeds {seeds}, {n_folds} folds)\n{'=' * 100}")
     print(table.drop(columns=["description"]).fillna("").to_string(index=False))
-    print(f"\n[SUCCESS] Saved {OUTPUT_DIR}/honest_*.json and {SUMMARY_PREFIX}.csv/.md")
+    print(f"\n[SUCCESS] Saved {output_dir}/honest_*{suffix}.json and {summary_prefix}.csv/.md")
 
 
 if __name__ == "__main__":

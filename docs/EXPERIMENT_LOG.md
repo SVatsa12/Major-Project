@@ -96,10 +96,33 @@ v5 two-step details: step (a) Not Addressed vs Addressed macro-F1 **0.7658 ± 0.
 - Thresholds vs argmax for the current model: +0.003, not significant (p = 0.44).
 
 **Caveats**
-- Variant 5's base config (v4) was chosen as the best of v1–v4 by mean macro-F1 on these same confirmation folds, so the v5 figure carries a small selection bias. Confirm it on the training folds (seeds 42–44) before adopting it.
+- Variant 5's base config (v4) was chosen as the best of v1–v4 by mean macro-F1 on these same confirmation folds, so the v5 figure carries a small selection bias. The training-fold check below does not reproduce a significant gain.
 - The binary thresholds in v5 come from `tune_binary_threshold_inner_cv`, a binary analogue of `tune_thresholds_inner_cv` (same inner split, refit per inner fold, same best-inner-fold selection, τ ∈ [0.20, 0.80), no precision constraint). C is selected by mean inner-fold argmax macro-F1, with ties going to the smaller C.
 - In v3, TF-IDF columns are L2-normalised and unscaled, while dense columns are RobustScaled. Under a single L2 penalty the two blocks are not equally weighted. This scaling was not tuned.
 - Nothing was retrained: `models/final_classifier/` is still v1 (C = 1, one-step).
+
+#### Training-fold check of v5 (2026-10-27)
+
+**Command**: `python src/evaluation/run_honest_variants.py --folds datasets/folds/fixed_folds_v1.json --variants v1_final,v5_two_step --two-step-base v4_C_select --suffix train`  
+**Results**: `reports/experiments/honest_v1_final_train.json`, `reports/experiments/honest_v5_two_step_train.json`, `reports/experiments/honest_variants_summary_train.{csv,md}`.
+
+Same script settings as the confirmation run, on `fixed_folds_v1.json` (seeds 42–44, 15 folds). v5's base is fixed in advance to v4 (C ∈ {0.1, 0.3, 1, 3} by inner CV), so no variant selection happens on these folds.
+
+| Variant (training folds, 15) | Macro-F1 | NA P / R / F1 | Partial P / R / F1 | Compliant P / R / F1 | Δ vs v1 (wins/15) | p |
+|---|---|---|---|---|---|---|
+| v1: final model, inner-CV thresholds | 0.6134 ± 0.0286 | 0.851 / 0.830 / 0.839 | 0.366 / 0.443 / 0.394 | 0.666 / 0.574 / 0.607 | — | — |
+| v5: two-step on v4 | 0.6263 ± 0.0339 | 0.863 / 0.862 / 0.861 | 0.405 / 0.441 / 0.414 | 0.654 / 0.572 / 0.604 | +0.0129 (9 wins, 6 losses) | 0.25 |
+
+v5 step (a), Not Addressed vs Addressed: macro-F1 0.7651 ± 0.0282. Step (b), Partially Compliant vs Compliant on truly-Addressed rows: 0.7200 ± 0.0580. C chosen across the 30 per-step selections: 0.1 ×17, 0.3 ×8, 3 ×5.
+
+v1 pooled confusion matrix (training folds; rows = true, row-normalised recall in brackets): Not Addressed 1456 (0.828) / 267 / 35; Partially Compliant 187 / 190 (0.443) / 52; Compliant 57 / 68 / 166 (0.570).
+
+**Conclusion**
+- **v1 is stable across fold sets:** 0.6134 on training folds vs 0.6132 on confirmation folds.
+- **v5's gain is about half as large and not significant:** +0.013 on training folds (9/15 wins, p = 0.25), against +0.024 (19/25, p = 0.002) on confirmation folds.
+- **Where the gain comes from:** on both fold sets it is on Not Addressed and Partially Compliant F1. Compliant F1 is flat on training folds (0.607 → 0.604).
+- **Pooled estimate:** over all 40 folds v5 − v1 = +0.0197 (28/40 wins, paired Wilcoxon p = 0.001). That pooled test includes the 25 confirmation folds that were used to choose v5's base, so it overstates the evidence.
+- **Verdict:** on the independent 15 training folds alone the gain is not significant. A modest real improvement (about +0.01 to +0.02) is plausible but not established well enough to replace the final model on this evidence alone.
 
 ---
 
