@@ -4,13 +4,15 @@ Automated classification of privacy policy clauses for compliance with India's D
 
 ## Paper Results
 
-This repository contains the code and data to reproduce the results from our paper. The final model achieves **0.8132 ± 0.030 macro-F1** on confirmation folds (seeds 45-49) using:
+> **⛔ Earlier results are INVALID (label leakage, found 2026-10-27).** All numbers published before commit `359f281`, including the former headline **0.8132 ± 0.030** macro-F1, used model inputs that contained the LLM-chosen rule (`build_context_texts`). That rule is `NONE` exactly when the label is "Not Addressed", so the label leaked into every input. Do not cite them. The valid label-free results are in `docs/EXPERIMENT_LOG.md` ("Label-free results") and `reports/paper/`.
+
+This repository contains the code and data to reproduce the results from our paper. With label-free inputs (`"query: " + clause_text`), the final model achieves **0.6106 ± 0.0323 macro-F1** on confirmation folds (seeds 45-49) using:
 - **E5-base embeddings** (768 dims)
 - **8 actionability features** (structured)
 - **All-rules similarity features** (49 dims)
 - **Total**: 825 features
 
-**Tag**: `paper-results-v1` — State that produced all paper results  
+**Tag**: ~~`paper-results-v1`~~ — ⛔ INVALID (label leakage): produced the old leaky results; do not use it to reproduce results  
 **Paper Deliverables**: `reports/paper/` — Tables, confusion matrix, comparisons, feature analysis
 
 ## Quick Start
@@ -28,7 +30,7 @@ pip install -r requirements.txt
 # 1. Confirmation fold evaluation (seeds 45-49, 25 folds) - PRIMARY
 python src/evaluation/run_confirmation_experiments.py \
   --variant all_rules \
-  --tag confirm_all_rules_corrected
+  --tag confirm_all_rules_labelfree
 
 # 2. Generate paper tables (CSV + LaTeX)
 python src/evaluation/generate_paper_results.py
@@ -135,18 +137,18 @@ python src/training/train_final_model.py
 
 ## Verification
 
-To verify the paper results match the tagged state:
+To verify the label-free results (run from `taxonomy-v2` at or after `359f281`; the `paper-results-v1` tag is ⛔ INVALID, label leakage):
 
 ```bash
-# 1. Check out the paper results tag
-git checkout paper-results-v1
+# 1. Label-leakage guard tests
+python -m unittest discover -s tests -v
 
 # 2. Re-run confirmation evaluation (seeds 45-49)
 python src/evaluation/run_confirmation_experiments.py \
   --variant all_rules \
   --tag verify_confirm
 
-# 3. Compare macro-F1 (should match to 4 decimals: 0.8132)
+# 3. Compare macro-F1 (should match to 4 decimals: 0.6106)
 python -c "
 import json
 with open('reports/experiments/confirmation/verify_confirm.json') as f:
@@ -155,13 +157,13 @@ with open('reports/experiments/confirmation/verify_confirm.json') as f:
 "
 ```
 
-Expected output: `Macro-F1: 0.8132`
+Expected output: `Macro-F1: 0.6106` (the old `0.8132` is ⛔ INVALID, label leakage)
 
 ## Features
 
 ### Embedding Features (768 dims)
 - **Encoder**: intfloat/e5-base-v2
-- **Input**: Context-formatted strings (category + clause text)
+- **Input**: `"query: " + clause_text` only (label-free; `src/training/model_inputs.py`, guarded by `tests/test_label_leakage.py`)
 - **Pooling**: Mean pooling, L2-normalized
 
 ### Structured Features (8 dims)
@@ -184,7 +186,7 @@ Expected output: `Macro-F1: 0.8132`
 ```
 Input: Privacy policy clause text
   ↓
-Context Formatting: "{category} {clause_text}"
+Label-free input: "query: " + clause_text
   ↓
 E5-base Encoder (768 dims) + Actionability Features (8 dims) + All-Rules Similarity (49 dims)
   ↓
@@ -201,24 +203,31 @@ Output: {Not Addressed, Partially Compliant, Compliant}
 
 ### Confirmation Folds (seeds 45-49, 25 folds) - PRIMARY
 
+Label-free inputs (`*_labelfree` runs). Full per-class P/R/F1 and the 40-fold pooled table: `reports/paper/` and `docs/EXPERIMENT_LOG.md`.
+
 | Metric | Baseline (MiniLM+8) | E5+8 | E5+8+all-rules (FINAL) |
 |--------|---------------------|------|------------------------|
-| Accuracy | 0.8740 ± 0.033 | 0.9182 ± 0.020 | **0.9166 ± 0.019** |
-| Macro-F1 | 0.7347 ± 0.052 | 0.8160 ± 0.034 | **0.8132 ± 0.030** |
-| Compliant F1 | 0.5471 ± 0.109 | 0.6728 ± 0.082 | **0.6688 ± 0.073** |
+| Accuracy | 0.7096 ± 0.0308 | 0.7391 ± 0.0327 | 0.7381 ± 0.0290 |
+| Macro-F1 | 0.5662 ± 0.0425 | 0.6127 ± 0.0353 | 0.6106 ± 0.0323 |
+| Partially Compliant F1 | 0.3781 ± 0.0986 | 0.3721 ± 0.0844 | 0.3718 ± 0.0845 |
+| Compliant F1 | 0.4841 ± 0.0809 | 0.6161 ± 0.0711 | 0.6102 ± 0.0722 |
+
+E5+8 and E5+8+all-rules are tied (within 1 std).
 
 **Statistical Test**: Wilcoxon signed-rank (E5+8+all-rules vs Baseline)
-- Final model wins: 24/25 folds (96.0%)
-- Mean difference: +0.0786 ± 0.054
-- p-value: < 0.0001 (highly significant)
+- Final model wins: 22/25 folds (88.0%)
+- Mean difference: +0.0444 ± 0.0404
+- p-value: < 0.001
 
 ### Confusion Matrix (Recall)
 
 |                     | Not Addressed | Partially Compliant | Compliant |
 |---------------------|---------------|---------------------|-----------|
-| **Not Addressed**       | **95.7%**         | 2.7%                | 1.5%      |
-| **Partially Compliant** | 7.3%              | **80.1%**               | 12.6%     |
-| **Compliant**           | 12.0%             | 37.3%               | **50.7%**     |
+| **Not Addressed**       | **84.7%**         | 12.5%               | 2.9%      |
+| **Partially Compliant** | 46.0%             | **39.2%**           | 14.8%     |
+| **Compliant**           | 16.5%             | 22.5%               | **61.0%** |
+
+> ⛔ INVALID (label leakage): the previously published table (macro-F1 0.7347 / 0.8160 / 0.8132, 24/25 fold wins, 95.7% / 80.1% / 50.7% recall) came from leaky inputs.
 
 ## Citation
 
