@@ -124,6 +124,77 @@ v1 pooled confusion matrix (training folds; rows = true, row-normalised recall i
 - **Pooled estimate:** over all 40 folds v5 − v1 = +0.0197 (28/40 wins, paired Wilcoxon p = 0.001). That pooled test includes the 25 confirmation folds that were used to choose v5's base, so it overstates the evidence.
 - **Verdict:** on the independent 15 training folds alone the gain is not significant. A modest real improvement (about +0.01 to +0.02) is plausible but not established well enough to replace the final model on this evidence alone.
 
+### Round 2: ordinal, context, augmentation, ensemble (2026-10-27, VALID)
+
+**Protocol**
+- **Inputs:** clause text and document structure only; no LLM columns.
+- **Folds:** the same fold files. Every variant was run on the **training folds** (`fixed_folds_v1.json`, seeds 42–44, 15 folds) against v1. The best config was chosen by training-fold mean macro-F1 **only** and run **once** on the confirmation folds. The script refuses a second confirmation run.
+- **Tuning:** inner CV only. Each model is an index-based estimator, so C selection, augmentation, scaler and classifier are all refit within every outer and inner training fold. Thresholds use the existing `tune_thresholds_inner_cv`.
+
+**Commands**
+- `python src/evaluation/build_backtranslation_cache.py`
+- `python src/evaluation/run_round2_variants.py --stage train`
+- `python src/evaluation/run_round2_variants.py --stage confirm`
+
+**Results**
+- `reports/experiments/round2/` (`train_*.json`, `train_summary.{csv,md}`, `selection.json`, `confirm_r1_ordinal.json`, `confirm_summary.{csv,md}`)
+- Paraphrase cache: `reports/experiments/augmentation/backtranslation_en_de_en.json`
+
+**Variants (one change each vs v1)**
+- **r1 ordinal:** two cumulative binary LogRegs, P(y > NA) and P(y > Partial), on RobustScaled v1 features, with P(Partial) = P(>NA) − P(>Partial) and P(>Partial) capped at P(>NA). C ∈ {0.1, 0.3, 1, 3} by inner CV. `mord` was not installed, so I used this cumulative form.
+- **r2 context:** v1 plus three things.
+  - E5 of the clause's `section_heading` from `datasets/SocialMediaPolicies/social_media_clauses.csv`, or of the previous clause in the same document if there is no heading.
+  - Mean E5 of the previous and next clause in that document.
+  - Relative position in the document.
+  - Clauses are located by exact normalised text within the same `source_document`, else by difflib ratio ≥ 0.90. This found 700 of 826 rows. The other 126 (55 from supplemental single-clause documents, 71 whose text was edited after extraction) use their own embedding and position 0.5, with no missingness flag.
+- **r3 augmentation:** 2 back-translation paraphrases (en→de→en, `Helsinki-NLP/opus-mt-en-de` and `opus-mt-de-en`, beam 4) per Partially Compliant clause. They are cached by text hash and added only for Partially Compliant rows inside the rows a model is fit on: 208–250 extra rows per outer fold. Each outer fold asserts that no augmented row's source index and no source text belongs to the test fold.
+  - Paraphrases are faithful; length ratio is always between 0.5 and 1.5. In 43 of 143 clauses both beams back-translate to the same sentence, so that paraphrase is added twice.
+- **r4 ensemble:** mean probabilities of the best two eligible variants by training macro-F1, r1 + r3, with inner-CV thresholds.
+- **ref C-select:** v1 with C ∈ {0.1, 0.3, 1, 3} by inner CV, reported only to separate r1's ordinal effect from its C tuning. It was not a candidate.
+
+**Provenance check, fixed before any result was seen.** 55 corpus rows come from hand-added single-clause supplemental documents: 46 Compliant, 9 Partial, 0 Not Addressed, which is 47% of all Compliant labels. Rows without document context are 42% Compliant, against 6% for rows with context. So any feature exposing "no document context" is a label proxy. r2 was therefore eligible only if it also beat v1 on the 700 rows with real document context. Every variant's macro-F1 on those rows is reported in the "matched rows" column.
+
+**Training folds (seeds 42–44, 15 folds)**: Δ, wins and two-sided paired Wilcoxon p are against v1.
+
+| Variant | Macro-F1 | NA F1 | Partial F1 | Compliant F1 | Wins vs v1 /15 (Δ) | p | Matched-rows macro-F1 (Δ, p) |
+|---|---|---|---|---|---|---|---|
+| v1: final model | 0.6134 ± 0.0286 | 0.8390 ± 0.0276 | 0.3941 ± 0.0548 | 0.6070 ± 0.0625 | — | — | 0.5369 |
+| ref: C-select multinomial (not a candidate) | 0.6291 ± 0.0271 | 0.8373 ± 0.0310 | 0.4200 ± 0.0575 | 0.6299 ± 0.0614 | 11 (+0.0157) | 0.011 | 0.5503 (+0.013, p = 0.022) |
+| **r1: ordinal** | **0.6311 ± 0.0262** | 0.8477 ± 0.0240 | 0.4192 ± 0.0718 | 0.6265 ± 0.0653 | 12 (+0.0178) | 0.018 | 0.5336 (−0.003, p = 0.72) |
+| r2: context | 0.6223 ± 0.0363 | 0.8563 ± 0.0260 | 0.3932 ± 0.0899 | 0.6175 ± 0.0764 | 8 (+0.0090) | 0.60 | 0.5084 (−0.028, p = 0.055) |
+| r3: augmentation | 0.6096 ± 0.0275 | 0.8385 ± 0.0297 | 0.3886 ± 0.0581 | 0.6016 ± 0.0777 | 6 (−0.0038) | 0.56 | 0.5337 (−0.003, p = 0.64) |
+| r4: ensemble r1 + r3 | 0.6204 ± 0.0329 | 0.8433 ± 0.0267 | 0.3992 ± 0.0721 | 0.6186 ± 0.0731 | 8 (+0.0070) | 0.39 | 0.5318 (−0.005, p = 0.64) |
+
+**What the training folds show**
+- **Context (r2) is ineligible:** its small overall gain reverses on rows with real document context (−0.028). The gain comes from the provenance proxy, not from document context.
+- **Augmentation (r3) does not help:** Partially Compliant F1 even dips (0.394 → 0.389).
+- **The ensemble (r4) inherits r3's weakness:** it lands between its members.
+- **Ordinal (r1) is the best candidate, but mostly through C tuning:** C-tuned multinomial gets about the same (r1 − ref: +0.002, 9/15 wins, p = 0.60).
+- **r1's training gain does not appear on rows with real document context** (−0.003), unlike C-tuned multinomial (+0.013, p = 0.022).
+
+**Selection** (`reports/experiments/round2/selection.json`): candidates v1, r1, r3, r4 (r2 ineligible). Best by training-fold macro-F1: **r1_ordinal** (0.6311).
+
+**Confirmation folds, r1_ordinal, run once (seeds 45–49, 25 folds)**
+
+| | Macro-F1 | Accuracy | NA P / R / F1 | Partial P / R / F1 | Compliant P / R / F1 |
+|---|---|---|---|---|---|
+| v1 (from `honest_v1_final.json`) | 0.6132 ± 0.0344 | 0.7282 | 0.863 / 0.823 / 0.841 | 0.355 / 0.438 / 0.387 | 0.646 / 0.601 / 0.612 |
+| **r1_ordinal** | **0.6436 ± 0.0374** | 0.7421 | 0.867 / 0.824 / 0.844 | 0.378 / 0.470 / 0.415 | 0.710 / 0.659 / 0.672 |
+
+- **r1 vs v1:** +0.0304, 23 wins / 2 losses, Wilcoxon p = 1.8e-5. On matched rows: +0.020, 17/25 wins, p = 0.008.
+- **C chosen:** 0.1 ×15, 0.3 ×8, 1 ×1, 3 ×1.
+- **Pooled confusion matrix, r1:**
+  - Not Addressed: 2420 / 465 / 45
+  - Partially Compliant: 278 / 338 / 99
+  - Compliant: 83 / 87 / 315
+  - Recall 0.826 / 0.473 / 0.649. Partially Compliant → Not Addressed falls from 0.418 (v1) to 0.389.
+
+**Interpretation**
+- **The confirmation gain is significant:** +0.030 over v1, and larger than on training (+0.018). It appears on rows with real document context too.
+- **But ordinal vs plain C tuning is inconsistent.** Comparing r1 with the earlier confirmation run of C-tuned multinomial (`honest_v4_C_select.json`, which selects C once per outer fold rather than nested in threshold tuning) gives +0.019, 19/25 wins, p = 0.006. On training the same comparison is +0.002, p = 0.60. The robust finding across both fold sets is "stronger regularisation (C ≈ 0.1–0.3) helps"; a specific benefit from the ordinal structure is not established.
+- **Partially Compliant remains the bottleneck:** best F1 is 0.42.
+- **No model was retrained:** `models/final_classifier/` is still v1. Adopting r1 (or C-tuned multinomial) would need a retrain plus predictor support for the cumulative model.
+
 ---
 
 

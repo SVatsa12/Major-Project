@@ -1,0 +1,26 @@
+{
+  "best": "r1_ordinal",
+  "selected_by": "training-fold mean macro-F1 only",
+  "candidates": [
+    "v1_final",
+    "r1_ordinal",
+    "r3_augment",
+    "r4_ensemble"
+  ],
+  "training_macro_f1": {
+    "v1_final": 0.6133734146418609,
+    "r1_ordinal": 0.6311470278769861,
+    "r3_augment": 0.6095643724685912,
+    "r4_ensemble": 0.6203623684740651
+  },
+  "ensemble_members": [
+    "r1_ordinal",
+    "r3_augment"
+  ],
+  "r2_eligible": false,
+  "r2_matched_rows_macro_f1": {
+    "r2_context": 0.508397431369955,
+    "v1_final": 0.5368794456402155
+  },
+  "timestamp": "2026-10-27T13:29:43.890095"
+}

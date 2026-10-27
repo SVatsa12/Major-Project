@@ -1,0 +1,3 @@
+| variant | macro_f1 | Not Addressed F1 | Partially Compliant F1 | Compliant F1 | wins vs v1 (/25) | Wilcoxon p | matched-rows macro-F1 | Δ matched vs v1 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| r1_ordinal | 0.6436 ± 0.0374 | 0.8437 ± 0.0298 | 0.4154 ± 0.0680 | 0.6717 ± 0.0808 | 23 (+0.0304) | 0.0000 | 0.5562 | +0.0201 |
