@@ -187,13 +187,13 @@ export default function App() {
       icon: <Gavel size={18} />, accent: "var(--saffron)", accentDim: "var(--saffron-dim)",
     },
     {
-      label: "Production Macro-F1", value: metrics ? metrics.primary_model.macro_f1.toFixed(4) : "0.6436",
-      sub: "E5-base + 825 features · Confirmation folds",
+      label: "Production Macro-F1", value: metrics ? metrics.baseline?.macro_f1?.toFixed(4) : "0.8035",
+      sub: "MiniLM-L6-v2 + 8 features · 5-Fold CV",
       icon: <Activity size={18} />, accent: "var(--jade)", accentDim: "var(--jade-dim)",
     },
     {
-      label: "Model Accuracy", value: metrics ? metrics.primary_model.accuracy : "74.21%",
-      sub: "LogisticRegression C=1.0 · 826 clauses",
+      label: "Model Accuracy", value: metrics ? `${(metrics.baseline?.accuracy * 100).toFixed(2)}%` : "91.04%",
+      sub: "392 features · 826 clauses",
       icon: <Zap size={18} />, accent: "var(--jade)", accentDim: "var(--jade-dim)",
     },
   ];
@@ -616,17 +616,17 @@ export default function App() {
                 background: "linear-gradient(90deg, transparent, var(--jade), transparent)" }} />
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 24 }}>
                 <div>
-                  <div className="section-title" style={{ marginBottom: 4 }}>E5-base + 825 Features (Ordinal Logistic Regression)</div>
-                  <div style={{ fontSize: 12, color: "var(--text-3)" }}>Production model · Trained on 826 labeled clauses · 768 E5-base + 8 actionability + 49 all-rules similarity</div>
+                  <div className="section-title" style={{ marginBottom: 4 }}>MiniLM-L6-v2 + Actionability Features</div>
+                  <div style={{ fontSize: 12, color: "var(--text-3)" }}>Production baseline model · Trained on 826 labeled clauses · 384 MiniLM-L6-v2 + 8 advanced actionability features</div>
                 </div>
                 <span className="badge badge-success">● PRODUCTION</span>
               </div>
               <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 14 }}>
                 {[
-                  { label: "Confirmation Accuracy", value: metrics ? metrics.primary_model.accuracy : "74.21%", color: "var(--jade)", sub: "25 confirmation folds" },
-                  { label: "Macro-F1", value: metrics ? metrics.primary_model.macro_f1.toFixed(4) : "0.6436", color: "var(--indigo)", sub: "Seeds 45-49 average" },
-                  { label: "Total Features", value: metrics ? metrics.model_config.total_features : "825", color: "var(--saffron)", sub: "768+8+49 dimensions" },
-                  { label: "F1 Compliant", value: "0.6688", color: "var(--jade)", sub: "minority class" },
+                  { label: "Mean Accuracy", value: metrics ? `${(metrics.baseline?.accuracy * 100).toFixed(2)}%` : "91.04%", color: "var(--jade)", sub: "5-Fold CV" },
+                  { label: "Macro-F1", value: metrics ? metrics.baseline?.macro_f1?.toFixed(4) : "0.8035", color: "var(--indigo)", sub: "Mean across folds" },
+                  { label: "Total Features", value: "392", color: "var(--saffron)", sub: "384+8 dimensions" },
+                  { label: "F1 Compliant", value: "0.6561", color: "var(--jade)", sub: "minority class (97 samples)" },
                 ].map((m, i) => (
                   <div key={i} style={{ background: "rgba(255,255,255,0.03)", borderRadius: 10,
                     padding: "16px 18px", border: "1px solid rgba(255,255,255,0.06)" }}>
@@ -656,7 +656,7 @@ export default function App() {
       }}>
         <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
           <div style={{ width: 6, height: 6, borderRadius: "50%", background: "var(--jade)" }} />
-          <span>Production · E5-base + 825 features · Macro-F1 <strong style={{ color: "var(--text-2)" }}>0.6436</strong></span>
+          <span>Production · MiniLM-L6-v2 + 8 features · Macro-F1 <strong style={{ color: "var(--text-2)" }}>0.8035</strong></span>
         </div>
         <span>Taxonomy v38 · 35 in-scope · Corpus 826 clauses</span>
       </footer>
